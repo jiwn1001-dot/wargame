@@ -1,0 +1,79 @@
+################
+##### USA ######
+################
+
+USA_war_measures = {
+	allowed = { always = no }
+	
+	
+}
+
+USA_aid_britain = {
+	allowed = { always = no }
+
+	
+	visible = {
+		ENG = {
+			has_war = yes
+			has_government = ROOT
+		}
+	}
+}
+USA_foreign_support = {
+	allowed = { always = no }
+	
+	visible = {
+		OR = {
+			has_completed_focus = USA_invite_foreign_support
+			tag = CSA
+		}
+	}
+}
+
+USA_congress = {
+	allowed = { always = no }
+	icon = usa_congress
+	
+
+	scripted_gui = usa_congress_decision_ui	
+
+	priority = 85
+}
+USA_war_plans = {
+	allowed = { always = no }
+	
+	visible = {
+		has_completed_focus = USA_war_plans_division
+	}
+}
+USA_intervention_mandate = {
+	allowed = { always = no }
+	icon = usa_intervention_mandate
+	
+	visible = {
+		OR = {
+			has_completed_focus = USA_focus_on_europe
+			has_completed_focus = USA_focus_on_asia
+			has_completed_focus = USA_reinforce_monroe_doctrine
+		}
+	}
+}
+USA_honor_the_confederacy = {
+	allowed = { always = no }
+	icon = usa_honor_the_confederacy
+	
+	visible = {
+		OR = {
+			has_completed_focus = USA_honor_the_confederacy
+			original_tag = CSA #for civil war in communist path. CSA shouldn't get focus tree
+			has_government = fascism
+		}
+	}
+}
+USA_decolonisation = {
+	allowed = { always = no }
+	
+	visible = {
+		has_completed_focus = USA_pacific_decolonisation
+	}
+}

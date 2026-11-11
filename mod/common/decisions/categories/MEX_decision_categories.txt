@@ -1,0 +1,41 @@
+MEX_category_military_issues = {
+	allowed = { always = no }
+
+	icon = border_conflicts
+
+	priority = 95
+
+	
+}
+
+MEX_category_territorial_integration = {
+	allowed = { always = no }
+
+	icon = border_war
+
+	priority = 90
+
+	
+}
+
+MEX_category_church_power = {
+	allowed = { always = no }
+
+	icon = power_struggle
+
+	priority = 80
+
+	
+}
+
+MEX_category_hispanic_solidarity = {
+	allowed = { always = no }
+
+	icon = generic_political_actions
+
+	priority = 90
+
+	
+}
+
+

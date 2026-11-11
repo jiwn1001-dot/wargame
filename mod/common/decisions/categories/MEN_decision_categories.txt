@@ -1,0 +1,31 @@
+MEN_mongol_banner_category = {
+	allowed = { always = no }
+
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	priority = 10
+	picture = GFX_decision_cat_picture_generic_border_conflicts
+	visible_when_empty = no	
+	
+
+	visible = {
+		has_country_flag = MEN_banner_system_is_active
+	}
+}
+
+MEN_army_reform = {
+	allowed = { always = no }
+
+	icon = army_reform
+
+	picture = GFX_decision_cat_picture_chi_infiltration
+
+	priority = 9
+
+	visible_when_empty = no	
+
+	
+
+	visible = {
+	}
+	
+}

@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_lr_cards"
+		texturefile = "gfx/interface/lr/lr_cards.dds"
+		noOfFrames = 53
+	}
+}

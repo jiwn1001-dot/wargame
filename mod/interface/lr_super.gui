@@ -1,0 +1,68 @@
+guiTypes = {
+	containerWindowType = {
+		name = "LR_super_revolution_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_revolution_picture"
+			spriteType = "GFX_lr_super_revolution"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_revolution_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_revolution_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_revolution_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_revolution_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_revolution_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_revolution_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_revolution_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_revolution_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_revolution_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_revolution_reaction"
+		}
+	}
+}

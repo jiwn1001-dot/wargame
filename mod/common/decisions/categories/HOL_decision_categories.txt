@@ -1,0 +1,220 @@
+################
+##### HOL ######
+################
+
+HOL_obtain_foreign_colonial_investments = {
+	allowed = { always = no }
+
+	icon = hol_obtain_foreign_colonial_investments
+	
+	
+
+	visible = {
+		OR = {
+			has_completed_focus = HOL_obtain_foreign_colonial_investments
+			has_completed_focus = HOL_obtain_foreign_colonial_investments_taog
+		}
+	}
+}
+
+HOL_prepare_the_inundation_lines = {
+	allowed = { always = no }
+
+	icon = hol_prepare_the_inundation_lines
+	
+	
+
+	visible = {
+		has_completed_focus = HOL_prepare_the_inundation_lines
+	}
+}
+
+HOL_war_on_pacifism = {
+	allowed = { always = no }
+
+	icon = hol_war_on_pacifism
+	
+	
+
+	visible = {
+		has_completed_focus = HOL_war_on_pacifism
+	}
+}
+
+HOL_secret_staff_talks = {
+	allowed = { always = no }
+
+	icon = hol_secret_staff_talks
+	
+	
+
+	visible = {
+		has_completed_focus = HOL_secret_staff_talks
+		date < 1942.01.01
+	}
+}
+
+HOL_gateway_to_europe_hol_category = {
+	allowed = { always = no }
+	
+	icon = hol_gateway_to_europe
+
+	
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+	priority = {
+		base = 10
+	}
+	
+	custom_icon = {
+		tag = ENG
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = ENG
+		}
+	}
+	
+	custom_icon = {
+		tag = GER
+		value = ger_gateway_to_europe_icon_value
+		desc = ger_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = GER
+		}
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+		NOT = { HOL = { has_completed_focus = HOL_cave_to_the_british } }
+		NOT = { HOL = { has_completed_focus = HOL_maintain_trade_neutrality } }
+		NOT = { HOL = { has_war_with = ENG } }
+		NOT = { HOL = { has_war_with = GER } }
+		HOL = {
+			exists = yes
+			is_subject = no
+		}
+	}
+}
+
+HOL_gateway_to_europe_ger_category = {
+	allowed = { always = no }
+	
+	icon = hol_gateway_to_europe
+
+	
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+	priority = {
+		base = 10
+	}
+	
+	custom_icon = {
+		tag = ENG
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = ENG
+		}
+	}
+	
+	custom_icon = {
+		tag = GER
+		value = ger_gateway_to_europe_icon_value
+		desc = ger_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = GER
+		}
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+		NOT = { HOL = { has_completed_focus = HOL_cave_to_the_british } }
+		NOT = { HOL = { has_completed_focus = HOL_maintain_trade_neutrality } }
+		NOT = { HOL = { has_war_with = ENG } }
+		NOT = { HOL = { has_war_with = GER } }
+		HOL = {
+			exists = yes
+			is_subject = no
+		}
+	}
+}
+
+HOL_gateway_to_europe_eng_category = {
+	allowed = { always = no }
+	
+	icon = hol_gateway_to_europe
+
+	
+
+	picture = GFX_decision_cat_picture_gateway_to_europe
+	priority = {
+		base = 10
+	}
+	
+	custom_icon = {
+		tag = ENG
+		value = eng_gateway_to_europe_icon_value
+		desc = eng_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = ENG
+		}
+	}
+	
+	custom_icon = {
+		tag = GER
+		value = ger_gateway_to_europe_icon_value
+		desc = ger_gateway_to_europe_full_influence_breakdown
+
+		visible = {
+			country_exists = GER
+		}
+	}
+
+	visible_when_empty = yes
+
+	visible = {
+		NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
+		NOT = { HOL = { has_completed_focus = HOL_cave_to_the_british } }
+		NOT = { HOL = { has_completed_focus = HOL_maintain_trade_neutrality } }
+		NOT = { HOL = { has_war_with = ENG } }
+		NOT = { HOL = { has_war_with = GER } }
+		HOL = {
+			exists = yes
+			is_subject = no
+		}
+	}
+}
+
+HOL_request_allied_favors = {
+	allowed = { always = no }
+
+	icon = generic_political_actions
+	
+	
+
+	visible = {
+		has_completed_focus = HOL_request_allied_favors
+	}
+}
+
+HOL_bernhard = {
+	allowed = { always = no }
+
+	icon = hol_bernhard
+	
+	
+
+	visible = {
+		has_completed_focus = HOL_the_only_man_in_the_dutch_government
+	}
+}

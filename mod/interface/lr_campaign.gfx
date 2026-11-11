@@ -1,0 +1,40 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_lr_campaign_map"
+		texturefile = "gfx/interface/lr/lr_campaign_map.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_campaign_pin"
+		texturefile = "gfx/interface/lr/lr_campaign_pin.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_campaign_paris"
+		texturefile = "gfx/interface/lr/lr_campaign_paris.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_lr_campaign_nord"
+		texturefile = "gfx/interface/lr/lr_campaign_nord.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_lr_campaign_vendee"
+		texturefile = "gfx/interface/lr/lr_campaign_vendee.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_lr_campaign_midi"
+		texturefile = "gfx/interface/lr/lr_campaign_midi.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_lr_campaign_rhone"
+		texturefile = "gfx/interface/lr/lr_campaign_rhone.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_lr_campaign_lorraine"
+		texturefile = "gfx/interface/lr/lr_campaign_lorraine.dds"
+		noOfFrames = 5
+	}
+}

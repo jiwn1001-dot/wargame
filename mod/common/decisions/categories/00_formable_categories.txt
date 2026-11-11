@@ -1,0 +1,546 @@
+#formable_nations = {
+#
+#	icon = generic_formable_nations
+#
+#	allowed = {
+#		has_dlc = "Waking the Tiger"
+#	}
+#}
+
+form_scandinavia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_scandinavia
+
+	
+}
+
+form_nordic_league_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_nordic_league
+
+	
+}
+
+form_north_sea_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_north_sea_empire
+
+	
+}
+
+form_baltic_sea_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_baltic_sea_dominion
+
+	
+}
+
+form_gran_colombia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_gran_colombia
+
+	
+}
+
+form_austria_hungary_category = {
+	allowed = { always = no }
+
+	icon = GFX_decision_cat_generic_austria_hungary_icon
+
+	picture = GFX_decision_cat_generic_austria_hungary
+
+	
+}
+
+form_commonwealth_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_commonwealth
+
+	
+}
+
+form_united_netherlands_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_united_netherlands
+
+	
+}
+
+form_united_central_america_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_united_central_america
+
+	
+}
+
+form_baltic_federation_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_baltic_federation
+
+	
+}
+
+form_ottoman_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_ottoman_empire
+
+	
+}
+
+form_european_union_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_european_union
+
+	
+}
+
+form_mutapa_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_mutapa
+
+	
+}
+
+form_roman_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_roman_empire
+
+	
+}
+
+form_persian_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_persian_empire
+
+	
+}
+
+form_byzantine_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_byzantine_empire
+
+	
+}
+
+form_arabia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_arabia
+
+	
+	
+}
+
+form_majapahit_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_majapahit_empire
+
+	
+}
+
+form_rattanakosin_kingdom_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_rattanakosin_kingdom
+
+	
+}
+
+form_pan_tai_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_rattanakosin_kingdom
+
+	
+}
+
+form_hre_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_hre
+
+	
+}
+
+form_greater_german_reich_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_greater_german_reich
+
+	
+}
+
+form_greater_german_state_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_greater_proletarian_germany
+
+	
+}
+
+form_andalusia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_arabia
+
+	
+}
+
+form_polynesia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_generic_polynesia
+}
+
+form_greater_greece_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_greater_greece
+
+	
+}
+
+form_turan_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_turan
+
+	
+}
+
+form_macedonian_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_byzantine_empire
+
+	
+}
+
+form_turkestan_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_turan
+}
+
+reform_the_samanid_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_persian_empire 
+}
+
+
+form_mountainous_republic_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_mountainous_republic
+	
+	
+}
+
+form_transcaucasus_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_transcaucasian_republic
+	
+	
+}
+
+form_siberia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_siberian_republic
+	
+	
+}
+
+form_idel_ural_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_idel_uralic_republic
+	
+	
+}
+
+form_ethiopian_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_ethiopian_empire
+	
+	
+}
+
+form_east_africa_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_east_africa
+	
+	
+}
+
+form_horn_of_africa_africa_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_the_horn_of_africa
+	
+	
+}
+
+greater_italy_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_greater_italy
+	
+	
+	visible = {
+		NOT = {
+			has_global_flag = greater_italy_flag
+			has_completed_focus = ITA_mare_nostrum_bba	#Mutually exclusive
+		}
+	}
+}
+
+form_sweden_hungary_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_sweden_hungary
+
+	
+}
+
+antilles_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_generic_unified_antilles
+	
+	
+}
+
+hispaniola_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_generic_unified_hispaniola
+	
+	
+}
+
+peru_bolivia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_PER_unified_peru_bolivia
+	
+	
+}
+
+guianas_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_generic_united_guiana
+	
+	
+}
+
+latin_africa_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_generic_unified_latin_africa
+	
+	
+}
+
+maghreb_formable_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_maghreb
+	
+	
+}
+
+germany_formable_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_unite_germany
+	
+	
+}
+
+greater_mongolia_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_greater_mongolia
+	
+	
+}
+
+greater_hui_state_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_form_united_hui_state
+	
+	
+}
+
+neo_assyrian_empire_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_neo_assyrian_empire
+	
+	
+}
+
+GOE_form_hindustan_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+ 
+	picture = GFX_form_hindustan_category_icon
+
+	
+}
+
+raj_formable_cat = {
+	allowed = { always = no }
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_neo_assyrian_empire
+	
+	
+}
+
+neo_mesopotamia_category = {
+	allowed = { always = no }
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_picture_neo_assyrian_empire
+
+	
+}
+
+form_maphilindo_category = {
+	allowed = { always = no }
+
+	icon = generic_formable_nations
+	picture = GFX_decision_cat_picture_form_maphilindo
+
+	
+}
+
+AST_australia_formables_category = {
+	allowed = { always = no }
+	icon = generic_formable_nations
+
+	visible_when_empty = no
+
+	
+}

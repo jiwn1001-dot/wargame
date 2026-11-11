@@ -1,0 +1,174 @@
+guiTypes = {
+	containerWindowType = {
+		name = "LR_fra_poker_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 300 }
+		instantTextBoxType = {
+			name = "LR_pk_title"
+			position = { x = 10 y = 5 }
+			font = "vic_22"
+			text = "LR_ui_pk_title"
+			maxWidth = 480
+			maxHeight = 24
+			format = left
+		}
+		instantTextBoxType = {
+			name = "LR_pk_info"
+			position = { x = 10 y = 30 }
+			font = "hoi_16mbs"
+			text = "LR_ui_pk_info"
+			maxWidth = 480
+			maxHeight = 24
+			format = left
+		}
+		instantTextBoxType = {
+			name = "LR_pk_opp_label"
+			position = { x = 10 y = 72 }
+			font = "hoi_16mbs"
+			text = "LR_ui_pk_opponent"
+			maxWidth = 60
+			maxHeight = 24
+			format = left
+		}
+		instantTextBoxType = {
+			name = "LR_pk_board_label"
+			position = { x = 10 y = 140 }
+			font = "hoi_16mbs"
+			text = "LR_ui_pk_board"
+			maxWidth = 60
+			maxHeight = 24
+			format = left
+		}
+		instantTextBoxType = {
+			name = "LR_pk_me_label"
+			position = { x = 10 y = 208 }
+			font = "hoi_16mbs"
+			text = "LR_ui_pk_me"
+			maxWidth = 60
+			maxHeight = 24
+			format = left
+		}
+		iconType = {
+			name = "LR_pk_card_8"
+			spriteType = "GFX_lr_cards"
+			position = { x = 75 y = 55 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_9"
+			spriteType = "GFX_lr_cards"
+			position = { x = 120 y = 55 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_3"
+			spriteType = "GFX_lr_cards"
+			position = { x = 75 y = 123 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_4"
+			spriteType = "GFX_lr_cards"
+			position = { x = 120 y = 123 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_5"
+			spriteType = "GFX_lr_cards"
+			position = { x = 165 y = 123 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_6"
+			spriteType = "GFX_lr_cards"
+			position = { x = 210 y = 123 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_7"
+			spriteType = "GFX_lr_cards"
+			position = { x = 255 y = 123 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_1"
+			spriteType = "GFX_lr_cards"
+			position = { x = 75 y = 191 }
+			frame = 53
+		}
+		iconType = {
+			name = "LR_pk_card_2"
+			spriteType = "GFX_lr_cards"
+			position = { x = 120 y = 191 }
+			frame = 53
+		}
+		instantTextBoxType = {
+			name = "LR_pk_stage"
+			position = { x = 310 y = 60 }
+			font = "hoi_16mbs"
+			text = "LR_ui_pk_stage"
+			maxWidth = 190
+			maxHeight = 24
+			format = left
+		}
+		instantTextBoxType = {
+			name = "LR_pk_my_hand"
+			position = { x = 310 y = 100 }
+			font = "hoi_16mbs"
+			text = "LR_ui_pk_my_hand"
+			maxWidth = 190
+			maxHeight = 24
+			format = left
+		}
+		instantTextBoxType = {
+			name = "LR_pk_opp_hand"
+			position = { x = 310 y = 125 }
+			font = "hoi_16mbs"
+			text = "LR_ui_pk_opp_hand"
+			maxWidth = 190
+			maxHeight = 24
+			format = left
+		}
+		instantTextBoxType = {
+			name = "LR_pk_result"
+			position = { x = 310 y = 160 }
+			font = "hoi_18mbs"
+			text = "LR_ui_pk_result"
+			maxWidth = 190
+			maxHeight = 24
+			format = left
+		}
+		buttonType = {
+			name = "LR_pk_new"
+			position = { x = 5 y = 258 }
+			quadTextureSprite = "GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_ui_pk_new"
+			pdx_tooltip = "LR_ui_pk_new_tt"
+		}
+		buttonType = {
+			name = "LR_pk_check"
+			position = { x = 130 y = 258 }
+			quadTextureSprite = "GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_ui_pk_check"
+			pdx_tooltip = "LR_ui_pk_check_tt"
+		}
+		buttonType = {
+			name = "LR_pk_bet"
+			position = { x = 255 y = 258 }
+			quadTextureSprite = "GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_ui_pk_bet"
+			pdx_tooltip = "LR_ui_pk_bet_tt"
+		}
+		buttonType = {
+			name = "LR_pk_fold"
+			position = { x = 380 y = 258 }
+			quadTextureSprite = "GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_ui_pk_fold"
+			pdx_tooltip = "LR_ui_pk_fold_tt"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+SS_demands = {
+	allowed = { always = no } 
+	
+
+	#visible = {
+	#	has_idea = heinrich_himmler
+	#}
+}
+SS_recruitment = {
+	allowed = { always = no } 
+	
+
+	available = {
+		has_government = fascism
+	}
+
+	visible = {
+		has_completed_focus = GER_expand_ss_recruitment
+	}
+}
+wehrmacht_demands = {
+	allowed = { always = no }
+	
+}

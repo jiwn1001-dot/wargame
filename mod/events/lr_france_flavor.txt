@@ -1,0 +1,324 @@
+add_namespace = lr_fra_flavor
+
+# Stavisky's shadow.
+country_event = {
+	id = lr_fra_flavor.1
+	title = lr_fra_flavor.1.t
+	desc = lr_fra_flavor.1.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date > 1936.3.1
+	}
+	mean_time_to_happen = { days = 60 }
+	option = {
+		name = lr_fra_flavor.1.a
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		add_stability = 0.03
+	}
+	option = {
+		name = lr_fra_flavor.1.b
+		ai_chance = { factor = 50 }
+		add_political_power = 50
+		add_stability = -0.03
+	}
+}
+
+# The great strikes.
+country_event = {
+	id = lr_fra_flavor.2
+	title = lr_fra_flavor.2.t
+	desc = lr_fra_flavor.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date > 1936.6.1
+	}
+	mean_time_to_happen = { days = 45 }
+	option = {
+		name = lr_fra_flavor.2.a
+		ai_chance = { factor = 60 }
+		add_political_power = -40
+		add_stability = 0.04
+		add_to_variable = { LR_op_nord = -10 }
+		add_to_variable = { LR_op_paris = -10 }
+		clamp_variable = { var = LR_op_nord min = 0 max = 100 }
+		clamp_variable = { var = LR_op_paris min = 0 max = 100 }
+	}
+	option = {
+		name = lr_fra_flavor.2.b
+		ai_chance = { factor = 40 }
+		add_stability = -0.03
+		add_war_support = 0.03
+		add_to_variable = { LR_op_nord = 10 }
+		add_to_variable = { LR_op_paris = 10 }
+		clamp_variable = { var = LR_op_nord min = 0 max = 100 }
+		clamp_variable = { var = LR_op_paris min = 0 max = 100 }
+	}
+}
+
+# The franc under attack.
+country_event = {
+	id = lr_fra_flavor.3
+	title = lr_fra_flavor.3.t
+	desc = lr_fra_flavor.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date > 1936.9.1
+	}
+	mean_time_to_happen = { days = 45 }
+	option = {
+		name = lr_fra_flavor.3.a
+		ai_chance = { factor = 50 }
+		add_political_power = 60
+		add_stability = -0.04
+	}
+	option = {
+		name = lr_fra_flavor.3.b
+		ai_chance = { factor = 50 }
+		add_political_power = -60
+		add_stability = 0.02
+	}
+}
+
+# Foreshadowing: a paper nobody read.
+country_event = {
+	id = lr_fra_flavor.4
+	title = lr_fra_flavor.4.t
+	desc = lr_fra_flavor.4.d
+	picture = GFX_report_event_military_planning
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date > 1936.8.1
+	}
+	mean_time_to_happen = { days = 90 }
+	option = {
+		name = lr_fra_flavor.4.a
+		army_experience = 5
+	}
+}
+
+# Alsace and the language question.
+country_event = {
+	id = lr_fra_flavor.5
+	title = lr_fra_flavor.5.t
+	desc = lr_fra_flavor.5.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date > 1937.2.1
+	}
+	mean_time_to_happen = { days = 60 }
+	option = {
+		name = lr_fra_flavor.5.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.01
+		add_to_variable = { LR_op_lorraine = 10 }
+		clamp_variable = { var = LR_op_lorraine min = 0 max = 100 }
+	}
+	option = {
+		name = lr_fra_flavor.5.b
+		ai_chance = { factor = 50 }
+		add_political_power = -30
+		add_to_variable = { LR_op_lorraine = -15 }
+		clamp_variable = { var = LR_op_lorraine min = 0 max = 100 }
+	}
+}
+
+# Citroen goes under.
+country_event = {
+	id = lr_fra_flavor.6
+	title = lr_fra_flavor.6.t
+	desc = lr_fra_flavor.6.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		date > 1937.1.1
+	}
+	mean_time_to_happen = { days = 60 }
+	option = {
+		name = lr_fra_flavor.6.a
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		random_owned_controlled_state = {
+			limit = { is_core_of = ROOT }
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = lr_fra_flavor.6.b
+		ai_chance = { factor = 50 }
+		add_political_power = 30
+	}
+}
+
+# Royalist pilgrimage in the Vendee.
+country_event = {
+	id = lr_fra_flavor.7
+	title = lr_fra_flavor.7.t
+	desc = lr_fra_flavor.7.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_country_flag = LR_threat_conservative
+	}
+	mean_time_to_happen = { days = 120 }
+	option = {
+		name = lr_fra_flavor.7.a
+		ai_chance = { factor = 50 }
+		add_stability = -0.02
+		add_to_variable = { LR_op_vendee = -10 }
+		clamp_variable = { var = LR_op_vendee min = 0 max = 100 }
+	}
+	option = {
+		name = lr_fra_flavor.7.b
+		ai_chance = { factor = 50 }
+		add_stability = 0.01
+		add_to_variable = { LR_op_vendee = 10 }
+		clamp_variable = { var = LR_op_vendee min = 0 max = 100 }
+	}
+}
+
+# Underground presses in Paris.
+country_event = {
+	id = lr_fra_flavor.8
+	title = lr_fra_flavor.8.t
+	desc = lr_fra_flavor.8.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_country_flag = LR_threat_revolutionary
+	}
+	mean_time_to_happen = { days = 120 }
+	option = {
+		name = lr_fra_flavor.8.a
+		ai_chance = { factor = 50 }
+		add_stability = -0.02
+		add_to_variable = { LR_op_paris = -10 }
+		clamp_variable = { var = LR_op_paris min = 0 max = 100 }
+	}
+	option = {
+		name = lr_fra_flavor.8.b
+		ai_chance = { factor = 50 }
+		add_political_power = -40
+		add_to_variable = { LR_op_paris = -5 }
+		clamp_variable = { var = LR_op_paris min = 0 max = 100 }
+	}
+}
+
+# Periodic: the opposition gains seats. Repeats.
+country_event = {
+	id = lr_fra_flavor.20
+	title = lr_fra_flavor.20.t
+	desc = lr_fra_flavor.20.d
+	picture = GFX_report_event_election_vote
+	trigger = {
+		tag = FRA
+		OR = {
+			has_country_flag = LR_route_jacobin
+			has_country_flag = LR_route_girondin
+			has_country_flag = LR_route_marais
+			has_country_flag = LR_route_guardian
+		}
+		check_variable = { LR_seats > 122 }
+	}
+	mean_time_to_happen = { days = 150 }
+	option = {
+		name = lr_fra_flavor.20.a
+		ai_chance = { factor = 50 }
+		add_political_power = -30
+		add_to_variable = { LR_seats = -12 }
+		lr_fra_sync_seats = yes
+	}
+	option = {
+		name = lr_fra_flavor.20.b
+		ai_chance = { factor = 50 }
+		add_to_variable = { LR_seats = -36 }
+		lr_fra_sync_seats = yes
+	}
+}
+
+# Periodic: royalists grow. Repeats until uprooted.
+country_event = {
+	id = lr_fra_flavor.21
+	title = lr_fra_flavor.21.t
+	desc = lr_fra_flavor.21.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+		tag = FRA
+		has_country_flag = LR_threat_conservative
+		NOT = { has_country_flag = LR_resistance_uprooted }
+	}
+	mean_time_to_happen = { days = 150 }
+	option = {
+		name = lr_fra_flavor.21.a
+		ai_chance = { factor = 60 }
+		add_political_power = -25
+		add_to_variable = { LR_op_vendee = 5 }
+		add_to_variable = { LR_op_midi = 5 }
+		clamp_variable = { var = LR_op_vendee min = 0 max = 100 }
+		clamp_variable = { var = LR_op_midi min = 0 max = 100 }
+		lr_fra_sync_opposition = yes
+	}
+	option = {
+		name = lr_fra_flavor.21.b
+		ai_chance = { factor = 40 }
+		add_to_variable = { LR_op_vendee = 15 }
+		add_to_variable = { LR_op_midi = 10 }
+		add_to_variable = { LR_op_rhone = 5 }
+		clamp_variable = { var = LR_op_vendee min = 0 max = 100 }
+		clamp_variable = { var = LR_op_midi min = 0 max = 100 }
+		clamp_variable = { var = LR_op_rhone min = 0 max = 100 }
+		lr_fra_sync_opposition = yes
+	}
+}
+
+# Periodic: revolutionaries grow. Repeats until uprooted.
+country_event = {
+	id = lr_fra_flavor.22
+	title = lr_fra_flavor.22.t
+	desc = lr_fra_flavor.22.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+		tag = FRA
+		has_country_flag = LR_threat_revolutionary
+		NOT = { has_country_flag = LR_resistance_uprooted }
+	}
+	mean_time_to_happen = { days = 150 }
+	option = {
+		name = lr_fra_flavor.22.a
+		ai_chance = { factor = 60 }
+		add_political_power = -25
+		add_to_variable = { LR_op_paris = 5 }
+		add_to_variable = { LR_op_nord = 5 }
+		clamp_variable = { var = LR_op_paris min = 0 max = 100 }
+		clamp_variable = { var = LR_op_nord min = 0 max = 100 }
+		lr_fra_sync_opposition = yes
+	}
+	option = {
+		name = lr_fra_flavor.22.b
+		ai_chance = { factor = 40 }
+		add_to_variable = { LR_op_paris = 15 }
+		add_to_variable = { LR_op_nord = 10 }
+		add_to_variable = { LR_op_rhone = 5 }
+		clamp_variable = { var = LR_op_paris min = 0 max = 100 }
+		clamp_variable = { var = LR_op_nord min = 0 max = 100 }
+		clamp_variable = { var = LR_op_rhone min = 0 max = 100 }
+		lr_fra_sync_opposition = yes
+	}
+}

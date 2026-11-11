@@ -1,0 +1,51 @@
+#######################
+##### Yugoslavia ######
+#######################
+
+YUG_peasant_uprisings = {
+	allowed = { always = no }
+	
+	icon = saf_anti_colonialist_crusade
+
+	
+
+	visible = {
+		has_completed_focus = YUG_pan_slavic_workers_congress
+	}
+}
+
+YUG_crush_ustasa = {
+	allowed = { always = no }
+	
+	icon = saf_anti_colonialist_crusade
+
+	
+
+	visible = {
+		has_completed_focus = YUG_crush_the_ustasa
+	}
+}
+
+YUG_delay_ustasa_uprising = {
+	allowed = { always = no }
+	
+	icon = saf_anti_colonialist_crusade
+
+	
+
+	visible = {
+		has_completed_focus = YUG_crush_the_ustasa
+	}
+}
+
+YUG_progress_crushing_decisions = {
+	allowed = { always = no }
+	
+	icon = saf_anti_colonialist_crusade
+
+	
+
+	visible = {
+		has_completed_focus = YUG_crush_the_ustasa
+	}
+}

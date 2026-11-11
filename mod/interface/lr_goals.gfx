@@ -1,0 +1,82 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_goal_LR_FRA_shadow_of_defeat"
+		texturefile = "gfx/interface/goals/goal_shadow_of_defeat.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_war_reparations"
+		texturefile = "gfx/interface/goals/goal_war_reparations.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_COM_world_revolution"
+		texturefile = "gfx/interface/goals/goal_world_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_COM_one_country"
+		texturefile = "gfx/interface/goals/goal_one_country.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_lessons_of_defeat"
+		texturefile = "gfx/interface/goals/goal_lessons_of_defeat.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_royal_arsenal"
+		texturefile = "gfx/interface/goals/goal_royal_arsenal.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_tunisia_morocco"
+		texturefile = "gfx/interface/goals/goal_tunisia_morocco.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_rebuild_railways"
+		texturefile = "gfx/interface/goals/goal_rebuild_railways.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_arsenal_of_republic"
+		texturefile = "gfx/interface/goals/goal_arsenal_of_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_air_arm"
+		texturefile = "gfx/interface/goals/goal_air_arm.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_new_navy"
+		texturefile = "gfx/interface/goals/goal_new_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_royal_academy"
+		texturefile = "gfx/interface/goals/goal_royal_academy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_mass_production"
+		texturefile = "gfx/interface/goals/goal_mass_production.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_steelworks"
+		texturefile = "gfx/interface/goals/goal_steelworks.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_nord_coal"
+		texturefile = "gfx/interface/goals/goal_nord_coal.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_citroen_trucks"
+		texturefile = "gfx/interface/goals/goal_citroen_trucks.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_alpine_hydro"
+		texturefile = "gfx/interface/goals/goal_alpine_hydro.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_war_economy"
+		texturefile = "gfx/interface/goals/goal_war_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_trade_treaties"
+		texturefile = "gfx/interface/goals/goal_trade_treaties.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_LR_FRA_lyon_chemicals"
+		texturefile = "gfx/interface/goals/goal_lyon_chemicals.dds"
+	}
+}

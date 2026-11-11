@@ -1,0 +1,165 @@
+characters={
+	# Placeholder portraits: GFX_portrait_unknown until the real art arrives.
+
+	FRA_louis_xx={
+		name=FRA_louis_xx
+		portraits={
+			civilian={
+				large="GFX_portrait_louis_xx"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	# Vanilla Kerensky is a democratic leader; here he leads the people's republic slot.
+	LR_SOV_kerensky={
+		name=LR_SOV_kerensky
+		portraits={
+			civilian={
+				large="GFX_portrait_SOV_aleksandr_kerensky"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1970.1.1.1"
+			id=-1
+		}
+	}
+
+	# Vanilla Blum is only an advisor; this one can lead the Jacobin government.
+	LR_FRA_blum={
+		name=LR_FRA_blum
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_leon_blum"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	LR_FRA_orleans={
+		name=LR_FRA_orleans
+		portraits={
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_napoleon_bonaparte={
+		name=FRA_napoleon_bonaparte
+		portraits={
+			army={
+				large="GFX_portrait_unknown"
+			}
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		# First Consul of a republic, then Emperor from the coronation focus.
+		country_leader={
+			ideology=conservatism
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+		# The people's consul of the red road.
+		country_leader={
+			ideology=leninism
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ trait_mountaineer hill_fighter adaptable logistics_wizard }
+			skill=3
+			attack_skill=7
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=0
+		}
+	}
+
+	USA_george_washington={
+		name=USA_george_washington
+		portraits={
+			army={
+				large="GFX_portrait_unknown"
+			}
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+		corps_commander={
+			traits={ war_hero }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	# The marshal of Verdun, called in when the regions break the government.
+	LR_FRA_petain={
+		name=LR_FRA_petain
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_philippe_petain"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1955.1.1.1"
+			id=-1
+		}
+	}
+
+	# Secretary of the free federation: anarchists elect a secretary, never a leader.
+	LR_FRA_besnard={
+		name=LR_FRA_besnard
+		portraits={
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,763 @@
+add_namespace = lr_france
+add_namespace = lr_news
+
+# 1. The Algerian revolt. It opens the crisis focuses; the decision is made there.
+country_event = {
+	id = lr_france.1
+	title = lr_france.1.t
+	desc = lr_france.1.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { lr_fra_algeria_dmz_on = yes }
+		news_event = { id = lr_news.1 days = 1 }
+	}
+
+	# The king's answer sets the course; from here the crisis runs on dates.
+	option = {
+		name = lr_france.1.a
+		ai_chance = { factor = 40 }
+		custom_effect_tooltip = LR_tt_crisis_abandon
+		custom_effect_tooltip = LR_tt_algeria_dmz
+		add_ideas = LR_FRA_algerian_crisis
+		set_country_flag = LR_algerian_revolt
+		set_country_flag = LR_crisis_abandon
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_manpower = 15000
+		set_variable = { LR_coup_orleans = 0 }
+		hidden_effect = {
+			country_event = { id = lr_france.61 days = 45 }
+			country_event = { id = lr_novel.301 days = 62 }
+			country_event = { id = lr_novel.401 days = 80 }
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+
+	option = {
+		name = lr_france.1.b
+		ai_chance = { factor = 60 }
+		custom_effect_tooltip = LR_tt_crisis_crush
+		custom_effect_tooltip = LR_tt_algeria_dmz
+		add_ideas = LR_FRA_algerian_crisis
+		set_country_flag = LR_algerian_revolt
+		set_country_flag = LR_crisis_crush
+		add_war_support = 0.05
+		add_stability = -0.1
+		add_manpower = -20000
+		hidden_effect = {
+			country_event = { id = lr_france.3 days = 20 }
+			country_event = { id = lr_france.60 days = 100 }
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+# 20-21. Who the regiments follow. Two answers for Orleans crown him at the Tuileries.
+country_event = {
+	id = lr_france.20
+	title = lr_france.20.t
+	desc = lr_france.20.d
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.20.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_orleans
+		add_to_variable = { LR_coup_orleans = 1 }
+	}
+
+	option = {
+		name = lr_france.20.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_bourbon
+	}
+}
+
+country_event = {
+	id = lr_france.21
+	title = lr_france.21.t
+	desc = lr_france.21.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.21.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_orleans
+		add_to_variable = { LR_coup_orleans = 1 }
+	}
+
+	option = {
+		name = lr_france.21.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_bourbon
+	}
+}
+
+# 2. The army's coup.
+country_event = {
+	id = lr_france.2
+	title = lr_france.2.t
+	desc = lr_france.2.d
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.2.a
+		news_event = { id = lr_gnews.2 days = 1 }
+		trigger = { check_variable = { LR_coup_orleans > 1 } }
+		custom_effect_tooltip = LR_tt_orleans
+		set_country_flag = LR_crisis_settled
+		remove_ideas = LR_FRA_algerian_crisis
+		lr_fra_regime_orleans = yes
+		lr_fra_ruler_orleans = yes
+		set_country_flag = LR_route_orleans
+		lr_fra_init_revolutionary = yes
+		mark_focus_tree_layout_dirty = yes
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		promote_character = LR_FRA_orleans
+		add_war_support = 0.15
+	}
+
+	option = {
+		name = lr_france.2.b
+		news_event = { id = lr_gnews.3 days = 1 }
+		trigger = { check_variable = { LR_coup_orleans < 2 } }
+		custom_effect_tooltip = LR_tt_bourbon
+		set_country_flag = LR_crisis_settled
+		remove_ideas = LR_FRA_algerian_crisis
+		lr_fra_regime_bourbon = yes
+		set_country_flag = LR_route_bourbon
+		lr_fra_init_revolutionary = yes
+		mark_focus_tree_layout_dirty = yes
+		add_stability = 0.1
+	}
+}
+
+# 3. The expedition bogs down: the warning before the revolution.
+country_event = {
+	id = lr_france.3
+	title = lr_france.3.t
+	desc = lr_france.3.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.3.a
+		add_stability = -0.05
+		add_political_power = 50
+	}
+}
+
+# 10. Revolution.
+country_event = {
+	id = lr_france.10
+	title = lr_france.10.t
+	desc = lr_france.10.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.10.a
+		custom_effect_tooltip = LR_tt_election
+		remove_ideas = LR_FRA_algerian_crisis
+		lr_fra_regime_provisional = yes
+		lr_fra_ruler_none = yes
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		set_popularities = {
+			democratic = 50
+			communism = 40
+			neutrality = 5
+			fascism = 5
+		}
+		# The streets' decisions (build_minigames.py) may already have moved the scale: keep it.
+	}
+}
+
+# 11-12. The election campaign. Each answer moves the vote.
+country_event = {
+	id = lr_france.11
+	title = lr_france.11.t
+	desc = lr_france.11.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.11.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_left
+		add_to_variable = { LR_election_left = 1 }
+	}
+
+	option = {
+		name = lr_france.11.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_parliament
+	}
+}
+
+country_event = {
+	id = lr_france.12
+	title = lr_france.12.t
+	desc = lr_france.12.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.12.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_left
+		add_to_variable = { LR_election_left = 1 }
+	}
+
+	option = {
+		name = lr_france.12.b
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = LR_tt_vote_parliament
+	}
+}
+
+# 13. Election night: two left answers mean a socialist victory.
+country_event = {
+	id = lr_france.13
+	title = lr_france.13.t
+	desc = lr_france.13.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.13.a
+		news_event = { id = lr_gnews.4 days = 1 }
+		trigger = { check_variable = { LR_election_left > 1 } }
+		custom_effect_tooltip = LR_tt_congress
+		set_country_flag = LR_crisis_election_held
+		country_event = { id = lr_novel.901 }
+	}
+
+	option = {
+		name = lr_france.13.b
+		trigger = { check_variable = { LR_election_left < 2 } }
+		custom_effect_tooltip = LR_tt_cabinet
+		set_country_flag = LR_election_parliament
+		set_country_flag = LR_crisis_election_held
+		country_event = { id = lr_novel.501 days = 7 }
+	}
+}
+
+# 14. Which party forms the government.
+country_event = {
+	id = lr_france.14
+	title = lr_france.14.t
+	desc = lr_france.14.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.14.a
+		news_event = { id = lr_gnews.5 days = 1 }
+		ai_chance = { factor = 34 }
+		custom_effect_tooltip = LR_tt_jacobin
+		lr_fra_regime_jacobin = yes
+		set_country_flag = LR_route_jacobin
+		lr_fra_init_conservative = yes
+		set_variable = { LR_seats = 247 }
+		lr_fra_sync_seats = yes
+		mark_focus_tree_layout_dirty = yes
+		promote_character = LR_FRA_blum
+	}
+
+	option = {
+		name = lr_france.14.b
+		news_event = { id = lr_gnews.5 days = 1 }
+		ai_chance = { factor = 33 }
+		custom_effect_tooltip = LR_tt_girondin
+		lr_fra_regime_girondin = yes
+		set_country_flag = LR_route_girondin
+		lr_fra_init_conservative = yes
+		set_variable = { LR_seats = 141 }
+		lr_fra_sync_seats = yes
+		mark_focus_tree_layout_dirty = yes
+	}
+
+	option = {
+		name = lr_france.14.c
+		news_event = { id = lr_gnews.5 days = 1 }
+		ai_chance = { factor = 33 }
+		custom_effect_tooltip = LR_tt_marais
+		lr_fra_regime_marais = yes
+		set_country_flag = LR_route_marais
+		lr_fra_init_revolutionary = yes
+		set_variable = { LR_seats = 222 }
+		lr_fra_sync_seats = yes
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+# 30. Who leads the Algerian expedition. "Anyone" opens the hidden route.
+country_event = {
+	id = lr_france.30
+	title = lr_france.30.t
+	desc = lr_france.30.d
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	immediate = {
+		lr_fra_algeria_campaign = yes
+	}
+
+	option = {
+		name = lr_france.30.a
+		ai_chance = { factor = 34 }
+		set_country_flag = LR_sent_loyal_general
+	}
+
+	option = {
+		name = lr_france.30.b
+		ai_chance = { factor = 33 }
+		set_country_flag = LR_sent_loyal_general
+	}
+
+	option = {
+		name = lr_france.30.c
+		ai_chance = { factor = 33 }
+		set_country_flag = LR_sent_loyal_general
+	}
+
+	option = {
+		name = lr_france.30.anyone
+		ai_chance = { factor = 0 }
+		set_country_flag = LR_sent_anyone
+	}
+}
+
+# 31. Algeria retaken by a loyal general.
+country_event = {
+	id = lr_france.31
+	title = lr_france.31.t
+	desc = lr_france.31.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		has_country_flag = LR_sent_loyal_general
+		has_country_flag = LR_algeria_pacified
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = lr_france.31.a
+		set_country_flag = LR_algeria_retaken
+	}
+}
+
+# 32. "Anyone" turns out to be Napoleon Bonaparte.
+country_event = {
+	id = lr_france.32
+	title = lr_france.32.t
+	desc = lr_france.32.d
+	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		has_country_flag = LR_sent_anyone
+		has_country_flag = LR_algeria_pacified
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = lr_france.32.a
+		custom_effect_tooltip = LR_tt_napoleon
+		set_country_flag = LR_algeria_retaken
+		clr_country_flag = LR_route_jacobin
+		set_country_flag = LR_route_napoleon
+		mark_focus_tree_layout_dirty = yes
+		lr_fra_regime_napoleon = yes
+		promote_character = {
+			character = FRA_napoleon_bonaparte
+			ideology = conservatism
+		}
+		news_event = { id = lr_news.2 days = 1 }
+	}
+}
+
+# 33. Napoleon refuses the crown.
+country_event = {
+	id = lr_france.33
+	title = lr_france.33.t
+	desc = lr_france.33.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.33.a
+		custom_effect_tooltip = LR_tt_guardian
+		set_country_flag = LR_route_guardian
+		mark_focus_tree_layout_dirty = yes
+		lr_fra_regime_guardian = yes
+		set_variable = { LR_seats = 275 }
+		lr_fra_sync_seats = yes
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		add_stability = 0.05
+		news_event = { id = lr_news.3 days = 1 }
+	}
+}
+
+# 40. Resistance boils over.
+country_event = {
+	id = lr_france.40
+	title = lr_france.40.t
+	desc = lr_france.40.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.40.a
+		add_stability = -0.1
+		add_political_power = -50
+	}
+}
+
+# World news.
+news_event = {
+	id = lr_news.1
+	title = lr_news.1.t
+	desc = lr_news.1.d
+	picture = GFX_news_event_generic_read_write
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lr_news.1.a
+	}
+}
+
+news_event = {
+	id = lr_news.2
+	title = lr_news.2.t
+	desc = lr_news.2.d
+	picture = GFX_news_event_generic_read_write
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lr_news.2.a
+	}
+}
+
+news_event = {
+	id = lr_news.3
+	title = lr_news.3.t
+	desc = lr_news.3.d
+	picture = GFX_news_event_generic_read_write
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lr_news.3.a
+	}
+}
+
+country_event = {
+	id = lr_france.41
+	title = lr_france.41.t
+	desc = lr_france.41.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.41.a
+		every_owned_state = {
+			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			add_core_of = ROOT
+		}
+		add_war_support = 0.03
+		add_stability = -0.02
+	}
+
+	option = {
+		name = lr_france.41.b
+		every_owned_state = {
+			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			add_core_of = ROOT
+		}
+		add_political_power = -50
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = lr_france.42
+	title = lr_france.42.t
+	desc = lr_france.42.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.42.a
+		every_owned_state = {
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			add_core_of = ROOT
+		}
+		add_war_support = 0.02
+		add_stability = -0.02
+	}
+
+	option = {
+		name = lr_france.42.b
+		every_owned_state = {
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			add_core_of = ROOT
+		}
+		add_political_power = -30
+		add_stability = 0.02
+	}
+}
+
+# 50. The commune congress: a central committee, or a federation of free communes.
+country_event = {
+	id = lr_france.50
+	title = lr_france.50.t
+	desc = lr_france.50.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.50.a
+		ai_chance = { factor = 70 }
+		custom_effect_tooltip = LR_tt_communist
+		lr_fra_regime_communist = yes
+		set_country_flag = LR_route_communist
+		lr_fra_init_conservative = yes
+		mark_focus_tree_layout_dirty = yes
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = lr_france.50.b
+		ai_chance = { factor = 30 }
+		custom_effect_tooltip = LR_tt_anarchist
+		lr_fra_regime_anarchist = yes
+		set_country_flag = LR_route_anarchist
+		lr_fra_init_conservative = yes
+		mark_focus_tree_layout_dirty = yes
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		promote_character = LR_FRA_besnard
+		set_cosmetic_tag = LR_FRA_federation
+		news_event = { id = lr_gnews.19 days = 1 }
+	}
+}
+
+# 51. The marshal's coup: discontent broke the government, whatever route it was on.
+country_event = {
+	id = lr_france.51
+	title = lr_france.51.t
+	desc = lr_france.51.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = LR_route_orleans
+		clr_country_flag = LR_route_bourbon
+		clr_country_flag = LR_route_communist
+		clr_country_flag = LR_route_anarchist
+		clr_country_flag = LR_route_jacobin
+		clr_country_flag = LR_route_girondin
+		clr_country_flag = LR_route_marais
+		clr_country_flag = LR_route_napoleon
+		clr_country_flag = LR_route_empire
+		clr_country_flag = LR_route_guardian
+		clr_country_flag = LR_route_red
+		set_country_flag = LR_route_petain
+		set_variable = { LR_uprisings = 0 }
+		set_variable = { LR_op_paris = 40 }
+		set_variable = { LR_op_nord = 40 }
+		set_variable = { LR_op_vendee = 40 }
+		set_variable = { LR_op_midi = 40 }
+		set_variable = { LR_op_rhone = 40 }
+		set_variable = { LR_op_lorraine = 40 }
+		set_variable = { LR_op_africa = 40 }
+		lr_fra_sync_opposition = yes
+		lr_fra_regime_petain = yes
+		lr_fra_ruler_petain = yes
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		promote_character = LR_FRA_petain
+		set_cosmetic_tag = LR_FRA_etat
+		mark_focus_tree_layout_dirty = yes
+		news_event = { id = lr_gnews.18 days = 1 }
+	}
+
+	option = {
+		name = lr_france.51.a
+		custom_effect_tooltip = LR_tt_petain
+		add_stability = 0.05
+		add_war_support = 0.03
+	}
+
+	option = {
+		name = lr_france.51.b
+		custom_effect_tooltip = LR_tt_petain
+		add_stability = 0.1
+		add_political_power = -50
+	}
+}
+
+# 52. Red Napoleon: before the crown, he turns to the left.
+country_event = {
+	id = lr_france.52
+	title = lr_france.52.t
+	desc = lr_france.52.d
+	picture = GFX_report_event_generic_riot
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.52.a
+		custom_effect_tooltip = LR_tt_red
+		set_country_flag = LR_route_red
+		mark_focus_tree_layout_dirty = yes
+		lr_fra_regime_red = yes
+		lr_fra_ruler_red = yes
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_popularities = {
+			communism = 55
+			neutrality = 25
+			democratic = 15
+			fascism = 5
+		}
+		promote_character = {
+			character = FRA_napoleon_bonaparte
+			ideology = leninism
+		}
+		set_cosmetic_tag = LR_FRA_red
+		news_event = { id = lr_gnews.20 days = 1 }
+	}
+}
+
+# 53. The collaboration ending: autonomy, and a long silence.
+country_event = {
+	id = lr_france.53
+	title = lr_france.53.t
+	desc = lr_france.53.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.53.a
+		OVERLORD = {
+			set_autonomy = {
+				target = ROOT
+				autonomous_state = autonomy_dominion
+			}
+		}
+		add_stability = 0.1
+		set_country_flag = LR_ending_collaboration
+	}
+}
+
+# 54. The liberation ending: Paris frees itself.
+country_event = {
+	id = lr_france.54
+	title = lr_france.54.t
+	desc = lr_france.54.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_france.54.a
+		OVERLORD = { end_puppet = ROOT }
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		drop_cosmetic_tag = yes
+		add_stability = 0.15
+		add_war_support = 0.2
+		set_country_flag = LR_ending_liberation
+		news_event = { id = lr_gnews.21 days = 1 }
+	}
+}
+
+# 60. The revolution breaks out, a hundred days after the king chose to fight on. The election follows on dates.
+country_event = {
+	id = lr_france.60
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = LR_revolution_done
+		lr_super_revolution = yes
+		news_event = { id = lr_gnews.1 days = 1 }
+		country_event = { id = lr_france.11 days = 40 }
+		country_event = { id = lr_france.12 days = 70 }
+		country_event = { id = lr_france.13 days = 100 }
+	}
+}
+
+# 61. The officers move, forty-five days after the king gave Algeria up.
+country_event = {
+	id = lr_france.61
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = LR_coup_started
+		add_political_power = -25
+		country_event = { id = lr_novel.201 }
+	}
+}

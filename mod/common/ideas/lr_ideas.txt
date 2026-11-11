@@ -1,0 +1,123 @@
+ideas = {
+	country = {
+		LR_FRA_defeat = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+				war_support_factor = 0.1
+			}
+		}
+
+		LR_JAP_han_autonomy = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.15
+			}
+		}
+
+		# France: these show the player which stage or route they are on.
+		LR_FRA_algerian_crisis = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+
+		LR_FRA_resistance_high = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+			}
+		}
+
+		# The cabinet has lost its majority in the Chamber.
+		LR_FRA_minority = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		LR_FRA_gov_provisional = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		LR_FRA_gov_orleans = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+
+		LR_FRA_gov_bourbon = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		LR_FRA_gov_communist = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				war_support_factor = 0.05
+			}
+		}
+
+		LR_FRA_gov_jacobin = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		LR_FRA_gov_girondin = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+
+		LR_FRA_gov_marais = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		LR_FRA_gov_guardian = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		LR_FRA_gov_napoleon = {
+			removal_cost = -1
+			picture = generic_disjointed_gov
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+	}
+}

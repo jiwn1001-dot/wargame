@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_lr_seat_left"
+		texturefile = "gfx/interface/lr/lr_seat_left.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_seat_centre"
+		texturefile = "gfx/interface/lr/lr_seat_centre.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_seat_right"
+		texturefile = "gfx/interface/lr/lr_seat_right.dds"
+	}
+}
