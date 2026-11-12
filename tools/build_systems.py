@@ -830,6 +830,8 @@ if __name__ == "__main__":
     build_diplomacy.main()
     import build_eventwindow
     build_eventwindow.main()
+    import build_rules
+    build_rules.main()
     states = check_regions()
     build_seat_art()
     build_modifier()

@@ -2129,7 +2129,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_restored
 		icon = GFX_goal_generic_national_unity
-		x = 71
+		x = 83
 		y = 0
 		allow_branch = { has_country_flag = LR_route_bourbon }
 		available = {
@@ -2154,7 +2154,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_family_pact
 		icon = GFX_goal_generic_major_alliance
-		x = 56
+		x = 63
 		y = 5
 		prerequisite = { focus = LR_BOU_versailles_return }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2181,7 +2181,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_two_sicilies
 		icon = GFX_goal_generic_alliance
-		x = 57
+		x = 64
 		y = 6
 		prerequisite = { focus = LR_BOU_family_pact }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2207,7 +2207,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_italy
 		icon = GFX_goal_generic_demand_territory
-		x = 57
+		x = 64
 		y = 8
 		prerequisite = { focus = LR_BOU_italian_arms }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2240,7 +2240,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_diplomatic_rearm
 		icon = GFX_goal_generic_military_deal
-		x = 65
+		x = 77
 		y = 2
 		prerequisite = { focus = LR_BOU_poor_relief focus = LR_BOU_guilds }
 		mutually_exclusive = { focus = LR_BOU_open_rearm }
@@ -2287,7 +2287,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_open_rearm
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 67
+		x = 79
 		y = 2
 		prerequisite = { focus = LR_BOU_poor_relief focus = LR_BOU_guilds }
 		mutually_exclusive = { focus = LR_BOU_diplomatic_rearm }
@@ -2335,7 +2335,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_algeria
 		icon = GFX_goal_generic_occupy_start_war
-		x = 64
+		x = 76
 		y = 5
 		prerequisite = { focus = LR_BOU_versailles_return }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2367,7 +2367,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_rhine
 		icon = GFX_goal_generic_major_war
-		x = 64
+		x = 76
 		y = 6
 		prerequisite = { focus = LR_BOU_algeria }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2398,7 +2398,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_danube
 		icon = GFX_goal_generic_major_war
-		x = 59
+		x = 71
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2424,7 +2424,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_channel
 		icon = GFX_goal_generic_major_war
-		x = 61
+		x = 73
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2451,7 +2451,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_russia
 		icon = GFX_goal_generic_major_war
-		x = 61
+		x = 73
 		y = 8
 		prerequisite = { focus = LR_BOU_channel }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -4780,7 +4780,7 @@ focus_tree = {
 	focus = {
 		id = LR_ORL_latin_front
 		icon = GFX_goal_generic_military_deal
-		x = 73
+		x = 77
 		y = 8
 		prerequisite = { focus = LR_ORL_neutral_ties }
 		mutually_exclusive = { focus = LR_ORL_ottoman_talks }
@@ -4801,19 +4801,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { is_in_faction = no }
-				create_faction = LR_revanche_pact
-			}
-			if = {
-				limit = { SPR = { exists = yes } }
-				SPR = { country_event = { id = lr_dipl.1 days = 3 } }
-			}
-			else_if = {
-				limit = { CRL = { exists = yes } }
-				CRL = { country_event = { id = lr_dipl.1 days = 3 } }
-			}
-			else_if = {
-				limit = { ESR = { exists = yes } }
-				ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+				create_faction = LR_francophonie
 			}
 			custom_effect_tooltip = LR_tt_s_LR_ORL_latin_front
 			hidden_effect = {
@@ -4826,7 +4814,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_reims
 		icon = GFX_goal_generic_national_unity
-		x = 75
+		x = 87
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -4854,7 +4842,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_church
 		icon = GFX_goal_generic_improve_relations
-		x = 73
+		x = 85
 		y = 7
 		prerequisite = { focus = LR_BOU_jesuits_return }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -4881,7 +4869,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_peers
 		icon = GFX_goal_generic_political_pressure
-		x = 75
+		x = 87
 		y = 2
 		prerequisite = { focus = LR_BOU_reims }
 		mutually_exclusive = { focus = LR_BOU_provincial_estates }
@@ -4907,7 +4895,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_colonial_talks
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 55
+		x = 62
 		y = 6
 		prerequisite = { focus = LR_BOU_family_pact }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -4933,7 +4921,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_mediterranean_pact
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 55
+		x = 62
 		y = 7
 		prerequisite = { focus = LR_BOU_colonial_talks }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -4955,7 +4943,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_latin_league
 		icon = GFX_goal_generic_major_alliance
-		x = 55
+		x = 62
 		y = 8
 		prerequisite = { focus = LR_BOU_mediterranean_pact }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -4975,19 +4963,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { is_in_faction = no }
-				create_faction = LR_latin_league
-			}
-			if = {
-				limit = { SPR = { exists = yes } }
-				SPR = { country_event = { id = lr_dipl.1 days = 3 } }
-			}
-			else_if = {
-				limit = { CRL = { exists = yes } }
-				CRL = { country_event = { id = lr_dipl.1 days = 3 } }
-			}
-			else_if = {
-				limit = { ESR = { exists = yes } }
-				ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+				create_faction = LR_francophonie
 			}
 			if = {
 				limit = { has_completed_focus = LR_BOU_family_pact }
@@ -5004,7 +4980,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_family_council
 		icon = GFX_goal_generic_military_sphere
-		x = 74
+		x = 86
 		y = 3
 		prerequisite = { focus = LR_BOU_provincial_estates focus = LR_BOU_peers }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -5216,14 +5192,10 @@ focus_tree = {
 			has_completed_focus = LR_COM_world_revolution
 		}
 		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
-		cost = 5
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = {
-				limit = { is_in_faction = no }
-				create_faction = LR_red_pact
-			}
-			SOV = { country_event = { id = lr_dipl.1 days = 3 } }
+			SOV = { add_opinion_modifier = { target = ROOT modifier = medium_increase } }
 			custom_effect_tooltip = LR_tt_s_LR_COM_russian_treaty
 			hidden_effect = {
 				add_to_variable = { LR_reg_political_power_gain = 0.03 }
@@ -5940,8 +5912,8 @@ focus_tree = {
 		id = LR_ORL_suppress
 		icon = GFX_goal_generic_political_pressure
 		x = 71
-		y = 11
-		prerequisite = { focus = LR_ORL_colonels_plot }
+		y = 13
+		prerequisite = { focus = LR_ORL_day_of_revenge }
 		allow_branch = { has_country_flag = LR_route_orleans }
 		available = {
 			custom_trigger_tooltip = {
@@ -5961,7 +5933,7 @@ focus_tree = {
 		id = LR_ORL_uproot
 		icon = GFX_goal_generic_special_forces
 		x = 71
-		y = 12
+		y = 14
 		prerequisite = { focus = LR_ORL_suppress }
 		allow_branch = { has_country_flag = LR_route_orleans }
 		available = {
@@ -5996,7 +5968,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_suppress
 		icon = GFX_goal_generic_political_pressure
-		x = 75
+		x = 87
 		y = 7
 		prerequisite = { focus = LR_BOU_jesuits_return }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -6017,7 +5989,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_uproot
 		icon = GFX_goal_generic_special_forces
-		x = 74
+		x = 86
 		y = 8
 		prerequisite = { focus = LR_BOU_church }
 		prerequisite = { focus = LR_BOU_suppress }
@@ -9894,6 +9866,1382 @@ focus_tree = {
 	}
 
 	focus = {
+		id = LR_COM_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 71
+		y = 9
+		prerequisite = { focus = LR_COM_bread_and_coal }
+		allow_branch = { has_country_flag = LR_route_communist }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_communist_tt
+				has_country_flag = LR_route_communist
+			}
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_second_international
+			}
+		}
+	}
+
+	focus = {
+		id = LR_COM_invite_esr
+		icon = GFX_goal_generic_improve_relations
+		x = 71
+		y = 10
+		prerequisite = { focus = LR_COM_found_bloc }
+		allow_branch = { has_country_flag = LR_route_communist }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_communist_tt
+				has_country_flag = LR_route_communist
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			ESR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			ESR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_ANA_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 65
+		y = 6
+		prerequisite = { focus = LR_ANA_platform_debate }
+		allow_branch = { has_country_flag = LR_route_anarchist }
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_second_international
+			}
+		}
+	}
+
+	focus = {
+		id = LR_ANA_invite_esr
+		icon = GFX_goal_generic_improve_relations
+		x = 65
+		y = 7
+		prerequisite = { focus = LR_ANA_found_bloc }
+		allow_branch = { has_country_flag = LR_route_anarchist }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			ESR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			ESR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_RED_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 45
+		y = 12
+		prerequisite = { focus = LR_RED_red_epaulettes }
+		allow_branch = { has_country_flag = LR_route_red }
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_second_international
+			}
+		}
+	}
+
+	focus = {
+		id = LR_RED_invite_esr
+		icon = GFX_goal_generic_improve_relations
+		x = 45
+		y = 13
+		prerequisite = { focus = LR_RED_found_bloc }
+		allow_branch = { has_country_flag = LR_route_red }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			ESR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			ESR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_JAC_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 46
+		y = 7
+		prerequisite = { focus = LR_JAC_robespierre_portrait }
+		allow_branch = { has_country_flag = LR_route_jacobin }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_jacobin_tt
+				has_country_flag = LR_route_jacobin
+			}
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_popular_front
+			}
+		}
+	}
+
+	focus = {
+		id = LR_JAC_invite_esr
+		icon = GFX_goal_generic_improve_relations
+		x = 45
+		y = 8
+		prerequisite = { focus = LR_JAC_found_bloc }
+		allow_branch = { has_country_flag = LR_route_jacobin }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_jacobin_tt
+				has_country_flag = LR_route_jacobin
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			ESR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			ESR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_JAC_invite_cna
+		icon = GFX_goal_generic_improve_relations
+		x = 47
+		y = 8
+		prerequisite = { focus = LR_JAC_found_bloc }
+		allow_branch = { has_country_flag = LR_route_jacobin }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_jacobin_tt
+				has_country_flag = LR_route_jacobin
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_america_free
+				CNA = {
+					exists = yes
+					has_war = no
+				}
+				USA = { exists = no }
+				NOT = { has_global_flag = LR_cna_canada }
+			}
+			CNA = { NOT = { is_in_faction_with = ROOT } }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CNA = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_GIR_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 48
+		y = 7
+		prerequisite = { focus = LR_GIR_atlantic_company }
+		allow_branch = { has_country_flag = LR_route_girondin }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_girondin_tt
+				has_country_flag = LR_route_girondin
+			}
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_popular_front
+			}
+		}
+	}
+
+	focus = {
+		id = LR_GIR_invite_esr
+		icon = GFX_goal_generic_improve_relations
+		x = 47
+		y = 8
+		prerequisite = { focus = LR_GIR_found_bloc }
+		allow_branch = { has_country_flag = LR_route_girondin }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_girondin_tt
+				has_country_flag = LR_route_girondin
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			ESR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			ESR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_GIR_invite_cna
+		icon = GFX_goal_generic_improve_relations
+		x = 49
+		y = 8
+		prerequisite = { focus = LR_GIR_found_bloc }
+		allow_branch = { has_country_flag = LR_route_girondin }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_girondin_tt
+				has_country_flag = LR_route_girondin
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_america_free
+				CNA = {
+					exists = yes
+					has_war = no
+				}
+				USA = { exists = no }
+				NOT = { has_global_flag = LR_cna_canada }
+			}
+			CNA = { NOT = { is_in_faction_with = ROOT } }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CNA = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_MAR_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 62
+		y = 5
+		prerequisite = { focus = LR_MAR_lafayette_heir }
+		allow_branch = { has_country_flag = LR_route_marais }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_marais_tt
+				has_country_flag = LR_route_marais
+			}
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_popular_front
+			}
+		}
+	}
+
+	focus = {
+		id = LR_MAR_invite_esr
+		icon = GFX_goal_generic_improve_relations
+		x = 61
+		y = 6
+		prerequisite = { focus = LR_MAR_found_bloc }
+		allow_branch = { has_country_flag = LR_route_marais }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_marais_tt
+				has_country_flag = LR_route_marais
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			ESR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			ESR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_MAR_invite_cna
+		icon = GFX_goal_generic_improve_relations
+		x = 63
+		y = 6
+		prerequisite = { focus = LR_MAR_found_bloc }
+		allow_branch = { has_country_flag = LR_route_marais }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_marais_tt
+				has_country_flag = LR_route_marais
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_america_free
+				CNA = {
+					exists = yes
+					has_war = no
+				}
+				USA = { exists = no }
+				NOT = { has_global_flag = LR_cna_canada }
+			}
+			CNA = { NOT = { is_in_faction_with = ROOT } }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CNA = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_GUA_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 46
+		y = 10
+		prerequisite = { focus = LR_GUA_first_address }
+		allow_branch = { has_country_flag = LR_route_guardian }
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_popular_front
+			}
+		}
+	}
+
+	focus = {
+		id = LR_GUA_invite_esr
+		icon = GFX_goal_generic_improve_relations
+		x = 47
+		y = 11
+		prerequisite = { focus = LR_GUA_found_bloc }
+		allow_branch = { has_country_flag = LR_route_guardian }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			ESR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			ESR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ESR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_GUA_invite_cna
+		icon = GFX_goal_generic_improve_relations
+		x = 45
+		y = 11
+		prerequisite = { focus = LR_GUA_found_bloc }
+		allow_branch = { has_country_flag = LR_route_guardian }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_america_free
+				CNA = {
+					exists = yes
+					has_war = no
+				}
+				USA = { exists = no }
+				NOT = { has_global_flag = LR_cna_canada }
+			}
+			CNA = { NOT = { is_in_faction_with = ROOT } }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CNA = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_ORL_invite_crl
+		icon = GFX_goal_generic_improve_relations
+		x = 71
+		y = 9
+		prerequisite = { focus = LR_ORL_latin_front }
+		allow_branch = { has_country_flag = LR_route_orleans }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_orleans_tt
+				has_country_flag = LR_route_orleans
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			CRL = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			CRL = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CRL = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_ORL_invite_spr
+		icon = GFX_goal_generic_improve_relations
+		x = 73
+		y = 9
+		prerequisite = { focus = LR_ORL_latin_front }
+		allow_branch = { has_country_flag = LR_route_orleans }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_orleans_tt
+				has_country_flag = LR_route_orleans
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			SPR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			SPR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			SPR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_ORL_invite_tts
+		icon = GFX_goal_generic_improve_relations
+		x = 75
+		y = 9
+		prerequisite = { focus = LR_ORL_latin_front }
+		allow_branch = { has_country_flag = LR_route_orleans }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_orleans_tt
+				has_country_flag = LR_route_orleans
+			}
+			TTS = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+			TTS = { has_war = no }
+		}
+		bypass = {
+			TTS = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TTS = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_ORL_invite_pap
+		icon = GFX_goal_generic_improve_relations
+		x = 77
+		y = 9
+		prerequisite = { focus = LR_ORL_latin_front }
+		allow_branch = { has_country_flag = LR_route_orleans }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_orleans_tt
+				has_country_flag = LR_route_orleans
+			}
+			PAP = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+			PAP = { has_war = no }
+		}
+		bypass = {
+			PAP = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			PAP = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_ORL_ottoman_contact
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 79
+		y = 9
+		prerequisite = { focus = LR_ORL_latin_front }
+		allow_branch = { has_country_flag = LR_route_orleans }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_orleans_tt
+				has_country_flag = LR_route_orleans
+			}
+			TUR = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+			custom_effect_tooltip = LR_tt_s_LR_ORL_ottoman_contact
+			hidden_effect = {
+				add_to_variable = { LR_reg_political_power_gain = 0.01 }
+				force_update_dynamic_modifier = yes
+			}
+		}
+	}
+
+	focus = {
+		id = LR_ORL_ottoman_win
+		icon = GFX_goal_generic_major_alliance
+		x = 79
+		y = 10
+		prerequisite = { focus = LR_ORL_ottoman_contact }
+		allow_branch = { has_country_flag = LR_route_orleans }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_orleans_tt
+				has_country_flag = LR_route_orleans
+			}
+			TUR = {
+				exists = yes
+				is_subject = no
+				NOT = { has_war_with = ROOT }
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = {
+				if = {
+					limit = { is_in_faction = yes }
+					leave_faction = yes
+				}
+			}
+			TUR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_ORL_invite_balkans
+		icon = GFX_goal_generic_major_alliance
+		x = 81
+		y = 9
+		prerequisite = { focus = LR_ORL_latin_front }
+		allow_branch = { has_country_flag = LR_route_orleans }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_orleans_tt
+				has_country_flag = LR_route_orleans
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_balkan_pact_won
+				has_global_flag = LR_balkan_pact_won
+			}
+			OR = {
+				YUG = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				GRE = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				ROM = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+			}
+		}
+		bypass = {
+			has_global_flag = LR_bulgaria_hegemon
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { YUG = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				YUG = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { GRE = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				GRE = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { ROM = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				ROM = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+		}
+	}
+
+	focus = {
+		id = LR_BOU_invite_crl
+		icon = GFX_goal_generic_improve_relations
+		x = 55
+		y = 9
+		prerequisite = { focus = LR_BOU_latin_league }
+		allow_branch = { has_country_flag = LR_route_bourbon }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_bourbon_tt
+				has_country_flag = LR_route_bourbon
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			CRL = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			CRL = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CRL = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_BOU_invite_spr
+		icon = GFX_goal_generic_improve_relations
+		x = 57
+		y = 9
+		prerequisite = { focus = LR_BOU_latin_league }
+		allow_branch = { has_country_flag = LR_route_bourbon }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_bourbon_tt
+				has_country_flag = LR_route_bourbon
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			SPR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			SPR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			SPR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_BOU_invite_tts
+		icon = GFX_goal_generic_improve_relations
+		x = 59
+		y = 9
+		prerequisite = { focus = LR_BOU_latin_league }
+		allow_branch = { has_country_flag = LR_route_bourbon }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_bourbon_tt
+				has_country_flag = LR_route_bourbon
+			}
+			TTS = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+			TTS = { has_war = no }
+		}
+		bypass = {
+			TTS = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TTS = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_BOU_invite_pap
+		icon = GFX_goal_generic_improve_relations
+		x = 61
+		y = 9
+		prerequisite = { focus = LR_BOU_latin_league }
+		allow_branch = { has_country_flag = LR_route_bourbon }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_bourbon_tt
+				has_country_flag = LR_route_bourbon
+			}
+			PAP = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+			PAP = { has_war = no }
+		}
+		bypass = {
+			PAP = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			PAP = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_BOU_ottoman_contact
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 63
+		y = 9
+		prerequisite = { focus = LR_BOU_latin_league }
+		allow_branch = { has_country_flag = LR_route_bourbon }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_bourbon_tt
+				has_country_flag = LR_route_bourbon
+			}
+			TUR = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+			custom_effect_tooltip = LR_tt_s_LR_BOU_ottoman_contact
+			hidden_effect = {
+				add_to_variable = { LR_reg_political_power_gain = 0.01 }
+				force_update_dynamic_modifier = yes
+			}
+		}
+	}
+
+	focus = {
+		id = LR_BOU_ottoman_win
+		icon = GFX_goal_generic_major_alliance
+		x = 63
+		y = 10
+		prerequisite = { focus = LR_BOU_ottoman_contact }
+		allow_branch = { has_country_flag = LR_route_bourbon }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_bourbon_tt
+				has_country_flag = LR_route_bourbon
+			}
+			TUR = {
+				exists = yes
+				is_subject = no
+				NOT = { has_war_with = ROOT }
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = {
+				if = {
+					limit = { is_in_faction = yes }
+					leave_faction = yes
+				}
+			}
+			TUR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_BOU_invite_balkans
+		icon = GFX_goal_generic_major_alliance
+		x = 65
+		y = 9
+		prerequisite = { focus = LR_BOU_latin_league }
+		allow_branch = { has_country_flag = LR_route_bourbon }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_route_bourbon_tt
+				has_country_flag = LR_route_bourbon
+			}
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_balkan_pact_won
+				has_global_flag = LR_balkan_pact_won
+			}
+			OR = {
+				YUG = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				GRE = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				ROM = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+			}
+		}
+		bypass = {
+			has_global_flag = LR_bulgaria_hegemon
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { YUG = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				YUG = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { GRE = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				GRE = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { ROM = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				ROM = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+		}
+	}
+
+	focus = {
+		id = LR_PET_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 78
+		y = 7
+		prerequisite = { focus = LR_PET_laval }
+		allow_branch = { has_country_flag = LR_route_petain }
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_francophonie
+			}
+		}
+	}
+
+	focus = {
+		id = LR_PET_invite_crl
+		icon = GFX_goal_generic_improve_relations
+		x = 73
+		y = 8
+		prerequisite = { focus = LR_PET_found_bloc }
+		allow_branch = { has_country_flag = LR_route_petain }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			CRL = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			CRL = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CRL = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_PET_invite_spr
+		icon = GFX_goal_generic_improve_relations
+		x = 75
+		y = 8
+		prerequisite = { focus = LR_PET_found_bloc }
+		allow_branch = { has_country_flag = LR_route_petain }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_spain_at_peace
+				NOT = { has_global_flag = LR_spain_civil_war }
+			}
+			SPR = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			NOT = { has_global_flag = LR_spain_civil_war }
+			SPR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			SPR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_PET_invite_tts
+		icon = GFX_goal_generic_improve_relations
+		x = 77
+		y = 8
+		prerequisite = { focus = LR_PET_found_bloc }
+		allow_branch = { has_country_flag = LR_route_petain }
+		available = {
+			TTS = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+			TTS = { has_war = no }
+		}
+		bypass = {
+			TTS = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TTS = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_PET_invite_pap
+		icon = GFX_goal_generic_improve_relations
+		x = 79
+		y = 8
+		prerequisite = { focus = LR_PET_found_bloc }
+		allow_branch = { has_country_flag = LR_route_petain }
+		available = {
+			PAP = {
+				exists = yes
+				is_subject = no
+				NOT = { is_in_faction_with = ROOT }
+			}
+			PAP = { has_war = no }
+		}
+		bypass = {
+			PAP = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			PAP = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_PET_ottoman_contact
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 81
+		y = 8
+		prerequisite = { focus = LR_PET_found_bloc }
+		allow_branch = { has_country_flag = LR_route_petain }
+		available = {
+			TUR = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+			custom_effect_tooltip = LR_tt_s_LR_PET_ottoman_contact
+			hidden_effect = {
+				add_to_variable = { LR_reg_political_power_gain = 0.01 }
+				force_update_dynamic_modifier = yes
+			}
+		}
+	}
+
+	focus = {
+		id = LR_PET_ottoman_win
+		icon = GFX_goal_generic_major_alliance
+		x = 81
+		y = 9
+		prerequisite = { focus = LR_PET_ottoman_contact }
+		allow_branch = { has_country_flag = LR_route_petain }
+		available = {
+			TUR = {
+				exists = yes
+				is_subject = no
+				NOT = { has_war_with = ROOT }
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = {
+				if = {
+					limit = { is_in_faction = yes }
+					leave_faction = yes
+				}
+			}
+			TUR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_PET_invite_balkans
+		icon = GFX_goal_generic_major_alliance
+		x = 83
+		y = 8
+		prerequisite = { focus = LR_PET_found_bloc }
+		allow_branch = { has_country_flag = LR_route_petain }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_balkan_pact_won
+				has_global_flag = LR_balkan_pact_won
+			}
+			OR = {
+				YUG = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				GRE = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				ROM = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+			}
+		}
+		bypass = {
+			has_global_flag = LR_bulgaria_hegemon
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { YUG = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				YUG = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { GRE = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				GRE = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { ROM = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				ROM = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+		}
+	}
+
+	focus = {
+		id = LR_NAP_found_bloc
+		icon = GFX_goal_generic_major_alliance
+		x = 46
+		y = 10
+		prerequisite = { focus = LR_NAP_new_nobles }
+		allow_branch = { has_country_flag = LR_route_empire }
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { is_in_faction = no }
+				create_faction = LR_deluge
+			}
+		}
+	}
+
+	focus = {
+		id = LR_NAP_ottoman_contact
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 47
+		y = 11
+		prerequisite = { focus = LR_NAP_found_bloc }
+		allow_branch = { has_country_flag = LR_route_empire }
+		available = {
+			TUR = {
+				exists = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = { add_opinion_modifier = { target = ROOT modifier = large_increase } }
+			custom_effect_tooltip = LR_tt_s_LR_NAP_ottoman_contact
+			hidden_effect = {
+				add_to_variable = { LR_reg_political_power_gain = 0.01 }
+				force_update_dynamic_modifier = yes
+			}
+		}
+	}
+
+	focus = {
+		id = LR_NAP_ottoman_win
+		icon = GFX_goal_generic_major_alliance
+		x = 47
+		y = 12
+		prerequisite = { focus = LR_NAP_ottoman_contact }
+		allow_branch = { has_country_flag = LR_route_empire }
+		available = {
+			TUR = {
+				exists = yes
+				is_subject = no
+				NOT = { has_war_with = ROOT }
+				NOT = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+			TUR = { exists = no }
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			TUR = {
+				if = {
+					limit = { is_in_faction = yes }
+					leave_faction = yes
+				}
+			}
+			TUR = { country_event = { id = lr_dipl.1 days = 3 } }
+		}
+	}
+
+	focus = {
+		id = LR_NAP_invite_balkans
+		icon = GFX_goal_generic_major_alliance
+		x = 45
+		y = 11
+		prerequisite = { focus = LR_NAP_found_bloc }
+		allow_branch = { has_country_flag = LR_route_empire }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = LR_tt_balkan_pact_won
+				has_global_flag = LR_balkan_pact_won
+			}
+			OR = {
+				YUG = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				GRE = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+				ROM = {
+					exists = yes
+					is_subject = no
+					NOT = { is_in_faction_with = ROOT }
+				}
+			}
+		}
+		bypass = {
+			has_global_flag = LR_bulgaria_hegemon
+		}
+		search_filters = { FOCUS_FILTER_LR_DIPLOMACY }
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = {
+				limit = { YUG = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				YUG = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { GRE = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				GRE = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+			if = {
+				limit = { ROM = { 	exists = yes 	is_subject = no 	NOT = { is_in_faction_with = ROOT } } }
+				ROM = { country_event = { id = lr_dipl.1 days = 3 } }
+			}
+		}
+	}
+
+	focus = {
 		id = LR_ORL_royal_council
 		icon = GFX_goal_generic_political_pressure
 		x = 72
@@ -9989,7 +11337,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_poor_relief
 		icon = GFX_goal_generic_propaganda
-		x = 65
+		x = 77
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
 		mutually_exclusive = { focus = LR_BOU_guilds }
@@ -10022,7 +11370,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_guilds
 		icon = GFX_goal_generic_production
-		x = 67
+		x = 79
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
 		mutually_exclusive = { focus = LR_BOU_poor_relief }
@@ -10057,7 +11405,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_provincial_estates
 		icon = GFX_goal_generic_political_pressure
-		x = 73
+		x = 85
 		y = 2
 		prerequisite = { focus = LR_BOU_reims }
 		mutually_exclusive = { focus = LR_BOU_peers }
@@ -11699,7 +13047,7 @@ focus_tree = {
 	focus = {
 		id = LR_ORL_neutral_ties
 		icon = GFX_goal_generic_improve_relations
-		x = 72
+		x = 76
 		y = 7
 		prerequisite = { focus = LR_ORL_inspectors_out }
 		allow_branch = { has_country_flag = LR_route_orleans }
@@ -11726,7 +13074,7 @@ focus_tree = {
 	focus = {
 		id = LR_ORL_ottoman_talks
 		icon = GFX_goal_generic_dangerous_deal
-		x = 71
+		x = 75
 		y = 8
 		prerequisite = { focus = LR_ORL_neutral_ties }
 		mutually_exclusive = { focus = LR_ORL_latin_front }
@@ -11869,7 +13217,7 @@ focus_tree = {
 	focus = {
 		id = LR_MAR_vienna_talks
 		icon = GFX_goal_generic_improve_relations
-		x = 61
+		x = 65
 		y = 5
 		prerequisite = { focus = LR_MAR_lafayette_heir }
 		allow_branch = { has_country_flag = LR_route_marais }
@@ -11895,7 +13243,7 @@ focus_tree = {
 	focus = {
 		id = LR_MAR_london_model
 		icon = GFX_goal_generic_military_deal
-		x = 61
+		x = 65
 		y = 6
 		prerequisite = { focus = LR_MAR_vienna_talks }
 		allow_branch = { has_country_flag = LR_route_marais }
@@ -11988,7 +13336,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_italian_arms
 		icon = GFX_goal_generic_small_arms
-		x = 57
+		x = 64
 		y = 7
 		prerequisite = { focus = LR_BOU_two_sicilies }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12026,7 +13374,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_north_italy
 		icon = GFX_goal_generic_army_motorized
-		x = 57
+		x = 69
 		y = 9
 		prerequisite = { focus = LR_BOU_italy }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12055,7 +13403,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_italian_kingdom
 		icon = GFX_goal_generic_major_alliance
-		x = 57
+		x = 69
 		y = 10
 		prerequisite = { focus = LR_BOU_north_italy }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12094,7 +13442,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { is_in_faction = no }
-				create_faction = LR_latin_league
+				create_faction = LR_francophonie
 			}
 			add_to_faction = TTS
 			custom_effect_tooltip = LR_tt_s_LR_BOU_italian_kingdom
@@ -12254,7 +13602,7 @@ focus_tree = {
 	focus = {
 		id = LR_ORL_madrid_renounce
 		icon = GFX_goal_generic_improve_relations
-		x = 73
+		x = 83
 		y = 9
 		prerequisite = { focus = LR_ORL_latin_front }
 		allow_branch = { has_country_flag = LR_route_orleans }
@@ -12281,7 +13629,7 @@ focus_tree = {
 		id = LR_ORL_royal_security
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 71
-		y = 13
+		y = 15
 		prerequisite = { focus = LR_ORL_uproot }
 		allow_branch = { has_country_flag = LR_route_orleans }
 		available = {
@@ -12307,7 +13655,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_royal_manufactures
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 69
+		x = 81
 		y = 2
 		prerequisite = { focus = LR_BOU_guilds }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12343,7 +13691,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_peasant_credit
 		icon = GFX_goal_generic_construct_civilian
-		x = 63
+		x = 75
 		y = 2
 		prerequisite = { focus = LR_BOU_poor_relief }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12377,7 +13725,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_salic_law
 		icon = GFX_goal_generic_political_pressure
-		x = 74
+		x = 86
 		y = 4
 		prerequisite = { focus = LR_BOU_family_council }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12402,7 +13750,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_swiss_guard
 		icon = GFX_goal_generic_military_sphere
-		x = 77
+		x = 89
 		y = 2
 		prerequisite = { focus = LR_BOU_reims }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12450,7 +13798,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_lisbon_treaty
 		icon = GFX_goal_generic_improve_relations
-		x = 55
+		x = 67
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -12476,7 +13824,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_parish_registers
 		icon = GFX_goal_generic_national_unity
-		x = 74
+		x = 86
 		y = 9
 		prerequisite = { focus = LR_BOU_uproot }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13206,7 +14554,7 @@ focus_tree = {
 	focus = {
 		id = LR_MAR_hague_arbitration
 		icon = GFX_goal_generic_improve_relations
-		x = 61
+		x = 65
 		y = 7
 		prerequisite = { focus = LR_MAR_london_model }
 		allow_branch = { has_country_flag = LR_route_marais }
@@ -13716,7 +15064,7 @@ focus_tree = {
 		id = LR_ORL_rhine_crossed
 		icon = GFX_goal_generic_major_war
 		x = 69
-		y = 15
+		y = 16
 		prerequisite = { focus = LR_ORL_mobilisation_day }
 		allow_branch = { has_country_flag = LR_route_orleans }
 		available = {
@@ -13746,7 +15094,7 @@ focus_tree = {
 		id = LR_ORL_kings_europe
 		icon = GFX_goal_generic_national_unity
 		x = 69
-		y = 16
+		y = 17
 		prerequisite = { focus = LR_ORL_rhine_crossed }
 		allow_branch = { has_country_flag = LR_route_orleans }
 		available = {
@@ -13779,7 +15127,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_lit_de_justice
 		icon = GFX_goal_generic_political_pressure
-		x = 71
+		x = 83
 		y = 2
 		prerequisite = { focus = LR_BOU_restored }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13805,7 +15153,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_versailles_return
 		icon = GFX_goal_generic_national_unity
-		x = 71
+		x = 83
 		y = 4
 		prerequisite = { focus = LR_BOU_lit_de_justice }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13831,7 +15179,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_jesuits_return
 		icon = GFX_goal_generic_improve_relations
-		x = 71
+		x = 83
 		y = 6
 		prerequisite = { focus = LR_BOU_versailles_return }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13857,7 +15205,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_kings_bread
 		icon = GFX_goal_generic_construct_civilian
-		x = 71
+		x = 83
 		y = 8
 		prerequisite = { focus = LR_BOU_jesuits_return }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13883,7 +15231,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_madrid_letter
 		icon = GFX_goal_generic_major_alliance
-		x = 71
+		x = 83
 		y = 10
 		prerequisite = { focus = LR_BOU_kings_bread }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13909,7 +15257,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_sun_king
 		icon = GFX_goal_generic_military_sphere
-		x = 71
+		x = 83
 		y = 11
 		prerequisite = { focus = LR_BOU_madrid_letter }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13935,7 +15283,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_te_deum
 		icon = GFX_goal_generic_national_unity
-		x = 71
+		x = 83
 		y = 12
 		prerequisite = { focus = LR_BOU_sun_king }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13968,7 +15316,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_cousins_war
 		icon = GFX_goal_generic_major_alliance
-		x = 71
+		x = 83
 		y = 13
 		prerequisite = { focus = LR_BOU_te_deum }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -13998,7 +15346,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_holy_alliance
 		icon = GFX_goal_generic_major_alliance
-		x = 71
+		x = 83
 		y = 14
 		prerequisite = { focus = LR_BOU_cousins_war }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16014,7 +17362,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_low
 		icon = GFX_goal_generic_occupy_start_war
-		x = 63
+		x = 75
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16036,7 +17384,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_south_germany
 		icon = GFX_goal_generic_major_war
-		x = 65
+		x = 77
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16058,7 +17406,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_iberia
 		icon = GFX_goal_generic_demand_territory
-		x = 67
+		x = 79
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16080,7 +17428,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_italy
 		icon = GFX_goal_generic_major_war
-		x = 69
+		x = 81
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16102,7 +17450,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_north
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 63
+		x = 75
 		y = 8
 		prerequisite = { focus = LR_BOU_plan_low }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16124,7 +17472,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_east
 		icon = GFX_goal_generic_major_war
-		x = 65
+		x = 77
 		y = 8
 		prerequisite = { focus = LR_BOU_plan_south_germany }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16146,7 +17494,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_balkans
 		icon = GFX_goal_generic_demand_territory
-		x = 69
+		x = 81
 		y = 8
 		prerequisite = { focus = LR_BOU_plan_italy }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -16168,7 +17516,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_plan_turkey
 		icon = GFX_goal_generic_major_war
-		x = 69
+		x = 81
 		y = 9
 		prerequisite = { focus = LR_BOU_plan_balkans }
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -17535,7 +18883,7 @@ focus_tree = {
 		id = LR_ORL_epilogue
 		icon = GFX_goal_generic_national_unity
 		x = 69
-		y = 17
+		y = 18
 		prerequisite = { focus = LR_ORL_kings_europe }
 		allow_branch = { has_country_flag = LR_route_orleans }
 		available = {
@@ -17561,7 +18909,7 @@ focus_tree = {
 	focus = {
 		id = LR_BOU_epilogue
 		icon = GFX_goal_generic_national_unity
-		x = 71
+		x = 83
 		y = 15
 		prerequisite = { focus = LR_BOU_holy_alliance }
 		allow_branch = { has_country_flag = LR_route_bourbon }

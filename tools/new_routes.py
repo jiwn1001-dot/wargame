@@ -13,6 +13,7 @@ import algeria  # noqa: E402
 import red_napoleon as red
 import defeat
 import integration_routes as integration
+import alliances  # noqa: E402
 
 P = "\\n\\n"
 Q = '\\"'
@@ -152,6 +153,7 @@ def define(g):
     red.define(g)
     defeat.define(g)
     integration.define(g)
+    alliances.define(g)
 
 
 def arrange(g):

@@ -16,6 +16,19 @@ country_event = {
 				factor = 3
 				FROM = { has_country_flag = LR_route_bourbon }
 			}
+			modifier = {
+				factor = 2
+				has_opinion = { target = FROM value > 49 }
+			}
+			modifier = {
+				factor = 2
+				has_war = no
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = { is_in_faction = yes }
+			leave_faction = yes
 		}
 		FROM = {
 			add_to_faction = ROOT

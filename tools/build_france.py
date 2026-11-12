@@ -14,6 +14,7 @@ from branch_text import BRANCH_TEXT
 from war_text import PLAN_TEXT
 from war_close import PLAN_CLOSE
 import algeria
+import alliances
 from france_story import STORY
 from novel_text import BASE, NEXT_LABELS, NOVEL, first_page
 FOCUS_FUNDS = {"economy": 80, "society": 30}  # Kept in step with tools/build_economy.py.
@@ -794,7 +795,7 @@ extras("LR_BOU_", "LR_route_bourbon", [
       "remove_ideas = LR_idea_italian_volunteers",
       "every_country = {\n\tlimit = {\n\t\tOR = {\n\t\t\ttag = PAP\n\t\t\ttag = TOS\n\t\t\ttag = ITA\n\t\t}\n\t\tis_subject_of = TTS\n\t}\n\tTTS = { annex_country = { target = PREV transfer_troops = yes } }\n}",
       "TTS = {\n\tset_cosmetic_tag = FRA_TTS_italy\n\tadd_stability = 0.1\n\tadd_opinion_modifier = { target = ROOT modifier = medium_increase }\n}",
-      "if = {\n\tlimit = { is_in_faction = no }\n\tcreate_faction = LR_latin_league\n}",
+      "if = {\n\tlimit = { is_in_faction = no }\n\tcreate_faction = LR_francophonie\n}",
       "add_to_faction = TTS"]),
 ])
 
@@ -812,11 +813,14 @@ OFFER_SPAIN = ("if = {\n\tlimit = { SPR = { exists = yes } }\n\t" + OFFER.format
                "else_if = {\n\tlimit = { CRL = { exists = yes } }\n\t" + OFFER.format(tag="CRL") + "\n}\n"
                "else_if = {\n\tlimit = { ESR = { exists = yes } }\n\t" + OFFER.format(tag="ESR") + "\n}")
 NO_SPANISH_WAR = "custom_trigger_tooltip = {\n\ttooltip = LR_tt_spain_at_peace\n\tNOT = { has_global_flag = LR_spain_civil_war }\n}"
-add_effects("LR_BOU_latin_league", TAKE_FACTION.format(faction="LR_latin_league"), OFFER_SPAIN)
-replace_effects("LR_ORL_latin_front", pp(50), TAKE_FACTION.format(faction="LR_revanche_pact"), OFFER_SPAIN)
+# The old alliance focuses found the national bloc (alliances.py); its invitations are focuses of their own.
+add_effects("LR_BOU_latin_league", TAKE_FACTION.format(faction="LR_francophonie"))
+replace_effects("LR_ORL_latin_front", pp(50), TAKE_FACTION.format(faction="LR_francophonie"))
 require("LR_BOU_latin_league", NO_SPANISH_WAR)
 require("LR_ORL_latin_front", NO_SPANISH_WAR)
-replace_effects("LR_COM_russian_treaty", pp(50), TAKE_FACTION.format(faction="LR_red_pact"), OFFER.format(tag="SOV"))
+replace_effects("LR_COM_russian_treaty", pp(50), "SOV = { add_opinion_modifier = { target = ROOT modifier = medium_increase } }")
+for _fid in alliances.MADE:
+    BY_ID[_fid]["filter"] = FILTERS["외교"]
 
 plan("LR_BOU_", "restored", [
     ("내정", ["poor_relief", "guilds", ("diplomatic_rearm", "open_rearm")]),
@@ -924,6 +928,19 @@ country_event = {
 				factor = 3
 				FROM = { has_country_flag = LR_route_bourbon }
 			}
+			modifier = {
+				factor = 2
+				has_opinion = { target = FROM value > 49 }
+			}
+			modifier = {
+				factor = 2
+				has_war = no
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = { is_in_faction = yes }
+			leave_faction = yes
 		}
 		FROM = {
 			add_to_faction = ROOT
@@ -2390,6 +2407,8 @@ def render_focus(item):
                           f"\tcheck_variable = {{ LR_seats > {item['seats'] - 1} }}\n}}")
     if conditions:
         lines.extend(["\t\tavailable = {", indent("\n".join(conditions), 3), "\t\t}"])
+    if item.get("bypass"):
+        lines.append("\t\tbypass = {\n" + indent(item["bypass"], 3) + "\n\t\t}")
     if item["available"] and "LR_tt_algeria_open" in item["available"]:
         # Once Algeria is pacified, its other focuses must not block the rest of the route.
         lines.append(f"\t\tbypass = {{ {algeria.BYPASS} }}")
@@ -2475,6 +2494,8 @@ def main():
     (MOD / "events" / "lr_novel.txt").write_text(novel_events, encoding="utf-8")
     loc.extend(novel_loc)
     algeria.main()
+    alliance_loc = ["l_korean:"] + [f' {k}:0 "{v}"' for k, v in alliances.TEXT.items()]
+    (MOD / "localisation" / "korean" / "lr_alliances_l_korean.yml").write_text("\n".join(alliance_loc) + "\n", encoding="utf-8-sig")
     import novel_text
     novel_text.patch_last(MOD / "localisation" / "korean" / "lr_l_korean.yml")
     plan_decisions, plan_category, plan_loc = plan_files()
