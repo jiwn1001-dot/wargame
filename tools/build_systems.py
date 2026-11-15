@@ -11,6 +11,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 import build_world as world
+import victory
 
 MOD = world.MOD
 VANILLA = world.VANILLA
@@ -64,6 +65,8 @@ EAST_PRUSSIA = [5, 763]
 FRENCH_COLONIES = [539, 660, 772, 773, 286, 670, 671, 741, 1017, 1066, 1067, 1068, 1069, 728]
 GALICIA = [88, 89, 91]
 ITALIAN_RETURNS = [159, 160, 39, 850]
+from split_states import expand as _expand  # noqa: E402  the pieces cut from these states belong with them
+RHINE_STATES, ITALIAN_RETURNS = _expand(RHINE_STATES), _expand(ITALIAN_RETURNS)
 
 def _build_at(state, kind, level):
     return (f"{state} = {{\n\tadd_extra_state_shared_building_slots = {level}\n"
@@ -145,6 +148,9 @@ SEAT_DECISIONS = [
     ("LR_dec_notables", "지방 명사 포섭", "옛 귀족과 지방 명사들을 푀양파 명부에 올립니다. 의석 +48.", "generic_nationalism", 40, 45, 48, "LR_route_marais"),
     ("LR_dec_republican_union", "공화국 연합 결성", "대통령 지지 세력을 하나로 묶습니다. 의석 +48.", "generic_speech", 40, 45, 48, "LR_route_guardian"),
 ]
+
+
+OWED_TAGS = ("POL",)  # countries France may owe land to (see gift())
 
 
 def indent(text, tabs):
@@ -230,11 +236,6 @@ LR_dyn_rebuild = {
 	stability_factor = LR_rec_stability
 }
 
-LR_no_war_justification = {
-	enable = { always = yes }
-	icon = GFX_modifiers_sabotaged_resource
-	generate_wargoal_tension = 5
-}
 """)
 
 
@@ -327,12 +328,22 @@ def build_effects():
             f"\tif = {{\n\t\tlimit = {{ {s} = {{ OR = {{ {check} }} }} }}\n\t\t{tag} = {{ transfer_state = {s} }}\n\t}}"
             for s in states)
 
+    def gift(tag, states, owners):
+        """Land France hands a third country: given now if that country is not at war with France; otherwise France
+        holds it, marked as owed, until the country joins France's alliance or becomes its subject (lr_fra_pay_owed)."""
+        check = " ".join(f"is_owned_by = {o}" for o in owners)
+        return "\n".join(
+            f"\tif = {{\n\t\tlimit = {{ {s} = {{ OR = {{ {check} }} }} }}\n"
+            f"\t\tif = {{\n\t\t\tlimit = {{ {tag} = {{ exists = yes NOT = {{ has_war_with = FRA }} }} }}\n\t\t\t{tag} = {{ transfer_state = {s} }}\n\t\t}}\n"
+            f"\t\telse = {{\n\t\t\tFRA = {{ transfer_state = {s} }}\n\t\t\t{s} = {{ set_state_flag = LR_owed_{tag} }}\n\t\t}}\n\t}}"
+            for s in states)
+
     def report(name, *states):
         lines = "".join(f'\t{s} = {{ log = "LR: {name}: state {s} owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }}\n' for s in states)
         return f'\tlog = "LR: {name} begins"\n', lines + f'\tlog = "LR: {name} finished"\n'
 
     out.append("lr_found_rhine_confederation = {\n"
-               + "".join(f"\tif = {{\n\t\tlimit = {{ {s} = {{ is_controlled_by = ROOT }} }}\n\t\tRHI = {{ transfer_state = {s} }}\n\t}}\n" for s in RHINE_STATES + SOUTH_GERMANY)
+               + "".join(f"\tif = {{\n\t\tlimit = {{ {s} = {{ is_controlled_by = ROOT }} }}\n\t\tRHI = {{ transfer_state = {s} }}\n\t}}\n" for s in RHINE_STATES + SOUTH_GERMANY if s not in victory.HANSE)
                + "\tRHI = {\n\t\tset_capital = { state = 51 }\n\t\tset_politics = {\n\t\t\truling_party = neutrality\n\t\t\telections_allowed = no\n\t\t}\n\t}\n"
                "\tset_autonomy = {\n\t\ttarget = RHI\n\t\tautonomous_state = autonomy_puppet\n\t}\n}")
     # Peace only when every enemy has fallen: a peace with one nation must not end the other fronts.
@@ -343,9 +354,11 @@ def build_effects():
 
     begin, end = report("German settlement", 85, 51, 53, 286)
     out.append("lr_settle_germany = {\n" + begin
-               + transfers("POL", POLISH_RETURNS + EAST_PRUSSIA, ["GER"]) + "\n"
-               + transfers("FRA", FRENCH_COLONIES, ["GER"]) + "\n"
-               + transfers("RHI", RHINE_STATES, ["GER"]) + "\n"
+               + gift("POL", POLISH_RETURNS + EAST_PRUSSIA, ["GER"]) + "\n"
+               + "\tlr_german_exile = yes\n"
+               + transfers("RHI", [s for s in RHINE_STATES if s not in victory.HANSE], ["GER"]) + "\n"
+               # Bremen and the Weser mouth: the Emperor's France takes them, as in 1810; otherwise the Confederation.
+               + "".join(f"\tif = {{\n\t\tlimit = {{ {s} = {{ is_owned_by = GER }} }}\n\t\tif = {{\n\t\t\tlimit = {{ OR = {{ has_country_flag = LR_route_empire has_country_flag = LR_route_red }} }}\n\t\t\ttransfer_state = {s}\n\t\t}}\n\t\telse = {{\n\t\t\tRHI = {{ transfer_state = {s} }}\n\t\t}}\n\t}}\n" for s in victory.HANSE)
                + transfers("RHI", SOUTH_GERMANY, ["GER"]) + "\n"
                # Whatever is left of Prussia joins the Confederation too.
                + "\tGER = {\n\t\tevery_owned_state = {\n\t\t\tRHI = { transfer_state = PREV }\n\t\t}\n\t}\n"
@@ -358,10 +371,12 @@ def build_effects():
                "\tRHI = { set_capital = { state = 51 } }\n\tset_country_flag = LR_germany_unified\n\tnews_event = { id = lr_news.14 days = 1 }\n}")
     begin, end = report("Austrian settlement", 89, 159, 4)
     out.append("lr_settle_austria = {\n" + begin
-               + transfers("POL", GALICIA, ["AUS"]) + "\n"
+               + gift("POL", GALICIA, ["AUS"]) + "\n"
                + "".join(f"\tif = {{\n\t\tlimit = {{ {t} = {{ exists = yes OR = {{ is_subject_of = FRA is_in_faction_with = FRA }} }} }}\n" + transfers(t, ITALIAN_RETURNS, ["AUS"]) + "\n\t}\n"
                          for t in ("TTS", "ITA", "PAP", "TOS"))
                + "\tAUS = {\n\t\tif = {\n\t\t\tlimit = { is_in_faction = yes }\n\t\t\tleave_faction = yes\n\t\t}\n\t}\n\twhite_peace = AUS\n"
+               # Austria leaves every war, so France's allies are not left fighting a French puppet.
+               + "\tAUS = {\n\t\tevery_enemy_country = {\n\t\t\tAUS = { white_peace = PREV }\n\t\t}\n\t}\n"
                + end
                + "\tset_autonomy = {\n\t\ttarget = AUS\n\t\tautonomous_state = autonomy_puppet\n\t}\n\tAUS = { lr_fra_name_puppet = yes }\n}")
     dominions = ["USA", "AST", "NZL", "SAF", "RAJ", "MAL"]
@@ -374,7 +389,7 @@ def build_effects():
                + freed
                + "\tENG = {\n\t\tevery_owned_state = {\n\t\t\tlimit = {\n\t\t\t\tNOT = { is_core_of = ENG }\n\t\t\t\tNOT = { is_on_continent = europe }\n\t\t\t}\n\t\t\tCAN = { transfer_state = PREV }\n\t\t}\n"
                "\t\tif = {\n\t\t\tlimit = { is_in_faction = yes }\n\t\t\tleave_faction = yes\n\t\t}\n\t}\n"
-               "\tif = {\n\t\tlimit = { has_war_with = ENG }\n\t\twhite_peace = ENG\n\t}\n"
+               "\tif = {\n\t\tlimit = { has_war_with = ENG }\n\t\twhite_peace = ENG\n\t}\n\tENG = {\n\t\tevery_enemy_country = {\n\t\t\tENG = { white_peace = PREV }\n\t\t}\n\t}\n"
                "\tset_autonomy = {\n\t\ttarget = ENG\n\t\tautonomous_state = autonomy_puppet\n\t}\n\tENG = { lr_fra_name_puppet = yes }\n"
                # The exiled empire makes peace too: no war goes on across the Atlantic.
                "\tevery_country = {\n\t\tlimit = {\n\t\t\thas_war_with = FRA\n\t\t\tOR = {\n\t\t\t\ttag = CAN\n\t\t\t\tis_subject_of = CAN\n\t\t\t}\n\t\t}\n"
@@ -382,7 +397,13 @@ def build_effects():
     out.append("lr_settle_canada = {\n\tif = {\n\t\tlimit = { AST = { is_subject_of = CAN } }\n\t\tCAN = { end_puppet = AST }\n\t}\n"
                "\tCAN = {\n\t\tevery_owned_state = {\n\t\t\tlimit = { NOT = { is_core_of = CAN } }\n\t\t\tAST = { transfer_state = PREV }\n\t\t}\n\t}\n}")
 
-    month = ["lr_fra_monthly = {", "\tlr_fra_sync_industry = yes", "\tset_variable = { LR_pk_hands_left = 3 }"]
+    # Owed land reaches a country once it stands with France.
+    out.append("lr_fra_pay_owed = {\n" + "".join(
+        f"\tif = {{\n\t\tlimit = {{ {tag} = {{ exists = yes OR = {{ is_in_faction_with = FRA is_subject_of = FRA }} }} }}\n"
+        f"\t\tFRA = {{\n\t\t\tevery_owned_state = {{\n\t\t\t\tlimit = {{ has_state_flag = LR_owed_{tag} }}\n"
+        f"\t\t\t\tclr_state_flag = LR_owed_{tag}\n\t\t\t\t{tag} = {{ transfer_state = PREV }}\n\t\t\t}}\n\t\t}}\n\t}}\n"
+        for tag in OWED_TAGS) + "}")
+    month = ["lr_fra_monthly = {", "\tlr_fra_pay_owed = yes", "\tlr_fra_sync_industry = yes", "\tset_variable = { LR_pk_hands_left = 3 }"]
     # The parliamentary republic votes every 24 months.
     month.append("\tif = {\n\t\tlimit = {\n\t\t\tOR = {\n" + "".join(f"\t\t\t\thas_country_flag = {r}\n" for r in SEAT_ROUTES) + "\t\t\t}\n\t\t}\n"
                  "\t\tlr_fra_campaign_monthly = yes\n\t\tadd_to_variable = { LR_election_clock = 1 }\n\t\tif = {\n\t\t\tlimit = { check_variable = { LR_election_clock > 23 } }\n"
@@ -451,12 +472,17 @@ def build_effects():
         "\tsubtract_from_variable = { LR_seats = LR_seat_loss }\n"
         f"\tclamp_variable = {{ var = LR_seats min = {SEATS_FLOOR} max = {SEATS_TOTAL} }}\n"
         "\tlr_fra_sync_seats = yes\n"
-        "\t# Without a majority the cabinet governs badly, and in time the Chamber brings it down.\n"
-        "\tif = {\n\t\tlimit = { check_variable = { LR_seats < 306 } }\n"
+        "\t# Without a majority the cabinet governs badly, and in time the Chamber brings it down. Only the three\n"
+        "\t# parliaments suffer it; Napoleon's president keeps his seat count for his focuses but no minority penalty.\n"
+        "\tif = {\n\t\tlimit = {\n\t\t\tcheck_variable = { LR_seats < 306 }\n\t\t\tNOT = { has_country_flag = LR_route_guardian }\n\t\t}\n"
         "\t\tif = {\n\t\t\tlimit = { NOT = { has_idea = LR_FRA_minority } }\n\t\t\tadd_ideas = LR_FRA_minority\n\t\t\tset_variable = { LR_minority_months = 0 }\n\t\t}\n"
         "\t\tadd_to_variable = { LR_minority_months = 1 }\n"
         "\t\tif = {\n\t\t\tlimit = { check_variable = { LR_minority_months > 5 } }\n\t\t\tset_variable = { LR_minority_months = 0 }\n\t\t\tcountry_event = { id = lr_election.2 days = 1 }\n\t\t}\n\t}\n"
         "\telse_if = {\n\t\tlimit = { has_idea = LR_FRA_minority }\n\t\tremove_ideas = LR_FRA_minority\n\t\tset_variable = { LR_minority_months = 0 }\n\t}\n}", 1))
+    # A route without a parliament never keeps the minority penalty, even one picked up before the route began.
+    month.append(indent("if = {\n\tlimit = {\n\t\thas_idea = LR_FRA_minority\n\t\tNOT = {\n\t\t\tOR = {\n"
+                        "\t\t\t\thas_country_flag = LR_route_jacobin\n\t\t\t\thas_country_flag = LR_route_girondin\n\t\t\t\thas_country_flag = LR_route_marais\n"
+                        "\t\t\t}\n\t\t}\n\t}\n\tremove_ideas = LR_FRA_minority\n\tset_variable = { LR_minority_months = 0 }\n}", 1))
     month.append("}")
     out.append("\n".join(month))
     write(MOD / "common" / "scripted_effects" / "lr_france_effects.txt", "\n\n".join(out) + "\n")
@@ -531,8 +557,8 @@ def build_panels():
         text(f"LR_op_{key}_name", 10, y + 8, 95, f"LR_region_{key}")
         text(f"LR_op_{key}_bar", 108, y + 8, 100, f"LR_ui_bar_LR_op_{key}")
         text(f"LR_op_{key}_num", 212, y + 8, 34, f"LR_ui_num_LR_op_{key}")
-        button(f"LR_op_{key}_crush", 250, y, "LR_ui_crush", "LR_ui_crush_tt")
-        button(f"LR_op_{key}_appease", 378, y, "LR_ui_appease", "LR_ui_appease_tt")
+        button(f"LR_op_{key}_crush", 244, y, "LR_ui_crush", "LR_ui_crush_tt")
+        button(f"LR_op_{key}_appease", 370, y, "LR_ui_appease", "LR_ui_appease_tt")
         triggers.append(f"LR_op_{key}_crush_click_enabled = {{\n\thas_political_power > 24\n\tcheck_variable = {{ LR_op_{key} > 0 }}\n}}")
         triggers.append(f"LR_op_{key}_appease_click_enabled = {{\n\thas_political_power > 49\n\tcheck_variable = {{ LR_op_{key} > 0 }}\n}}")
         effects.append(f"LR_op_{key}_crush_click = {{\n\tadd_political_power = -25\n\tadd_to_variable = {{ LR_op_{key} = -15 }}\n"
@@ -747,7 +773,6 @@ def build_text():
     add("LR_ui_crush_tt", "군대와 경찰을 보냅니다. 반발도 -15, 안정도 -1%. 정치력 25 소모.")
     add("LR_ui_appease_tt", "지역 유지와 협상하고 예산을 풀어 줍니다. 반발도 -10, 안정도 +1%. 정치력 50 소모.")
     add("LR_state_opposition", "지역 반발")
-    add("LR_no_war_justification", "전쟁은 중점과 이벤트로만")
     add("LR_tt_uproot", "모든 지역의 반발도가 §Y40 미만§!이어야 합니다.")
 
     variables = [f"LR_op_{r[0]}" for r in REGIONS] + [f"LR_proj_{p[0]}" for p in PROJECTS] + ["LR_rec_index", "LR_tech_index", "LR_cmd_index", "LR_off_index"]
@@ -832,6 +857,8 @@ if __name__ == "__main__":
     build_eventwindow.main()
     import build_rules
     build_rules.main()
+    import build_oob
+    build_oob.main()
     states = check_regions()
     build_seat_art()
     build_modifier()

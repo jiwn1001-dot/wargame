@@ -29,11 +29,7 @@ on_actions = {
 					limit = { is_owned_by = SOV }
 					set_state_flag = LR_start_SOV
 				}
-				# Wars come only from focuses and events.
-				every_country = {
-					add_dynamic_modifier = { modifier = LR_no_war_justification }
-				}
-				85 = { log = "LR: Danzig owner after setup is [THIS.Owner.GetTag]" }
+				807 = { log = "LR: Danzig owner after setup is [THIS.Owner.GetTag]" }
 				159 = { log = "LR: Lombardy owner after setup is [THIS.Owner.GetTag]" }
 				log = "LR: startup finished"
 
@@ -50,27 +46,22 @@ on_actions = {
 					remove_ideas = MTG_naval_treaty_adherent
 					remove_ideas = MTG_naval_treaty_adherent_reduced
 					lr_fra_spirits_init = yes
-					recruit_character = FRA_napoleon_bonaparte
 					add_stability = -0.2
 					lr_fra_sync_industry = yes
 					29 = { set_demilitarized_zone = yes }
+					1077 = { set_demilitarized_zone = yes }
+					1131 = { set_demilitarized_zone = yes }
 					set_variable = { LR_rail_lines = 0 }
 					set_variable = { LR_road_works = 0 }
 					set_variable = { LR_funds = 50 }
 					set_variable = { LR_pk_hands_left = 3 }
 					lr_pk_init = yes
-					recruit_character = LR_FRA_orleans
-					recruit_character = LR_FRA_blum
-					recruit_character = FRA_louis_xx
-					recruit_character = LR_FRA_petain
-					recruit_character = LR_FRA_besnard
 					promote_character = FRA_louis_xx
 					# The Algerian revolt, in early 1936.
 					country_event = { id = lr_novel.101 days = 14 }
 				}
 
 				SOV = {
-					recruit_character = LR_SOV_kerensky
 					promote_character = LR_SOV_kerensky
 				}
 
@@ -85,19 +76,23 @@ on_actions = {
 		}
 	}
 	# ROOT declares war on FROM.
+	# The second world war's super event is checked here and each month.
 	on_declare_war = {
 		effect = {
 			lr_league_russia_joins = yes
+			lr_check_world_war = yes
 		}
 	}
 	# Regional opposition and economy projects advance each month.
 	on_monthly_FRA = {
 		effect = {
 			lr_fra_monthly = yes
+			lr_fra_power_monthly = yes
+			lr_check_world_war = yes
 		}
 	}
-	# Runs the moment a country capitulates, before any peace conference. ROOT lost, FROM won.
-	# The map changes at once; the war itself ends only when the last enemy has fallen.
+	# Runs the moment a country capitulates. ROOT lost, FROM won. France's own wars go on to the peace conference;
+	# here it only records who fell.
 	on_capitulation_immediate = {
 		effect = {
 			lr_world_on_capitulation = yes
@@ -107,17 +102,13 @@ on_actions = {
 					NOT = { has_global_flag = LR_settled_germany }
 					FROM = { OR = { tag = FRA is_in_faction_with = FRA is_subject_of = FRA tag = SOV tag = YUG tag = ROM tag = GRE } }
 				}
-				# Russia's prize first, then everything left of Germany goes to the Confederation.
-				GER = { lr_pick_victor = yes }
-				lr_russia_takes_poland = yes
 				FRA = {
 					set_global_flag = LR_settled_germany
 					log = "LR: GER capitulated to [FROM.GetTag], settling"
 					set_country_flag = LR_germany_defeated
-					lr_settle_germany = yes
-					country_event = { id = lr_peace.1 }
+					# North Germany's colonies go to a government in exile at Douala, not to the conference table.
+					lr_german_exile = yes
 					news_event = { id = lr_news.10 days = 1 }
-					lr_fra_finish_war = yes
 				}
 			}
 			if = {
@@ -130,10 +121,7 @@ on_actions = {
 					set_global_flag = LR_settled_austria
 					log = "LR: AUS capitulated to [FROM.GetTag], settling"
 					set_country_flag = LR_austria_defeated
-					lr_settle_austria = yes
-					country_event = { id = lr_peace.2 }
 					news_event = { id = lr_news.11 days = 1 }
-					lr_fra_finish_war = yes
 				}
 			}
 			if = {
@@ -145,10 +133,7 @@ on_actions = {
 				FRA = {
 					set_global_flag = LR_settled_britain
 					log = "LR: ENG capitulated to [FROM.GetTag], settling"
-					lr_settle_britain = yes
-					country_event = { id = lr_peace.3 }
 					news_event = { id = lr_news.12 days = 1 }
-					lr_fra_finish_war = yes
 				}
 			}
 			if = {
@@ -163,23 +148,13 @@ on_actions = {
 					log = "LR: CAN capitulated to [FROM.GetTag], settling"
 					clr_global_flag = LR_crown_in_canada
 					set_global_flag = LR_crown_in_australia
-					lr_settle_canada = yes
-					country_event = { id = lr_peace.4 }
 					news_event = { id = lr_news.13 days = 1 }
-					lr_fra_finish_war = yes
 				}
 			}
-			# Wars France is not in end by a written treaty too.
-			lr_world_generic_treaty = yes
-			# Last: whoever fell to France makes peace with France now, after the settlements above, so no vanilla
-			# conference can open even when the loser was fighting other wars too (a Spanish civil war, Portugal's allies).
-			if = {
-				limit = { FRA = { has_war_with = ROOT } }
-				FRA = {
-					white_peace = ROOT
-					lr_fra_finish_war = yes
-				}
-			}
+			# A fallen country makes its own peace, with its subjects, while its faction fights on.
+			lr_separate_peace = yes
+			# Every war ends at the vanilla peace conference; the land is then settled by region decisions.
 		}
 	}
 }
+# kr_layout: state numbers translated

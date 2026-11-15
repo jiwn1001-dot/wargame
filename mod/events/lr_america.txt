@@ -80,7 +80,7 @@ news_event = {
 	id = lr_america.100
 	title = lr_america.100.t
 	desc = lr_america.100.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_continental
 	major = yes
 	is_triggered_only = yes
 	option = { name = lr_america.100.a }
@@ -90,7 +90,7 @@ news_event = {
 	id = lr_america.101
 	title = lr_america.101.t
 	desc = lr_america.101.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_ottawa
 	major = yes
 	is_triggered_only = yes
 	option = { name = lr_america.101.a }

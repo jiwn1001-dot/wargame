@@ -1,0 +1,90 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_lr_paris_crowd"
+		texturefile = "gfx/event_pictures/lr_news/paris_crowd.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_barricade"
+		texturefile = "gfx/event_pictures/lr_news/barricade.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_parliament"
+		texturefile = "gfx/event_pictures/lr_news/parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_army_parade"
+		texturefile = "gfx/event_pictures/lr_news/army_parade.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_royal_guard"
+		texturefile = "gfx/event_pictures/lr_news/royal_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_petain"
+		texturefile = "gfx/event_pictures/lr_news/petain.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_mobilisation"
+		texturefile = "gfx/event_pictures/lr_news/mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_armistice"
+		texturefile = "gfx/event_pictures/lr_news/armistice.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_kerensky"
+		texturefile = "gfx/event_pictures/lr_news/kerensky.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_ruhr"
+		texturefile = "gfx/event_pictures/lr_news/ruhr.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_spanish_war"
+		texturefile = "gfx/event_pictures/lr_news/spanish_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_japan_army"
+		texturefile = "gfx/event_pictures/lr_news/japan_army.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_balkan_war"
+		texturefile = "gfx/event_pictures/lr_news/balkan_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_liberation"
+		texturefile = "gfx/event_pictures/lr_news/liberation.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_treaty"
+		texturefile = "gfx/event_pictures/lr_news/treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_douala"
+		texturefile = "gfx/event_pictures/lr_news/douala.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_algiers"
+		texturefile = "gfx/event_pictures/lr_news/algiers.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_london"
+		texturefile = "gfx/event_pictures/lr_news/london.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_ottawa"
+		texturefile = "gfx/event_pictures/lr_news/ottawa.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_china_revolution"
+		texturefile = "gfx/event_pictures/lr_news/china_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_continental"
+		texturefile = "gfx/event_pictures/lr_news/continental.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_lr_winter_war"
+		texturefile = "gfx/event_pictures/lr_news/winter_war.dds"
+	}
+}

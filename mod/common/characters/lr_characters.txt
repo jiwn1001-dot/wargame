@@ -10,7 +10,7 @@ characters={
 		}
 		country_leader={
 			ideology=despotism
-			traits={ }
+			traits={ LR_trait_lily_guardian }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -42,7 +42,7 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits={ }
+			traits={ LR_trait_mountain_tribune }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -52,12 +52,12 @@ characters={
 		name=LR_FRA_orleans
 		portraits={
 			civilian={
-				large="GFX_portrait_unknown"
+				large="GFX_portrait_fra_jean_duke_of_guise"
 			}
 		}
 		country_leader={
 			ideology=fascism_ideology
-			traits={ }
+			traits={ LR_trait_king_of_revenge }
 			expire="1975.1.1.1"
 			id=-1
 		}
@@ -67,29 +67,29 @@ characters={
 		name=FRA_napoleon_bonaparte
 		portraits={
 			army={
-				large="GFX_portrait_unknown"
+				large="GFX_portrait_napoleon_bonaparte"
 			}
 			civilian={
-				large="GFX_portrait_unknown"
+				large="GFX_portrait_napoleon_bonaparte"
 			}
 		}
 		# First Consul of a republic, then Emperor from the coronation focus.
 		country_leader={
 			ideology=conservatism
-			traits={ }
+			traits={ LR_trait_crown_refused }
 			expire="1975.1.1.1"
 			id=-1
 		}
 		country_leader={
 			ideology=fascism_ideology
-			traits={ }
+			traits={ LR_trait_emperor }
 			expire="1975.1.1.1"
 			id=-1
 		}
 		# The people's consul of the red road.
 		country_leader={
 			ideology=leninism
-			traits={ }
+			traits={ LR_trait_red_consul }
 			expire="1975.1.1.1"
 			id=-1
 		}
@@ -115,8 +115,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=marxism
-			traits={ }
+			ideology=liberalism
+			traits={ LR_trait_continental_commander }
 			expire="1975.1.1.1"
 			id=-1
 		}
@@ -141,7 +141,7 @@ characters={
 		}
 		country_leader={
 			ideology=despotism
-			traits={ }
+			traits={ LR_trait_verdun_marshal }
 			expire="1955.1.1.1"
 			id=-1
 		}
@@ -157,7 +157,78 @@ characters={
 		}
 		country_leader={
 			ideology=anarchist_communism
-			traits={ }
+			traits={ LR_trait_federation_speaker }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	LR_FRA_reynaud={
+		name=LR_FRA_reynaud
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_paul_reynaud"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ LR_trait_free_trader }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LR_FRA_flandin={
+		name=LR_FRA_flandin
+		portraits={
+			civilian={
+				large="GFX_portrait_flandin"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ LR_trait_notable_of_1791 }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LR_FRA_thorez={
+		name=LR_FRA_thorez
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_maurice_thorez"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ LR_trait_commune_secretary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LR_FRA_darlan={
+		name=LR_FRA_darlan
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_francois_darlan"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ LR_trait_admiral_of_the_fleet }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LR_FRA_degaulle={
+		name=LR_FRA_degaulle
+		portraits={
+			civilian={
+				large="GFX_portrait_FRA_charles_de_gaulle"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ LR_trait_marshals_pupil }
 			expire="1965.1.1.1"
 			id=-1
 		}

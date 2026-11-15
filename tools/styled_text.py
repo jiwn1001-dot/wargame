@@ -43,7 +43,7 @@ STYLED = {
     # ----- 뉴스: 프랑스, 북독일에 선전포고 (뉴스 창은 약 450자까지)
     "lr_gnews.7.d": j(
         "프랑스가 북독일 연방에 선전포고했습니다. 파리 주재 북독일 대사는 오늘 오전 외무부에서 선전포고문을 전달받은 뒤 곧바로 동역으로 향한 것으로 알려졌습니다.",
-        "프랑스 정부는 1918년 강화 조약의 군비 제한 조항을 더는 인정하지 않는다고 밝혔습니다. 알자스 국경 지대에서는 프랑스군의 대규모 이동이 목격되고 있으며, 스트라스부르 시청은 민간인 대피 계획을 발표했습니다. 라인강 다리 세 곳은 이미 통행이 막혔습니다.",
+        "프랑스 정부는 1918년 강화 조약의 배상 조항을 더는 인정하지 않는다고 밝혔습니다. 알자스 국경 지대에서는 프랑스군의 대규모 이동이 목격되고 있으며, 스트라스부르 시청은 민간인 대피 계획을 발표했습니다. 라인강 다리 세 곳은 이미 통행이 막혔습니다.",
         "베를린은 제국연맹 회원국들에 조약 이행을 요구했습니다. 빈은 긴급 각료 회의를 소집했고, 런던은 아직 공식 입장을 내놓지 않았습니다."),
     "lr_gnews.7.a": "또 라인강인가.",
 }
@@ -69,3 +69,18 @@ STYLED.update(_STORY_D)
 
 from styled_story_e import STORY as _STORY_E  # noqa: E402
 STYLED.update(_STORY_E)
+
+from styled_focus import STYLED_FOCUS  # noqa: E402
+STYLED.update(STYLED_FOCUS)
+
+from styled_events_a import EVENTS as _EVENTS_A  # noqa: E402
+STYLED.update(_EVENTS_A)
+
+from styled_events_b import EVENTS as _EVENTS_B  # noqa: E402
+STYLED.update(_EVENTS_B)
+
+from styled_focus_routes import STYLED_ROUTES  # noqa: E402
+STYLED.update(STYLED_ROUTES)
+
+from styled_peace_news import NEWS as _PEACE_NEWS  # noqa: E402
+STYLED.update(_PEACE_NEWS)

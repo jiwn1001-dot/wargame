@@ -1,0 +1,455 @@
+{
+ "paris_crowd": [
+  {
+   "file": "paris_crowd_0.jpg",
+   "title": "File:Cortège et manifestation du Front populaire - btv1b9027910h.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cort%C3%A8ge_et_manifestation_du_Front_populaire_-_btv1b9027910h.jpg",
+   "licence": "Public domain",
+   "artist": "Agence de presse Meurisse. Agence photographique (commanditaire)"
+  },
+  {
+   "file": "paris_crowd_1.jpg",
+   "title": "File:Cortège et manifestation du Front populaire - btv1b90279323.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cort%C3%A8ge_et_manifestation_du_Front_populaire_-_btv1b90279323.jpg",
+   "licence": "Public domain",
+   "artist": "Agence de presse Meurisse. Agence photographique (commanditaire)"
+  },
+  {
+   "file": "paris_crowd_2.jpg",
+   "title": "File:Cortège et manifestation du Front populaire - btv1b90279286.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cort%C3%A8ge_et_manifestation_du_Front_populaire_-_btv1b90279286.jpg",
+   "licence": "Public domain",
+   "artist": "Agence de presse Meurisse. Agence photographique (commanditaire)"
+  }
+ ],
+ "barricade": [
+  {
+   "file": "barricade_0.jpg",
+   "title": "File:Barricade place Vendome Commune Paris 1871.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Barricade_place_Vendome_Commune_Paris_1871.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "barricade_1.jpg",
+   "title": "File:Barricade rue Rivoli Commune Paris 1871.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Barricade_rue_Rivoli_Commune_Paris_1871.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "barricade_2.jpg",
+   "title": "File:Barricade Voltaire Lenoir Commune Paris 1871.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Barricade_Voltaire_Lenoir_Commune_Paris_1871.jpg",
+   "licence": "Public domain",
+   "artist": "Bruno Braquehais"
+  }
+ ],
+ "parliament": [
+  {
+   "file": "parliament_0.jpg",
+   "title": "File:Chambre des députés, Palais-Bourbon, Assemblée nationale - Entrée - Paris - Médiathèque de l'architecture et du patrimoine - APMH00019198.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Chambre_des_d%C3%A9put%C3%A9s,_Palais-Bourbon,_Assembl%C3%A9e_nationale_-_Entr%C3%A9e_-_Paris_-_M%C3%A9diath%C3%A8que_de_l%27architecture_et_du_patrimoine_-_APMH00019198.jpg",
+   "licence": "Public domain",
+   "artist": "Jean-Eugène Durand"
+  },
+  {
+   "file": "parliament_1.jpg",
+   "title": "File:Chambre des Députés, Palais Bourbon, 9 place du Palais Bourbon, 7ème arrondissement, Paris, PH13836.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Chambre_des_D%C3%A9put%C3%A9s,_Palais_Bourbon,_9_place_du_Palais_Bourbon,_7%C3%A8me_arrondissement,_Paris,_PH13836.jpg",
+   "licence": "CC0",
+   "artist": "Atget, Eugène (Jean Eugène Auguste Atget, dit) (Libourne, 12–02–1857 - Paris, 04–08–1927), photographe"
+  },
+  {
+   "file": "parliament_2.jpg",
+   "title": "File:Chambre des députés (l'hémicycle du Palais Bourbon) - btv1b53030923q.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Chambre_des_d%C3%A9put%C3%A9s_(l%27h%C3%A9micycle_du_Palais_Bourbon)_-_btv1b53030923q.jpg",
+   "licence": "Public domain",
+   "artist": "Agence Rol. Agence photographique (commanditaire)"
+  }
+ ],
+ "army_parade": [
+  {
+   "file": "army_parade_0.jpg",
+   "title": "File:Défilé des chenillettes le 14 juillet 1937 - Le Petit journal - bpt6k634763d 4.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:D%C3%A9fil%C3%A9_des_chenillettes_le_14_juillet_1937_-_Le_Petit_journal_-_bpt6k634763d_4.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown photographer"
+  }
+ ],
+ "royal_guard": [
+  {
+   "file": "royal_guard_0.jpg",
+   "title": "File:Fanfare du Régiment de Cavalerie de la Garde Républicaine Arc de Triomphe 14 juillet 2012.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Fanfare_du_R%C3%A9giment_de_Cavalerie_de_la_Garde_R%C3%A9publicaine_Arc_de_Triomphe_14_juillet_2012.jpg",
+   "licence": "CC0",
+   "artist": "Jebulon"
+  },
+  {
+   "file": "royal_guard_1.jpg",
+   "title": "File:Garde Républicaine arc de Triomphe 14 juillet 2012.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Garde_R%C3%A9publicaine_arc_de_Triomphe_14_juillet_2012.jpg",
+   "licence": "CC0",
+   "artist": "Jebulon"
+  },
+  {
+   "file": "royal_guard_2.jpg",
+   "title": "File:Garde Républicaine - Paris (3222517908).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Garde_R%C3%A9publicaine_-_Paris_(3222517908).jpg",
+   "licence": "Public domain",
+   "artist": "Céline Harrand from Dublin, Ireland"
+  }
+ ],
+ "mobilisation": [
+  {
+   "file": "mobilisation_0.jpg",
+   "title": "File:Mobilisation 08-1914.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mobilisation_08-1914.jpg",
+   "licence": "Public domain",
+   "artist": "Agence Rol"
+  },
+  {
+   "file": "mobilisation_1.jpg",
+   "title": "File:2 août 1914 la mobilisation, PPG5951(2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2_ao%C3%BBt_1914_la_mobilisation,_PPG5951(2).jpg",
+   "licence": "CC0",
+   "artist": "Roche, Pierre (Pierre Henry Ferdinand Massignon, dit) (Paris, 02–08–1855 - Paris, 18–01–1922), graveur"
+  },
+  {
+   "file": "mobilisation_2.jpg",
+   "title": "File:2-8-14, mobilisation, la réquisition des chevaux à Paris - btv1b6931088b.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:2-8-14,_mobilisation,_la_r%C3%A9quisition_des_chevaux_%C3%A0_Paris_-_btv1b6931088b.jpg",
+   "licence": "Public domain",
+   "artist": "Agence Rol"
+  }
+ ],
+ "armistice": [
+  {
+   "file": "armistice_0.jpg",
+   "title": "File:Rethondes Wagon de l'Armistice.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Rethondes_Wagon_de_l%27Armistice.jpg",
+   "licence": "Public domain",
+   "artist": "Nicklaarakkers"
+  },
+  {
+   "file": "armistice_1.jpg",
+   "title": "File:Waffenstillstand gr.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Waffenstillstand_gr.jpg",
+   "licence": "Public domain",
+   "artist": "Maurice Pillard Verneuil"
+  }
+ ],
+ "kerensky": [
+  {
+   "file": "kerensky_0.jpg",
+   "title": "File:Alexander Kerensky LOC hec 24467.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alexander_Kerensky_LOC_hec_24467.jpg",
+   "licence": "Public domain",
+   "artist": "Harris &amp; Ewing, photographer."
+  },
+  {
+   "file": "kerensky_1.jpg",
+   "title": "File:Kerensky-levantamiento-bolchevique-julio-rusia--insiderussianrev00dorrrich.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Kerensky-levantamiento-bolchevique-julio-rusia--insiderussianrev00dorrrich.png",
+   "licence": "Public domain",
+   "artist": "Dorr, Rheta Louise Childe, 1872-1948"
+  },
+  {
+   "file": "kerensky_2.jpg",
+   "title": "File:Kerensky war minister.jpeg",
+   "page": "https://commons.wikimedia.org/wiki/File:Kerensky_war_minister.jpeg",
+   "licence": "Public domain",
+   "artist": "Karl Bulla"
+  }
+ ],
+ "ruhr": [
+  {
+   "file": "ruhr_0.jpg",
+   "title": "File:Ruhr01181923.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Ruhr01181923.png",
+   "licence": "Public domain",
+   "artist": "Associated Press"
+  },
+  {
+   "file": "ruhr_1.jpg",
+   "title": "File:Production d'acier France 1922-1924.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Production_d%27acier_France_1922-1924.png",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "ruhr_2.jpg",
+   "title": "File:French enter Essen.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:French_enter_Essen.jpg",
+   "licence": "Public domain",
+   "artist": "Bain News Service, publisher"
+  }
+ ],
+ "spanish_war": [
+  {
+   "file": "spanish_war_0.jpg",
+   "title": "File:Spanish civil war molotov cocktail.png",
+   "page": "https://commons.wikimedia.org/wiki/File:Spanish_civil_war_molotov_cocktail.png",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "spanish_war_1.jpg",
+   "title": "File:Badajoz bull-ring, 1936.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Badajoz_bull-ring,_1936.jpg",
+   "licence": "Public domain",
+   "artist": "unknown, might have been one of French Pathe cameramen, most likely Rene Brut"
+  },
+  {
+   "file": "spanish_war_2.jpg",
+   "title": "File:Un grupo de milicianas y milicianos en Cartagena.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Un_grupo_de_milicianas_y_milicianos_en_Cartagena.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  }
+ ],
+ "balkan_war": [
+  {
+   "file": "balkan_war_0.jpg",
+   "title": "File:Mobilization for the First Balkan War, Belgrade 1912.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mobilization_for_the_First_Balkan_War,_Belgrade_1912.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "balkan_war_1.jpg",
+   "title": "File:Turkish volunteers join the army in the Balkan Wars, 1912.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Turkish_volunteers_join_the_army_in_the_Balkan_Wars,_1912.jpg",
+   "licence": "Public domain",
+   "artist": "Turkish General Staff Archive"
+  },
+  {
+   "file": "balkan_war_2.jpg",
+   "title": "File:National army during the Balkan war.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:National_army_during_the_Balkan_war.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  }
+ ],
+ "liberation": [
+  {
+   "file": "liberation_0.jpg",
+   "title": "File:Crowds of French patriots line the Champs Elysees-edit2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Crowds_of_French_patriots_line_the_Champs_Elysees-edit2.jpg",
+   "licence": "Public domain",
+   "artist": "Jack Downey, U.S. Office of War Information"
+  },
+  {
+   "file": "liberation_1.jpg",
+   "title": "File:Crowds of French patriots line the Champs Elysees.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Crowds_of_French_patriots_line_the_Champs_Elysees.jpg",
+   "licence": "Public domain",
+   "artist": "Jack Downey, U.S. Office of War Information"
+  },
+  {
+   "file": "liberation_2.jpg",
+   "title": "File:Crowds of French patriots line the Champs Elysees-edit.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Crowds_of_French_patriots_line_the_Champs_Elysees-edit.jpg",
+   "licence": "Public domain",
+   "artist": "Jack Downey, U.S. Office of War Information"
+  }
+ ],
+ "douala": [
+  {
+   "file": "douala_0.jpg",
+   "title": "File:La nouvelle gare du C.F.C. (Chemin de fer du Cameroun) (Douala, Cameroun) - Laboratoire Cintract ; Agence économique des territoires sous mandat - btv1b101200999 (1 of 2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:La_nouvelle_gare_du_C.F.C._(Chemin_de_fer_du_Cameroun)_(Douala,_Cameroun)_-_Laboratoire_Cintract_;_Agence_%C3%A9conomique_des_territoires_sous_mandat_-_btv1b101200999_(1_of_2).jpg",
+   "licence": "Public domain",
+   "artist": "Laboratoire Cintract. Agence photographique pour le document reproduit (commanditaire)"
+  },
+  {
+   "file": "douala_1.jpg",
+   "title": "File:Hôtel du chef de la circonscription (Douala, Cameroun) - Laboratoire Cintract ; Agence économique des territoires sous mandat - btv1b10120098v (1 of 2).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_du_chef_de_la_circonscription_(Douala,_Cameroun)_-_Laboratoire_Cintract_;_Agence_%C3%A9conomique_des_territoires_sous_mandat_-_btv1b10120098v_(1_of_2).jpg",
+   "licence": "Public domain",
+   "artist": "Laboratoire Cintract. Agence photographique pour le document reproduit (commanditaire)"
+  }
+ ],
+ "algiers": [
+  {
+   "file": "algiers_0.jpg",
+   "title": "File:Alger - à la Casbah, un chiffonnier - btv1b9047547q.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alger_-_%C3%A0_la_Casbah,_un_chiffonnier_-_btv1b9047547q.jpg",
+   "licence": "Public domain",
+   "artist": "Agence de presse Meurisse. Agence photographique (commanditaire)"
+  },
+  {
+   "file": "algiers_1.jpg",
+   "title": "File:Alger - à la Casbah, la rue des maisons hospitalières - btv1b90475662.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Alger_-_%C3%A0_la_Casbah,_la_rue_des_maisons_hospitali%C3%A8res_-_btv1b90475662.jpg",
+   "licence": "Public domain",
+   "artist": "Agence de presse Meurisse. Agence photographique (commanditaire)"
+  }
+ ],
+ "london": [
+  {
+   "file": "london_0.jpg",
+   "title": "File:Westminster Bridge (16962516462) (cropped).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Westminster_Bridge_(16962516462)_(cropped).jpg",
+   "licence": "Public domain",
+   "artist": "UnknownUnknown Scanned by Leonard  Bentley from Iden, East Sussex, UK"
+  }
+ ],
+ "continental": [
+  {
+   "file": "continental_0.jpg",
+   "title": "File:Washington Crossing the Delaware by Emanuel Leutze, MMA-NYC, 1851.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg",
+   "licence": "Public domain",
+   "artist": "Emanuel Leutze"
+  },
+  {
+   "file": "continental_1.jpg",
+   "title": "File:Washington Crossing the Delaware MET DP215410.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_MET_DP215410.jpg",
+   "licence": "CC0",
+   "artist": "Emanuel Leutze"
+  },
+  {
+   "file": "continental_2.jpg",
+   "title": "File:Washington Crossing the Delaware MET DP245003FXD.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Washington_Crossing_the_Delaware_MET_DP245003FXD.jpg",
+   "licence": "CC0",
+   "artist": "Emanuel Leutze"
+  }
+ ],
+ "winter_war": [
+  {
+   "file": "winter_war_0.jpg",
+   "title": "File:The War in Finland, 1940 HU55566.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:The_War_in_Finland,_1940_HU55566.jpg",
+   "licence": "Public domain",
+   "artist": "Finnish official photographer"
+  },
+  {
+   "file": "winter_war_1.jpg",
+   "title": "File:The Making of Ski Troopers at Camp Hale (154146 - cocamphale oli 20240729 lrg).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Making_of_Ski_Troopers_at_Camp_Hale_(154146_-_cocamphale_oli_20240729_lrg).jpg",
+   "licence": "Public domain",
+   "artist": "NASA Earth Observatory images by Michala Garrison, using Landsat data from the U.S. Geological Survey. Story by Adam Voiland."
+  },
+  {
+   "file": "winter_war_2.jpg",
+   "title": "File:The Making of Ski Troopers at Camp Hale (154146 - cocamphale oli 20250222 lrg).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Making_of_Ski_Troopers_at_Camp_Hale_(154146_-_cocamphale_oli_20250222_lrg).jpg",
+   "licence": "Public domain",
+   "artist": "NASA Earth Observatory images by Michala Garrison, using Landsat data from the U.S. Geological Survey. Story by Adam Voiland."
+  }
+ ],
+ "petain": [
+  {
+   "file": "petain_0.jpg",
+   "title": "File:26-10-32, Rambouillet (chasse présidentielle) maréchal Pétain - btv1b53262515v.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:26-10-32,_Rambouillet_(chasse_pr%C3%A9sidentielle)_mar%C3%A9chal_P%C3%A9tain_-_btv1b53262515v.jpg",
+   "licence": "Public domain",
+   "artist": "Agence Rol. Agence photographique (commanditaire)"
+  }
+ ],
+ "japan_army": [
+  {
+   "file": "japan_army_0.jpg",
+   "title": "File:Takasago Volunteer Corps.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File:Takasago_Volunteer_Corps.JPG",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "japan_army_1.jpg",
+   "title": "File:Japanese soldiers landing in Hangzhou Bay 1937.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Japanese_soldiers_landing_in_Hangzhou_Bay_1937.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "japan_army_2.jpg",
+   "title": "File:Orphan and Japanese soldiers in Nanking.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Orphan_and_Japanese_soldiers_in_Nanking.jpg",
+   "licence": "Public domain",
+   "artist": "Sweeper tamonten (talk)"
+  }
+ ],
+ "treaty": [
+  {
+   "file": "treaty_0.jpg",
+   "title": "File:William Orpen - The Signing of Peace in the Hall of Mirrors - Detail 3.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:William_Orpen_-_The_Signing_of_Peace_in_the_Hall_of_Mirrors_-_Detail_3.jpg",
+   "licence": "Public domain",
+   "artist": "William Orpen"
+  },
+  {
+   "file": "treaty_1.jpg",
+   "title": "File:William Orpen - The Signing of Peace in the Hall of Mirrors - Detail 4.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:William_Orpen_-_The_Signing_of_Peace_in_the_Hall_of_Mirrors_-_Detail_4.jpg",
+   "licence": "Public domain",
+   "artist": "William Orpen"
+  },
+  {
+   "file": "treaty_2.jpg",
+   "title": "File:William Orpen - The Signing of Peace in the Hall of Mirrors - Detail 5.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:William_Orpen_-_The_Signing_of_Peace_in_the_Hall_of_Mirrors_-_Detail_5.jpg",
+   "licence": "Public domain",
+   "artist": "William Orpen"
+  }
+ ],
+ "vienna": [
+  {
+   "file": "vienna_0.jpg",
+   "title": "File:Diana and Callisto - Palma Vecchio.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Diana_and_Callisto_-_Palma_Vecchio.jpg",
+   "licence": "Public domain",
+   "artist": "Palma Vecchio"
+  }
+ ],
+ "ottawa": [
+  {
+   "file": "ottawa_0.jpg",
+   "title": "File:Canada ottawa parliament monument landscape-1051590.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Canada_ottawa_parliament_monument_landscape-1051590.jpg",
+   "licence": "CC0",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "ottawa_1.jpg",
+   "title": "File:Parliament buildings from Major Hill Park, Ottawa, Canada, 1901.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Parliament_buildings_from_Major_Hill_Park,_Ottawa,_Canada,_1901.jpg",
+   "licence": "Public domain",
+   "artist": "Detroit Publishing Co."
+  },
+  {
+   "file": "ottawa_2.jpg",
+   "title": "File:Parliament Building Ottawa Canada.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Parliament_Building_Ottawa_Canada.jpg",
+   "licence": "CC0",
+   "artist": "Salwa Farwaneh Dameh"
+  }
+ ],
+ "china_revolution": [
+  {
+   "file": "china_revolution_0.jpg",
+   "title": "File:Revolutionary army headquarters at Hanyang.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Revolutionary_army_headquarters_at_Hanyang.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "china_revolution_1.jpg",
+   "title": "File:Revolutionary soldiers at Wuchang.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Revolutionary_soldiers_at_Wuchang.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  },
+  {
+   "file": "china_revolution_2.jpg",
+   "title": "File:Hankou Chinese Revolution 1911.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Hankou_Chinese_Revolution_1911.jpg",
+   "licence": "Public domain",
+   "artist": "Unknown authorUnknown author"
+  }
+ ],
+ "south_america": []
+}

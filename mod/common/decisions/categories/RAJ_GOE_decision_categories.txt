@@ -157,34 +157,34 @@ RAJ_GOE_mughal_independence_category = {
 	allowed = { always = no }
 	#SECURE WESTERN INDIA
 	on_map_area = {
-		targets = { 443 989 }
+		targets = { 443 433 }
 		name = RAJ_GOE_secure_western_india
 		zoom = 150
 	}
 
 	#SECURE CENTRAL WESTERN INDIA
 	on_map_area = {
-		targets = {  433 428 437 }
+		targets = { 433 428 437 }
 		name = RAJ_GOE_secure_western_central_india
 		zoom = 150
 	}
 
 	#SOUTHERN INDIA
 	on_map_area = {
-		targets = { 429 427 424 425 423 982 983 }
+		targets = { 429 427 424 425 1177 423 1176 983 }
 		name = RAJ_GOE_secure_southern_india
 		zoom = 150
 	}
 	#CENTRAL INDIA
 	on_map_area = {
-		targets = { 436 984 426 438 435 }
+		targets = { 436 984 426 1178 438 435 }
 		name = RAJ_GOE_secure_central_india
 		zoom = 150
 	}
 
 	#EASTERN INDIA
 	on_map_area = {
-		targets = { 431 985 430 432 990 434 }
+		targets = { 431 985 430 1179 432 1180 434 878 }
 		name = RAJ_GOE_secure_eastern_india
 		zoom = 150
 	}
@@ -198,7 +198,7 @@ RAJ_GOE_mughal_independence_category = {
 
 	#NORTHERN CENTRAL INDIA
 	on_map_area = {
-		targets = { 440 986 439  }
+		targets = { 440 986 1185 439 1272 }
 		name = RAJ_GOE_secure_northern_central_india
 		zoom = 150
 	}
@@ -275,3 +275,4 @@ RAJ_concessions_to_the_congress_cat = {
 		has_capitulated = no
 	}
 }
+# kr_layout: state numbers translated

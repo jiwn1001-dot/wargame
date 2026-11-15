@@ -31,7 +31,7 @@ REGIONS = [
     ("lorraine", "로렌·알자스", [17, 28], 50, 48),
     ("africa", "튀니지·모로코", [458, 461, 462, 665], 40, 46),
 ]
-MAP_W = 360
+MAP_W = 260  # the decision panel is about 500 pixels wide: map and list must fit side by side
 FRAMES = 5  # strong opposition, leaning opposition, toss-up, leaning government, strong government
 TINTS = [(150, 40, 40), (200, 110, 90), (150, 140, 120), (90, 130, 190), (40, 80, 170)]
 RALLY_PP, RALLY_GAIN, PRESS_FUNDS, PRESS_GAIN, ACTIONS = 15, 4, 10, 6, 4
@@ -117,32 +117,32 @@ def gui(height, centres):
     (MOD / "interface" / "lr_campaign.gfx").write_text("\n".join(sprites) + "\n", encoding="utf-8")
 
     rows = len(REGIONS)
-    win_h = max(height + 50, 50 + 34 * rows + 40)
+    win_h = max(height + 50, 50 + 34 * rows) + 34
     g = ['guiTypes = {', f'\tcontainerWindowType = {{\n\t\tname = "LR_fra_campaign_window"\n\t\tposition = {{ x = 0 y = 0 }}\n\t\tsize = {{ width = 100% height = {win_h} }}\n']
 
     def text(name, x, y, width, key, font="hoi_16mbs", fmt="left"):
         g.append(f'\t\tinstantTextBoxType = {{\n\t\t\tname = "{name}"\n\t\t\tposition = {{ x = {x} y = {y} }}\n\t\t\tfont = "{font}"\n\t\t\ttext = "{key}"\n'
                  f'\t\t\tmaxWidth = {width}\n\t\t\tmaxHeight = 22\n\t\t\tformat = {fmt}\n\t\t}}\n')
 
-    text("LR_camp_title", 10, 4, 360, "LR_ui_campaign_title", "vic_22")
-    text("LR_camp_actions", 10, 28, 360, "LR_ui_campaign_actions")
+    text("LR_camp_title", 10, 4, 480, "LR_ui_campaign_title", "vic_22")
+    text("LR_camp_actions", 10, 28, 480, "LR_ui_campaign_actions")
     g.append(f'\t\ticonType = {{\n\t\t\tname = "LR_camp_map"\n\t\t\tspriteType = "GFX_lr_campaign_map"\n\t\t\tposition = {{ x = 10 y = 50 }}\n\t\t}}\n')
     for key in centres:
         g.append(f'\t\ticonType = {{\n\t\t\tname = "LR_camp_tint_{key}"\n\t\t\tspriteType = "GFX_lr_campaign_{key}"\n\t\t\tposition = {{ x = 10 y = 50 }}\n\t\t\tframe = 3\n\t\t}}\n')
     for key, (cx, cy) in centres.items():
         g.append(f'\t\tbuttonType = {{\n\t\t\tname = "LR_camp_pin_{key}"\n\t\t\tposition = {{ x = {10 + cx - 11} y = {50 + cy - 11} }}\n'
                  f'\t\t\tquadTextureSprite = "GFX_lr_campaign_pin"\n\t\t\tpdx_tooltip = "LR_ui_campaign_rally_tt_{key}"\n\t\t}}\n')
-    x0 = MAP_W + 24
+    x0 = MAP_W + 18
     for row, (key, *_) in enumerate(REGIONS):
         y = 52 + 34 * row
-        text(f"LR_camp_name_{key}", x0, y + 6, 110, f"LR_ui_campaign_region_{key}")
-        text(f"LR_camp_vote_{key}", x0 + 112, y + 6, 70, f"LR_ui_campaign_vote_{key}")
-        g.append(f'\t\tbuttonType = {{\n\t\t\tname = "LR_camp_press_{key}"\n\t\t\tposition = {{ x = {x0 + 186} y = {y} }}\n\t\t\tquadTextureSprite = "GFX_button_123x34"\n'
+        text(f"LR_camp_name_{key}", x0, y + 6, 84, f"LR_ui_campaign_region_{key}")
+        text(f"LR_camp_vote_{key}", x0 + 84, y + 6, 40, f"LR_ui_campaign_vote_{key}")
+        g.append(f'\t\tbuttonType = {{\n\t\t\tname = "LR_camp_press_{key}"\n\t\t\tposition = {{ x = {x0 + 126} y = {y + 2} }}\n\t\t\tquadTextureSprite = "GFX_button_94x31"\n'
                  f'\t\t\tbuttonFont = "hoi_16mbs"\n\t\t\tbuttonText = "LR_ui_campaign_press"\n\t\t\tpdx_tooltip = "LR_ui_campaign_press_tt"\n\t\t}}\n')
         if key == "africa":
-            g.append(f'\t\tbuttonType = {{\n\t\t\tname = "LR_camp_pin_{key}"\n\t\t\tposition = {{ x = {x0 + 90} y = {y + 6} }}\n'
+            g.append(f'\t\tbuttonType = {{\n\t\t\tname = "LR_camp_pin_{key}"\n\t\t\tposition = {{ x = {x0 + 60} y = {y + 6} }}\n'
                      f'\t\t\tquadTextureSprite = "GFX_lr_campaign_pin"\n\t\t\tpdx_tooltip = "LR_ui_campaign_rally_tt_{key}"\n\t\t}}\n')
-    text("LR_camp_forecast", x0, 52 + 34 * rows + 8, 320, "LR_ui_campaign_forecast", "hoi_18mbs")
+    text("LR_camp_forecast", 10, max(height + 56, 52 + 34 * rows + 8), 480, "LR_ui_campaign_forecast", "hoi_18mbs")
     g.append("\t}\n}")
     (MOD / "interface" / "lr_campaign.gui").write_text("\n".join(g) + "\n", encoding="utf-8")
 

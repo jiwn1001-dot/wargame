@@ -125,7 +125,7 @@ def outcome_events():
         for track, text in texts.items():
             loc.append(f' {event}.d{track}:0 "{text}"')
         loc.append(f' {event}.a:0 "{ {1: "프랑스 육군이 돌아온다!", 2: "다음 훈련을 준비하라.", 3: "다시 한다. 더 잘."}[number] }"')
-        loc.append(f' {event}.tt:0 "해당 개혁 지수 §Y+{gain}§!. 비무장화된 군대의 페널티가 그만큼 줄어듭니다."')
+        loc.append(f' {event}.tt:0 "해당 개혁 지수 §Y+{gain}§!. 버려진 군대의 페널티가 그만큼 줄어듭니다."')
     return "\n".join(events), loc
 
 

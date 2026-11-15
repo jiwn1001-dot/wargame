@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		LR_GRE_reparations = {
 			removal_cost = -1
-			picture = generic_foreign_capital
+			picture = LRc_LR_GRE_reparations__generic_foreign_capital
 			modifier = {
 				political_power_gain = 0.25
 				stability_factor = 0.1
@@ -13,7 +13,7 @@ ideas = {
 		}
 		LR_CNA_continental_army = {
 			removal_cost = -1
-			picture = generic_war_preparation
+			picture = LRc_LR_CNA_continental_army__generic_war_preparation
 			modifier = {
 				army_attack_factor = 0.25
 				army_defence_factor = 0.25
@@ -24,6 +24,27 @@ ideas = {
 				stability_factor = 0.25
 				war_support_factor = 0.3
 				political_power_gain = 0.3
+			}
+		}
+		LR_great_power_army = {
+			removal_cost = -1
+			picture = LRc_LR_great_power_army__generic_army_war_college
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.15
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		LR_USA_arsenal = {
+			removal_cost = -1
+			picture = LRc_LR_USA_arsenal__generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				army_defence_factor = 0.1
+				conscription_factor = 0.02
 			}
 		}
 	}

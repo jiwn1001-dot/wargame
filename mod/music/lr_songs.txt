@@ -9,3 +9,59 @@ music = {
 		}
 	}
 }
+music = {
+	song = "lr_super_liberty"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "lr_super_commune"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "lr_super_orleans"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "lr_super_petain"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "lr_super_monarchy"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "lr_super_bonaparte"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+music = {
+	song = "lr_super_world_war"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}

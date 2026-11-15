@@ -699,9 +699,9 @@ if = {
 			limit = {
 				OR = {
 					state = 9 #Bohemia
-					state = 69 #North Sudetenland
+					OR = { state = 69 state = 110 state = 916 } #North Sudetenland
 					state = 972 #South Sudetenland
-					state = 74 #Czeske Slezsko
+					OR = { state = 74 state = 923 } #Czeske Slezsko
 					state = 70 #Western Slovakia
 				}
 			}
@@ -720,9 +720,9 @@ if = {
 			limit = {
 				OR = {
 					state = 9 #Bohemia
-					state = 69 #North Sudetenland
+					OR = { state = 69 state = 110 state = 916 } #North Sudetenland
 					state = 972 #South Sudetenland
-					state = 74 #Czeske Slezsko
+					OR = { state = 74 state = 923 } #Czeske Slezsko
 					state = 70 #Western Slovakia
 				}
 			}
@@ -752,9 +752,9 @@ if = {
 	every_owned_state = {
 		limit = {
 			OR = {
-				state = 69 #North Sudetenland
+				OR = { state = 69 state = 110 state = 916 } #North Sudetenland
 				state = 972 #South Sudetenland
-				state = 74 #Czeske Slezsko
+				OR = { state = 74 state = 923 } #Czeske Slezsko
 			}
 		}
 		add_dynamic_modifier = {
@@ -790,7 +790,7 @@ if = {
 		limit = {
 			OR = {
 				state = 70 #Western Slovakia
-				state = 71 #Eastern Slovakia
+				state = 70 #Eastern Slovakia
 			}
 		}
 		add_dynamic_modifier = {
@@ -801,7 +801,7 @@ if = {
 
 	every_owned_state = {
 		limit = {
-			state = 664 #Southern Slovakia
+			OR = { state = 664 state = 928 } #Southern Slovakia
 		}
 		add_dynamic_modifier = {
 			modifier = CZE_hungarian_state_modifier
@@ -1434,6 +1434,4 @@ if = {
 		set_cosmetic_tag = CZE_fall_of_the_republic
 	}
 }
-
-
-
+# kr_layout: state numbers translated

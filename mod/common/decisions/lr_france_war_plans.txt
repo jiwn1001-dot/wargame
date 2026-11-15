@@ -700,4 +700,26 @@ LR_FRA_war_plans_category = {
 		}
 		ai_will_do = { factor = 0 }
 	}
+	LR_dec_war_GEX = {
+		icon = generic_military
+		cost = 50
+		visible = {
+			has_country_flag = LR_germany_defeated
+			GEX = {
+				exists = yes
+				NOT = { is_in_faction_with = ROOT }
+			}
+			NOT = { has_war_with = GEX }
+		}
+		available = {
+			has_war = no
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = GEX
+				type = annex_everything
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }

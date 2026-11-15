@@ -11073,7 +11073,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_paris_crush"
-			position = { x = 250 y = 32 }
+			position = { x = 244 y = 32 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_crush"
@@ -11082,7 +11082,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_paris_appease"
-			position = { x = 378 y = 32 }
+			position = { x = 370 y = 32 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_appease"
@@ -11121,7 +11121,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_nord_crush"
-			position = { x = 250 y = 68 }
+			position = { x = 244 y = 68 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_crush"
@@ -11130,7 +11130,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_nord_appease"
-			position = { x = 378 y = 68 }
+			position = { x = 370 y = 68 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_appease"
@@ -11169,7 +11169,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_vendee_crush"
-			position = { x = 250 y = 104 }
+			position = { x = 244 y = 104 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_crush"
@@ -11178,7 +11178,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_vendee_appease"
-			position = { x = 378 y = 104 }
+			position = { x = 370 y = 104 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_appease"
@@ -11217,7 +11217,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_midi_crush"
-			position = { x = 250 y = 140 }
+			position = { x = 244 y = 140 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_crush"
@@ -11226,7 +11226,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_midi_appease"
-			position = { x = 378 y = 140 }
+			position = { x = 370 y = 140 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_appease"
@@ -11265,7 +11265,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_rhone_crush"
-			position = { x = 250 y = 176 }
+			position = { x = 244 y = 176 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_crush"
@@ -11274,7 +11274,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_rhone_appease"
-			position = { x = 378 y = 176 }
+			position = { x = 370 y = 176 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_appease"
@@ -11313,7 +11313,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_lorraine_crush"
-			position = { x = 250 y = 212 }
+			position = { x = 244 y = 212 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_crush"
@@ -11322,7 +11322,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_lorraine_appease"
-			position = { x = 378 y = 212 }
+			position = { x = 370 y = 212 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_appease"
@@ -11361,7 +11361,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_africa_crush"
-			position = { x = 250 y = 248 }
+			position = { x = 244 y = 248 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_crush"
@@ -11370,7 +11370,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "LR_op_africa_appease"
-			position = { x = 378 y = 248 }
+			position = { x = 370 y = 248 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_appease"

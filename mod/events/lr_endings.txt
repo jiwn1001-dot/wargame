@@ -174,5 +174,72 @@ country_event = {
 		set_country_flag = LR_ending_petain
 		add_stability = 0.1
 		add_war_support = -0.1
+		country_event = { id = lr_ending.100 days = 120 }
+	}
+}
+
+country_event = {
+	id = lr_ending.12
+	title = lr_ending.12.t
+	desc = lr_ending.12.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_ending.12.a
+		set_country_flag = LR_ending_entente
+		add_stability = 0.15
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	id = lr_ending.13
+	title = lr_ending.13.t
+	desc = lr_ending.13.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_ending.13.a
+		set_country_flag = LR_ending_revolution
+		add_stability = 0.15
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	id = lr_ending.100
+	title = lr_ending.100.t
+	desc = lr_ending.100.d
+	picture = GFX_report_event_generic_funeral
+
+	is_triggered_only = yes
+	trigger = { has_country_leader = { character = LR_FRA_petain ruling_only = yes } }
+
+	option = {
+		name = lr_ending.100.a
+		custom_effect_tooltip = LR_tt_succession
+		if = { limit = { has_country_leader = { character = LR_FRA_petain ruling_only = yes } } kill_country_leader = yes }
+		if = { limit = { has_character = FRA_francois_darlan } retire_character = FRA_francois_darlan }
+		if = { limit = { has_dynamic_modifier = { modifier = LR_dyn_ruler_petain } } remove_dynamic_modifier = { modifier = LR_dyn_ruler_petain } }
+		promote_character = LR_FRA_darlan
+		set_country_flag = LR_petain_dead
+		add_stability = -0.05
+		ai_chance = { base = 1 }
+	}
+
+	option = {
+		name = lr_ending.100.b
+		custom_effect_tooltip = LR_tt_succession
+		if = { limit = { has_country_leader = { character = LR_FRA_petain ruling_only = yes } } kill_country_leader = yes }
+		if = { limit = { has_character = FRA_charles_de_gaulle } retire_character = FRA_charles_de_gaulle }
+		if = { limit = { has_dynamic_modifier = { modifier = LR_dyn_ruler_petain } } remove_dynamic_modifier = { modifier = LR_dyn_ruler_petain } }
+		promote_character = LR_FRA_degaulle
+		set_country_flag = LR_petain_dead
+		add_stability = -0.05
+		ai_chance = { base = 1 }
 	}
 }

@@ -13,7 +13,7 @@ country_event = {
 	option = {
 		name = lr_integration.101.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -23,7 +23,7 @@ country_event = {
 	option = {
 		name = lr_integration.101.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -41,7 +41,7 @@ country_event = {
 	option = {
 		name = lr_integration.102.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -51,7 +51,7 @@ country_event = {
 	option = {
 		name = lr_integration.102.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -69,7 +69,7 @@ country_event = {
 	option = {
 		name = lr_integration.103.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = 75
@@ -78,7 +78,7 @@ country_event = {
 	option = {
 		name = lr_integration.103.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -97,7 +97,7 @@ country_event = {
 	option = {
 		name = lr_integration.104.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -106,7 +106,7 @@ country_event = {
 	option = {
 		name = lr_integration.104.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = -25
@@ -126,7 +126,7 @@ country_event = {
 	option = {
 		name = lr_integration.105.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -136,7 +136,7 @@ country_event = {
 	option = {
 		name = lr_integration.105.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -154,7 +154,7 @@ country_event = {
 	option = {
 		name = lr_integration.106.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -163,7 +163,7 @@ country_event = {
 	option = {
 		name = lr_integration.106.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -214,7 +214,7 @@ country_event = {
 	option = {
 		name = lr_integration.108.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -223,7 +223,7 @@ country_event = {
 	option = {
 		name = lr_integration.108.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.02
@@ -278,7 +278,7 @@ country_event = {
 	option = {
 		name = lr_integration.110.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_manpower = 10000
@@ -288,7 +288,7 @@ country_event = {
 	option = {
 		name = lr_integration.110.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -307,7 +307,7 @@ country_event = {
 	option = {
 		name = lr_integration.111.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_manpower = 15000
@@ -317,7 +317,7 @@ country_event = {
 	option = {
 		name = lr_integration.111.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -363,7 +363,7 @@ country_event = {
 	option = {
 		name = lr_integration.113.a
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_manpower = 15000
@@ -372,7 +372,7 @@ country_event = {
 	option = {
 		name = lr_integration.113.b
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -391,7 +391,7 @@ country_event = {
 	option = {
 		name = lr_integration.114.a
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		army_experience = 30
@@ -401,7 +401,7 @@ country_event = {
 	option = {
 		name = lr_integration.114.b
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -419,7 +419,7 @@ country_event = {
 	option = {
 		name = lr_integration.115.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.02
@@ -429,7 +429,7 @@ country_event = {
 	option = {
 		name = lr_integration.115.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -447,7 +447,7 @@ country_event = {
 	option = {
 		name = lr_integration.116.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -457,7 +457,7 @@ country_event = {
 	option = {
 		name = lr_integration.116.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -502,7 +502,7 @@ country_event = {
 	option = {
 		name = lr_integration.118.a
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -512,7 +512,7 @@ country_event = {
 	option = {
 		name = lr_integration.118.b
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -530,7 +530,7 @@ country_event = {
 	option = {
 		name = lr_integration.119.a
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -539,7 +539,7 @@ country_event = {
 	option = {
 		name = lr_integration.119.b
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -557,7 +557,7 @@ country_event = {
 	option = {
 		name = lr_integration.120.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -567,7 +567,7 @@ country_event = {
 	option = {
 		name = lr_integration.120.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -585,7 +585,7 @@ country_event = {
 	option = {
 		name = lr_integration.121.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -594,7 +594,7 @@ country_event = {
 	option = {
 		name = lr_integration.121.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -640,7 +640,7 @@ country_event = {
 	option = {
 		name = lr_integration.123.a
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_manpower = 15000
@@ -650,7 +650,7 @@ country_event = {
 	option = {
 		name = lr_integration.123.b
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -668,7 +668,7 @@ country_event = {
 	option = {
 		name = lr_integration.124.a
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		army_experience = 30
@@ -677,7 +677,7 @@ country_event = {
 	option = {
 		name = lr_integration.124.b
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.02
@@ -696,7 +696,7 @@ country_event = {
 	option = {
 		name = lr_integration.125.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -705,7 +705,7 @@ country_event = {
 	option = {
 		name = lr_integration.125.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -724,7 +724,7 @@ country_event = {
 	option = {
 		name = lr_integration.126.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		navy_experience = 30
@@ -733,7 +733,7 @@ country_event = {
 	option = {
 		name = lr_integration.126.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -778,7 +778,7 @@ country_event = {
 	option = {
 		name = lr_integration.128.a
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -787,7 +787,7 @@ country_event = {
 	option = {
 		name = lr_integration.128.b
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -805,7 +805,7 @@ country_event = {
 	option = {
 		name = lr_integration.129.a
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -814,7 +814,7 @@ country_event = {
 	option = {
 		name = lr_integration.129.b
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_manpower = 20000
@@ -832,7 +832,7 @@ country_event = {
 	option = {
 		name = lr_integration.130.a
 		every_owned_state = {
-			limit = { OR = { state = 7 state = 35 state = 36 } }
+			limit = { OR = { state = 7 state = 35 state = 1083 state = 1084 state = 36 state = 1085 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -841,7 +841,7 @@ country_event = {
 	option = {
 		name = lr_integration.130.b
 		every_owned_state = {
-			limit = { OR = { state = 7 state = 35 state = 36 } }
+			limit = { OR = { state = 7 state = 35 state = 1083 state = 1084 state = 36 state = 1085 } }
 			add_core_of = ROOT
 		}
 		add_war_support = 0.03
@@ -860,7 +860,7 @@ country_event = {
 	option = {
 		name = lr_integration.131.a
 		every_owned_state = {
-			limit = { OR = { state = 2 state = 162 } }
+			limit = { OR = { OR = { state = 2 state = 163 state = 1004 state = 1082 } state = 1082 state = 162 state = 1138 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -869,7 +869,7 @@ country_event = {
 	option = {
 		name = lr_integration.131.b
 		every_owned_state = {
-			limit = { OR = { state = 2 state = 162 } }
+			limit = { OR = { OR = { state = 2 state = 163 state = 1004 state = 1082 } state = 1082 state = 162 state = 1138 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 75
@@ -916,7 +916,7 @@ country_event = {
 	option = {
 		name = lr_integration.133.a
 		every_owned_state = {
-			limit = { OR = { state = 102 state = 852 state = 103 state = 163 state = 109 } }
+			limit = { OR = { state = 102 state = 852 state = 1132 OR = { state = 103 state = 109 state = 852 } state = 103 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -925,7 +925,7 @@ country_event = {
 	option = {
 		name = lr_integration.133.b
 		every_owned_state = {
-			limit = { OR = { state = 102 state = 852 state = 103 state = 163 state = 109 } }
+			limit = { OR = { state = 102 state = 852 state = 1132 OR = { state = 103 state = 109 state = 852 } state = 103 } }
 			add_core_of = ROOT
 		}
 		navy_experience = 25
@@ -943,7 +943,7 @@ country_event = {
 	option = {
 		name = lr_integration.134.a
 		every_owned_state = {
-			limit = { OR = { state = 56 state = 58 } }
+			limit = { OR = { state = 56 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -952,7 +952,7 @@ country_event = {
 	option = {
 		name = lr_integration.134.b
 		every_owned_state = {
-			limit = { OR = { state = 56 state = 58 } }
+			limit = { OR = { state = 56 } }
 			add_core_of = ROOT
 		}
 		add_war_support = 0.03
@@ -971,7 +971,7 @@ country_event = {
 	option = {
 		name = lr_integration.135.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_manpower = 20000
@@ -981,7 +981,7 @@ country_event = {
 	option = {
 		name = lr_integration.135.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -999,7 +999,7 @@ country_event = {
 	option = {
 		name = lr_integration.136.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -1008,7 +1008,7 @@ country_event = {
 	option = {
 		name = lr_integration.136.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } state = 1133 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -1055,7 +1055,7 @@ country_event = {
 	option = {
 		name = lr_integration.138.a
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -1064,7 +1064,7 @@ country_event = {
 	option = {
 		name = lr_integration.138.b
 		every_owned_state = {
-			limit = { OR = { state = 735 state = 158 state = 114 } }
+			limit = { OR = { state = 735 OR = { state = 1129 state = 851 } state = 1130 state = 21 OR = { state = 158 state = 1112 } state = 1111 state = 1112 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 114 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -1083,7 +1083,7 @@ country_event = {
 	option = {
 		name = lr_integration.139.a
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -1092,7 +1092,7 @@ country_event = {
 	option = {
 		name = lr_integration.139.b
 		every_owned_state = {
-			limit = { OR = { state = 42 state = 51 } }
+			limit = { OR = { state = 42 state = 51 state = 1089 } }
 			add_core_of = ROOT
 		}
 		add_manpower = 20000
@@ -1110,7 +1110,7 @@ country_event = {
 	option = {
 		name = lr_integration.140.a
 		every_owned_state = {
-			limit = { OR = { state = 7 state = 35 state = 36 } }
+			limit = { OR = { state = 7 state = 35 state = 1083 state = 1084 state = 36 state = 1085 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 75
@@ -1119,7 +1119,7 @@ country_event = {
 	option = {
 		name = lr_integration.140.b
 		every_owned_state = {
-			limit = { OR = { state = 7 state = 35 state = 36 } }
+			limit = { OR = { state = 7 state = 35 state = 1083 state = 1084 state = 36 state = 1085 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -1138,7 +1138,7 @@ country_event = {
 	option = {
 		name = lr_integration.141.a
 		every_owned_state = {
-			limit = { OR = { state = 2 state = 162 } }
+			limit = { OR = { OR = { state = 2 state = 163 state = 1004 state = 1082 } state = 1082 state = 162 state = 1138 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 50
@@ -1148,7 +1148,7 @@ country_event = {
 	option = {
 		name = lr_integration.141.b
 		every_owned_state = {
-			limit = { OR = { state = 2 state = 162 } }
+			limit = { OR = { OR = { state = 2 state = 163 state = 1004 state = 1082 } state = 1082 state = 162 state = 1138 } }
 			add_core_of = ROOT
 		}
 		add_political_power = 75
@@ -1195,7 +1195,7 @@ country_event = {
 	option = {
 		name = lr_integration.143.a
 		every_owned_state = {
-			limit = { OR = { state = 102 state = 852 state = 103 state = 163 state = 109 } }
+			limit = { OR = { state = 102 state = 852 state = 1132 OR = { state = 103 state = 109 state = 852 } state = 103 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.04
@@ -1204,7 +1204,7 @@ country_event = {
 	option = {
 		name = lr_integration.143.b
 		every_owned_state = {
-			limit = { OR = { state = 102 state = 852 state = 103 state = 163 state = 109 } }
+			limit = { OR = { state = 102 state = 852 state = 1132 OR = { state = 103 state = 109 state = 852 } state = 103 } }
 			add_core_of = ROOT
 		}
 		navy_experience = 30
@@ -1222,7 +1222,7 @@ country_event = {
 	option = {
 		name = lr_integration.144.a
 		every_owned_state = {
-			limit = { OR = { state = 56 state = 58 } }
+			limit = { OR = { state = 56 } }
 			add_core_of = ROOT
 		}
 		add_stability = 0.03
@@ -1232,7 +1232,7 @@ country_event = {
 	option = {
 		name = lr_integration.144.b
 		every_owned_state = {
-			limit = { OR = { state = 56 state = 58 } }
+			limit = { OR = { state = 56 } }
 			add_core_of = ROOT
 		}
 		add_war_support = 0.04
@@ -1317,3 +1317,4 @@ country_event = {
 		lr_fra_sync_seats = yes
 	}
 }
+# kr_layout: state numbers translated

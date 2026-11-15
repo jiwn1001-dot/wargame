@@ -30,13 +30,113 @@ SUPER_EVENTS = [
         "quote": "대담하게, 또 대담하게, 언제나 대담하게! 그러면 프랑스는 구원받으리라.",
         "author": "조르주 당통, 1792년 파리",
         "stand_in": "report_event_french_liberation",
-        "anchor": 0.0,  # Keeps the flag and Liberty's face.
+        "anchor": 0.0,
+        "vanilla_song": ("resistance_french", "La Liberté"),
+        "own_song": "민중의 노래",
+        # Cut from docs/art/super_revolution_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "자유, 평등, 박애",
+        "after": ("FRA", "lr_novel.801"),  # (tag, event) fired when the window closes, or None
+    },
+    {
+        "key": "liberty",
+        "title": "자유의 씨앗",
+        "quote": "어떤 군대도 때가 온 사상을 막을 수는 없다.",
+        "author": "빅토르 위고",
+        "stand_in": "report_event_election_vote",
+        "anchor": 0.5,
+        "vanilla_song": ("resistance_french", "La Liberté"),
+        "own_song": "카르마뇰",
+        # Cut from docs/art/super_liberty_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "공화국 만세!",
+        "after": None,  # (tag, event) fired when the window closes, or None
+    },
+    {
+        "key": "commune",
+        "title": "파리 코뮌의 귀환",
+        "quote": "그래도 코뮌은 죽지 않았다!",
+        "author": "외젠 포티에, 1886년",
+        "stand_in": "report_event_generic_rally",
+        "anchor": 0.5,
+        "vanilla_song": ("resistance_french", "La Liberté"),
+        "own_song": "인터내셔널가",
+        # Cut from docs/art/super_commune_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "코뮌 만세!",
+        "after": None,  # (tag, event) fired when the window closes, or None
+    },
+    {
+        "key": "orleans",
+        "france_only": True,  # only the French player sees it
+        "title": "오를레앙 공의 광기",
+        "quote": "늘 생각하라. 그러나 결코 입에 올리지 말라.",
+        "author": "레옹 강베타, 1871년",
+        "stand_in": "report_event_military_planning",
+        "anchor": 0.4,
+        "vanilla_song": ("resistance_french", "La Liberté"),
+        "own_song": "베르됭! 너희는 못 지나간다",
+        # Cut from docs/art/super_orleans_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "국왕 만세!",
+        "after": None,  # (tag, event) fired when the window closes, or None
+    },
+    {
+        "key": "petain",
+        "title": "페탱 쿠데타",
+        "quote": "용기를 내라! 우리는 그들을 잡을 것이다!",
+        "author": "필리프 페탱, 1916년 베르됭",
+        "stand_in": "report_event_soldiers_marching",
+        "anchor": 0.4,
+        "vanilla_song": ("resistance_french", "La Liberté"),
+        "own_song": "원수여, 우리가 여기 있습니다",
+        # Cut from docs/art/super_petain_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "원수 만세!",
+        "after": None,  # (tag, event) fired when the window closes, or None
+    },
+    {
+        "key": "monarchy",
+        "france_only": True,  # only the French player sees it
+        "title": "왕정의 수호",
+        "quote": "통합과 망각.",
+        "author": "루이 18세, 1814년",
+        "stand_in": "report_event_generic_sign_treaty1",
+        "anchor": 0.3,
+        "vanilla_song": ("resistance_french", "La Liberté"),
+        "own_song": "루이 국왕 (프랑스 십자군의 노래)",
+        # Cut from docs/art/super_monarchy_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "신이여, 왕을 지키소서.",
+        "after": None,  # (tag, event) fired when the window closes, or None
+    },
+    {
+        "key": "bonaparte",
+        "title": "보나파르트의 비상",
+        "quote": "불가능이라는 말은 프랑스어가 아니다.",
+        "author": "나폴레옹 보나파르트",
+        "stand_in": "report_event_soldiers_marching",
+        "anchor": 0.0,
+        "vanilla_song": ("resistance_french", "La Liberté"),
+        "own_song": "출발의 노래",
+        # Cut from docs/art/super_bonaparte_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "보나파르트 만세!",
+        "after": None,  # (tag, event) fired when the window closes, or None
+    },
+    {
+        "key": "world_war",
+        "title": "제2차 세계 대전",
+        "quote": "이것은 평화가 아니다. 스무 해 동안의 휴전일 뿐이다.",
+        "author": "페르디낭 포슈, 1919년",
+        "stand_in": "report_event_soldiers_marching",
+        "anchor": 0.5,
         "vanilla_song": ("resistance_french", "La Liberté"),
         "own_song": "라 마르세예즈",
-        # Cut from docs/art/super_revolution_source.aac. Change "start" to move where the song begins.
-        "cut": {"start": 20.4, "length": 20, "fade": 6},
-        "reaction": "자유, 평등, 박애",
-        "after": ("FRA", "lr_novel.801"),  # The revolution scene; its last page is lr_france.10.  # The event that follows when the window closes.
+        # Cut from docs/art/super_world_war_source.*: "auto" finds the loudest 20 seconds (the chorus), fading out over 6.
+        "cut": {"start": "auto", "length": 20, "fade": 6},
+        "reaction": "또다시 전쟁인가.",
+        "after": None,  # (tag, event) fired when the window closes, or None
     },
 ]
 
@@ -176,17 +276,40 @@ def song_of(row):
     return row["vanilla_song"]
 
 
+def loudest_start(source, length):
+    """Seconds into the recording where the loudest `length`-second stretch begins, skipping the first 3 seconds.
+
+    Most of these recordings are mastered loud all the way through, so this is only a guess: a song whose climax it
+    misses gets its start in seconds in SUPER_EVENTS ("cut": {"start": 95, ...})."""
+    import imageio_ffmpeg
+    rate = 8000
+    raw = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-v", "error", "-i", str(source), "-ac", "1", "-ar", str(rate), "-f", "s16le", "-"],
+                         capture_output=True, check=True).stdout
+    samples = np.frombuffer(raw, dtype=np.int16).astype(float)
+    step = rate // 2  # half-second blocks
+    blocks = np.sqrt(np.array([np.mean(samples[i:i + step] ** 2) for i in range(0, len(samples) - step, step)]) + 1e-9)
+    width = int(length * 2)
+    if len(blocks) <= width + 6:
+        return 0.0
+    sums = np.convolve(blocks, np.ones(width), mode="valid")
+    best = int(np.argmax(sums[6:])) + 6
+    return best / 2
+
+
 def cut_song(row):
     """Trim the source recording: start at the verse, at most the given length, fading away at the end."""
     cut = row.get("cut")
-    sources = list(ART.glob(f"super_{row['key']}_source.*"))
+    sources = sorted(ART.glob(f"super_{row['key']}_source.*"))
     if not cut or not sources:
         return
     import imageio_ffmpeg
     fade_from = cut["length"] - cut["fade"]
-    subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-v", "error", "-ss", str(cut["start"]), "-t", str(cut["length"]), "-i", str(sources[0]),
-                    "-af", f"afade=t=in:st=0:d=0.05,afade=t=out:st={fade_from}:d={cut['fade']}",
-                    "-c:a", "libvorbis", "-q:a", "5", str(ART / f"super_{row['key']}.ogg")], check=True)
+    start = loudest_start(sources[0], cut["length"]) if cut["start"] == "auto" else cut["start"]
+    print(f"  {row['key']}: song from {start:.1f}s")
+    subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-v", "error", "-ss", str(start), "-t", str(cut["length"]), "-i", str(sources[0]),
+                    "-af", f"afade=t=in:st=0:d=0.5,afade=t=out:st={fade_from}:d={cut['fade']},loudnorm=I=-14:TP=-1.5",
+                    # loudnorm resamples to 192 kHz; the game wants 44.1 kHz
+                    "-ar", "44100", "-c:a", "libvorbis", "-q:a", "5", str(ART / f"super_{row['key']}.ogg")], check=True)
 
 
 def build_music():
@@ -236,20 +359,32 @@ def build_interface():
             + text(f"LR_super_{key}_song", 456, 18, f"{flag}_song", "hoi_16mbs", "right")
             + f'\t\tbuttonType = {{\n\t\t\tname = "LR_super_{key}_close"\n\t\t\tposition = {{ x = {(WIDTH - BUTTON[0]) // 2} y = {HEIGHT - 39 - BUTTON[1] // 2} }}\n\t\t\tquadTextureSprite = "GFX_lr_super_button"\n'
               f'\t\t\tbuttonFont = "hoi_16mbs"\n\t\t\tbuttonText = "{flag}_reaction"\n\t\t}}\n\t}}\n')
-        tag, event = row["after"]
+        tag, event = row["after"] or ("FRA", None)
+        follow = (f'\t\t\t\tif = {{\n\t\t\t\t\tlimit = {{ {tag} = {{ is_ai = no }} }}\n\t\t\t\t\t{tag} = {{ country_event = {{ id = {event} }} }}\n\t\t\t\t}}\n'
+                  if event else "")
         guis.append(f'\tLR_super_{key}_ui = {{\n\t\tcontext_type = player_context\n\t\twindow_name = "LR_super_{key}_window"\n\n'
-                    f'\t\tvisible = {{\n\t\t\thas_global_flag = {flag}\n\t\t}}\n\n'
+                    f'\t\tvisible = {{\n\t\t\thas_global_flag = {flag}\n' + ("\t\t\ttag = FRA\n" if row.get("france_only") else "") + '\t\t}\n\n'
                     f'\t\teffects = {{\n\t\t\tLR_super_{key}_close_click = {{\n\t\t\t\tclr_global_flag = {flag}\n'
-                    f'\t\t\t\tif = {{\n\t\t\t\t\tlimit = {{ {tag} = {{ is_ai = no }} }}\n\t\t\t\t\t{tag} = {{ country_event = {{ id = {event} }} }}\n\t\t\t\t}}\n'
-                    f'\t\t\t}}\n\t\t}}\n\t}}\n')
+                    + follow + '\t\t\t}\n\t\t}\n\t}\n')
         # A computer-run country has nobody to press the button.
-        effects.append(f'lr_super_{key} = {{\n\tset_global_flag = {flag}\n\tplay_song = "{song}"\n'
-                       f'\tif = {{\n\t\tlimit = {{ {tag} = {{ is_ai = yes }} }}\n\t\t{tag} = {{ country_event = {{ id = {event} days = 1 }} }}\n\t}}\n}}\n')
+        ai_follow = (f'\tif = {{\n\t\tlimit = {{ {tag} = {{ is_ai = yes }} }}\n\t\t{tag} = {{ country_event = {{ id = {event} days = 1 }} }}\n\t}}\n'
+                     if event else "")
+        # France-only windows play their song only when France has a player.
+        music = (f'\tif = {{\n\t\tlimit = {{ FRA = {{ is_ai = no }} }}\n\t\tplay_song = "{song}"\n\t}}\n' if row.get("france_only")
+                 else f'\tplay_song = "{song}"\n')
+        effects.append(f'lr_super_{key} = {{\n\tset_global_flag = {flag}\n' + music + ai_follow + '}\n')
         loc += [f' {flag}_title:0 "{row["title"]}"', f' {flag}_quote:0 "{row["quote"]}"', f' {flag}_author:0 "-{row["author"]}"',
                 f' {flag}_song:0 "{song_name}"', f' {flag}_reaction:0 "{row["reaction"]}"']
     write(MOD / "interface" / "lr_super.gfx", "spriteTypes = {\n" + "".join(sprites) + "}\n")
     write(MOD / "interface" / "lr_super.gui", "guiTypes = {\n" + "".join(windows) + "}\n")
     write(MOD / "common" / "scripted_guis" / "lr_super_gui.txt", NOTE + "scripted_gui = {\n" + "".join(guis) + "}\n")
+    effects.append(
+        "# The second world war: once three or more great powers are at war with another great power.\n"
+        "lr_check_world_war = {\n\tif = {\n\t\tlimit = { NOT = { has_global_flag = LR_world_war } }\n"
+        "\t\tset_temp_variable = { lr_majors_at_war = 0 }\n"
+        "\t\tevery_country = {\n\t\t\tlimit = {\n\t\t\t\tis_major = yes\n\t\t\t\tany_enemy_country = { is_major = yes }\n\t\t\t}\n"
+        "\t\t\tadd_to_temp_variable = { lr_majors_at_war = 1 }\n\t\t}\n"
+        "\t\tif = {\n\t\t\tlimit = { check_variable = { lr_majors_at_war > 2 } }\n\t\t\tset_global_flag = LR_world_war\n\t\t\tlr_super_world_war = yes\n\t\t}\n\t}\n}\n")
     write(MOD / "common" / "scripted_effects" / "lr_super_effects.txt", NOTE + "".join(effects))
     write(MOD / "localisation" / "korean" / "lr_super_l_korean.yml", "\n".join(loc) + "\n", "utf-8-sig")
 

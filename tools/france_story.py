@@ -26,9 +26,9 @@ STORY = [
                     ("대포가 먼저다. 사표를 수리하라.", {"war_support_factor": 0.03, "stability_factor": -0.02}),
                     ("장군은 돈을 기다릴 줄도 알아야 한다.", {"political_power_gain": 0.03, "dev": 1}),
                 ]),
-        chapter("inspectors_out", "forceful_treaty", "감시단과의 숨바꼭질", "강화 조약의 감시단이 왕의 창고 문을 두드립니다.", {"experience_gain_army_factor": 0.02},
-                "창고 앞의 영국 소령", "르크뢰조의 창고 앞에 조약 감시단의 영국인 소령이 서 있습니다. 문 안에는 조약이 금지한 야포 200문이 있습니다. 공장장은 어떻게 할지 묻는 전보를 보냈습니다.", "french_british_officers", [
-                    ("감시단을 국경 밖으로 내쫓아라. 이제 숨길 것도 없다.", {"war_support_factor": 0.03, "flag": "LR_st_orl_defiance"}),
+        chapter("inspectors_out", "forceful_treaty", "감독관들과의 숨바꼭질", "배상 위원회의 감독관들이 왕의 창고 문을 두드립니다.", {"experience_gain_army_factor": 0.02},
+                "창고 앞의 영국 소령", "르크뢰조의 창고 앞에 배상 위원회의 영국인 감독관이 서 있습니다. 문 안에는 배상 위원회 장부에 없는 야포 200문이 있습니다. 공장장은 어떻게 할지 묻는 전보를 보냈습니다.", "french_british_officers", [
+                    ("감독관들을 국경 밖으로 내쫓아라. 이제 숨길 것도 없다.", {"war_support_factor": 0.03, "flag": "LR_st_orl_defiance"}),
                     ("차와 빈 창고를 내주어라. 대포는 더 깊이 숨겨라.", {"political_power_gain": 0.02}),
                 ]),
         chapter("king_at_front", "military_sphere", "국경의 왕", "왕이 파리를 비우고 빼앗긴 땅이 보이는 언덕으로 갑니다.", {"army_morale_factor": 0.02},
@@ -45,7 +45,7 @@ STORY = [
                 "복수의 날", "동원령 초안이 왕의 책상에 올라왔습니다. 조약은 아직 살아 있는 척하고, 유럽은 프랑스가 얌전히 무릎 꿇고 있다고 믿습니다. 오를레앙 왕조는 한 번의 기습에 모든 것을 걸게 될 것입니다.", "france_parade", [
                     ("숨긴 칼로 찌른다. 첫 달에 모든 것을 끝낸다.", {"planning_speed": 0.1, "war_support_factor": 0.05, "avoid": "LR_st_orl_defiance"}),
                     ("유럽은 이미 우리를 안다. 정면으로 행진하라.", {"war_support_factor": 0.08, "army_morale_factor": 0.03, "need": "LR_st_orl_defiance"}),
-                ], ("LR_st_orl_defiance", "동원령 초안이 왕의 책상에 올라왔습니다. 감시단을 내쫓은 날부터 유럽은 프랑스가 다시 올 것을 알고 있습니다. 기습은 없습니다. 런던과 빈의 신문은 벌써 전쟁을 말합니다.")),
+                ], ("LR_st_orl_defiance", "동원령 초안이 왕의 책상에 올라왔습니다. 감독관들을 내쫓은 날부터 유럽은 프랑스가 다시 올 것을 알고 있습니다. 기습은 없습니다. 런던과 빈의 신문은 벌써 전쟁을 말합니다.")),
     ]),
     ("LR_BOU_restored", "LR_BOU_", "LR_route_bourbon", 200, [
         chapter("lit_de_justice", "political_pressure", "친림 법정", "왕이 직접 법정에 앉아 칙령을 등록합니다. 앙시앵 레짐은 끝난 적이 없습니다.", {"political_power_gain": 0.02},
@@ -151,7 +151,7 @@ STORY = [
                 ]),
         chapter("paris_question", "political_pressure", "파리 문제", "파리는 혁명을 세 번 망쳤다고 지롱드는 믿습니다.", {"stability_factor": 0.02},
                 "파리 문제", "1793년 지롱드파를 단두대로 보낸 것은 파리 민중이었습니다. 내각 안에서 파리의 자치권을 지방 수준으로 깎자는 안이 나왔습니다. 파리 시장은 시청 발코니에서 해볼 테면 해보라고 외쳤습니다.", "gathering_protest", [
-                    ("파리도 83개 도 가운데 하나일 뿐이다.", {"political_power_gain": 0.03, "stability_factor": -0.02}),
+                    ("파리도 83개 데파르트망 가운데 하나일 뿐이다.", {"political_power_gain": 0.03, "stability_factor": -0.02}),
                     ("수도에 특별 예산을 준다. 복수는 정책이 아니다.", {"op": 1, "stability_factor": 0.02}),
                 ]),
         chapter("atlantic_company", "trade", "대서양 회사", "선주들이 칙허 회사를 세우자고 합니다. 이름은 네덜란드에서 빌렸습니다.", {"consumer_goods_factor": -0.01},
@@ -165,7 +165,7 @@ STORY = [
                     ("시장에 맡긴다. 살아남은 회사가 더 강해진다.", {"dev": 2, "stability_factor": -0.03, "industrial_capacity_factory": 0.02}),
                 ]),
         chapter("federal_draft", "national_unity", "연방 헌법 초안", "1793년에 쓰다 만 지롱드 헌법을 금고에서 꺼냅니다.", {"stability_factor": 0.02},
-                "콩도르세의 금고", "콩도르세의 지롱드 헌법 초안이 국립문서고에서 나왔습니다. 도마다 자기 의회와 자기 예산을 갖는 연방입니다. 지방 의원들은 환호하고, 참모본부는 전시에 누가 명령하느냐고 묻습니다.", "generic_read_write", [
+                "콩도르세의 금고", "콩도르세의 지롱드 헌법 초안이 국립문서고에서 나왔습니다. 데파르트망마다 자기 의회와 자기 예산을 갖는 연방입니다. 지방 의원들은 환호하고, 참모본부는 전시에 누가 명령하느냐고 묻습니다.", "generic_read_write", [
                     ("채택한다. 143년 늦은 약속이다.", {"seats": 5, "stability_factor": 0.02, "war_support_factor": -0.02}),
                     ("전쟁이 끝날 때까지 금고에 둔다.", {"war_support_factor": 0.02, "political_power_gain": 0.02}),
                 ]),

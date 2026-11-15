@@ -1,8 +1,8 @@
 """Integration of conquered lands, route by route: each route takes its own lands in its own way.
 
-Every route gets a parent focus for its new provinces and one focus per region it keeps after victory
-(see victory.py). Each focus fires the route's own event, which puts cores on the region's states.
-build_france.py calls define() and weave_routes(); build_events.py writes the events through victory.py.
+Every route gets one decision per region it keeps after victory (see victory.py), in the category
+"새 영토 통합". Each decision fires the route's own event, which puts cores on the region's states.
+build_france.py writes the decisions; build_events.py writes the events through victory.py.
 """
 P = "\\n\\n"
 Q = '\\"'
@@ -22,23 +22,25 @@ REGIONS = {
     "netherlands": [7, 35, 36],
     "italy": [2, 162],
     "catalonia": [165],
-    "illyria": [102, 852, 103, 163, 109],
-    "hanse": [56, 58],
+    "illyria": [853, 852, 103, 163],
+    "hanse": [56],
 }
+from split_states import expand as _expand  # noqa: E402  the pieces cut from these states belong with them
+REGIONS = {key: _expand(states) for key, states in REGIONS.items()}
 # route prefix: (route flag, parent focus name, parent text, parent icon, regions)
 ROUTES = {
-    "LR_JAC_": ("LR_route_jacobin", "공화국의 새 도", "공안위원회가 되찾은 땅을 공화국의 도로 묶습니다.", "demand_territory", ["algeria"]),
-    "LR_GIR_": ("LR_route_girondin", "도 의회의 확장", "되찾은 땅에 도 의회와 상공회의소를 세웁니다.", "demand_territory", ["algeria"]),
-    "LR_MAR_": ("LR_route_marais", "명사들의 도", "되찾은 땅을 지방 명사들의 손에 맡깁니다.", "demand_territory", ["algeria"]),
-    "LR_GUA_": ("LR_route_guardian", "시민의 도", "되찾은 땅의 주민에게 공화국 시민이 될지 묻습니다.", "demand_territory", ["algeria"]),
+    "LR_JAC_": ("LR_route_jacobin", "공화국의 새 데파르트망", "공안위원회가 되찾은 땅을 공화국의 데파르트망으로 묶습니다.", "demand_territory", ["algeria"]),
+    "LR_GIR_": ("LR_route_girondin", "데파르트망 의회의 확장", "되찾은 땅에 데파르트망 의회와 상공회의소를 세웁니다.", "demand_territory", ["algeria"]),
+    "LR_MAR_": ("LR_route_marais", "명사들의 데파르트망", "되찾은 땅을 지방 명사들의 손에 맡깁니다.", "demand_territory", ["algeria"]),
+    "LR_GUA_": ("LR_route_guardian", "시민의 데파르트망", "되찾은 땅의 주민에게 공화국 시민이 될지 묻습니다.", "demand_territory", ["algeria"]),
     "LR_COM_": ("LR_route_communist", "코뮌의 확장", "해방된 땅의 노동자 평의회가 코뮌에 합류합니다.", "propaganda", ["algeria", "belgium", "jura"]),
     "LR_ANA_": ("LR_route_anarchist", "연합의 확장", "국경 너머의 코뮌들이 자유 연합에 가입하겠다고 합니다.", "propaganda", ["belgium", "jura"]),
     "LR_ORL_": ("LR_route_orleans", "왕의 새 영토", "왕의 군대가 되찾은 땅에 군정 총독을 보냅니다.", "demand_territory", ["algeria", "belgium", "jura", "savoy", "rhine"]),
     "LR_BOU_": ("LR_route_bourbon", "왕관의 새 영토", "부르봉 왕가의 옛 꿈이었던 땅을 왕령으로 삼습니다.", "demand_territory", ["algeria", "belgium", "jura", "savoy", "rhine"]),
     "LR_PET_": ("LR_route_petain", "원수의 새 영토", "원수의 질서를 새 영토에 세웁니다.", "demand_territory", ["algeria", "belgium", "jura", "savoy", "rhine"]),
-    "LR_NAP_": ("LR_route_empire", "제국의 도", "황제의 제국을 130개의 도로 나눕니다.", "demand_territory",
+    "LR_NAP_": ("LR_route_empire", "제국의 데파르트망", "황제의 제국을 130개의 데파르트망으로 나눕니다.", "demand_territory",
                 ["algeria", "belgium", "alps", "savoy", "rhine", "netherlands", "italy", "catalonia", "illyria", "hanse"]),
-    "LR_RED_": ("LR_route_red", "인민의 도", "붉은 대육군이 지나간 땅을 인민 공화국의 도로 묶습니다.", "propaganda",
+    "LR_RED_": ("LR_route_red", "인민의 코뮌", "붉은 대육군이 지나간 땅을 인민 공화국의 코뮌으로 묶습니다.", "propaganda",
                 ["algeria", "belgium", "alps", "savoy", "rhine", "netherlands", "italy", "catalonia", "illyria", "hanse"]),
 }
 
@@ -53,20 +55,20 @@ def entry(prefix, region, name, desc, title, text, a, b):
 S, W, PP, MP, AX = "add_stability = {}".format, "add_war_support = {}".format, "add_political_power = {}".format, "add_manpower = {}".format, "army_experience = {}".format
 
 # ===== Parliamentary routes: Algeria =====
-entry("LR_JAC_", "algeria", "알제리의 세 도", "알제, 오랑, 콩스탕틴을 공화국의 세 도로 만듭니다. 문제는 그곳 주민의 시민권입니다.", "모든 시민에게 같은 표를", P.join([
-    "부르봉 궁. 알제리 3개 도 편입법이 표결에 부쳐졌습니다. 산악파는 1794년 국민공회가 식민지 노예제를 폐지했던 일을 떠올립니다.",
+entry("LR_JAC_", "algeria", "알제리의 세 데파르트망", "알제, 오랑, 콩스탕틴을 공화국의 세 데파르트망으로 만듭니다. 문제는 그곳 주민의 시민권입니다.", "모든 시민에게 같은 표를", P.join([
+    "부르봉 궁. 알제리 3개 데파르트망 편입법이 표결에 부쳐졌습니다. 산악파는 1794년 국민공회가 식민지 노예제를 폐지했던 일을 떠올립니다.",
     "쟁점은 하나입니다. 알제리의 무슬림 주민 수백만 명에게 본토와 같은 시민권을 줄 것인가. 알제의 콜롱 대표들은 그렇게 되면 자기들이 소수가 된다며 반대합니다.",
     say("공화국에 이등 시민은 없습니다.") + " 총리가 연단에서 말합니다."]),
     ("모두에게 시민권을 준다. 공화국은 하나다.", S(0.03) + "\n" + W(-0.02)),
     ("단계적으로 넓힌다. 먼저 참전 군인과 교사부터.", PP(50)))
-entry("LR_GIR_", "algeria", "알제리 도 의회", "알제리의 세 도에 도 의회와 상공회의소를 세워 스스로 꾸려 가게 합니다.", "알제 상공회의소", P.join([
+entry("LR_GIR_", "algeria", "알제리 데파르트망 의회", "알제리의 세 데파르트망에 데파르트망 의회와 상공회의소를 세워 스스로 꾸려 가게 합니다.", "알제 상공회의소", P.join([
     "알제 항구가 내려다보이는 상공회의소 건물. 보르도와 마르세유의 선주들이 알제의 상인들과 같은 탁자에 앉았습니다.",
-    "지롱드 내각의 방침은 간단합니다. 파리가 일일이 다스리지 않는다. 도 의회가 예산을 정하고, 항구는 상인들이 꾸린다.",
-    "그런데 도 의회 선거를 누구의 표로 치를지를 두고 콜롱과 토착 명사들이 맞섭니다. 도지사가 파리의 답을 기다립니다."]),
+    "지롱드 내각의 방침은 간단합니다. 파리가 일일이 다스리지 않는다. 데파르트망 의회가 예산을 정하고, 항구는 상인들이 꾸린다.",
+    "그런데 데파르트망 의회 선거를 누구의 표로 치를지를 두고 콜롱과 토착 명사들이 맞섭니다. 도지사가 파리의 답을 기다립니다."]),
     ("알제를 자유항으로 연다. 장사가 화해를 만든다.", PP(50) + "\n" + S(0.01)),
-    ("토착 명사에게도 도 의회 의석을 나눈다.", S(0.03)))
-entry("LR_MAR_", "algeria", "알제리의 명사들", "알제리의 세 도를 납세 선거권 아래 지방 명사들의 의회로 다스립니다.", "납세자의 알제리", P.join([
-    "알제 총독 관저의 무도회장. 포도원 지주와 은행가, 그리고 몇 명의 토착 대가문 대표가 초대받았습니다. 푀양파의 방식대로, 세금을 많이 내는 사람이 도를 다스립니다.",
+    ("토착 명사에게도 데파르트망 의회 의석을 나눈다.", S(0.03)))
+entry("LR_MAR_", "algeria", "알제리의 명사들", "알제리의 세 데파르트망을 납세 선거권 아래 지방 명사들의 의회로 다스립니다.", "납세자의 알제리", P.join([
+    "알제 총독 관저의 무도회장. 포도원 지주와 은행가, 그리고 몇 명의 토착 대가문 대표가 초대받았습니다. 푀양파의 방식대로, 세금을 많이 내는 사람이 데파르트망을 다스립니다.",
     "명부를 보면 결과는 뻔합니다. 의석의 9할은 콜롱 지주들의 몫입니다.",
     "총독이 묻습니다. " + say("토착 대가문의 몫을 조금 늘려 줄까요? 그들이 반란을 막아 줄 수도 있습니다.")]),
     ("명부대로 간다. 재산이 곧 책임이다.", PP(75)),
@@ -132,7 +134,7 @@ entry("LR_ORL_", "jura", "쥐라 요새선", "쥐라산맥을 프랑스의 동�
     ("요새부터 짓는다.", AX(25)),
     ("시계 공장에 군수 주문을 준다.", S(0.02) + "\n" + PP(25)))
 entry("LR_ORL_", "savoy", "알프스의 두 기슭", "사르데냐 왕국의 땅을 왕의 영토로 편입합니다.", "토리노의 왕궁", P.join([
-    "토리노 왕궁. 사르데냐 왕가의 문장이 내려지고 백합기와 삼색기가 함께 걸립니다. 사부아는 한 세대 만에 프랑스로 돌아왔고, 알프스 너머 피에몬테까지 왕의 땅이 되었습니다.",
+    "토리노 왕궁. 사르데냐 왕가의 문장이 내려지고 백합기와 삼색기가 함께 걸립니다. 사부아는 백사십 년 만에 다시 프랑스 땅이 되었고, 알프스 너머 피에몬테까지 왕의 땅이 되었습니다.",
     "토리노의 귀족들은 프랑스어를 할 줄 알면서도 이탈리아어로만 대답합니다.",
     "군정 장관이 묻습니다. 사르데냐 왕가의 근위대를 어떻게 할까요?"]),
     ("프랑스 산악병으로 편입한다.", MP(15000)),
@@ -210,123 +212,123 @@ entry("LR_PET_", "rhine", "라인의 방벽", "라인강 서안을 프랑스의 
 E = "LR_NAP_"
 entry(E, "algeria", "알제리 총독부", "알제리를 황제 직할 총독부로 삼습니다.", "황제의 알제리", P.join([
     "알제 총독 관저. 황제는 이 땅을 잘 압니다. 그는 알제리 반란 진압으로 이름을 얻었습니다.",
-    "황제의 칙령은 두 갈래입니다. 하나는 알제리를 제국의 도로 나누는 것, 다른 하나는 아랍 왕국으로 삼아 토착 대가문에게 자치를 주는 것.",
+    "황제의 칙령은 두 갈래입니다. 하나는 알제리를 제국의 데파르트망으로 나누는 것, 다른 하나는 아랍 왕국으로 삼아 토착 대가문에게 자치를 주는 것.",
     say("나는 이 사람들과 함께 싸웠다. 그들을 신민으로 만들 수도, 동맹으로 만들 수도 있다.")]),
-    ("제국의 도로 나눈다.", PP(50)),
+    ("제국의 데파르트망으로 나눈다.", PP(50)),
     ("아랍 왕국으로 삼아 자치를 준다.", S(0.04) + "\n" + MP(10000)))
-entry(E, "belgium", "벨기에의 도", "벨기에를 제국의 아홉 개 도로 나눕니다.", "스헬더 하구 도", P.join([
+entry(E, "belgium", "벨기에의 데파르트망", "벨기에를 제국의 아홉 개 데파르트망으로 나눕니다.", "스헬더 하구 데파르트망", P.join([
     "안트베르펜 항구. 황제가 부두에 서서 북해를 바라봅니다. 그는 이 항구를 영국의 심장을 겨눈 권총이라 불렀습니다.",
-    "벨기에는 이제 스헬더 하구, 다일, 주르마프 같은 제국의 도로 나뉩니다. 1795년 혁명 프랑스가 처음 그었던 도의 경계선이 다시 쓰입니다.",
+    "벨기에는 이제 스헬더 하구, 다일, 주르마프 같은 제국의 데파르트망으로 나뉩니다. 1795년 혁명 프랑스가 처음 그었던 데파르트망의 경계선이 다시 쓰입니다.",
     "해군 장관이 묻습니다. 안트베르펜을 군항으로 만들까요?"]),
     ("안트베르펜에 대함대 기지를 짓는다.", "navy_experience = 30"),
     ("왈롱 탄광과 공장에 투자한다.", PP(50)))
-entry(E, "alps", "레만과 심플롱", "제네바 호숫가와 심플롱 고개를 제국의 도로 만듭니다.", "알프스의 길", P.join([
-    "제네바 호숫가. 칼뱅의 도시가 레만 도의 청사가 됩니다. 발레의 산골 마을에는 심플롱 도라는 이름이 붙습니다.",
+entry(E, "alps", "레만과 심플롱", "제네바 호숫가와 심플롱 고개를 제국의 데파르트망으로 만듭니다.", "알프스의 길", P.join([
+    "제네바 호숫가. 칼뱅의 도시가 레만 데파르트망의 청사가 됩니다. 발레의 산골 마을에는 심플롱 데파르트망이라는 이름이 붙습니다.",
     "황제는 심플롱 고개에 이탈리아로 가는 군용 도로를 놓으라고 명령했습니다. 대포가 지나갈 수 있는 길이어야 한다고.",
     "제네바의 은행가들이 도지사를 찾아왔습니다. 그들의 금고는 누구의 것이 됩니까?"]),
     ("금고는 손대지 않는다. 은행가는 친구로 둔다.", PP(50)),
     ("심플롱 군용 도로를 닦는다.", AX(25)))
-entry(E, "savoy", "포와 마렝고", "피에몬테와 사르데냐를 제국의 도로 나눕니다.", "토리노의 도지사", P.join([
-    "토리노 왕궁. 사르데냐 왕가의 문장 대신 황제의 독수리가 걸립니다. 피에몬테는 포, 세지아, 마렝고 같은 제국의 도로 나뉩니다.",
+entry(E, "savoy", "포와 마렝고", "피에몬테와 사르데냐를 제국의 데파르트망으로 나눕니다.", "토리노의 도지사", P.join([
+    "토리노 왕궁. 사르데냐 왕가의 문장 대신 황제의 독수리가 걸립니다. 피에몬테는 포, 세지아, 마렝고 같은 제국의 데파르트망으로 나뉩니다.",
     "마렝고. 황제는 그 이름이 마음에 든다고 했습니다. 언젠가 그곳에서 큰 승리를 거둘 것 같은 이름이라고.",
     "도지사가 묻습니다. 사르데냐 왕가를 어떻게 할까요?"]),
     ("사르데냐섬을 왕가에게 남기고 본토만 갖는다.", S(0.03)),
     ("왕가를 폐위하고 모든 땅을 제국에 넣는다.", PP(50)))
-entry(E, "rhine", "몽토네르와 루르", "라인강 서안을 제국의 네 도로 나눕니다.", "라인의 도", P.join([
-    "마인츠 대성당 광장. 라인강 서안이 몽토네르, 루르, 자르, 라인모젤의 네 도로 나뉩니다. 1797년 혁명 프랑스가 처음 그었던 경계선입니다.",
+entry(E, "rhine", "몽토네르와 루르", "라인강 서안을 제국의 네 데파르트망으로 나눕니다.", "라인의 데파르트망", P.join([
+    "마인츠 대성당 광장. 라인강 서안이 몽토네르, 루르, 자르, 라인모젤의 네 데파르트망으로 나뉩니다. 1797년 혁명 프랑스가 처음 그었던 경계선입니다.",
     "강 건너편의 라인 연방 군주들은 황제의 보호국입니다. 강은 이제 국경이 아니라 제국의 한가운데를 흐릅니다.",
     "도지사가 묻습니다. 법전을 바로 시행할까요?"]),
     ("나폴레옹 법전을 바로 시행한다.", S(0.03)),
     ("징병부터 한다. 라인의 아들들은 좋은 병사다.", MP(20000)))
-entry(E, "netherlands", "자위더르해의 도", "네덜란드를 제국의 도로 묶습니다.", "암스테르담의 독수리", P.join([
-    "암스테르담 왕궁. 1795년 혁명 프랑스가 세웠던 바타비아 공화국은 2차 대불전쟁 때 무너졌습니다. 황제는 이번에는 자매 공화국을 세우지 않습니다. 네덜란드는 자위더르해, 스헬더 하구, 마스 하구의 도가 됩니다.",
+entry(E, "netherlands", "자위더르해의 데파르트망", "네덜란드를 제국의 데파르트망으로 묶습니다.", "암스테르담의 독수리", P.join([
+    "암스테르담 왕궁. 1795년 혁명 프랑스가 세웠던 바타비아 공화국은 2차 대불전쟁 때 무너졌습니다. 황제는 이번에는 자매 공화국을 세우지 않습니다. 네덜란드는 자위더르해, 스헬더 하구, 마스 하구의 데파르트망이 됩니다.",
     "상인들은 말없이 칙령을 듣습니다. 그들의 공화국은 왕들의 유럽에서 몇 안 되는 의회의 나라였습니다.",
     say("세관과 항구는 어떻게 할까요?")]),
     ("항구는 열어 둔다. 상인이 웃어야 세금도 웃는다.", PP(50)),
     ("대륙봉쇄를 이 항구에도 적용한다.", W(0.03) + "\n" + S(-0.02)))
-entry(E, "italy", "제국의 두 번째 도시", "로마와 토스카나를 제국의 도로 묶습니다.", "캄피돌리오의 칙령", P.join([
-    "로마 캄피돌리오 언덕. 황제의 칙령이 로마를 제국의 두 번째 도시로 선포합니다. 피렌체에는 아르노 도의 깃발이 걸립니다.",
+entry(E, "italy", "제국의 두 번째 도시", "로마와 토스카나를 제국의 데파르트망으로 묶습니다.", "캄피돌리오의 칙령", P.join([
+    "로마 캄피돌리오 언덕. 황제의 칙령이 로마를 제국의 두 번째 도시로 선포합니다. 피렌체에는 아르노 데파르트망의 깃발이 걸립니다.",
     "바티칸의 창문은 굳게 닫혀 있습니다. 교황은 황제에게 파문 칙서를 쓸지 고민하고 있습니다. 황제는 대관식 때 교황의 손에서 왕관을 받지 않았습니다.",
     say("폐하, 교황을 어떻게 하시겠습니까?")]),
     ("교황을 바티칸에 남겨 둔다. 순교자는 필요 없다.", S(0.03)),
     ("교황청을 파리로 옮긴다.", PP(75) + "\n" + S(-0.03)))
-entry(E, "catalonia", "카탈루냐의 네 도", "카탈루냐를 스페인에서 떼어 내 제국의 네 도로 나눕니다.", "몬세라트와 테르", P.join([
-    "바르셀로나 람블라스 거리. 카탈루냐가 몬세라트, 테르, 세그레, 에브르 하구의 네 도로 나뉩니다.",
+entry(E, "catalonia", "카탈루냐의 네 데파르트망", "카탈루냐를 스페인에서 떼어 내 제국의 네 데파르트망으로 나눕니다.", "몬세라트와 테르", P.join([
+    "바르셀로나 람블라스 거리. 카탈루냐가 몬세라트, 테르, 세그레, 에브르 하구의 네 데파르트망으로 나뉩니다.",
     "카탈루냐 사람들은 마드리드도 파리도 좋아하지 않습니다. 그러나 황제의 도지사는 카탈루냐어 신문을 금지하지 않겠다고 약속했습니다.",
     "도지사가 묻습니다. 그 약속을 지킬까요?"]),
     ("카탈루냐어를 허락한다. 마드리드보다 나은 주인이 되자.", S(0.03)),
-    ("프랑스어만 쓴다. 도는 도일 뿐이다.", PP(50) + "\n" + S(-0.02)))
-entry(E, "illyria", "일리리아 주", "아드리아해 동쪽 기슭을 제국의 일리리아 주로 묶습니다.", "류블랴나의 원수", P.join([
-    "류블랴나 성 아래 광장. 합스부르크의 아드리아해 해안이 제국의 일리리아 주가 됩니다. 고대 로마의 속주 이름입니다. 황제의 원수 하나가 첫 총독으로 부임합니다.",
+    ("프랑스어만 쓴다. 데파르트망은 데파르트망일 뿐이다.", PP(50) + "\n" + S(-0.02)))
+entry(E, "illyria", "일리리아 속주", "아드리아해 동쪽 기슭을 제국의 일리리아 속주로 묶습니다.", "류블랴나의 원수", P.join([
+    "류블랴나 성 아래 광장. 합스부르크의 아드리아해 해안이 제국의 일리리아 속주가 됩니다. 고대 로마의 속주 이름입니다. 황제의 원수 하나가 첫 총독으로 부임합니다.",
     "슬로베니아 사람들은 빈의 독일어 관리들보다 파리의 관리들이 자기 말을 더 존중해 주기를 기대합니다.",
     "총독이 첫 칙령의 내용을 고릅니다."]),
     ("슬로베니아어 학교를 연다.", S(0.03)),
     ("트리에스테와 자다르를 군항으로 만든다.", "navy_experience = 25"))
-entry(E, "hanse", "엘베 하구 도", "한자 도시들과 북해 해안을 제국의 도로 만듭니다.", "함부르크의 도지사", P.join([
-    "함부르크 시청. 황제는 영국 상품의 밀수를 막으려고 북해 해안을 통째로 합병합니다. 엘베 하구, 베저 하구, 엠스 상류의 도가 생깁니다.",
+entry(E, "hanse", "베저 하구 데파르트망", "한자 도시들과 북해 해안을 제국의 데파르트망으로 만듭니다.", "브레멘의 도지사", P.join([
+    "브레멘 시청. 황제는 영국 상품의 밀수를 막으려고 북해 해안을 통째로 합병합니다. 베저 하구와 엠스 상류의 데파르트망이 생깁니다.",
     "한자 동맹의 상인들은 700년 동안 왕도 황제도 모시지 않았습니다. 그들은 대륙봉쇄가 이 항구까지 온다는 소문에 장부를 덮습니다.",
-    "도지사가 묻습니다. 함부르크의 항구를 어떻게 할까요?"]),
+    "도지사가 묻습니다. 브레멘의 항구를 어떻게 할까요?"]),
     ("항구를 열어 둔다. 상인들이 제국을 위해 돈을 벌게 하라.", PP(50)),
     ("밀수꾼을 잡고 영국 배를 막는다.", W(0.03) + "\n" + "navy_experience = 15"))
 
 # ===== Red Napoleon =====
 R = "LR_RED_"
-entry(R, "algeria", "알제리 인민 평의회", "알제리를 인민 공화국의 도로 묶고 평의회를 세웁니다.", "카스바의 통령", P.join([
+entry(R, "algeria", "알제리 인민 평의회", "알제리를 인민 공화국의 코뮌으로 묶고 평의회를 세웁니다.", "카스바의 통령", P.join([
     "알제 부두. 통령이 직접 찾아왔습니다. 그는 이 땅의 반란을 진압하며 이름을 얻었고, 이제 같은 땅에 붉은 깃발을 들고 돌아왔습니다.",
     "부두 노동자들은 그를 반신반의합니다. 진압군 장교가 해방자가 될 수 있느냐고.",
     "통령이 하역장 위에 올라섭니다. " + say("나는 그때 왕의 명령을 따랐다. 이제 인민의 명령을 따른다.")]),
     ("알제리 노동자를 붉은 대육군에 받아들인다.", MP(20000) + "\n" + W(0.02)),
     ("토지를 농민에게 나누고 자치 평의회를 세운다.", S(0.04)))
-entry(R, "belgium", "벨기에 인민의 도", "벨기에를 인민 공화국의 도로 묶습니다.", "샤를루아의 붉은 별", P.join([
+entry(R, "belgium", "벨기에 코뮌", "벨기에를 인민 공화국의 코뮌으로 묶습니다.", "샤를루아의 붉은 별", P.join([
     "샤를루아 탄광. 붉은 대육군이 들어오자 광부들이 갱도에서 나와 환호했습니다. 통령은 탄광을 광부 평의회에 넘기겠다고 약속했습니다.",
     "그런데 붉은 대육군의 병참 장교는 석탄이 먼저 전선으로 가야 한다고 말합니다.",
     "광부 평의회 대표가 통령에게 묻습니다. 약속이 먼저입니까, 전쟁이 먼저입니까?"]),
     ("약속이 먼저다. 탄광은 광부의 것이다.", S(0.04)),
     ("전쟁이 먼저다. 혁명을 지켜야 약속도 지킨다.", PP(50) + "\n" + "add_offsite_building = { type = arms_factory level = 1 }"))
-entry(R, "alps", "알프스의 인민 도", "제네바와 발레를 인민 공화국의 도로 묶습니다.", "제네바의 은행", P.join([
-    "제네바 호숫가. 붉은 대육군이 은행가들의 도시에 들어왔습니다. 칼뱅의 도시는 이제 인민 공화국의 레만 도입니다.",
+entry(R, "alps", "알프스 코뮌", "제네바와 발레를 인민 공화국의 코뮌으로 묶습니다.", "제네바의 은행", P.join([
+    "제네바 호숫가. 붉은 대육군이 은행가들의 도시에 들어왔습니다. 칼뱅의 도시는 이제 인민 공화국의 레만 코뮌입니다.",
     "제네바의 은행 금고에는 유럽 왕실들의 금이 잠들어 있습니다. 혁명 위원들은 그 금을 혁명의 군자금으로 쓰자고 합니다.",
     "통령이 결정해야 합니다."]),
     ("금고를 몰수한다. 왕들의 금은 인민의 것이다.", PP(100) + "\n" + S(-0.02)),
     ("금고를 봉인해 두고 협상 카드로 쓴다.", PP(50)))
-entry(R, "savoy", "피에몬테 인민의 도", "사르데냐 왕국의 땅을 인민 공화국의 도로 묶습니다.", "토리노의 노동자들", P.join([
+entry(R, "savoy", "피에몬테 코뮌", "사르데냐 왕국의 땅을 인민 공화국의 코뮌으로 묶습니다.", "토리노의 노동자들", P.join([
     "토리노 피아트 공장. 붉은 대육군이 들어오기 전에 노동자들이 먼저 공장을 점거했습니다. 이탈리아에서 가장 붉은 도시입니다.",
-    "통령은 토리노를 이탈리아 혁명의 거점으로 삼고 싶어 합니다. 그러나 이 땅은 이제 프랑스의 도입니다.",
+    "통령은 토리노를 이탈리아 혁명의 거점으로 삼고 싶어 합니다. 그러나 이 땅은 이제 프랑스 인민 공화국의 코뮌입니다.",
     "토리노 평의회 대표가 묻습니다. 우리는 프랑스인이 되는 겁니까, 이탈리아 혁명가로 남는 겁니까?"]),
     ("이탈리아 혁명의 거점으로 자치를 준다.", S(0.04)),
-    ("프랑스 인민 공화국의 도로 묶는다.", PP(50) + "\n" + MP(10000)))
-entry(R, "rhine", "라인 인민의 도", "라인강 서안을 인민 공화국의 도로 묶습니다.", "쾰른의 평의회", P.join([
+    ("프랑스 인민 공화국의 코뮌으로 묶는다.", PP(50) + "\n" + MP(10000)))
+entry(R, "rhine", "라인 코뮌", "라인강 서안을 인민 공화국의 코뮌으로 묶습니다.", "쾰른의 평의회", P.join([
     "쾰른 시청. 라인강 서안의 노동자 평의회들이 프랑스 인민 공화국 편입을 결의했습니다. 프로이센의 관리들은 강 건너로 달아났습니다.",
     "통령이 쾰른 대성당 앞에서 연설합니다. 이 땅의 노동자들은 독일인이기 전에 노동자라고.",
     "그러나 평의회의 독일인 대표들은 독일어로 연설해 달라고 요청합니다."]),
     ("독일어를 공용어로 함께 쓴다.", S(0.04)),
     ("징병부터 한다. 라인의 노동자들은 좋은 병사다.", MP(20000)))
-entry(R, "netherlands", "바타비아 인민의 도", "네덜란드를 인민 공화국의 도로 묶습니다.", "암스테르담 부두", P.join([
+entry(R, "netherlands", "바타비아 코뮌", "네덜란드를 인민 공화국의 코뮌으로 묶습니다.", "암스테르담 부두", P.join([
     "암스테르담 부두. 붉은 대육군이 상인 공화국의 수도에 들어왔습니다. 부두 노동자들은 환호하고, 운하 저택의 상인들은 창문을 닫았습니다.",
     "통령은 네덜란드 동인도 회사의 옛 장부를 몰수하라고 명령했습니다. 혁명이 처음 손에 넣은 해외 무역망입니다.",
     "위원이 묻습니다. 상인들을 어떻게 할까요?"]),
     ("무역 회사를 국유화한다.", PP(75)),
     ("상인들에게 혁명 채권을 사게 한다.", PP(50) + "\n" + S(0.01)))
-entry(R, "italy", "로마 인민의 도", "로마와 토스카나를 인민 공화국의 도로 묶습니다.", "교황과 통령", P.join([
+entry(R, "italy", "로마 코뮌", "로마와 토스카나를 인민 공화국의 코뮌으로 묶습니다.", "교황과 통령", P.join([
     "로마 캄피돌리오 언덕. 1798년 혁명 프랑스가 세웠던 로마 공화국의 이름이 140년 만에 다시 불립니다. 이번에는 인민 공화국입니다.",
     "바티칸의 창문은 굳게 닫혀 있습니다. 혁명 위원들은 교회 재산을 국유화하자고 합니다. 통령은 대관식 대신 붉은 깃발을 택했지만, 이탈리아 농민들이 성당에 다닌다는 것도 압니다.",
     say("교황을 어떻게 하시겠습니까?")]),
     ("교회 재산을 국유화하되 교황은 건드리지 않는다.", PP(50) + "\n" + S(0.01)),
     ("바티칸을 봉쇄한다. 혁명에 두 주인은 없다.", PP(75) + "\n" + S(-0.03)))
-entry(R, "catalonia", "카탈루냐 인민의 도", "카탈루냐를 인민 공화국의 도로 묶습니다.", "바르셀로나의 조합들", P.join([
+entry(R, "catalonia", "카탈루냐 코뮌", "카탈루냐를 인민 공화국의 코뮌으로 묶습니다.", "바르셀로나의 조합들", P.join([
     "바르셀로나 람블라스 거리. 붉은 대육군을 맞이한 것은 검붉은 깃발의 조합원들이었습니다. 이 도시의 노동자들은 공산주의자보다 아나키스트가 많습니다.",
     "조합 대표가 통령에게 말합니다. 우리는 마드리드의 왕을 몰아내는 데 기꺼이 함께했다. 그러나 파리의 위원을 모시려고 싸운 것은 아니라고.",
     "통령이 결정해야 합니다."]),
     ("조합의 자치를 인정한다.", S(0.04)),
     ("정치위원을 보내 조합을 통제한다.", PP(50) + "\n" + S(-0.02)))
-entry(R, "illyria", "일리리아 인민의 도", "아드리아해 동쪽 기슭을 인민 공화국의 주로 묶습니다.", "트리에스테의 조선공들", P.join([
-    "트리에스테 조선소. 이탈리아인과 슬로베니아인과 크로아티아인 조선공들이 같은 평의회에 앉았습니다. 합스부르크의 항구가 인민 공화국의 일리리아 주가 됩니다.",
+entry(R, "illyria", "일리리아 코뮌", "아드리아해 동쪽 기슭을 인민 공화국의 코뮌으로 묶습니다.", "트리에스테의 조선공들", P.join([
+    "트리에스테 조선소. 이탈리아인과 슬로베니아인과 크로아티아인 조선공들이 같은 평의회에 앉았습니다. 합스부르크의 항구가 인민 공화국의 일리리아 코뮌이 됩니다.",
     "그런데 평의회는 첫날부터 공용어를 두고 다툽니다.",
     "통령이 보낸 위원이 묻습니다. 어느 말로 회의를 할까요?"]),
     ("세 언어를 모두 쓴다. 노동자는 모두 같다.", S(0.04)),
     ("조선소를 붉은 함대 건조에 돌린다.", "navy_experience = 30"))
-entry(R, "hanse", "한자 인민의 도", "함부르크와 북해 해안을 인민 공화국의 도로 묶습니다.", "함부르크 부두의 평의회", P.join([
-    "함부르크 부두. 독일에서 가장 붉은 항구의 부두 노동자들이 붉은 대육군을 맞이했습니다. 한자 상인들의 시청에 붉은 깃발이 올라갑니다.",
+entry(R, "hanse", "한자 코뮌", "브레멘과 북해 해안을 인민 공화국의 코뮌으로 묶습니다.", "브레멘 부두의 평의회", P.join([
+    "브레멘 부두. 독일에서 가장 붉은 항구의 부두 노동자들이 붉은 대육군을 맞이했습니다. 한자 상인들의 시청에 붉은 깃발이 올라갑니다.",
     "통령은 영국 배를 막으라고 명령했습니다. 그러나 부두 노동자들은 영국의 차티스트들에게 보낼 화물을 싣고 싶어 합니다.",
     "위원이 묻습니다. 영국 배를 막을까요, 영국 노동자에게 보낼 배를 띄울까요?"]),
     ("영국 노동자에게 연대의 배를 띄운다.", S(0.03) + "\n" + W(0.02)),
@@ -344,26 +346,60 @@ def event_id(prefix, region):
     return f"lr_integration.{EVENT_BASE + keys.index((prefix, region)) + 1}"
 
 
-def define(g):
-    focus = g["focus"]
+LEFT_BANK = [("LR_ORL_", "LR_route_orleans", "라인강 서안 합병"), ("LR_COM_", "LR_route_communist", "라인강 서안 편입"),
+             ("LR_NAP_", "LR_route_empire", "라인강 서안 합병")]
+
+
+def owned_trigger(region):
+    if region == "algeria":
+        # France never loses Algeria; it can only make it part of France once the revolt is put down.
+        return "custom_trigger_tooltip = {\n\ttooltip = LR_tt_algeria_pacified\n\thas_country_flag = LR_algeria_pacified\n}"
+    return "any_owned_state = { OR = { " + " ".join(f"state = {s}" for s in REGIONS[region]) + " } }"
+
+
+def decision_key(prefix, region):
+    return f"LR_dec_integrate_{prefix[3:6].lower()}_{region}"
+
+
+def decisions_and_loc():
+    """Each route integrates its lands by decision, not by focus: one decision per region, fired once, each firing
+    the route's own event (which puts the cores on). build_france.py writes the files."""
+    from styled_focus_routes import ROUTES as STYLED_ROUTES
+    lines = ["# Generated by tools/integration_routes.py.", "LR_FRA_integration_category = {"]
+    loc = [' LR_FRA_integration_category:0 "알제리 통합"',
+           ' LR_FRA_integration_category_desc:0 "반란을 진압한 알제리를 프랑스의 일부로 묶는다. 결정을 내리면 알제리에 핵심주가 생기고, 정부의 방식에 따라 다스리는 법이 달라진다."']
+    flags = set()
     for prefix, (route, name, desc, icon, regions) in ROUTES.items():
-        parent = f"{prefix}new_provinces"
-        focus(parent, icon, 0, 0, name, desc, "add_political_power = 25", pre=[HEADS[prefix]], route=route)
+        flags.add(route)
         for region in regions:
+            if region != "algeria":
+                continue  # conquered lands are settled by region decisions (settlement_decisions.py)
             fname, fdesc, *_ = T[(prefix, region)]
-            owned = "any_owned_state = { OR = { " + " ".join(f"state = {s}" for s in REGIONS[region]) + " } }"
-            if region == "algeria":
-                # France never loses Algeria; it can only make it part of France once the revolt is put down.
-                owned = "custom_trigger_tooltip = {\n\ttooltip = LR_tt_algeria_pacified\n\thas_country_flag = LR_algeria_pacified\n}"
-            focus(f"{prefix}integrate_{region}", "demand_territory", 0, 0, fname, fdesc, f"country_event = {event_id(prefix, region)}",
-                  pre=[parent], route=route, available=owned)
-
-
-def weave_routes(g):
-    weave, BY_ID, FILTERS = g["weave"], g["BY_ID"], g["FILTERS"]
-    for prefix, (route, name, desc, icon, regions) in ROUTES.items():
-        BY_ID[f"{prefix}new_provinces"]["filter"] = FILTERS["영토확장"]
-        weave(prefix, "new_provinces", "영토확장", [[f"integrate_{r}" for r in regions]])
+            key = decision_key(prefix, region)
+            available = "\n".join("\t\t\t" + line for line in owned_trigger(region).split("\n"))
+            lines.append(f"\t{key} = {{\n\t\ticon = generic_civil_support\n\t\tcost = 50\n\t\tfire_only_once = yes\n"
+                         f"\t\tvisible = {{\n\t\t\thas_country_flag = {route}\n\t\t}}\n"
+                         f"\t\tavailable = {{\n{available}\n\t\t}}\n"
+                         f"\t\tcomplete_effect = {{\n\t\t\tcountry_event = {event_id(prefix, region)}\n\t\t}}\n"
+                         f"\t\tai_will_do = {{ factor = 1 }}\n\t}}")
+            text = STYLED_ROUTES.get(prefix[3:6], {}).get(f"integrate_{region}", fdesc)
+            loc += [f' {key}:0 "{fname}"', f' {key}_desc:0 "{text}"']
+    # The Rhine's left bank: annexed and made core by decision, once the Rhineland is held.
+    held = ("custom_trigger_tooltip = {\n\t\t\t\ttooltip = LR_tt_rhine_held\n\t\t\t\tOR = {\n\t\t\t\t\thas_country_flag = LR_germany_defeated\n"
+            "\t\t\t\t\t42 = { is_controlled_by = ROOT }\n\t\t\t\t}\n\t\t\t}")
+    for prefix, route, name in []:  # the left bank is now won at the peace conference and settled by region decisions
+        key = f"LR_dec_left_bank_{prefix[3:6].lower()}"
+        lines.append(f"\t{key} = {{\n\t\ticon = generic_civil_support\n\t\tcost = 50\n\t\tfire_only_once = yes\n"
+                     f"\t\tvisible = {{\n\t\t\thas_country_flag = {route}\n\t\t}}\n\t\tavailable = {{\n\t\t\t{held}\n\t\t}}\n"
+                     "\t\tcomplete_effect = {\n\t\t\tFRA = {\n\t\t\t\ttransfer_state = 42\n\t\t\t\ttransfer_state = 51\n\t\t\t}\n"
+                     "\t\t\t42 = { add_core_of = FRA }\n\t\t\t51 = { add_core_of = FRA }\n\t\t}\n\t\tai_will_do = { factor = 1 }\n\t}")
+        text = STYLED_ROUTES.get(prefix[3:6], {}).get("left_bank", "")
+        loc += [f' {key}:0 "{name}"', f' {key}_desc:0 "{text}"']
+    lines.append("}")
+    shown = " ".join(f"has_country_flag = {f}" for f in sorted(flags))
+    category = ("# Generated by tools/integration_routes.py.\nLR_FRA_integration_category = {\n\ticon = generic_political_actions\n"
+                f"\tvisible = {{\n\t\ttag = FRA\n\t\tOR = {{ {shown} }}\n\t}}\n}}\n")
+    return "\n".join(lines) + "\n", category, loc
 
 
 def events_and_loc():
@@ -380,6 +416,4 @@ def events_and_loc():
                       "\tis_triggered_only = yes\n\n" + "\n\n".join(blocks) + "\n}\n")
         loc += [f' {event}.t:0 "{title}"', f' {event}.d:0 "{body}"']
         text[f"{prefix}integrate_{region}"] = fdesc + " " + body.split(P)[0]
-    for prefix, (route, name, desc, icon, regions) in ROUTES.items():
-        text[f"{prefix}new_provinces"] = desc + " 정복한 땅마다 이 루트의 방식으로 핵심주를 세웁니다."
     return "\n".join(events), loc, text

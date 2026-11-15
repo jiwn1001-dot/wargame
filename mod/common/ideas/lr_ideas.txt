@@ -2,7 +2,7 @@ ideas = {
 	country = {
 		LR_FRA_defeat = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_defeat__generic_disjointed_gov
 			modifier = {
 				stability_factor = -0.1
 				political_power_gain = -0.1
@@ -12,7 +12,7 @@ ideas = {
 
 		LR_JAP_han_autonomy = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_JAP_han_autonomy__generic_disjointed_gov
 			modifier = {
 				stability_factor = -0.15
 				political_power_gain = -0.15
@@ -22,7 +22,7 @@ ideas = {
 		# France: these show the player which stage or route they are on.
 		LR_FRA_algerian_crisis = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_algerian_crisis__generic_disjointed_gov
 			modifier = {
 				stability_factor = -0.1
 			}
@@ -30,7 +30,7 @@ ideas = {
 
 		LR_FRA_resistance_high = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_resistance_high__generic_disjointed_gov
 			modifier = {
 				stability_factor = -0.1
 				political_power_gain = -0.1
@@ -40,7 +40,7 @@ ideas = {
 		# The cabinet has lost its majority in the Chamber.
 		LR_FRA_minority = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_minority__generic_disjointed_gov
 			modifier = {
 				political_power_gain = -0.25
 				stability_factor = -0.05
@@ -50,7 +50,7 @@ ideas = {
 
 		LR_FRA_gov_provisional = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_provisional__generic_disjointed_gov
 			modifier = {
 				stability_factor = -0.05
 			}
@@ -58,7 +58,7 @@ ideas = {
 
 		LR_FRA_gov_orleans = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_orleans__generic_disjointed_gov
 			modifier = {
 				war_support_factor = 0.1
 			}
@@ -66,7 +66,7 @@ ideas = {
 
 		LR_FRA_gov_bourbon = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_bourbon__generic_disjointed_gov
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -74,7 +74,7 @@ ideas = {
 
 		LR_FRA_gov_communist = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_communist__generic_disjointed_gov
 			modifier = {
 				war_support_factor = 0.05
 			}
@@ -82,7 +82,7 @@ ideas = {
 
 		LR_FRA_gov_jacobin = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_jacobin__generic_disjointed_gov
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -90,7 +90,7 @@ ideas = {
 
 		LR_FRA_gov_girondin = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_girondin__generic_disjointed_gov
 			modifier = {
 				political_power_gain = 0.1
 			}
@@ -98,7 +98,7 @@ ideas = {
 
 		LR_FRA_gov_marais = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_marais__generic_disjointed_gov
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -106,7 +106,7 @@ ideas = {
 
 		LR_FRA_gov_guardian = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_guardian__generic_disjointed_gov
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -114,7 +114,7 @@ ideas = {
 
 		LR_FRA_gov_napoleon = {
 			removal_cost = -1
-			picture = generic_disjointed_gov
+			picture = LRc_LR_FRA_gov_napoleon__generic_disjointed_gov
 			modifier = {
 				war_support_factor = 0.1
 			}

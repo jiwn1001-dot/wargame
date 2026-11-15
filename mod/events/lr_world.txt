@@ -6,7 +6,7 @@ news_event = {
 	id = lr_gnews.1
 	title = lr_gnews.1.t
 	desc = lr_gnews.1.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_paris_crowd
 
 	major = yes
 	is_triggered_only = yes
@@ -20,7 +20,7 @@ news_event = {
 	id = lr_gnews.2
 	title = lr_gnews.2.t
 	desc = lr_gnews.2.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_army_parade
 
 	major = yes
 	is_triggered_only = yes
@@ -34,7 +34,7 @@ news_event = {
 	id = lr_gnews.3
 	title = lr_gnews.3.t
 	desc = lr_gnews.3.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_royal_guard
 
 	major = yes
 	is_triggered_only = yes
@@ -48,7 +48,7 @@ news_event = {
 	id = lr_gnews.4
 	title = lr_gnews.4.t
 	desc = lr_gnews.4.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_paris_crowd
 
 	major = yes
 	is_triggered_only = yes
@@ -62,7 +62,7 @@ news_event = {
 	id = lr_gnews.5
 	title = lr_gnews.5.t
 	desc = lr_gnews.5.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_parliament
 
 	major = yes
 	is_triggered_only = yes
@@ -76,7 +76,7 @@ news_event = {
 	id = lr_gnews.6
 	title = lr_gnews.6.t
 	desc = lr_gnews.6.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_army_parade
 
 	major = yes
 	is_triggered_only = yes
@@ -90,7 +90,7 @@ news_event = {
 	id = lr_gnews.7
 	title = lr_gnews.7.t
 	desc = lr_gnews.7.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_mobilisation
 
 	major = yes
 	is_triggered_only = yes
@@ -104,7 +104,7 @@ news_event = {
 	id = lr_gnews.8
 	title = lr_gnews.8.t
 	desc = lr_gnews.8.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_mobilisation
 
 	major = yes
 	is_triggered_only = yes
@@ -118,7 +118,7 @@ news_event = {
 	id = lr_gnews.9
 	title = lr_gnews.9.t
 	desc = lr_gnews.9.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_mobilisation
 
 	major = yes
 	is_triggered_only = yes
@@ -132,7 +132,7 @@ news_event = {
 	id = lr_gnews.10
 	title = lr_gnews.10.t
 	desc = lr_gnews.10.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_mobilisation
 
 	major = yes
 	is_triggered_only = yes
@@ -146,7 +146,7 @@ news_event = {
 	id = lr_gnews.11
 	title = lr_gnews.11.t
 	desc = lr_gnews.11.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_armistice
 
 	major = yes
 	is_triggered_only = yes
@@ -160,7 +160,7 @@ news_event = {
 	id = lr_gnews.12
 	title = lr_gnews.12.t
 	desc = lr_gnews.12.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_kerensky
 
 	major = yes
 	is_triggered_only = yes
@@ -174,7 +174,7 @@ news_event = {
 	id = lr_gnews.13
 	title = lr_gnews.13.t
 	desc = lr_gnews.13.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_ruhr
 
 	major = yes
 	is_triggered_only = yes
@@ -188,7 +188,7 @@ news_event = {
 	id = lr_gnews.14
 	title = lr_gnews.14.t
 	desc = lr_gnews.14.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_kerensky
 
 	major = yes
 	is_triggered_only = yes
@@ -202,7 +202,7 @@ news_event = {
 	id = lr_gnews.15
 	title = lr_gnews.15.t
 	desc = lr_gnews.15.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_spanish_war
 
 	major = yes
 	is_triggered_only = yes
@@ -216,7 +216,7 @@ news_event = {
 	id = lr_gnews.16
 	title = lr_gnews.16.t
 	desc = lr_gnews.16.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_japan_army
 
 	major = yes
 	is_triggered_only = yes
@@ -230,7 +230,7 @@ news_event = {
 	id = lr_gnews.17
 	title = lr_gnews.17.t
 	desc = lr_gnews.17.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_balkan_war
 
 	major = yes
 	is_triggered_only = yes
@@ -244,7 +244,7 @@ news_event = {
 	id = lr_gnews.20
 	title = lr_gnews.20.t
 	desc = lr_gnews.20.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_paris_crowd
 
 	major = yes
 	is_triggered_only = yes
@@ -258,7 +258,7 @@ news_event = {
 	id = lr_gnews.21
 	title = lr_gnews.21.t
 	desc = lr_gnews.21.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_liberation
 
 	major = yes
 	is_triggered_only = yes
@@ -272,7 +272,7 @@ news_event = {
 	id = lr_gnews.18
 	title = lr_gnews.18.t
 	desc = lr_gnews.18.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_petain
 
 	major = yes
 	is_triggered_only = yes
@@ -286,13 +286,55 @@ news_event = {
 	id = lr_gnews.19
 	title = lr_gnews.19.t
 	desc = lr_gnews.19.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_barricade
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
 		name = lr_gnews.19.a
+	}
+}
+
+news_event = {
+	id = lr_gnews.30
+	title = lr_gnews.30.t
+	desc = lr_gnews.30.d
+	picture = GFX_news_event_lr_treaty
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lr_gnews.30.a
+	}
+}
+
+news_event = {
+	id = lr_gnews.31
+	title = lr_gnews.31.t
+	desc = lr_gnews.31.d
+	picture = GFX_news_event_lr_treaty
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lr_gnews.31.a
+	}
+}
+
+news_event = {
+	id = lr_gnews.32
+	title = lr_gnews.32.t
+	desc = lr_gnews.32.d
+	picture = GFX_news_event_lr_douala
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lr_gnews.32.a
 	}
 }
 
@@ -311,7 +353,7 @@ news_event = {
 	id = lr_world.101
 	title = lr_world.101.t
 	desc = lr_world.101.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_spanish_war
 
 	major = yes
 	is_triggered_only = yes
@@ -336,7 +378,7 @@ news_event = {
 	id = lr_world.102
 	title = lr_world.102.t
 	desc = lr_world.102.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_china_revolution
 
 	major = yes
 	is_triggered_only = yes
@@ -361,7 +403,7 @@ news_event = {
 	id = lr_world.103
 	title = lr_world.103.t
 	desc = lr_world.103.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_spanish_war
 
 	major = yes
 	is_triggered_only = yes
@@ -386,7 +428,7 @@ news_event = {
 	id = lr_world.104
 	title = lr_world.104.t
 	desc = lr_world.104.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_continental
 
 	major = yes
 	is_triggered_only = yes
@@ -411,7 +453,7 @@ news_event = {
 	id = lr_world.105
 	title = lr_world.105.t
 	desc = lr_world.105.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_japan_army
 
 	major = yes
 	is_triggered_only = yes
@@ -436,7 +478,7 @@ news_event = {
 	id = lr_world.107
 	title = lr_world.107.t
 	desc = lr_world.107.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_balkan_war
 
 	major = yes
 	is_triggered_only = yes
@@ -461,7 +503,7 @@ news_event = {
 	id = lr_world.106
 	title = lr_world.106.t
 	desc = lr_world.106.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_mobilisation
 
 	major = yes
 	is_triggered_only = yes
@@ -486,7 +528,7 @@ news_event = {
 	id = lr_world.108
 	title = lr_world.108.t
 	desc = lr_world.108.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_london
 
 	major = yes
 	is_triggered_only = yes
@@ -511,7 +553,7 @@ news_event = {
 	id = lr_world.109
 	title = lr_world.109.t
 	desc = lr_world.109.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_winter_war
 
 	major = yes
 	is_triggered_only = yes
@@ -572,7 +614,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				OR = { tag = ITA tag = PAP tag = TOS tag = TTS }
+				OR = { tag = ITA tag = PAP tag = TOS tag = TTS tag = PRM tag = MDN }
 				NOT = {
 					OR = {
 				ITA = {
@@ -591,6 +633,16 @@ country_event = {
 					NOT = { tag = FROM }
 				}
 				TTS = {
+					exists = yes
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				PRM = {
+					exists = yes
+					NOT = { tag = ROOT }
+					NOT = { tag = FROM }
+				}
+				MDN = {
 					exists = yes
 					NOT = { tag = ROOT }
 					NOT = { tag = FROM }
@@ -651,6 +703,12 @@ country_event = {
 		if = {
 			limit = { FROM = { exists = yes } }
 			white_peace = FROM
+			# The new puppet leaves every war, so France's allies are not left fighting it.
+			FROM = {
+				every_enemy_country = {
+					FROM = { white_peace = PREV }
+				}
+			}
 			set_autonomy = {
 				target = FROM
 				autonomous_state = autonomy_puppet
@@ -674,7 +732,7 @@ news_event = {
 	id = lr_world.110
 	title = lr_world.110.t
 	desc = lr_world.110.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_mobilisation
 
 	major = yes
 	is_triggered_only = yes
@@ -688,7 +746,7 @@ news_event = {
 	id = lr_world.111
 	title = lr_world.111.t
 	desc = lr_world.111.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_treaty
 
 	major = yes
 	is_triggered_only = yes
@@ -702,7 +760,7 @@ news_event = {
 	id = lr_world.112
 	title = lr_world.112.t
 	desc = lr_world.112.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_balkan_war
 
 	major = yes
 	is_triggered_only = yes
@@ -716,7 +774,7 @@ news_event = {
 	id = lr_world.113
 	title = lr_world.113.t
 	desc = lr_world.113.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_balkan_war
 
 	major = yes
 	is_triggered_only = yes
@@ -730,7 +788,7 @@ news_event = {
 	id = lr_world.114
 	title = lr_world.114.t
 	desc = lr_world.114.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_balkan_war
 
 	major = yes
 	is_triggered_only = yes
@@ -744,7 +802,7 @@ news_event = {
 	id = lr_world.115
 	title = lr_world.115.t
 	desc = lr_world.115.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_balkan_war
 
 	major = yes
 	is_triggered_only = yes

@@ -61,7 +61,7 @@ FIN_national_defense_category = {
 		}
 		name = FIN_national_defense_category
 		zoom = 300
-		state = 930
+		state = 150
 	}
 }
 
@@ -89,7 +89,7 @@ FIN_finnish_resistance_category = {
 		}
 		name = FIN_finnish_resistance_category
 		zoom = 300
-		state = 930
+		state = 150
 	}
 }
 
@@ -193,6 +193,12 @@ FIN_finno_soviet_kinship_war = {
 				}
 				is_controlled_by = ROOT
 			}
+			147 = { #ONEGA
+				has_dynamic_modifier = {
+					modifier = FIN_anti_soviet_sentiment
+				}
+				is_controlled_by = ROOT
+			}
 			216 = { #OLONETS
 				has_dynamic_modifier = {
 					modifier = FIN_anti_soviet_sentiment
@@ -216,3 +222,4 @@ FIN_confederated_finno_russian_republics_category = {
 		has_completed_focus = FIN_confederated_finno_russian_republics
 	}
 }
+# kr_layout: state numbers translated

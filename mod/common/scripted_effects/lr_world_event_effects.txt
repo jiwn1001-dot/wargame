@@ -236,32 +236,73 @@ lr_world_china = {
 		KMT = { transfer_state = 599 }
 	}
 	if = {
+		limit = { 1224 = { is_owned_by = CHI } }
+		KMT = { transfer_state = 1224 }
+	}
+	if = {
 		limit = { 594 = { is_owned_by = CHI } }
 		KMT = { transfer_state = 594 }
+	}
+	if = {
+		limit = { 1214 = { is_owned_by = CHI } }
+		KMT = { transfer_state = 1214 }
 	}
 	if = {
 		limit = { 592 = { is_owned_by = CHI } }
 		GXC = { transfer_state = 592 }
 	}
 	if = {
+		limit = { 1211 = { is_owned_by = CHI } }
+		GXC = { transfer_state = 1211 }
+	}
+	if = {
 		limit = { 593 = { is_owned_by = CHI } }
 		GXC = { transfer_state = 593 }
+	}
+	if = {
+		limit = { 1212 = { is_owned_by = CHI } }
+		GXC = { transfer_state = 1212 }
+	}
+	if = {
+		limit = { 1213 = { is_owned_by = CHI } }
+		GXC = { transfer_state = 1213 }
 	}
 	if = {
 		limit = { 591 = { is_owned_by = CHI } }
 		GXC = { transfer_state = 591 }
 	}
 	if = {
-		limit = { 1033 = { is_owned_by = CHI } }
-		GXC = { transfer_state = 1033 }
+		limit = { 1033 = { is_owned_by = CHI }
+		987 = { is_owned_by = CHI } }
+		GXC = { transfer_state = 1033 transfer_state = 987 }
+	}
+	if = {
+		limit = {  }
+		GXC = { transfer_state = 1214 }
 	}
 	if = {
 		limit = { 614 = { is_owned_by = CHI } }
 		ZHL = { transfer_state = 614 }
 	}
 	if = {
+		limit = { 1234 = { is_owned_by = CHI } }
+		ZHL = { transfer_state = 1234 }
+	}
+	if = {
 		limit = { 607 = { is_owned_by = CHI } }
 		ZHL = { transfer_state = 607 }
+	}
+	if = {
+		limit = { 1229 = { is_owned_by = CHI } }
+		ZHL = { transfer_state = 1229 }
+	}
+	if = {
+		limit = { 1230 = { is_owned_by = CHI } }
+		ZHL = { transfer_state = 1230 }
+	}
+	if = {
+		limit = { 1231 = { is_owned_by = CHI } }
+		ZHL = { transfer_state = 1231 }
 	}
 	if = {
 		limit = { 620 = { is_owned_by = CHI } }
@@ -276,32 +317,56 @@ lr_world_china = {
 		SDG = { transfer_state = 597 }
 	}
 	if = {
-		limit = { 743 = { is_owned_by = CHI } }
-		SDG = { transfer_state = 743 }
+		limit = { 1276 = { is_owned_by = CHI } }
+		SDG = { transfer_state = 1276 }
 	}
 	if = {
 		limit = { 1038 = { is_owned_by = CHI } }
 		SDG = { transfer_state = 1038 }
 	}
 	if = {
+		limit = { 1275 = { is_owned_by = CHI } }
+		SDG = { transfer_state = 1275 }
+	}
+	if = {
+		limit = {  }
+		SDG = { transfer_state = 1276 }
+	}
+	if = {
 		limit = { 606 = { is_owned_by = CHI } }
 		ANH = { transfer_state = 606 }
+	}
+	if = {
+		limit = { 1228 = { is_owned_by = CHI } }
+		ANH = { transfer_state = 1228 }
 	}
 	if = {
 		limit = { 749 = { is_owned_by = CHI } }
 		ANH = { transfer_state = 749 }
 	}
 	if = {
+		limit = { 600 = { is_owned_by = CHI } }
+		ANH = { transfer_state = 600 }
+	}
+	if = {
 		limit = { 598 = { is_owned_by = CHI } }
 		ANH = { transfer_state = 598 }
 	}
 	if = {
-		limit = { 1035 = { is_owned_by = CHI } }
-		ANH = { transfer_state = 1035 }
+		limit = { 1223 = { is_owned_by = CHI } }
+		ANH = { transfer_state = 1223 }
+	}
+	if = {
+		limit = {  }
+		ANH = { transfer_state = 749 }
 	}
 	if = {
 		limit = { 1034 = { is_owned_by = CHI } }
 		ANH = { transfer_state = 1034 }
+	}
+	if = {
+		limit = { 622 = { is_owned_by = CHI } }
+		ANH = { transfer_state = 598 transfer_state = 622 }
 	}
 	if = {
 		limit = { 613 = { is_owned_by = CHI } }
@@ -316,16 +381,56 @@ lr_world_china = {
 		ANQ = { transfer_state = 750 }
 	}
 	if = {
-		limit = { 600 = { is_owned_by = CHI } }
+		limit = { 1253 = { is_owned_by = CHI } }
+		ANQ = { transfer_state = 1253 }
+	}
+	if = {
+		limit = {  }
 		NJG = { transfer_state = 600 }
+	}
+	if = {
+		limit = { 1225 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1225 }
 	}
 	if = {
 		limit = { 596 = { is_owned_by = CHI } }
 		NJG = { transfer_state = 596 }
 	}
 	if = {
+		limit = { 1219 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1219 }
+	}
+	if = {
+		limit = { 1220 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1220 }
+	}
+	if = {
+		limit = { 1221 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1221 }
+	}
+	if = {
+		limit = { 1222 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1222 }
+	}
+	if = {
 		limit = { 595 = { is_owned_by = CHI } }
 		NJG = { transfer_state = 595 }
+	}
+	if = {
+		limit = { 1215 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1215 }
+	}
+	if = {
+		limit = { 1216 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1216 }
+	}
+	if = {
+		limit = { 1217 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1217 }
+	}
+	if = {
+		limit = { 1218 = { is_owned_by = CHI } }
+		NJG = { transfer_state = 1218 }
 	}
 	if = {
 		limit = { 524 = { is_owned_by = CHI } }
@@ -336,47 +441,82 @@ lr_world_china = {
 		FNG = { transfer_state = 328 }
 	}
 	if = {
-		limit = { 714 = { is_owned_by = CHI } }
-		FNG = { transfer_state = 714 }
+		limit = { 1159 = { is_owned_by = CHI }
+		525 = { is_owned_by = CHI } }
+		FNG = { transfer_state = 1159 transfer_state = 525 }
+	}
+	if = {
+		limit = { 714 = { is_owned_by = CHI }
+		1254 = { is_owned_by = CHI } }
+		FNG = { transfer_state = 714 transfer_state = 1254 }
+	}
+	if = {
+		limit = { 1245 = { is_owned_by = CHI } }
+		FNG = { transfer_state = 1245 }
 	}
 	if = {
 		limit = { 715 = { is_owned_by = CHI } }
 		FNG = { transfer_state = 715 }
 	}
 	if = {
+		limit = { 610 = { is_owned_by = CHI } }
+		FNG = { transfer_state = 610 }
+	}
+	if = {
 		limit = { 716 = { is_owned_by = CHI } }
 		FNG = { transfer_state = 716 }
+	}
+	if = {
+		limit = {  }
+		FNG = { transfer_state = 1159 }
+	}
+	if = {
+		limit = {  }
+		FNG = { transfer_state = 715 }
 	}
 	if = {
 		limit = { 717 = { is_owned_by = CHI } }
 		FNG = { transfer_state = 717 }
 	}
 	if = {
+		limit = { 1246 = { is_owned_by = CHI } }
+		FNG = { transfer_state = 1246 }
+	}
+	if = {
 		limit = { 745 = { is_owned_by = CHI } }
 		FNG = { transfer_state = 745 }
 	}
 	if = {
-		limit = { 610 = { is_owned_by = CHI } }
+		limit = {  }
 		FNG = { transfer_state = 610 }
 	}
 	if = {
-		limit = { 761 = { is_owned_by = CHI } }
-		FNG = { transfer_state = 761 }
+		limit = {  }
+		FNG = { transfer_state = 716 }
 	}
 	if = {
-		limit = { 611 = { is_owned_by = CHI } }
-		MEN = { transfer_state = 611 }
+		limit = { 761 = { is_owned_by = CHI }
+		611 = { is_owned_by = CHI } }
+		FNG = { transfer_state = 761 transfer_state = 611 }
+	}
+	if = {
+		limit = {  }
+		FNG = { transfer_state = 1254 }
 	}
 	if = {
 		limit = { 612 = { is_owned_by = CHI } }
 		MEN = { transfer_state = 612 }
 	}
 	if = {
-		limit = { 1043 = { is_owned_by = CHI } }
-		MEN = { transfer_state = 1043 }
+		limit = {  }
+		MEN = { transfer_state = 612 }
 	}
 	if = {
 		limit = { 621 = { is_owned_by = CHI } }
+		MEN = { transfer_state = 621 }
+	}
+	if = {
+		limit = {  }
 		SUI = { transfer_state = 621 }
 	}
 	if = {
@@ -388,16 +528,20 @@ lr_world_china = {
 		SHX = { transfer_state = 615 }
 	}
 	if = {
-		limit = { 622 = { is_owned_by = CHI } }
-		SHX = { transfer_state = 622 }
+		limit = { 1235 = { is_owned_by = CHI } }
+		SHX = { transfer_state = 1235 }
 	}
 	if = {
 		limit = { 1032 = { is_owned_by = CHI } }
 		SHX = { transfer_state = 1032 }
 	}
 	if = {
-		limit = { 1046 = { is_owned_by = CHI } }
-		SHX = { transfer_state = 1046 }
+		limit = {  }
+		SHX = { transfer_state = 1032 }
+	}
+	if = {
+		limit = {  }
+		SHX = { transfer_state = 1032 }
 	}
 	if = {
 		limit = { 744 = { is_owned_by = CHI } }
@@ -412,19 +556,23 @@ lr_world_china = {
 		NGX = { transfer_state = 1040 }
 	}
 	if = {
+		limit = {  }
+		NGX = { transfer_state = 1040 }
+	}
+	if = {
 		limit = { 756 = { is_owned_by = CHI } }
 		GSU = { transfer_state = 756 }
 	}
 	if = {
-		limit = { 1044 = { is_owned_by = CHI } }
-		GSU = { transfer_state = 1044 }
-	}
-	if = {
-		limit = { 1045 = { is_owned_by = CHI } }
-		GSU = { transfer_state = 1045 }
+		limit = {  }
+		GSU = { transfer_state = 756 }
 	}
 	if = {
 		limit = { 283 = { is_owned_by = CHI } }
+		GSU = { transfer_state = 283 }
+	}
+	if = {
+		limit = {  }
 		GSU = { transfer_state = 283 }
 	}
 	if = {
@@ -436,11 +584,19 @@ lr_world_china = {
 		XSM = { transfer_state = 604 }
 	}
 	if = {
+		limit = { 755 = { is_owned_by = CHI } }
+		XSM = { transfer_state = 755 }
+	}
+	if = {
+		limit = {  }
+		XSM = { transfer_state = 755 }
+	}
+	if = {
 		limit = { 754 = { is_owned_by = CHI } }
 		XSM = { transfer_state = 754 }
 	}
 	if = {
-		limit = { 755 = { is_owned_by = CHI } }
+		limit = {  }
 		XSM = { transfer_state = 755 }
 	}
 	if = {
@@ -456,6 +612,10 @@ lr_world_china = {
 		GZH = { transfer_state = 603 }
 	}
 	if = {
+		limit = { 1226 = { is_owned_by = CHI } }
+		GZH = { transfer_state = 1226 }
+	}
+	if = {
 		limit = { 748 = { is_owned_by = CHI } }
 		GZH = { transfer_state = 748 }
 	}
@@ -464,12 +624,20 @@ lr_world_china = {
 		SIC = { transfer_state = 605 }
 	}
 	if = {
+		limit = { 1227 = { is_owned_by = CHI } }
+		SIC = { transfer_state = 1227 }
+	}
+	if = {
 		limit = { 1041 = { is_owned_by = CHI } }
 		SIC = { transfer_state = 1041 }
 	}
 	if = {
-		limit = { 1037 = { is_owned_by = CHI } }
-		SIC = { transfer_state = 1037 }
+		limit = {  }
+		SIC = { transfer_state = 1041 }
+	}
+	if = {
+		limit = {  }
+		SIC = { transfer_state = 1227 }
 	}
 	if = {
 		limit = { 751 = { is_owned_by = CHI } }
@@ -488,24 +656,36 @@ lr_world_china = {
 		SIK = { transfer_state = 617 }
 	}
 	if = {
-		limit = { 618 = { is_owned_by = CHI } }
-		SIK = { transfer_state = 618 }
+		limit = {  }
+		SIK = { transfer_state = 617 }
+	}
+	if = {
+		limit = { 1262 = { is_owned_by = CHI } }
+		SIK = { transfer_state = 1262 }
 	}
 	if = {
 		limit = { 619 = { is_owned_by = CHI } }
 		SIK = { transfer_state = 619 }
 	}
 	if = {
-		limit = { 759 = { is_owned_by = CHI } }
-		SIK = { transfer_state = 759 }
+		limit = { 1042 = { is_owned_by = CHI } }
+		SIK = { transfer_state = 1042 }
 	}
 	if = {
 		limit = { 760 = { is_owned_by = CHI } }
 		SIK = { transfer_state = 760 }
 	}
 	if = {
-		limit = { 1042 = { is_owned_by = CHI } }
+		limit = {  }
+		SIK = { transfer_state = 617 }
+	}
+	if = {
+		limit = {  }
 		SIK = { transfer_state = 1042 }
+	}
+	if = {
+		limit = {  }
+		SIK = { transfer_state = 619 }
 	}
 	if = {
 		limit = { 322 = { is_owned_by = CHI } }
@@ -520,28 +700,50 @@ lr_world_china = {
 		TIB = { transfer_state = 757 }
 	}
 	if = {
-		limit = { 758 = { is_owned_by = CHI } }
-		TIB = { transfer_state = 758 }
+		limit = { 758 = { is_owned_by = CHI }
+		759 = { is_owned_by = CHI }
+		832 = { is_owned_by = CHI } }
+		TIB = { transfer_state = 758 transfer_state = 759 transfer_state = 832 }
 	}
 	if = {
-		limit = { 434 = { is_owned_by = CHI } }
-		TIB = { transfer_state = 434 }
+		limit = { 434 = { is_owned_by = CHI }
+		878 = { is_owned_by = CHI } }
+		TIB = { transfer_state = 434 transfer_state = 878 }
 	}
 	if = {
-		limit = { 329 = { is_owned_by = CHI } }
-		MON = { transfer_state = 329 }
+		limit = { 329 = { is_owned_by = CHI }
+		577 = { is_owned_by = CHI }
+		824 = { is_owned_by = CHI }
+		876 = { is_owned_by = CHI } }
+		MON = { transfer_state = 329 transfer_state = 577 transfer_state = 824 transfer_state = 876 }
 	}
 	if = {
 		limit = { 330 = { is_owned_by = CHI } }
 		MON = { transfer_state = 330 }
 	}
 	if = {
+		limit = { 818 = { is_owned_by = CHI } }
+		MON = { transfer_state = 818 }
+	}
+	if = {
 		limit = { 817 = { is_owned_by = CHI } }
 		MON = { transfer_state = 817 }
 	}
 	if = {
-		limit = { 818 = { is_owned_by = CHI } }
+		limit = {  }
+		MON = { transfer_state = 330 }
+	}
+	if = {
+		limit = {  }
 		MON = { transfer_state = 818 }
+	}
+	if = {
+		limit = {  }
+		MON = { transfer_state = 818 }
+	}
+	if = {
+		limit = {  }
+		MON = { transfer_state = 1262 }
 	}
 	if = {
 		limit = { 819 = { is_owned_by = CHI } }
@@ -556,8 +758,16 @@ lr_world_china = {
 		599 = { set_state_controller_to = KMT }
 	}
 	if = {
+		limit = { 1224 = { is_owned_by = KMT } }
+		1224 = { set_state_controller_to = KMT }
+	}
+	if = {
 		limit = { 594 = { is_owned_by = KMT } }
 		594 = { set_state_controller_to = KMT }
+	}
+	if = {
+		limit = { 1214 = { is_owned_by = KMT } }
+		1214 = { set_state_controller_to = KMT }
 	}
 	KMT = { set_capital = { state = 599 } }
 	KMT = {
@@ -663,7 +873,7 @@ lr_world_china = {
 			communism = 10
 		}
 	}
-	MEN = { set_capital = { state = 611 } }
+	MEN = { set_capital = { state = 612 } }
 	MEN = {
 		set_politics = {
 			ruling_party = neutrality
@@ -3341,7 +3551,7 @@ lr_world_america_south = {
 				ideology = democratic
 				size = 0.5
 				capital = 492
-				states = { 492 947 }
+				states = { 492 }
 			}
 		}
 	}
@@ -3355,7 +3565,7 @@ lr_world_america_south = {
 				ideology = democratic
 				size = 0.5
 				capital = 508
-				states = { 508 960 959 511 958 509 957 302 487 }
+				states = { 508 960 959 958 509 957 302 487 1194 }
 			}
 		}
 	}
@@ -3391,13 +3601,15 @@ lr_world_america_south = {
 		limit = {
 			VEN = { exists = yes }
 			488 = { is_owned_by = VEN }
+			961 = { is_owned_by = VEN }
+			1156 = { is_owned_by = VEN }
 		}
 		VEN = {
 			start_civil_war = {
 				ideology = democratic
 				size = 0.5
 				capital = 488
-				states = { 488 489 }
+				states = { 488 961 1156 489 }
 			}
 		}
 	}
@@ -3479,20 +3691,21 @@ lr_world_washington = {
 		CNA = { transfer_state = 396 }
 	}
 	if = {
-		limit = { 391 = { is_owned_by = USA } }
-		CNA = { transfer_state = 391 }
+		limit = { 391 = { is_owned_by = USA }
+		683 = { is_owned_by = USA } }
+		CNA = { transfer_state = 391 transfer_state = 683 }
 	}
 	CNA = { set_capital = { state = 360 } }
 	CNA = {
 		set_politics = {
-			ruling_party = communism
+			ruling_party = democratic
 			elections_allowed = no
 		}
 		set_popularities = {
-			neutrality = 5
+			neutrality = 10
 			fascism = 5
-			democratic = 30
-			communism = 60
+			democratic = 65
+			communism = 20
 		}
 	}
 	CNA = {
@@ -3656,6 +3869,30 @@ lr_world_italy = {
 	}
 	if = {
 		limit = {
+			ITA = { exists = yes }
+			PRM = { exists = yes }
+		}
+		ITA = {
+			declare_war_on = {
+				target = PRM
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
+			ITA = { exists = yes }
+			MDN = { exists = yes }
+		}
+		ITA = {
+			declare_war_on = {
+				target = MDN
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
 			PAP = { exists = yes }
 			TOS = { exists = yes }
 		}
@@ -3680,12 +3917,96 @@ lr_world_italy = {
 	}
 	if = {
 		limit = {
+			PAP = { exists = yes }
+			PRM = { exists = yes }
+		}
+		PAP = {
+			declare_war_on = {
+				target = PRM
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
+			PAP = { exists = yes }
+			MDN = { exists = yes }
+		}
+		PAP = {
+			declare_war_on = {
+				target = MDN
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
 			TOS = { exists = yes }
 			TTS = { exists = yes }
 		}
 		TOS = {
 			declare_war_on = {
 				target = TTS
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
+			TOS = { exists = yes }
+			PRM = { exists = yes }
+		}
+		TOS = {
+			declare_war_on = {
+				target = PRM
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
+			TOS = { exists = yes }
+			MDN = { exists = yes }
+		}
+		TOS = {
+			declare_war_on = {
+				target = MDN
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
+			TTS = { exists = yes }
+			PRM = { exists = yes }
+		}
+		TTS = {
+			declare_war_on = {
+				target = PRM
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
+			TTS = { exists = yes }
+			MDN = { exists = yes }
+		}
+		TTS = {
+			declare_war_on = {
+				target = MDN
+				type = annex_everything
+			}
+		}
+	}
+	if = {
+		limit = {
+			PRM = { exists = yes }
+			MDN = { exists = yes }
+		}
+		PRM = {
+			declare_war_on = {
+				target = MDN
 				type = annex_everything
 			}
 		}
@@ -3768,24 +4089,25 @@ lr_balkan_pact_wins = {
 		ROM = { transfer_state = 77 }
 	}
 	if = {
-		limit = { 803 = { is_owned_by = BUL } }
-		YUG = { transfer_state = 803 }
-	}
-	if = {
 		limit = { 106 = { is_owned_by = BUL } }
 		YUG = { transfer_state = 106 }
 	}
 	if = {
-		limit = { 970 = { is_owned_by = BUL } }
-		YUG = { transfer_state = 970 }
+		limit = {  }
+		YUG = { transfer_state = 106 }
+	}
+	if = {
+		limit = {  }
+		YUG = { transfer_state = 106 }
 	}
 	if = {
 		limit = { 184 = { is_owned_by = BUL } }
 		GRE = { transfer_state = 184 }
 	}
 	if = {
-		limit = { 731 = { is_owned_by = BUL } }
-		GRE = { transfer_state = 731 }
+		limit = { 731 = { is_owned_by = BUL }
+		1118 = { is_owned_by = BUL } }
+		GRE = { transfer_state = 731 transfer_state = 1118 }
 	}
 	if = {
 		limit = {
@@ -3815,8 +4137,9 @@ lr_bulgaria_beats_serbia = {
 	}
 	BUL = { white_peace = YUG }
 	if = {
-		limit = { 105 = { is_owned_by = YUG } }
-		MNT = { transfer_state = 105 }
+		limit = { 105 = { is_owned_by = YUG }
+		970 = { is_owned_by = YUG } }
+		MNT = { transfer_state = 105 transfer_state = 970 }
 	}
 	MNT = { set_capital = { state = 105 } }
 	MNT = {
@@ -3858,8 +4181,9 @@ lr_bulgaria_beats_romania = {
 	}
 	BUL = { white_peace = ROM }
 	if = {
-		limit = { 79 = { is_owned_by = ROM } }
-		MOL = { transfer_state = 79 }
+		limit = { 79 = { is_owned_by = ROM }
+		347 = { is_owned_by = ROM } }
+		MOL = { transfer_state = 79 transfer_state = 347 }
 	}
 	MOL = { set_capital = { state = 79 } }
 	MOL = {
@@ -3900,8 +4224,9 @@ lr_bulgaria_beats_greece = {
 		TUR = { transfer_state = 182 }
 	}
 	if = {
-		limit = { 187 = { is_owned_by = GRE } }
-		TUR = { transfer_state = 187 }
+		limit = { 187 = { is_owned_by = GRE }
+		345 = { is_owned_by = GRE } }
+		TUR = { transfer_state = 187 transfer_state = 345 }
 	}
 	set_global_flag = LR_bulgaria_beat_GRE
 	if = {
@@ -4114,8 +4439,9 @@ lr_russia_takes_poland = {
 	if = {
 		limit = { var:global.LR_victor = { tag = SOV } }
 		if = {
-			limit = { 5 = { OR = { is_owned_by = GER is_owned_by = POL } } }
-			SOV = { transfer_state = 5 }
+			limit = { 5 = { OR = { is_owned_by = GER is_owned_by = POL } }
+			85 = { OR = { is_owned_by = GER is_owned_by = POL } } }
+			SOV = { transfer_state = 5 transfer_state = 85 }
 		}
 		if = {
 			limit = { 63 = { OR = { is_owned_by = GER is_owned_by = POL } } }
@@ -4126,8 +4452,9 @@ lr_russia_takes_poland = {
 			SOV = { transfer_state = 66 }
 		}
 		if = {
-			limit = { 67 = { OR = { is_owned_by = GER is_owned_by = POL } } }
-			SOV = { transfer_state = 67 }
+			limit = { 67 = { OR = { is_owned_by = GER is_owned_by = POL } }
+			913 = { OR = { is_owned_by = GER is_owned_by = POL } } }
+			SOV = { transfer_state = 67 transfer_state = 913 }
 		}
 		if = {
 			limit = { 68 = { OR = { is_owned_by = GER is_owned_by = POL } } }
@@ -4138,8 +4465,8 @@ lr_russia_takes_poland = {
 			SOV = { transfer_state = 763 }
 		}
 		if = {
-			limit = { 85 = { OR = { is_owned_by = GER is_owned_by = POL } } }
-			SOV = { transfer_state = 85 }
+			limit = { 807 = { OR = { is_owned_by = GER is_owned_by = POL } } }
+			SOV = { transfer_state = 807 }
 		}
 		if = {
 			limit = { 86 = { OR = { is_owned_by = GER is_owned_by = POL } } }
@@ -4150,7 +4477,7 @@ lr_russia_takes_poland = {
 			SOV = { transfer_state = 762 }
 		}
 		if = {
-			limit = { 807 = { OR = { is_owned_by = GER is_owned_by = POL } } }
+			limit = {  }
 			SOV = { transfer_state = 807 }
 		}
 	}
@@ -4222,28 +4549,43 @@ lr_balkan_beat_bulgaria = {
 
 lr_balkan_great_victory = {
 	if = {
-		limit = { 102 = { is_owned_by = AUS } }
-		YUG = { transfer_state = 102 }
+		limit = { 102 = { is_owned_by = AUS }
+		1098 = { is_owned_by = AUS } }
+		YUG = { transfer_state = 102 transfer_state = 1098 }
 	}
 	if = {
-		limit = { 103 = { is_owned_by = AUS } }
-		YUG = { transfer_state = 103 }
+		limit = {  }
+		YUG = { transfer_state = 1098 }
+	}
+	if = {
+		limit = { 103 = { is_owned_by = AUS }
+		109 = { is_owned_by = AUS }
+		852 = { is_owned_by = AUS } }
+		YUG = { transfer_state = 103 transfer_state = 109 transfer_state = 852 }
 	}
 	if = {
 		limit = { 104 = { is_owned_by = AUS } }
 		YUG = { transfer_state = 104 }
 	}
 	if = {
-		limit = { 109 = { is_owned_by = AUS } }
+		limit = {  }
 		YUG = { transfer_state = 109 }
+	}
+	if = {
+		limit = { 1100 = { is_owned_by = AUS } }
+		YUG = { transfer_state = 1100 }
+	}
+	if = {
+		limit = { 1101 = { is_owned_by = AUS } }
+		YUG = { transfer_state = 1101 }
 	}
 	if = {
 		limit = { 804 = { is_owned_by = AUS } }
 		YUG = { transfer_state = 804 }
 	}
 	if = {
-		limit = { 853 = { is_owned_by = AUS } }
-		YUG = { transfer_state = 853 }
+		limit = {  }
+		YUG = { transfer_state = 102 }
 	}
 	if = {
 		limit = { 45 = { is_owned_by = AUS } }
@@ -4258,6 +4600,14 @@ lr_balkan_great_victory = {
 		ROM = { transfer_state = 76 }
 	}
 	if = {
+		limit = { 1091 = { is_owned_by = AUS } }
+		ROM = { transfer_state = 1091 }
+	}
+	if = {
+		limit = { 1092 = { is_owned_by = AUS } }
+		ROM = { transfer_state = 1092 }
+	}
+	if = {
 		limit = { 80 = { is_owned_by = AUS } }
 		ROM = { transfer_state = 80 }
 	}
@@ -4266,8 +4616,8 @@ lr_balkan_great_victory = {
 		ROM = { transfer_state = 82 }
 	}
 	if = {
-		limit = { 83 = { is_owned_by = AUS } }
-		ROM = { transfer_state = 83 }
+		limit = {  }
+		ROM = { transfer_state = 1091 }
 	}
 	if = {
 		limit = { 84 = { is_owned_by = AUS } }
@@ -4342,8 +4692,8 @@ lr_balkan_fall_romania = {
 		}
 	}
 	if = {
-		limit = { 79 = { is_owned_by = ROM } }
-		MOL = { transfer_state = 79 }
+		limit = {  }
+		MOL = { transfer_state = 79 transfer_state = 347 }
 	}
 	MOL = { set_capital = { state = 79 } }
 	MOL = {
@@ -4559,6 +4909,29 @@ lr_pick_victor = {
 	}
 }
 
+lr_german_exile = {
+	if = {
+		limit = { GER = { any_owned_state = { NOT = { is_on_continent = europe } } } }
+		GER = {
+			every_owned_state = {
+				limit = { NOT = { is_on_continent = europe } }
+				GEX = { transfer_state = PREV }
+			}
+		}
+		GEX = {
+			if = {
+				limit = { owns_state = 773 }
+				set_capital = { state = 773 }
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+		news_event = { id = lr_gnews.32 days = 1 }
+	}
+}
+
 lr_back_to_start_FRA = {
 	every_owned_state = {
 		limit = {
@@ -4630,35 +5003,38 @@ lr_france_defeated = {
 			var:global.LR_victor = { transfer_state = 459 }
 		}
 		if = {
-			limit = { 460 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 460 }
+			limit = { 460 = { is_owned_by = FRA }
+			1043 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 460 transfer_state = 1043 }
 		}
 		if = {
-			limit = { 513 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 513 }
+			limit = { 513 = { is_owned_by = FRA }
+			1075 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 513 transfer_state = 1075 }
 		}
 		if = {
-			limit = { 514 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 514 }
+			limit = { 514 = { is_owned_by = FRA }
+			1071 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 514 transfer_state = 1071 }
 		}
 	}
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = communism } }
 		if = {
-			limit = { 459 = { is_owned_by = FRA } }
+			limit = {  }
 			ALG = { transfer_state = 459 }
 		}
 		if = {
-			limit = { 460 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 460 }
+			limit = {  }
+			ALG = { transfer_state = 460 transfer_state = 1043 }
 		}
 		if = {
-			limit = { 513 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 513 }
+			limit = {  }
+			ALG = { transfer_state = 513 transfer_state = 1075 }
 		}
 		if = {
-			limit = { 514 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 514 }
+			limit = {  }
+			ALG = { transfer_state = 514 transfer_state = 1071 }
 		}
 		ALG = {
 			set_politics = {
@@ -4683,20 +5059,20 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = democratic } }
 		if = {
-			limit = { 459 = { is_owned_by = FRA } }
+			limit = {  }
 			ALG = { transfer_state = 459 }
 		}
 		if = {
-			limit = { 460 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 460 }
+			limit = {  }
+			ALG = { transfer_state = 460 transfer_state = 1043 }
 		}
 		if = {
-			limit = { 513 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 513 }
+			limit = {  }
+			ALG = { transfer_state = 513 transfer_state = 1075 }
 		}
 		if = {
-			limit = { 514 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 514 }
+			limit = {  }
+			ALG = { transfer_state = 514 transfer_state = 1071 }
 		}
 		ALG = {
 			set_politics = {
@@ -4715,20 +5091,20 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = fascism } }
 		if = {
-			limit = { 459 = { is_owned_by = FRA } }
+			limit = {  }
 			ALG = { transfer_state = 459 }
 		}
 		if = {
-			limit = { 460 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 460 }
+			limit = {  }
+			ALG = { transfer_state = 460 transfer_state = 1043 }
 		}
 		if = {
-			limit = { 513 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 513 }
+			limit = {  }
+			ALG = { transfer_state = 513 transfer_state = 1075 }
 		}
 		if = {
-			limit = { 514 = { is_owned_by = FRA } }
-			ALG = { transfer_state = 514 }
+			limit = {  }
+			ALG = { transfer_state = 514 transfer_state = 1071 }
 		}
 		ALG = {
 			set_politics = {
@@ -4765,11 +5141,11 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = communism } }
 		if = {
-			limit = { 458 = { is_owned_by = FRA } }
+			limit = {  }
 			TUN = { transfer_state = 458 }
 		}
 		if = {
-			limit = { 665 = { is_owned_by = FRA } }
+			limit = {  }
 			TUN = { transfer_state = 665 }
 		}
 		TUN = {
@@ -4795,11 +5171,11 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = democratic } }
 		if = {
-			limit = { 458 = { is_owned_by = FRA } }
+			limit = {  }
 			TUN = { transfer_state = 458 }
 		}
 		if = {
-			limit = { 665 = { is_owned_by = FRA } }
+			limit = {  }
 			TUN = { transfer_state = 665 }
 		}
 		TUN = {
@@ -4819,11 +5195,11 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = fascism } }
 		if = {
-			limit = { 458 = { is_owned_by = FRA } }
+			limit = {  }
 			TUN = { transfer_state = 458 }
 		}
 		if = {
-			limit = { 665 = { is_owned_by = FRA } }
+			limit = {  }
 			TUN = { transfer_state = 665 }
 		}
 		TUN = {
@@ -4854,19 +5230,21 @@ lr_france_defeated = {
 			var:global.LR_victor = { transfer_state = 461 }
 		}
 		if = {
-			limit = { 462 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 462 }
+			limit = { 462 = { is_owned_by = FRA }
+			1076 = { is_owned_by = FRA }
+			1135 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 462 transfer_state = 1076 transfer_state = 1135 }
 		}
 	}
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = communism } }
 		if = {
-			limit = { 461 = { is_owned_by = FRA } }
+			limit = {  }
 			MOR = { transfer_state = 461 }
 		}
 		if = {
-			limit = { 462 = { is_owned_by = FRA } }
-			MOR = { transfer_state = 462 }
+			limit = {  }
+			MOR = { transfer_state = 462 transfer_state = 1076 transfer_state = 1135 }
 		}
 		MOR = {
 			set_politics = {
@@ -4891,12 +5269,12 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = democratic } }
 		if = {
-			limit = { 461 = { is_owned_by = FRA } }
+			limit = {  }
 			MOR = { transfer_state = 461 }
 		}
 		if = {
-			limit = { 462 = { is_owned_by = FRA } }
-			MOR = { transfer_state = 462 }
+			limit = {  }
+			MOR = { transfer_state = 462 transfer_state = 1076 transfer_state = 1135 }
 		}
 		MOR = {
 			set_politics = {
@@ -4915,12 +5293,12 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = fascism } }
 		if = {
-			limit = { 461 = { is_owned_by = FRA } }
+			limit = {  }
 			MOR = { transfer_state = 461 }
 		}
 		if = {
-			limit = { 462 = { is_owned_by = FRA } }
-			MOR = { transfer_state = 462 }
+			limit = {  }
+			MOR = { transfer_state = 462 transfer_state = 1076 transfer_state = 1135 }
 		}
 		MOR = {
 			set_politics = {
@@ -4946,16 +5324,18 @@ lr_france_defeated = {
 	if = {
 		limit = { var:global.LR_victor = { has_government = neutrality } }
 		if = {
-			limit = { 272 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 272 }
+			limit = { 272 = { is_owned_by = FRA }
+			1139 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 272 transfer_state = 1139 }
 		}
 		if = {
-			limit = { 556 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 556 }
+			limit = { 899 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 899 }
 		}
 		if = {
-			limit = { 557 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 557 }
+			limit = { 557 = { is_owned_by = FRA }
+			1137 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 557 transfer_state = 1137 }
 		}
 		if = {
 			limit = { 776 = { is_owned_by = FRA } }
@@ -4974,8 +5354,9 @@ lr_france_defeated = {
 			var:global.LR_victor = { transfer_state = 779 }
 		}
 		if = {
-			limit = { 780 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 780 }
+			limit = { 780 = { is_owned_by = FRA }
+			1081 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 780 transfer_state = 1081 }
 		}
 		if = {
 			limit = { 781 = { is_owned_by = FRA } }
@@ -4986,24 +5367,30 @@ lr_france_defeated = {
 			var:global.LR_victor = { transfer_state = 782 }
 		}
 		if = {
-			limit = { 786 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 786 }
+			limit = { 786 = { is_owned_by = FRA }
+			556 = { is_owned_by = FRA }
+			1080 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 786 transfer_state = 556 transfer_state = 1080 }
 		}
 		if = {
 			limit = { 898 = { is_owned_by = FRA } }
 			var:global.LR_victor = { transfer_state = 898 }
 		}
 		if = {
-			limit = { 899 = { is_owned_by = FRA } }
+			limit = {  }
 			var:global.LR_victor = { transfer_state = 899 }
 		}
 		if = {
-			limit = { 515 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 515 }
+			limit = { 515 = { is_owned_by = FRA }
+			1037 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 515 transfer_state = 1037 }
 		}
 		if = {
-			limit = { 774 = { is_owned_by = FRA } }
-			var:global.LR_victor = { transfer_state = 774 }
+			limit = { 774 = { is_owned_by = FRA }
+			1006 = { is_owned_by = FRA }
+			1012 = { is_owned_by = FRA }
+			1025 = { is_owned_by = FRA } }
+			var:global.LR_victor = { transfer_state = 774 transfer_state = 1006 transfer_state = 1012 transfer_state = 1025 }
 		}
 		if = {
 			limit = { 775 = { is_owned_by = FRA } }
@@ -5017,71 +5404,71 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = communism } }
 		if = {
-			limit = { 272 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 272 }
+			limit = {  }
+			SEN = { transfer_state = 272 transfer_state = 1139 }
 		}
 		if = {
-			limit = { 556 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 556 }
-		}
-		if = {
-			limit = { 557 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 557 }
-		}
-		if = {
-			limit = { 776 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 776 }
-		}
-		if = {
-			limit = { 777 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 777 }
-		}
-		if = {
-			limit = { 778 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 778 }
-		}
-		if = {
-			limit = { 779 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 779 }
-		}
-		if = {
-			limit = { 780 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 780 }
-		}
-		if = {
-			limit = { 781 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 781 }
-		}
-		if = {
-			limit = { 782 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 782 }
-		}
-		if = {
-			limit = { 786 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 786 }
-		}
-		if = {
-			limit = { 898 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 898 }
-		}
-		if = {
-			limit = { 899 = { is_owned_by = FRA } }
+			limit = {  }
 			SEN = { transfer_state = 899 }
 		}
 		if = {
-			limit = { 515 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 515 }
+			limit = {  }
+			SEN = { transfer_state = 557 transfer_state = 1137 }
 		}
 		if = {
-			limit = { 774 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 774 }
+			limit = {  }
+			SEN = { transfer_state = 776 }
 		}
 		if = {
-			limit = { 775 = { is_owned_by = FRA } }
+			limit = {  }
+			SEN = { transfer_state = 777 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 778 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 779 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 780 transfer_state = 1081 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 781 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 782 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 786 transfer_state = 556 transfer_state = 1080 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 898 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 899 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 515 transfer_state = 1037 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 774 transfer_state = 1006 transfer_state = 1012 transfer_state = 1025 }
+		}
+		if = {
+			limit = {  }
 			SEN = { transfer_state = 775 }
 		}
 		if = {
-			limit = { 298 = { is_owned_by = FRA } }
+			limit = {  }
 			SEN = { transfer_state = 298 }
 		}
 		SEN = {
@@ -5107,71 +5494,71 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = democratic } }
 		if = {
-			limit = { 272 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 272 }
+			limit = {  }
+			SEN = { transfer_state = 272 transfer_state = 1139 }
 		}
 		if = {
-			limit = { 556 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 556 }
-		}
-		if = {
-			limit = { 557 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 557 }
-		}
-		if = {
-			limit = { 776 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 776 }
-		}
-		if = {
-			limit = { 777 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 777 }
-		}
-		if = {
-			limit = { 778 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 778 }
-		}
-		if = {
-			limit = { 779 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 779 }
-		}
-		if = {
-			limit = { 780 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 780 }
-		}
-		if = {
-			limit = { 781 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 781 }
-		}
-		if = {
-			limit = { 782 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 782 }
-		}
-		if = {
-			limit = { 786 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 786 }
-		}
-		if = {
-			limit = { 898 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 898 }
-		}
-		if = {
-			limit = { 899 = { is_owned_by = FRA } }
+			limit = {  }
 			SEN = { transfer_state = 899 }
 		}
 		if = {
-			limit = { 515 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 515 }
+			limit = {  }
+			SEN = { transfer_state = 557 transfer_state = 1137 }
 		}
 		if = {
-			limit = { 774 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 774 }
+			limit = {  }
+			SEN = { transfer_state = 776 }
 		}
 		if = {
-			limit = { 775 = { is_owned_by = FRA } }
+			limit = {  }
+			SEN = { transfer_state = 777 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 778 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 779 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 780 transfer_state = 1081 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 781 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 782 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 786 transfer_state = 556 transfer_state = 1080 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 898 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 899 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 515 transfer_state = 1037 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 774 transfer_state = 1006 transfer_state = 1012 transfer_state = 1025 }
+		}
+		if = {
+			limit = {  }
 			SEN = { transfer_state = 775 }
 		}
 		if = {
-			limit = { 298 = { is_owned_by = FRA } }
+			limit = {  }
 			SEN = { transfer_state = 298 }
 		}
 		SEN = {
@@ -5191,71 +5578,71 @@ lr_france_defeated = {
 	else_if = {
 		limit = { var:global.LR_victor = { has_government = fascism } }
 		if = {
-			limit = { 272 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 272 }
+			limit = {  }
+			SEN = { transfer_state = 272 transfer_state = 1139 }
 		}
 		if = {
-			limit = { 556 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 556 }
-		}
-		if = {
-			limit = { 557 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 557 }
-		}
-		if = {
-			limit = { 776 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 776 }
-		}
-		if = {
-			limit = { 777 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 777 }
-		}
-		if = {
-			limit = { 778 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 778 }
-		}
-		if = {
-			limit = { 779 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 779 }
-		}
-		if = {
-			limit = { 780 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 780 }
-		}
-		if = {
-			limit = { 781 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 781 }
-		}
-		if = {
-			limit = { 782 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 782 }
-		}
-		if = {
-			limit = { 786 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 786 }
-		}
-		if = {
-			limit = { 898 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 898 }
-		}
-		if = {
-			limit = { 899 = { is_owned_by = FRA } }
+			limit = {  }
 			SEN = { transfer_state = 899 }
 		}
 		if = {
-			limit = { 515 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 515 }
+			limit = {  }
+			SEN = { transfer_state = 557 transfer_state = 1137 }
 		}
 		if = {
-			limit = { 774 = { is_owned_by = FRA } }
-			SEN = { transfer_state = 774 }
+			limit = {  }
+			SEN = { transfer_state = 776 }
 		}
 		if = {
-			limit = { 775 = { is_owned_by = FRA } }
+			limit = {  }
+			SEN = { transfer_state = 777 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 778 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 779 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 780 transfer_state = 1081 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 781 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 782 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 786 transfer_state = 556 transfer_state = 1080 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 898 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 899 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 515 transfer_state = 1037 }
+		}
+		if = {
+			limit = {  }
+			SEN = { transfer_state = 774 transfer_state = 1006 transfer_state = 1012 transfer_state = 1025 }
+		}
+		if = {
+			limit = {  }
 			SEN = { transfer_state = 775 }
 		}
 		if = {
-			limit = { 298 = { is_owned_by = FRA } }
+			limit = {  }
 			SEN = { transfer_state = 298 }
 		}
 		SEN = {
@@ -5318,6 +5705,18 @@ lr_france_defeated = {
 	every_enemy_country = {
 		FRA = { white_peace = PREV }
 	}
+	# Its subjects and allies leave the war too, or a conference would open over them.
+	every_country = {
+		limit = {
+			OR = {
+				is_subject_of = FRA
+				is_in_faction_with = FRA
+			}
+		}
+		every_enemy_country = {
+			PREV = { white_peace = PREV }
+		}
+	}
 	var:global.LR_victor = {
 		set_autonomy = {
 			target = FRA
@@ -5351,177 +5750,13 @@ lr_france_defeated = {
 lr_world_on_capitulation = {
 	if = {
 		limit = {
-			ROOT = { OR = { tag = SPR tag = CRL tag = ESR } }
-			FROM = { OR = { tag = SPR tag = CRL tag = ESR } }
-		}
-		FROM = { country_event = { id = lr_world.90 } }
-	}
-	if = {
-		limit = {
-			ROOT = { OR = { tag = JAP tag = JPE } }
-			FROM = { OR = { tag = JAP tag = JPE } }
-		}
-		FROM = { country_event = { id = lr_world.90 } }
-	}
-	if = {
-		limit = {
-			ROOT = { OR = { tag = ITA tag = PAP tag = TOS tag = TTS } }
-			FROM = { OR = { tag = ITA tag = PAP tag = TOS tag = TTS } }
-		}
-		FROM = { country_event = { id = lr_world.90 } }
-	}
-	if = {
-		limit = {
-			ROOT = { OR = { tag = CHI tag = KMT tag = GXC tag = ZHL tag = SDG tag = ANH tag = ANQ tag = NJG tag = FNG tag = MEN tag = SUI tag = SHX tag = NGX tag = GSU tag = XSM tag = YUN tag = GZH tag = SIC } }
-			FROM = { OR = { tag = CHI tag = KMT tag = GXC tag = ZHL tag = SDG tag = ANH tag = ANQ tag = NJG tag = FNG tag = MEN tag = SUI tag = SHX tag = NGX tag = GSU tag = XSM tag = YUN tag = GZH tag = SIC } }
-		}
-		FROM = { country_event = { id = lr_world.90 } }
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_war
-			ROOT = { tag = BUL }
-			FROM = { OR = { tag = YUG tag = GRE tag = ROM } }
-		}
-		lr_balkan_pact_wins = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_war
-			ROOT = { tag = YUG }
-			FROM = { tag = BUL }
-		}
-		lr_bulgaria_beats_serbia = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_war
-			ROOT = { tag = ROM }
-			FROM = { tag = BUL }
-		}
-		lr_bulgaria_beats_romania = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_war
-			ROOT = { tag = GRE }
-			FROM = { tag = BUL }
-		}
-		lr_bulgaria_beats_greece = yes
-	}
-	if = {
-		limit = {
-			ROOT = { OR = { tag = UKR tag = BLR tag = EST tag = LAT tag = LIT tag = GEO tag = ARM tag = AZR tag = FIN } }
-			FROM = { tag = SOV }
-		}
-		ROOT = { news_event = { id = lr_gnews.14 days = 1 } }
-		SOV = {
-			annex_country = {
-				target = ROOT
-				transfer_troops = yes
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_front
-			NOT = { has_global_flag = LR_balkan_settled }
-			ROOT = { tag = YUG }
-			FROM = { OR = { tag = ENG tag = AUS tag = GER tag = BAY tag = UKR tag = BLR tag = EST tag = LAT tag = LIT tag = GEO tag = ARM tag = AZR tag = BUL } }
-		}
-		lr_balkan_fall_serbia = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_front
-			NOT = { has_global_flag = LR_balkan_settled }
-			ROOT = { tag = GRE }
-			FROM = { OR = { tag = ENG tag = AUS tag = GER tag = BAY tag = UKR tag = BLR tag = EST tag = LAT tag = LIT tag = GEO tag = ARM tag = AZR tag = BUL } }
-		}
-		lr_balkan_fall_greece = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_front
-			NOT = { has_global_flag = LR_balkan_settled }
-			ROOT = { tag = ROM }
-			FROM = { OR = { tag = ENG tag = AUS tag = GER tag = BAY tag = UKR tag = BLR tag = EST tag = LAT tag = LIT tag = GEO tag = ARM tag = AZR tag = BUL } }
-		}
-		lr_balkan_fall_romania = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_front
-			NOT = { has_global_flag = LR_balkan_beat_bulgaria }
-			ROOT = { tag = BUL }
-		}
-		lr_balkan_beat_bulgaria = yes
-	}
-	if = {
-		limit = {
-			has_global_flag = LR_balkan_front
-			NOT = { has_global_flag = LR_balkan_settled }
-			ROOT = { tag = AUS }
-			OR = { YUG = { has_war_with = AUS } GRE = { has_war_with = AUS } ROM = { has_war_with = AUS } }
-		}
-		lr_balkan_great_victory = yes
-	}
-	if = {
-		limit = {
-			ROOT = { tag = USA }
-			CNA = {
-				exists = yes
-				has_war_with = USA
-			}
-		}
-		CNA = { country_event = { id = lr_america.2 } }
-	}
-	if = {
-		limit = {
-			ROOT = { tag = CAN }
-			has_global_flag = LR_cna_canada
-			CNA = { has_war_with = CAN }
-		}
-		CNA = { country_event = { id = lr_america.3 } }
-	}
-	if = {
-		limit = {
-			NOT = { tag = FRA }
-			FRA = { has_war_with = ROOT }
-			FROM = {
-				NOT = { tag = SOV }
-				OR = {
-					tag = FRA
-					is_in_faction_with = FRA
-					is_subject_of = FRA
-				}
-			}
-		}
-		lr_fra_victory_settlement = yes
-	}
-	if = {
-		limit = {
-			NOT = { tag = FRA }
-			FRA = { has_war_with = ROOT }
-			FROM = {
-				NOT = { tag = SOV }
-				OR = {
-					tag = FRA
-					is_in_faction_with = FRA
-					is_subject_of = FRA
-				}
-			}
-			exists = yes
-			capital_scope = { NOT = { is_on_continent = europe } }
-		}
-		lr_fra_overseas_settlement = yes
-	}
-	if = {
-		limit = {
 			ROOT = { tag = BAY }
 			FRA = { has_war_with = ROOT }
 			FROM = {
-				NOT = { tag = SOV }
+				OR = {
+					NOT = { tag = SOV }
+					is_in_faction_with = FRA
+				}
 				OR = {
 					tag = FRA
 					is_in_faction_with = FRA
@@ -5529,35 +5764,17 @@ lr_world_on_capitulation = {
 				}
 			}
 		}
-		FRA = {
-			set_country_flag = LR_bavaria_defeated
-			if = {
-				limit = { has_country_flag = LR_germany_defeated }
-				lr_unify_germany = yes
-			}
-		}
-	}
-	if = {
-		limit = {
-			ROOT = { OR = { tag = BEL tag = LUX tag = HOL tag = SWI tag = BAY tag = SPR tag = CRL tag = ESR tag = POR tag = ITA tag = PAP tag = TOS tag = TTS tag = DEN tag = NOR tag = SWE tag = FIN tag = ICE tag = POL tag = LIT tag = LAT tag = EST tag = BLR tag = UKR tag = GEO tag = ARM tag = AZR tag = BUL tag = YUG tag = GRE tag = ROM tag = ALB tag = MNT tag = MOL tag = TUR } }
-			FRA = { has_war_with = ROOT }
-			FROM = {
-				NOT = { tag = SOV }
-				OR = {
-					tag = FRA
-					is_in_faction_with = FRA
-					is_subject_of = FRA
-				}
-			}
-		}
-		FRA = { country_event = { id = lr_world.93 } }
+		FRA = { set_country_flag = LR_bavaria_defeated }
 	}
 	if = {
 		limit = {
 			ROOT = { tag = SOV }
 			FRA = { has_war_with = SOV }
 			FROM = {
-				NOT = { tag = SOV }
+				OR = {
+					NOT = { tag = SOV }
+					is_in_faction_with = FRA
+				}
 				OR = {
 					tag = FRA
 					is_in_faction_with = FRA
@@ -5565,13 +5782,7 @@ lr_world_on_capitulation = {
 				}
 			}
 		}
-		SOV = { lr_back_to_start_SOV = yes }
-		news_event = { id = lr_gnews.12 days = 1 }
-		FRA = {
-			white_peace = SOV
-			country_event = { id = lr_world.94 }
-			lr_fra_finish_war = yes
-		}
+		set_global_flag = LR_russia_defeated
 	}
 	if = {
 		limit = {
@@ -5585,12 +5796,23 @@ lr_world_on_capitulation = {
 			lr_france_defeated = yes
 		}
 	}
+}
+
+lr_separate_peace = {
 	if = {
 		limit = {
-			ROOT = { tag = CNA }
-			USA = { exists = yes }
+			is_subject = no
+			NOT = { tag = FRA }
+			FROM = { has_war_with = ROOT }
 		}
-		USA = { country_event = { id = lr_world.90 } }
+		FROM = {
+			start_peace_conference = {
+				tag = ROOT
+				score_factor = 1.0
+				winner_scope = ALL
+				loser_scope = LIMITED
+			}
+		}
 	}
 }
 
@@ -5600,27 +5822,27 @@ lr_fra_victory_settlement = {
 	if = {
 		limit = { FRA = { OR = { has_country_flag = LR_route_empire has_country_flag = LR_route_red } } }
 		every_owned_state = {
-			limit = { OR = { state = 1 state = 2 state = 6 state = 7 state = 8 state = 14 state = 15 state = 16 state = 17 state = 18 state = 19 state = 20 state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 27 state = 28 state = 29 state = 30 state = 31 state = 32 state = 33 state = 34 state = 35 state = 36 state = 42 state = 51 state = 56 state = 58 state = 102 state = 103 state = 109 state = 114 state = 158 state = 162 state = 163 state = 165 state = 735 state = 785 state = 806 state = 836 state = 845 state = 851 state = 852 state = 977 state = 980 } }
+			limit = { OR = { state = 1 OR = { state = 2 state = 163 state = 1004 state = 1082 } state = 6 state = 7 state = 8 state = 14 state = 15 state = 16 state = 20 OR = { state = 18 state = 17 } state = 19 OR = { state = 20 state = 3 state = 27 } state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 24 state = 28 OR = { state = 29 state = 1077 state = 1131 } OR = { state = 30 state = 1134 } OR = { state = 31 state = 33 state = 1046 } state = 32 state = 25 state = 34 state = 35 state = 36 state = 42 state = 51 state = 56 OR = { state = 103 state = 109 state = 852 } state = 114 OR = { state = 158 state = 1112 } state = 162 state = 103 state = 165 state = 735 state = 785 state = 806 state = 836 state = 845 state = 21 state = 852 state = 102 state = 977 OR = { state = 980 state = 1133 } state = 1082 state = 1083 state = 1084 state = 1085 state = 1089 state = 1111 state = 1112 OR = { state = 1129 state = 851 } state = 1130 state = 1132 state = 1133 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 1138 state = 21 } }
 			FRA = { transfer_state = PREV }
 		}
 	}
 	else_if = {
 		limit = { FRA = { has_government = democratic } }
 		every_owned_state = {
-			limit = { OR = { state = 1 state = 14 state = 15 state = 16 state = 17 state = 18 state = 19 state = 20 state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 27 state = 28 state = 29 state = 30 state = 31 state = 32 state = 33 state = 735 state = 785 state = 806 state = 851 } }
+			limit = { OR = { state = 1 state = 14 state = 15 state = 16 state = 20 OR = { state = 18 state = 17 } state = 19 OR = { state = 20 state = 3 state = 27 } state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 24 state = 28 OR = { state = 29 state = 1077 state = 1131 } OR = { state = 30 state = 1134 } OR = { state = 31 state = 33 state = 1046 } state = 32 state = 25 state = 735 state = 785 state = 806 state = 21 OR = { state = 1129 state = 851 } state = 1130 state = 21 } }
 			FRA = { transfer_state = PREV }
 		}
 	}
 	else_if = {
 		limit = { FRA = { has_government = communism } }
 		every_owned_state = {
-			limit = { OR = { state = 1 state = 6 state = 8 state = 14 state = 15 state = 16 state = 17 state = 18 state = 19 state = 20 state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 27 state = 28 state = 29 state = 30 state = 31 state = 32 state = 33 state = 34 state = 735 state = 785 state = 806 state = 845 state = 851 state = 977 state = 980 } }
+			limit = { OR = { state = 1 state = 6 state = 8 state = 14 state = 15 state = 16 state = 20 OR = { state = 18 state = 17 } state = 19 OR = { state = 20 state = 3 state = 27 } state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 24 state = 28 OR = { state = 29 state = 1077 state = 1131 } OR = { state = 30 state = 1134 } OR = { state = 31 state = 33 state = 1046 } state = 32 state = 25 state = 34 state = 735 state = 785 state = 806 state = 845 state = 21 state = 977 OR = { state = 980 state = 1133 } OR = { state = 1129 state = 851 } state = 1130 state = 1133 state = 21 } }
 			FRA = { transfer_state = PREV }
 		}
 	}
 	else = {
 		every_owned_state = {
-			limit = { OR = { state = 1 state = 6 state = 8 state = 14 state = 15 state = 16 state = 17 state = 18 state = 19 state = 20 state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 27 state = 28 state = 29 state = 30 state = 31 state = 32 state = 33 state = 34 state = 42 state = 51 state = 114 state = 158 state = 735 state = 785 state = 806 state = 845 state = 851 state = 977 state = 980 } }
+			limit = { OR = { state = 1 state = 6 state = 8 state = 14 state = 15 state = 16 state = 20 OR = { state = 18 state = 17 } state = 19 OR = { state = 20 state = 3 state = 27 } state = 21 state = 22 state = 23 state = 24 state = 25 state = 26 state = 24 state = 28 OR = { state = 29 state = 1077 state = 1131 } OR = { state = 30 state = 1134 } OR = { state = 31 state = 33 state = 1046 } state = 32 state = 25 state = 34 state = 42 state = 51 state = 114 OR = { state = 158 state = 1112 } state = 735 state = 785 state = 806 state = 845 state = 21 state = 977 OR = { state = 980 state = 1133 } state = 1089 state = 1111 state = 1112 OR = { state = 1129 state = 851 } state = 1130 state = 1133 state = 158 state = 158 OR = { state = 158 state = 1136 } state = 114 state = 21 } }
 			FRA = { transfer_state = PREV }
 		}
 	}
@@ -5628,6 +5850,10 @@ lr_fra_victory_settlement = {
 	if = {
 		limit = { NOT = { tag = ENG } }
 	# Outside Europe France annexes everything that is not the loser's own core.
+	if = {
+		limit = { tag = GER }
+		lr_german_exile = yes
+	}
 	every_owned_state = {
 		limit = {
 			NOT = { is_on_continent = europe }
@@ -7106,29 +7332,6 @@ lr_fra_name_puppet = {
 }
 
 lr_world_generic_treaty = {
-	if = {
-		limit = {
-			NOT = { tag = FRA }
-			has_civil_war = no
-			has_war = yes
-			NOT = { FRA = { has_war_with = ROOT } }
-		}
-		log = "LR: treaty for [ROOT.GetTag] after falling to [FROM.GetTag]"
-		# Land the winners hold that is theirs by core or claim changes hands.
-		every_owned_state = {
-			limit = {
-				CONTROLLER = {
-					has_war_with = ROOT
-					PREV = { OR = { is_core_of = PREV is_claimed_by = PREV } }
-				}
-			}
-			CONTROLLER = { transfer_state = PREV }
-		}
-		# Then the loser makes peace with every enemy, so no conference ever opens.
-		every_enemy_country = {
-			ROOT = { white_peace = PREV }
-		}
-	}
 }
 
 lr_world_startup = {
@@ -7141,4 +7344,6 @@ lr_world_startup = {
 	ENG = { country_event = { id = lr_world.6 days = 917 } }
 	ENG = { country_event = { id = lr_world.8 days = 365 } }
 	SOV = { country_event = { id = lr_world.9 days = 1063 } }
+	lr_world_armies = yes  # the victors' larger armies (build_oob.py)
 }
+# kr_layout: state numbers translated

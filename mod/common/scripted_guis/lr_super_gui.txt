@@ -18,4 +18,104 @@ scripted_gui = {
 			}
 		}
 	}
+	LR_super_liberty_ui = {
+		context_type = player_context
+		window_name = "LR_super_liberty_window"
+
+		visible = {
+			has_global_flag = LR_super_liberty
+		}
+
+		effects = {
+			LR_super_liberty_close_click = {
+				clr_global_flag = LR_super_liberty
+			}
+		}
+	}
+	LR_super_commune_ui = {
+		context_type = player_context
+		window_name = "LR_super_commune_window"
+
+		visible = {
+			has_global_flag = LR_super_commune
+		}
+
+		effects = {
+			LR_super_commune_close_click = {
+				clr_global_flag = LR_super_commune
+			}
+		}
+	}
+	LR_super_orleans_ui = {
+		context_type = player_context
+		window_name = "LR_super_orleans_window"
+
+		visible = {
+			has_global_flag = LR_super_orleans
+			tag = FRA
+		}
+
+		effects = {
+			LR_super_orleans_close_click = {
+				clr_global_flag = LR_super_orleans
+			}
+		}
+	}
+	LR_super_petain_ui = {
+		context_type = player_context
+		window_name = "LR_super_petain_window"
+
+		visible = {
+			has_global_flag = LR_super_petain
+		}
+
+		effects = {
+			LR_super_petain_close_click = {
+				clr_global_flag = LR_super_petain
+			}
+		}
+	}
+	LR_super_monarchy_ui = {
+		context_type = player_context
+		window_name = "LR_super_monarchy_window"
+
+		visible = {
+			has_global_flag = LR_super_monarchy
+			tag = FRA
+		}
+
+		effects = {
+			LR_super_monarchy_close_click = {
+				clr_global_flag = LR_super_monarchy
+			}
+		}
+	}
+	LR_super_bonaparte_ui = {
+		context_type = player_context
+		window_name = "LR_super_bonaparte_window"
+
+		visible = {
+			has_global_flag = LR_super_bonaparte
+		}
+
+		effects = {
+			LR_super_bonaparte_close_click = {
+				clr_global_flag = LR_super_bonaparte
+			}
+		}
+	}
+	LR_super_world_war_ui = {
+		context_type = player_context
+		window_name = "LR_super_world_war_window"
+
+		visible = {
+			has_global_flag = LR_super_world_war
+		}
+
+		effects = {
+			LR_super_world_war_close_click = {
+				clr_global_flag = LR_super_world_war
+			}
+		}
+	}
 }

@@ -30,13 +30,14 @@ PRC_anti_japanese_expedition = {
 			610 = {
 				PRC_japanese_state_available_for_infiltration_trigger = yes
 			}
-			611 = {
-				PRC_japanese_state_available_for_infiltration_trigger = yes
-			}
 			612 = {
 				PRC_japanese_state_available_for_infiltration_trigger = yes
 			}
+			
 			714 = {
+				PRC_japanese_state_available_for_infiltration_trigger = yes
+			}
+			1254 = {
 				PRC_japanese_state_available_for_infiltration_trigger = yes
 			}
 			715 = {
@@ -314,3 +315,4 @@ PRC_integration_decision_cat = {
 
 
 }
+# kr_layout: state numbers translated

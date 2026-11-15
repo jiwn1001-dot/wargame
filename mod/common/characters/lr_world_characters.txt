@@ -180,6 +180,66 @@ characters={
 		}
 	}
 
+	LR_PRM_elias={
+		name=LR_PRM_elias
+		portraits={
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1960.1.1.1"
+			id=-1
+		}
+	}
+
+	LR_MDN_robert={
+		name=LR_MDN_robert
+		portraits={
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1990.1.1.1"
+			id=-1
+		}
+	}
+
+	LR_GEX_wilhelm={
+		name=LR_GEX_wilhelm
+		portraits={
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1960.1.1.1"
+			id=-1
+		}
+	}
+
+	LR_JBS_muhammad={
+		name=LR_JBS_muhammad
+		portraits={
+			civilian={
+				large="GFX_portrait_unknown"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1960.1.1.1"
+			id=-1
+		}
+	}
+
 	LR_ESR_azana={
 		name=LR_ESR_azana
 		portraits={

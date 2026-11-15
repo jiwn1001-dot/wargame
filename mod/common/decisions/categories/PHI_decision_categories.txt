@@ -14,7 +14,7 @@ PHI_convoys_for_infrastructure_decision_cat = {
 	}
 
 	on_map_area = {
-		targets = { 624 626 625 628 1025 }
+		targets = { 624 626 625 628 1026 }
 		name = PHI_convoys_for_infastructure_decision
 		zoom = 350
 	}
@@ -119,3 +119,4 @@ PHI_relations_with_spanish_america = {
 
 	
 }
+# kr_layout: state numbers translated

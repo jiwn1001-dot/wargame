@@ -42,7 +42,7 @@ IDEAS = [
     ("LR_idea_pet_legion", "참전용사 군단", "대전쟁의 노병들이 원수의 눈과 귀가 됩니다.", "generic_reserve_divisions", {"war_support_factor": 0.05, "stability_factor": 0.03}),
     ("LR_idea_pet_verdun", "베르됭의 교리", "그들은 지나가지 못한다. 화력과 참호가 공세를 꺾습니다.", "generic_fortify_the_borders", {"army_defence_factor": 0.1}),
     ("LR_idea_ana_self_management", "노동자 자주 관리", "공장은 그곳에서 일하는 사람들의 것입니다.", "generic_local_self_management", {"production_factory_max_efficiency_factor": 0.05, "consumer_goods_factor": -0.02}),
-    ("LR_idea_ana_collectives", "자유 집산", "원하는 마을은 땅과 쟁기를 함께 씁니다.", "generic_agrarian_reform", {"stability_factor": 0.05}),
+    ("LR_idea_ana_collectives", "자유 집산", "원하는 코뮌은 땅과 쟁기를 함께 씁니다.", "generic_agrarian_reform", {"stability_factor": 0.05}),
     ("LR_idea_ana_rationalist_schools", "합리주의 학교", "신부도 국가도 없는 교실에서 아이들이 스스로 묻는 법을 배웁니다.", "generic_local_self_management", {"research_speed_factor": 0.05}),
     ("LR_idea_ana_columns", "민병대 종대", "계급장 없는 종대가 노래를 부르며 전선으로 갑니다.", "generic_communist_army", {"army_attack_factor": 0.05, "army_org_factor": -0.03, "conscription_factor": 0.05}),
     ("LR_idea_ana_mandates", "위임과 소환", "대표는 명령받은 대로만 말하고, 언제든 소환됩니다.", "generic_constitutional_guarantees", {"stability_factor": 0.05}),
@@ -112,9 +112,9 @@ def define(g):
     extras(ANA, ANA_ROUTE, [
         # 내정
         ("syndicates_take", "construct_civ_factory", 0, 0, "공장은 조합의 것", "사장실을 비우고 노동자 총회가 공장을 맡습니다.", ["federation"], [idea("LR_idea_ana_self_management"), civ(2)]),
-        ("free_communes", "propaganda", 0, 0, "자유 코뮌", "마을마다 스스로 다스리는 총회가 열립니다.", ["federation"], [stab(0.03), pop("communism", 0.05)]),
-        ("collectives", "construct_civilian", 0, 0, "자유 집산", "원하는 마을은 땅과 쟁기를 함께 씁니다.", ["syndicates_take"], [idea("LR_idea_ana_collectives")]),
-        ("abolish_money", "trade", 0, 0, "화폐 없는 마을", "몇몇 코뮌이 돈을 불태우고 배급표로 삽니다.", ["collectives"], [civ(1), mil(1), stab(-0.03)]),
+        ("free_communes", "propaganda", 0, 0, "자유 코뮌", "코뮌마다 스스로 다스리는 총회가 열립니다.", ["federation"], [stab(0.03), pop("communism", 0.05)]),
+        ("collectives", "construct_civilian", 0, 0, "자유 집산", "원하는 코뮌은 땅과 쟁기를 함께 씁니다.", ["syndicates_take"], [idea("LR_idea_ana_collectives")]),
+        ("abolish_money", "trade", 0, 0, "화폐 없는 코뮌", "몇몇 코뮌이 돈을 불태우고 배급표로 삽니다.", ["collectives"], [civ(1), mil(1), stab(-0.03)]),
         ("housing", "construct_civilian", 0, 0, "빈집 징발", "부자들이 떠난 빈 저택에 판자촌 가족이 들어갑니다.", ["free_communes"], [stab(0.04)]),
         ("rationalist_schools", "scientific_exchange", 0, 0, "합리주의 학교", "신부도 국가도 없는 교실을 엽니다.", ["housing"], [idea("LR_idea_ana_rationalist_schools")]),
         ("ateneos", "propaganda", 0, 0, "민중 회관", "도서관과 강연장과 극장을 겸한 회관이 동네마다 생깁니다.", ["rationalist_schools"], [pp(50), stab(0.02)]),
@@ -135,7 +135,7 @@ def define(g):
         ("iwa", "major_alliance", 0, 0, "국제노동자협회", "베를린에서 잠든 조합들의 인터내셔널을 파리에서 다시 깨웁니다.", ["carrara"], [pp(75), war(0.03)]),
         ("free_territory", "propaganda", 0, 0, "자유 영토의 기억", "우크라이나 초원의 흑군을 기억하는 사람들에게 편지를 보냅니다.", ["iwa"], [popularity("UKR", "communism", 0.1)]),
         # 안정도
-        ("suppress", "political_pressure", 0, 0, "자경 위원회", "마을 총회가 뽑은 자경단이 반혁명 조직을 감시합니다. 모든 지역 반발도 -15.", ["federation"], ["lr_fra_op_reduce = yes"]),
+        ("suppress", "political_pressure", 0, 0, "자경 위원회", "코뮌 총회가 뽑은 자경단이 반혁명 조직을 감시합니다. 모든 지역 반발도 -15.", ["federation"], ["lr_fra_op_reduce = yes"]),
         ("uproot", "special_forces", 0, 0, "반혁명 무장 해제", "왕당파 장교와 지주의 무기고를 모두 비웁니다. 모든 지역 반발도 -30, 이후 반발이 자라지 않습니다.", ["suppress"], ["lr_fra_uproot = yes"]),
     ])
     for item in g["FOCUSES"]:
@@ -152,7 +152,6 @@ def define(g):
     focus(ANA + "channel", "major_war", 0, 0, "해협 건너로", "귀족 의회의 섬으로 건너갑니다.", goal("ENG"), pre=[ANA + "rhine"], route=ANA_ROUTE)
     red.define(g)
     defeat.define(g)
-    integration.define(g)
     alliances.define(g)
 
 
@@ -202,7 +201,6 @@ def weave_routes(g):
     weave(ANA, "federation", "정치", [["proudhon"], ["abolish_prefects", "mandates"], ["congress<abolish_prefects+mandates"], [("platform", "synthesis")]])
     red.weave_routes(g)
     defeat.weave_routes(g)
-    integration.weave_routes(g)
 
 
 def spirits(g):
@@ -278,7 +276,7 @@ STORY = [
                     "청년 하나가 바쿠닌을 인용하자 뒤에서 엽총을 장전하는 소리가 납니다. 그때 늙은 대장장이가 앞으로 나섭니다. 억지로 가입시키는 집산은 지주가 바뀐 것뿐이라고.",
                     "청년들이 서기국에 지시를 청합니다."]), "generic_riot", [
                     ("가입은 자유다. 원하는 사람만 집산한다.", {"stability_factor": 0.04, "op": 1}),
-                    ("혁명은 기다려 주지 않는다. 마을 총회로 밀어붙인다.", {"industrial_capacity_factory": 0.02, "stability_factor": -0.02, "flag": "LR_st_ana_forced"}),
+                    ("혁명은 기다려 주지 않는다. 코뮌 총회로 밀어붙인다.", {"industrial_capacity_factory": 0.02, "stability_factor": -0.02, "flag": "LR_st_ana_forced"}),
                 ]),
         chapter("platform_debate", "army_doctrines", "강령과 종합", "연합의 두 경향이 벨빌의 회관에서 밤새 맞섭니다.", {"political_power_gain": 0.02},
                 "벨빌의 밤샘 토론", P.join([
@@ -434,7 +432,7 @@ FOCUS_TEXT = {
     "LR_PET_madrid_embassy": "원수는 젊은 날 모로코에서 스페인군과 함께 싸웠고, 그 인연으로 마드리드 대사를 지냈습니다. 그 시절의 친구들이 지금 스페인 궁정의 장군들입니다. 피레네 너머로 다시 편지를 씁니다.",
     "LR_PET_vatican": "교황청이 원수에게 축복을 보냅니다. 교회의 재산이 돌아오고, 수도회가 다시 학교를 맡습니다. 혁명이 쫓아낸 신부들이 150년 만에 강단으로 돌아옵니다.",
     "LR_PET_montoire": "몽투아르의 작은 역에서 원수가 승전국의 대표와 악수합니다. 배상금은 줄고, 국경은 조용해집니다. 그 대신 프랑스의 칼은 칼집에 들어갑니다. 사진 한 장이 전 세계 신문에 실립니다.",
-    "LR_PET_hidden_sword": "악수는 하되 칼은 숨깁니다. 원수의 참모들이 동원 명부를 다시 쓰고, 무기를 산속 창고로 옮깁니다. 감시단이 오면 빈 창고와 차 한 잔이 그들을 맞습니다.",
+    "LR_PET_hidden_sword": "악수는 하되 칼은 숨깁니다. 원수의 참모들이 동원 명부를 다시 쓰고, 무기를 산속 창고로 옮깁니다. 감독관들이 오면 빈 창고와 차 한 잔이 그들을 맞습니다.",
     "LR_PET_verdun_doctrine": "그들은 지나가지 못한다. 1916년 베르됭에서 원수가 남긴 말이 육군의 교리가 됩니다. 화력과 요새, 참호와 예비대. 원수는 공세를 믿지 않습니다. 먼저 버티고, 적이 지칠 때 나아갑니다.",
     "LR_PET_maginot": "예산이 끊겨 멈춰 있던 요새 공사를 다시 시작합니다. 콘크리트와 강철이 알자스와 로렌의 언덕 아래로 들어갑니다. 원수는 공사장을 둘러보며 만족스럽게 고개를 끄덕입니다.",
     "LR_PET_suppress": "반발이 큰 지역마다 헌병대와 계엄령이 내려집니다. 통행금지, 검문, 신문 검열. 원수의 프랑스에서 질서는 협상의 대상이 아닙니다.",
@@ -451,8 +449,8 @@ FOCUS_TEXT = {
     "LR_PET_last_winter": "여든을 넘긴 원수에게 남은 시간을 세는 사람들이 있습니다. 그가 세운 나라는 그가 없어도 서 있을 수 있을까요.",
     "LR_ANA_federation": "총선에서 이긴 사회주의자들이 둘로 갈라졌습니다. 중앙위원회 대신 코뮌과 조합의 자유 연합을 택한 사람들이 이겼습니다. 파리 시청에 검은색과 붉은색으로 나뉜 깃발이 오릅니다. 위원회도 당도 없는 혁명이 시작됩니다.",
     "LR_ANA_syndicates_take": "사장실이 비었습니다. 공장마다 노동자 총회가 생산 계획과 임금과 근무 시간을 투표로 정합니다. 공장은 그곳에서 일하는 사람들의 것입니다.",
-    "LR_ANA_free_communes": "파리가 보낸 시장 대신 마을 총회가 마을을 다스립니다. 일요일 오후 성당 앞 광장에서 사람들이 손을 들어 우물과 학교와 도로를 정합니다.",
-    "LR_ANA_collectives": "원하는 마을은 땅과 쟁기와 수확을 함께 씁니다. 원하지 않는 사람은 자기 밭을 그대로 갈아도 됩니다. 강제로 만든 집산은 지주가 바뀐 것뿐이라고 연합은 말합니다.",
+    "LR_ANA_free_communes": "파리가 보낸 시장 대신 코뮌 총회가 코뮌을 다스립니다. 일요일 오후 성당 앞 광장에서 사람들이 손을 들어 우물과 학교와 도로를 정합니다.",
+    "LR_ANA_collectives": "원하는 코뮌은 땅과 쟁기와 수확을 함께 씁니다. 원하지 않는 사람은 자기 밭을 그대로 갈아도 됩니다. 강제로 만든 집산은 지주가 바뀐 것뿐이라고 연합은 말합니다.",
     "LR_ANA_abolish_money": "몇몇 코뮌이 마을 광장에서 프랑 지폐를 불태웁니다. 빵집과 대장간은 배급표로 돌아갑니다. 유럽의 은행가들은 이 소식에 웃음을 터뜨렸다가 곧 웃음을 멈춥니다.",
     "LR_ANA_housing": "부자들이 떠난 빈 저택과 아파트에 판자촌의 가족들이 들어갑니다. 16구의 응접실에서 벨빌의 아이들이 숙제를 합니다.",
     "LR_ANA_rationalist_schools": "바르셀로나의 페레르가 꿈꾸던 학교가 프랑스에 문을 엽니다. 신부도 국가도 없는 교실에서 아이들은 외우는 대신 묻는 법을 배웁니다. 시험도 상장도 없습니다.",
@@ -470,7 +468,7 @@ FOCUS_TEXT = {
     "LR_ANA_carrara": "토스카나의 대리석 채석장 카라라는 이탈리아 무정부주의의 요람입니다. 채석공들의 조합에 파리의 편지가 도착합니다.",
     "LR_ANA_iwa": "베를린에서 세워졌다가 잠든 조합들의 인터내셔널, 국제노동자협회를 파리에서 다시 깨웁니다. 스웨덴과 포르투갈과 아르헨티나의 조합원들이 답장을 보냅니다.",
     "LR_ANA_free_territory": "대전쟁 뒤 우크라이나 초원에서 흑군이 세웠던 자유 영토를 기억하는 사람들이 아직 살아 있습니다. 그들에게 편지를 보냅니다.",
-    "LR_ANA_suppress": "마을 총회가 뽑은 자경단이 반혁명 조직을 감시합니다. 경찰은 없지만 눈은 많습니다.",
+    "LR_ANA_suppress": "코뮌 총회가 뽑은 자경단이 반혁명 조직을 감시합니다. 경찰은 없지만 눈은 많습니다.",
     "LR_ANA_uproot": "왕당파 장교와 지주의 비밀 무기고를 모두 비웁니다. 총을 내려놓은 사람은 집으로 돌아갈 수 있습니다. 그날 이후 반혁명은 무기를 잃습니다.",
     "LR_ANA_algerian_freedom": "알제리를 다시 정복하는 대신, 그 땅의 부두 노동자와 농민들에게 손을 내밉니다. 국경은 왕들이 그은 선일 뿐이라고 연합은 말합니다.",
     "LR_ANA_rhine": "루르의 광부들에게 총과 자유를 함께 가져갑니다. 이것은 프랑스와 독일의 전쟁이 아니라 노동자와 왕의 전쟁이라고 연합 대회는 선언했습니다.",

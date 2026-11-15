@@ -202,7 +202,7 @@ IF = {
 		limit = {
 			OR = { 
 				state = 1005
-				state = 1007
+				state = 1005
 			}
 		}
 		add_dynamic_modifier = { 
@@ -420,4 +420,4 @@ IF = {
 		neutrality = 70
 	}
 }
-
+# kr_layout: state numbers translated

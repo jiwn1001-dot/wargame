@@ -1,6 +1,30 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_portrait_fra_jean_duke_of_guise"
+		texturefile = "gfx/leaders/LR/dlc/portrait_fra_jean_duke_of_guise.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_charles_maurras"
+		texturefile = "gfx/leaders/LR/dlc/portrait_FRA_charles_maurras.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_marcel_bucard"
+		texturefile = "gfx/leaders/LR/dlc/portrait_FRA_marcel_bucard.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_FRA_marcel_deat"
+		texturefile = "gfx/leaders/LR/dlc/portrait_FRA_marcel_deat.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_louis_xx"
 		texturefile = "gfx/leaders/LR/portrait_louis_xx.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_napoleon_bonaparte"
+		texturefile = "gfx/leaders/LR/portrait_napoleon_bonaparte.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_flandin"
+		texturefile = "gfx/leaders/LR/portrait_flandin.dds"
 	}
 }

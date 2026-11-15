@@ -50,8 +50,6 @@ ideologies = {
 
 		modifiers = {
 			generate_wargoal_tension = 2.0
-			send_volunteers_tension = 0
-			generate_wargoal_tension = 2.0
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			send_volunteers_tension = 0
@@ -262,8 +260,6 @@ ideologies = {
 		}
 
 		modifiers = {
-			generate_wargoal_tension = 2.0
-			send_volunteers_tension = 0
 			#increased_influence_factor = 0.3 #30% easier to influence
 			generate_wargoal_tension = 2.0
 			join_faction_tension = 0.4

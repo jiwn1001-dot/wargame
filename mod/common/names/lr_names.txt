@@ -109,3 +109,91 @@ SUI = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
+
+# Italy's vanilla names for the duchies of Parma and Modena.
+PRM = {
+	male = {
+		names = {
+			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Arturo Benito Camillo
+			Carlo Cesare Costanzo Davide Emilio Enrico Ettore Fabrizio Faustino Federico
+			Felice Ferdinando Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe
+			Guglielmo Innocenzo Leopoldo Lorenzo Luigi Marco Mario Massimo Matteo Nicola
+			Oreste Paolo Pasquale Pietro Prospero Raffaele Roberto Ruggiero Silvio Simone
+			Tancredi Ugo Umberto Vincenzo Vittorio
+		  }
+	}
+	female = {
+		names = { Maria Anna Sara Laura Sofia Stella Angela Giovanna Guiseppina Gianna Giulia Valentina }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro
+		Capello Caramore Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia" Emo
+		Fanti Fara Filomarino Garibaldi Giardino Giuriato Govone "La Màrmora" Lussu
+		Mambretti  Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti
+		Pianelli Porro Presbitero Ramorino Ricotti-Magnani Rigoni Sacchi Saletta
+		Sanna Solari Stern Vaccari Zupelli
+
+	 }
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso Robur Gino Giri }
+}
+MDN = {
+	male = {
+		names = {
+			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Arturo Benito Camillo
+			Carlo Cesare Costanzo Davide Emilio Enrico Ettore Fabrizio Faustino Federico
+			Felice Ferdinando Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe
+			Guglielmo Innocenzo Leopoldo Lorenzo Luigi Marco Mario Massimo Matteo Nicola
+			Oreste Paolo Pasquale Pietro Prospero Raffaele Roberto Ruggiero Silvio Simone
+			Tancredi Ugo Umberto Vincenzo Vittorio
+		  }
+	}
+	female = {
+		names = { Maria Anna Sara Laura Sofia Stella Angela Giovanna Guiseppina Gianna Giulia Valentina }
+	}
+	surnames = {
+		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro
+		Capello Caramore Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia" Emo
+		Fanti Fara Filomarino Garibaldi Giardino Giuriato Govone "La Màrmora" Lussu
+		Mambretti  Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti
+		Pianelli Porro Presbitero Ramorino Ricotti-Magnani Rigoni Sacchi Saletta
+		Sanna Solari Stern Vaccari Zupelli
+
+	 }
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso Robur Gino Giri }
+}
+
+# Saudi Arabia's vanilla names for Jabal Shammar.
+JBS = {
+	male = {
+		names = {
+			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali
+			Fawzi Fuad Halil Hasan Hisham Ibrahim Ishaq Iskandar Ja'far Jamal Kamil Khalid
+			Muhammad Mustafa "Nur al-Din" "Sa'd al-Din" Salim  Sa'ud Shukri
+			Tawfiq Umar Uthman Yahya Yusuf Zafir
+		}
+		surnames = {
+			"ibn Abd Allah" "ibn Abd al-Qadir" "ibn Abu Bakr" "ibn Ahmad" "ibn Ali"
+				"ibn Fuad" "ibn Halil" "ibn Hasan" "ibn Hisham" "ibn Ishaq" "ibn Ja'far" "ibm Kamil" "ibn Khalid"
+				"ibn Muhammad" "ibn Mustafa" "ibn Salim"
+				"ibn Umar" "ibn Uthman" "ibn Yusuf"
+				"al-Najdi" "al-Hijazi"
+		}
+	}
+	female = {
+		names = {
+			Nadiyya Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand
+			Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
+			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah
+			Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
+			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
+		}
+		surnames = {
+			"bint Abd Allah" "bint Abd al-Qadir" "bint Abu Bakr" "bint Ahmad" "bint Ali"
+				"bint Fuad" "bint Halil" "bint Hasan" "bint Hisham" "bint Ishaq" "bint Ja'far" "ibm Kamil" "bint Khalid"
+				"bint Muhammad" "bint Mustafa" "bint Salim"
+				"bint Umar" "bint Uthman" "bint Yusuf"
+				"al-Najdi" "al-Hijazi"
+		}
+	}
+	callsigns = { }
+}

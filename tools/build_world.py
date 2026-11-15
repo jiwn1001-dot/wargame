@@ -3,6 +3,7 @@
 Writes the startup scripted effect, country names, the mod descriptors, and copies of the
 vanilla state files whose owner changed, so the country selection map already shows this world.
 """
+import json
 import re
 import sys
 from pathlib import Path
@@ -17,7 +18,10 @@ TRANSFERS = {
     # Prussian partition of Poland and Memel stay with the North German Confederation.
     # French central Africa and Indochina went to Prussia after the Great War.
     # Germany keeps its old Pacific colonies: no Japanese mandate in this world.
-    "GER": [633, 646, 647, 684,
+    # The victor also keeps every colony it had in 1914: German New Guinea, the Bismarck Archipelago, Samoa and
+    # Nauru, Tsingtao, Togo, Kamerun, German East Africa (with Ruanda-Urundi) and South-West Africa.
+    "GER": [633, 646, 647, 684, 979, 737, 726, 725, 743,
+            777, 546, 768, 769, 541, 893, 894, 895,  # all of South-West Africa, not just Windhoek
             85, 86, 762, 807, 188,
             539, 660, 772, 773,
             286, 670, 671, 741, 1017, 1066, 1067, 1068, 1069, 728],
@@ -48,18 +52,26 @@ TRANSFERS = {
     # Greater Bulgaria.
     "BUL": [106, 970, 731, 184, 77, 971, 803],
     # The Ottoman Empire keeps the Middle East and Libya. Saudi Arabia is fully independent.
-    "TUR": [554, 677, 680, 799, 553, 454, 455, 291, 675, 676, 1010, 1011, 656, 293,
-            448, 449, 450, 451, 661, 662, 663, 273, 164],
+    # With Britain on its side and the Arab revolt never raised, the Porte keeps the Hejaz, the Red Sea coast from
+    # Tabuk to Mecca and Asir, as in Kaiserreich. Nejd stays with the Saudis and Yemen with its imam.
+    "TUR": [183, 765, 1014, 554, 677, 680, 799, 553, 454, 455, 291, 675, 676, 1010, 1011, 656, 448, 449, 450, 451, 661, 662, 663, 273, 164,
+            679, 855, 856],
     # France keeps West Africa as far as Chad, and took Liberia.
     "FRA": [298],
     # British spoils: French islands, Djibouti, Guiana, plus Italian east Africa and Haiti.
-    "ENG": [543, 635, 641, 694, 706, 708, 713, 730, 1071, 268, 310, 320,
-            550, 559, 844, 318,
+    "ENG": [543, 635, 641, 694, 706, 708, 713, 730, 1071, 310, 320,
+            318,
             # Ireland never left.
             113, 134, 135],
     "CAN": [463],
-    # Spain keeps what the Spanish-American War took in our history.
-    "SPR": [686],
+    # New Spain keeps the viceroyalty's northern provinces: no war ever took Texas, New Mexico and Alta California.
+    "MEX": [375, 376, 377, 378, 379, 380],
+    # Spain keeps what the Spanish-American War took in our history: Puerto Rico and Guam (the Philippines stay a
+    # Spanish colony, see SUBJECTS).
+    "SPR": [686, 638],
+    # No American planters, no 1893 coup: the Kingdom of Hawaii still stands, with Midway and Wake, under Edo's
+    # protection (see SUBJECTS).
+    "HAW": [629, 631, 632],
     # Spanish America follows the colonial map: viceroyalties are kingdoms, captaincies duchies.
     # New Granada: Colombia, Ecuador, Panama and the canal zone.
     "COL": [305, 490, 649, 304, 685],
@@ -70,8 +82,7 @@ TRANSFERS = {
     # Captaincy of Cuba, with Santo Domingo.
     "CUB": [319],
     # Qing China absorbs warlords, communists, Manchuria, Mongolia, Tibet and Taiwan.
-    "KMT": [599, 594],
-    "CHI": [622, 1032, 1046,
+    "CHI": [599, 594, 622, 1032, 1046,
             591, 592, 593, 1033,
             615, 621, 746,
             287, 617, 618, 619, 759, 760, 1042,
@@ -86,14 +97,26 @@ TRANSFERS = {
             # after the plain owner line, so they must be taken back explicitly.
             608, 614, 1039, 605, 751, 752, 1037, 1041, 597, 1038, 744,
             434],
-    "ETH": [908],
+    "ETH": [908, 550, 559, 268, 269, 844],  # the whole Horn of Africa: Afar, Eritrea, the Somalilands, Jubaland
     # Korea was never annexed, and Sakhalin stayed Russian.
     "KOR": [525, 527, 1028, 1029, 1030, 1031],
     "SOV": [537],
 }
+# The pieces split_states.py cuts from these states go with them; then the pieces with an owner of their own in 1936
+# (Abruzzo to Naples, the duchies of Parma and Modena, the Greek salient to Bulgaria) move to that owner.
+import split_states as _split  # noqa: E402
+TRANSFERS = {tag: _split.expand(states) for tag, states in TRANSFERS.items()}
+for _state, _tag in _split.owner_overrides().items():
+    for _states in TRANSFERS.values():
+        if _state in _states:
+            _states.remove(_state)
+    TRANSFERS.setdefault(_tag, []).append(_state)
+
+# Countries that get cores on the states they are handed (land that was always theirs in this world).
+CORE_ON_TRANSFER = {"MEX"}
 
 # Owned by one country, held by another from the start (Kaiserreich style): state -> controller.
-OCCUPIED = {599: "CHI", 594: "CHI"}
+OCCUPIED = {}  # none: the Kuomintang rises on 1936.10.10 and takes Guangzhou then (docs/WORLD.md)
 
 # (overlord, autonomy level, subjects)
 SUBJECTS = [
@@ -104,6 +127,8 @@ SUBJECTS = [
     # The Great War's winners keep the lands they cut from Russia on a leash.
     ("GER", "autonomy_puppet", ["POL", "LIT", "LAT", "EST"]),
     ("AUS", "autonomy_puppet", ["UKR", "BLR"]),
+    # Hawaii turned to Edo for protection once no American fleet stood between it and the British.
+    ("JAP", "autonomy_puppet", ["HAW"]),
 ]
 
 # Iberian vassals: (overlord, name, adjective).
@@ -146,6 +171,7 @@ NAMES = {
     "CHI": ("청나라", "청"),
     "JAP": ("에도 막부", "일본"),
     "KOR": ("조선", "조선"),
+    "HAW": ("하와이 왕국", "하와이"),
     "RHI": ("라인 연방", "라인"),
 }
 
@@ -170,6 +196,22 @@ def vanilla_states():
     return owners
 
 
+def lift_demilitarized_zones():
+    """Vanilla's demilitarized zones come from the Allies' victory in our Great War: the Rhineland, the Straits,
+    Danzig, Samoa. In this world Germany and the Porte won it, so none of them exist in 1936. (Algeria's zone is made
+    during the game by its revolt.)"""
+    folder = MOD / "history" / "states"
+    for path in (VANILLA / "history" / "states").glob("*.txt"):
+        if "set_demilitarized_zone = yes" not in path.read_text(encoding="utf-8-sig", errors="ignore"):
+            continue
+        target = folder / path.name
+        text = (target if target.exists() else path).read_text(encoding="utf-8-sig", errors="ignore")
+        text = re.sub(r"\n[ \t]*set_demilitarized_zone = yes[ \t]*", "", text)
+        if not text.startswith(GENERATED_NOTE):
+            text = GENERATED_NOTE + text
+        target.write_bytes(text.encode("utf-8"))
+
+
 def vanilla_capital(tag):
     for path in (VANILLA / "history" / "countries").glob(f"{tag} - *.txt"):
         text = path.read_text(encoding="utf-8-sig", errors="ignore")
@@ -179,8 +221,26 @@ def vanilla_capital(tag):
     raise SystemExit(f"no vanilla capital for {tag}")
 
 
+def fix_history_capital(tag, state):
+    """The history file's capital line runs before the start effect: point it at a state the country holds, or the
+    game logs that the capital is not theirs."""
+    # build_diplomacy.py rewrites many histories from vanilla later: it reads this table and fixes them again.
+    table = PROJECT / "tools" / "capital_fixes.json"
+    fixes = json.loads(table.read_text(encoding="utf-8")) if table.exists() else {}
+    fixes[tag] = state
+    table.write_text(json.dumps(fixes, indent=0, sort_keys=True), encoding="utf-8")
+    for path in (MOD / "history" / "countries").glob(f"{tag} - *.txt"):
+        text = path.read_text(encoding="utf-8-sig", errors="ignore")
+        fixed = re.sub(r"^capital\s*=\s*\d+[^\n]*", f"capital = {state}", text, count=1, flags=re.M)
+        if fixed != text:
+            path.write_text(fixed, encoding="utf-8")
+
+
 def build_effect():
     owners = vanilla_states()
+    for _orig, _parts in _split.pieces().items():  # the pieces cut from vanilla states are states too
+        for _new, _ in _parts:
+            owners[_new] = owners.get(_orig)
     seen = {}
     for tag, states in TRANSFERS.items():
         for state in states:
@@ -191,23 +251,28 @@ def build_effect():
             seen[state] = tag
 
     final = {state: seen.get(state, owner) for state, owner in owners.items()}
-    lines = ["lr_setup_world = {", "\t# Ownership"]
-    for tag, states in TRANSFERS.items():
-        lines.append(f"\t{tag} = {{")
-        lines.extend(f"\t\ttransfer_state = {state}" for state in states)
-        lines.append("\t}")
-
+    # Owners are in the state histories (and kr_layout.py redraws them province by province at the end of the build):
+    # moving states again at the start would undo that and leave states owned with no occupation data, which crashed
+    # the game on its first day.
+    lines = ["lr_setup_world = {"]
     lines.append("\t# Owned by one country, held by another")
     lines.extend(f"\t{state} = {{ set_state_controller_to = {holder} }}" for state, holder in OCCUPIED.items())
     lines.append("\t# Capitals of countries that lost or never held their vanilla capital")
     lines.append("\tTUR = { set_capital = { state = 797 } }  # Istanbul, not Ankara")
-    for tag in sorted((set(TRANSFERS) | set(NAMES)) - {"JAP", "TUR", "RHI", "KMT"}):
+    # The victors keep their armies, and America its factories, so the world war France starts is no walkover
+    # (tools/build_events.py defines the spirits).
+    lines.append("\t# The great powers' standing armies")
+    for tag in ("ENG", "GER", "AUS", "BAY"):
+        lines.append(f"\t{tag} = {{ add_ideas = LR_great_power_army }}")
+    lines.append("\tUSA = { add_ideas = LR_USA_arsenal }")
+    for tag in sorted((set(TRANSFERS) | set(NAMES)) - {"JAP", "TUR", "RHI", "KMT", "PRM", "MDN", "JBS"}):  # the duchies set their capital in their own history
         held = sorted(state for state, owner in final.items() if owner == tag)
         if not held:
             raise SystemExit(f"{tag} holds no states")
         if vanilla_capital(tag) not in held:
             preferred = {"ITA": 158, "BAY": 53, "YUG": 107}.get(tag, held[0])
             lines.append(f"\t{tag} = {{ set_capital = {{ state = {preferred} }} }}")
+            fix_history_capital(tag, preferred)
 
     lines.append("\t# Subjects")
     for overlord, level, subjects in SUBJECTS:
@@ -287,6 +352,66 @@ def drop_dated_blocks(body):
         i = j
 
 
+# Industry and people of this world, by country: (civilian, military, dockyards, manpower) multipliers on vanilla.
+# Britain led the winners and rearmed for its empire; the Ottomans and the Habsburgs, victors too, modernised.
+# British North America never won its independence and grew as a colony. Russia's republic never had Stalin's
+# five-year plans: fewer arms works, more civilian industry, and the people the famines and purges never took.
+# France lost, but under no treaty limits: its weak army is a matter of budgets and generals, not factories.
+SCALE = {
+    "ENG": (1.15, 1.5, 1.1, 1.0),
+    "TUR": (1.4, 2.0, 1.5, 1.1),
+    "AUS": (1.0, 1.15, 1.5, 1.0),
+    "GER": (1.0, 1.2, 1.0, 1.0),
+    "BAY": (1.4, 1.0, 1.0, 1.0),
+    "USA": (0.6, 0.6, 0.7, 0.85),
+    "SOV": (1.15, 0.5, 1.0, 1.1),
+}
+SLOTS = {"wasteland": 0, "enclave": 0, "tiny_island": 0, "small_island": 1, "pastoral": 1, "rural": 2, "town": 4,
+         "large_town": 5, "city": 6, "large_city": 8, "metropolis": 10, "megalopolis": 12}
+
+
+CARRY = {}  # (tag, building) -> fraction still owed after rounding
+
+
+def scale_state(body, tag):
+    """Multiply a state's factories and manpower by its owner's factors, within the state's building slots."""
+    civ, mil, dock, people = SCALE[tag]
+    category = re.search(r"state_category\s*=\s*(\w+)", body)
+    slots = SLOTS.get(category.group(1), 12) if category else 12
+    counts = {}
+    for key in ("industrial_complex", "arms_factory", "dockyard"):
+        found = re.search(rf"\b{key}\s*=\s*(\d+)", body)
+        counts[key] = int(found.group(1)) if found else 0
+    wanted = {}
+    for key, factor in (("industrial_complex", civ), ("arms_factory", mil), ("dockyard", dock)):
+        # Carry the fraction to the owner's next state, so a country's total follows its factor even when most of
+        # its states hold one or two factories.
+        exact = counts[key] * factor + CARRY.get((tag, key), 0.0)
+        wanted[key] = max(0, int(exact + 0.5)) if counts[key] or exact >= 1 else 0
+        CARRY[(tag, key)] = exact - wanted[key]
+    need = sum(wanted.values())
+    if category and need > slots:
+        # A country that grew faster in this world has grown its towns too: raise the state's category as far as needed.
+        ladder = sorted((v, k) for k, v in SLOTS.items() if v > 0)
+        bigger = next((k for v, k in ladder if v >= need), "megalopolis")
+        body = body.replace(category.group(0), f"state_category = {bigger}", 1)
+        slots = SLOTS[bigger]
+    room = max(slots, sum(counts.values()))  # never fewer slots than vanilla already fills
+    for key in ("dockyard", "arms_factory", "industrial_complex"):  # trim growth that does not fit
+        while sum(wanted.values()) > room and wanted[key] > counts[key]:
+            wanted[key] -= 1
+    for key, value in wanted.items():
+        if value == counts[key]:
+            continue
+        if re.search(rf"\b{key}\s*=\s*\d+", body):
+            body = re.sub(rf"\b{key}\s*=\s*\d+", f"{key} = {value}", body, count=1)
+        elif value > 0:
+            body = re.sub(r"(buildings\s*=\s*\{)", rf"\1\n\t\t\t{key} = {value}", body, count=1)
+    body = re.sub(r"\bmanpower\s*=\s*(\d+)", lambda m: f"manpower = {round(int(m.group(1)) * people)}", body, count=1)
+    return body
+
+
+
 def build_state_history():
     """Copies of the vanilla state files whose owner changed, so the country selection map shows this world.
 
@@ -303,7 +428,9 @@ def build_state_history():
     folder = MOD / "history" / "states"
     folder.mkdir(parents=True, exist_ok=True)
     for old in folder.glob("*.txt"):
-        if GENERATED_NOTE.strip() in old.read_text(encoding="utf-8-sig", errors="ignore")[:200]:
+        head = old.read_text(encoding="utf-8-sig", errors="ignore")[:200]
+        # Its own states, and kr_layout.py's from the last build (that step lays the states out again at the end).
+        if GENERATED_NOTE.strip() in head or "Generated by tools/kr_layout.py" in head:
             old.unlink()
     written = 0
     for path in (VANILLA / "history" / "states").glob("*.txt"):
@@ -312,14 +439,19 @@ def build_state_history():
         if not found:
             continue
         state = int(found.group(1))
-        if state not in final or (final[state] == owners.get(state) and state not in TRANSFERRED and state not in OCCUPIED):
+        if state not in final or (final[state] == owners.get(state) and state not in TRANSFERRED and state not in OCCUPIED
+                                  and final[state] not in SCALE):
             continue
         lines = [line for line in text.split("\n") if not re.match(r"\s*(owner|controller|transfer_state_to)\s*=\s*\w+\s*(#.*)?$", line)]
         body = drop_dated_blocks("\n".join(lines))
+        if final[state] in SCALE:
+            body = scale_state(body, final[state])
         opened = re.search(r"history\s*=\s*\{", body)
         if not opened:
             raise SystemExit(f"state {state}: no history block")
         holder = f"\n\t\tcontroller = {OCCUPIED[state]}" if state in OCCUPIED else ""
+        if final[state] in CORE_ON_TRANSFER and state in TRANSFERRED and f"add_core_of = {final[state]}" not in body:
+            holder += f"\n\t\tadd_core_of = {final[state]}"
         body = body[:opened.end()] + f"\n\t\towner = {final[state]}{holder}" + body[opened.end():]
         # Some vanilla files carry a byte-order mark the reader keeps; one stray mark breaks the whole state.
         body = body.replace("﻿", "")
@@ -370,18 +502,45 @@ def build_descriptors():
         'version="0.2.0"\n'
         'tags={\n\t"Alternative History"\n}\n'
         'name="The Belated Revolution"\n'
+        'picture="thumbnail.png"\n'
         'supported_version="1.19.*"\n'
     )
-    (MOD / "descriptor.mod").write_text(base, encoding="utf-8")
-    (GAME_MOD_FOLDER / "belated_revolution.mod").write_text(
-        base + 'path="mod/belated_revolution"\n', encoding="utf-8"
-    )
+    # The Steam Workshop needs a thumbnail under 1 MB next to the descriptor.
+    from PIL import Image
+    logo = Image.open(PROJECT / "docs" / "art" / "logo.png").convert("RGB")
+    logo.thumbnail((512, 512))
+    canvas = Image.new("RGB", (512, 512), (20, 20, 30))
+    canvas.paste(logo, ((512 - logo.width) // 2, (512 - logo.height) // 2))
+    canvas.save(MOD / "thumbnail.png", optimize=True)
+
+    def keep(path, key):
+        """The launcher writes the Workshop id (and an absolute path) into the descriptors: keep them."""
+        found = re.search(rf'^{key}="[^"]*"', path.read_text(encoding="utf-8", errors="ignore"), re.M) if path.exists() else None
+        return found.group(0) + "\n" if found else ""
+
+    game_mod = GAME_MOD_FOLDER / "belated_revolution.mod"
+    remote = keep(MOD / "descriptor.mod", "remote_file_id") or keep(game_mod, "remote_file_id")
+    path = keep(game_mod, "path") or 'path="mod/belated_revolution"\n'
+    (MOD / "descriptor.mod").write_text(base + remote, encoding="utf-8")
+    game_mod.write_text(base + path + remote, encoding="utf-8")
+
+
+def drop_layout_copies():
+    """kr_layout.py's translated copies of vanilla histories, from the last build: the build starts from vanilla."""
+    for sub in ("countries", "units"):
+        for path in (MOD / "history" / sub).glob("*.txt"):
+            if "Generated by tools/kr_layout.py" in path.read_text(encoding="utf-8-sig", errors="ignore")[:200]:
+                path.unlink()
 
 
 if __name__ == "__main__":
+    drop_layout_copies()
     count = build_effect()
     histories = build_state_history()
+    import split_states  # Europe's states cut along Kaiserreich's borders (tools/state_splits.json)
+    pieces = split_states.apply(MOD, VANILLA, GENERATED_NOTE)
+    lift_demilitarized_zones()
     build_names()
     build_descriptors()
-    print(f"OK: {histories} state history files rewritten for the selection map")
+    print(f"OK: {histories} state history files rewritten for the selection map, {pieces} new states cut from them")
     print(f"OK: {count} states transferred, {len(NAMES)} countries named")

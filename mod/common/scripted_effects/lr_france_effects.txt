@@ -29,7 +29,34 @@ lr_fra_sync_opposition = {
 		}
 		force_update_dynamic_modifier = yes
 	}
+	17 = {
+		set_variable = { LR_st_malus = FRA.LR_op_paris }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
 	29 = {
+		set_variable = { LR_st_malus = FRA.LR_op_nord }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
+	1077 = {
+		set_variable = { LR_st_malus = FRA.LR_op_nord }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
+	1131 = {
 		set_variable = { LR_st_malus = FRA.LR_op_nord }
 		multiply_variable = { LR_st_malus = -0.003 }
 		if = {
@@ -56,7 +83,7 @@ lr_fra_sync_opposition = {
 		}
 		force_update_dynamic_modifier = yes
 	}
-	27 = {
+	24 = {
 		set_variable = { LR_st_malus = FRA.LR_op_nord }
 		multiply_variable = { LR_st_malus = -0.003 }
 		if = {
@@ -75,6 +102,15 @@ lr_fra_sync_opposition = {
 		force_update_dynamic_modifier = yes
 	}
 	30 = {
+		set_variable = { LR_st_malus = FRA.LR_op_vendee }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
+	1134 = {
 		set_variable = { LR_st_malus = FRA.LR_op_vendee }
 		multiply_variable = { LR_st_malus = -0.003 }
 		if = {
@@ -119,6 +155,24 @@ lr_fra_sync_opposition = {
 		}
 		force_update_dynamic_modifier = yes
 	}
+	33 = {
+		set_variable = { LR_st_malus = FRA.LR_op_midi }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
+	1046 = {
+		set_variable = { LR_st_malus = FRA.LR_op_midi }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
 	806 = {
 		set_variable = { LR_st_malus = FRA.LR_op_midi }
 		multiply_variable = { LR_st_malus = -0.003 }
@@ -137,15 +191,7 @@ lr_fra_sync_opposition = {
 		}
 		force_update_dynamic_modifier = yes
 	}
-	33 = {
-		set_variable = { LR_st_malus = FRA.LR_op_midi }
-		multiply_variable = { LR_st_malus = -0.003 }
-		if = {
-			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
-			add_dynamic_modifier = { modifier = LR_state_opposition }
-		}
-		force_update_dynamic_modifier = yes
-	}
+	
 	21 = {
 		set_variable = { LR_st_malus = FRA.LR_op_rhone }
 		multiply_variable = { LR_st_malus = -0.003 }
@@ -155,15 +201,7 @@ lr_fra_sync_opposition = {
 		}
 		force_update_dynamic_modifier = yes
 	}
-	851 = {
-		set_variable = { LR_st_malus = FRA.LR_op_rhone }
-		multiply_variable = { LR_st_malus = -0.003 }
-		if = {
-			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
-			add_dynamic_modifier = { modifier = LR_state_opposition }
-		}
-		force_update_dynamic_modifier = yes
-	}
+	
 	32 = {
 		set_variable = { LR_st_malus = FRA.LR_op_rhone }
 		multiply_variable = { LR_st_malus = -0.003 }
@@ -191,6 +229,24 @@ lr_fra_sync_opposition = {
 		}
 		force_update_dynamic_modifier = yes
 	}
+	3 = {
+		set_variable = { LR_st_malus = FRA.LR_op_rhone }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
+	27 = {
+		set_variable = { LR_st_malus = FRA.LR_op_rhone }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
 	1 = {
 		set_variable = { LR_st_malus = FRA.LR_op_rhone }
 		multiply_variable = { LR_st_malus = -0.003 }
@@ -200,7 +256,7 @@ lr_fra_sync_opposition = {
 		}
 		force_update_dynamic_modifier = yes
 	}
-	17 = {
+	20 = {
 		set_variable = { LR_st_malus = FRA.LR_op_lorraine }
 		multiply_variable = { LR_st_malus = -0.003 }
 		if = {
@@ -237,6 +293,24 @@ lr_fra_sync_opposition = {
 		force_update_dynamic_modifier = yes
 	}
 	462 = {
+		set_variable = { LR_st_malus = FRA.LR_op_africa }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
+	1076 = {
+		set_variable = { LR_st_malus = FRA.LR_op_africa }
+		multiply_variable = { LR_st_malus = -0.003 }
+		if = {
+			limit = { NOT = { has_dynamic_modifier = { modifier = LR_state_opposition } } }
+			add_dynamic_modifier = { modifier = LR_state_opposition }
+		}
+		force_update_dynamic_modifier = yes
+	}
+	1135 = {
 		set_variable = { LR_st_malus = FRA.LR_op_africa }
 		multiply_variable = { LR_st_malus = -0.003 }
 		if = {
@@ -359,7 +433,37 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
+	17 = {
+		set_variable = { FRA.LR_dev_st_18 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_18 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_18 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_18 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_18 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
 	29 = {
+		set_variable = { FRA.LR_dev_st_29 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_29 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_29 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_29 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_29 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
+	1077 = {
+		set_variable = { FRA.LR_dev_st_29 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_29 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_29 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_29 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_29 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
+	1131 = {
 		set_variable = { FRA.LR_dev_st_29 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_29 = building_level@industrial_complex }
 		add_to_variable = { FRA.LR_dev_st_29 = building_level@dockyard }
@@ -389,7 +493,7 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
-	27 = {
+	24 = {
 		set_variable = { FRA.LR_dev_st_27 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_27 = building_level@industrial_complex }
 		add_to_variable = { FRA.LR_dev_st_27 = building_level@dockyard }
@@ -410,6 +514,16 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
 	30 = {
+		set_variable = { FRA.LR_dev_st_30 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_30 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_30 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_30 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_30 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
+	1134 = {
 		set_variable = { FRA.LR_dev_st_30 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_30 = building_level@industrial_complex }
 		add_to_variable = { FRA.LR_dev_st_30 = building_level@dockyard }
@@ -459,6 +573,26 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
+	33 = {
+		set_variable = { FRA.LR_dev_st_31 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_31 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_31 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_31 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_31 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
+	1046 = {
+		set_variable = { FRA.LR_dev_st_31 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_31 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_31 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_31 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_31 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
 	806 = {
 		set_variable = { FRA.LR_dev_st_806 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_806 = building_level@industrial_complex }
@@ -479,7 +613,7 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
-	33 = {
+	25 = {
 		set_variable = { FRA.LR_dev_st_33 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_33 = building_level@industrial_complex }
 		add_to_variable = { FRA.LR_dev_st_33 = building_level@dockyard }
@@ -499,7 +633,7 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
-	851 = {
+	21 = {
 		set_variable = { FRA.LR_dev_st_851 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_851 = building_level@industrial_complex }
 		add_to_variable = { FRA.LR_dev_st_851 = building_level@dockyard }
@@ -539,6 +673,26 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
+	3 = {
+		set_variable = { FRA.LR_dev_st_20 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_20 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_20 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_20 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_20 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
+	27 = {
+		set_variable = { FRA.LR_dev_st_20 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_20 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_20 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_20 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_20 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
 	1 = {
 		set_variable = { FRA.LR_dev_st_1 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_1 = building_level@industrial_complex }
@@ -549,7 +703,7 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
-	17 = {
+	20 = {
 		set_variable = { FRA.LR_dev_st_17 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_17 = building_level@industrial_complex }
 		add_to_variable = { FRA.LR_dev_st_17 = building_level@dockyard }
@@ -590,6 +744,26 @@ lr_fra_sync_industry = {
 		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
 	}
 	462 = {
+		set_variable = { FRA.LR_dev_st_462 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_462 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_462 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_462 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_462 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
+	1076 = {
+		set_variable = { FRA.LR_dev_st_462 = building_level@arms_factory }
+		add_to_variable = { FRA.LR_dev_st_462 = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_dev_st_462 = building_level@dockyard }
+		set_variable = { FRA.LR_inf_st_462 = building_level@infrastructure }
+		add_to_variable = { FRA.LR_dev_total = FRA.LR_dev_st_462 }
+		add_to_variable = { FRA.LR_civ_total = building_level@industrial_complex }
+		add_to_variable = { FRA.LR_mil_total = building_level@arms_factory }
+		add_to_variable = { FRA.LR_mil_total = building_level@dockyard }
+	}
+	1135 = {
 		set_variable = { FRA.LR_dev_st_462 = building_level@arms_factory }
 		add_to_variable = { FRA.LR_dev_st_462 = building_level@industrial_complex }
 		add_to_variable = { FRA.LR_dev_st_462 = building_level@dockyard }
@@ -729,7 +903,7 @@ lr_fra_lay_rail = {
 		build_railway = {
 			level = 1
 			start_state = 16
-			target_state = 17
+			target_state = 20
 		}
 	}
 	if = {
@@ -765,12 +939,12 @@ lr_found_rhine_confederation = {
 		RHI = { transfer_state = 51 }
 	}
 	if = {
-		limit = { 55 = { is_controlled_by = ROOT } }
-		RHI = { transfer_state = 55 }
+		limit = { 1089 = { is_controlled_by = ROOT } }
+		RHI = { transfer_state = 1089 }
 	}
 	if = {
-		limit = { 56 = { is_controlled_by = ROOT } }
-		RHI = { transfer_state = 56 }
+		limit = { 55 = { is_controlled_by = ROOT } }
+		RHI = { transfer_state = 55 }
 	}
 	if = {
 		limit = { 57 = { is_controlled_by = ROOT } }
@@ -793,12 +967,15 @@ lr_found_rhine_confederation = {
 		RHI = { transfer_state = 52 }
 	}
 	if = {
-		limit = { 53 = { is_controlled_by = ROOT } }
-		RHI = { transfer_state = 53 }
+		limit = { 53 = { is_controlled_by = ROOT }
+		924 = { is_controlled_by = ROOT }
+		930 = { is_controlled_by = ROOT } }
+		RHI = { transfer_state = 53 transfer_state = 924 transfer_state = 930 }
 	}
 	if = {
-		limit = { 54 = { is_controlled_by = ROOT } }
-		RHI = { transfer_state = 54 }
+		limit = { 54 = { is_controlled_by = ROOT }
+		922 = { is_controlled_by = ROOT } }
+		RHI = { transfer_state = 54 transfer_state = 922 }
 	}
 	if = {
 		limit = { 978 = { is_controlled_by = ROOT } }
@@ -837,89 +1014,85 @@ lr_fra_finish_war = {
 lr_settle_germany = {
 	log = "LR: German settlement begins"
 	if = {
-		limit = { 85 = { OR = { is_owned_by = GER } } }
-		POL = { transfer_state = 85 }
+		limit = { 807 = { OR = { is_owned_by = GER } } }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 807 }
+		}
+		else = {
+			FRA = { transfer_state = 807 }
+			807 = { set_state_flag = LR_owed_POL }
+		}
 	}
 	if = {
 		limit = { 86 = { OR = { is_owned_by = GER } } }
-		POL = { transfer_state = 86 }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 86 }
+		}
+		else = {
+			FRA = { transfer_state = 86 }
+			86 = { set_state_flag = LR_owed_POL }
+		}
 	}
 	if = {
 		limit = { 762 = { OR = { is_owned_by = GER } } }
-		POL = { transfer_state = 762 }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 762 }
+		}
+		else = {
+			FRA = { transfer_state = 762 }
+			762 = { set_state_flag = LR_owed_POL }
+		}
 	}
 	if = {
-		limit = { 807 = { OR = { is_owned_by = GER } } }
-		POL = { transfer_state = 807 }
+		limit = {  }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 807 }
+		}
+		else = {
+			FRA = { transfer_state = 807 }
+			
+		}
 	}
 	if = {
 		limit = { 188 = { OR = { is_owned_by = GER } } }
-		POL = { transfer_state = 188 }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 188 }
+		}
+		else = {
+			FRA = { transfer_state = 188 }
+			188 = { set_state_flag = LR_owed_POL }
+		}
 	}
 	if = {
-		limit = { 5 = { OR = { is_owned_by = GER } } }
-		POL = { transfer_state = 5 }
+		limit = { 5 = { OR = { is_owned_by = GER } }
+		85 = { OR = { is_owned_by = GER } } }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 5 transfer_state = 85 }
+		}
+		else = {
+			FRA = { transfer_state = 5 transfer_state = 85 }
+			5 = { set_state_flag = LR_owed_POL }
+			85 = { set_state_flag = LR_owed_POL }
+		}
 	}
 	if = {
 		limit = { 763 = { OR = { is_owned_by = GER } } }
-		POL = { transfer_state = 763 }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 763 }
+		}
+		else = {
+			FRA = { transfer_state = 763 }
+			763 = { set_state_flag = LR_owed_POL }
+		}
 	}
-	if = {
-		limit = { 539 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 539 }
-	}
-	if = {
-		limit = { 660 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 660 }
-	}
-	if = {
-		limit = { 772 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 772 }
-	}
-	if = {
-		limit = { 773 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 773 }
-	}
-	if = {
-		limit = { 286 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 286 }
-	}
-	if = {
-		limit = { 670 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 670 }
-	}
-	if = {
-		limit = { 671 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 671 }
-	}
-	if = {
-		limit = { 741 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 741 }
-	}
-	if = {
-		limit = { 1017 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 1017 }
-	}
-	if = {
-		limit = { 1066 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 1066 }
-	}
-	if = {
-		limit = { 1067 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 1067 }
-	}
-	if = {
-		limit = { 1068 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 1068 }
-	}
-	if = {
-		limit = { 1069 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 1069 }
-	}
-	if = {
-		limit = { 728 = { OR = { is_owned_by = GER } } }
-		FRA = { transfer_state = 728 }
-	}
+	lr_german_exile = yes
 	if = {
 		limit = { 42 = { OR = { is_owned_by = GER } } }
 		RHI = { transfer_state = 42 }
@@ -929,12 +1102,12 @@ lr_settle_germany = {
 		RHI = { transfer_state = 51 }
 	}
 	if = {
-		limit = { 55 = { OR = { is_owned_by = GER } } }
-		RHI = { transfer_state = 55 }
+		limit = { 1089 = { OR = { is_owned_by = GER } } }
+		RHI = { transfer_state = 1089 }
 	}
 	if = {
-		limit = { 56 = { OR = { is_owned_by = GER } } }
-		RHI = { transfer_state = 56 }
+		limit = { 55 = { OR = { is_owned_by = GER } } }
+		RHI = { transfer_state = 55 }
 	}
 	if = {
 		limit = { 57 = { OR = { is_owned_by = GER } } }
@@ -949,6 +1122,16 @@ lr_settle_germany = {
 		RHI = { transfer_state = 60 }
 	}
 	if = {
+		limit = { 56 = { is_owned_by = GER } }
+		if = {
+			limit = { OR = { has_country_flag = LR_route_empire has_country_flag = LR_route_red } }
+			transfer_state = 56
+		}
+		else = {
+			RHI = { transfer_state = 56 }
+		}
+	}
+	if = {
 		limit = { 50 = { OR = { is_owned_by = GER } } }
 		RHI = { transfer_state = 50 }
 	}
@@ -957,12 +1140,15 @@ lr_settle_germany = {
 		RHI = { transfer_state = 52 }
 	}
 	if = {
-		limit = { 53 = { OR = { is_owned_by = GER } } }
-		RHI = { transfer_state = 53 }
+		limit = { 53 = { OR = { is_owned_by = GER } }
+		924 = { OR = { is_owned_by = GER } }
+		930 = { OR = { is_owned_by = GER } } }
+		RHI = { transfer_state = 53 transfer_state = 924 transfer_state = 930 }
 	}
 	if = {
-		limit = { 54 = { OR = { is_owned_by = GER } } }
-		RHI = { transfer_state = 54 }
+		limit = { 54 = { OR = { is_owned_by = GER } }
+		922 = { OR = { is_owned_by = GER } } }
+		RHI = { transfer_state = 54 transfer_state = 922 }
 	}
 	if = {
 		limit = { 978 = { OR = { is_owned_by = GER } } }
@@ -973,9 +1159,11 @@ lr_settle_germany = {
 			RHI = { transfer_state = PREV }
 		}
 	}
-	85 = { log = "LR: German settlement: state 85 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
+	807 = { log = "LR: German settlement: state 85 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
 	51 = { log = "LR: German settlement: state 51 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
 	53 = { log = "LR: German settlement: state 53 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
+	924 = { log = "LR: German settlement: state 53 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
+	930 = { log = "LR: German settlement: state 53 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
 	286 = { log = "LR: German settlement: state 286 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
 	log = "LR: German settlement finished"
 	RHI = {
@@ -1012,16 +1200,45 @@ lr_unify_germany = {
 lr_settle_austria = {
 	log = "LR: Austrian settlement begins"
 	if = {
-		limit = { 88 = { OR = { is_owned_by = AUS } } }
-		POL = { transfer_state = 88 }
-	}
-	if = {
-		limit = { 89 = { OR = { is_owned_by = AUS } } }
-		POL = { transfer_state = 89 }
+		limit = { 88 = { OR = { is_owned_by = AUS } }
+		71 = { OR = { is_owned_by = AUS } }
+		812 = { OR = { is_owned_by = AUS } } }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 88 transfer_state = 71 transfer_state = 812 }
+		}
+		else = {
+			FRA = { transfer_state = 88 transfer_state = 71 transfer_state = 812 }
+			88 = { set_state_flag = LR_owed_POL }
+			71 = { set_state_flag = LR_owed_POL }
+			812 = { set_state_flag = LR_owed_POL }
+		}
 	}
 	if = {
 		limit = { 91 = { OR = { is_owned_by = AUS } } }
-		POL = { transfer_state = 91 }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 91 }
+		}
+		else = {
+			FRA = { transfer_state = 91 }
+			91 = { set_state_flag = LR_owed_POL }
+		}
+	}
+	if = {
+		limit = { 89 = { OR = { is_owned_by = AUS } }
+		766 = { OR = { is_owned_by = AUS } }
+		834 = { OR = { is_owned_by = AUS } } }
+		if = {
+			limit = { POL = { exists = yes NOT = { has_war_with = FRA } } }
+			POL = { transfer_state = 91 transfer_state = 89 transfer_state = 766 transfer_state = 834 }
+		}
+		else = {
+			FRA = { transfer_state = 91 transfer_state = 89 transfer_state = 766 transfer_state = 834 }
+			89 = { set_state_flag = LR_owed_POL }
+			766 = { set_state_flag = LR_owed_POL }
+			834 = { set_state_flag = LR_owed_POL }
+		}
 	}
 	if = {
 		limit = { TTS = { exists = yes OR = { is_subject_of = FRA is_in_faction_with = FRA } } }
@@ -1030,8 +1247,16 @@ lr_settle_austria = {
 		TTS = { transfer_state = 159 }
 	}
 	if = {
+		limit = { 1115 = { OR = { is_owned_by = AUS } } }
+		TTS = { transfer_state = 1115 }
+	}
+	if = {
 		limit = { 160 = { OR = { is_owned_by = AUS } } }
 		TTS = { transfer_state = 160 }
+	}
+	if = {
+		limit = { 1113 = { OR = { is_owned_by = AUS } } }
+		TTS = { transfer_state = 1113 }
 	}
 	if = {
 		limit = { 39 = { OR = { is_owned_by = AUS } } }
@@ -1045,57 +1270,81 @@ lr_settle_austria = {
 	if = {
 		limit = { ITA = { exists = yes OR = { is_subject_of = FRA is_in_faction_with = FRA } } }
 	if = {
-		limit = { 159 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
 		ITA = { transfer_state = 159 }
 	}
 	if = {
-		limit = { 160 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
+		ITA = { transfer_state = 1115 }
+	}
+	if = {
+		limit = {  }
 		ITA = { transfer_state = 160 }
 	}
 	if = {
-		limit = { 39 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
+		ITA = { transfer_state = 1113 }
+	}
+	if = {
+		limit = {  }
 		ITA = { transfer_state = 39 }
 	}
 	if = {
-		limit = { 850 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
 		ITA = { transfer_state = 850 }
 	}
 	}
 	if = {
 		limit = { PAP = { exists = yes OR = { is_subject_of = FRA is_in_faction_with = FRA } } }
 	if = {
-		limit = { 159 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
 		PAP = { transfer_state = 159 }
 	}
 	if = {
-		limit = { 160 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
+		PAP = { transfer_state = 1115 }
+	}
+	if = {
+		limit = {  }
 		PAP = { transfer_state = 160 }
 	}
 	if = {
-		limit = { 39 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
+		PAP = { transfer_state = 1113 }
+	}
+	if = {
+		limit = {  }
 		PAP = { transfer_state = 39 }
 	}
 	if = {
-		limit = { 850 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
 		PAP = { transfer_state = 850 }
 	}
 	}
 	if = {
 		limit = { TOS = { exists = yes OR = { is_subject_of = FRA is_in_faction_with = FRA } } }
 	if = {
-		limit = { 159 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
 		TOS = { transfer_state = 159 }
 	}
 	if = {
-		limit = { 160 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
+		TOS = { transfer_state = 1115 }
+	}
+	if = {
+		limit = {  }
 		TOS = { transfer_state = 160 }
 	}
 	if = {
-		limit = { 39 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
+		TOS = { transfer_state = 1113 }
+	}
+	if = {
+		limit = {  }
 		TOS = { transfer_state = 39 }
 	}
 	if = {
-		limit = { 850 = { OR = { is_owned_by = AUS } } }
+		limit = {  }
 		TOS = { transfer_state = 850 }
 	}
 	}
@@ -1106,7 +1355,12 @@ lr_settle_austria = {
 		}
 	}
 	white_peace = AUS
-	89 = { log = "LR: Austrian settlement: state 89 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
+	AUS = {
+		every_enemy_country = {
+			AUS = { white_peace = PREV }
+		}
+	}
+	91 = { log = "LR: Austrian settlement: state 89 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
 	159 = { log = "LR: Austrian settlement: state 159 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
 	4 = { log = "LR: Austrian settlement: state 4 owner [THIS.Owner.GetTag] controller [THIS.Controller.GetTag]" }
 	log = "LR: Austrian settlement finished"
@@ -1200,6 +1454,11 @@ lr_settle_britain = {
 		limit = { has_war_with = ENG }
 		white_peace = ENG
 	}
+	ENG = {
+		every_enemy_country = {
+			ENG = { white_peace = PREV }
+		}
+	}
 	set_autonomy = {
 		target = ENG
 		autonomous_state = autonomy_puppet
@@ -1234,7 +1493,21 @@ lr_settle_canada = {
 	}
 }
 
+lr_fra_pay_owed = {
+	if = {
+		limit = { POL = { exists = yes OR = { is_in_faction_with = FRA is_subject_of = FRA } } }
+		FRA = {
+			every_owned_state = {
+				limit = { has_state_flag = LR_owed_POL }
+				clr_state_flag = LR_owed_POL
+				POL = { transfer_state = PREV }
+			}
+		}
+	}
+}
+
 lr_fra_monthly = {
+	lr_fra_pay_owed = yes
 	lr_fra_sync_industry = yes
 	set_variable = { LR_pk_hands_left = 3 }
 	if = {
@@ -1481,9 +1754,13 @@ lr_fra_monthly = {
 		subtract_from_variable = { LR_seats = LR_seat_loss }
 		clamp_variable = { var = LR_seats min = 100 max = 610 }
 		lr_fra_sync_seats = yes
-		# Without a majority the cabinet governs badly, and in time the Chamber brings it down.
+		# Without a majority the cabinet governs badly, and in time the Chamber brings it down. Only the three
+		# parliaments suffer it; Napoleon's president keeps his seat count for his focuses but no minority penalty.
 		if = {
-			limit = { check_variable = { LR_seats < 306 } }
+			limit = {
+				check_variable = { LR_seats < 306 }
+				NOT = { has_country_flag = LR_route_guardian }
+			}
 			if = {
 				limit = { NOT = { has_idea = LR_FRA_minority } }
 				add_ideas = LR_FRA_minority
@@ -1502,4 +1779,19 @@ lr_fra_monthly = {
 			set_variable = { LR_minority_months = 0 }
 		}
 	}
+	if = {
+		limit = {
+			has_idea = LR_FRA_minority
+			NOT = {
+				OR = {
+					has_country_flag = LR_route_jacobin
+					has_country_flag = LR_route_girondin
+					has_country_flag = LR_route_marais
+				}
+			}
+		}
+		remove_ideas = LR_FRA_minority
+		set_variable = { LR_minority_months = 0 }
+	}
 }
+# kr_layout: state numbers translated

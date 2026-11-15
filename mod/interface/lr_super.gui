@@ -65,4 +65,466 @@ guiTypes = {
 			buttonText = "LR_super_revolution_reaction"
 		}
 	}
+	containerWindowType = {
+		name = "LR_super_liberty_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_liberty_picture"
+			spriteType = "GFX_lr_super_liberty"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_liberty_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_liberty_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_liberty_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_liberty_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_liberty_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_liberty_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_liberty_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_liberty_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_liberty_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_liberty_reaction"
+		}
+	}
+	containerWindowType = {
+		name = "LR_super_commune_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_commune_picture"
+			spriteType = "GFX_lr_super_commune"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_commune_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_commune_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_commune_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_commune_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_commune_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_commune_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_commune_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_commune_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_commune_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_commune_reaction"
+		}
+	}
+	containerWindowType = {
+		name = "LR_super_orleans_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_orleans_picture"
+			spriteType = "GFX_lr_super_orleans"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_orleans_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_orleans_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_orleans_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_orleans_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_orleans_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_orleans_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_orleans_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_orleans_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_orleans_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_orleans_reaction"
+		}
+	}
+	containerWindowType = {
+		name = "LR_super_petain_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_petain_picture"
+			spriteType = "GFX_lr_super_petain"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_petain_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_petain_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_petain_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_petain_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_petain_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_petain_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_petain_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_petain_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_petain_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_petain_reaction"
+		}
+	}
+	containerWindowType = {
+		name = "LR_super_monarchy_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_monarchy_picture"
+			spriteType = "GFX_lr_super_monarchy"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_monarchy_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_monarchy_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_monarchy_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_monarchy_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_monarchy_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_monarchy_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_monarchy_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_monarchy_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_monarchy_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_monarchy_reaction"
+		}
+	}
+	containerWindowType = {
+		name = "LR_super_bonaparte_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_bonaparte_picture"
+			spriteType = "GFX_lr_super_bonaparte"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_bonaparte_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_bonaparte_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_bonaparte_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_bonaparte_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_bonaparte_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_bonaparte_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_bonaparte_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_bonaparte_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_bonaparte_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_bonaparte_reaction"
+		}
+	}
+	containerWindowType = {
+		name = "LR_super_world_war_window"
+		position = { x = 0 y = 0 }
+		size = { width = 620 height = 560 }
+		orientation = center
+		origo = center
+		clipping = no
+
+		iconType = {
+			name = "LR_super_frame"
+			spriteType = "GFX_lr_super_frame"
+			position = { x = 0 y = 0 }
+		}
+		iconType = {
+			name = "LR_super_world_war_picture"
+			spriteType = "GFX_lr_super_world_war"
+			position = { x = 14 y = 58 }
+		}
+		instantTextBoxType = {
+			name = "LR_super_world_war_title"
+			position = { x = 30 y = 18 }
+			font = "hoi_24header"
+			text = "LR_super_world_war_title"
+			maxWidth = 560
+			maxHeight = 28
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "LR_super_world_war_quote"
+			position = { x = 30 y = 362 }
+			font = "hoi_18mbs"
+			text = "LR_super_world_war_quote"
+			maxWidth = 560
+			maxHeight = 72
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_world_war_author"
+			position = { x = 30 y = 436 }
+			font = "hoi_18mbs"
+			text = "LR_super_world_war_author"
+			maxWidth = 560
+			maxHeight = 20
+			fixedsize = yes
+			format = right
+		}
+		instantTextBoxType = {
+			name = "LR_super_world_war_song"
+			position = { x = 30 y = 456 }
+			font = "hoi_16mbs"
+			text = "LR_super_world_war_song"
+			maxWidth = 560
+			maxHeight = 18
+			fixedsize = yes
+			format = right
+		}
+		buttonType = {
+			name = "LR_super_world_war_close"
+			position = { x = 200 y = 506 }
+			quadTextureSprite = "GFX_lr_super_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "LR_super_world_war_reaction"
+		}
+	}
 }

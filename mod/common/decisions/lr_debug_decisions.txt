@@ -28,6 +28,7 @@ LR_FRA_debug_category = {
 			}
 			set_country_flag = LR_route_orleans
 			promote_character = LR_FRA_orleans
+			set_cosmetic_tag = LR_FRA_orleans
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = { factor = 0 }
@@ -91,6 +92,7 @@ LR_FRA_debug_category = {
 				elections_allowed = no
 			}
 			set_country_flag = LR_route_communist
+			promote_character = LR_FRA_thorez
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = { factor = 0 }
@@ -187,6 +189,7 @@ LR_FRA_debug_category = {
 				elections_allowed = yes
 			}
 			set_country_flag = LR_route_girondin
+			promote_character = LR_FRA_reynaud
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = { factor = 0 }
@@ -218,6 +221,7 @@ LR_FRA_debug_category = {
 				elections_allowed = yes
 			}
 			set_country_flag = LR_route_marais
+			promote_character = LR_FRA_flandin
 			mark_focus_tree_layout_dirty = yes
 		}
 		ai_will_do = { factor = 0 }

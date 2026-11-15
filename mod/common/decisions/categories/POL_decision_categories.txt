@@ -11,10 +11,10 @@ POL_danzig_decisions = {
 
 	visible = {
 		has_completed_focus = POL_clamp_down_on_danzig
-		85 = {
+		807 = {
 			has_active_resistance = yes
 		}
-		85 = {
+		807 = {
 			is_controlled_by = ROOT
 		}
 	}
@@ -343,3 +343,4 @@ POL_promote_falangism_decisions = {
 
 	priority = 10
 }
+# kr_layout: state numbers translated

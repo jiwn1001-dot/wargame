@@ -128,31 +128,32 @@ if = {
 		339 = {
 			add_dynamic_modifier = { modifier = kemalist_loyalties }
 		}
+		353 = {
+			add_dynamic_modifier = { modifier = kemalist_loyalties }
+		}
 		354 = {
 			add_dynamic_modifier = { modifier = kemalist_loyalties }
 		}
 		350 = {
 			add_dynamic_modifier = { modifier = kurdish_agitation }
 		}
-		352 = {
+		800 = {
 			add_dynamic_modifier = { modifier = kurdish_separatism }
 		}
-		800 = {
+		1161 = {
 			add_dynamic_modifier = { modifier = kurdish_separatism }
 		}
 		353 = {
 			add_dynamic_modifier = { modifier = kurdish_agitation }
 		}
-		798 = {
+		49 = {
 			add_dynamic_modifier = { modifier = islamist_opposition }
 		}
 		349 = {
 			add_dynamic_modifier = { modifier = islamist_sedition }
 		}
-		348 = {
-			add_dynamic_modifier = { modifier = islamist_sedition }
-		}
-		345 = {
+		
+		346 = {
 			add_dynamic_modifier = { modifier = islamist_opposition }
 		}
 		344 = {
@@ -194,14 +195,14 @@ if = {
 			set_garrison_strength = 1.0
 		}
 		
-		352 = {
+		800 = {
 			start_resistance = yes
 			set_compliance = 10
 			set_resistance = 15
 			set_garrison_strength = 0.75
 		}
 		
-		800 = {
+		1161 = {
 			start_resistance = yes
 			set_compliance = 10
 			set_resistance = 15
@@ -212,10 +213,10 @@ if = {
 			limit = {
 				OR = {
 					state = 49
-					state = 342
+					state = 346
 					state = 343
 					state = 346
-					state = 347
+					state = 356
 				}
 			}
 			set_state_flag = TUR_ideological_battleground_state
@@ -301,10 +302,10 @@ if = {
 			idea = TUR_second_five_year_plan_inonu
 			days = 730
 		}
-		347 = {
+		356 = {
 			add_dynamic_modifier = { modifier = kemalist_loyalties }
 		}	
-		342 = {
+		346 = {
 			add_dynamic_modifier = { modifier = kemalist_loyalties }
 		}
 		set_variable = { var = TUR_kemalist_officers_loyalty value = 0 }	
@@ -726,3 +727,4 @@ if = {
 		}
 	}
 }
+# kr_layout: state numbers translated

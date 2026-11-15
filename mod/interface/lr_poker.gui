@@ -104,43 +104,43 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "LR_pk_stage"
-			position = { x = 310 y = 60 }
+			position = { x = 305 y = 60 }
 			font = "hoi_16mbs"
 			text = "LR_ui_pk_stage"
-			maxWidth = 190
+			maxWidth = 185
 			maxHeight = 24
 			format = left
 		}
 		instantTextBoxType = {
 			name = "LR_pk_my_hand"
-			position = { x = 310 y = 100 }
+			position = { x = 305 y = 100 }
 			font = "hoi_16mbs"
 			text = "LR_ui_pk_my_hand"
-			maxWidth = 190
+			maxWidth = 185
 			maxHeight = 24
 			format = left
 		}
 		instantTextBoxType = {
 			name = "LR_pk_opp_hand"
-			position = { x = 310 y = 125 }
+			position = { x = 305 y = 125 }
 			font = "hoi_16mbs"
 			text = "LR_ui_pk_opp_hand"
-			maxWidth = 190
+			maxWidth = 185
 			maxHeight = 24
 			format = left
 		}
 		instantTextBoxType = {
 			name = "LR_pk_result"
-			position = { x = 310 y = 160 }
+			position = { x = 305 y = 160 }
 			font = "hoi_18mbs"
 			text = "LR_ui_pk_result"
-			maxWidth = 190
+			maxWidth = 185
 			maxHeight = 24
 			format = left
 		}
 		buttonType = {
 			name = "LR_pk_new"
-			position = { x = 5 y = 258 }
+			position = { x = 2 y = 258 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_pk_new"
@@ -148,7 +148,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "LR_pk_check"
-			position = { x = 130 y = 258 }
+			position = { x = 125 y = 258 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_pk_check"
@@ -156,7 +156,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "LR_pk_bet"
-			position = { x = 255 y = 258 }
+			position = { x = 248 y = 258 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_pk_bet"
@@ -164,7 +164,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "LR_pk_fold"
-			position = { x = 380 y = 258 }
+			position = { x = 371 y = 258 }
 			quadTextureSprite = "GFX_button_123x34"
 			buttonFont = "hoi_16mbs"
 			buttonText = "LR_ui_pk_fold"

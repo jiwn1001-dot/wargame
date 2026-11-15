@@ -34,6 +34,14 @@ NEW_TAGS = {
     "ESR": ("Spanish Republic", "스페인 공화파", "공화파", (108, 36, 150), 165, "southamerican", "SPR_democratic"),
     "JPE": ("Empire of Japan", "일본 제국", "일본 제국", (200, 60, 60), 531, "asian", "JAP_emperor_dominant_neutrality"),
     "CNA": ("Continental Army", "대륙 회의", "대륙군", (60, 80, 160), 360, "western_european", "USA_democratic"),
+    # The duchies cut from Emilia (split_states.py): Bourbon Parma and Austria-Este Modena. Their flags are plain
+    # stripes in the house colours until real art arrives.
+    "PRM": ("Parma", "파르마 공국", "파르마", (230, 190, 40), 1114, "western_european", ((245, 200, 30), (30, 70, 160))),
+    "MDN": ("Modena", "모데나 공국", "모데나", (60, 110, 190), 1115, "western_european", ((30, 70, 160), (240, 240, 240), (30, 70, 160))),
+    # The Rashidi emirate of Jabal Shammar, at Ha'il, as in Kaiserreich. Its flag: the Rashidi red with a white band.
+    "JBS": ("Jabal Shammar", "자발 샴마르 토후국", "샴마르", (190, 150, 150), 857, "middle_eastern", ((180, 20, 30), (240, 240, 240), (180, 20, 30))),
+    # North Germany's colonies after France beats it: a government in exile at Douala.
+    "GEX": ("German Exile", "독일 망명정부", "망명 독일", (96, 96, 96), 773, "western_european", "GER_german_kaiserreich_neutrality"),
 }
 # Cosmetic names worn by a winner: key, name, adjective, flag source.
 COSMETICS = {
@@ -44,7 +52,9 @@ COSMETICS = {
     "LR_YUG_yugoslavia": ("유고슬라비아 왕국", "유고슬라비아", "YUG_neutrality"),
     "LR_ROM_greater": ("대루마니아 왕국", "루마니아", "ROM_neutrality"),
     "LR_ITA_unified": ("이탈리아 왕국", "이탈리아", "ITA_neutrality"),
-    "LR_FRA_etat": ("프랑스국", "프랑스", "FRA_VICHY_neutrality"),
+    "LR_FRA_etat": ("프랑스국", "프랑스", "FRA_VICHY_fascism"),  # the francisque
+    "LR_FRA_empire": ("프랑스 제국", "프랑스", "FRA_THIRD_EMPIRE_neutrality"),  # the Empire flew the plain tricolour
+    "LR_FRA_orleans": ("프랑스 왕국", "프랑스", "FRA_democratic"),  # so did the July Monarchy
     "LR_FRA_federation": ("프랑스 자유 코뮌 연합", "자유 코뮌", "SPR_anarchist_spain_neutrality"),
     "LR_FRA_red": ("프랑스 인민 공화국", "프랑스", "FRA_communism"),
 }
@@ -77,6 +87,10 @@ LEADERS = {
     "NGX": ("LR_NGX_ma", "마훙쿠이", "despotism", "1960.1.1.1"),
     "GSU": ("LR_GSU_ma", "마부칭", "despotism", "1960.1.1.1"),
     "CRL": ("LR_CRL_javier", "하비에르 1세", "despotism", "1975.1.1.1"),
+    "PRM": ("LR_PRM_elias", "엘리아 공작", "despotism", "1960.1.1.1"),
+    "MDN": ("LR_MDN_robert", "로베르토 대공", "despotism", "1990.1.1.1"),
+    "GEX": ("LR_GEX_wilhelm", "빌헬름 황태자", "despotism", "1960.1.1.1"),
+    "JBS": ("LR_JBS_muhammad", "무함마드 빈 탈랄", "despotism", "1960.1.1.1"),  # the last Rashidi emir, restored
     "ESR": ("LR_ESR_azana", "마누엘 아사냐", "liberalism", "1975.1.1.1"),
     "JPE": ("LR_JPE_emperor", "천황 히로히토", "despotism", "1989.1.1.1"),
 }
@@ -87,7 +101,7 @@ CHINA = {
     "KMT": [599, 594],
     "GXC": [592, 593, 591, 1033],
     "ZHL": [614, 607, 620, 1036],
-    "SDG": [597, 743, 1038],
+    "SDG": [597, 1038],  # Tsingtao stays a German concession
     "ANH": [606, 749, 598, 1035, 1034, 613],
     "ANQ": [602, 750],
     "NJG": [600, 596, 595, 524],
@@ -117,7 +131,7 @@ SPAIN_REBELS = [172, 792, 176, 791, 790, 171, 174]
 SPAIN_REPUBLIC = [166, 794, 165, 167, 168, 177]
 SPAIN_FACTIONS = ["SPR", "CRL", "ESR"]
 AMERICA_REBELS = [357, 358, 359, 360, 361, 362, 363, 364, 365, 816, 261, 393, 394, 395, 396, 391]
-ITALIANS = ["ITA", "PAP", "TOS", "TTS"]
+ITALIANS = ["ITA", "PAP", "TOS", "TTS", "PRM", "MDN"]
 # Colony: republican name, adjective, capital, states.
 COLONIES = {
     "MEX": ("멕시코 공화국", "멕시코", 478, [478, 481, 482, 480, 479, 483, 484]),
@@ -158,9 +172,12 @@ RUSSIAN_POLAND = [5, 63, 66, 67, 68, 763, 85, 86, 762, 807]
 # After a Balkan Pact victory in the great war.
 YUGOSLAV_LANDS = [102, 103, 104, 109, 804, 853, 45, 764]
 ROMANIAN_LANDS = [76, 80, 82, 83, 84]
+from split_states import expand as _expand  # noqa: E402  the pieces cut from these states belong with them
+YUGOSLAV_LANDS, ROMANIAN_LANDS = _expand(YUGOSLAV_LANDS), _expand(ROMANIAN_LANDS)
+CHINA = {tag: _expand(states) for tag, states in CHINA.items()}  # each warlord holds the pieces of its states too
 
 # News of great events, fired from wherever they happen: number, title, text, reply.
-GREAT_NEWS = {1: ('프랑스 혁명', '파리에서 왕정이 무너졌습니다. 알제리 원정의 전비와 전사자 명단에 지친 시민들이 거리로 쏟아졌고, 군대는 발포를 거부했습니다. 루이 20세는 수도를 빠져나갔습니다.\\n\\n150년 전 실패한 혁명이 돌아왔다는 소식에 유럽의 궁정들이 긴급 회의를 소집했습니다. 빈의 황제는 국경 경비를 두 배로 늘리라고 명령했습니다.', '왕들의 유럽이 흔들린다.'), 2: ('복수의 왕', '프랑스 군부가 알제리를 포기한 왕을 몰아내고 오를레앙 공 장을 새 왕으로 세웠습니다. 새 왕은 즉위 첫날 군 앞에서 빼앗긴 모든 것을 되찾겠다고 맹세했습니다.\\n\\n런던과 베를린의 외교관들은 강화 조약의 군비 제한 조항을 다시 읽기 시작했습니다.', '프랑스가 칼을 간다.'), 3: ('부르봉 왕가, 왕좌를 지키다', '튈르리 궁 앞의 대치가 왕의 승리로 끝났습니다. 반란 장교들은 체포되었고, 오를레앙 공은 국경을 넘어 달아났습니다.\\n\\n늙은 루이 20세는 대관식을 다시 치르겠다고 발표했습니다. 유럽의 왕실들은 안도의 한숨을 쉬면서도, 프랑스 군대가 왕을 한 번 버렸다는 사실을 잊지 않습니다.', '왕관은 무사했다.'), 4: ('파리 코뮌 선포', '프랑스 총선에서 사회주의 세력이 승리했습니다. 시청에 붉은 깃발이 올랐고, 새 정부는 스스로를 코뮌이라 부릅니다. 공장은 노동자 평의회에 넘어갔습니다.\\n\\n러시아 공화국의 신문들은 환영 사설을 실었고, 유럽 각국 경찰은 자국 노동조합의 전보를 검열하기 시작했습니다.', '붉은 깃발이 파리에 올랐다.'), 5: ('프랑스 공화국 출범', '프랑스 역사상 처음으로 보통선거로 뽑힌 의회가 내각을 구성했습니다. 왕도 황제도 없는 프랑스가 유럽 한가운데 들어섰습니다.\\n\\n영국 귀족 공화국은 정중한 축전을 보냈고, 대륙의 군주들은 침묵했습니다. 그 침묵이 무엇을 뜻하는지 모르는 사람은 없습니다.', '공화국 만세!'), 6: ('황제 나폴레옹', '노트르담 대성당에서 나폴레옹 보나파르트가 스스로 황제의 관을 썼습니다. 교황 사절이 지켜보는 가운데, 그는 관을 사제에게서 받지 않고 자기 손으로 들어 올렸습니다.\\n\\n몇 달 전만 해도 아무도 몰랐던 코르시카의 포병 장교가 이제 프랑스 제국의 황제입니다. 유럽의 왕들은 같은 질문을 합니다. 그는 어디서 멈출 것인가.', '제국이 돌아왔다.'), 7: ('프랑스, 북독일에 선전포고', '프랑스가 북독일 연방에 선전포고했습니다. 대전쟁의 항복 문서에 서명한 지 스무 해도 되지 않았습니다. 프랑스군이 라인강 쪽으로 이동하고 있다는 보도가 잇따릅니다.\\n\\n베를린은 동맹국들에 조약 이행을 요구했습니다. 유럽은 다시 전쟁입니다.', '또다시 라인강이다.'), 8: ('프랑스, 오스트리아에 선전포고', '프랑스가 합스부르크 제국에 선전포고했습니다. 부르봉과 합스부르크, 그리고 혁명과 제국의 오랜 싸움이 다시 시작되었습니다.\\n\\n빈은 즉각 총동원령을 내렸고, 제국 곳곳의 민족 지도자들은 이 전쟁의 결과를 숨죽여 지켜봅니다.', '도나우에 전운이 돈다.'), 9: ('프랑스, 영국에 선전포고', '프랑스가 해협 건너 영국 귀족 공화국에 선전포고했습니다. 백년전쟁 이래 끝나지 않은 싸움입니다. 영국 함대가 해협에 집결하고 있습니다.\\n\\n런던 증권거래소는 개장과 동시에 거래를 멈췄고, 영연방 각지에 동원 전보가 날아갔습니다.', '해협이 불탄다.'), 10: ('프랑스, 러시아에 선전포고', '프랑스가 러시아 공화국에 선전포고했습니다. 대전쟁에서 함께 졌던 옛 동맹국끼리의 전쟁입니다.\\n\\n케렌스키는 의회에서 프랑스의 배신을 규탄했습니다. 동쪽의 겨울이 이 전쟁의 운명을 정할 것이라고 신문들은 씁니다.', '옛 동맹이 적이 되었다.'), 11: ('프랑스의 항복', '프랑스가 다시 항복했습니다. 파리의 관공서에는 승전국의 깃발이 걸렸고, 프랑스의 새 정부는 승전국의 뜻에 따라 구성됩니다.\\n\\n전쟁으로 얻은 땅은 모두 원래 주인에게 돌아가고, 식민지는 프랑스의 손을 떠났습니다. 두 번의 패배를 겪은 나라가 다시 일어설 수 있을지 묻는 사람이 많습니다.', '프랑스의 시대는 끝났는가.'), 12: ('러시아의 항복', '러시아 공화국이 프랑스에 항복했습니다. 페테르부르크 조약에 따라 러시아는 1936년의 국경으로 돌아갑니다.\\n\\n동쪽의 거인은 살아남았지만, 다시는 서쪽으로 자라지 못할 것입니다. 국경 너머 작은 왕국들은 오랜만에 깊이 잠들 수 있게 되었습니다.', '러시아의 국경은 거기까지다.'), 13: ('프랑스의 새 정복지', '[FROM.GetName]이(가) 프랑스에 항복했습니다. 수도의 관공서마다 삼색기가 내걸렸고, 이 나라의 운명은 이제 파리에서 정해집니다.\\n\\n유럽의 지도가 또 한 번 바뀌었습니다. 다음 차례는 어느 나라인지 각국 외무부가 지도를 다시 펼칩니다.', '프랑스의 깃발이 또 한 수도에.'), 14: ('러시아의 귀환', '[FROM.GetName]이(가) 러시아 공화국에 항복했습니다. 대전쟁 뒤 러시아에서 떨어져 나왔던 이 나라는 다시 러시아의 일부가 되었습니다.\\n\\n페테르부르크는 이것을 해방이라 부르고, 망명객들은 점령이라 부릅니다. 어느 쪽이든 러시아의 국경은 다시 서쪽으로 움직이고 있습니다.', '러시아가 잃은 땅을 되찾는다.'), 15: ('스페인 내전 종결', '스페인 내전이 끝났습니다. 마지막 경쟁자가 무너지면서 [FROM.GetName]이(가) 이베리아 반도의 유일한 주인이 되었습니다.\\n\\n마드리드의 거리는 폐허지만, 대서양 너머 옛 부왕령들은 이미 스페인의 손을 떠났습니다. 승자는 무너진 제국의 잔해 위에서 새 나라를 세워야 합니다.', '피레네 너머에 평화가 왔다.'), 16: ('일본 유신의 결말', '일본의 내전이 끝났습니다. [FROM.GetName]이(가) 마지막 저항을 꺾고 일본 열도를 하나로 묶었습니다.\\n\\n에도와 교토 가운데 누가 일본의 주인인지에 대한 300년의 질문에 답이 나왔습니다. 조선과 청나라는 바다 건너의 이웃이 이제 어떤 나라가 될지 지켜봅니다.', '열도에 한 사람의 주인이 섰다.'), 17: ('대불가리아, 발칸의 패자', '불가리아가 발칸 조약의 세 나라를 모두 꺾었습니다. 세르비아는 괴뢰국이 되었고, 루마니아는 둘로 갈라졌으며, 그리스는 섬들을 잃었습니다.\\n\\n소피아의 차르는 이제 도전받지 않는 발칸의 주인입니다. 그는 강대국들의 다음 전쟁에서 어느 편도 들지 않겠다고 선언했습니다.', '발칸은 소피아의 것이다.')}
+GREAT_NEWS = {1: ('프랑스 혁명', '파리에서 왕정이 무너졌습니다. 알제리 원정의 전비와 전사자 명단에 지친 시민들이 거리로 쏟아졌고, 군대는 발포를 거부했습니다. 루이 20세는 수도를 빠져나갔습니다.\\n\\n150년 전 실패한 혁명이 돌아왔다는 소식에 유럽의 궁정들이 긴급 회의를 소집했습니다. 빈의 황제는 국경 경비를 두 배로 늘리라고 명령했습니다.', '왕들의 유럽이 흔들린다.'), 2: ('복수의 왕', '프랑스 군부가 알제리를 포기한 왕을 몰아내고 오를레앙 공 장을 새 왕으로 세웠습니다. 새 왕은 즉위 첫날 군 앞에서 빼앗긴 모든 것을 되찾겠다고 맹세했습니다.\\n\\n런던과 베를린의 외교관들은 강화 조약의 배상 조항을 다시 읽기 시작했습니다.', '프랑스가 칼을 간다.'), 3: ('부르봉 왕가, 왕좌를 지키다', '튈르리 궁 앞의 대치가 왕의 승리로 끝났습니다. 반란 장교들은 체포되었고, 오를레앙 공은 국경을 넘어 달아났습니다.\\n\\n늙은 루이 20세는 대관식을 다시 치르겠다고 발표했습니다. 유럽의 왕실들은 안도의 한숨을 쉬면서도, 프랑스 군대가 왕을 한 번 버렸다는 사실을 잊지 않습니다.', '왕관은 무사했다.'), 4: ('파리 코뮌 선포', '프랑스 총선에서 사회주의 세력이 승리했습니다. 시청에 붉은 깃발이 올랐고, 새 정부는 스스로를 코뮌이라 부릅니다. 공장은 노동자 평의회에 넘어갔습니다.\\n\\n러시아 공화국의 신문들은 환영 사설을 실었고, 유럽 각국 경찰은 자국 노동조합의 전보를 검열하기 시작했습니다.', '붉은 깃발이 파리에 올랐다.'), 5: ('프랑스 공화국 출범', '프랑스 역사상 처음으로 보통선거로 뽑힌 의회가 내각을 구성했습니다. 왕도 황제도 없는 프랑스가 유럽 한가운데 들어섰습니다.\\n\\n영국 귀족 공화국은 정중한 축전을 보냈고, 대륙의 군주들은 침묵했습니다. 그 침묵이 무엇을 뜻하는지 모르는 사람은 없습니다.', '공화국 만세!'), 6: ('황제 나폴레옹', '노트르담 대성당에서 나폴레옹 보나파르트가 스스로 황제의 관을 썼습니다. 교황 사절이 지켜보는 가운데, 그는 관을 사제에게서 받지 않고 자기 손으로 들어 올렸습니다.\\n\\n몇 달 전만 해도 아무도 몰랐던 코르시카의 포병 장교가 이제 프랑스 제국의 황제입니다. 유럽의 왕들은 같은 질문을 합니다. 그는 어디서 멈출 것인가.', '제국이 돌아왔다.'), 7: ('프랑스, 북독일에 선전포고', '프랑스가 북독일 연방에 선전포고했습니다. 대전쟁의 항복 문서에 서명한 지 스무 해도 되지 않았습니다. 프랑스군이 라인강 쪽으로 이동하고 있다는 보도가 잇따릅니다.\\n\\n베를린은 동맹국들에 조약 이행을 요구했습니다. 유럽은 다시 전쟁입니다.', '또다시 라인강이다.'), 8: ('프랑스, 오스트리아에 선전포고', '프랑스가 합스부르크 제국에 선전포고했습니다. 부르봉과 합스부르크, 그리고 혁명과 제국의 오랜 싸움이 다시 시작되었습니다.\\n\\n빈은 즉각 총동원령을 내렸고, 제국 곳곳의 민족 지도자들은 이 전쟁의 결과를 숨죽여 지켜봅니다.', '도나우에 전운이 돈다.'), 9: ('프랑스, 영국에 선전포고', '프랑스가 해협 건너 영국 귀족 공화국에 선전포고했습니다. 백년전쟁 이래 끝나지 않은 싸움입니다. 영국 함대가 해협에 집결하고 있습니다.\\n\\n런던 증권거래소는 개장과 동시에 거래를 멈췄고, 영연방 각지에 동원 전보가 날아갔습니다.', '해협이 불탄다.'), 10: ('프랑스, 러시아에 선전포고', '프랑스가 러시아 공화국에 선전포고했습니다. 대전쟁에서 함께 졌던 옛 동맹국끼리의 전쟁입니다.\\n\\n케렌스키는 의회에서 프랑스의 배신을 규탄했습니다. 동쪽의 겨울이 이 전쟁의 운명을 정할 것이라고 신문들은 씁니다.', '옛 동맹이 적이 되었다.'), 11: ('프랑스의 항복', '프랑스가 다시 항복했습니다. 파리의 관공서에는 승전국의 깃발이 걸렸고, 프랑스의 새 정부는 승전국의 뜻에 따라 구성됩니다.\\n\\n전쟁으로 얻은 땅은 모두 원래 주인에게 돌아가고, 식민지는 프랑스의 손을 떠났습니다. 두 번의 패배를 겪은 나라가 다시 일어설 수 있을지 묻는 사람이 많습니다.', '프랑스의 시대는 끝났는가.'), 12: ('러시아의 항복', '러시아 공화국이 프랑스에 항복했습니다. 페테르부르크 조약에 따라 러시아는 1936년의 국경으로 돌아갑니다.\\n\\n동쪽의 거인은 살아남았지만, 다시는 서쪽으로 자라지 못할 것입니다. 국경 너머 작은 왕국들은 오랜만에 깊이 잠들 수 있게 되었습니다.', '러시아의 국경은 거기까지다.'), 13: ('프랑스의 새 정복지', '[FROM.GetName]이(가) 프랑스에 항복했습니다. 수도의 관공서마다 삼색기가 내걸렸고, 이 나라의 운명은 이제 파리에서 정해집니다.\\n\\n유럽의 지도가 또 한 번 바뀌었습니다. 다음 차례는 어느 나라인지 각국 외무부가 지도를 다시 펼칩니다.', '프랑스의 깃발이 또 한 수도에.'), 14: ('러시아의 귀환', '[FROM.GetName]이(가) 러시아 공화국에 항복했습니다. 대전쟁 뒤 러시아에서 떨어져 나왔던 이 나라는 다시 러시아의 일부가 되었습니다.\\n\\n페테르부르크는 이것을 해방이라 부르고, 망명객들은 점령이라 부릅니다. 어느 쪽이든 러시아의 국경은 다시 서쪽으로 움직이고 있습니다.', '러시아가 잃은 땅을 되찾는다.'), 15: ('스페인 내전 종결', '스페인 내전이 끝났습니다. 마지막 경쟁자가 무너지면서 [FROM.GetName]이(가) 이베리아 반도의 유일한 주인이 되었습니다.\\n\\n마드리드의 거리는 폐허지만, 대서양 너머 옛 부왕령들은 이미 스페인의 손을 떠났습니다. 승자는 무너진 제국의 잔해 위에서 새 나라를 세워야 합니다.', '피레네 너머에 평화가 왔다.'), 16: ('일본 유신의 결말', '일본의 내전이 끝났습니다. [FROM.GetName]이(가) 마지막 저항을 꺾고 일본 열도를 하나로 묶었습니다.\\n\\n에도와 교토 가운데 누가 일본의 주인인지에 대한 300년의 질문에 답이 나왔습니다. 조선과 청나라는 바다 건너의 이웃이 이제 어떤 나라가 될지 지켜봅니다.', '열도에 한 사람의 주인이 섰다.'), 17: ('대불가리아, 발칸의 패자', '불가리아가 발칸 조약의 세 나라를 모두 꺾었습니다. 세르비아는 괴뢰국이 되었고, 루마니아는 둘로 갈라졌으며, 그리스는 섬들을 잃었습니다.\\n\\n소피아의 차르는 이제 도전받지 않는 발칸의 주인입니다. 그는 강대국들의 다음 전쟁에서 어느 편도 들지 않겠다고 선언했습니다.', '발칸은 소피아의 것이다.')}
 import red_napoleon as _red
 import defeat as _defeat
 GREAT_NEWS.update({
@@ -169,6 +186,8 @@ GREAT_NEWS.update({
     18: ("원수의 쿠데타", "프랑스 정부가 무너졌습니다. 전국의 반발을 다스리지 못한 내각을 대신해 여든 살의 필리프 페탱 원수가 전권을 쥐었습니다. 의회는 무기한 휴회했고, 새 국가의 이름은 프랑스국입니다.\\n\\n유럽의 궁정들은 안도와 경계를 함께 느낍니다. 혁명보다는 낫다는 사람도 있고, 늙은 원수가 오래가지 못할 것이라는 사람도 있습니다.", "질서가 돌아왔다."),
     19: ("국가 없는 프랑스", "프랑스 사회주의자들의 대회가 중앙위원회 대신 코뮌과 조합의 자유 연합을 택했습니다. 파리 시청에는 검은색과 붉은색으로 나뉜 깃발이 올랐고, 도지사들은 집으로 돌아갔습니다.\\n\\n유럽의 신문들은 석 달 안에 무너질 것이라고 씁니다. 바르셀로나와 카라라의 노동자들은 다른 생각을 하고 있습니다.", "왕도 신도 주인도 없다."),
 })
+from route_signature import NEWS as _PEACE_NEWS  # noqa: E402  the entente and the diplomatic revolution
+GREAT_NEWS.update(_PEACE_NEWS)
 
 # Casualty steps, in thousands, to find who hurt the loser most.
 VICTOR_STEPS = [3000, 2000, 1500, 1000, 700, 500, 300, 200, 100, 50, 20, 5, 0]
@@ -243,6 +262,10 @@ def check_tables():
     for tag, states in world.TRANSFERS.items():
         for state in states:
             final[state] = tag
+    import split_states
+    for orig, parts in split_states.pieces().items():
+        for new, _ in parts:
+            final.setdefault(new, final.get(orig))
     held = sorted(s for s, owner in final.items() if owner in ("CHI", "KMT"))
     listed = sorted(s for states in CHINA.values() for s in states)
     if held != listed:
@@ -271,7 +294,7 @@ def build_tags():
         write(MOD / "common" / "countries" / f"LR {file}.txt",
               f"graphical_culture = {culture}_gfx\ngraphical_culture_2d = {culture}_2d\n\ncolor = {{ {colour[0]} {colour[1]} {colour[2]} }}\n")
         write(MOD / "history" / "countries" / f"{tag} - {file}.txt",
-              f"capital = {capital}\n\nrecruit_character = {recruits[tag]}\n\nset_technology = {{\n\tinfantry_weapons = 1\n}}\n\nset_politics = {{\n\truling_party = neutrality\n\tlast_election = \"1936.1.1\"\n\telection_frequency = 48\n\telections_allowed = no\n}}\n"
+              f"capital = {capital}\n\nrecruit_character = {recruits[tag]}\n\nset_technology = {{\n\tinfantry_weapons = 1\n}}\n\nset_politics = {{\n\truling_party = {'democratic' if tag == 'CNA' else 'neutrality'}\n\tlast_election = \"1936.1.1\"\n\telection_frequency = 48\n\telections_allowed = no\n}}\n"
               "set_popularities = {\n\tneutrality = 70\n\tfascism = 10\n\tdemocratic = 10\n\tcommunism = 10\n}\n")
 
 
@@ -285,11 +308,25 @@ def beiyang_flag():
     return image
 
 
+# Vanilla tags renamed for this world fly a vanilla flag of the right era instead of their 1936 one. Only the
+# government they start under is replaced, so a revolution still changes the flag.
+VANILLA_FLAGS = {
+    "CHI_neutrality": "MAN_restored",                         # the Qing yellow dragon
+    "JAP_neutrality": "JAP_tokugawa_restored_neutrality",     # the shogunate's black band
+    "YUG_neutrality": "SER_neutrality",                       # the Kingdom of Serbia
+    "POL_neutrality": "POL_KINGDOM_neutrality",               # the duchy wears the crowned eagle
+    "FIN_neutrality": "FIN_kingdom_of_finland",
+    "ITA_fascism": "ITA_neutrality",                          # Sardinia: the Savoy cross, not the fasces
+    "SOV_communism": "SOV_PROVISIONAL_neutrality",            # Kerensky's republic kept the tricolour
+}
+
+
 def build_flags():
     folders = [(VANILLA / "gfx" / "flags" / sub, MOD / "gfx" / "flags" / sub, size) for sub, size in (("", (82, 52)), ("medium", (41, 26)), ("small", (10, 7)))]
     sources = {tag: row[6] for tag, row in NEW_TAGS.items()}
     sources.update({key: row[2] for key, row in COSMETICS.items()})
     sources.update({key: flag for key, _, flag in FRANCE_UNDER.values()})
+    sources.update(VANILLA_FLAGS)
     for tag in FRENCH_COLONIES_AFTER_DEFEAT:
         sources.update({f"LR_{tag}_red": f"{tag}_communism", f"LR_{tag}_free": f"{tag}_democratic", f"LR_{tag}_rk": f"{tag}_fascism"})
     flag = beiyang_flag()
@@ -298,6 +335,12 @@ def build_flags():
             mod.mkdir(parents=True, exist_ok=True)
             if source == BEIYANG:
                 flag.resize(size, Image.LANCZOS).save(mod / f"{name}.tga")
+            elif isinstance(source, tuple):  # vertical stripes in the given colours
+                stripes = Image.new("RGBA", (82, 52))
+                for x in range(82):
+                    for y in range(52):
+                        stripes.putpixel((x, y), source[x * len(source) // 82] + (255,))
+                stripes.resize(size, Image.LANCZOS).save(mod / f"{name}.tga")
             else:
                 shutil.copy(vanilla / f"{source}.tga", mod / f"{name}.tga")
 
@@ -336,6 +379,27 @@ def build_ideas():
 				stability_factor = 0.25
 				war_support_factor = 0.3
 				political_power_gain = 0.3
+			}
+		}
+		LR_great_power_army = {
+			removal_cost = -1
+			picture = generic_army_war_college
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.15
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		LR_USA_arsenal = {
+			removal_cost = -1
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				army_defence_factor = 0.1
+				conscription_factor = 0.02
 			}
 		}
 	}
@@ -386,7 +450,7 @@ def build_effects():
     # Washington.
     out.append("lr_world_washington = {\n" + indent("\n".join([
         take("CNA", AMERICA_REBELS, "USA"), "CNA = { set_capital = { state = 360 } }",
-        rule("CNA", "communism", communism=60, democratic=30, neutrality=5, fascism=5),
+        rule("CNA", "democratic", democratic=65, communism=20, neutrality=10, fascism=5),
         "CNA = {\n\tpromote_character = USA_george_washington\n\tadd_ideas = LR_CNA_continental_army\n}",
         "USA = {\n\ttransfer_units_fraction = {\n\t\ttarget = CNA\n\t\tsize = 0.4\n\t\tstockpile_ratio = 0.4\n\t\tnavy_ratio = 0.2\n\t\tair_ratio = 0.3\n\t}\n}",
         # Slightly fewer divisions than the governor and Britain put together.
@@ -492,6 +556,12 @@ def build_effects():
                      f"\t\tset_variable = {{ global.LR_victor = THIS }}\n\t}}\n}}")
     steps.append("if = {\n\tlimit = { NOT = { has_variable = global.LR_victor } }\n\tset_variable = { global.LR_victor = FROM }\n}")
     out.append("lr_pick_victor = {\n" + indent("\n".join(steps)) + "\n}")
+    # North Germany's overseas lands become a German government in exile, not French colonies.
+    out.append("lr_german_exile = {\n\tif = {\n\t\tlimit = { GER = { any_owned_state = { NOT = { is_on_continent = europe } } } }\n"
+               "\t\tGER = {\n\t\t\tevery_owned_state = {\n\t\t\t\tlimit = { NOT = { is_on_continent = europe } }\n\t\t\t\tGEX = { transfer_state = PREV }\n\t\t\t}\n\t\t}\n"
+               "\t\tGEX = {\n\t\t\tif = {\n\t\t\t\tlimit = { owns_state = 773 }\n\t\t\t\tset_capital = { state = 773 }\n\t\t\t}\n"
+               "\t\t\tset_politics = {\n\t\t\t\truling_party = neutrality\n\t\t\t\telections_allowed = no\n\t\t\t}\n\t\t}\n"
+               "\t\tnews_event = { id = lr_gnews.32 days = 1 }\n\t}\n}")
 
     for tag in ("FRA", "SOV"):
         give_back = (f"every_owned_state = {{\n\tlimit = {{\n\t\thas_variable = LR_start_owner\n\t\tNOT = {{ has_state_flag = LR_start_{tag} }}\n\t}}\n"
@@ -527,6 +597,8 @@ def build_effects():
         defeat.append(f"{'if' if i == 0 else 'else_if'} = {{\n\tlimit = {{ var:global.LR_victor = {{ has_government = {ideology} }} }}\n"
                       f"\tset_politics = {{\n\t\truling_party = {ideology}\n\t\telections_allowed = no\n\t}}\n\tset_cosmetic_tag = {cosmetic}\n}}")
     defeat += ["every_enemy_country = {\n\tFRA = { white_peace = PREV }\n}",
+               "# Its subjects and allies leave the war too, or a conference would open over them.",
+               "every_country = {\n\tlimit = {\n\t\tOR = {\n\t\t\tis_subject_of = FRA\n\t\t\tis_in_faction_with = FRA\n\t\t}\n\t}\n\tevery_enemy_country = {\n\t\tPREV = { white_peace = PREV }\n\t}\n}",
                "var:global.LR_victor = {\n\tset_autonomy = {\n\t\ttarget = FRA\n\t\tautonomous_state = autonomy_puppet\n\t}\n}",
                "add_stability = -0.15", "add_war_support = -0.2", "country_event = { id = lr_peace.5 }", "news_event = { id = lr_gnews.11 days = 1 }",
                "# Every route closes; the occupation opens.", "clr_country_flag = LR_route_orleans", "clr_country_flag = LR_route_bourbon", "clr_country_flag = LR_route_communist", "clr_country_flag = LR_route_anarchist", "clr_country_flag = LR_route_jacobin", "clr_country_flag = LR_route_girondin", "clr_country_flag = LR_route_marais", "clr_country_flag = LR_route_napoleon", "clr_country_flag = LR_route_empire", "clr_country_flag = LR_route_guardian", "clr_country_flag = LR_route_red", "clr_country_flag = LR_route_petain", 
@@ -534,51 +606,34 @@ def build_effects():
                "set_variable = { LR_resist = 10 }", "mark_focus_tree_layout_dirty = yes"]
     out.append("lr_france_defeated = {\n" + indent("\n".join(defeat)) + "\n}")
 
-    # A rival who falls is absorbed by the victor, so these wars never reach a conference.
-    groups = [SPAIN_FACTIONS, ["JAP", "JPE"], ITALIANS, WARLORDS]
+    # Every war ends at the vanilla peace conference (since 2026-11-13): no automatic annexation, puppet or white
+    # peace on capitulation. Puppets are made afterwards with the region decisions (settlement_decisions.py).
     capitulation = []
-    for group in groups:
-        names = " ".join(f"tag = {t}" for t in group)
-        capitulation.append(f"if = {{\n\tlimit = {{\n\t\tROOT = {{ OR = {{ {names} }} }}\n\t\tFROM = {{ OR = {{ {names} }} }}\n\t}}\n"
-                            f"\tFROM = {{ country_event = {{ id = lr_world.90 }} }}\n}}")
-    pact_names = " ".join(f"tag = {t}" for t in BALKAN_PACT)
-    capitulation.append(f"if = {{\n\tlimit = {{\n\t\thas_global_flag = LR_balkan_war\n\t\tROOT = {{ tag = BUL }}\n\t\tFROM = {{ OR = {{ {pact_names} }} }}\n\t}}\n\tlr_balkan_pact_wins = yes\n}}")
-    for tag, effect in (("YUG", "lr_bulgaria_beats_serbia"), ("ROM", "lr_bulgaria_beats_romania"), ("GRE", "lr_bulgaria_beats_greece")):
-        capitulation.append(f"if = {{\n\tlimit = {{\n\t\thas_global_flag = LR_balkan_war\n\t\tROOT = {{ tag = {tag} }}\n\t\tFROM = {{ tag = BUL }}\n\t}}\n\t{effect} = yes\n}}")
-    claims = " ".join(f"tag = {t}" for t in RUSSIAN_CLAIMS)
-    capitulation.append(f"if = {{\n\tlimit = {{\n\t\tROOT = {{ OR = {{ {claims} }} }}\n\t\tFROM = {{ tag = SOV }}\n\t}}\n\tROOT = {{ news_event = {{ id = lr_gnews.14 days = 1 }} }}\n\tSOV = {{\n\t\tannex_country = {{\n\t\t\ttarget = ROOT\n\t\t\ttransfer_troops = yes\n\t\t}}\n\t}}\n}}")
-    league_side = " ".join(f"tag = {t}" for t in [LEAGUE_LEADER] + LEAGUE_MEMBERS + ["BUL"])
-    for tag, effect in (("YUG", "lr_balkan_fall_serbia"), ("GRE", "lr_balkan_fall_greece"), ("ROM", "lr_balkan_fall_romania")):
-        capitulation.append(f"if = {{\n\tlimit = {{\n\t\thas_global_flag = LR_balkan_front\n\t\tNOT = {{ has_global_flag = LR_balkan_settled }}\n\t\tROOT = {{ tag = {tag} }}\n\t\tFROM = {{ OR = {{ {league_side} }} }}\n\t}}\n\t{effect} = yes\n}}")
-    capitulation.append("if = {\n\tlimit = {\n\t\thas_global_flag = LR_balkan_front\n\t\tNOT = { has_global_flag = LR_balkan_beat_bulgaria }\n\t\tROOT = { tag = BUL }\n\t}\n\tlr_balkan_beat_bulgaria = yes\n}")
-    pact_at_war = " ".join(f"{t} = {{ has_war_with = AUS }}" for t in BALKAN_PACT)
-    capitulation.append(f"if = {{\n\tlimit = {{\n\t\thas_global_flag = LR_balkan_front\n\t\tNOT = {{ has_global_flag = LR_balkan_settled }}\n\t\tROOT = {{ tag = AUS }}\n\t\tOR = {{ {pact_at_war} }}\n\t}}\n\tlr_balkan_great_victory = yes\n}}")
-    capitulation.append("if = {\n\tlimit = {\n\t\tROOT = { tag = USA }\n\t\tCNA = {\n\t\t\texists = yes\n\t\t\thas_war_with = USA\n\t\t}\n\t}\n"
-                        "\tCNA = { country_event = { id = lr_america.2 } }\n}")
-    capitulation.append("if = {\n\tlimit = {\n\t\tROOT = { tag = CAN }\n\t\thas_global_flag = LR_cna_canada\n\t\tCNA = { has_war_with = CAN }\n\t}\n"
-                        "\tCNA = { country_event = { id = lr_america.3 } }\n}")
-    side = "FROM = {\n\t\t\tNOT = { tag = SOV }\n\t\t\tOR = {\n\t\t\t\ttag = FRA\n\t\t\t\tis_in_faction_with = FRA\n\t\t\t\tis_subject_of = FRA\n\t\t\t}\n\t\t}"
+    side = "FROM = {\n\t\t\tOR = {\n\t\t\t\tNOT = { tag = SOV }\n\t\t\t\tis_in_faction_with = FRA\n\t\t\t}\n\t\t\tOR = {\n\t\t\t\ttag = FRA\n\t\t\t\tis_in_faction_with = FRA\n\t\t\t\tis_subject_of = FRA\n\t\t\t}\n\t\t}"
     puppets = " ".join(f"tag = {t}" for plan in PLANS for t in plan["targets"])
-    # First what the winning kind of France keeps, then the rest of the loser becomes a puppet or a dominion.
-    capitulation.append(f"if = {{\n\tlimit = {{\n\t\tNOT = {{ tag = FRA }}\n\t\tFRA = {{ has_war_with = ROOT }}\n\t\t{side}\n\t}}\n\tlr_fra_victory_settlement = yes\n}}")
-    capitulation.append(f"if = {{\n\tlimit = {{\n\t\tNOT = {{ tag = FRA }}\n\t\tFRA = {{ has_war_with = ROOT }}\n\t\t{side}\n\t\texists = yes\n\t\tcapital_scope = {{ NOT = {{ is_on_continent = europe }} }}\n\t}}\n\tlr_fra_overseas_settlement = yes\n}}")
+    # France's victories go to the vanilla peace conference (since 2026-11-13); the land it wins there is settled
+    # region by region with decisions (settlement_decisions.py). Only the flags later focuses and endings need are set here.
     capitulation.append(f"if = {{\n\tlimit = {{\n\t\tROOT = {{ tag = BAY }}\n\t\tFRA = {{ has_war_with = ROOT }}\n\t\t{side}\n\t}}\n"
-                        "\tFRA = {\n\t\tset_country_flag = LR_bavaria_defeated\n\t\tif = {\n\t\t\tlimit = { has_country_flag = LR_germany_defeated }\n\t\t\tlr_unify_germany = yes\n\t\t}\n\t}\n}")
-    capitulation.append(f"if = {{\n\tlimit = {{\n\t\tROOT = {{ OR = {{ {puppets} }} }}\n\t\tFRA = {{ has_war_with = ROOT }}\n\t\t{side}\n\t}}\n\tFRA = {{ country_event = {{ id = lr_world.93 }} }}\n}}")
+                        "\tFRA = { set_country_flag = LR_bavaria_defeated }\n}")
     capitulation.append(f"if = {{\n\tlimit = {{\n\t\tROOT = {{ tag = SOV }}\n\t\tFRA = {{ has_war_with = SOV }}\n\t\t{side}\n\t}}\n"
-                        "\tSOV = { lr_back_to_start_SOV = yes }\n\tnews_event = { id = lr_gnews.12 days = 1 }\n\tFRA = {\n\t\twhite_peace = SOV\n\t\tcountry_event = { id = lr_world.94 }\n\t\tlr_fra_finish_war = yes\n\t}\n}")
+                        "\tset_global_flag = LR_russia_defeated\n}")
     capitulation.append("if = {\n\tlimit = {\n\t\tROOT = { tag = FRA }\n\t\tNOT = { FROM = { tag = ALG } }\n\t\tNOT = { has_global_flag = LR_settled_france }\n\t}\n"
                         "\tset_global_flag = LR_settled_france\n\tFRA = {\n\t\tlr_pick_victor = yes\n\t\tlr_france_defeated = yes\n\t}\n}")
-    capitulation.append("if = {\n\tlimit = {\n\t\tROOT = { tag = CNA }\n\t\tUSA = { exists = yes }\n\t}\n\tUSA = { country_event = { id = lr_world.90 } }\n}")
     out.append("lr_world_on_capitulation = {\n" + indent("\n".join(capitulation)) + "\n}")
+    # A country that falls makes its own peace: its subjects fall with it, and a conference opens for them alone while
+    # its faction fights on. (France's own defeat keeps its occupation route.)
+    out.append("lr_separate_peace = {\n\tif = {\n\t\tlimit = {\n\t\t\tis_subject = no\n\t\t\tNOT = { tag = FRA }\n\t\t\tFROM = { has_war_with = ROOT }\n\t\t}\n"
+               "\t\tFROM = {\n\t\t\tstart_peace_conference = {\n\t\t\t\ttag = ROOT\n\t\t\t\tscore_factor = 1.0\n"
+               "\t\t\t\twinner_scope = ALL\n\t\t\t\tloser_scope = LIMITED\n\t\t\t}\n\t\t}\n\t}\n}")
     out.append(victory_rules.settlement_effect())
     out.append(victory_rules.naming_effect())
-    # Every war France is not in ends by this written treaty, never by a vanilla peace conference.
-    out.append('lr_world_generic_treaty = {\n\tif = {\n\t\tlimit = {\n\t\t\tNOT = { tag = FRA }\n\t\t\thas_civil_war = no\n\t\t\thas_war = yes\n\t\t\tNOT = { FRA = { has_war_with = ROOT } }\n\t\t}\n\t\tlog = "LR: treaty for [ROOT.GetTag] after falling to [FROM.GetTag]"\n\t\t# Land the winners hold that is theirs by core or claim changes hands.\n\t\tevery_owned_state = {\n\t\t\tlimit = {\n\t\t\t\tCONTROLLER = {\n\t\t\t\t\thas_war_with = ROOT\n\t\t\t\t\tPREV = { OR = { is_core_of = PREV is_claimed_by = PREV } }\n\t\t\t\t}\n\t\t\t}\n\t\t\tCONTROLLER = { transfer_state = PREV }\n\t\t}\n\t\t# Then the loser makes peace with every enemy, so no conference ever opens.\n\t\tevery_enemy_country = {\n\t\t\tROOT = { white_peace = PREV }\n\t\t}\n\t}\n}')
+    # Wars France is not in used to end by a written treaty and a white peace; they go to the conference now.
+    out.append('lr_world_generic_treaty = {\n}')
 
     write(MOD / "common" / "decisions" / "lr_volunteer_decisions.txt", volunteer_decisions())
     out.append("lr_world_startup = {\n" + indent("\n".join(
-        f"{tag} = {{ country_event = {{ id = lr_world.{number} days = {days_after_start(y, m, d)} }} }}" for number, tag, y, m, d in DATES.values())) + "\n}")
+        [f"{tag} = {{ country_event = {{ id = lr_world.{number} days = {days_after_start(y, m, d)} }} }}" for number, tag, y, m, d in DATES.values()]
+        + ["lr_world_armies = yes  # the victors' larger armies (build_oob.py)"])) + "\n}")
     write(MOD / "common" / "scripted_effects" / "lr_world_event_effects.txt", "\n\n".join(out) + "\n")
 
 
@@ -727,6 +782,12 @@ country_event = {
 		if = {
 			limit = { FROM = { exists = yes } }
 			white_peace = FROM
+			# The new puppet leaves every war, so France's allies are not left fighting it.
+			FROM = {
+				every_enemy_country = {
+					FROM = { white_peace = PREV }
+				}
+			}
 			set_autonomy = {
 				target = FROM
 				autonomous_state = autonomy_puppet
@@ -885,6 +946,10 @@ OPTION_LABELS = {
     "LR_GRE_reparations_desc": "패전국들이 아테네로 금을 실어 보냅니다. 그리스는 백 년 만에 처음으로 빚 없이 미래를 계획합니다.",
     "LR_CNA_continental_army": "제2차 대륙군",
     "LR_CNA_continental_army_desc": "두 번째 독립 전쟁입니다. 농부와 공장 노동자가 같은 깃발 아래 모였고, 워싱턴은 이들을 하나의 군대로 묶었습니다. 이 군대는 숫자 이상의 힘으로 싸웁니다.",
+    "LR_great_power_army": "승전국의 군대",
+    "LR_great_power_army_desc": "대전쟁에서 이긴 나라들은 그 군대를 해산하지 않았습니다. 장교단은 그대로 남았고, 공장은 평시에도 무기를 만듭니다. 이들은 프랑스가 다시 일어서는 날을 기다리고 있습니다.",
+    "LR_USA_arsenal": "민주주의의 무기고",
+    "LR_USA_arsenal_desc": "대서양 건너의 공장들은 세계 어느 나라보다 많은 강철을 쏟아냅니다. 미국이 전쟁을 결심하는 순간, 이 공장들은 하룻밤 사이에 무기고가 됩니다.",
 }
 
 

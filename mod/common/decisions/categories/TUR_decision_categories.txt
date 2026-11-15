@@ -20,7 +20,7 @@ TUR_kurdish_state_management_category  = {
 	visible_when_empty = yes 
 
 	on_map_area = {
-		targets = { 350 352 353 800 }
+		targets = { 350 800 353 1161 }
 		name = TUR_kurdish_state_management_map_category_name
 		zoom = 150
 	}
@@ -124,3 +124,4 @@ category_faction_debug_decisions = {
 
 	
 }
+# kr_layout: state numbers translated

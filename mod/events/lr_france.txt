@@ -111,6 +111,7 @@ country_event = {
 
 	option = {
 		name = lr_france.2.a
+		lr_super_orleans = yes
 		news_event = { id = lr_gnews.2 days = 1 }
 		trigger = { check_variable = { LR_coup_orleans > 1 } }
 		custom_effect_tooltip = LR_tt_orleans
@@ -126,11 +127,13 @@ country_event = {
 			elections_allowed = no
 		}
 		promote_character = LR_FRA_orleans
+		set_cosmetic_tag = LR_FRA_orleans
 		add_war_support = 0.15
 	}
 
 	option = {
 		name = lr_france.2.b
+		lr_super_monarchy = yes
 		news_event = { id = lr_gnews.3 days = 1 }
 		trigger = { check_variable = { LR_coup_orleans < 2 } }
 		custom_effect_tooltip = LR_tt_bourbon
@@ -245,6 +248,7 @@ country_event = {
 
 	option = {
 		name = lr_france.13.a
+		lr_super_commune = yes
 		news_event = { id = lr_gnews.4 days = 1 }
 		trigger = { check_variable = { LR_election_left > 1 } }
 		custom_effect_tooltip = LR_tt_congress
@@ -273,6 +277,7 @@ country_event = {
 
 	option = {
 		name = lr_france.14.a
+		lr_super_liberty = yes
 		news_event = { id = lr_gnews.5 days = 1 }
 		ai_chance = { factor = 34 }
 		custom_effect_tooltip = LR_tt_jacobin
@@ -287,6 +292,8 @@ country_event = {
 
 	option = {
 		name = lr_france.14.b
+		promote_character = LR_FRA_reynaud
+		lr_super_liberty = yes
 		news_event = { id = lr_gnews.5 days = 1 }
 		ai_chance = { factor = 33 }
 		custom_effect_tooltip = LR_tt_girondin
@@ -300,6 +307,8 @@ country_event = {
 
 	option = {
 		name = lr_france.14.c
+		promote_character = LR_FRA_flandin
+		lr_super_liberty = yes
 		news_event = { id = lr_gnews.5 days = 1 }
 		ai_chance = { factor = 33 }
 		custom_effect_tooltip = LR_tt_marais
@@ -399,6 +408,7 @@ country_event = {
 		custom_effect_tooltip = LR_tt_napoleon
 		set_country_flag = LR_algeria_retaken
 		clr_country_flag = LR_route_jacobin
+		lr_super_bonaparte = yes
 		set_country_flag = LR_route_napoleon
 		mark_focus_tree_layout_dirty = yes
 		lr_fra_regime_napoleon = yes
@@ -457,7 +467,7 @@ news_event = {
 	id = lr_news.1
 	title = lr_news.1.t
 	desc = lr_news.1.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_algiers
 
 	major = yes
 	is_triggered_only = yes
@@ -471,7 +481,7 @@ news_event = {
 	id = lr_news.2
 	title = lr_news.2.t
 	desc = lr_news.2.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_army_parade
 
 	major = yes
 	is_triggered_only = yes
@@ -485,7 +495,7 @@ news_event = {
 	id = lr_news.3
 	title = lr_news.3.t
 	desc = lr_news.3.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_news_event_lr_parliament
 
 	major = yes
 	is_triggered_only = yes
@@ -506,7 +516,7 @@ country_event = {
 	option = {
 		name = lr_france.41.a
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_war_support = 0.03
@@ -516,7 +526,7 @@ country_event = {
 	option = {
 		name = lr_france.41.b
 		every_owned_state = {
-			limit = { OR = { state = 459 state = 460 state = 513 state = 514 } }
+			limit = { OR = { state = 459 OR = { state = 460 state = 1043 } OR = { state = 513 state = 1075 } OR = { state = 514 state = 1071 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = -50
@@ -535,7 +545,7 @@ country_event = {
 	option = {
 		name = lr_france.42.a
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } } }
 			add_core_of = ROOT
 		}
 		add_war_support = 0.02
@@ -545,7 +555,7 @@ country_event = {
 	option = {
 		name = lr_france.42.b
 		every_owned_state = {
-			limit = { OR = { state = 6 state = 34 state = 977 state = 8 state = 980 } }
+			limit = { OR = { state = 6 state = 34 state = 977 state = 8 OR = { state = 980 state = 1133 } } }
 			add_core_of = ROOT
 		}
 		add_political_power = -30
@@ -564,6 +574,7 @@ country_event = {
 
 	option = {
 		name = lr_france.50.a
+		promote_character = LR_FRA_thorez
 		ai_chance = { factor = 70 }
 		custom_effect_tooltip = LR_tt_communist
 		lr_fra_regime_communist = yes
@@ -634,6 +645,7 @@ country_event = {
 		promote_character = LR_FRA_petain
 		set_cosmetic_tag = LR_FRA_etat
 		mark_focus_tree_layout_dirty = yes
+		lr_super_petain = yes
 		news_event = { id = lr_gnews.18 days = 1 }
 	}
 
@@ -761,3 +773,4 @@ country_event = {
 		country_event = { id = lr_novel.201 }
 	}
 }
+# kr_layout: state numbers translated

@@ -14,8 +14,3 @@ LR_dyn_rebuild = {
 	stability_factor = LR_rec_stability
 }
 
-LR_no_war_justification = {
-	enable = { always = yes }
-	icon = GFX_modifiers_sabotaged_resource
-	generate_wargoal_tension = 5
-}

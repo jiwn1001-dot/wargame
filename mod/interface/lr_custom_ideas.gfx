@@ -1,0 +1,298 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_economy__GFX_idea_generic_license_production"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_army__GFX_idea_generic_army_war_college"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_navy__GFX_idea_generic_navy_bonus"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_air__GFX_idea_generic_air_bonus"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_air.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_society__GFX_idea_generic_local_self_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_society.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_army_fire__GFX_idea_generic_artillery_regiments"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_army_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_army_armour__GFX_idea_generic_armor"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_army_armour.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_army_staff__GFX_idea_generic_army_war_college"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_army_staff.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_army_supply__GFX_idea_generic_supply_line"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_army_supply.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_army_elite__GFX_idea_generic_infantry_bonus"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_army_elite.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_navy_line__GFX_idea_generic_sea_focused_navy"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_navy_line.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_navy_light__GFX_idea_generic_navy_submarines"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_navy_light.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_navy_air__GFX_idea_generic_navy_carrier_bonus"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_navy_air.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_provisional__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_provisional.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_orleans__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_orleans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_bourbon__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_bourbon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_communist__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_jacobin__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_jacobin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_girondin__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_girondin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_marais__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_marais.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_napoleon__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_napoleon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_empire__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_guardian__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_guardian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_petain__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_petain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_anarchist__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_anarchist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_red__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_red.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_regime_vanquished__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_regime_vanquished.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_ruler_louis__GFX_idea_generic_king_handled"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_ruler_louis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_ruler_orleans__GFX_idea_generic_king_handled"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_ruler_orleans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_ruler_constitutional__GFX_idea_generic_king_handled"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_ruler_constitutional.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_ruler_emperor__GFX_idea_generic_king_handled"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_ruler_emperor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_ruler_president__GFX_idea_generic_constitutional_guarantees"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_ruler_president.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_ruler_petain__GFX_idea_generic_fortify_the_borders"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_ruler_petain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_ruler_red__GFX_idea_generic_communist_army"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_ruler_red.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_orleans__GFX_idea_generic_army_war_college"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_orleans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_bourbon__GFX_idea_generic_king_handled"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_bourbon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_marais__GFX_idea_generic_constitutional_guarantees"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_marais.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_jacobin__GFX_idea_generic_local_self_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_jacobin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_girondin__GFX_idea_generic_license_production"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_girondin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_communist__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_anarchist__GFX_idea_generic_local_self_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_anarchist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_napoleon__GFX_idea_generic_central_management"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_napoleon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_empire__GFX_idea_generic_army_war_college"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_guardian__GFX_idea_generic_constitutional_guarantees"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_guardian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_red__GFX_idea_generic_infantry_bonus"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_red.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_sig_petain__GFX_idea_generic_fortify_the_borders"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_sig_petain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_defeat__GFX_idea_generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_defeat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_disarmed__GFX_idea_generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_disarmed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_orleans__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_orleans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_bourbon__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_bourbon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_communist__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_anarchist__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_anarchist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_napoleon__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_napoleon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_red__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_red.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_petain__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_petain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_dyn_power_empire__GFX_idea_generic_political_support"
+		texturefile = "gfx/interface/ideas/custom/LR_dyn_power_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_defeat__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_defeat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_JAP_han_autonomy__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_JAP_han_autonomy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_algerian_crisis__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_algerian_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_resistance_high__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_resistance_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_minority__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_minority.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_provisional__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_provisional.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_orleans__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_orleans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_bourbon__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_bourbon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_communist__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_communist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_jacobin__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_jacobin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_girondin__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_girondin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_marais__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_marais.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_guardian__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_guardian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_FRA_gov_napoleon__generic_disjointed_gov"
+		texturefile = "gfx/interface/ideas/custom/LR_FRA_gov_napoleon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_GRE_reparations__generic_foreign_capital"
+		texturefile = "gfx/interface/ideas/custom/LR_GRE_reparations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_CNA_continental_army__generic_war_preparation"
+		texturefile = "gfx/interface/ideas/custom/LR_CNA_continental_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_great_power_army__generic_army_war_college"
+		texturefile = "gfx/interface/ideas/custom/LR_great_power_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LRc_LR_USA_arsenal__generic_production_bonus"
+		texturefile = "gfx/interface/ideas/custom/LR_USA_arsenal.dds"
+	}
+}

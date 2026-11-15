@@ -250,13 +250,13 @@ ETH_reintegrate_former_territory_category = {
 					is_controlled_by = ETH
 					OR = {
 						state = 271 
-						state = 835 
+						OR = { state = 835 state = 1263 } 
 						state = 836 
-						state = 837
+						OR = { state = 837 state = 844 }
 						state = 838
 						state = 839 
 						state = 840
-						state = 841 
+						OR = { state = 841 state = 988 } 
 						state = 842 
 						state = 843 
 					}
@@ -328,3 +328,4 @@ ETH_improve_the_horn_of_africa_category = {
 	}
 	visible_when_empty = no
 }
+# kr_layout: state numbers translated

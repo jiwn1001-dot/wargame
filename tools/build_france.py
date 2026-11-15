@@ -71,6 +71,25 @@ def stab(value): return f"add_stability = {value}"
 def war(value): return f"add_war_support = {value}"
 def pp(value): return f"add_political_power = {value}"
 def xp(kind, value): return f"{kind}_experience = {value}"
+def ai_will_do(item):
+    """How much an AI France wants a focus. Industry comes first while there is peace, a war focus is taken as soon as
+    it opens unless France is already fighting a war (one war at a time, as the route plans them), and a focus with
+    an ai factor of 0 or less than 1 keeps that choice (the half-chance Russian war, for instance)."""
+    text = "\n".join(item["effects"])
+    base = item["ai"]
+    lines = [f"\t\tai_will_do = {{", f"\t\t\tfactor = {base}"]
+    if base >= 1 and "declare_war_on" in text:
+        lines[1] = f"\t\t\tfactor = {base * 5}"
+        lines.append("\t\t\tmodifier = { factor = 0.1 has_war = yes }")
+    elif base >= 1 and any(k in text for k in ("arms_factory", "industrial_complex", "dockyard", "add_research_slot")):
+        lines[1] = f"\t\t\tfactor = {base * 3}"
+        lines.append("\t\t\tmodifier = { factor = 0.5 has_war = yes }")
+    elif base >= 1 and any(k in text for k in ("army_experience", "add_war_support", "_tech", "air_experience")):
+        lines[1] = f"\t\t\tfactor = {base * 2}"
+    lines.append("\t\t}")
+    return "\n".join(lines)
+
+
 def goal(tag): return f"declare_war_on = {{\n\ttarget = {tag}\n\ttype = annex_everything\n}}"
 def pop(ideology, value): return f"add_popularity = {{\n\tideology = {ideology}\n\tpopularity = {value}\n}}"
 
@@ -110,7 +129,7 @@ focus(E + "lessons_of_defeat", "army_doctrines", 9, 1, "패전의 교훈", "왜 
 focus(E + "infantry_rearm", "small_arms", 7, 2, "보병 재무장", "낡은 소총을 교체합니다.", tech("LR_FRA_infantry_rearm", "infantry_weapons"), pre=[E + "lessons_of_defeat"])
 focus(E + "artillery_school", "army_artillery", 9, 2, "포병 학교", "포병은 프랑스 육군의 자존심입니다.", tech("LR_FRA_artillery_school", "artillery"), pre=[E + "lessons_of_defeat"])
 focus(E + "mobile_war", "army_tanks", 11, 2, "기동전 연구", "다음 전쟁은 참호에서 끝나지 않을 것입니다.", tech("LR_FRA_mobile_war", "armor"), pre=[E + "lessons_of_defeat"])
-focus(E + "general_staff", "army_doctrines", 8, 3, "참모본부 개편", "늙은 장군들을 물러나게 합니다.", xp("army", 25), pre=[E + "infantry_rearm", E + "artillery_school"])
+focus(E + "general_staff", "army_doctrines", 8, 3, "참모본부 개편", "늙은 장군들을 물러나게 합니다.", xp("army", 25), "set_country_flag = LR_FRA_high_command_open\ncustom_effect_tooltip = LR_tt_high_command_open", pre=[E + "infantry_rearm", E + "artillery_school"])
 focus(E + "motorisation", "army_motorized", 10, 3, "차량화", "보병을 트럭에 태웁니다.", tech("LR_FRA_motorisation", "motorized_equipment"), pre=[E + "artillery_school", E + "mobile_war"])
 focus(E + "tank_divisions", "build_tank", 12, 3, "기갑 사단", "전차를 집중 운용하는 부대를 만듭니다.", tech("LR_FRA_tank_divisions", "armor"), pre=[E + "mobile_war"])
 focus(E + "air_arm", "build_airforce", 7, 4, "공군 창설", "하늘에는 아직 승전국의 조약이 닿지 못합니다.", xp("air", 25), pre=[E + "general_staff"])
@@ -255,7 +274,7 @@ focus(N + "legion_of_honour", "military_sphere", 15, 3, "레지옹 도뇌르", "
 focus(N + "concordat", "improve_relations", 17, 3, "정교 협약", "교회와 화해합니다.", stab(0.05), pre=[N + "bank_of_france"], route=R)
 focus(N + "coronation", "national_unity", 16, 4, "대관식", "노트르담에서 나폴레옹이 스스로 황제의 관을 씁니다.",
       "remove_ideas = LR_FRA_defeat", stab(0.1), war(0.1), "set_politics = {\n\truling_party = fascism\n\telections_allowed = no\n}",
-      "promote_character = {\n\tcharacter = FRA_napoleon_bonaparte\n\tideology = fascism_ideology\n}", "set_cosmetic_tag = FRA_VICHY", "set_country_flag = LR_route_empire", "mark_focus_tree_layout_dirty = yes",
+      "promote_character = {\n\tcharacter = FRA_napoleon_bonaparte\n\tideology = fascism_ideology\n}", "set_cosmetic_tag = LR_FRA_empire", "set_country_flag = LR_route_empire", "mark_focus_tree_layout_dirty = yes",
       pre=[N + "legion_of_honour", N + "concordat"], route=R, me=[N + "guardian"])
 focus(N + "continental_system", "forceful_treaty", 15, 5, "대륙봉쇄", "유럽의 항구를 영국에게 닫습니다.", pp(75), pre=[N + "coronation"], route="LR_route_empire")
 focus(N + "grande_armee", "army_artillery", 17, 5, "대육군", "포병과 전차를 앞세운 대육군이 출범합니다.", xp("army", 75), war(0.1), pre=[N + "coronation"], route="LR_route_empire")
@@ -306,7 +325,7 @@ extras("LR_ORL_", "LR_route_orleans", [
     ("youth", "propaganda", 23, 1, "국민청년단", "복수를 외치는 청년들을 조직합니다.", ["duke"], [pop("fascism", 0.1)]),
     ("veterans", "allies_build_infantry", 23, 2, "재향군인회", "패전의 굴욕을 아는 사람들이 왕의 기둥입니다.", ["youth"], [war(0.05), xp("army", 25)]),
     ("tear_up_treaty", "forceful_treaty", 23, 3, "강화 조약 파기", "치욕의 조약은 더 이상 없습니다.", ["veterans"], [war(0.1), stab(-0.02)]),
-    ("secret_staff", "army_doctrines", 25, 1, "비밀 참모본부", "조약이 금지한 참모본부를 되살립니다.", ["duke"], [xp("army", 50)]),
+    ("secret_staff", "army_doctrines", 25, 1, "비밀 참모본부", "왕실이 해체했던 참모본부 작전과를 되살립니다.", ["duke"], [xp("army", 50)]),
     ("press_control", "political_pressure", 25, 2, "언론 통제", "신문은 왕의 목소리가 됩니다.", ["secret_staff"], [stab(0.05), pp(50)]),
     ("autarky", "production", 25, 3, "자급자족 경제", "봉쇄에도 버틸 경제를 세웁니다.", ["press_control"], ["add_ideas = LR_idea_autarky"]),
     ("latin_front", "military_deal", 24, 4, "라틴 전선", "스페인에 동맹을 제안합니다.", ["tear_up_treaty", "autarky"], [pp(75)]),
@@ -382,9 +401,6 @@ LEFT_BANK = """FRA = {
 51 = { add_core_of = FRA }"""
 RHINE_HELD = ("custom_trigger_tooltip = {\n\ttooltip = LR_tt_rhine_held\n\tOR = {\n\t\thas_country_flag = LR_germany_defeated\n"
               "\t\t42 = { is_controlled_by = ROOT }\n\t}\n}")
-focus("LR_ORL_left_bank", "demand_territory", 17, 8, "라인강 서안 합병", "강의 왼쪽 땅을 합병합니다.", LEFT_BANK, pre=["LR_ORL_rhine"], route="LR_route_orleans", available=RHINE_HELD)
-focus("LR_COM_left_bank", "demand_territory", 15, 6, "라인강 서안 편입", "강의 왼쪽 땅을 편입합니다.", LEFT_BANK, pre=["LR_COM_rhine"], route="LR_route_communist", available=RHINE_HELD)
-focus("LR_NAP_left_bank", "demand_territory", 15, 8, "라인강 서안 합병", "강의 왼쪽 땅을 합병합니다.", LEFT_BANK, pre=["LR_NAP_rhine"], route="LR_route_empire", available=RHINE_HELD)
 
 new_routes.define(globals())
 IDEAS.append(("LR_idea_continental_system", "대륙봉쇄", "유럽의 항구가 영국 상품에 닫혔습니다.", "generic_central_management", {"production_lack_of_resource_penalty_factor": -0.1, "consumer_goods_factor": 0.02}))
@@ -770,10 +786,10 @@ plan("LR_GUA_", "oath", [
 ])
 gate("LR_GUA_citizen_army", "LR_GUA_constitution", "LR_GUA_social_insurance")
 new_routes.arrange(globals())
-for prefix, heads in (("LR_ORL_", ["algeria", "rhine", "danube", "channel", "russia", "left_bank"]), ("LR_BOU_", ["rhine", "danube", "channel", "russia"]),
-                      ("LR_COM_", ["rhine", "danube", "channel", "left_bank"]), ("LR_JAC_", ["republican_army", "rhine", "danube", "channel", "russia"]),
+for prefix, heads in (("LR_ORL_", ["algeria", "rhine", "danube", "channel", "russia"]), ("LR_BOU_", ["rhine", "danube", "channel", "russia"]),
+                      ("LR_COM_", ["rhine", "danube", "channel"]), ("LR_JAC_", ["republican_army", "rhine", "danube", "channel", "russia"]),
                       ("LR_GIR_", ["rhine", "danube", "channel", "russia"]), ("LR_MAR_", ["rhine", "danube", "channel", "russia"]),
-                      ("LR_NAP_", ["danube", "boulogne", "moscow", "left_bank", "rhine_confederation"]), ("LR_GUA_", ["rhine", "danube", "channel", "russia"])):
+                      ("LR_NAP_", ["danube", "boulogne", "moscow", "rhine_confederation"]), ("LR_GUA_", ["rhine", "danube", "channel", "russia"])):
     for key in heads:
         BY_ID[prefix + key]["filter"] = FILTERS["영토확장"]
 
@@ -840,8 +856,14 @@ for fid in ("LR_ORL_rhine", "LR_BOU_rhine", "LR_COM_rhine", "LR_JAC_rhine", "LR_
     require(fid, "has_completed_focus = LR_FRA_revenge_army\n" + algeria.NOT_CAMPAIGNING)
 for fid in ("LR_ORL_channel", "LR_BOU_channel", "LR_COM_channel", "LR_JAC_channel", "LR_GIR_channel", "LR_MAR_channel", "LR_NAP_boulogne", "LR_GUA_channel"):
     require(fid, "has_completed_focus = LR_FRA_fusiliers_marins")
+for item in FOCUSES:
+    if item["id"].startswith("LR_MAR_plan_") or item["id"] in ("LR_MAR_rhine", "LR_MAR_danube", "LR_MAR_channel"):
+        require(item["id"], "NOT = { has_country_flag = LR_entente_cordiale }")
+    if item["id"].startswith("LR_BOU_plan_") or item["id"] in ("LR_BOU_italy", "LR_BOU_danube"):
+        require(item["id"], "NOT = { has_country_flag = LR_diplomatic_revolution }")
 for fid in ("LR_ORL_russia", "LR_BOU_russia", "LR_JAC_russia", "LR_GIR_russia", "LR_MAR_russia", "LR_NAP_moscow", "LR_GUA_russia"):
     require(fid, "has_country_flag = LR_germany_defeated")
+
 
 ITALY_DECISIONS = """# Generated by tools/build_france.py.
 LR_FRA_italy_category = {
@@ -1172,7 +1194,7 @@ spirit("LR_FRA_battleline", "주력 함대", "됭케르크급 전함이 프랑�
 spirit("LR_ORL_duke", "복수의 맹세", "새 왕이 군 앞에서 맹세합니다. 빼앗긴 것을 모두 되찾겠다고.", "generic_war_preparation", {"war_support_factor": 0.05, "stability_factor": 0.03})
 council = spirit("LR_ORL_royal_council", "왕실 군사 평의회", "왕의 곁에 장군들이 앉습니다. 내각은 그들의 결정을 받아 적습니다.", GOV, {"political_power_gain": 0.1})
 vets = spirit("LR_ORL_veterans", "재향군인회", "대전쟁의 노병들이 왕의 지지 기반이 됩니다.", ARMY, {"war_support_factor": 0.05, "experience_gain_army_factor": 0.05})
-spirit("LR_ORL_secret_staff", "비밀 참모본부", "조약이 금지한 참모본부가 민간 회사의 간판을 달고 일합니다.", ARMY, {"war_support_factor": 0.05, "experience_gain_army_factor": 0.1, "planning_speed": 0.05}, [vets])
+spirit("LR_ORL_secret_staff", "비밀 참모본부", "왕실이 해체한 작전과가 민간 회사의 간판을 달고 다시 일합니다.", ARMY, {"war_support_factor": 0.05, "experience_gain_army_factor": 0.1, "planning_speed": 0.05}, [vets])
 youth = spirit("LR_ORL_youth", "국민청년단", "제복을 입은 소년들이 왕의 이름을 외칩니다.", "generic_reserve_divisions", {"fascism_drift": 0.03, "conscription_factor": 0.02})
 spirit("LR_ORL_press_control", "언론 통제", "파리의 신문들이 같은 사설을 싣기 시작합니다.", GOV, {"fascism_drift": 0.03, "conscription_factor": 0.02, "stability_factor": 0.05, "political_power_gain": 0.05}, [youth])
 spirit("LR_ORL_tear_up_treaty", "조약을 찢은 나라", "베르사유의 서명은 이제 휴지입니다. 유럽이 프랑스를 경계합니다.", "generic_war_preparation", {"war_support_factor": 0.1, "stability_factor": -0.02})
@@ -1336,7 +1358,7 @@ more_focuses("LR_GIR_", "LR_route_girondin", "외교", [
     ("hudson_loans", "positive_trade_relations", 0, 0, "뉴욕의 차관", "영국령 북아메리카의 은행가들이 보르도에 지점을 냅니다.", ["atlantic_trade"], [FRIEND_OF.format(tag="USA"), boost("gir_loans", {"consumer_goods_factor": -0.02})]),
 ])
 more_focuses("LR_GIR_", "LR_route_girondin", "안정도", [
-    ("civic_guard", "national_unity", 0, 0, "지방 시민군", "파리가 아니라 각 도가 자기 질서를 지킵니다.", ["uproot"], [boost("gir_guard", {"stability_factor": 0.05})]),
+    ("civic_guard", "national_unity", 0, 0, "지방 시민군", "파리가 아니라 각 데파르트망이 자기 질서를 지킵니다.", ["uproot"], [boost("gir_guard", {"stability_factor": 0.05})]),
 ])
 
 more_focuses("LR_MAR_", "LR_route_marais", "내정", [
@@ -1380,6 +1402,16 @@ more_focuses("LR_GUA_", "LR_route_guardian", "외교", [
 more_focuses("LR_GUA_", "LR_route_guardian", "안정도", [
     ("truth_commission", "national_unity", 0, 0, "진상 조사 위원회", "왕정과 혁명의 범죄를 함께 조사합니다. 양쪽 모두 불만이지만 총은 내려놓습니다.", ["national_reconciliation"], [boost("gua_truth", {"stability_factor": 0.05}), "lr_fra_op_reduce = yes"]),
 ])
+# Each route's signature spirit and its focuses, and the two peace roads (route_signature.py).
+import route_signature  # noqa: E402
+SIG_FOCUS = set()
+for _prefix, _route, _category, _rows in route_signature.ROWS:
+    for _key, _icon, _name, _desc, _pre, _effects, *_extra in _rows:
+        _opts = _extra[0] if _extra else {}
+        focus(_prefix + _key, _icon, 0, 0, _name, _desc, *[boost("sig_" + _key, e) if isinstance(e, dict) else e for e in _effects],
+              pre=[_prefix + q for q in _pre], route=_route, available=_opts.get("available"), me=[_prefix + q for q in _opts.get("me", ())])
+        BY_ID_NEW.append((_prefix + _key, _category))
+        SIG_FOCUS.add(_prefix + _key)
 # The Algerian crisis: crush or abandon, a short road, then revolution or coup, and events settle the route.
 X = "LR_CRI_"
 WAIT_REVOLT = "custom_trigger_tooltip = {\n\ttooltip = LR_tt_wait_revolt\n\thas_country_flag = LR_algerian_revolt\n}"
@@ -1414,6 +1446,9 @@ endings.add_epilogues(globals())
 BY_ID = {item["id"]: item for item in FOCUSES}
 for fid, category in BY_ID_NEW:
     BY_ID[fid]["filter"] = FILTERS[category]
+for _fid in sorted(SIG_FOCUS):
+    for _other in BY_ID[_fid]["me"]:
+        BY_ID[_other]["me"] = list(BY_ID[_other]["me"]) + [_fid]
 for fid in CRISIS_FOCUSES:
     BY_ID[fid]["filter"] = FILTERS["정치"]
 # The fork in Napoleon's story comes after the last chapter of his trunk.
@@ -1429,6 +1464,90 @@ for _fid, _gate in part_two.GATES.items():
 BY_ID["LR_RED_souper"]["pre"] = ["LR_RED_tribune"]
 BY_ID["LR_GUA_first_address"]["pre"] = ["LR_GUA_oath"]
 
+# ===== Claims: the lands the old automatic settlement took (Europe only) are now won at the peace conference =====
+# Each chunk is claimed by the focus that opens its war, on the routes whose settlement used to take it.
+import victory as _victory  # noqa: E402
+CLAIM_CHUNKS = {  # chunk: (focus suffix, states, the name the tooltip shows)
+    "left_bank": ("rhine", _victory.LEFT_BANK + _victory.HANSE, "라인강 서안과 브레멘"),
+    "low": ("plan_low", _victory.BENELUX + _victory.NETHERLANDS + _victory.JURA + _victory.VALAIS, "베네룩스와 쥐라, 발레"),
+    "italy": ("plan_italy", _victory.SARDINIA + _victory.ROME_TUSCANY, "사르데냐 왕국과 로마, 토스카나"),
+    "iberia": ("plan_iberia", _victory.CATALONIA, "카탈루냐"),
+    "illyria": ("danube", _victory.ILLYRIA, "일리리아"),
+}
+# Savoy and Nice, which the first republic annexed in 1792 (state 735 and the pieces cut from it).
+SAVOY_NICE = _victory._expand([735])
+CLAIM_NAMES = {  # the tooltip's name for a claim that is not a whole chunk
+    tuple(sorted(set(SAVOY_NICE))): "사부아와 니스",
+    tuple(sorted(set(_victory.SARDINIA))): "사르데냐 왕국 (사부아·니스·피에몬테·리구리아·사르데냐섬)",
+    tuple(sorted(set(_victory.BENELUX + _victory.JURA))): "베네룩스와 쥐라",
+    tuple(sorted(set(_victory.LEFT_BANK))): "라인강 서안",
+}
+# Two measures of France. The First Empire at its height (1812, the departments Paris ruled itself, not the
+# satellites): the Rhine and the Hanseatic north to Lübeck, the Low Countries, Geneva and the Valais, Piedmont, Liguria,
+# Parma, Tuscany, Rome and Umbria, the Illyrian provinces and Catalonia. And France as it stood in 1936, with Belgium,
+# the left bank of the Rhine, Savoy, Nice and Upper Savoy.
+_E = _victory._expand
+BELGIUM = _E([6, 34, 977, 980])
+EMPIRE_NORTH = _E(_victory.LEFT_BANK + [56, 57, 58, 59])           # Moselle, Rhineland; Weser-Ems, Westphalia, Hanover, Holstein
+EMPIRE_LOW = _E([6, 8, 34, 977, 980] + _victory.NETHERLANDS + [845, 847])  # Belgium, Luxembourg, Holland; Jura (Geneva), Valais
+EMPIRE_ITALY = _E([735, 158, 162, 2, 1110, 1114])                  # Savoy-Nice, Piedmont-Liguria, Tuscany, Lazio, Umbria, Parma
+EMPIRE_ILLYRIA = _E(_victory.ILLYRIA + [736])                      # and Trieste and Gorizia
+FRANCE_1936 = _E(_victory.FRANCE_1936)
+EMPIRE = {"left_bank": FRANCE_1936 + EMPIRE_NORTH, "low": EMPIRE_LOW, "italy": EMPIRE_ITALY,
+          "iberia": _E(_victory.CATALONIA), "illyria": EMPIRE_ILLYRIA}
+FRANCE_OF_1936 = {"left_bank": FRANCE_1936 + _E(_victory.LEFT_BANK), "low": BELGIUM, "italy": SAVOY_NICE}
+CLAIM_CHUNKS["left_bank"] = ("rhine", EMPIRE["left_bank"], "제1제국의 북부 (라인강 서안, 한자 도시들, 베스트팔렌, 하노버)")
+CLAIM_CHUNKS["low"] = ("plan_low", EMPIRE_LOW, "저지대와 제네바, 발레")
+CLAIM_CHUNKS["italy"] = ("plan_italy", EMPIRE_ITALY, "사부아·니스·피에몬테·리구리아·파르마·토스카나·로마")
+CLAIM_CHUNKS["illyria"] = ("danube", EMPIRE_ILLYRIA, "일리리아와 트리에스테")
+CLAIM_NAMES[tuple(sorted(set(FRANCE_OF_1936["left_bank"])))] = "1936년의 프랑스 본토와 라인강 서안"
+CLAIM_NAMES[tuple(sorted(set(BELGIUM)))] = "벨기에"
+CLAIM_ROUTES = {  # route prefix: the lands its focuses claim
+    "LR_NAP_": EMPIRE, "LR_GUA_": EMPIRE, "LR_RED_": EMPIRE, "LR_ORL_": EMPIRE,  # Napoleon's France, and Orléans as much
+    **{p: FRANCE_OF_1936 for p in ("LR_BOU_", "LR_JAC_", "LR_GIR_", "LR_MAR_", "LR_COM_", "LR_ANA_", "LR_PET_")},
+}
+# A route without the focus a chunk belongs to claims it with the next of these it has.
+CLAIM_FALLBACK = ["plan_italy", "rhine", "plan_low", "danube"]
+CLAIM_LOC = []
+for _prefix, _chunks in CLAIM_ROUTES.items():
+    for _chunk, _states in _chunks.items():
+        _suffix, _, _name = CLAIM_CHUNKS[_chunk]
+        _fid = next((_prefix + s for s in [_suffix] + CLAIM_FALLBACK if _prefix + s in BY_ID), None)
+        if _fid is None:
+            raise SystemExit(f"{_prefix}: no focus to carry the claims on {_name}")
+        _tip = f"LR_tt_claims_{_prefix[3:6].lower()}_{_chunk}"
+        _limit = " ".join(f"state = {_s}" for _s in sorted(set(_states)))
+        BY_ID[_fid]["effects"] = tuple(BY_ID[_fid]["effects"]) + (
+            f"custom_effect_tooltip = {_tip}\nhidden_effect = {{\n\tevery_state = {{\n\t\tlimit = {{\n\t\t\tOR = {{ {_limit} }}\n"
+            "\t\t\tNOT = { is_core_of = ROOT }\n\t\t\tNOT = { is_owned_by = ROOT }\n\t\t}\n\t\tadd_claim_by = ROOT\n\t}\n}",)
+        _named = _name if _states == CLAIM_CHUNKS[_chunk][1] else CLAIM_NAMES.get(tuple(sorted(set(_states))), _name)
+        CLAIM_LOC.append(f' {_tip}:0 "§Y{_named}§!에 영유권을 주장합니다. 평화 회의에서 이 땅을 요구하기가 쉬워집니다."')
+
+# ===== Algeria as part of France: every route can make the départements of Algeria French core land =====
+# After the route's Algeria focus where it has one (the campaign that ends the rebellion), else after its first focus;
+# open once the rebellion is over and France holds Algiers.
+ALGERIA_AFTER = {
+    "LR_ORL_": ["LR_ORL_algeria"], "LR_BOU_": ["LR_BOU_algeria"], "LR_GIR_": ["LR_GIR_algeria"],
+    "LR_MAR_": ["LR_MAR_algeria"], "LR_PET_": ["LR_PET_algeria"], "LR_JAC_": ["LR_JAC_reclaim_algeria"],
+    "LR_COM_": [("LR_COM_annex_algeria", "LR_COM_algerian_comrades")], "LR_ANA_": ["LR_ANA_algerian_freedom"],
+    "LR_NAP_": ["LR_NAP_algiers_return"], "LR_GUA_": ["LR_GUA_oath"], "LR_RED_": ["LR_RED_tribune"],
+}
+_algeria_limit = "OR = { " + " ".join(f"state = {s}" for s in algeria.STATES) + " }"
+for _prefix, _pre in ALGERIA_AFTER.items():
+    _first = _pre[0][0] if isinstance(_pre[0], tuple) else _pre[0]
+    _fid = _prefix + "algeria_departments"
+    focus(_fid, "national_unity", 0, 0, "알제리 데파르트망",
+          "알제는 식민지가 아니라 프랑스의 데파르트망입니다. 지중해 건너의 세 데파르트망을 본토와 똑같은 프랑스의 땅으로 선포합니다.",
+          "custom_effect_tooltip = LR_tt_algeria_departments",
+          f"hidden_effect = {{\n\tevery_state = {{\n\t\tlimit = {{\n\t\t\t{_algeria_limit}\n\t\t\tis_owned_by = ROOT\n\t\t}}\n\t\tadd_core_of = ROOT\n\t}}\n}}",
+          stab(0.05), pre=_pre, route=BY_ID[_first]["route"],
+          available=("custom_trigger_tooltip = {\n\ttooltip = LR_tt_algeria_settled\n\tNOT = { has_country_flag = LR_algeria_dmz }\n"
+                     "\tNOT = { has_country_flag = LR_algeria_campaign }\n}\n459 = { is_owned_by = ROOT }"))
+    BY_ID[_fid] = FOCUSES[-1]
+    BY_ID[_fid]["filter"] = FILTERS["영토확장"]
+CLAIM_LOC += [' LR_tt_algeria_departments:0 "프랑스가 가진 §Y알제리§!의 모든 주가 §Y프랑스의 핵심주§!가 됩니다."',
+              ' LR_tt_algeria_settled:0 "알제리의 반란이 끝났고 프랑스가 알제를 가지고 있습니다."']
+
 for item in FOCUSES:
     if item["route"] and item.get("filter") in ROUTE_ORDER:
         item["rank"] = ROUTE_ORDER[item["filter"]]
@@ -1440,7 +1559,7 @@ LABELS = {
     "air_training_xp_gain_factor": "항공 훈련 경험", "army_attack_factor": "육군 공격력", "army_defence_factor": "육군 방어력",
     "army_morale_factor": "육군 사기", "army_org_factor": "육군 조직력", "communism_drift": "사회주의 지지",
     "conscription_factor": "징집 인구", "consumer_goods_factor": "소비재 공장", "convoy_escort_efficiency": "호송 효율",
-    "democratic_drift": "의회주의 지지", "experience_gain_army_factor": "육군 경험치", "fascism_drift": "민족사회주의 지지",
+    "democratic_drift": "의회정 지지", "experience_gain_army_factor": "육군 경험치", "fascism_drift": "독재정 지지",
     "industrial_capacity_factory": "공장 생산량", "land_reinforce_rate": "증원율", "max_planning": "최대 계획",
     "naval_coordination": "해군 협동", "naval_doctrine_cost_factor": "해군 교리 비용", "naval_invasion_prep_speed": "상륙 준비",
     "naval_morale_factor": "해군 사기", "navy_max_range_factor": "함대 작전 반경", "navy_org_factor": "해군 조직력",
@@ -1565,10 +1684,13 @@ SOURCES = {row[0]: row[4] for row in IDEAS}
 IDEAS[:] = []
 LINE_KEYS = {line: set() for line in SPIRITS}
 REGIME_KEYS = set(k for _, values in REGIMES.values() for k in values)
+SIG_KEYS = set()
 SPIRIT_LOC = []
 
 
 def line_of(item):
+    if item["id"] in SIG_FOCUS:
+        return "sig"
     if item["route"]:
         if item.get("filter") == "FOCUS_FILTER_INTERNAL_AFFAIRS":
             return "society"
@@ -1677,6 +1799,13 @@ def convert_to_spirits():
                 prefix = "LR_reg_"
                 REGIME_KEYS.update(changes)
                 guard = ""
+            elif line == "sig":
+                regime = regime_of(item)
+                name = route_signature.SIGNATURE[regime][0]
+                prefix = "LR_sig_"
+                SIG_KEYS.update(changes)
+                guard = (f"\tif = {{\n\t\tlimit = {{ NOT = {{ has_dynamic_modifier = {{ modifier = LR_dyn_sig_{regime} }} }} }}\n"
+                         f"\t\tadd_dynamic_modifier = {{ modifier = LR_dyn_sig_{regime} }}\n\t}}\n")
             else:
                 prefix, name, _ = SPIRITS[line]
                 LINE_KEYS[line].update(changes)
@@ -1717,7 +1846,7 @@ def convert_to_spirits():
             for kind, points in gains.items():
                 for label, per in REFORM_LIFT[kind]:
                     lifts[label] = lifts.get(label, 0) + points * per
-            tips.append("국민정신 §R비무장화된 군대§!의 페널티가 줄어듭니다:"
+            tips.append("국민정신 §R버려진 군대§!의 페널티가 줄어듭니다:"
                         + "".join(f"\\n  {label}: §G{round(v * 100, 1):+g}%§!" for label, v in lifts.items()))
             hidden.append("\n".join(f"\tadd_to_variable = {{ {REFORM_VARS[k]} = {v:g} }}" for k, v in gains.items()) + "\n\tlr_fra_sync_reform = yes")
         if drive:
@@ -1954,7 +2083,7 @@ def plan_files():
     """One decision for each European country, opened by the region's war plan."""
     lines = ["# Generated by tools/build_france.py.", "LR_FRA_war_plans_category = {"]
     loc = [' LR_FRA_war_plans_category:0 "전쟁 계획"',
-           ' LR_FRA_war_plans_category_desc:0 "전쟁 계획 중점으로 열리는 선전포고입니다. 항복시킨 나라는 곧바로 강화에 들어갑니다. 프랑스가 차지하는 땅은 정부에 따라 다릅니다. 의회주의는 1936년의 국경, 사회주의는 벨기에·룩셈부르크·쥐라까지, 민족주의와 군주정은 사르데냐와 라인강 서안까지, 황제는 나폴레옹의 제국 전체입니다. 나머지는 괴뢰국, 유럽 밖은 합병하거나 자치령으로 삼습니다."']
+           ' LR_FRA_war_plans_category_desc:0 "전쟁 계획 중점으로 열리는 선전포고다. 전쟁은 평화 회의로 끝나고, 회의에서 얻은 땅은 영토 결단 디시전으로 권역마다 합병하거나 괴뢰국으로 세운다. 전쟁 중점이 준 영유권이 있는 땅은 회의에서 요구하기가 쉽다."']
     for plan in PLANS:
         for tag, name in plan["targets"].items():
             key = f"LR_dec_war_{tag}"
@@ -1964,8 +2093,15 @@ def plan_files():
                          f"\t\tcomplete_effect = {{\n\t\t\tdeclare_war_on = {{\n\t\t\t\ttarget = {tag}\n\t\t\t\ttype = annex_everything\n\t\t\t}}\n\t\t}}\n\t\tai_will_do = {{ factor = 0 }}\n\t}}")
             loc.append(f' {key}:0 "{name} 침공"')
             loc.append(f' {key}_desc:0 "§Y{name}§!에 선전포고합니다."')
+    # North Germany's government in exile keeps its colonies until France comes for them.
+    lines.append("\tLR_dec_war_GEX = {\n\t\ticon = generic_military\n\t\tcost = 50\n\t\tvisible = {\n\t\t\thas_country_flag = LR_germany_defeated\n"
+                 "\t\t\tGEX = {\n\t\t\t\texists = yes\n\t\t\t\tNOT = { is_in_faction_with = ROOT }\n\t\t\t}\n\t\t\tNOT = { has_war_with = GEX }\n\t\t}\n"
+                 "\t\tavailable = {\n\t\t\thas_war = no\n\t\t}\n"
+                 "\t\tcomplete_effect = {\n\t\t\tdeclare_war_on = {\n\t\t\t\ttarget = GEX\n\t\t\t\ttype = annex_everything\n\t\t\t}\n\t\t}\n\t\tai_will_do = { factor = 1 }\n\t}")
+    loc.append(' LR_dec_war_GEX:0 "망명정부 토벌"')
+    loc.append(' LR_dec_war_GEX_desc:0 "베를린을 잃은 북독일의 황태자가 두알라에 망명정부를 세웠다. 카메룬과 인도차이나와 태평양의 섬들이 아직 그의 깃발 아래 있다. §Y독일 망명정부§!에 선전포고한다. 항복하면 그 땅은 모두 프랑스의 것이 된다."')
     lines.append("}")
-    flags = " ".join(f"has_country_flag = LR_plan_{plan['key']}" for plan in PLANS)
+    flags = " ".join(f"has_country_flag = LR_plan_{plan['key']}" for plan in PLANS) + " has_country_flag = LR_germany_defeated"
     category = f"# Generated by tools/build_france.py.\nLR_FRA_war_plans_category = {{\n\ticon = generic_military\n\tvisible = {{\n\t\ttag = FRA\n\t\tOR = {{ {flags} }}\n\t}}\n}}\n"
     return "\n".join(lines) + "\n", category, loc
 
@@ -2030,16 +2166,21 @@ def spirit_files():
         mods.append(modifier(f"LR_dyn_regime_{regime}", "generic_central_management", [(k, "LR_reg_" + k) for k in sorted(REGIME_KEYS)]))
     for ruler, (_, picture, _) in RULERS.items():
         mods.append(modifier(f"LR_dyn_ruler_{ruler}", picture, [(k, "LR_rul_" + k) for k in sorted(RULER_KEYS)]))
+    for regime, (_, picture) in route_signature.SIGNATURE.items():
+        mods.append(modifier(f"LR_dyn_sig_{regime}", picture, [(k, "LR_sig_" + k) for k in sorted(SIG_KEYS)]))
     mods.append(modifier("LR_dyn_defeat", "generic_disjointed_gov", [(k, "LR_def_" + k) for k in sorted(DEFEAT)]))
     mods.append(modifier("LR_dyn_disarmed", "generic_disjointed_gov", [(k, "LR_dis_" + k) for k in sorted(DISARMED)]))
 
     fx = ["# Generated by tools/build_france.py."]
-    drop_rulers = "".join(f"\tremove_dynamic_modifier = {{ modifier = LR_dyn_ruler_{r} }}\n" for r in RULERS)
+    # Only what is there: removing a modifier the country lacks is logged as an error.
+    drop_rulers = "".join(f"\tif = {{ limit = {{ has_dynamic_modifier = {{ modifier = LR_dyn_ruler_{r} }} }} "
+                          f"remove_dynamic_modifier = {{ modifier = LR_dyn_ruler_{r} }} }}\n" for r in RULERS)
     for ruler, (_, _, values) in RULERS.items():
         sets = "".join(f"\tset_variable = {{ LR_rul_{k} = {values.get(k, 0):g} }}\n" for k in RULER_KEYS)
         fx.append(f"lr_fra_ruler_{ruler} = {{\n{drop_rulers}{sets}\tadd_dynamic_modifier = {{ modifier = LR_dyn_ruler_{ruler} }}\n\tforce_update_dynamic_modifier = yes\n}}\n")
     fx.append("lr_fra_ruler_none = {\n" + drop_rulers + "".join(f"\tset_variable = {{ LR_rul_{k} = 0 }}\n" for k in RULER_KEYS) + "}\n")
-    drop_regimes = "".join(f"\tremove_dynamic_modifier = {{ modifier = LR_dyn_regime_{r} }}\n" for r in REGIMES)
+    drop_regimes = "".join(f"\tif = {{ limit = {{ has_dynamic_modifier = {{ modifier = LR_dyn_regime_{r} }} }} "
+                           f"remove_dynamic_modifier = {{ modifier = LR_dyn_regime_{r} }} }}\n" for r in REGIMES)
     base_keys = sorted({k for _, values in REGIMES.values() for k in values})
     for regime, (_, values) in REGIMES.items():
         moves = "".join(f"\tsubtract_from_variable = {{ LR_reg_{k} = LR_base_{k} }}\n\tset_variable = {{ LR_base_{k} = {values.get(k, 0):g} }}\n\tadd_to_variable = {{ LR_reg_{k} = LR_base_{k} }}\n" for k in base_keys)
@@ -2069,7 +2210,10 @@ def spirit_files():
     loc += [f' LR_dyn_regime_{r}:0 "{name}"' for r, (name, _) in REGIMES.items()]
     loc += [f' LR_dyn_ruler_{r}:0 "{name}"' for r, (name, _, _) in RULERS.items()]
     loc += [f' LR_tt_ruler_{r}:0 "§Y{name}§! 정신을 얻습니다."' for r, (name, _, _) in RULERS.items()]
-    loc += [' LR_dyn_disarmed:0 "비무장화된 군대"']
+    loc += [' LR_dyn_disarmed:0 "버려진 군대"']
+    loc += [f' LR_dyn_sig_{r}:0 "{name}"' for r, (name, _) in route_signature.SIGNATURE.items()]
+    loc += CLAIM_LOC
+    loc += [' LR_tt_high_command_open:0 "잠겨 있던 군사 고문이 풀립니다: 육군 총사령관 §Y모리스 가믈랭§!, §Y막심 베강§!, 군사 이론가 §Y막심 베강§!, §Y샤를 드골§!"']
     loc += [' LR_dyn_defeat:0 "대전쟁의 굴욕"', ' LR_tt_defeat_end:0 "§R대전쟁의 굴욕§!이 완전히 사라집니다."']
     return "\n".join(mods), "\n".join(fx), loc + SPIRIT_LOC
 
@@ -2414,7 +2558,7 @@ def render_focus(item):
         lines.append(f"\t\tbypass = {{ {algeria.BYPASS} }}")
     if item.get("filter"):
         lines.append(f"\t\tsearch_filters = {{ {item['filter']} }}")
-    lines.extend([f"\t\tcost = {item['cost']}", f"\t\tai_will_do = {{ factor = {item['ai']} }}", "\t\tcompletion_reward = {"])
+    lines.extend([f"\t\tcost = {item['cost']}", ai_will_do(item), "\t\tcompletion_reward = {"])
     lines.extend(indent(effect, 3) for effect in item["effects"])
     lines.extend(["\t\t}", "\t}"])
     return "\n".join(lines)
@@ -2502,6 +2646,15 @@ def main():
     (MOD / "common" / "decisions" / "lr_france_war_plans.txt").write_text(plan_decisions, encoding="utf-8")
     (MOD / "common" / "decisions" / "categories" / "lr_france_war_plans_categories.txt").write_text(plan_category, encoding="utf-8")
     loc.extend(plan_loc)
+    integ_decisions, integ_category, integ_loc = integration_routes.decisions_and_loc()
+    import settlement_decisions
+    settle_decisions, settle_category, settle_loc = settlement_decisions.build()
+    (MOD / "common" / "decisions" / "lr_france_settlement.txt").write_text(settle_decisions, encoding="utf-8")
+    (MOD / "common" / "decisions" / "categories" / "lr_france_settlement_categories.txt").write_text(settle_category, encoding="utf-8")
+    loc.extend(settle_loc)
+    (MOD / "common" / "decisions" / "lr_france_integration.txt").write_text(integ_decisions, encoding="utf-8")
+    (MOD / "common" / "decisions" / "categories" / "lr_france_integration_categories.txt").write_text(integ_category, encoding="utf-8")
+    loc.extend(integ_loc)
     order_decisions, order_category, order_loc = order_files()
     (MOD / "common" / "decisions" / "lr_france_orders.txt").write_text(order_decisions, encoding="utf-8")
     (MOD / "common" / "decisions" / "categories" / "lr_france_orders_categories.txt").write_text(order_category, encoding="utf-8")

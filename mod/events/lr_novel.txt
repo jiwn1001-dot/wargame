@@ -518,3 +518,59 @@ country_event = {
 		country_event = { id = lr_ending.11 }
 	}
 }
+
+country_event = {
+	id = lr_novel.2501
+	title = lr_ending.12.t
+	desc = lr_novel.2501.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_novel.next_0
+		country_event = { id = lr_novel.2502 }
+	}
+}
+
+country_event = {
+	id = lr_novel.2502
+	title = lr_ending.12.t
+	desc = lr_novel.2502.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_novel.next_1
+		country_event = { id = lr_ending.12 }
+	}
+}
+
+country_event = {
+	id = lr_novel.2601
+	title = lr_ending.13.t
+	desc = lr_novel.2601.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_novel.next_0
+		country_event = { id = lr_novel.2602 }
+	}
+}
+
+country_event = {
+	id = lr_novel.2602
+	title = lr_ending.13.t
+	desc = lr_novel.2602.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = lr_novel.next_1
+		country_event = { id = lr_ending.13 }
+	}
+}

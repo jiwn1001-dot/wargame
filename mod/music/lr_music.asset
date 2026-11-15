@@ -4,3 +4,38 @@ music = {
 	file = "lr_super_revolution.ogg"
 	volume = 0.65
 }
+music = {
+	name = "lr_super_liberty"
+	file = "lr_super_liberty.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lr_super_commune"
+	file = "lr_super_commune.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lr_super_orleans"
+	file = "lr_super_orleans.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lr_super_petain"
+	file = "lr_super_petain.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lr_super_monarchy"
+	file = "lr_super_monarchy.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lr_super_bonaparte"
+	file = "lr_super_bonaparte.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lr_super_world_war"
+	file = "lr_super_world_war.ogg"
+	volume = 0.65
+}

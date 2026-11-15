@@ -13,4 +13,32 @@ spriteTypes = {
 		name = "GFX_lr_super_revolution"
 		texturefile = "gfx/interface/lr/lr_super_revolution.dds"
 	}
+	spriteType = {
+		name = "GFX_lr_super_liberty"
+		texturefile = "gfx/interface/lr/lr_super_liberty.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_super_commune"
+		texturefile = "gfx/interface/lr/lr_super_commune.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_super_orleans"
+		texturefile = "gfx/interface/lr/lr_super_orleans.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_super_petain"
+		texturefile = "gfx/interface/lr/lr_super_petain.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_super_monarchy"
+		texturefile = "gfx/interface/lr/lr_super_monarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_super_bonaparte"
+		texturefile = "gfx/interface/lr/lr_super_bonaparte.dds"
+	}
+	spriteType = {
+		name = "GFX_lr_super_world_war"
+		texturefile = "gfx/interface/lr/lr_super_world_war.dds"
+	}
 }

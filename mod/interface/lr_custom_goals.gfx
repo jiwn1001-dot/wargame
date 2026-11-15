@@ -1,0 +1,2678 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_ports__GFX_goal_generic_construct_naval_dockyard"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_ports__GFX_goal_generic_construct_naval_dockyard.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_rural_power__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_rural_power__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_synthetic_fuel__GFX_goal_generic_oil_refinery"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_synthetic_fuel__GFX_goal_generic_oil_refinery.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_infantry_rearm__GFX_goal_generic_small_arms"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_infantry_rearm__GFX_goal_generic_small_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_artillery_school__GFX_goal_generic_army_artillery"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_artillery_school__GFX_goal_generic_army_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_mobile_war__GFX_goal_generic_army_tanks"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_mobile_war__GFX_goal_generic_army_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_general_staff__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_general_staff__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_motorisation__GFX_goal_generic_army_motorized"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_motorisation__GFX_goal_generic_army_motorized.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_tank_divisions__GFX_goal_generic_build_tank"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_tank_divisions__GFX_goal_generic_build_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_revenge_army__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_revenge_army__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_air_doctrine__GFX_goal_generic_air_doctrine"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_air_doctrine__GFX_goal_generic_air_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_radio_net__GFX_goal_generic_radar"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_radio_net__GFX_goal_generic_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_fleet_doctrine__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_fleet_doctrine__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_ready_for_war__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_ready_for_war__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_stabilise_franc__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_stabilise_franc__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_state_capital__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_state_capital__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_private_capital__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_private_capital__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_artisans__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_artisans__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_research_network__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_research_network__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_petain_school__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_petain_school__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_degaulle_school__GFX_goal_generic_build_tank"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_degaulle_school__GFX_goal_generic_build_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_saint_cyr__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_saint_cyr__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_heavy_artillery__GFX_goal_generic_army_artillery"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_heavy_artillery__GFX_goal_generic_army_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_char_b__GFX_goal_generic_army_tanks"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_char_b__GFX_goal_generic_army_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_foreign_legion__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_foreign_legion__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_fighter_school__GFX_goal_generic_air_fighter"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_fighter_school__GFX_goal_generic_air_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_submarine_arm__GFX_goal_generic_navy_submarine"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_submarine_arm__GFX_goal_generic_navy_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_bomber_command__GFX_goal_generic_air_bomber"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_bomber_command__GFX_goal_generic_air_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_battleline__GFX_goal_generic_navy_battleship"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_battleline__GFX_goal_generic_navy_battleship.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_general_mobilisation__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_general_mobilisation__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_duke__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_duke__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_shell_bills__GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_shell_bills__GFX_goal_generic_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_radical_rearm__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_radical_rearm__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_calais__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_calais__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_algeria__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_algeria__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_restored__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_restored__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_family_pact__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_family_pact__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_two_sicilies__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_two_sicilies__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_italy__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_italy__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_diplomatic_rearm__GFX_goal_generic_military_deal"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_diplomatic_rearm__GFX_goal_generic_military_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_open_rearm__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_open_rearm__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_algeria__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_algeria__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_commune__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_commune__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_workers_control__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_COM_workers_control__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_annex_algeria__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_annex_algeria__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_algerian_comrades__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_algerian_comrades__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_committee__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_committee__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_social_contract__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_social_contract__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_labour_code__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_labour_code__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_public_works__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_public_works__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_nationalise__GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_nationalise__GFX_goal_generic_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_public_school__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_public_school__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_reclaim_algeria__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_reclaim_algeria__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_republican_army__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_republican_army__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_majority__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_majority__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_reform_act__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_reform_act__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_supermajority__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_supermajority__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_cabinet__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_cabinet__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_deregulation__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_deregulation__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_free_trade__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_free_trade__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_algeria__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_algeria__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_majority__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_majority__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_reform_act__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_reform_act__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_supermajority__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_supermajority__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_cabinet__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_cabinet__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_constitution__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_constitution__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_order__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_order__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_algeria__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_algeria__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_majority__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_majority__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_reform_act__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_reform_act__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_supermajority__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_supermajority__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_first_consul__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_first_consul__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_civil_code__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_civil_code__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_bank_of_france__GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_bank_of_france__GFX_goal_generic_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_legion_of_honour__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_legion_of_honour__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_concordat__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_concordat__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_coronation__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_coronation__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_continental_system__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_continental_system__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_grande_armee__GFX_goal_generic_army_artillery"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_grande_armee__GFX_goal_generic_army_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_marshals__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_marshals__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_boulogne__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_boulogne__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_moscow__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_moscow__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_guardian__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_guardian__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_oath__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_oath__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_civilian_control__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_civilian_control__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_suffrage__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_suffrage__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_social_insurance__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_social_insurance__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_constitution__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_constitution__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_citizen_army__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_citizen_army__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_amnesty__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_amnesty__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_league_of_republics__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_league_of_republics__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_youth__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_youth__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_veterans__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_veterans__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_tear_up_treaty__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_tear_up_treaty__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_secret_staff__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_secret_staff__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_press_control__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_press_control__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_autarky__GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_autarky__GFX_goal_generic_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_latin_front__GFX_goal_generic_military_deal"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_latin_front__GFX_goal_generic_military_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_reims__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_reims__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_church__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_church__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_peers__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_peers__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_colonial_talks__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_colonial_talks__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_mediterranean_pact__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_mediterranean_pact__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_latin_league__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_latin_league__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_family_council__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_family_council__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_red_guards__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_COM_red_guards__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_land_reform__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_COM_land_reform__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_economic_plan__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_COM_economic_plan__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_council__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_council__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_international__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_COM_international__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_russian_treaty__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_COM_russian_treaty__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_peoples_army__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_COM_peoples_army__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_forty_hours__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_forty_hours__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_paid_leave__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_paid_leave__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_laicite__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_laicite__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_bank_reform__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_bank_reform__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_arms_nationalised__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_arms_nationalised__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_bourse__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_bourse__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_tax_cut__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_tax_cut__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_tariffs_down__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_tariffs_down__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_free_ports__GFX_goal_generic_construct_naval_dockyard"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_free_ports__GFX_goal_generic_construct_naval_dockyard.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_rail_privatised__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_rail_privatised__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_kings_return__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_kings_return__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_senate__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_senate__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_civil_law__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_civil_law__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_church_schools__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_church_schools__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_gendarmerie__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_gendarmerie__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_imperial_guard__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_imperial_guard__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_imperial_nobility__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_imperial_nobility__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_rhine_confederation__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_rhine_confederation__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_brother_kings__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_brother_kings__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_COM_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_COM_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_marshal__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_PET_marshal__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_labour_charter__GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/custom/LR_PET_labour_charter__GFX_goal_generic_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_family_code__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_PET_family_code__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_return_to_soil__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_PET_return_to_soil__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_peasant_corporation__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_PET_peasant_corporation__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_youth_camps__GFX_goal_generic_construct_infrastructure"
+		texturefile = "gfx/interface/goals/custom/LR_PET_youth_camps__GFX_goal_generic_construct_infrastructure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_secours_national__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_secours_national__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_school_cross__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_PET_school_cross__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_national_revolution__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_PET_national_revolution__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_constitutional_acts__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_PET_constitutional_acts__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_legion__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_PET_legion__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_national_council__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_PET_national_council__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_riom_trial__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_PET_riom_trial__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_heir_weygand__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_PET_heir_weygand__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_heir_darlan__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_PET_heir_darlan__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_madrid_embassy__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_madrid_embassy__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_vatican__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_vatican__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_montoire__GFX_goal_generic_dangerous_deal"
+		texturefile = "gfx/interface/goals/custom/LR_PET_montoire__GFX_goal_generic_dangerous_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_hidden_sword__GFX_goal_generic_military_deal"
+		texturefile = "gfx/interface/goals/custom/LR_PET_hidden_sword__GFX_goal_generic_military_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_verdun_doctrine__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_PET_verdun_doctrine__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_maginot__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_PET_maginot__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_PET_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_PET_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_algeria__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_algeria__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_federation__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_federation__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_syndicates_take__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_syndicates_take__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_free_communes__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_free_communes__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_collectives__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_collectives__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_abolish_money__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_abolish_money__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_housing__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_housing__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_rationalist_schools__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_rationalist_schools__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_ateneos__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_ateneos__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_proudhon__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_proudhon__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_abolish_prefects__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_abolish_prefects__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_mandates__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_mandates__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_congress__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_congress__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_platform__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_platform__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_synthesis__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_synthesis__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_columns__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_columns__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_elected_officers__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_elected_officers__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_militarisation__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_militarisation__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_cnt_brothers__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_cnt_brothers__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_carrara__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_carrara__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_iwa__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_iwa__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_free_territory__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_free_territory__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_algerian_freedom__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_algerian_freedom__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_red__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_red__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_tribune__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_RED_tribune__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_maximum__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_RED_maximum__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_workshops__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_RED_workshops__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_arsenals__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_RED_arsenals__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_soldiers_land__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_RED_soldiers_land__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_calendar_plan__GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/custom/LR_RED_calendar_plan__GFX_goal_generic_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_beaucaire__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_RED_beaucaire__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_committee__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_RED_committee__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_people_vote__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_RED_people_vote__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_red_marshals__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_RED_red_marshals__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_sword__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_sword__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_continental_socialism__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_RED_continental_socialism__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_levee__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_RED_levee__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_commissars__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_RED_commissars__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_red_grande_armee__GFX_goal_generic_army_artillery"
+		texturefile = "gfx/interface/goals/custom/LR_RED_red_grande_armee__GFX_goal_generic_army_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_sister_communes__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_RED_sister_communes__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_italian_legion__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_RED_italian_legion__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_polish_legion__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_RED_polish_legion__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_revolution_hq__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_RED_revolution_hq__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_suppress__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_RED_suppress__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_uproot__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_RED_uproot__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_rhine__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_rhine__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_danube__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_danube__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_channel__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_channel__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_russia__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_russia__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_occupation__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_occupation__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_rations__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_rations__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_prisoners__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_prisoners__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_black_market__GFX_goal_generic_intelligence_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_black_market__GFX_goal_generic_intelligence_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_ruins__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_ruins__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_winter_relief__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_winter_relief__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_two_roads__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_two_roads__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_cooperate__GFX_goal_generic_dangerous_deal"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_cooperate__GFX_goal_generic_dangerous_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_collab_admin__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_collab_admin__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_reparations_paid__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_reparations_paid__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_autonomy__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_autonomy__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_resist__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_resist__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_maquis__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_maquis__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_sabotage__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_sabotage__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_secret_army__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_secret_army__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_rising__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_rising__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_exile_committee__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_exile_committee__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_world_opinion__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_world_opinion__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_curfew__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_curfew__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_COM_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_invite_esr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_COM_invite_esr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_invite_esr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_invite_esr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_RED_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_invite_esr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_RED_invite_esr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_invite_esr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_invite_esr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_invite_cna__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_invite_cna__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_invite_esr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_invite_esr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_invite_cna__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_invite_cna__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_invite_esr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_invite_esr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_invite_cna__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_invite_cna__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_invite_esr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_invite_esr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_invite_cna__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_invite_cna__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_invite_crl__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_invite_crl__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_invite_spr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_invite_spr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_invite_tts__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_invite_tts__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_invite_pap__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_invite_pap__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_ottoman_contact__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_ottoman_contact__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_ottoman_win__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_ottoman_win__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_invite_balkans__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_invite_balkans__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_invite_crl__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_invite_crl__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_invite_spr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_invite_spr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_invite_tts__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_invite_tts__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_invite_pap__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_invite_pap__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_ottoman_contact__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_ottoman_contact__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_ottoman_win__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_ottoman_win__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_invite_balkans__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_invite_balkans__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_PET_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_invite_crl__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_invite_crl__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_invite_spr__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_invite_spr__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_invite_tts__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_invite_tts__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_invite_pap__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_invite_pap__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_ottoman_contact__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_PET_ottoman_contact__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_ottoman_win__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_PET_ottoman_win__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_invite_balkans__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_PET_invite_balkans__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_found_bloc__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_found_bloc__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_ottoman_contact__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_ottoman_contact__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_ottoman_win__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_ottoman_win__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_invite_balkans__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_invite_balkans__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_royal_council__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_royal_council__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_family_allowance__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_family_allowance__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_labour_service__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_labour_service__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_poor_relief__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_poor_relief__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_guilds__GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_guilds__GFX_goal_generic_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_provincial_estates__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_provincial_estates__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_womens_vote__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_womens_vote__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_charity_schools__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_charity_schools__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_mutual_aid__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_mutual_aid__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_provincial_power__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_provincial_power__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_parish_relief__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_parish_relief__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_property_franchise__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_property_franchise__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_imperial_university__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_imperial_university__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_public_education__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_public_education__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_fortress_france__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_COM_fortress_france__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_socialist_industry__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_COM_socialist_industry__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_collective_farms__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_COM_collective_farms__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_national_guard__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_COM_national_guard__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_no_foreign_masters__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_COM_no_foreign_masters__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_comintern_paris__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_comintern_paris__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_spanish_comrades__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_spanish_comrades__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_italian_workers__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_italian_workers__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_german_spartacists__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_german_spartacists__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_british_chartists__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_british_chartists__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_red_volunteers__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_COM_red_volunteers__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_colonial_regiments__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_colonial_regiments__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_chasseurs_alpins__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_chasseurs_alpins__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_rifle_stocks__GFX_goal_generic_small_arms"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_rifle_stocks__GFX_goal_generic_small_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_combat_engineers__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_combat_engineers__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_staff_college__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_staff_college__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_armoured_recon__GFX_goal_generic_army_motorized"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_armoured_recon__GFX_goal_generic_army_motorized.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_cruiser_squadron__GFX_goal_generic_navy_cruiser"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_cruiser_squadron__GFX_goal_generic_navy_cruiser.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_destroyer_flotillas__GFX_goal_generic_navy_anti_submarine"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_destroyer_flotillas__GFX_goal_generic_navy_anti_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_commerce_raiding__GFX_goal_generic_navy_submarine"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_commerce_raiding__GFX_goal_generic_navy_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_bearn_carrier__GFX_goal_generic_navy_carrier"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_bearn_carrier__GFX_goal_generic_navy_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_naval_aviation__GFX_goal_generic_air_naval_bomber"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_naval_aviation__GFX_goal_generic_air_naval_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_mers_el_kebir__GFX_goal_generic_construct_naval_dockyard"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_mers_el_kebir__GFX_goal_generic_construct_naval_dockyard.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_convoy_school__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_convoy_school__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_fusiliers_marins__GFX_goal_generic_amphibious_assault"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_fusiliers_marins__GFX_goal_generic_amphibious_assault.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_dewoitine_fighters__GFX_goal_generic_air_fighter"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_dewoitine_fighters__GFX_goal_generic_air_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_air_aces__GFX_goal_generic_air_doctrine"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_air_aces__GFX_goal_generic_air_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_potez_bombers__GFX_goal_generic_air_bomber"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_potez_bombers__GFX_goal_generic_air_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_strategic_force__GFX_goal_generic_air_bomber"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_strategic_force__GFX_goal_generic_air_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_cas_wings__GFX_goal_generic_air_production"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_cas_wings__GFX_goal_generic_air_production.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_air_safety__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_air_safety__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_air_detection__GFX_goal_generic_radar"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_air_detection__GFX_goal_generic_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_FRA_paratroopers__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_FRA_paratroopers__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_neutral_ties__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_neutral_ties__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_ottoman_talks__GFX_goal_generic_dangerous_deal"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_ottoman_talks__GFX_goal_generic_dangerous_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_dutch_treaty__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_dutch_treaty__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_american_contact__GFX_goal_generic_military_deal"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_american_contact__GFX_goal_generic_military_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_merchant_envoys__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_merchant_envoys__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_atlantic_trade__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_atlantic_trade__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_vienna_talks__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_vienna_talks__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_london_model__GFX_goal_generic_military_deal"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_london_model__GFX_goal_generic_military_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_workers_embassy__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_COM_workers_embassy__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_marriage_diplomacy__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_marriage_diplomacy__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_national_reconciliation__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_national_reconciliation__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_italian_arms__GFX_goal_generic_small_arms"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_italian_arms__GFX_goal_generic_small_arms.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_north_italy__GFX_goal_generic_army_motorized"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_north_italy__GFX_goal_generic_army_motorized.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_italian_kingdom__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_italian_kingdom__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_royal_roads__GFX_goal_generic_construct_infrastructure"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_royal_roads__GFX_goal_generic_construct_infrastructure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_renault_seized__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_renault_seized__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_officers_oath__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_officers_oath__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_camelots__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_camelots__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_madrid_renounce__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_madrid_renounce__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_royal_security__GFX_goal_generic_intelligence_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_royal_security__GFX_goal_generic_intelligence_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_royal_manufactures__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_royal_manufactures__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_peasant_credit__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_peasant_credit__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_salic_law__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_salic_law__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_swiss_guard__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_swiss_guard__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_lisbon_treaty__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_lisbon_treaty__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_parish_registers__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_parish_registers__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_electrification__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_COM_electrification__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_five_year_plan__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_COM_five_year_plan__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_workers_university__GFX_goal_generic_scientific_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_COM_workers_university__GFX_goal_generic_scientific_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_french_road__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_COM_french_road__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_world_republic__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_world_republic__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_workers_solidarity__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_COM_workers_solidarity__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_neighbourhood_committees__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_COM_neighbourhood_committees__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_public_housing__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_public_housing__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_arsenal_of_people__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_arsenal_of_people__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_republican_clubs__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_republican_clubs__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_free_press__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_free_press__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_swiss_asylum__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_swiss_asylum__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_citizen_police__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_citizen_police__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_bordeaux_wharves__GFX_goal_generic_construct_naval_dockyard"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_bordeaux_wharves__GFX_goal_generic_construct_naval_dockyard.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_credit_lyonnais__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_credit_lyonnais__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_press_barons__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_press_barons__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_hudson_loans__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_hudson_loans__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_civic_guard__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_civic_guard__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_agrarian_credit__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_agrarian_credit__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_chartered_works__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_chartered_works__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_parliament_coronation__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_parliament_coronation__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_hague_arbitration__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_hague_arbitration__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_bourgeois_guard__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_bourgeois_guard__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_prefects__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_prefects__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_imperial_works__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_imperial_works__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_imperial_catechism__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_imperial_catechism__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_sister_kingdoms__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_sister_kingdoms__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_old_guard__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_old_guard__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_workers_compensation__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_workers_compensation__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_republican_senate__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_republican_senate__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_european_congress__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_european_congress__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_truth_commission__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_truth_commission__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_creditors_talks__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_creditors_talks__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_reparations_rescheduled__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_reparations_rescheduled__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_channel_agreement__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_channel_agreement__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_entente_cordiale__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_entente_cordiale__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_eastern_crusade__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_eastern_crusade__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_salon_doctrinaires__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_salon_doctrinaires__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_responsible_ministry__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_responsible_ministry__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_schonbrunn_envoy__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_schonbrunn_envoy__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_habsburg_marriage__GFX_goal_generic_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_habsburg_marriage__GFX_goal_generic_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_catholic_crowns__GFX_goal_generic_military_deal"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_catholic_crowns__GFX_goal_generic_military_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_diplomatic_revolution__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_diplomatic_revolution__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_royal_touch__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_royal_touch__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_bishops_council__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_bishops_council__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_revenge_oath__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_revenge_oath__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_officer_purge__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_officer_purge__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_war_industries_office__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_war_industries_office__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_public_safety__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_public_safety__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_citizen_army_law__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_citizen_army_law__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_pantheon_ceremony__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_pantheon_ceremony__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_bordeaux_exchange__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_bordeaux_exchange__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_departmental_charter__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_departmental_charter__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_colonial_bank__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_colonial_bank__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_mandat_imperatif__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_COM_mandat_imperatif__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_workers_militia__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_COM_workers_militia__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_commune_calendar__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_commune_calendar__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_federal_pact__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_federal_pact__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_column_discipline__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_column_discipline__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_free_schools__GFX_goal_generic_construction"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_free_schools__GFX_goal_generic_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_council_of_state__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_council_of_state__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_lycees__GFX_goal_generic_construction"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_lycees__GFX_goal_generic_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_gendarmerie_nationale__GFX_goal_generic_fortify_city"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_gendarmerie_nationale__GFX_goal_generic_fortify_city.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_imperial_eagles__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_imperial_eagles__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_imperial_court__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_imperial_court__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_conscription_decree__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_conscription_decree__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_presidential_address__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_presidential_address__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_council_of_honour__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_council_of_honour__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_reserve_officers__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_reserve_officers__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_red_eagle__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_RED_red_eagle__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_levee_en_masse_red__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_RED_levee_en_masse_red__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_commissar_corps__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_RED_commissar_corps__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_work_family_fatherland__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_PET_work_family_fatherland__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_peasant_return__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_PET_peasant_return__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_verdun_veterans__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_PET_verdun_veterans__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_cross_of_fire__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_cross_of_fire__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_generals_cabinet__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_generals_cabinet__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_inspectors_out__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_inspectors_out__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_king_at_front__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_king_at_front__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_colonels_plot__GFX_goal_generic_intelligence_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_colonels_plot__GFX_goal_generic_intelligence_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_day_of_revenge__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_day_of_revenge__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_mobilisation_day__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_mobilisation_day__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_rhine_crossed__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_rhine_crossed__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_kings_europe__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_kings_europe__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_lit_de_justice__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_lit_de_justice__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_versailles_return__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_versailles_return__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_jesuits_return__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_jesuits_return__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_kings_bread__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_kings_bread__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_madrid_letter__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_madrid_letter__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_sun_king__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_sun_king__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_te_deum__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_te_deum__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_cousins_war__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_cousins_war__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_holy_alliance__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_holy_alliance__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_sections_congress__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_sections_congress__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_elected_officers__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_COM_elected_officers__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_tribunal__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_COM_tribunal__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_bread_and_coal__GFX_goal_generic_construct_mil_factory"
+		texturefile = "gfx/interface/goals/custom/LR_COM_bread_and_coal__GFX_goal_generic_construct_mil_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_toulon_sailors__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_COM_toulon_sailors__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_year_one__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_COM_year_one__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_levee_red__GFX_goal_generic_allies_build_infantry"
+		texturefile = "gfx/interface/goals/custom/LR_COM_levee_red__GFX_goal_generic_allies_build_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_ruhr_soviets__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_COM_ruhr_soviets__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_red_continent__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_COM_red_continent__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_matignon__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_matignon__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_two_hundred__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_two_hundred__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_robespierre_portrait__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_robespierre_portrait__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_pyrenees_refugees__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_pyrenees_refugees__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_cagoule__GFX_goal_generic_intelligence_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_cagoule__GFX_goal_generic_intelligence_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_fourteenth_july__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_fourteenth_july__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_war_vote__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_war_vote__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_liberators__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_liberators__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_sister_republics__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_sister_republics__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_bordeaux_congress__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_bordeaux_congress__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_paris_question__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_paris_question__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_atlantic_company__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_atlantic_company__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_bourse_panic__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_bourse_panic__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_federal_draft__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_federal_draft__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_merchant_republic__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_merchant_republic__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_war_bonds__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_war_bonds__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_ruhr_contracts__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_ruhr_contracts__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_common_market__GFX_goal_generic_positive_trade_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_common_market__GFX_goal_generic_positive_trade_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_notables__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_notables__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_lafayette_heir__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_lafayette_heir__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_empty_throne__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_empty_throne__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_civil_list__GFX_goal_generic_trade"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_civil_list__GFX_goal_generic_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_lyon_strike__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_lyon_strike__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_charter__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_charter__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_kings_call__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_kings_call__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_notables_peace__GFX_goal_generic_dangerous_deal"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_notables_peace__GFX_goal_generic_dangerous_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_concert__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_concert__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_algiers_return__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_algiers_return__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plebiscite__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plebiscite__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_before_the_crown__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_before_the_crown__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_eagles__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_eagles__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_new_nobles__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_new_nobles__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_empress__GFX_goal_generic_major_alliance"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_empress__GFX_goal_generic_major_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_spanish_ulcer__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_spanish_ulcer__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_emperor_of_europe__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_emperor_of_europe__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_bulletin__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_bulletin__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_berlin_decree__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_berlin_decree__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_grand_empire__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_grand_empire__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_first_address__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_first_address__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_marshals_protest__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_marshals_protest__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_life_presidency__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_life_presidency__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_exiles_return__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_exiles_return__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_farewell__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_farewell__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_war_powers__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_war_powers__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_general_president__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_general_president__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_republican_peace__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_republican_peace__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_vichy__GFX_goal_generic_political_pressure"
+		texturefile = "gfx/interface/goals/custom/LR_PET_vichy__GFX_goal_generic_political_pressure.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_portrait__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_PET_portrait__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_laval__GFX_goal_generic_dangerous_deal"
+		texturefile = "gfx/interface/goals/custom/LR_PET_laval__GFX_goal_generic_dangerous_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_riom__GFX_goal_generic_forceful_treaty"
+		texturefile = "gfx/interface/goals/custom/LR_PET_riom__GFX_goal_generic_forceful_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_last_winter__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_PET_last_winter__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_no_masters__GFX_goal_generic_construct_civ_factory"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_no_masters__GFX_goal_generic_construct_civ_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_vendee_coop__GFX_goal_generic_construct_civilian"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_vendee_coop__GFX_goal_generic_construct_civilian.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_platform_debate__GFX_goal_generic_army_doctrines"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_platform_debate__GFX_goal_generic_army_doctrines.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_commissars__GFX_goal_generic_intelligence_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_commissars__GFX_goal_generic_intelligence_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_anarchy_spring__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_anarchy_spring__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_souper__GFX_goal_generic_propaganda"
+		texturefile = "gfx/interface/goals/custom/LR_RED_souper__GFX_goal_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_red_epaulettes__GFX_goal_generic_military_sphere"
+		texturefile = "gfx/interface/goals/custom/LR_RED_red_epaulettes__GFX_goal_generic_military_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_concordat_question__GFX_goal_generic_improve_relations"
+		texturefile = "gfx/interface/goals/custom/LR_RED_concordat_question__GFX_goal_generic_improve_relations.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_robespierre_shadow__GFX_goal_generic_intelligence_exchange"
+		texturefile = "gfx/interface/goals/custom/LR_RED_robespierre_shadow__GFX_goal_generic_intelligence_exchange.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_peoples_emperor__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_RED_peoples_emperor__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_commandant__GFX_goal_generic_dangerous_deal"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_commandant__GFX_goal_generic_dangerous_deal.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_first_execution__GFX_goal_generic_special_forces"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_first_execution__GFX_goal_generic_special_forces.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_DEF_second_winter__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_DEF_second_winter__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_COM_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_PET_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_low__GFX_goal_generic_occupy_start_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_low__GFX_goal_generic_occupy_start_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_south_germany__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_south_germany__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_iberia__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_iberia__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_italy__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_italy__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_north__GFX_goal_generic_navy_doctrines_tactics"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_north__GFX_goal_generic_navy_doctrines_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_east__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_east__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_balkans__GFX_goal_generic_demand_territory"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_balkans__GFX_goal_generic_demand_territory.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_plan_turkey__GFX_goal_generic_major_war"
+		texturefile = "gfx/interface/goals/custom/LR_RED_plan_turkey__GFX_goal_generic_major_war.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_COM_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_RED_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_PET_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_entente_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_entente_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_revolution_epilogue__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_revolution_epilogue__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ORL_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ORL_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_BOU_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_BOU_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GIR_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GIR_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_MAR_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_MAR_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_PET_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_PET_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_JAC_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_JAC_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_COM_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_COM_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_ANA_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_ANA_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_NAP_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_NAP_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_GUA_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_GUA_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_LRc_LR_RED_algeria_departments__GFX_goal_generic_national_unity"
+		texturefile = "gfx/interface/goals/custom/LR_RED_algeria_departments__GFX_goal_generic_national_unity.dds"
+	}
+}

@@ -57,7 +57,7 @@ SWE_mines = {
 	
 	visible = {
 		controls_state = 666
-		controls_state = 918
+		AND = { controls_state = 666 controls_state = 918 }
 		has_dlc = "Arms Against Tyranny"
 	}	
 }
@@ -267,3 +267,4 @@ SWE_coalition_war_cabinet_cat = {
 			NOT = { has_country_flag = SWE_has_picked_war_cabinet_trait }
 		}
 }
+# kr_layout: state numbers translated

@@ -164,9 +164,10 @@ if = { #DLC
 	801 = { set_state_flag = BUL_initial_bulgarian_state_flag }
 	211  = { set_state_flag = BUL_initial_bulgarian_state_flag }
 	77 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
-	803 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 	106 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	
 	731 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	1118 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 	184 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 	971 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 
@@ -506,3 +507,4 @@ set_grand_doctrine = new_operational_integrity
 
 	
 }
+# kr_layout: state numbers translated

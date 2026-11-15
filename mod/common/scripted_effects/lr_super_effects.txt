@@ -7,3 +7,56 @@ lr_super_revolution = {
 		FRA = { country_event = { id = lr_novel.801 days = 1 } }
 	}
 }
+lr_super_liberty = {
+	set_global_flag = LR_super_liberty
+	play_song = "lr_super_liberty"
+}
+lr_super_commune = {
+	set_global_flag = LR_super_commune
+	play_song = "lr_super_commune"
+}
+lr_super_orleans = {
+	set_global_flag = LR_super_orleans
+	if = {
+		limit = { FRA = { is_ai = no } }
+		play_song = "lr_super_orleans"
+	}
+}
+lr_super_petain = {
+	set_global_flag = LR_super_petain
+	play_song = "lr_super_petain"
+}
+lr_super_monarchy = {
+	set_global_flag = LR_super_monarchy
+	if = {
+		limit = { FRA = { is_ai = no } }
+		play_song = "lr_super_monarchy"
+	}
+}
+lr_super_bonaparte = {
+	set_global_flag = LR_super_bonaparte
+	play_song = "lr_super_bonaparte"
+}
+lr_super_world_war = {
+	set_global_flag = LR_super_world_war
+	play_song = "lr_super_world_war"
+}
+# The second world war: once three or more great powers are at war with another great power.
+lr_check_world_war = {
+	if = {
+		limit = { NOT = { has_global_flag = LR_world_war } }
+		set_temp_variable = { lr_majors_at_war = 0 }
+		every_country = {
+			limit = {
+				is_major = yes
+				any_enemy_country = { is_major = yes }
+			}
+			add_to_temp_variable = { lr_majors_at_war = 1 }
+		}
+		if = {
+			limit = { check_variable = { lr_majors_at_war > 2 } }
+			set_global_flag = LR_world_war
+			lr_super_world_war = yes
+		}
+	}
+}

@@ -62,7 +62,7 @@ ENDINGS = {
         P.join([
             "그 무렵 베를린 왕궁의 발코니에는 붉은 깃발이 걸렸습니다. 빈의 호프부르크는 노동자 대학이 되었고, 런던의 웨스트민스터에서는 노동자 평의회 대표들이 의사당의 녹색 의자에 앉았습니다.",
             "인터내셔널 대회는 이제 파리, 베를린, 빈을 돌며 열립니다. 의사록은 네 개 언어로 쓰입니다. 통역사들은 늘 부족합니다.",
-            "모스크바와 워싱턴에서 온 관찰자들은 같은 질문을 적어 보냅니다. 이것은 오래갈 것인가.",
+            "페테르부르크와 필라델피아에서 온 관찰자들은 같은 질문을 적어 보냅니다. 이것은 오래갈 것인가.",
         ]),
         P.join(["밤, 시청 광장. 노동자들이 횃불을 들고 인터내셔널을 부릅니다. 이번에는 프랑스어만이 아니라 독일어와 영어와 이탈리아어로.",
                 "열여섯 살 견습공 하나가 노래를 따라 부르다 옆 사람에게 묻습니다. 이제 다 끝난 건가요?",
@@ -146,7 +146,7 @@ ENDINGS = {
         P.join(["노트르담 대성당. 황제가 다시 대관식을 올립니다. 이번에는 프랑스 황제가 아니라 서방의 황제로서입니다. 샤를마뉴 이후 처음 쓰이는 칭호입니다.",
                 "성당 안에는 황제의 형제들과 원수들이 다스리는 위성 왕국의 왕들이 앉아 있습니다. 나폴리, 바르샤바, 바이에른, 스페인. 그리고 맨 앞줄에는 패배한 왕가들의 대표가 마지못해 앉았습니다.",
                 "황제는 이번에도 교황의 손에서 왕관을 받지 않고 스스로 씁니다."]),
-        P.join(["대관식이 끝나고 황제가 튈르리 궁 지도실에 섭니다. 벽에는 130개의 도가 그려진 제국 지도가 걸려 있습니다. 샤를마뉴의 제국보다 넓습니다.",
+        P.join(["대관식이 끝나고 황제가 튈르리 궁 지도실에 섭니다. 벽에는 130개의 데파르트망이 그려진 제국 지도가 걸려 있습니다. 샤를마뉴의 제국보다 넓습니다.",
                 "원수들이 축하 인사를 하고 물러간 뒤, 황제는 지도 동쪽 끝의 러시아를 오래 바라봅니다. 1709년 스웨덴의 카를 12세는 그곳에서 모든 것을 잃었습니다.",
                 "그는 비서를 불러 짧게 받아쓰게 합니다. " + say("대육군 동원 해제. 원수들에게 영지를. 병사들에게 연금을.")]),
         P.join([
@@ -224,6 +224,41 @@ for _route, (_pages, _text) in _STYLED.items():
     _head, _prefix, _name, _desc, _old, _title, _oldtext, _button = ENDINGS[_route]
     ENDINGS[_route] = (_head, _prefix, _name, _desc, _pages, _title, _text, _button)
 NOVEL_BASE_START = 1400
+from styled_peace_endings import PEACE_ENDINGS  # noqa: E402  the entente and the diplomatic revolution
+
+
+# The marshal dies four months after the État's ending; the sealed Constitutional Act No. 4 names his successor.
+SUCCESSION = "lr_ending.100"
+SUCCESSORS = [  # option, the new leader, the advisor of the same man (he leaves that post)
+    ("a", "LR_FRA_darlan", "FRA_francois_darlan"),
+    ("b", "LR_FRA_degaulle", "FRA_charles_de_gaulle"),
+]
+SUCCESSION_LOC = [
+    f' {SUCCESSION}.t:0 "원수 서거"',
+    f' {SUCCESSION}.d:0 "' + P.join([
+        "비시, 파르크 호텔 3층. 레몽 드 세르는 새벽 다섯 시에 전화를 받았다. 주치의였다. 원수가 잠든 채 숨을 거뒀다고 했다. 여든일곱 살이었다.",
+        "드 세르는 원수의 방에 들어갔다. 창가 의자 위에 담요가 개어져 있었다. 책상 서랍을 열자 봉인된 봉투가 그대로 있었다. 헌법 법령 제4호. 그는 봉투를 들고 국민 평의회 의장실로 내려갔다.",
+        "의장실에는 벌써 두 사람이 와 있었다. 다를랑 제독은 해군 제복 차림으로 창가에 서서 담배를 피우고 있었다. 드골 장군은 의자를 마다하고 문 옆에 서 있었다. 1920년대에 원수의 참모로 원수의 이름이 붙은 책을 쓰던 사람이었다. 두 사람 모두 드 세르의 손에 들린 봉투를 보았다.",
+        "의장이 봉랍을 뜯었다. 종이에는 이름이 둘 적혀 있었다. 첫 줄은 줄을 그어 지웠고, 그 아래에 원수의 떨리는 글씨로 다른 이름을 적었다. 어느 줄을 나중에 썼는지는 아무도 알 수 없었다. 의장은 종이를 내려놓고 드 세르를 보았다. 마지막 겨울 내내 원수 곁에 있던 사람은 그였다."]) + '"',
+    f' {SUCCESSION}.a:0 "다를랑 제독. 함대는 끝까지 원수 곁을 지켰다."',
+    f' {SUCCESSION}.b:0 "드골 장군. 원수가 길러 낸 마지막 군인이다."',
+    ' LR_tt_succession:0 "§Y필리프 페탱§!이 세상을 떠나고, 새 국가원수가 프랑스국을 이끕니다."',
+]
+
+
+def succession_event():
+    options = []
+    for letter, leader, advisor in SUCCESSORS:
+        options.append(
+            f"\toption = {{\n\t\tname = {SUCCESSION}.{letter}\n\t\tcustom_effect_tooltip = LR_tt_succession\n"
+            f"\t\tif = {{ limit = {{ has_country_leader = {{ character = LR_FRA_petain ruling_only = yes }} }} kill_country_leader = yes }}\n"
+            f"\t\tif = {{ limit = {{ has_character = {advisor} }} retire_character = {advisor} }}\n"
+            f"\t\tif = {{ limit = {{ has_dynamic_modifier = {{ modifier = LR_dyn_ruler_petain }} }} remove_dynamic_modifier = {{ modifier = LR_dyn_ruler_petain }} }}\n"
+            f"\t\tpromote_character = {leader}\n\t\tset_country_flag = LR_petain_dead\n\t\tadd_stability = -0.05\n"
+            f"\t\tai_chance = {{ base = 1 }}\n\t}}\n")
+    return (f"country_event = {{\n\tid = {SUCCESSION}\n\ttitle = {SUCCESSION}.t\n\tdesc = {SUCCESSION}.d\n"
+            f"\tpicture = GFX_report_event_generic_funeral\n\n\tis_triggered_only = yes\n"
+            f"\ttrigger = {{ has_country_leader = {{ character = LR_FRA_petain ruling_only = yes }} }}\n\n" + "\n".join(options) + "}\n")
 
 
 def novel_and_events():
@@ -233,11 +268,24 @@ def novel_and_events():
         final = f"lr_ending.{number}"
         novel[final] = {"pages": pages}
         base[final] = NOVEL_BASE_START + 100 * (number - 1)
+        after = f"\t\tcountry_event = {{ id = {SUCCESSION} days = 120 }}\n" if route == "petain" else ""
         events.append(f"country_event = {{\n\tid = {final}\n\ttitle = {final}.t\n\tdesc = {final}.d\n\tpicture = GFX_report_event_france_parade\n\n"
                       f"\tis_triggered_only = yes\n\n\toption = {{\n\t\tname = {final}.a\n\t\tset_country_flag = LR_ending_{route}\n"
-                      f"\t\tadd_stability = 0.1\n\t\tadd_war_support = -0.1\n\t}}\n}}\n")
+                      f"\t\tadd_stability = 0.1\n\t\tadd_war_support = -0.1\n{after}\t}}\n}}\n")
         loc += [f' {final}.t:0 "{title}"', f' {final}.d:0 "{text}"', f' {final}.a:0 "{button}"']
         focus_text[f"{prefix}epilogue"] = desc + " " + pages[0].split(P)[0]
+    # The peace roads number on after the route endings.
+    for number, (route, (prefix, key, _, _, _, desc, pages, title, text, button)) in enumerate(PEACE_ENDINGS.items(), start=len(ENDINGS) + 1):
+        final = f"lr_ending.{number}"
+        novel[final] = {"pages": pages}
+        base[final] = NOVEL_BASE_START + 100 * (number - 1)
+        events.append(f"country_event = {{\n\tid = {final}\n\ttitle = {final}.t\n\tdesc = {final}.d\n\tpicture = GFX_report_event_generic_sign_treaty1\n\n"
+                      f"\tis_triggered_only = yes\n\n\toption = {{\n\t\tname = {final}.a\n\t\tset_country_flag = LR_ending_{route}\n"
+                      f"\t\tadd_stability = 0.15\n\t\tadd_war_support = -0.1\n\t}}\n}}\n")
+        loc += [f' {final}.t:0 "{title}"', f' {final}.d:0 "{text}"', f' {final}.a:0 "{button}"']
+        focus_text[prefix + key] = desc + " " + pages[0].split(P)[0]
+    events.append(succession_event())
+    loc += SUCCESSION_LOC
     return novel, base, "\n".join(events), loc, focus_text
 
 
@@ -252,3 +300,9 @@ def add_epilogues(g):
         focus(fid, "national_unity", 0, 0, name, desc, f"country_event = {{ id = {page} }}", pre=[last], route=route_flag, available=VICTORY)
         SPINES[head].append(fid)
         BY_ID_NEW.append((fid, "정치"))
+    # The peace roads end where their alliance chain ends, in the diplomacy column.
+    for number, (route, (prefix, key, pre, available, name, desc, *_)) in enumerate(PEACE_ENDINGS.items(), start=len(ENDINGS) + 1):
+        route_flag = next(item["route"] for item in g["FOCUSES"] if item["id"] == pre)
+        page = f"lr_novel.{NOVEL_BASE_START + 100 * (number - 1) + 1}"
+        focus(prefix + key, "national_unity", 0, 0, name, desc, f"country_event = {{ id = {page} }}", pre=[pre], route=route_flag, available=available)
+        BY_ID_NEW.append((prefix + key, "외교"))

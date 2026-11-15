@@ -91,7 +91,7 @@ march_through_estonia = {
 	}
 	
 	on_map_area = {
-		state = 812
+		state = 813
 		name = march_through_estonia
 		zoom = 150
 	}
@@ -122,7 +122,7 @@ EST_convert_FIN_cat = {
 	}
 	
 	on_map_area = {
-		state = 149
+		state = 929
 		name = EST_convert_FIN_cat
 		zoom = 500
 	}
@@ -208,7 +208,7 @@ convert_neighbours_baltic_cat = {
 	visibility_type = map_and_decisions_view
 	
 	on_map_area = {
-		state = 808
+		state = 12
 		name = LAR_recruitment_europe
 		zoom = 65
 	}
@@ -255,3 +255,4 @@ BALTIC_forest_brother_resistance_cat = {
 		has_civil_war = no
 	}
 }
+# kr_layout: state numbers translated
