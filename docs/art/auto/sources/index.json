@@ -56,11 +56,12 @@
  "LR_FRA_ports": {
   "kind": "goal",
   "name": "항구 재건",
-  "title": "File:Série des ports de France mg 5254.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A9rie_des_ports_de_France_mg_5254.jpg",
-  "licence": "Public domain",
-  "artist": "Joseph Vernet",
-  "query": "ports France"
+  "title": "Cleveland 1979.130: Boats at Anchor",
+  "page": "https://clevelandart.org/art/1979.130",
+  "licence": "CC0",
+  "artist": "",
+  "query": "anchor museum",
+  "object": true
  },
  "LR_FRA_mass_production": {
   "kind": "goal",
@@ -83,11 +84,12 @@
  "LR_FRA_rural_power": {
   "kind": "goal",
   "name": "농촌 전력화",
-  "title": "File:Wind Power in Rural Iowa.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Wind_Power_in_Rural_Iowa.jpg",
+  "title": "File:Lantern Slide - Tangyes Ltd, Triple Expansion Steam Engine Model, circa 1910.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lantern_Slide_-_Tangyes_Ltd,_Triple_Expansion_Steam_Engine_Model,_circa_1910.jpg",
   "licence": "Public domain",
-  "artist": "Voice of American",
-  "query": "rural power France"
+  "artist": "",
+  "query": "steam engine model museum",
+  "object": true
  },
  "LR_FRA_war_economy": {
   "kind": "goal",
@@ -110,38 +112,42 @@
  "LR_FRA_infantry_rearm": {
   "kind": "goal",
   "name": "보병 재무장",
-  "title": "File:Goumiers 2nd group of Moroccan tabors.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Goumiers_2nd_group_of_Moroccan_tabors.jpg",
-  "licence": "Public domain",
-  "artist": "UNITED STATES ARMY IN WORLD WAR II  Special Studies REARMING THE FRENCH by Marcel Vigneras CENTER OF MILITARY HISTORY  UNITED STATES ARMY WASHINGTON, D. C. , 1989",
-  "query": "infantry rearm France"
+  "title": "Cleveland 1923.665: Wall Tile–Hunter with Rifle",
+  "page": "https://clevelandart.org/art/1923.665",
+  "licence": "CC0",
+  "artist": "",
+  "query": "rifle museum",
+  "object": true
  },
  "LR_FRA_general_staff": {
   "kind": "goal",
   "name": "참모본부 개편",
-  "title": "File:111-SC-9041 - General Pershing and staff accompanied by General Pelletier of the French Army arriving in France. - NARA - 55178440.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:111-SC-9041_-_General_Pershing_and_staff_accompanied_by_General_Pelletier_of_the_French_Army_arriving_in_France._-_NARA_-_55178440.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author or not provided",
-  "query": "general staff France"
+  "title": "File:Kepi forage cap, c. 1863 - Old Colony History Museum - Taunton, Massachusetts - DSC03932.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Kepi_forage_cap,_c._1863_-_Old_Colony_History_Museum_-_Taunton,_Massachusetts_-_DSC03932.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "kepi museum",
+  "object": true
  },
  "LR_FRA_motorisation": {
   "kind": "goal",
   "name": "차량화",
-  "title": "File:Manoeuvres de motorisation au camp de Mailly - M. Paul-Boncour avec les généraux de l'Etat Major.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Manoeuvres_de_motorisation_au_camp_de_Mailly_-_M._Paul-Boncour_avec_les_g%C3%A9n%C3%A9raux_de_l%27Etat_Major.jpg",
-  "licence": "Public domain",
-  "artist": "Agence de presse Mondial Photo-Presse",
-  "query": "motorisation France"
+  "title": "Cleveland 1939.696.1: Boysen Toys (truck)",
+  "page": "https://clevelandart.org/art/1939.696.1",
+  "licence": "CC0",
+  "artist": "",
+  "query": "toy truck antique",
+  "object": true
  },
  "LR_FRA_tank_divisions": {
   "kind": "goal",
   "name": "기갑 사단",
-  "title": "File:SC 177062 - A tank crosses a treadway bridge near Belfort, France, as the French drive to take this German strong point. November 20, 1944.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:SC_177062_-_A_tank_crosses_a_treadway_bridge_near_Belfort,_France,_as_the_French_drive_to_take_this_German_strong_point._November_20,_1944.jpg",
+  "title": "File:T-34 model 1941 in Kubinka Tank Museum.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:T-34_model_1941_in_Kubinka_Tank_Museum.JPG",
   "licence": "Public domain",
-  "artist": "Signal Corps Archive",
-  "query": "tank divisions France"
+  "artist": "",
+  "query": "tank model museum",
+  "object": true
  },
  "LR_FRA_air_arm": {
   "kind": "goal",
@@ -164,38 +170,42 @@
  "LR_FRA_air_doctrine": {
   "kind": "goal",
   "name": "공군 교리",
-  "title": "File:The doctrine of morality - or, A view of human life, according to the stoick philosophy - exemplify'd in one hundred and three copper-plates, done by the celebrated Monsieur Daret, engraver to the (14745698894).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_doctrine_of_morality_-_or,_A_view_of_human_life,_according_to_the_stoick_philosophy_-_exemplify%27d_in_one_hundred_and_three_copper-plates,_done_by_the_celebrated_Monsieur_Daret,_engraver_to_the_(14745698894).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "air doctrine France"
+  "title": "File:EAA museum airplane model.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:EAA_museum_airplane_model.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "airplane model museum",
+  "object": true
  },
  "LR_FRA_fleet_doctrine": {
   "kind": "goal",
   "name": "해군 교리",
-  "title": "File:Microcosm of London Plate 036 - Fleet Prison by Thomas Rowlandson and Augustus Pugin.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Microcosm_of_London_Plate_036_-_Fleet_Prison_by_Thomas_Rowlandson_and_Augustus_Pugin.jpg",
+  "title": "File:1776 - John Flamsteed - L'Hydre, Le Sextans (Hydra and Sextant).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:1776_-_John_Flamsteed_-_L%27Hydre,_Le_Sextans_(Hydra_and_Sextant).jpg",
   "licence": "Public domain",
-  "artist": "Rudolph Ackermann / Augustus Charles Pugin / Thomas Rowlandson / Joseph Constantine Stadler",
-  "query": "fleet doctrine France"
+  "artist": "",
+  "query": "sextant antique",
+  "object": true
  },
  "LR_FRA_ready_for_war": {
   "kind": "goal",
   "name": "전쟁 준비 완료",
-  "title": "File:111-SC-10265 - Night shift ready for work, Bassens Docks, Bordeaux, France. - NARA - 55180863 (april 1918).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:111-SC-10265_-_Night_shift_ready_for_work,_Bassens_Docks,_Bordeaux,_France._-_NARA_-_55180863_(april_1918).jpg",
+  "title": "File:Carabinier helmet, France, 1863-1865 - Higgins Armory Museum - DSC05704.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Carabinier_helmet,_France,_1863-1865_-_Higgins_Armory_Museum_-_DSC05704.JPG",
   "licence": "Public domain",
-  "artist": "War Department. Army War College. Historical Section. World War I Branch. ca. 1918-ca. 1948",
-  "query": "ready for war France"
+  "artist": "",
+  "query": "cuirassier helmet",
+  "object": true
  },
  "LR_FRA_stabilise_franc": {
   "kind": "goal",
   "name": "프랑 안정화",
-  "title": "File:CULTIVATEURS Avec Tardieu au Ministère de l'Agriculture et les Républicains Nationaux au pouvoir le cours du blé s'ét, AFF4347.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:CULTIVATEURS_Avec_Tardieu_au_Minist%C3%A8re_de_l%27Agriculture_et_les_R%C3%A9publicains_Nationaux_au_pouvoir_le_cours_du_bl%C3%A9_s%27%C3%A9t,_AFF4347.jpg",
+  "title": "File:Bust of Marianne North at Marianne North Gallery Kew Gardens JEG0501.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bust_of_Marianne_North_at_Marianne_North_Gallery_Kew_Gardens_JEG0501.jpg",
   "licence": "CC0",
-  "artist": "Centre de propagande des républicains nationaux, imprimeur",
-  "query": "stabilise franc"
+  "artist": "",
+  "query": "Marianne bust",
+  "object": true
  },
  "LR_FRA_citroen_trucks": {
   "kind": "goal",
@@ -218,20 +228,22 @@
  "LR_FRA_state_capital": {
   "kind": "goal",
   "name": "국가 주도 투자",
-  "title": "File:Capital (from ensemble of Capital, Shaft, and Base) MET cdi49-69-8a.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Capital_(from_ensemble_of_Capital,_Shaft,_and_Base)_MET_cdi49-69-8a.jpg",
+  "title": "File:Han Earthquake-detecting Machine Model - 2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Han_Earthquake-detecting_Machine_Model_-_2.jpg",
   "licence": "CC0",
   "artist": "",
-  "query": "state capital France"
+  "query": "machine model museum",
+  "object": true
  },
  "LR_FRA_artisans": {
   "kind": "goal",
   "name": "장인 전통의 산업화",
-  "title": "File:Un artisan entrain de polir les cornes du bœuf pour créer une chaise au village artisanal régional de Maroua.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Un_artisan_entrain_de_polir_les_cornes_du_b%C5%93uf_pour_cr%C3%A9er_une_chaise_au_village_artisanal_r%C3%A9gional_de_Maroua.jpg",
+  "title": "Cleveland 1974.15: Microscope",
+  "page": "https://clevelandart.org/art/1974.15",
   "licence": "CC0",
-  "artist": "OUMAROU OB",
-  "query": "artisans France"
+  "artist": "",
+  "query": "microscope antique",
+  "object": true
  },
  "LR_FRA_lyon_chemicals": {
   "kind": "goal",
@@ -245,11 +257,12 @@
  "LR_FRA_research_network": {
   "kind": "goal",
   "name": "국립 연구 기관",
-  "title": "File:Pluto-01 Stern 03 Pluto Color TXT.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Pluto-01_Stern_03_Pluto_Color_TXT.jpg",
-  "licence": "Public domain",
-  "artist": "NASA / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute",
-  "query": "research network France"
+  "title": "File:1865 circa, dissecting microscope, Carl Zeiss, Germany - Golub Collection of Antique Microscopes - DSC04820.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:1865_circa,_dissecting_microscope,_Carl_Zeiss,_Germany_-_Golub_Collection_of_Antique_Microscopes_-_DSC04820.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "microscope antique",
+  "object": true
  },
  "LR_FRA_arsenal_of_republic": {
   "kind": "goal",
@@ -263,245 +276,272 @@
  "LR_FRA_petain_school": {
   "kind": "goal",
   "name": "방어 우선 교리",
-  "title": "File:19-9-19, visite du maréchal Pétain à St Cyr - btv1b53030332d.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:19-9-19,_visite_du_mar%C3%A9chal_P%C3%A9tain_%C3%A0_St_Cyr_-_btv1b53030332d.jpg",
-  "licence": "Public domain",
-  "artist": "Agence Rol. Agence photographique (commanditaire)",
-  "query": "petain school France"
+  "title": "File:Cannonballs - 15-17c - Pskov Museum.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Cannonballs_-_15-17c_-_Pskov_Museum.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "cannonball museum",
+  "object": true
  },
  "LR_FRA_degaulle_school": {
   "kind": "goal",
   "name": "기갑 우선 교리",
-  "title": "File:837 Gov Nicholls Street, French Quarter, New Orleans 1930s crop.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:837_Gov_Nicholls_Street,_French_Quarter,_New_Orleans_1930s_crop.jpg",
+  "title": "File:Renault FT-17 NM-USA.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Renault_FT-17_NM-USA.jpg",
   "licence": "Public domain",
-  "artist": "Frances Benjamin Johnston",
-  "query": "France 1930s"
+  "artist": "",
+  "query": "Renault FT tank",
+  "object": true
  },
  "LR_FRA_saint_cyr": {
   "kind": "goal",
   "name": "생시르 개혁",
-  "title": "File:Saint-Cyr (Vienne) église.JPG",
-  "page": "https://commons.wikimedia.org/wiki/File:Saint-Cyr_(Vienne)_%C3%A9glise.JPG",
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020819.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020819.jpg",
   "licence": "CC0",
-  "artist": "Havang(nl)",
-  "query": "saint cyr"
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_FRA_heavy_artillery": {
   "kind": "goal",
   "name": "75mm의 후계자",
-  "title": "File:VIEW OF THE CATHEDRAL WHICH has been destroyed by heavy artillery fire, Rethel, France - DPLA - f5d86afb09f52b75a488a446b6795dca.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:VIEW_OF_THE_CATHEDRAL_WHICH_has_been_destroyed_by_heavy_artillery_fire,_Rethel,_France_-_DPLA_-_f5d86afb09f52b75a488a446b6795dca.jpg",
-  "licence": "Public domain",
-  "artist": "Department of Defense. Department of the Army. Office of the Deputy Chief of Staff for Operations. U.S. Army Audiovisual Center. ca. 1974-5/15/1984",
-  "query": "heavy artillery France"
+  "title": "File:Field Artillery, used in the War of 1864, 24 pounder shell gun of army 1834,.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Field_Artillery,_used_in_the_War_of_1864,_24_pounder_shell_gun_of_army_1834,.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_FRA_char_b": {
   "kind": "goal",
   "name": "샤르 B 계획",
-  "title": "File:Pierre Woeiriot02.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Pierre_Woeiriot02.jpg",
+  "title": "File:Renault FT in ROC.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Renault_FT_in_ROC.jpg",
   "licence": "Public domain",
-  "artist": "Pierre Woeiriot",
-  "query": "char b France"
+  "artist": "",
+  "query": "Renault FT tank",
+  "object": true
  },
  "LR_FRA_foreign_legion": {
   "kind": "goal",
   "name": "외인부대 확대",
-  "title": "File:Jean Geiser - Colonne de marche de la Légion étrangère.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Jean_Geiser_-_Colonne_de_marche_de_la_L%C3%A9gion_%C3%A9trang%C3%A8re.jpg",
+  "title": "File:Lebel Model 1886-93 Rifle-NMAH-AHB2015q036845.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lebel_Model_1886-93_Rifle-NMAH-AHB2015q036845.jpg",
   "licence": "Public domain",
-  "artist": "Jean Geiser La Chaux de Fonds, Svájc, 1848.  április 27 – 1923)",
-  "query": "foreign legion France"
+  "artist": "",
+  "query": "Lebel rifle",
+  "object": true
  },
  "LR_FRA_fighter_school": {
   "kind": "goal",
   "name": "전투기 학교",
-  "title": "File:48th Fighter Wing participate in Hellenic air force-led INIOCHOS 22 (7128422).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:48th_Fighter_Wing_participate_in_Hellenic_air_force-led_INIOCHOS_22_(7128422).jpg",
+  "title": "File:Model of a German WW2 airplane pic1.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Model_of_a_German_WW2_airplane_pic1.JPG",
   "licence": "Public domain",
-  "artist": "U.S. Air Force photo by Staff Sgt. Malissa Lott",
-  "query": "fighter school France"
+  "artist": "",
+  "query": "airplane model museum",
+  "object": true
  },
  "LR_FRA_submarine_arm": {
   "kind": "goal",
   "name": "잠수함대",
-  "title": "File:One hundred years of conflict between the nations of Europe, the causes and issues of the great war; (1914) (14594691200).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:One_hundred_years_of_conflict_between_the_nations_of_Europe,_the_causes_and_issues_of_the_great_war;_(1914)_(14594691200).jpg",
-  "licence": "No restrictions",
-  "artist": "Morris, Charles, 1833-1922",
-  "query": "submarine arm France"
+  "title": "File:La Marianne polynésienne.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Marianne_polyn%C3%A9sienne.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Marianne bust",
+  "object": true
  },
  "LR_FRA_bomber_command": {
   "kind": "goal",
   "name": "폭격기 사령부",
-  "title": "File:\"Photograph made from B-17 Flying Fortress of the 8th AAF Bomber Command on 31 Dec. when they attacked the vital CAM bal - NARA - 535712.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:%22Photograph_made_from_B-17_Flying_Fortress_of_the_8th_AAF_Bomber_Command_on_31_Dec._when_they_attacked_the_vital_CAM_bal_-_NARA_-_535712.jpg",
+  "title": "File:051217 tay 004 Curatorial Collection Image - Model, Northrop Grumman B-2 Spirit Stealth Bomber, heavy strategic bomber; U S Air Force (USAF) subsonic flying wing produced from 1987 to 2000; Gray with wood stand (53897971249).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:051217_tay_004_Curatorial_Collection_Image_-_Model,_Northrop_Grumman_B-2_Spirit_Stealth_Bomber,_heavy_strategic_bomber;_U_S_Air_Force_(USAF)_subsonic_flying_wing_produced_from_1987_to_2000;_Gray_with_wood_stand_(53897971249).jpg",
   "licence": "Public domain",
-  "artist": "Unknown authorUnknown author or not provided",
-  "query": "bomber command France"
+  "artist": "",
+  "query": "bomber model museum",
+  "object": true
  },
  "LR_FRA_battleline": {
   "kind": "goal",
   "name": "주력 함대",
-  "title": "File:Ambulance of the French Army.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ambulance_of_the_French_Army.jpg",
-  "licence": "Public domain",
-  "artist": "Edmond Lajoux",
-  "query": "battleline France"
+  "title": "File:Qing Battleship Model (9883601965).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Qing_Battleship_Model_(9883601965).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "battleship model museum",
+  "object": true
  },
  "LR_FRA_general_mobilisation": {
   "kind": "goal",
   "name": "총동원",
-  "title": "File:Ordre de mobilisation générale - Modèle N° 1 Métropole - 2 Septembre 1939, 1993.54.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ordre_de_mobilisation_g%C3%A9n%C3%A9rale_-_Mod%C3%A8le_N%C2%B0_1_M%C3%A9tropole_-_2_Septembre_1939,_1993.54.jpg",
+  "title": "File:Close-Helmet MET DP328549.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Close-Helmet_MET_DP328549.jpg",
   "licence": "CC0",
-  "artist": "Imprimerie Nationale, imprimeur",
-  "query": "general mobilisation France"
+  "artist": "",
+  "query": "cuirassier helmet",
+  "object": true
  },
  "LR_ORL_duke": {
   "kind": "goal",
   "name": "오를레앙의 왕",
-  "title": "File:Louis Duc de Bourgogne.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Louis_Duc_de_Bourgogne.jpg",
+  "title": "File:Köler Regalia of Augustus III and Maria Josepha.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:K%C3%B6ler_Regalia_of_Augustus_III_and_Maria_Josepha.jpg",
   "licence": "Public domain",
-  "artist": "Joseph Vivien",
-  "query": "duke France"
+  "artist": "",
+  "query": "crown regalia museum",
+  "object": true
  },
  "LR_ORL_shell_bills": {
   "kind": "goal",
   "name": "유령회사 어음",
-  "title": "File:French soldier guards 9.2 inch shells Gallipoli AWM G00480.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:French_soldier_guards_9.2_inch_shells_Gallipoli_AWM_G00480.jpg",
+  "title": "File:Crown of Ottokar II.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Crown_of_Ottokar_II.jpg",
   "licence": "Public domain",
-  "artist": "Ernest Brooks",
-  "query": "shell bills France"
+  "artist": "",
+  "query": "crown regalia museum",
+  "object": true
  },
  "LR_ORL_radical_rearm": {
   "kind": "goal",
   "name": "급진적 재무장",
-  "title": "File:Men and women working at Salisbury Munitions Factory(GN13533A).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Men_and_women_working_at_Salisbury_Munitions_Factory(GN13533A).jpg",
-  "licence": "Public domain",
-  "artist": "Commonwealth Government photographer",
-  "query": "munitions factory"
+  "title": "File:Artillery Shells (9735580464).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_Shells_(9735580464).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_ORL_rhine": {
   "kind": "goal",
   "name": "라인강으로",
-  "title": "File:Rhine near Strasbourg.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Rhine_near_Strasbourg.jpg",
-  "licence": "CC0",
-  "artist": "Syced",
-  "query": "rhine"
+  "title": "File:Capt. Frederick J. Saam, of Calumet, Mich., compares an Italian dragoon helmet with his own M1 in Anzio, Italy, 31 January, 1944. (49382343062).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Capt._Frederick_J._Saam,_of_Calumet,_Mich.,_compares_an_Italian_dragoon_helmet_with_his_own_M1_in_Anzio,_Italy,_31_January,_1944._(49382343062).jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "cuirassier helmet",
+  "object": true
  },
  "LR_ORL_danube": {
   "kind": "goal",
   "name": "빈으로",
-  "title": "File:Cours du Danube depuis Vienne jusqu'à Roszig en 18 sections - btv1b530116758 (15 of 18).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Cours_du_Danube_depuis_Vienne_jusqu%27%C3%A0_Roszig_en_18_sections_-_btv1b530116758_(15_of_18).jpg",
+  "title": "File:Malay Regiment at bayonet practice.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Malay_Regiment_at_bayonet_practice.jpg",
   "licence": "Public domain",
-  "artist": "Marsili, Luigi Ferdinando (1658-1730). Auteur adapté",
-  "query": "danube France"
+  "artist": "",
+  "query": "bayonet museum",
+  "object": true
  },
  "LR_ORL_channel": {
   "kind": "goal",
   "name": "해협 건너로",
-  "title": "File:Satellite image of France in August 2002.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Satellite_image_of_France_in_August_2002.jpg",
+  "title": "File:British Army bayonet and scabbard.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:British_Army_bayonet_and_scabbard.jpg",
   "licence": "Public domain",
-  "artist": "Jacques Descloitres, MODIS Rapid Response Team, NASA/GSFC",
-  "query": "channel France"
+  "artist": "",
+  "query": "bayonet museum",
+  "object": true
  },
  "LR_ORL_russia": {
   "kind": "goal",
   "name": "동쪽의 적",
-  "title": "File:Russian peasant girls in front of a traditional wooden house in Kirillov.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Russian_peasant_girls_in_front_of_a_traditional_wooden_house_in_Kirillov.jpg",
+  "title": "File:US naval officer's sword, pattern 1830, c. 1835 - Higgins Armory Museum - DSC05721.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:US_naval_officer%27s_sword,_pattern_1830,_c._1835_-_Higgins_Armory_Museum_-_DSC05721.JPG",
   "licence": "Public domain",
-  "artist": "Sergei Prokudin-Gorskii",
-  "query": "russia France"
+  "artist": "",
+  "query": "officer sword museum",
+  "object": true
  },
  "LR_BOU_restored": {
   "kind": "goal",
   "name": "왕좌의 안정",
-  "title": "File:India, by British Information Services, 1944 restored version.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:India,_by_British_Information_Services,_1944_restored_version.jpg",
+  "title": "File:Crown of Ottokar II (cropped).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Crown_of_Ottokar_II_(cropped).jpg",
   "licence": "Public domain",
-  "artist": "British Information Services, an agency of the British Government, restoration by Wilfredor",
-  "query": "restored France"
+  "artist": "",
+  "query": "crown regalia museum",
+  "object": true
  },
  "LR_BOU_italy": {
   "kind": "goal",
   "name": "이탈리아 통일전쟁",
-  "title": "File:France-Italy Boundary - 1947.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:France-Italy_Boundary_-_1947.jpg",
-  "licence": "Public domain",
-  "artist": "Unspecified",
-  "query": "italy France"
+  "title": "File:Shades and globes. (1912) (14801543293).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Shades_and_globes._(1912)_(14801543293).jpg",
+  "licence": "No restrictions",
+  "artist": "",
+  "query": "antique globe museum",
+  "object": true
  },
  "LR_BOU_diplomatic_rearm": {
   "kind": "goal",
   "name": "재무장 협상",
-  "title": "File:Horloogiyn Choybalsan.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Horloogiyn_Choybalsan.jpg",
-  "licence": "Public domain",
+  "title": "File:Distinguished Conduct Medal, Military Medal, 1914-1915 Star, British War Medal, Inter-Allied Victory Medal - awarded to Acting Cpl. Robert Coates, 10th Canadian Infantry Battalion - Glenbow Museum - DSC00618.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Distinguished_Conduct_Medal,_Military_Medal,_1914-1915_Star,_British_War_Medal,_Inter-Allied_Victory_Medal_-_awarded_to_Acting_Cpl._Robert_Coates,_10th_Canadian_Infantry_Battalion_-_Glenbow_Museum_-_DSC00618.JPG",
+  "licence": "CC0",
   "artist": "",
-  "query": "generals 1930s"
+  "query": "military medal museum",
+  "object": true
  },
  "LR_BOU_open_rearm": {
   "kind": "goal",
   "name": "막가파 재무장",
-  "title": "File:U S Naval Station Rota participates in Spanish Armed Forces Day open-base event (9720519).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:U_S_Naval_Station_Rota_participates_in_Spanish_Armed_Forces_Day_open-base_event_(9720519).jpg",
-  "licence": "Public domain",
-  "artist": "U.S. Navy photo by Lt. Daniel Ehrlich",
-  "query": "open rearm"
+  "title": "File:Artillery Shells (9735588242).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_Shells_(9735588242).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_BOU_algeria": {
   "kind": "goal",
   "name": "알제리 진압",
-  "title": "File:France, Morocco, Algeria, and Senegal Route.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:France,_Morocco,_Algeria,_and_Senegal_Route.jpg",
-  "licence": "Public domain",
-  "artist": "Francis J. Field",
-  "query": "algeria France"
+  "title": "File:Artillery Shells (9732386099).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_Shells_(9732386099).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_BOU_danube": {
   "kind": "goal",
   "name": "빈으로",
-  "title": "File:Cours du Danube depuis Vienne jusqu'à Roszig en 18 sections - btv1b53039105v (07 of 18).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Cours_du_Danube_depuis_Vienne_jusqu%27%C3%A0_Roszig_en_18_sections_-_btv1b53039105v_(07_of_18).jpg",
-  "licence": "Public domain",
-  "artist": "Marsili, Luigi Ferdinando (1658-1730). Auteur adapté",
-  "query": "danube France"
+  "title": "File:-Union Cavalry Officer Displaying Sword, Holding Hat, Seated in Studio- MET DP274315.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:-Union_Cavalry_Officer_Displaying_Sword,_Holding_Hat,_Seated_in_Studio-_MET_DP274315.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "officer sword museum",
+  "object": true
  },
  "LR_BOU_russia": {
   "kind": "goal",
   "name": "동쪽의 적",
-  "title": "File:Prokudin-Gorskii-24.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Prokudin-Gorskii-24.jpg",
+  "title": "File:Drum, 1861-1865 - North Carolina Museum of History - DSC06014.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Drum,_1861-1865_-_North_Carolina_Museum_of_History_-_DSC06014.JPG",
   "licence": "Public domain",
-  "artist": "Sergei Prokudin-Gorskii",
-  "query": "russia France"
+  "artist": "",
+  "query": "military drum museum",
+  "object": true
  },
  "LR_COM_commune": {
   "kind": "goal",
   "name": "코뮌의 깃발",
-  "title": "File:Hôtel Ville Paris burnt Commune 1871.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Ville_Paris_burnt_Commune_1871.jpg",
-  "licence": "Public domain",
-  "artist": "Charles Marville",
-  "query": "commune France"
+  "title": "File:CBS microphone, 1930s, used by Franklin Roosevelt for his Fireside Chat radio programs - National Museum of American History - DSC06235.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:CBS_microphone,_1930s,_used_by_Franklin_Roosevelt_for_his_Fireside_Chat_radio_programs_-_National_Museum_of_American_History_-_DSC06235.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "microphone 1930s",
+  "object": true
  },
  "LR_COM_workers_control": {
   "kind": "goal",
   "name": "노동자 통제",
-  "title": "File:PAX workers France (26974454779).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:PAX_workers_France_(26974454779).jpg",
-  "licence": "No restrictions",
-  "artist": "Mennonite Church USA Archives",
-  "query": "workers control France"
+  "title": "File:Sewing Machine Patent Model; Isaac Singer, 1855.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sewing_Machine_Patent_Model;_Isaac_Singer,_1855.jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "machine model museum",
+  "object": true
  },
  "LR_COM_one_country": {
   "kind": "goal",
@@ -524,218 +564,242 @@
  "LR_COM_annex_algeria": {
   "kind": "goal",
   "name": "알제리 혁명 원정",
-  "title": "File:Vue générale de l'exposition universelle.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Vue_g%C3%A9n%C3%A9rale_de_l%27exposition_universelle.jpg",
-  "licence": "Public domain",
-  "artist": "Auguste Trichon (1814-1898) ? Guirimier",
-  "query": "annex algeria France"
+  "title": "File:Artillery Shells (9732359297).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_Shells_(9732359297).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_COM_danube": {
   "kind": "goal",
   "name": "빈으로",
-  "title": "File:Cours du Danube depuis Vienne jusqu'à Roszig en 18 sections - btv1b530116758 (03 of 18).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Cours_du_Danube_depuis_Vienne_jusqu%27%C3%A0_Roszig_en_18_sections_-_btv1b530116758_(03_of_18).jpg",
+  "title": "File:Armour in the National Museum, New Delhi 1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Armour_in_the_National_Museum,_New_Delhi_1.jpg",
   "licence": "Public domain",
-  "artist": "Marsili, Luigi Ferdinando (1658-1730). Auteur adapté",
-  "query": "danube France"
+  "artist": "",
+  "query": "cuirass armour museum",
+  "object": true
  },
  "LR_JAC_committee": {
   "kind": "goal",
   "name": "공안위원회",
-  "title": "File:Mission Menn Francaise Committee France (25190304748).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Mission_Menn_Francaise_Committee_France_(25190304748).jpg",
-  "licence": "No restrictions",
-  "artist": "Mennonite Church USA Archives",
-  "query": "committee France"
+  "title": "File:Liberty Cap Wood Carving.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Liberty_Cap_Wood_Carving.JPG",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "Phrygian cap",
+  "object": true
  },
  "LR_JAC_public_works": {
   "kind": "goal",
   "name": "국가 공공사업",
-  "title": "File:Report of the Ministry of Public Works (Thành Thái 16).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Report_of_the_Ministry_of_Public_Works_(Th%C3%A0nh_Th%C3%A1i_16).jpg",
+  "title": "File:Brodowski Paris in the Phrygian cap.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Brodowski_Paris_in_the_Phrygian_cap.jpg",
   "licence": "Public domain",
-  "artist": "The government of the Nguyễn Dynasty.",
-  "query": "public works France"
+  "artist": "",
+  "query": "Phrygian cap",
+  "object": true
  },
  "LR_JAC_nationalise": {
   "kind": "goal",
   "name": "기간산업 국유화",
-  "title": "File:Icy est le vrai pourtraict naturel de la ville, cité, université de Parisy, Rossingol execut.1576.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Icy_est_le_vrai_pourtraict_naturel_de_la_ville,_cit%C3%A9,_universit%C3%A9_de_Parisy,_Rossingol_execut.1576.jpg",
+  "title": "File:Liberty cap Yellowstone.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Liberty_cap_Yellowstone.jpg",
   "licence": "Public domain",
-  "artist": "Rossingol, Melchior edit. Jebulon for upload",
-  "query": "nationalise France"
+  "artist": "",
+  "query": "Phrygian cap",
+  "object": true
  },
  "LR_JAC_public_school": {
   "kind": "goal",
   "name": "공화국 학교",
-  "title": "File:Béraud - La sortie du lycée Condorcet, Vers 1903.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:B%C3%A9raud_-_La_sortie_du_lyc%C3%A9e_Condorcet,_Vers_1903.jpg",
-  "licence": "Public domain",
-  "artist": "Jean Béraud",
-  "query": "public school France"
+  "title": "File:1745 circa, tripod microscope, George Sterrop, England - Golub Collection of Antique Microscopes - DSC04833.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:1745_circa,_tripod_microscope,_George_Sterrop,_England_-_Golub_Collection_of_Antique_Microscopes_-_DSC04833.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "microscope antique",
+  "object": true
  },
  "LR_JAC_republican_army": {
   "kind": "goal",
   "name": "공화국 군대",
-  "title": "File:Noël Pinot.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:No%C3%ABl_Pinot.jpg",
+  "title": "File:Lebel 1886-M93 St Etienne Rifle-NMAH-AHB2015q033055.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lebel_1886-M93_St_Etienne_Rifle-NMAH-AHB2015q033055.jpg",
   "licence": "Public domain",
-  "artist": "G. Léglise",
-  "query": "republican army France"
+  "artist": "",
+  "query": "Lebel rifle",
+  "object": true
  },
  "LR_JAC_rhine": {
   "kind": "goal",
   "name": "라인강의 깃발",
-  "title": "File:Knötel III, 9.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Kn%C3%B6tel_III,_9.jpg",
-  "licence": "Public domain",
-  "artist": "Milgesch",
-  "query": "French infantry 1914 French Revolution"
+  "title": "File:Helmet and Cuirass MET 36.25.32d 002Jun2015.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Helmet_and_Cuirass_MET_36.25.32d_002Jun2015.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "cuirass armour museum",
+  "object": true
  },
  "LR_JAC_danube": {
   "kind": "goal",
   "name": "빈으로",
-  "title": "File:Cours du Danube depuis Vienne jusqu'à Roszig en 18 sections - btv1b530116758 (05 of 18).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Cours_du_Danube_depuis_Vienne_jusqu%27%C3%A0_Roszig_en_18_sections_-_btv1b530116758_(05_of_18).jpg",
-  "licence": "Public domain",
-  "artist": "Marsili, Luigi Ferdinando (1658-1730). Auteur adapté",
-  "query": "danube France"
+  "title": "File:Helmet and Cuirass MET 36.25.32a 001Jun2015.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Helmet_and_Cuirass_MET_36.25.32a_001Jun2015.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "cuirass armour museum",
+  "object": true
  },
  "LR_JAC_russia": {
   "kind": "goal",
   "name": "동쪽의 적",
-  "title": "File:Napoleon I of France by Andrea Appiani.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Napoleon_I_of_France_by_Andrea_Appiani.jpg",
-  "licence": "Public domain",
-  "artist": "Andrea Appiani",
-  "query": "russia France"
+  "title": "File:Helmet and Cuirass MET 36.25.32c 002Jun2015.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Helmet_and_Cuirass_MET_36.25.32c_002Jun2015.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "cuirass armour museum",
+  "object": true
  },
  "LR_JAC_reform_act": {
   "kind": "goal",
   "name": "개혁 입법",
-  "title": "File:The School of Reform (BM 1868,0808.9377).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_School_of_Reform_(BM_1868,0808.9377).jpg",
-  "licence": "Public domain",
-  "artist": "Printed by: W &amp; J O Clerk\n\nPublished by: S Gans",
-  "query": "reform act France"
+  "title": "File:Uniformed Sydney Girl's High School girls singing near 2GB microphone, 1930s - Sam Hood (3544642714).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Uniformed_Sydney_Girl%27s_High_School_girls_singing_near_2GB_microphone,_1930s_-_Sam_Hood_(3544642714).jpg",
+  "licence": "No restrictions",
+  "artist": "",
+  "query": "microphone 1930s",
+  "object": true
  },
  "LR_JAC_supermajority": {
   "kind": "goal",
   "name": "개헌 의석",
-  "title": "File:Gnome et Rhône Super-Major, en 1938 dans Plein ciel.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Gnome_et_Rh%C3%B4ne_Super-Major,_en_1938_dans_Plein_ciel.jpg",
+  "title": "File:Tricolour cockade 1792.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tricolour_cockade_1792.jpg",
   "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "supermajority France"
+  "artist": "",
+  "query": "tricolour cockade",
+  "object": true
  },
  "LR_GIR_deregulation": {
   "kind": "goal",
   "name": "탈규제",
-  "title": "File:Облигация в 125 рублей золотом Российский 3 half percent золотой заем 1894 года back.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:%D0%9E%D0%B1%D0%BB%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D1%8F_%D0%B2_125_%D1%80%D1%83%D0%B1%D0%BB%D0%B5%D0%B9_%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%BC_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_3_half_percent_%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D0%BE%D0%B9_%D0%B7%D0%B0%D0%B5%D0%BC_1894_%D0%B3%D0%BE%D0%B4%D0%B0_back.jpg",
-  "licence": "Public domain",
-  "artist": "Imperial Russian government (issuer); designer and engraver not identified in the museum catalogue. Digital reproduction: Museum of the National Bank of the Republic of Belarus.",
-  "query": "stock exchange Paris French Republic"
+  "title": "Cleveland 1946.429: Adam and Eve (pair of statuettes)",
+  "page": "https://clevelandart.org/art/1946.429",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_GIR_free_trade": {
   "kind": "goal",
   "name": "자유 무역",
-  "title": "File:World Trade Center, New York City - aerial view (March 2001).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:World_Trade_Center,_New_York_City_-_aerial_view_(March_2001).jpg",
-  "licence": "Public domain",
-  "artist": "Jeffmock",
-  "query": "free trade France"
+  "title": "File:Bronze statuette of a centaur MET DP20939.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bronze_statuette_of_a_centaur_MET_DP20939.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_GIR_rhine": {
   "kind": "goal",
   "name": "라인강으로",
-  "title": "File:Military Operations - Convoys - Enroute - Departure of 101st Infantry, Mass., on Grand Republic Lighter, which takes the boys to the transport which will leave for France - NARA - 45503661.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Military_Operations_-_Convoys_-_Enroute_-_Departure_of_101st_Infantry,_Mass.,_on_Grand_Republic_Lighter,_which_takes_the_boys_to_the_transport_which_will_leave_for_France_-_NARA_-_45503661.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author or not provided",
-  "query": "French infantry 1914 French Republic"
+  "title": "File:Bronze statuette of a centaur MET GR1085.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bronze_statuette_of_a_centaur_MET_GR1085.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_GIR_danube": {
   "kind": "goal",
   "name": "빈으로",
-  "title": "File:Cours du Danube depuis Vienne jusqu'à Roszig en 18 sections - btv1b53039105v (08 of 18).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Cours_du_Danube_depuis_Vienne_jusqu%27%C3%A0_Roszig_en_18_sections_-_btv1b53039105v_(08_of_18).jpg",
-  "licence": "Public domain",
-  "artist": "Marsili, Luigi Ferdinando (1658-1730). Auteur adapté",
-  "query": "danube France"
+  "title": "File:Bronze statuette of Minerva MET DP20163.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bronze_statuette_of_Minerva_MET_DP20163.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_GIR_channel": {
   "kind": "goal",
   "name": "해협 건너로",
-  "title": "File:Map showing British railways routes to France (and Channel Islands) - btv1b53059183w.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Map_showing_British_railways_routes_to_France_(and_Channel_Islands)_-_btv1b53059183w.jpg",
-  "licence": "Public domain",
-  "artist": "A. Taride (Paris). Auteur du texte",
-  "query": "channel France"
+  "title": "File:Bronze statuette of Athena MET DP20098.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bronze_statuette_of_Athena_MET_DP20098.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_GIR_russia": {
   "kind": "goal",
   "name": "동쪽의 적",
-  "title": "File:Crowds of French patriots line the Champs Elysees-edit2.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Crowds_of_French_patriots_line_the_Champs_Elysees-edit2.jpg",
-  "licence": "Public domain",
-  "artist": "Jack Downey, U.S. Office of War Information",
-  "query": "russia France"
+  "title": "File:Bronze statuette of a Lar MET DP20569.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bronze_statuette_of_a_Lar_MET_DP20569.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_GIR_majority": {
   "kind": "goal",
   "name": "의회 과반",
-  "title": "File:Allegorie dèdiè au tiers etat LCCN2004676887-restored.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Allegorie_d%C3%A8di%C3%A8_au_tiers_etat_LCCN2004676887-restored.jpg",
-  "licence": "Public domain",
-  "artist": "Miscellaneous Items in High Demand, PPOC, Library of Congress\"",
-  "query": "majority France"
+  "title": "Cleveland 1963.516.e: Inkwell from Writing Stand",
+  "page": "https://clevelandart.org/art/1963.516.e",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_GIR_reform_act": {
   "kind": "goal",
   "name": "개혁 입법",
-  "title": "File:Senate Committee on Agriculture, Food and Agrarian Reform hearing on the Impact of Rising Oil Prices (01).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Senate_Committee_on_Agriculture,_Food_and_Agrarian_Reform_hearing_on_the_Impact_of_Rising_Oil_Prices_(01).jpg",
-  "licence": "Public domain",
-  "artist": "Senator Bam Aquino",
-  "query": "reform act France"
+  "title": "File:Carbon microphone, c. 1920s, Ellis Electrical Laboratories - Museum of Science and Industry (Chicago) - DSC06626.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Carbon_microphone,_c._1920s,_Ellis_Electrical_Laboratories_-_Museum_of_Science_and_Industry_(Chicago)_-_DSC06626.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "microphone 1930s",
+  "object": true
  },
  "LR_GIR_supermajority": {
   "kind": "goal",
   "name": "개헌 의석",
-  "title": "File:Gnome et Rhône Major, Plein Ciel 1938.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Gnome_et_Rh%C3%B4ne_Major,_Plein_Ciel_1938.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "supermajority France"
+  "title": "File:Bronze statuette of a horse MET DP120125.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bronze_statuette_of_a_horse_MET_DP120125.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_MAR_cabinet": {
   "kind": "goal",
   "name": "푀양파 내각",
-  "title": "File:Gouvernement Queuille 1951.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Gouvernement_Queuille_1951.jpg",
+  "title": "File:Bronze statuette of a dancing Lar MET DP20240.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bronze_statuette_of_a_dancing_Lar_MET_DP20240.jpg",
   "licence": "CC0",
-  "artist": "Inter",
-  "query": "cabinet France"
+  "artist": "",
+  "query": "bronze statuette museum",
+  "object": true
  },
  "LR_MAR_constitution": {
   "kind": "goal",
   "name": "입헌군주정 헌법",
-  "title": "File:Constitution de 1958.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Constitution_de_1958.jpg",
-  "licence": "Public domain",
-  "artist": "Tangopaso",
-  "query": "constitution France"
+  "title": "Cleveland 1963.516.d: Inkwell from Writing Stand",
+  "page": "https://clevelandart.org/art/1963.516.d",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_MAR_order": {
   "kind": "goal",
   "name": "질서 회복",
-  "title": "File:France 1643-A Half Louis d'Or.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:France_1643-A_Half_Louis_d%27Or.jpg",
-  "licence": "Public domain",
-  "artist": "Jean Varin / National Museum of American History",
-  "query": "order France"
+  "title": "Cleveland 1990.237: Head with Animal Helmet",
+  "page": "https://clevelandart.org/art/1990.237",
+  "licence": "CC0",
+  "artist": "",
+  "query": "helmet museum",
+  "object": true
  },
  "LR_MAR_danube": {
   "kind": "goal",
@@ -767,11 +831,12 @@
  "LR_MAR_reform_act": {
   "kind": "goal",
   "name": "개혁 입법",
-  "title": "File:Senate Committee on Agriculture, Food and Agrarian Reform hearing on the Impact of Rising Oil Prices (02).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Senate_Committee_on_Agriculture,_Food_and_Agrarian_Reform_hearing_on_the_Impact_of_Rising_Oil_Prices_(02).jpg",
+  "title": "File:Hand-operated printing press, patent model, Victor Manufacturing Co. Boston, MA, c. 1850-1890 - Franklin Institute - DSC06620.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hand-operated_printing_press,_patent_model,_Victor_Manufacturing_Co._Boston,_MA,_c._1850-1890_-_Franklin_Institute_-_DSC06620.jpg",
   "licence": "Public domain",
-  "artist": "Senator Bam Aquino",
-  "query": "reform act France"
+  "artist": "",
+  "query": "printing press model",
+  "object": true
  },
  "LR_MAR_supermajority": {
   "kind": "goal",
@@ -785,74 +850,82 @@
  "LR_NAP_first_consul": {
   "kind": "goal",
   "name": "제1통령",
-  "title": "File:Bonaparte premier Consul Gérard Chantilly.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bonaparte_premier_Consul_G%C3%A9rard_Chantilly.jpg",
-  "licence": "Public domain",
-  "artist": "François Gérard",
-  "query": "first consul France"
+  "title": "File:Hat MET 26.56.84.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hat_MET_26.56.84.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Napoleon bicorne hat",
+  "object": true
  },
  "LR_NAP_bank_of_france": {
   "kind": "goal",
   "name": "프랑스 은행",
-  "title": "File:Banque de France Bank Token.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Banque_de_France_Bank_Token.jpg",
-  "licence": "Public domain",
-  "artist": "Dumarest, Rambert, 1750-1806",
-  "query": "bank france France"
+  "title": "File:Bicorne MET 1986.518.3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bicorne_MET_1986.518.3.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Napoleon bicorne hat",
+  "object": true
  },
  "LR_NAP_legion_of_honour": {
   "kind": "goal",
   "name": "레지옹 도뇌르",
-  "title": "File:Marc Bloch, made a knight of the Legion of Honour.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Marc_Bloch,_made_a_knight_of_the_Legion_of_Honour.jpg",
-  "licence": "Public domain",
-  "artist": "French Department of War official, 8 November 1920",
-  "query": "legion honour France"
+  "title": "File:Shako artillery hat, 1851-1858 - Old Colony History Museum - Taunton, Massachusetts - DSC03931.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Shako_artillery_hat,_1851-1858_-_Old_Colony_History_Museum_-_Taunton,_Massachusetts_-_DSC03931.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "shako museum",
+  "object": true
  },
  "LR_NAP_coronation": {
   "kind": "goal",
   "name": "대관식",
-  "title": "File:Gentile da Fabriano - Coronation of the Virgin.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Gentile_da_Fabriano_-_Coronation_of_the_Virgin.jpg",
+  "title": "File:Isaac Brock's Cocked Hat 0089.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Isaac_Brock%27s_Cocked_Hat_0089.jpg",
   "licence": "Public domain",
-  "artist": "Gentile da Fabriano",
-  "query": "coronation France"
+  "artist": "",
+  "query": "Napoleon bicorne hat",
+  "object": true
  },
  "LR_NAP_continental_system": {
   "kind": "goal",
   "name": "대륙봉쇄",
-  "title": "File:Large Low Pressure System Swirls in the North Atlantic (49782650482).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Large_Low_Pressure_System_Swirls_in_the_North_Atlantic_(49782650482).jpg",
-  "licence": "Public domain",
-  "artist": "NOAA Satellites",
-  "query": "continental system France"
+  "title": "File:Seal Matrix with Abbot William of Gross St. Martin and Saint Martin MET sf17-190-143s2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Seal_Matrix_with_Abbot_William_of_Gross_St._Martin_and_Saint_Martin_MET_sf17-190-143s2.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "seal matrix museum",
+  "object": true
  },
  "LR_NAP_grande_armee": {
   "kind": "goal",
   "name": "대육군",
-  "title": "File:Grande Armée - Infantry.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Grande_Arm%C3%A9e_-_Infantry.jpg",
+  "title": "File:US 4.7 inch field gun, Model 1906 - National World War I Museum - Kansas City, MO - DSC07674.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:US_4.7_inch_field_gun,_Model_1906_-_National_World_War_I_Museum_-_Kansas_City,_MO_-_DSC07674.JPG",
   "licence": "Public domain",
-  "artist": "Carle Vernet",
-  "query": "grande armee France"
+  "artist": "",
+  "query": "field gun model museum",
+  "object": true
  },
  "LR_NAP_marshals": {
   "kind": "goal",
   "name": "원수단",
-  "title": "File:Jean-Baptiste-Jules Bernadotte, Prince de Ponte-Corvo, roi de Suède, Maréchal de France (1763-1844).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Jules_Bernadotte,_Prince_de_Ponte-Corvo,_roi_de_Su%C3%A8de,_Mar%C3%A9chal_de_France_(1763-1844).jpg",
-  "licence": "Public domain",
-  "artist": "Joseph Nicolas Jouy / After François Kinson",
-  "query": "marshals France"
+  "title": "File:Shako hat, c. 1835 - Old Colony History Museum - Taunton, Massachusetts - DSC03929.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Shako_hat,_c._1835_-_Old_Colony_History_Museum_-_Taunton,_Massachusetts_-_DSC03929.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "shako museum",
+  "object": true
  },
  "LR_NAP_rhine": {
   "kind": "goal",
   "name": "다시 라인강으로",
-  "title": "File:Paris - en Flanant- Perspective sur la Place du Carrousel (15324689445).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Paris_-_en_Flanant-_Perspective_sur_la_Place_du_Carrousel_(15324689445).jpg",
-  "licence": "No restrictions",
-  "artist": "SMU Central University Libraries",
-  "query": "French infantry 1914 Napoleon"
+  "title": "File:Bicorne MET C.I.49.68.1 S.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bicorne_MET_C.I.49.68.1_S.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Napoleon bicorne hat",
+  "object": true
  },
  "LR_NAP_boulogne": {
   "kind": "goal",
@@ -884,38 +957,42 @@
  "LR_NAP_guardian": {
   "kind": "goal",
   "name": "공화국의 수호자",
-  "title": "File:Stone guardian at Gongju National Museum 01.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Stone_guardian_at_Gongju_National_Museum_01.jpg",
+  "title": "Cleveland 2011.119: Deer Inkwell (Encrier biches)",
+  "page": "https://clevelandart.org/art/2011.119",
   "licence": "CC0",
-  "artist": "Bernard Gagnon",
-  "query": "guardian France"
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_GUA_oath": {
   "kind": "goal",
   "name": "대통령 선서",
-  "title": "File:Serment du Jeu de Paume - Jacques-Louis David.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Serment_du_Jeu_de_Paume_-_Jacques-Louis_David.jpg",
+  "title": "File:U S Army Maj Gen Todd Wasmund awarded Legion of Honor (8311513).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:U_S_Army_Maj_Gen_Todd_Wasmund_awarded_Legion_of_Honor_(8311513).jpg",
   "licence": "Public domain",
-  "artist": "Jacques-Louis David",
-  "query": "oath France"
+  "artist": "",
+  "query": "Legion of Honour insignia",
+  "object": true
  },
  "LR_GUA_civilian_control": {
   "kind": "goal",
   "name": "군의 문민 통제",
-  "title": "File:Britain's civilian volunteers; (1917) (14596706520).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Britain%27s_civilian_volunteers;_(1917)_(14596706520).jpg",
-  "licence": "No restrictions",
-  "artist": "Bowser, Thekla. [from old catalog]",
-  "query": "civilian control France"
+  "title": "Cleveland 1963.516: Writing Stand with Inkwells",
+  "page": "https://clevelandart.org/art/1963.516",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_GUA_suffrage": {
   "kind": "goal",
   "name": "보통선거 보장",
-  "title": "File:Poster by Anna Soós Korànyi for the Seventh Conference of the International Woman Suffrage Alliance.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Poster_by_Anna_So%C3%B3s_Kor%C3%A0nyi_for_the_Seventh_Conference_of_the_International_Woman_Suffrage_Alliance.jpg",
-  "licence": "Public domain",
-  "artist": "Anna Soós Korànyi / Adam Cuerden",
-  "query": "suffrage France"
+  "title": "File:Leonardo's printing press.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Leonardo%27s_printing_press.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "printing press model",
+  "object": true
  },
  "LR_GUA_social_insurance": {
   "kind": "goal",
@@ -929,11 +1006,12 @@
  "LR_GUA_citizen_army": {
   "kind": "goal",
   "name": "시민의 군대",
-  "title": "File:Vilnius. Citizens of Vilnius greeting the Lithuanian army, a postcard, 1939.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Vilnius._Citizens_of_Vilnius_greeting_the_Lithuanian_army,_a_postcard,_1939.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "citizen army France"
+  "title": "File:Helmets with insignia, World War I, 26th Yankee Division - Fort Devens Museum - DSC07192.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Helmets_with_insignia,_World_War_I,_26th_Yankee_Division_-_Fort_Devens_Museum_-_DSC07192.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "infantry helmet museum",
+  "object": true
  },
  "LR_GUA_rhine": {
   "kind": "goal",
@@ -965,389 +1043,432 @@
  "LR_GUA_amnesty": {
   "kind": "goal",
   "name": "대사면",
-  "title": "File:Amnesty International Taiwan ask for release of Chung Ting-pang.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Amnesty_International_Taiwan_ask_for_release_of_Chung_Ting-pang.jpg",
-  "licence": "Public domain",
-  "artist": "美国之音张永泰拍摄",
-  "query": "amnesty France"
+  "title": "Cleveland 1993.6.b: Vase, Feuille d'Eau (lid)",
+  "page": "https://clevelandart.org/art/1993.6.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_GUA_league_of_republics": {
   "kind": "goal",
   "name": "공화국 동맹",
-  "title": "File:Ligue de la Jeune République - organisation en 1929.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ligue_de_la_Jeune_R%C3%A9publique_-_organisation_en_1929.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "league republics France"
+  "title": "Cleveland 1921.1724.b: American Red Cross War Council Medal (reverse)",
+  "page": "https://clevelandart.org/art/1921.1724.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_ORL_youth": {
   "kind": "goal",
   "name": "국민청년단",
-  "title": "File:Head of a Youth MET DP353844.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Head_of_a_Youth_MET_DP353844.jpg",
+  "title": "File:Old Threshers Miehle Press Drum.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Threshers_Miehle_Press_Drum.jpg",
   "licence": "CC0",
   "artist": "",
-  "query": "youth France"
+  "query": "printing press model",
+  "object": true
  },
  "LR_ORL_veterans": {
   "kind": "goal",
   "name": "재향군인회",
-  "title": "File:Ramstein AB Airmen honor U.S. veterans in Belgium 171111-F-ZF730-0486.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ramstein_AB_Airmen_honor_U.S._veterans_in_Belgium_171111-F-ZF730-0486.jpg",
-  "licence": "Public domain",
-  "artist": "U.S. Air Force photo by airman 1st Class Joshua Magbanua, 86th Airlift Wing Public Affairs",
-  "query": "veterans France"
+  "title": "File:Roman Auxillary Infantry Helmet, c. 98-117 AD (43219328511).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Roman_Auxillary_Infantry_Helmet,_c._98-117_AD_(43219328511).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "infantry helmet museum",
+  "object": true
  },
  "LR_ORL_tear_up_treaty": {
   "kind": "goal",
   "name": "강화 조약 파기",
-  "title": "File:Stories of persons and places in Europe (1887) (14760808766).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Stories_of_persons_and_places_in_Europe_(1887)_(14760808766).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "tear up treaty France"
+  "title": "File:Seal Matrix with Abbot William of Gross St. Martin and Saint Martin MET sf17-190-143s1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Seal_Matrix_with_Abbot_William_of_Gross_St._Martin_and_Saint_Martin_MET_sf17-190-143s1.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "seal matrix museum",
+  "object": true
  },
  "LR_ORL_secret_staff": {
   "kind": "goal",
   "name": "비밀 참모본부",
-  "title": "File:Secrets of the camouflage artists - by Helen Johns Kirtland, Leslie's staff correspondent. LCCN2005676176.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Secrets_of_the_camouflage_artists_-_by_Helen_Johns_Kirtland,_Leslie%27s_staff_correspondent._LCCN2005676176.jpg",
-  "licence": "Public domain",
-  "artist": "Kirtland, Helen Johns, photographer",
-  "query": "secret staff France"
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020818.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020818.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_ORL_autarky": {
   "kind": "goal",
   "name": "자급자족 경제",
-  "title": "File:Pemerintahan Jambi Zaman Penjajahan Jepang.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Pemerintahan_Jambi_Zaman_Penjajahan_Jepang.jpg",
+  "title": "File:Köhler Regalia of Augustus III.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:K%C3%B6hler_Regalia_of_Augustus_III.jpg",
   "licence": "Public domain",
-  "artist": "Departemen Pendidikan dan Kebudayaan, Direktorat Jenderal Kebudayaan, Direktorat Sejarah dan Nilai Tradisional, Proyek Inventarisasi dan Dokumentasi Kebudayaan Daerah",
-  "query": "autarky"
+  "artist": "",
+  "query": "crown regalia museum",
+  "object": true
  },
  "LR_BOU_reims": {
   "kind": "goal",
   "name": "랭스 대관식",
-  "title": "File:Saint-Remi Reims Rose Façade 05 02 2012.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Saint-Remi_Reims_Rose_Fa%C3%A7ade_05_02_2012.jpg",
+  "title": "File:Köler Regalia of Augustus III and Maria Josepha 01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:K%C3%B6ler_Regalia_of_Augustus_III_and_Maria_Josepha_01.jpg",
   "licence": "CC0",
-  "artist": "Vassil",
-  "query": "reims France"
+  "artist": "",
+  "query": "crown regalia museum",
+  "object": true
  },
  "LR_BOU_church": {
   "kind": "goal",
   "name": "교회와의 화해",
-  "title": "File:Church of St. John the Baptist, Konjic.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Church_of_St._John_the_Baptist,_Konjic.jpg",
+  "title": "Cleveland 1993.6: Vase Feuille d'Eau",
+  "page": "https://clevelandart.org/art/1993.6",
   "licence": "CC0",
-  "artist": "Bdx",
-  "query": "church France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_BOU_peers": {
   "kind": "goal",
   "name": "귀족원 부활",
-  "title": "File:House of Peers - trial of ex-ministers.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:House_of_Peers_-_trial_of_ex-ministers.jpg",
-  "licence": "Public domain",
-  "artist": "Pugin, Augustus, 1762-1832 (contributor)\nFenner Sears (engraver)\nNash, J. (creator)",
-  "query": "peers France"
+  "title": "Cleveland 1961.172.2: Inkwell ",
+  "page": "https://clevelandart.org/art/1961.172.2",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_BOU_colonial_talks": {
   "kind": "goal",
   "name": "식민지 반환 협상",
-  "title": "File:(Photograph of General Dwight D. Eisenhower Talking with General Pierre Magnan and General Jean de Lattre de Tassigny) - DPLA - 5c05f0505f20efd81a152ee61db83b14.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:(Photograph_of_General_Dwight_D._Eisenhower_Talking_with_General_Pierre_Magnan_and_General_Jean_de_Lattre_de_Tassigny)_-_DPLA_-_5c05f0505f20efd81a152ee61db83b14.jpg",
-  "licence": "Public domain",
-  "artist": "Department of Defense. Department of the Army. U.S. Army Materiel Command. U.S. Army Pictorial Center. (04/01/1964 - 06/30/1970)",
-  "query": "colonial talks France"
+  "title": "File:Köler Regalia of Augustus III of Poland 03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:K%C3%B6ler_Regalia_of_Augustus_III_of_Poland_03.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "crown regalia museum",
+  "object": true
  },
  "LR_BOU_mediterranean_pact": {
   "kind": "goal",
   "name": "지중해 해군 협정",
-  "title": "File:Arthur and Fritz Kahn Collection 1889-1932 (19717811064).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Arthur_and_Fritz_Kahn_Collection_1889-1932_(19717811064).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "mediterranean pact France"
+  "title": "File:Monnaie - Sextant, bronze, Obulco, Ibérie - btv1b10302021f (1 of 2).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Sextant,_bronze,_Obulco,_Ib%C3%A9rie_-_btv1b10302021f_(1_of_2).jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "sextant antique",
+  "object": true
  },
  "LR_BOU_latin_league": {
   "kind": "goal",
   "name": "라틴 왕가 동맹",
-  "title": "File:The League of United Latin American Citizens, one of the oldest and largest Latino organizations in the United States, urges immigrants in the community to vote, in Des Moines, Iowa.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_League_of_United_Latin_American_Citizens,_one_of_the_oldest_and_largest_Latino_organizations_in_the_United_States,_urges_immigrants_in_the_community_to_vote,_in_Des_Moines,_Iowa.jpg",
-  "licence": "Public domain",
-  "artist": "Voice of America",
-  "query": "latin league France"
+  "title": "Cleveland 1921.1724: American Red Cross War Council Medal",
+  "page": "https://clevelandart.org/art/1921.1724",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_BOU_family_council": {
   "kind": "goal",
   "name": "왕가 가족 회의",
-  "title": "File:Hristo Adzharov 33rd degree patent, Supreme Council of France, 1936.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Hristo_Adzharov_33rd_degree_patent,_Supreme_Council_of_France,_1936.jpg",
-  "licence": "Public domain",
-  "artist": "Suprême Conseil de France",
-  "query": "family council France"
+  "title": "File:Tsuyama Railroad Educational Museum, shako-1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsuyama_Railroad_Educational_Museum,_shako-1.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "shako museum",
+  "object": true
  },
  "LR_COM_red_guards": {
   "kind": "goal",
   "name": "노동자 민병대",
-  "title": "File:Lucile Foullon-Vachot - Red lancer of the French imperial guard.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Lucile_Foullon-Vachot_-_Red_lancer_of_the_French_imperial_guard.jpg",
+  "title": "File:A rare Safavid oil painting of an African soldier, Persia, Isfahan, circa 1680-90.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:A_rare_Safavid_oil_painting_of_an_African_soldier,_Persia,_Isfahan,_circa_1680-90.jpg",
   "licence": "Public domain",
-  "artist": "Lucile Foullon-Vachot",
-  "query": "red guards France"
+  "artist": "",
+  "query": "soldier backpack museum",
+  "object": true
  },
  "LR_COM_land_reform": {
   "kind": "goal",
   "name": "토지 개혁",
-  "title": "File:RVN Bonds From Land Reform Ministry (1970) Vietcollections 02.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:RVN_Bonds_From_Land_Reform_Ministry_(1970)_Vietcollections_02.jpg",
+  "title": "File:Order of the Red Banner of Labour (front).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Order_of_the_Red_Banner_of_Labour_(front).jpg",
   "licence": "Public domain",
-  "artist": "The Ministry of Land Reform, Republic of Vietnam (South Vietnam).",
-  "query": "land reform France"
+  "artist": "",
+  "query": "red flag banner museum",
+  "object": true
  },
  "LR_COM_economic_plan": {
   "kind": "goal",
   "name": "경제 계획",
-  "title": "File:Inventaire communal 1988. 55, Meuse - Institut national de la statistique et des études économiques ; Service central des enquêtes et études statistiques - bpt6k91177799 (24 of 62).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Inventaire_communal_1988._55,_Meuse_-_Institut_national_de_la_statistique_et_des_%C3%A9tudes_%C3%A9conomiques_;_Service_central_des_enqu%C3%AAtes_et_%C3%A9tudes_statistiques_-_bpt6k91177799_(24_of_62).jpg",
+  "title": "File:Patent model of sewing machine, 1870.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Patent_model_of_sewing_machine,_1870.jpg",
   "licence": "Public domain",
-  "artist": "Institut national de la statistique et des études économiques (France). Fonction indéterminée\n\nFrance. Ministère de l'agriculture. Service central des enquêtes et études statistiques. Auteur du texte",
-  "query": "economic plan France"
+  "artist": "",
+  "query": "machine model museum",
+  "object": true
  },
  "LR_COM_international": {
   "kind": "goal",
   "name": "혁명 인터내셔널",
-  "title": "File:Man talking on the phone in Montréal-Pierre Elliott Trudeau International Airport 006.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Man_talking_on_the_phone_in_Montr%C3%A9al-Pierre_Elliott_Trudeau_International_Airport_006.jpg",
+  "title": "Cleveland 1921.1724.a: American Red Cross War Council Medal (obverse)",
+  "page": "https://clevelandart.org/art/1921.1724.a",
   "licence": "CC0",
-  "artist": "Wilfredor",
-  "query": "international France"
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_COM_russian_treaty": {
   "kind": "goal",
   "name": "러시아 공화국과의 조약",
-  "title": "File:Treaty of Nerchinsk (1689).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Treaty_of_Nerchinsk_(1689).jpg",
-  "licence": "Public domain",
-  "artist": "Governments of Russia and China",
-  "query": "russian treaty France"
+  "title": "Cleveland 1919.899: Medal of Claude Joseph Rouget de L'Isle (1760-1836)",
+  "page": "https://clevelandart.org/art/1919.899",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_COM_peoples_army": {
   "kind": "goal",
   "name": "인민군 창설",
-  "title": "File:Pierre Choderlos de Laclos - Antoine-Alexandre Morel.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Pierre_Choderlos_de_Laclos_-_Antoine-Alexandre_Morel.jpg",
-  "licence": "Public domain",
-  "artist": "Antoine-Alexandre Morel",
-  "query": "peoples army France"
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020821.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020821.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_FRA_synthetic_fuel": {
   "kind": "goal",
   "name": "합성 연료",
-  "title": "File:Synthetic fuel load.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Synthetic_fuel_load.jpg",
-  "licence": "Public domain",
-  "artist": "Samuel King Jr.",
-  "query": "synthetic fuel"
+  "title": "Cleveland 2018.281: Peacock Table Lamp",
+  "page": "https://clevelandart.org/art/2018.281",
+  "licence": "CC0",
+  "artist": "",
+  "query": "oil lamp antique",
+  "object": true
  },
  "LR_FRA_artillery_school": {
   "kind": "goal",
   "name": "포병 학교",
-  "title": "File:800th Aero Squadron - 1st Artillery Observation School - Mascot.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:800th_Aero_Squadron_-_1st_Artillery_Observation_School_-_Mascot.jpg",
-  "licence": "Public domain",
-  "artist": "Air Service, United States Army photograph",
-  "query": "artillery school France"
+  "title": "File:Artillery shell tip, Western Europe, World War I, c. 1914-1918 - Spurlock Museum, UIUC - DSC05945.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_shell_tip,_Western_Europe,_World_War_I,_c._1914-1918_-_Spurlock_Museum,_UIUC_-_DSC05945.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_FRA_mobile_war": {
   "kind": "goal",
   "name": "기동전 연구",
-  "title": "File:Algernon Talmage-A Mobile Veterinary Unit in France (CWM 19710261-0596).jpeg",
-  "page": "https://commons.wikimedia.org/wiki/File:Algernon_Talmage-A_Mobile_Veterinary_Unit_in_France_(CWM_19710261-0596).jpeg",
+  "title": "File:Panther tank Model (World Tank Museum).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Panther_tank_Model_(World_Tank_Museum).jpg",
   "licence": "Public domain",
-  "artist": "Algernon Talmage",
-  "query": "mobile war France"
+  "artist": "",
+  "query": "tank model museum",
+  "object": true
  },
  "LR_FRA_revenge_army": {
   "kind": "goal",
   "name": "복수의 군대",
-  "title": "File:Haiti - Revolution, 1791-1804) Revenge taken by the Black Army for the cruelties practised...by the French LCCN2006685880.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Haiti_-_Revolution,_1791-1804)_Revenge_taken_by_the_Black_Army_for_the_cruelties_practised...by_the_French_LCCN2006685880.jpg",
+  "title": "File:Lebel Model 1886-93 Rifle-NMAH-AHB2015q036844.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Lebel_Model_1886-93_Rifle-NMAH-AHB2015q036844.jpg",
   "licence": "Public domain",
-  "artist": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
-  "query": "revenge army France"
+  "artist": "",
+  "query": "Lebel rifle",
+  "object": true
  },
  "LR_FRA_radio_net": {
   "kind": "goal",
   "name": "무선 통신망",
-  "title": "File:Radio Nova News.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Radio_Nova_News.jpg",
+  "title": "File:David Jones' entry of a radio float in a procession, c. 1930s, by Sam Hood (6960878263).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:David_Jones%27_entry_of_a_radio_float_in_a_procession,_c._1930s,_by_Sam_Hood_(6960878263).jpg",
   "licence": "Public domain",
-  "artist": "Nova",
-  "query": "radio net France"
+  "artist": "",
+  "query": "radio receiver 1930s",
+  "object": true
  },
  "LR_FRA_private_capital": {
   "kind": "goal",
   "name": "민간 자본 유치",
-  "title": "File:The public and private history of Napoleon the Third, emperor of the French; with biographical notices of his most distinguished ministers, generals, relatives, and favorites, and a narrative of the (14597950299).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_public_and_private_history_of_Napoleon_the_Third,_emperor_of_the_French;_with_biographical_notices_of_his_most_distinguished_ministers,_generals,_relatives,_and_favorites,_and_a_narrative_of_the_(14597950299).jpg",
+  "title": "File:William Wade alias Nursay, arrested for stealing money (16444304673).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:William_Wade_alias_Nursay,_arrested_for_stealing_money_(16444304673).jpg",
   "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "private capital France"
+  "artist": "",
+  "query": "money chest museum",
+  "object": true
  },
  "LR_ORL_calais": {
   "kind": "goal",
   "name": "노르파드칼레 재무장",
-  "title": "File:Calais Le Boulevard Jacquard et l'Hotel de Ville.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Calais_Le_Boulevard_Jacquard_et_l%27Hotel_de_Ville.jpg",
+  "title": "File:Cannonball from the Battle of Wilson's Creek.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Cannonball_from_the_Battle_of_Wilson%27s_Creek.jpg",
   "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "calais France"
+  "artist": "",
+  "query": "cannonball museum",
+  "object": true
  },
  "LR_ORL_algeria": {
   "kind": "goal",
   "name": "알제리 진압",
-  "title": "File:Algerian war collage wikipedia.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Algerian_war_collage_wikipedia.jpg",
-  "licence": "Public domain",
-  "artist": "Madame Grinderche",
-  "query": "algeria France"
+  "title": "File:Artillery Shells (9735581224).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_Shells_(9735581224).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_BOU_family_pact": {
   "kind": "goal",
   "name": "가문 협약",
-  "title": "File:Family-compact-1833.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Family-compact-1833.jpg",
+  "title": "File:Sébastien Bourdon (1616-1671) (follower of) - Young Knight Holding Insignia - LDOSJ1880 - Museum of the Order of St John.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A9bastien_Bourdon_(1616-1671)_(follower_of)_-_Young_Knight_Holding_Insignia_-_LDOSJ1880_-_Museum_of_the_Order_of_St_John.jpg",
   "licence": "Public domain",
-  "artist": "William Lyon Mackenzie",
-  "query": "family pact France"
+  "artist": "",
+  "query": "order insignia museum",
+  "object": true
  },
  "LR_BOU_two_sicilies": {
   "kind": "goal",
   "name": "나폴리의 사촌",
-  "title": "File:Maria Amalia of Naples and Sicily - Queen of the French.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Maria_Amalia_of_Naples_and_Sicily_-_Queen_of_the_French.jpg",
-  "licence": "Public domain",
-  "artist": "Frédéric Millet",
-  "query": "two sicilies France"
+  "title": "Cleveland 1987.195: Medal of Anne of Austria (obverse) and (reverse)",
+  "page": "https://clevelandart.org/art/1987.195",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_BOU_rhine": {
   "kind": "goal",
   "name": "라인강으로",
-  "title": "File:French Infantry Machine Guns.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:French_Infantry_Machine_Guns.jpg",
-  "licence": "Public domain",
-  "artist": "George &amp; Kleine.",
-  "query": "French infantry 1914"
+  "title": "File:An Officer Holding a Ceremonial Sword MET SF-1975-1-795.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:An_Officer_Holding_a_Ceremonial_Sword_MET_SF-1975-1-795.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "officer sword museum",
+  "object": true
  },
  "LR_BOU_channel": {
   "kind": "goal",
   "name": "해협 건너로",
-  "title": "File:WWII, Europe, France, \"U.S. landing barge in English Channel en route to France\" - NARA - 196292.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:WWII,_Europe,_France,_%22U.S._landing_barge_in_English_Channel_en_route_to_France%22_-_NARA_-_196292.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author or not provided",
-  "query": "channel France"
+  "title": "File:-Union Cavalry Officer Displaying Sword, Holding Hat, Seated in Studio- MET DP265332.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:-Union_Cavalry_Officer_Displaying_Sword,_Holding_Hat,_Seated_in_Studio-_MET_DP265332.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "officer sword museum",
+  "object": true
  },
  "LR_COM_algerian_comrades": {
   "kind": "goal",
   "name": "알제리 동지들",
-  "title": "File:Djamila Bouhired in Syria 1962-1.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Djamila_Bouhired_in_Syria_1962-1.jpg",
+  "title": "File:Three channel microphone amplifier Olympia 40-3 made in Yleisradio's workshop at the end of 1930s, ca. 1942. (15300897369).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Three_channel_microphone_amplifier_Olympia_40-3_made_in_Yleisradio%27s_workshop_at_the_end_of_1930s,_ca._1942._(15300897369).jpg",
   "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "algerian comrades"
+  "artist": "",
+  "query": "microphone 1930s",
+  "object": true
  },
  "LR_COM_rhine": {
   "kind": "goal",
   "name": "라인강으로",
-  "title": "File:French Infantry LCCN2014696861.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:French_Infantry_LCCN2014696861.jpg",
+  "title": "File:Drum, 1861-1865 - North Carolina Museum of History - DSC06012.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Drum,_1861-1865_-_North_Carolina_Museum_of_History_-_DSC06012.JPG",
   "licence": "Public domain",
-  "artist": "Bain News Service, publisher",
-  "query": "French infantry 1914"
+  "artist": "",
+  "query": "military drum museum",
+  "object": true
  },
  "LR_COM_channel": {
   "kind": "goal",
   "name": "해협 건너로",
-  "title": "File:The British Channel including the coasts of England and France (BM 1871,1209.5273).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_British_Channel_including_the_coasts_of_England_and_France_(BM_1871,1209.5273).jpg",
-  "licence": "Public domain",
-  "artist": "Print made by: Anonymous\n\nPublished by: Alexander Hogg",
-  "query": "channel France"
+  "title": "File:Seated Male Deity Holding a Cuirass (Chest Armour) last quarter of the 10th–first half of the 11th century.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Seated_Male_Deity_Holding_a_Cuirass_(Chest_Armour)_last_quarter_of_the_10th%E2%80%93first_half_of_the_11th_century.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "cuirass armour museum",
+  "object": true
  },
  "LR_JAC_social_contract": {
   "kind": "goal",
   "name": "사회 계약",
-  "title": "File:Lion's mane jellyfish in Gullmarn fjord at Sämstad 3.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Lion%27s_mane_jellyfish_in_Gullmarn_fjord_at_S%C3%A4mstad_3.jpg",
+  "title": "File:Microphone - Bayernhof Museum - DSC06319.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Microphone_-_Bayernhof_Museum_-_DSC06319.JPG",
   "licence": "CC0",
-  "artist": "W.carter",
-  "query": "social contract France"
+  "artist": "",
+  "query": "microphone 1930s",
+  "object": true
  },
  "LR_JAC_labour_code": {
   "kind": "goal",
   "name": "노동법",
-  "title": "File:Organisationsbuc00nati orig 0291 ORGANISATIONSBUCH DER NSDAP 1936 Tafel 27 Deutsche Arbeitsfront DAF Uniform NSBO.-Mann Werkschar-Mann DAF.-Walter und KdF-Wart German Labour Front Nazi Germany No known copyright Cropped.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Organisationsbuc00nati_orig_0291_ORGANISATIONSBUCH_DER_NSDAP_1936_Tafel_27_Deutsche_Arbeitsfront_DAF_Uniform_NSBO.-Mann_Werkschar-Mann_DAF.-Walter_und_KdF-Wart_German_Labour_Front_Nazi_Germany_No_known_copyright_Cropped.jpg",
-  "licence": "Public domain",
-  "artist": "Uncredited illustrator/designer",
-  "query": "labour code France"
+  "title": "Cleveland 2018.289: Poppy Inkwell",
+  "page": "https://clevelandart.org/art/2018.289",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_JAC_reclaim_algeria": {
   "kind": "goal",
   "name": "알제리 수복 결정",
-  "title": "File:Tientsin. Japanese troops 1930s.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Tientsin._Japanese_troops_1930s.jpg",
-  "licence": "Public domain",
-  "artist": "Tientsin press photo, 1930s",
-  "query": "troops marching 1930s"
+  "title": "File:Artillery Shells (9735589518).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_Shells_(9735589518).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_JAC_channel": {
   "kind": "goal",
   "name": "해협 건너로",
-  "title": "File:Jungle channel.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Jungle_channel.jpg",
+  "title": "File:Cuirass MET sf14.25.868 005.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Cuirass_MET_sf14.25.868_005.jpg",
   "licence": "CC0",
-  "artist": "Senator BNB",
-  "query": "channel"
+  "artist": "",
+  "query": "cuirass armour museum",
+  "object": true
  },
  "LR_JAC_majority": {
   "kind": "goal",
   "name": "의회 과반",
-  "title": "File:The glorius minority in 1763, with the Head of the Majority Blason'd LCCN2006682240.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_glorius_minority_in_1763,_with_the_Head_of_the_Majority_Blason%27d_LCCN2006682240.jpg",
-  "licence": "Public domain",
-  "artist": "British Cartoon Prints Collection",
-  "query": "majority France"
+  "title": "Cleveland 1954.798: Inkwell and Candlestick with the Infant Hercules Killing the Serpents",
+  "page": "https://clevelandart.org/art/1954.798",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_GIR_cabinet": {
   "kind": "goal",
   "name": "지롱드 내각",
-  "title": "File:Cabinet de Broglie I.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Cabinet_de_Broglie_I.jpg",
+  "title": "File:French School - Portrait of a couple, full-length, a hat with a tricolour cockade.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:French_School_-_Portrait_of_a_couple,_full-length,_a_hat_with_a_tricolour_cockade.jpg",
   "licence": "Public domain",
-  "artist": "L'Univers illustré",
-  "query": "cabinet France"
+  "artist": "",
+  "query": "tricolour cockade",
+  "object": true
  },
  "LR_GIR_algeria": {
   "kind": "goal",
   "name": "알제리 진압",
-  "title": "File:Bona, Algeria-LCCN2001697857.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bona,_Algeria-LCCN2001697857.jpg",
-  "licence": "Public domain",
-  "artist": "Photochrom Print Collection",
-  "query": "algeria France"
+  "title": "File:Artillery Shells (9735587386).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Artillery_Shells_(9735587386).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_MAR_algeria": {
   "kind": "goal",
   "name": "알제리 진압",
-  "title": "File:Sétif (Algeria). - Grand Hôtel de France..jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A9tif_(Algeria)._-_Grand_H%C3%B4tel_de_France..jpg",
+  "title": "File:Miscellany - Museum of the Ancient and Honorable Artillery Company of Massachusetts - IMG 6993.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Miscellany_-_Museum_of_the_Ancient_and_Honorable_Artillery_Company_of_Massachusetts_-_IMG_6993.JPG",
   "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "algeria France"
+  "artist": "",
+  "query": "artillery shell museum",
+  "object": true
  },
  "LR_MAR_rhine": {
   "kind": "goal",
@@ -1361,38 +1482,42 @@
  "LR_MAR_majority": {
   "kind": "goal",
   "name": "의회 과반",
-  "title": "File:The Glorious Minority in 1763, With the Head of the Majority Blason'd (BM 1868,0808.4287).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_Glorious_Minority_in_1763,_With_the_Head_of_the_Majority_Blason%27d_(BM_1868,0808.4287).jpg",
-  "licence": "Public domain",
+  "title": "Cleveland 2008.64: Inkwell",
+  "page": "https://clevelandart.org/art/2008.64",
+  "licence": "CC0",
   "artist": "",
-  "query": "majority France"
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_NAP_civil_code": {
   "kind": "goal",
   "name": "나폴레옹 법전",
-  "title": "File:Code civil illustré article 213.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Code_civil_illustr%C3%A9_article_213.jpg",
-  "licence": "Public domain",
-  "artist": "Henry Monnier",
-  "query": "civil code France"
+  "title": "Cleveland 2008.67: Inkwell",
+  "page": "https://clevelandart.org/art/2008.67",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_NAP_concordat": {
   "kind": "goal",
   "name": "정교 협약",
-  "title": "File:Allégorie du Concordat de 1801.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:All%C3%A9gorie_du_Concordat_de_1801.jpg",
-  "licence": "Public domain",
-  "artist": "Pierre Joseph Célestin François",
-  "query": "concordat France"
+  "title": "Cleveland 1997.289: Vase",
+  "page": "https://clevelandart.org/art/1997.289",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_GUA_constitution": {
   "kind": "goal",
   "name": "공화국 헌법",
-  "title": "File:France 1793-A 24 Livres.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:France_1793-A_24_Livres.jpg",
+  "title": "File:U S Army Maj Gen Todd Wasmund awarded Legion of Honor (8311508).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:U_S_Army_Maj_Gen_Todd_Wasmund_awarded_Legion_of_Honor_(8311508).jpg",
   "licence": "Public domain",
-  "artist": "National Museum of American History",
-  "query": "constitution France"
+  "artist": "",
+  "query": "Legion of Honour insignia",
+  "object": true
  },
  "LR_GUA_channel": {
   "kind": "goal",
@@ -1406,56 +1531,62 @@
  "LR_ORL_press_control": {
   "kind": "goal",
   "name": "언론 통제",
-  "title": "File:Election night 2016 VOA control room.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Election_night_2016_VOA_control_room.jpg",
-  "licence": "Public domain",
-  "artist": "Voice of America",
-  "query": "press control France"
+  "title": "Cleveland 1961.172.3: Inkwell ",
+  "page": "https://clevelandart.org/art/1961.172.3",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_ORL_latin_front": {
   "kind": "goal",
   "name": "라틴 전선",
-  "title": "File:Trumpet and crwth, Bibliothèque nationale de France, Latin 2508, folio IIv.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Trumpet_and_crwth,_Biblioth%C3%A8que_nationale_de_France,_Latin_2508,_folio_IIv.jpg",
+  "title": "File:Medal of Honor Museum leaders visit deployed Airmen (8718209).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Medal_of_Honor_Museum_leaders_visit_deployed_Airmen_(8718209).jpg",
   "licence": "Public domain",
-  "artist": "unknown illustrator, France, Abbazia di Farfa (Abbey of Farfa), 12th century A.D.",
-  "query": "latin front France"
+  "artist": "",
+  "query": "military medal museum",
+  "object": true
  },
  "LR_COM_council": {
   "kind": "goal",
   "name": "코뮌 평의회",
-  "title": "File:Folio 157. Council presided by Selîm I (Bibliothèque nationale de France, Supplément turc 524).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Folio_157._Council_presided_by_Sel%C3%AEm_I_(Biblioth%C3%A8que_nationale_de_France,_Suppl%C3%A9ment_turc_524).jpg",
-  "licence": "Public domain",
-  "artist": "1640-1660 artist",
-  "query": "council France"
+  "title": "File:Old Threshers Miehle Press End.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Old_Threshers_Miehle_Press_End.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "printing press model",
+  "object": true
  },
  "LR_JAC_forty_hours": {
   "kind": "goal",
   "name": "주 40시간",
-  "title": "File:The historical monuments of France (1898) (14577633749).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_historical_monuments_of_France_(1898)_(14577633749).jpg",
-  "licence": "No restrictions",
-  "artist": "Hunnewell, James Frothingham, 1832-1910",
-  "query": "forty hours France"
+  "title": "Cleveland 1961.172.1: Inkwell",
+  "page": "https://clevelandart.org/art/1961.172.1",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_JAC_paid_leave": {
   "kind": "goal",
   "name": "유급 휴가",
-  "title": "File:France's ex-prime minister visits President Roosevelt, Washington, D.C., September 8. Albert Sarraut, former Prime Minister of France ? leaving the White House after having paid a visit to LCCN2016878422.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:France%27s_ex-prime_minister_visits_President_Roosevelt,_Washington,_D.C.,_September_8._Albert_Sarraut,_former_Prime_Minister_of_France_%3F_leaving_the_White_House_after_having_paid_a_visit_to_LCCN2016878422.jpg",
-  "licence": "Public domain",
-  "artist": "Harris &amp; Ewing, photographer",
-  "query": "paid leave France"
+  "title": "Cleveland 2022.37: Painted Drum",
+  "page": "https://clevelandart.org/art/2022.37",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_JAC_laicite": {
   "kind": "goal",
   "name": "정교분리 강화",
-  "title": "File:Rue de la Laïcité, Nantes.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Rue_de_la_La%C3%AFcit%C3%A9,_Nantes.jpg",
+  "title": "File:1775-1800, Gould-style compound microscope, Bithray, England - Golub Collection of Antique Microscopes - DSC04733.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:1775-1800,_Gould-style_compound_microscope,_Bithray,_England_-_Golub_Collection_of_Antique_Microscopes_-_DSC04733.JPG",
   "licence": "CC0",
-  "artist": "Kalepom",
-  "query": "laicite France"
+  "artist": "",
+  "query": "microscope antique",
+  "object": true
  },
  "LR_JAC_bank_reform": {
   "kind": "goal",
@@ -1469,11 +1600,12 @@
  "LR_JAC_arms_nationalised": {
   "kind": "goal",
   "name": "군수 산업 국유화",
-  "title": "File:Women working at Salisbury Munitions Factory(GN13533).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Women_working_at_Salisbury_Munitions_Factory(GN13533).jpg",
+  "title": "Cleveland 1923.652: Wall Tile–Hunter with Rifle",
+  "page": "https://clevelandart.org/art/1923.652",
   "licence": "CC0",
-  "artist": "State Government Photographer",
-  "query": "munitions factory"
+  "artist": "",
+  "query": "rifle museum",
+  "object": true
  },
  "LR_GIR_bourse": {
   "kind": "goal",
@@ -1532,209 +1664,232 @@
  "LR_MAR_senate": {
   "kind": "goal",
   "name": "상원 복원",
-  "title": "File:A partir de 1911, parsuite de notre achat, la société Orenstein et Koppel, de Fives-Lille, déjà française de forme.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:A_partir_de_1911,_parsuite_de_notre_achat,_la_soci%C3%A9t%C3%A9_Orenstein_et_Koppel,_de_Fives-Lille,_d%C3%A9j%C3%A0_fran%C3%A7aise_de_forme.jpg",
-  "licence": "Public domain",
-  "artist": "SÉNAT-- SÉANCE DU 22 JUILLET 1915",
-  "query": "senate France"
+  "title": "Cleveland 2008.66: Inkwell",
+  "page": "https://clevelandart.org/art/2008.66",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_MAR_civil_law": {
   "kind": "goal",
   "name": "재산권 수호법",
-  "title": "File:Code civil avec les discours, 1803.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Code_civil_avec_les_discours,_1803.jpg",
-  "licence": "Public domain",
-  "artist": "unknown graphic artist",
-  "query": "civil law France"
+  "title": "File:1870 circa, binocular compound microscope, Henry Crouch, England - Golub Collection of Antique Microscopes - DSC04870.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:1870_circa,_binocular_compound_microscope,_Henry_Crouch,_England_-_Golub_Collection_of_Antique_Microscopes_-_DSC04870.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "microscope antique",
+  "object": true
  },
  "LR_MAR_church_schools": {
   "kind": "goal",
   "name": "교회 학교 복원",
-  "title": "File:Pupils & staff Nichee France (38174231505).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Pupils_%26_staff_Nichee_France_(38174231505).jpg",
-  "licence": "No restrictions",
-  "artist": "Mennonite Church USA Archives",
-  "query": "church schools France"
+  "title": "Cleveland 1993.6.a: Vase, Feuille d'Eau",
+  "page": "https://clevelandart.org/art/1993.6.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_MAR_gendarmerie": {
   "kind": "goal",
   "name": "헌병대 강화",
-  "title": "File:Gendarmerie abzeichen.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Gendarmerie_abzeichen.jpg",
-  "licence": "Public domain",
-  "artist": "Austrian Government/Ministry of Interior",
-  "query": "gendarmerie"
+  "title": "Cleveland 1949.564: The Small Playing Cards:  Second Suit:  Helmets:  Playing Card with King and Helmet",
+  "page": "https://clevelandart.org/art/1949.564",
+  "licence": "CC0",
+  "artist": "",
+  "query": "helmet museum",
+  "object": true
  },
  "LR_NAP_imperial_guard": {
   "kind": "goal",
   "name": "제국 근위대",
-  "title": "File:Imperial guards of the Nguyễn Dynasty during the Nam-Giao festival postcard.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Imperial_guards_of_the_Nguy%E1%BB%85n_Dynasty_during_the_Nam-Giao_festival_postcard.jpg",
-  "licence": "Public domain",
-  "artist": "Uncredited photographer (published before 1945).",
-  "query": "imperial guard France"
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020814.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020814.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_NAP_imperial_nobility": {
   "kind": "goal",
   "name": "제국 귀족",
-  "title": "File:Nobility Offering the Imperial Russian Children to Minerva LACMA M.2000.179.20.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Nobility_Offering_the_Imperial_Russian_Children_to_Minerva_LACMA_M.2000.179.20.jpg",
+  "title": "File:Medal of Honor Museum leaders visit deployed Airmen (8718208).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Medal_of_Honor_Museum_leaders_visit_deployed_Airmen_(8718208).jpg",
   "licence": "Public domain",
-  "artist": "Gabriel-Francois Doyen (France, Paris, 1726-1806)",
-  "query": "imperial nobility France"
+  "artist": "",
+  "query": "military medal museum",
+  "object": true
  },
  "LR_NAP_rhine_confederation": {
   "kind": "goal",
   "name": "라인 연방의 꿈",
-  "title": "File:Confederation of the Rhine swearing-in 1806.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Confederation_of_the_Rhine_swearing-in_1806.jpg",
-  "licence": "Public domain",
-  "artist": "Charles Motte (1785-1836)",
-  "query": "rhine confederation France"
+  "title": "File:Shades and globes. (1912) (14801531643).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Shades_and_globes._(1912)_(14801531643).jpg",
+  "licence": "No restrictions",
+  "artist": "",
+  "query": "antique globe museum",
+  "object": true
  },
  "LR_NAP_brother_kings": {
   "kind": "goal",
   "name": "형제들의 왕국",
-  "title": "File:Lives of the bachelor kings of England (1861) (14594971228).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Lives_of_the_bachelor_kings_of_England_(1861)_(14594971228).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "brother kings France"
+  "title": "Cleveland 1968.32: Medal Commemorating the Founding of Saarlouis",
+  "page": "https://clevelandart.org/art/1968.32",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_ORL_suppress": {
   "kind": "goal",
   "name": "공화주의자 색출",
-  "title": "File:2e édition. Diocèse de Lombez (au xviie siècle) divisé en V districts - btv1b8441964h.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:2e_%C3%A9dition._Dioc%C3%A8se_de_Lombez_(au_xviie_si%C3%A8cle)_divis%C3%A9_en_V_districts_-_btv1b8441964h.jpg",
-  "licence": "Public domain",
-  "artist": "Cazauran, Jean-Marie (1845-1910). Auteur du texte",
-  "query": "suppress France"
+  "title": "Cleveland 1961.172.2.a: Inkwell (bottle)",
+  "page": "https://clevelandart.org/art/1961.172.2.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_ORL_uproot": {
   "kind": "goal",
   "name": "혁명의 뿌리 뽑기",
-  "title": "File:Uprooted tree in Union Center, Wisconsin.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Uprooted_tree_in_Union_Center,_Wisconsin.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "uproot"
+  "title": "Cleveland 1916.720: Dagger (Gwálaa)",
+  "page": "https://clevelandart.org/art/1916.720",
+  "licence": "CC0",
+  "artist": "",
+  "query": "dagger museum",
+  "object": true
  },
  "LR_BOU_suppress": {
   "kind": "goal",
   "name": "왕실 경찰 강화",
-  "title": "File:Château de Lombers 1.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Lombers_1.jpg",
-  "licence": "Public domain",
-  "artist": "Inconnue (archives anciennes)",
-  "query": "suppress France"
+  "title": "Cleveland 1997.271: Inkwell",
+  "page": "https://clevelandart.org/art/1997.271",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_BOU_uproot": {
   "kind": "goal",
   "name": "혁명의 뿌리 뽑기",
-  "title": "File:French Alpine Troops Chasseurs Alpins Marching to Battle in Vosges.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:French_Alpine_Troops_Chasseurs_Alpins_Marching_to_Battle_in_Vosges.jpg",
-  "licence": "Public domain",
-  "artist": "chicagotribune",
-  "query": "chasseurs alpins"
+  "title": "File:Golden dagger with lions mycaenean collection NAMA 8710 Athens Greece.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Golden_dagger_with_lions_mycaenean_collection_NAMA_8710_Athens_Greece.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "dagger museum",
+  "object": true
  },
  "LR_MAR_suppress": {
   "kind": "goal",
   "name": "헌법 수호법",
-  "title": "File:Château de Lombers 2.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Lombers_2.jpg",
-  "licence": "Public domain",
-  "artist": "Inconnue (archives anciennes)",
-  "query": "suppress France"
+  "title": "Cleveland 2008.65: Inkwell",
+  "page": "https://clevelandart.org/art/2008.65",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_MAR_uproot": {
   "kind": "goal",
   "name": "급진파 해산",
-  "title": "File:Chasseurs Alpins à ski à Peïra-Cava.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Chasseurs_Alpins_%C3%A0_ski_%C3%A0_Pe%C3%AFra-Cava.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "chasseurs alpins"
+  "title": "File:Spring & Autumn Bronze Dagger 03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Spring_%26_Autumn_Bronze_Dagger_03.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "dagger museum",
+  "object": true
  },
  "LR_COM_suppress": {
   "kind": "goal",
   "name": "혁명 재판소",
-  "title": "File:Château de Lombers 3.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Lombers_3.jpg",
-  "licence": "Public domain",
-  "artist": "Inconnue (archives anciennes)",
-  "query": "suppress France"
+  "title": "Cleveland 1961.172: Inkwell Set",
+  "page": "https://clevelandart.org/art/1961.172",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_COM_uproot": {
   "kind": "goal",
   "name": "반혁명의 뿌리 뽑기",
-  "title": "File:Antibes, Bataillon 7 Chasseurs Alpins (J David, 1902).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Antibes,_Bataillon_7_Chasseurs_Alpins_(J_David,_1902).jpg",
-  "licence": "Public domain",
-  "artist": "Jules David",
-  "query": "chasseurs alpins"
+  "title": "File:Spring & Autumn Bronze Dagger 04.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Spring_%26_Autumn_Bronze_Dagger_04.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "dagger museum",
+  "object": true
  },
  "LR_JAC_suppress": {
   "kind": "goal",
   "name": "공안 경찰",
-  "title": "File:The evolution of France under the third republic (1897) (14595852419).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_evolution_of_France_under_the_third_republic_(1897)_(14595852419).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "suppress France"
+  "title": "Cleveland 1961.172.3.a: Inkwell (bottle)",
+  "page": "https://clevelandart.org/art/1961.172.3.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_JAC_uproot": {
   "kind": "goal",
   "name": "방데 평정",
-  "title": "File:Enemy Activities - German Revolution - Events in upper Silesia. French sentries and German Security Police guarding the road to Bogutschuetz, the area in which the Polish insurrectionists began their operations - NARA - 31478441.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Enemy_Activities_-_German_Revolution_-_Events_in_upper_Silesia._French_sentries_and_German_Security_Police_guarding_the_road_to_Bogutschuetz,_the_area_in_which_the_Polish_insurrectionists_began_their_operations_-_NARA_-_31478441.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author or not provided",
-  "query": "chasseurs alpins French Revolution"
+  "title": "File:Spring & Autumn Bronze Dagger 08.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Spring_%26_Autumn_Bronze_Dagger_08.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "dagger museum",
+  "object": true
  },
  "LR_GIR_suppress": {
   "kind": "goal",
   "name": "지방 분권 협약",
-  "title": "File:INF3-199 Salvage Save bones for aircraft production (plate of bones) Artist Eckersley-Lombers.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:INF3-199_Salvage_Save_bones_for_aircraft_production_(plate_of_bones)_Artist_Eckersley-Lombers.jpg",
-  "licence": "Public domain",
-  "artist": "Tom Eckersley and Eric Lombers",
-  "query": "suppress France"
+  "title": "Cleveland 1961.172.2.b: Inkwell (top to bottle)",
+  "page": "https://clevelandart.org/art/1961.172.2.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_GIR_uproot": {
   "kind": "goal",
   "name": "왕당파 해체",
-  "title": "File:Chasseurs alpins 1897.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Chasseurs_alpins_1897.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "chasseurs alpins"
+  "title": "File:Western Zhou Bronze Dagger 01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Western_Zhou_Bronze_Dagger_01.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "dagger museum",
+  "object": true
  },
  "LR_NAP_suppress": {
   "kind": "goal",
   "name": "푸셰의 경찰",
-  "title": "File:1871 evacuation of Bordj, Algeria.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:1871_evacuation_of_Bordj,_Algeria.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "suppress France"
+  "title": "File:Inkwell MET DP250576.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_DP250576.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_NAP_uproot": {
   "kind": "goal",
   "name": "왕당파의 종말",
-  "title": "File:Antibes, Bataillon 7 Chasseurs Alpins (J David, 1902) - détail.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Antibes,_Bataillon_7_Chasseurs_Alpins_(J_David,_1902)_-_d%C3%A9tail.jpg",
-  "licence": "Public domain",
-  "artist": "Jules David",
-  "query": "chasseurs alpins"
+  "title": "File:Western Zhou Bronze Dagger 03.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Western_Zhou_Bronze_Dagger_03.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "dagger museum",
+  "object": true
  },
  "LR_PET_marshal": {
   "kind": "goal",
   "name": "베르됭의 원수",
-  "title": "File:Concino-Concini.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Concino-Concini.jpg",
+  "title": "File:Medal of Honor Museum leaders visit deployed Airmen (8718214).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Medal_of_Honor_Museum_leaders_visit_deployed_Airmen_(8718214).jpg",
   "licence": "Public domain",
-  "artist": "Daniel Dumonstier",
-  "query": "marshal France"
+  "artist": "",
+  "query": "military medal museum",
+  "object": true
  },
  "LR_PET_labour_charter": {
   "kind": "goal",
@@ -1748,11 +1903,12 @@
  "LR_PET_family_code": {
   "kind": "goal",
   "name": "가족법",
-  "title": "File:Erica (Thorp) de Berry to Thorp family, 7 July 1918 (0718f8ed-737c-48d4-aecc-7c70ee10301f).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Erica_(Thorp)_de_Berry_to_Thorp_family,_7_July_1918_(0718f8ed-737c-48d4-aecc-7c70ee10301f).jpg",
-  "licence": "Public domain",
-  "artist": "Erica (Thorp) de Berry (1890-1943)",
-  "query": "family code France"
+  "title": "Cleveland 2002.33: Child with Drum",
+  "page": "https://clevelandart.org/art/2002.33",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_PET_return_to_soil": {
   "kind": "goal",
@@ -1775,47 +1931,52 @@
  "LR_PET_youth_camps": {
   "kind": "goal",
   "name": "청년 작업장",
-  "title": "File:Joachim Murat, marshal of France and king of Naples (1911) (14772548672).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Joachim_Murat,_marshal_of_France_and_king_of_Naples_(1911)_(14772548672).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "youth camps France"
+  "title": "File:Signal lamps.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Signal_lamps.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "railway signal lamp",
+  "object": true
  },
  "LR_PET_secours_national": {
   "kind": "goal",
   "name": "국민 구호",
-  "title": "File:Secours national 1940 Degorce.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Secours_national_1940_Degorce.jpg",
-  "licence": "Public domain",
-  "artist": "Georges Degorce",
-  "query": "secours national France"
+  "title": "Cleveland 1984.188: Vase",
+  "page": "https://clevelandart.org/art/1984.188",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_PET_school_cross": {
   "kind": "goal",
   "name": "학교의 십자가",
-  "title": "File:Red Cross vocational education, Dietetic, Morse School LCCN2016823322.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Red_Cross_vocational_education,_Dietetic,_Morse_School_LCCN2016823322.jpg",
-  "licence": "Public domain",
-  "artist": "National Photo Company Collection",
-  "query": "school cross France"
+  "title": "File:1858, Model No. 2 compound microscope, Powell & Lealand, England - Golub Collection of Antique Microscopes - DSC04864.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:1858,_Model_No._2_compound_microscope,_Powell_%26_Lealand,_England_-_Golub_Collection_of_Antique_Microscopes_-_DSC04864.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "microscope antique",
+  "object": true
  },
  "LR_PET_national_revolution": {
   "kind": "goal",
   "name": "국민 혁명",
-  "title": "File:Jean-François Bellier - Le citoyen Nau-Deville, en uniforme de la garde nationale, faisant transporter un convoi d'armes et de munitions - P4 - Musée Carnavalet.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Bellier_-_Le_citoyen_Nau-Deville,_en_uniforme_de_la_garde_nationale,_faisant_transporter_un_convoi_d%27armes_et_de_munitions_-_P4_-_Mus%C3%A9e_Carnavalet.jpg",
+  "title": "File:Willow Oak (Quercus phellos) (29060381116).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Willow_Oak_(Quercus_phellos)_(29060381116).jpg",
   "licence": "Public domain",
-  "artist": "Jean François Marie Bellier",
-  "query": "national revolution France"
+  "artist": "",
+  "query": "oak leaves bronze",
+  "object": true
  },
  "LR_PET_constitutional_acts": {
   "kind": "goal",
   "name": "헌법 법령 제1호",
-  "title": "File:The political history of the United States - or, popular sovereignty and citizenship; birth and growth of the colonies; march to independence; constitutional government; presidents and (14781362571).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_political_history_of_the_United_States_-_or,_popular_sovereignty_and_citizenship;_birth_and_growth_of_the_colonies;_march_to_independence;_constitutional_government;_presidents_and_(14781362571).jpg",
-  "licence": "No restrictions",
-  "artist": "Boyd, James Penny, 1836-1910",
-  "query": "constitutional acts France"
+  "title": "File:Inkwell MET DP250022.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_DP250022.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_PET_legion": {
   "kind": "goal",
@@ -1829,65 +1990,72 @@
  "LR_PET_national_council": {
   "kind": "goal",
   "name": "국민 평의회",
-  "title": "File:Conseil Constitutionnel Paris.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Conseil_Constitutionnel_Paris.jpg",
+  "title": "File:Inkwell MET 138213.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_138213.jpg",
   "licence": "CC0",
-  "artist": "Jebulon",
-  "query": "national council France"
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_PET_riom_trial": {
   "kind": "goal",
   "name": "리옴 재판",
-  "title": "File:Le châtiment des responsables - Cour de Riom.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Le_ch%C3%A2timent_des_responsables_-_Cour_de_Riom.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "riom trial France"
+  "title": "File:Seal Matrix MET sf1981-291s3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Seal_Matrix_MET_sf1981-291s3.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "seal matrix museum",
+  "object": true
  },
  "LR_PET_heir_weygand": {
   "kind": "goal",
   "name": "베강을 후계자로",
-  "title": "File:Illustrations to Livy's 'History of Rome' (BM 1872,0511.1179).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Illustrations_to_Livy%27s_%27History_of_Rome%27_(BM_1872,0511.1179).jpg",
-  "licence": "Public domain",
-  "artist": "Print made by: Jost Amman\n\nPublished by: Sigmund Feierabend\nPublished by: Weygand Han (Heirs)\nPublished by: Georg Rab",
-  "query": "heir weygand"
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020810.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020810.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_PET_heir_darlan": {
   "kind": "goal",
   "name": "다를랑을 후계자로",
-  "title": "File:French battleship Bouvet at anchor.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:French_battleship_Bouvet_at_anchor.jpg",
+  "title": "File:Indian Ocean Naval Symposium Inauguration Dhaka 2016-01-11 Handover Of Telescope (PID-0056500).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Indian_Ocean_Naval_Symposium_Inauguration_Dhaka_2016-01-11_Handover_Of_Telescope_(PID-0056500).jpg",
   "licence": "Public domain",
-  "artist": "Marius Bar",
-  "query": "French navy battleship"
+  "artist": "",
+  "query": "naval telescope",
+  "object": true
  },
  "LR_PET_madrid_embassy": {
   "kind": "goal",
   "name": "마드리드 대사관",
-  "title": "File:Embajada de Haití en Madrid (2026).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Embajada_de_Hait%C3%AD_en_Madrid_(2026).jpg",
+  "title": "Cleveland 2007.277: Vase Bertin",
+  "page": "https://clevelandart.org/art/2007.277",
   "licence": "CC0",
-  "artist": "Aquintero82",
-  "query": "madrid embassy France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_PET_vatican": {
   "kind": "goal",
   "name": "바티칸과의 화해",
-  "title": "File:Spiral staircase in the Vatican Museums from bottom 02.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Spiral_staircase_in_the_Vatican_Museums_from_bottom_02.jpg",
+  "title": "Cleveland 1997.290: Vase",
+  "page": "https://clevelandart.org/art/1997.290",
   "licence": "CC0",
-  "artist": "Wilfredor",
-  "query": "vatican France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_PET_montoire": {
   "kind": "goal",
   "name": "몽투아르의 악수",
-  "title": "File:Chapel Frescoes in Montoire-sur-le-Loir, France (7026903707).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Chapel_Frescoes_in_Montoire-sur-le-Loir,_France_(7026903707).jpg",
-  "licence": "Public domain",
-  "artist": "Swedish National Heritage Board from Sweden",
-  "query": "montoire France"
+  "title": "Cleveland 1916.1370.3: Gold Embroidered Pistol Cover",
+  "page": "https://clevelandart.org/art/1916.1370.3",
+  "licence": "CC0",
+  "artist": "",
+  "query": "pistol antique museum",
+  "object": true
  },
  "LR_PET_hidden_sword": {
   "kind": "goal",
@@ -1901,47 +2069,52 @@
  "LR_PET_verdun_doctrine": {
   "kind": "goal",
   "name": "베르됭의 교리",
-  "title": "File:Maginot line 1.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Maginot_line_1.jpg",
-  "licence": "Public domain",
-  "artist": "John C. Watkins V, uploaded to en.wikipedia.org by en:User:Jorge1767",
-  "query": "Maginot line"
+  "title": "File:Boars's tusk helmet NAMA6568 Athens Greece1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Boars%27s_tusk_helmet_NAMA6568_Athens_Greece1.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "helmet museum",
+  "object": true
  },
  "LR_PET_maginot": {
   "kind": "goal",
   "name": "마지노선 완공",
-  "title": "File:Andre maginot loc.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Andre_maginot_loc.jpg",
-  "licence": "Public domain",
+  "title": "File:Helmet MET DP153242.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Helmet_MET_DP153242.jpg",
+  "licence": "CC0",
   "artist": "",
-  "query": "maginot France"
+  "query": "helmet museum",
+  "object": true
  },
  "LR_PET_suppress": {
   "kind": "goal",
   "name": "헌병대 계엄",
-  "title": "File:The XVIIIth century; its institutions, customs, and costumes France, 1700-1789 (1875) (14758346036).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_XVIIIth_century;_its_institutions,_customs,_and_costumes_France,_1700-1789_(1875)_(14758346036).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "suppress France"
+  "title": "File:Inkwell MET 140919.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_140919.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_PET_uproot": {
   "kind": "goal",
   "name": "반국가 세력 일소",
-  "title": "File:14-7-21, fête des chasseurs au stade Pershing, maréchal Pétain.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:14-7-21,_f%C3%AAte_des_chasseurs_au_stade_Pershing,_mar%C3%A9chal_P%C3%A9tain.jpg",
-  "licence": "Public domain",
-  "artist": "Agence Rol",
-  "query": "chasseurs alpins Pétain"
+  "title": "File:World War I Trench Warfare (10469863166).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:World_War_I_Trench_Warfare_(10469863166).jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "trench knife",
+  "object": true
  },
  "LR_PET_algeria": {
   "kind": "goal",
   "name": "알제리 질서 회복",
-  "title": "File:Algeria-French Morocco - p4.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Algeria-French_Morocco_-_p4.jpg",
+  "title": "File:US 3 inch field gun, Model 1905, and carriage, Model 1902 - National World War I Museum - Kansas City, MO - DSC07757.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:US_3_inch_field_gun,_Model_1905,_and_carriage,_Model_1902_-_National_World_War_I_Museum_-_Kansas_City,_MO_-_DSC07757.JPG",
   "licence": "Public domain",
-  "artist": "Charles Robert Anderson",
-  "query": "algeria France"
+  "artist": "",
+  "query": "field gun model museum",
+  "object": true
  },
  "LR_PET_rhine": {
   "kind": "goal",
@@ -1982,218 +2155,242 @@
  "LR_ANA_federation": {
   "kind": "goal",
   "name": "자유 코뮌 연합",
-  "title": "File:Federation anarchiste spot during the anarcha-feminist event organized by the Féministes révolutionnaires.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Federation_anarchiste_spot_during_the_anarcha-feminist_event_organized_by_the_F%C3%A9ministes_r%C3%A9volutionnaires.jpg",
+  "title": "Cleveland 2010.617: London Types: The Drum Major",
+  "page": "https://clevelandart.org/art/2010.617",
   "licence": "CC0",
-  "artist": "Aristoxène",
-  "query": "federation France"
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_ANA_syndicates_take": {
   "kind": "goal",
   "name": "공장은 조합의 것",
-  "title": "File:Webster's new standard dictionary with U. S. census and maps, based upon the unabridged dictionary of Noah Webster, LL. D. (1911) (14586291468).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Webster%27s_new_standard_dictionary_with_U._S._census_and_maps,_based_upon_the_unabridged_dictionary_of_Noah_Webster,_LL._D._(1911)_(14586291468).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "syndicates take France"
+  "title": "File:Patent Model of a Flying Machine by Robert E. Cummins.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Patent_Model_of_a_Flying_Machine_by_Robert_E._Cummins.jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "machine model museum",
+  "object": true
  },
  "LR_ANA_free_communes": {
   "kind": "goal",
   "name": "자유 코뮌",
-  "title": "File:Dernancourt - Carte de la Picardie de 1620.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Dernancourt_-_Carte_de_la_Picardie_de_1620.jpg",
+  "title": "Cleveland 2023.19.10: A House on Water, and a New Way to Summon Geese by the Beat of a Drum",
+  "page": "https://clevelandart.org/art/2023.19.10",
   "licence": "CC0",
-  "artist": "Renhour48",
-  "query": "free communes France"
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_ANA_collectives": {
   "kind": "goal",
   "name": "자유 집산",
-  "title": "File:Collective agreement signed with New Brunswick Teachers’ Federation Signature de la convention collective avec la Fédération des enseignants du Nouveau-Brunswick (35147695654).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Collective_agreement_signed_with_New_Brunswick_Teachers%E2%80%99_Federation_Signature_de_la_convention_collective_avec_la_F%C3%A9d%C3%A9ration_des_enseignants_du_Nouveau-Brunswick_(35147695654).jpg",
-  "licence": "Public domain",
-  "artist": "New Brunswick / Nouveau-Brunswick",
-  "query": "collectives"
+  "title": "File:Red flags of Algiers.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_flags_of_Algiers.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "red flag banner museum",
+  "object": true
  },
  "LR_ANA_abolish_money": {
   "kind": "goal",
   "name": "화폐 없는 코뮌",
-  "title": "File:The women artists offering their jewelry on the Altar of the Nation, 7 September 1789 - drawing by Guillon Lethière.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_women_artists_offering_their_jewelry_on_the_Altar_of_the_Nation,_7_September_1789_-_drawing_by_Guillon_Lethi%C3%A8re.jpg",
+  "title": "File:Justice Bell Pin with Votes for Women and Flag banners attached, 1915 Pennsylvania.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Justice_Bell_Pin_with_Votes_for_Women_and_Flag_banners_attached,_1915_Pennsylvania.jpg",
   "licence": "Public domain",
-  "artist": "Guillaume Guillon-Lethière",
-  "query": "abolish money France"
+  "artist": "",
+  "query": "red flag banner museum",
+  "object": true
  },
  "LR_ANA_housing": {
   "kind": "goal",
   "name": "빈집 징발",
-  "title": "File:Housing and Reconstruction in France - DPLA - dc1b69a4eb904ee0e1a764a50461e4bb.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Housing_and_Reconstruction_in_France_-_DPLA_-_dc1b69a4eb904ee0e1a764a50461e4bb.jpg",
-  "licence": "Public domain",
-  "artist": "Department of State. Agency for International Development. 1961-10/1/1979",
-  "query": "housing France"
+  "title": "File:1907 Broederlijke Wevers union banner at PVDA lecture in Wetteren on June 25, 2022, with Yüksel Kalaz.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:1907_Broederlijke_Wevers_union_banner_at_PVDA_lecture_in_Wetteren_on_June_25,_2022,_with_Y%C3%BCksel_Kalaz.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "workers union banner",
+  "object": true
  },
  "LR_ANA_rationalist_schools": {
   "kind": "goal",
   "name": "합리주의 학교",
-  "title": "File:Art and criticism - monographs and studies (1892) (14784668715).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Art_and_criticism_-_monographs_and_studies_(1892)_(14784668715).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "rationalist schools France"
+  "title": "File:1870-1875, dissecting microscope, R & J Beck, England - Golub Collection of Antique Microscopes - DSC04825.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:1870-1875,_dissecting_microscope,_R_%26_J_Beck,_England_-_Golub_Collection_of_Antique_Microscopes_-_DSC04825.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "microscope antique",
+  "object": true
  },
  "LR_ANA_ateneos": {
   "kind": "goal",
   "name": "민중 회관",
-  "title": "File:4476Jesuit Residence Ateneo 08.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:4476Jesuit_Residence_Ateneo_08.jpg",
+  "title": "Cleveland 1922.463: Children Dancing to a Drum",
+  "page": "https://clevelandart.org/art/1922.463",
   "licence": "CC0",
-  "artist": "Judgefloro",
-  "query": "ateneos France"
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_ANA_proudhon": {
   "kind": "goal",
   "name": "프루동의 연방주의",
-  "title": "File:Proudhon atelier Nadar BNF Gallica.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Proudhon_atelier_Nadar_BNF_Gallica.jpg",
-  "licence": "Public domain",
-  "artist": "Nadar",
-  "query": "proudhon France"
+  "title": "File:Inkwell MET 123894.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_123894.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_ANA_abolish_prefects": {
   "kind": "goal",
   "name": "도지사 폐지",
-  "title": "File:Treaty of Versailles, English version.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Treaty_of_Versailles,_English_version.jpg",
-  "licence": "Public domain",
-  "artist": "David Lloyd George, Woodrow Wilson and Georges Clemenceau",
-  "query": "Treaty of Versailles"
+  "title": "File:Seal Matrix MET sf1981-291s2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Seal_Matrix_MET_sf1981-291s2.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "seal matrix museum",
+  "object": true
  },
  "LR_ANA_mandates": {
   "kind": "goal",
   "name": "위임과 소환",
-  "title": "File:Alfred Naqqache flag salute.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Alfred_Naqqache_flag_salute.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown photographer",
-  "query": "mandates France"
+  "title": "File:Yüksel Kalaz speaks at PVDA lecture in Wetteren on June 25, 2022, with the 1907 Broederlijke Wevers union banner in the background.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Y%C3%BCksel_Kalaz_speaks_at_PVDA_lecture_in_Wetteren_on_June_25,_2022,_with_the_1907_Broederlijke_Wevers_union_banner_in_the_background.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "workers union banner",
+  "object": true
  },
  "LR_ANA_congress": {
   "kind": "goal",
   "name": "코뮌 대회",
-  "title": "File:Man posting an advertisement for La publicité en France par Emile Mermet.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Man_posting_an_advertisement_for_La_publicit%C3%A9_en_France_par_Emile_Mermet.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "congress France"
+  "title": "File:Drum MET DP237015.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Drum_MET_DP237015.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_ANA_platform": {
   "kind": "goal",
   "name": "강령파",
-  "title": "File:Steam-boiling green asparagus.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Steam-boiling_green_asparagus.jpg",
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020813.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020813.jpg",
   "licence": "CC0",
-  "artist": "W.carter",
-  "query": "platform France"
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_ANA_synthesis": {
   "kind": "goal",
   "name": "종합파",
-  "title": "File:Ultrasonic-assisted-synthesis of isoindolin-1-one derivatives (MédiHAL 3862692).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ultrasonic-assisted-synthesis_of_isoindolin-1-one_derivatives_(M%C3%A9diHAL_3862692).jpg",
-  "licence": "Public domain",
-  "artist": "Laurent Commeiras / Institut des Sciences Moléculaires de Marseille\n / Aix-Marseille University\n / Institut de chimie\n / National Center for Scientific Research",
-  "query": "synthesis France"
+  "title": "Cleveland 2009.374.a: Vase",
+  "page": "https://clevelandart.org/art/2009.374.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ANA_columns": {
   "kind": "goal",
   "name": "민병대 종대",
-  "title": "File:Christ at the Column by Antonello da Messina (Louvre RF 1992-10).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Christ_at_the_Column_by_Antonello_da_Messina_(Louvre_RF_1992-10).jpg",
+  "title": "File:Members of the Amalgamated Glass Workers Local Union 63 posing with banner, Seattle, circa 1900 (MOHAI 8707).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Members_of_the_Amalgamated_Glass_Workers_Local_Union_63_posing_with_banner,_Seattle,_circa_1900_(MOHAI_8707).jpg",
   "licence": "Public domain",
-  "artist": "Wilfredor",
-  "query": "columns France"
+  "artist": "",
+  "query": "workers union banner",
+  "object": true
  },
  "LR_ANA_elected_officers": {
   "kind": "goal",
   "name": "장교 선출",
-  "title": "File:Annual catalogue of the teachers, officers and students of Converse College (1902) (14597331527).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Annual_catalogue_of_the_teachers,_officers_and_students_of_Converse_College_(1902)_(14597331527).jpg",
-  "licence": "No restrictions",
-  "artist": "Converse College",
-  "query": "elected officers France"
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020809.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020809.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_ANA_militarisation": {
   "kind": "goal",
   "name": "민병대의 군대화",
-  "title": "File:BDM demonstration 1934.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:BDM_demonstration_1934.jpg",
-  "licence": "Public domain",
-  "artist": "Les Femmes dans l'action mondiale (magazine)",
-  "query": "militarisation France"
+  "title": "File:Inkwell MET DP132204.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_DP132204.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_ANA_cnt_brothers": {
   "kind": "goal",
   "name": "바르셀로나의 형제들",
-  "title": "File:Louis-Napoléon as President, 1849.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Louis-Napol%C3%A9on_as_President,_1849.jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "cnt brothers France"
+  "title": "Cleveland 1919.99: Medal of Claude Joseph Rouget de L'Isle (1760-1836)",
+  "page": "https://clevelandart.org/art/1919.99",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_ANA_carrara": {
   "kind": "goal",
   "name": "카라라의 채석공",
-  "title": "File:Joseph Carrara et Jean Dumont.JPG",
-  "page": "https://commons.wikimedia.org/wiki/File:Joseph_Carrara_et_Jean_Dumont.JPG",
+  "title": "File:Eastern Han Bronze Drum 1d.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Eastern_Han_Bronze_Drum_1d.jpg",
   "licence": "CC0",
-  "artist": "Benoît Prieur",
-  "query": "carrara France"
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_ANA_iwa": {
   "kind": "goal",
   "name": "국제노동자협회",
-  "title": "File:Salix caprea 02.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Salix_caprea_02.jpg",
-  "licence": "Public domain",
-  "artist": "Bernie",
-  "query": "iwa France"
+  "title": "Cleveland 1987.195.a: Medal of Anne of Austria (obverse)",
+  "page": "https://clevelandart.org/art/1987.195.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_ANA_free_territory": {
   "kind": "goal",
   "name": "자유 영토의 기억",
-  "title": "File:The frontiers of the Free Territory of Trieste - Department of State, Map Division - btv1b531969196.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_frontiers_of_the_Free_Territory_of_Trieste_-_Department_of_State,_Map_Division_-_btv1b531969196.jpg",
-  "licence": "Public domain",
-  "artist": "États-Unis. Department of State. Division of map intelligence and cartography. Cartographe",
-  "query": "free territory France"
+  "title": "File:Eastern Han Bronze Drum 1f.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Eastern_Han_Bronze_Drum_1f.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_ANA_suppress": {
   "kind": "goal",
   "name": "자경 위원회",
-  "title": "File:Annual report (1906) (14786510793).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Annual_report_(1906)_(14786510793).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "suppress France"
+  "title": "File:Inkwell MET DP206702.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_DP206702.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_ANA_uproot": {
   "kind": "goal",
   "name": "반혁명 무장 해제",
-  "title": "File:Fanion du 54e bataillon de chasseurs alpins, 1919.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Fanion_du_54e_bataillon_de_chasseurs_alpins,_1919.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown photographer",
-  "query": "chasseurs alpins"
+  "title": "Cleveland 1916.1370.2: Gold Embroidered Pistol Cover",
+  "page": "https://clevelandart.org/art/1916.1370.2",
+  "licence": "CC0",
+  "artist": "",
+  "query": "pistol antique museum",
+  "object": true
  },
  "LR_ANA_algerian_freedom": {
   "kind": "goal",
   "name": "알제리 자유 코뮌",
-  "title": "File:Freedom fighters from the Aures.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Freedom_fighters_from_the_Aures.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "algerian freedom France"
+  "title": "Cleveland 2009.374: Covered Vase",
+  "page": "https://clevelandart.org/art/2009.374",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ANA_rhine": {
   "kind": "goal",
@@ -2225,20 +2422,22 @@
  "LR_NAP_red": {
   "kind": "goal",
   "name": "붉은 나폴레옹",
-  "title": "File:Siège national de la Croix-Rouge française (Montrouge).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Si%C3%A8ge_national_de_la_Croix-Rouge_fran%C3%A7aise_(Montrouge).jpg",
+  "title": "File:Eastern Han Bronze Drum 2a.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Eastern_Han_Bronze_Drum_2a.jpg",
   "licence": "CC0",
-  "artist": "Benoît Prieur",
-  "query": "red France"
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_RED_tribune": {
   "kind": "goal",
   "name": "인민의 호민관",
-  "title": "File:La Tribune Républicaine.JPG",
-  "page": "https://commons.wikimedia.org/wiki/File:La_Tribune_R%C3%A9publicaine.JPG",
-  "licence": "Public domain",
-  "artist": "Patrub01",
-  "query": "tribune France"
+  "title": "File:Western Han Bronze Drum 1b.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Western_Han_Bronze_Drum_1b.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_RED_maximum": {
   "kind": "goal",
@@ -2252,11 +2451,12 @@
  "LR_RED_workshops": {
   "kind": "goal",
   "name": "국민 작업장",
-  "title": "File:Louis-DelphinOdobeyCadet.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Louis-DelphinOdobeyCadet.jpg",
-  "licence": "Public domain",
-  "artist": "Henri Gaudichon",
-  "query": "workshops France"
+  "title": "File:Dictaphone Shaving Machine, Type S, Model 1 - Faraday Museum of Technology - Napier, NZ - DSC05468.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Dictaphone_Shaving_Machine,_Type_S,_Model_1_-_Faraday_Museum_of_Technology_-_Napier,_NZ_-_DSC05468.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "machine model museum",
+  "object": true
  },
  "LR_RED_arsenals": {
   "kind": "goal",
@@ -2288,20 +2488,22 @@
  "LR_RED_beaucaire": {
   "kind": "goal",
   "name": "보케르의 저녁 식사",
-  "title": "File:Ruins Beaucaire Castle, Tarascon, Pyrenees, France-LCCN2001698677.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ruins_Beaucaire_Castle,_Tarascon,_Pyrenees,_France-LCCN2001698677.jpg",
-  "licence": "Public domain",
-  "artist": "Photochrom Print Collection",
-  "query": "beaucaire France"
+  "title": "File:Warring States Bronze Drum 1a.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Warring_States_Bronze_Drum_1a.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_RED_committee": {
   "kind": "goal",
   "name": "공안위원회 재건",
-  "title": "File:Committee model of Liberty enlightening the world.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Committee_model_of_Liberty_enlightening_the_world.jpg",
+  "title": "File:Inkwell MET 181937.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_181937.jpg",
   "licence": "CC0",
-  "artist": "Frédéric Auguste Bartholdi",
-  "query": "committee France"
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_RED_people_vote": {
   "kind": "goal",
@@ -2315,11 +2517,12 @@
  "LR_RED_red_marshals": {
   "kind": "goal",
   "name": "붉은 원수들",
-  "title": "File:Maurice Quentin de La Tour - Maurice, Comte de Saxe, Marshal of France - WGA12352.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Maurice_Quentin_de_La_Tour_-_Maurice,_Comte_de_Saxe,_Marshal_of_France_-_WGA12352.jpg",
-  "licence": "Public domain",
-  "artist": "Maurice Quentin de La Tour",
-  "query": "red marshals France"
+  "title": "File:Officer's Helmet with Crest MET 36.25.70a b 001 Apr2017.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Officer%27s_Helmet_with_Crest_MET_36.25.70a_b_001_Apr2017.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "officer helmet museum",
+  "object": true
  },
  "LR_RED_sword": {
   "kind": "goal",
@@ -2351,74 +2554,82 @@
  "LR_RED_commissars": {
   "kind": "goal",
   "name": "원수와 정치위원",
-  "title": "File:Council of People's Commissars of Soviet Russia in 1920.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Council_of_People%27s_Commissars_of_Soviet_Russia_in_1920.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown photographer",
-  "query": "commissars France"
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020811.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020811.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_RED_red_grande_armee": {
   "kind": "goal",
   "name": "붉은 대육군",
-  "title": "File:Skaters on the reservoir at La Villette, 1813.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Skaters_on_the_reservoir_at_La_Villette,_1813.jpg",
+  "title": "File:France 75 mm field gun, Model 1897 - National World War I Museum - Kansas City, MO - DSC07528.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:France_75_mm_field_gun,_Model_1897_-_National_World_War_I_Museum_-_Kansas_City,_MO_-_DSC07528.JPG",
   "licence": "Public domain",
-  "artist": "François Courboin",
-  "query": "red grande armee France"
+  "artist": "",
+  "query": "field gun model museum",
+  "object": true
  },
  "LR_RED_sister_communes": {
   "kind": "goal",
   "name": "자매 코뮌",
-  "title": "File:Nursing sisters and patients in Le Treport, France (E007150657).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Nursing_sisters_and_patients_in_Le_Treport,_France_(E007150657).jpg",
-  "licence": "Public domain",
-  "artist": "Éditions Arnault",
-  "query": "sister communes France"
+  "title": "Cleveland 1987.195.b: Medal of Anne of Austria (reverse)",
+  "page": "https://clevelandart.org/art/1987.195.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_RED_italian_legion": {
   "kind": "goal",
   "name": "이탈리아 군단",
-  "title": "File:France, 1799-1800. Campaign in Italy (NYPL b14896507-1237615).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:France,_1799-1800._Campaign_in_Italy_(NYPL_b14896507-1237615).jpg",
-  "licence": "Public domain",
-  "artist": "Scan by NYPL",
-  "query": "italian legion France"
+  "title": "File:Western Han Bronze Drum 2b.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Western_Han_Bronze_Drum_2b.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_RED_polish_legion": {
   "kind": "goal",
   "name": "폴란드 군단",
-  "title": "File:Fernand de Brinon inspects the Legion of French Volunteers Against Bolshevism.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Fernand_de_Brinon_inspects_the_Legion_of_French_Volunteers_Against_Bolshevism.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "polish legion France"
+  "title": "File:Western Han Bronze Drum 1a.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Western_Han_Bronze_Drum_1a.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_RED_revolution_hq": {
   "kind": "goal",
   "name": "유럽 혁명 사령부",
-  "title": "File:Dermoncourt.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Dermoncourt.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "revolution hq France"
+  "title": "Cleveland 1919.899.b: Medal of Claude Joseph Rouget de L'Isle (1760-1836) (reverse)",
+  "page": "https://clevelandart.org/art/1919.899.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_RED_suppress": {
   "kind": "goal",
   "name": "인민 경찰",
-  "title": "File:Suppressed - The lash.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Suppressed_-_The_lash.jpg",
-  "licence": "Public domain",
-  "artist": "Van Ingen Snyder",
-  "query": "suppress"
+  "title": "File:Inkwell MET DP206704.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_DP206704.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_RED_uproot": {
   "kind": "goal",
   "name": "반혁명 일소",
-  "title": "File:Fanions du 30e bataillon de chasseurs alpins (1914-1918).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Fanions_du_30e_bataillon_de_chasseurs_alpins_(1914-1918).jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "chasseurs alpins"
+  "title": "Cleveland 1916.1370: Gold Embroidered Saddle Ornament and Pistol Covers",
+  "page": "https://clevelandart.org/art/1916.1370",
+  "licence": "CC0",
+  "artist": "",
+  "query": "pistol antique museum",
+  "object": true
  },
  "LR_RED_rhine": {
   "kind": "goal",
@@ -2459,380 +2670,422 @@
  "LR_DEF_occupation": {
   "kind": "goal",
   "name": "점령의 겨울",
-  "title": "File:FranceOccupee.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:FranceOccupee.jpg",
+  "title": "Cleveland 1972.49: Bust of a Chinese",
+  "page": "https://clevelandart.org/art/1972.49",
   "licence": "CC0",
-  "artist": "Rama (original image, derived from Sting)Spiridon MANOLIU (derivative work)",
-  "query": "occupation France"
+  "artist": "",
+  "query": "bronze bust museum",
+  "object": true
  },
  "LR_DEF_rations": {
   "kind": "goal",
   "name": "배급표",
-  "title": "File:Loading a railroad car with rations, Dijon, France, AEF, WWI, 1918 (30477195970).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Loading_a_railroad_car_with_rations,_Dijon,_France,_AEF,_WWI,_1918_(30477195970).jpg",
-  "licence": "Public domain",
-  "artist": "National Museum of the U.S. Navy",
-  "query": "rations France"
+  "title": "Cleveland 1940.580: Bust of Victor Hugo",
+  "page": "https://clevelandart.org/art/1940.580",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze bust museum",
+  "object": true
  },
  "LR_DEF_prisoners": {
   "kind": "goal",
   "name": "포로 귀환 협상",
-  "title": "File:Czechoslovak soldiers in France, former prisoners of War, 1917.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Czechoslovak_soldiers_in_France,_former_prisoners_of_War,_1917.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "prisoners France"
+  "title": "Cleveland 2009.374.b: Cover for a Vase",
+  "page": "https://clevelandart.org/art/2009.374.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_DEF_black_market": {
   "kind": "goal",
   "name": "암시장",
-  "title": "File:Fishmonger smiling, Maracaibo street market, Venezuela.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Fishmonger_smiling,_Maracaibo_street_market,_Venezuela.jpg",
+  "title": "File:Onetime paper tape device used with SIGTOT cipher system aboard President Roosevelt's Douglas C-54 airplane (the 'Sacred Cow') - National Cryptologic Museum - DSC07927.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Onetime_paper_tape_device_used_with_SIGTOT_cipher_system_aboard_President_Roosevelt%27s_Douglas_C-54_airplane_(the_%27Sacred_Cow%27)_-_National_Cryptologic_Museum_-_DSC07927.JPG",
   "licence": "CC0",
-  "artist": "Wilfredor",
-  "query": "black market France"
+  "artist": "",
+  "query": "cipher machine museum",
+  "object": true
  },
  "LR_DEF_ruins": {
   "kind": "goal",
   "name": "폐허의 재건",
-  "title": "File:111-SC-2595 - French ruins. - NARA - 55166553.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:111-SC-2595_-_French_ruins._-_NARA_-_55166553.jpg",
-  "licence": "Public domain",
-  "artist": "Unknown authorUnknown author or not provided",
-  "query": "ruins France"
+  "title": "Cleveland 1921.956: Bust of Christ",
+  "page": "https://clevelandart.org/art/1921.956",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze bust museum",
+  "object": true
  },
  "LR_DEF_winter_relief": {
   "kind": "goal",
   "name": "겨울 구호",
-  "title": "File:Winter (one of a pair) MET 152139.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Winter_(one_of_a_pair)_MET_152139.jpg",
+  "title": "File:Eastern Han Bronze Drum 1a.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Eastern_Han_Bronze_Drum_1a.jpg",
   "licence": "CC0",
   "artist": "",
-  "query": "winter relief France"
+  "query": "drum museum",
+  "object": true
  },
  "LR_DEF_two_roads": {
   "kind": "goal",
   "name": "두 갈래 길",
-  "title": "File:Two Poplars in the Alpilles near Saint-Rémy, by Vincent Van Gogh, Cleveland Museum of Art, 1958.32.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Two_Poplars_in_the_Alpilles_near_Saint-R%C3%A9my,_by_Vincent_Van_Gogh,_Cleveland_Museum_of_Art,_1958.32.jpg",
-  "licence": "Public domain",
-  "artist": "Vincent van Gogh",
-  "query": "two roads France"
+  "title": "File:Inkwell MET DP245578.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_DP245578.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_DEF_cooperate": {
   "kind": "goal",
   "name": "승전국과의 협력",
-  "title": "File:Capitole Toulouse - Salle des Illustres - Toulouse coopérant à la défense nationale 1897 - Jean-André Rixens 2.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Capitole_Toulouse_-_Salle_des_Illustres_-_Toulouse_coop%C3%A9rant_%C3%A0_la_d%C3%A9fense_nationale_1897_-_Jean-Andr%C3%A9_Rixens_2.jpg",
-  "licence": "Public domain",
-  "artist": "Didier Descouens",
-  "query": "cooperate France"
+  "title": "File:Flintlock pistol, 1790-1820 - Wisconsin Historical Museum - DSC03273.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Flintlock_pistol,_1790-1820_-_Wisconsin_Historical_Museum_-_DSC03273.JPG",
+  "licence": "CC0",
+  "artist": "",
+  "query": "pistol antique museum",
+  "object": true
  },
  "LR_DEF_collab_admin": {
   "kind": "goal",
   "name": "협력 행정부",
-  "title": "File:Les manifestations du 06 février 1934 à Paris, les agents de police et leurs nouveaux casques place de la Concorde.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Les_manifestations_du_06_f%C3%A9vrier_1934_%C3%A0_Paris,_les_agents_de_police_et_leurs_nouveaux_casques_place_de_la_Concorde.jpg",
-  "licence": "Public domain",
-  "artist": "Agence de presse Meurisse",
-  "query": "police 1930s Paris"
+  "title": "File:Inkwell MET DP249133.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Inkwell_MET_DP249133.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "inkwell museum",
+  "object": true
  },
  "LR_DEF_reparations_paid": {
   "kind": "goal",
   "name": "배상금 완납",
-  "title": "File:Portraits at the Stock Exchange MET DT1044.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Portraits_at_the_Stock_Exchange_MET_DT1044.jpg",
+  "title": "Cleveland 1946.351: Mignon: Bust of Rose Beuret",
+  "page": "https://clevelandart.org/art/1946.351",
   "licence": "CC0",
-  "artist": "Edgar Degas",
-  "query": "stock exchange Paris"
+  "artist": "",
+  "query": "bronze bust museum",
+  "object": true
  },
  "LR_DEF_autonomy": {
   "kind": "goal",
   "name": "자치 회복",
-  "title": "File:2032 Automatic Innervation.fr.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:2032_Automatic_Innervation.fr.jpg",
+  "title": "Cleveland 1965.10: Bust of Tolstoy",
+  "page": "https://clevelandart.org/art/1965.10",
   "licence": "CC0",
-  "artist": "Erdé51",
-  "query": "autonomy France"
+  "artist": "",
+  "query": "bronze bust museum",
+  "object": true
  },
  "LR_DEF_resist": {
   "kind": "goal",
   "name": "숲으로",
-  "title": "File:J'peux pas résister...-(I can't resist). Paroles de Roger Ray et L. Doryl. Chant et piano - bpt6k390501p (2 of 6).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:J%27peux_pas_r%C3%A9sister...-(I_can%27t_resist)._Paroles_de_Roger_Ray_et_L._Doryl._Chant_et_piano_-_bpt6k390501p_(2_of_6).jpg",
-  "licence": "Public domain",
-  "artist": "Solvin, Anghel. Compositeur",
-  "query": "resist France"
+  "title": "Cleveland 1989.255: Bust of a Woman (Diana?)",
+  "page": "https://clevelandart.org/art/1989.255",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze bust museum",
+  "object": true
  },
  "LR_DEF_maquis": {
   "kind": "goal",
   "name": "마키",
-  "title": "File:Members of the Maquis in La Tresorerie.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Members_of_the_Maquis_in_La_Tresorerie.jpg",
-  "licence": "Public domain",
-  "artist": "Donald I. Grant, Department of National Defence",
-  "query": "maquis France"
+  "title": "Cleveland 2014.411: Bust of Victor Hugo",
+  "page": "https://clevelandart.org/art/2014.411",
+  "licence": "CC0",
+  "artist": "",
+  "query": "bronze bust museum",
+  "object": true
  },
  "LR_DEF_sabotage": {
   "kind": "goal",
   "name": "철도 사보타주",
-  "title": "File:Le Sabotage - scénario - btv1b53001050m (1 of 2).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Le_Sabotage_-_sc%C3%A9nario_-_btv1b53001050m_(1_of_2).jpg",
-  "licence": "Public domain",
+  "title": "File:Seal Matrix MET sf1981-291s4.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Seal_Matrix_MET_sf1981-291s4.jpg",
+  "licence": "CC0",
   "artist": "",
-  "query": "sabotage France"
+  "query": "seal matrix museum",
+  "object": true
  },
  "LR_DEF_secret_army": {
   "kind": "goal",
   "name": "비밀군",
-  "title": "File:Terrorisme OAS Bab El Oued (guerre d'Algérie).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Terrorisme_OAS_Bab_El_Oued_(guerre_d%27Alg%C3%A9rie).jpg",
-  "licence": "Public domain",
-  "artist": "Saber68",
-  "query": "secret army France"
+  "title": "File:Binoculars presented to James Worth by the King of Spain and gifted to the Hunting family of 'Kolonga' Queensland L1020820.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Binoculars_presented_to_James_Worth_by_the_King_of_Spain_and_gifted_to_the_Hunting_family_of_%27Kolonga%27_Queensland_L1020820.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "binoculars antique",
+  "object": true
  },
  "LR_DEF_rising": {
   "kind": "goal",
   "name": "8월의 봉기",
-  "title": "File:Flickr - The U.S. Army - Army wife wins 'Rising Star'.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_The_U.S._Army_-_Army_wife_wins_%27Rising_Star%27.jpg",
-  "licence": "Public domain",
-  "artist": "The U.S. Army",
-  "query": "rising France"
+  "title": "File:Eastern Han Bronze Drum 1b.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Eastern_Han_Bronze_Drum_1b.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "drum museum",
+  "object": true
  },
  "LR_DEF_exile_committee": {
   "kind": "goal",
   "name": "제네바의 망명 위원회",
-  "title": "File:Comité national français.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Comit%C3%A9_national_fran%C3%A7ais.jpg",
-  "licence": "Public domain",
-  "artist": "AnonymousUnknown author (Keystone-France)",
-  "query": "exile committee France"
+  "title": "Cleveland 1919.899.a: Medal of Claude Joseph Rouget de L'Isle (1760-1836) (obverse)",
+  "page": "https://clevelandart.org/art/1919.899.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_DEF_world_opinion": {
   "kind": "goal",
   "name": "세계 여론",
-  "title": "File:\"The Opinion of these Ladies\" from The Complete Works of Béranger Met DP887537.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:%22The_Opinion_of_these_Ladies%22_from_The_Complete_Works_of_B%C3%A9ranger_Met_DP887537.jpg",
+  "title": "Cleveland 2004.73.k: History of the Ceramic Art: A Descriptive and Philosophical Study of the Pottery of All Ages and All Nations: France: Sèvres- Soft Porcelain- Vase, Commemorative of the Battle of Fontenoy (Plate XI)",
+  "page": "https://clevelandart.org/art/2004.73.k",
   "licence": "CC0",
-  "artist": "Jean Ignace Isidore Gérard Grandville",
-  "query": "world opinion France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_DEF_curfew": {
   "kind": "goal",
   "name": "통행금지",
-  "title": "File:Henry Edridge - The Curfew Tower, Windsor - B1975.3.1067 - Yale Center for British Art.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Henry_Edridge_-_The_Curfew_Tower,_Windsor_-_B1975.3.1067_-_Yale_Center_for_British_Art.jpg",
+  "title": "File:Helmet MET DP153232.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Helmet_MET_DP153232.jpg",
   "licence": "CC0",
-  "artist": "Henry Edridge",
-  "query": "curfew France"
+  "artist": "",
+  "query": "helmet museum",
+  "object": true
  },
  "LR_COM_found_bloc": {
   "kind": "goal",
   "name": "제2인터내셔널 창설",
-  "title": "File:F2B-1 (15320084251).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:F2B-1_(15320084251).jpg",
-  "licence": "Public domain",
-  "artist": "SDASM Archives",
-  "query": "found bloc France"
+  "title": "Cleveland 1919.99.b: Medal of Claude Joseph Rouget de L'Isle (1760-1836) (reverse)",
+  "page": "https://clevelandart.org/art/1919.99.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_COM_invite_esr": {
   "kind": "goal",
   "name": "스페인 공화국 초대",
-  "title": "File:The assassination of Abraham Lincoln (1865) (14777226704).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:The_assassination_of_Abraham_Lincoln_(1865)_(14777226704).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "invite esr"
+  "title": "File:Gilded and painted Sevres porcelain vase with bronze adornments.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gilded_and_painted_Sevres_porcelain_vase_with_bronze_adornments.jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ANA_found_bloc": {
   "kind": "goal",
   "name": "제2인터내셔널 창설",
-  "title": "File:Bloc erratique, (Oô ?) (2557985733).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bloc_erratique,_(O%C3%B4_%3F)_(2557985733).jpg",
-  "licence": "No restrictions",
-  "artist": "Bibliothèque de Toulouse from Toulouse, France",
-  "query": "found bloc France"
+  "title": "Cleveland 1978.116: Medal Presented to Loïe Fuller by the French Government",
+  "page": "https://clevelandart.org/art/1978.116",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_ANA_invite_esr": {
   "kind": "goal",
   "name": "스페인 공화국 초대",
-  "title": "File:Fernando Henrique Cardoso - Mário Covas - José Roberto Magalhães Teixeira (1994).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Fernando_Henrique_Cardoso_-_M%C3%A1rio_Covas_-_Jos%C3%A9_Roberto_Magalh%C3%A3es_Teixeira_(1994).jpg",
+  "title": "File:Pot-pourri vase, c. 1761, and urns, Sevres porcelain - Waddesdon Manor - Buckinghamshire, England - DSC07651.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pot-pourri_vase,_c._1761,_and_urns,_Sevres_porcelain_-_Waddesdon_Manor_-_Buckinghamshire,_England_-_DSC07651.jpg",
   "licence": "Public domain",
-  "artist": "Sérgio Andrade/A2 Fotografia",
-  "query": "diplomats 1930s"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_RED_found_bloc": {
   "kind": "goal",
   "name": "제2인터내셔널 창설",
-  "title": "File:Bloc erratique (faux dolmen), Vicdessos, septembre 1882 (8190562790).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bloc_erratique_(faux_dolmen),_Vicdessos,_septembre_1882_(8190562790).jpg",
-  "licence": "No restrictions",
-  "artist": "Eugène Trutat",
-  "query": "found bloc France"
+  "title": "Cleveland 1916.1868: Medal Commemorating Commodore Oliver Hazard Perry (1785-1819) and the Battle of Lake Erie",
+  "page": "https://clevelandart.org/art/1916.1868",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_RED_invite_esr": {
   "kind": "goal",
   "name": "스페인 공화국 초대",
-  "title": "File:Arthur Lepers, militant communiste tué lors de la fusillade de Clichy.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Arthur_Lepers,_militant_communiste_tu%C3%A9_lors_de_la_fusillade_de_Clichy.jpg",
+  "title": "File:Vase 'Chelles', by Louis Mimard, Sevres, 1904, porcelain - Bröhan Museum, Berlin - DSC04135.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Vase_%27Chelles%27,_by_Louis_Mimard,_Sevres,_1904,_porcelain_-_Br%C3%B6han_Museum,_Berlin_-_DSC04135.JPG",
   "licence": "Public domain",
-  "artist": "L'Humanité",
-  "query": "communist France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_JAC_found_bloc": {
   "kind": "goal",
   "name": "국민전선 창설",
-  "title": "File:Bloc (...?) ou erratique, Gavarnie (8268392505).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bloc_(...%3F)_ou_erratique,_Gavarnie_(8268392505).jpg",
-  "licence": "No restrictions",
-  "artist": "Bibliothèque de Toulouse from Toulouse, France",
-  "query": "found bloc France"
+  "title": "Cleveland 1916.1868.a: Medal Commemorating Commodore Oliver Hazard Perry (1785-1819) and the Battle of Lake Erie (obverse)",
+  "page": "https://clevelandart.org/art/1916.1868.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_JAC_invite_esr": {
   "kind": "goal",
   "name": "스페인 공화국 초대",
-  "title": "File:French Revolution the days of 28 29 and 30 Prairial of the year VII.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:French_Revolution_the_days_of_28_29_and_30_Prairial_of_the_year_VII.jpg",
-  "licence": "Public domain",
-  "artist": "Jean Baptiste Michel Dupréel",
-  "query": "French Revolution"
+  "title": "File:Henri-Louis-Laurent Ulrich - Vase - 1997.290 - Cleveland Museum of Art.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Henri-Louis-Laurent_Ulrich_-_Vase_-_1997.290_-_Cleveland_Museum_of_Art.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_JAC_invite_cna": {
   "kind": "goal",
   "name": "미합중국 초대",
-  "title": "File:170910-N-ME988-0514 (37063655091).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:170910-N-ME988-0514_(37063655091).jpg",
-  "licence": "Public domain",
-  "artist": "Commander, U.S. Naval Forces Europe-Africa/U.S. 6th Fleet",
-  "query": "invite cna France"
+  "title": "File:Mounted vase, Sevres, with metalwork by Michelsen, Copenhagen, before 1900, porcelain, silver - Hessisches Landesmuseum Darmstadt - Darmstadt, Germany - DSC00899.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mounted_vase,_Sevres,_with_metalwork_by_Michelsen,_Copenhagen,_before_1900,_porcelain,_silver_-_Hessisches_Landesmuseum_Darmstadt_-_Darmstadt,_Germany_-_DSC00899.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_GIR_found_bloc": {
   "kind": "goal",
   "name": "국민전선 창설",
-  "title": "File:Bloc erratique (faux dolmen), Vicdessos, septembre 1882 (8268394029).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bloc_erratique_(faux_dolmen),_Vicdessos,_septembre_1882_(8268394029).jpg",
-  "licence": "No restrictions",
-  "artist": "Eugène Trutat",
-  "query": "found bloc France"
+  "title": "Cleveland 1919.99.a: Medal of Claude Joseph Rouget de L'Isle (1760-1836) (obverse)",
+  "page": "https://clevelandart.org/art/1919.99.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_GIR_invite_esr": {
   "kind": "goal",
   "name": "스페인 공화국 초대",
-  "title": "File:Crew of a Sherman-tank south of Vaucelles.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Crew_of_a_Sherman-tank_south_of_Vaucelles.jpg",
+  "title": "File:Sèvres Porcelain Manufactory - Potpourri Vase (Vase potpourri à vaisseau) - Walters 48559.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Potpourri_Vase_(Vase_potpourri_%C3%A0_vaisseau)_-_Walters_48559.jpg",
   "licence": "Public domain",
-  "artist": "Unknown authorUnknown author",
-  "query": "French Republic"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_GIR_invite_cna": {
   "kind": "goal",
   "name": "미합중국 초대",
-  "title": "File:170910-N-ME988-0466 (37033802762).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:170910-N-ME988-0466_(37033802762).jpg",
+  "title": "File:Vase 'Gaulois', form by Alexandre Sandier, decoration by Genevieve Rault, Sevres, 1896, porcelain - Bröhan Museum, Berlin - DSC04133.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Vase_%27Gaulois%27,_form_by_Alexandre_Sandier,_decoration_by_Genevieve_Rault,_Sevres,_1896,_porcelain_-_Br%C3%B6han_Museum,_Berlin_-_DSC04133.JPG",
   "licence": "Public domain",
-  "artist": "Commander, U.S. Naval Forces Europe-Africa/U.S. 6th Fleet",
-  "query": "invite cna France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_MAR_found_bloc": {
   "kind": "goal",
   "name": "국민전선 창설",
-  "title": "File:Oo bloc erratique, Luchon (environs) (8189485429).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Oo_bloc_erratique,_Luchon_(environs)_(8189485429).jpg",
-  "licence": "No restrictions",
-  "artist": "Bibliothèque de Toulouse from Toulouse, France",
-  "query": "found bloc France"
+  "title": "Cleveland 1916.1868.b: Medal Commemorating Commodore Oliver Hazard Perry (1785-1819) and the Battle of Lake Erie (reverse)",
+  "page": "https://clevelandart.org/art/1916.1868.b",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_MAR_invite_esr": {
   "kind": "goal",
   "name": "스페인 공화국 초대",
-  "title": "File:10 centimes 1897, France, Third Republic L-R.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:10_centimes_1897,_France,_Third_Republic_L-R.jpg",
-  "licence": "CC0",
-  "artist": "Петров Эдуард",
-  "query": "Third Republic"
+  "title": "File:Sèvres Porcelain Manufactory - Potpourri Vase (Vase potpourri Hébert) - Walters 48577 - Back.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Potpourri_Vase_(Vase_potpourri_H%C3%A9bert)_-_Walters_48577_-_Back.jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_MAR_invite_cna": {
   "kind": "goal",
   "name": "미합중국 초대",
-  "title": "File:170910-N-ME988-0393 (37033803912).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:170910-N-ME988-0393_(37033803912).jpg",
+  "title": "File:Sèvres Porcelain Manufactory - Potpourri Vase (Vase potpourri Hébert) - Walters 48577.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Potpourri_Vase_(Vase_potpourri_H%C3%A9bert)_-_Walters_48577.jpg",
   "licence": "Public domain",
-  "artist": "Commander, U.S. Naval Forces Europe-Africa/U.S. 6th Fleet",
-  "query": "invite cna France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_GUA_found_bloc": {
   "kind": "goal",
   "name": "국민전선 창설",
-  "title": "File:Bloc erratique, Arreau, septembre 1881 (8268393343).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Bloc_erratique,_Arreau,_septembre_1881_(8268393343).jpg",
-  "licence": "No restrictions",
-  "artist": "Bibliothèque de Toulouse from Toulouse, France",
-  "query": "found bloc France"
+  "title": "Cleveland 1918.582.a: Medal Depicting Gian Lorenzo Bernini (1598-1680) from the Illustrious Men of the Kingdom of the Two Sicilies (obverse)",
+  "page": "https://clevelandart.org/art/1918.582.a",
+  "licence": "CC0",
+  "artist": "",
+  "query": "medal museum",
+  "object": true
  },
  "LR_GUA_invite_esr": {
   "kind": "goal",
   "name": "스페인 공화국 초대",
-  "title": "File:Paris from the Arc de Triomphe, 17 October 2019.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Paris_from_the_Arc_de_Triomphe,_17_October_2019.jpg",
-  "licence": "CC0",
-  "artist": "Pierre Blaché from Paris, France",
-  "query": "French Republic"
+  "title": "File:Sèvres Porcelain Manufactory - Vase with Cover - Walters 48763.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Vase_with_Cover_-_Walters_48763.jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_GUA_invite_cna": {
   "kind": "goal",
   "name": "미합중국 초대",
-  "title": "File:170910-N-ME988-0196 (37063659031).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:170910-N-ME988-0196_(37063659031).jpg",
+  "title": "File:Sèvres Porcelain Manufactory - Potpourri Vase (Vase potpourri à vaisseau) - Walters 48559 - Back.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Potpourri_Vase_(Vase_potpourri_%C3%A0_vaisseau)_-_Walters_48559_-_Back.jpg",
   "licence": "Public domain",
-  "artist": "Commander, U.S. Naval Forces Europe-Africa/U.S. 6th Fleet",
-  "query": "invite cna France"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ORL_invite_crl": {
   "kind": "goal",
   "name": "카를로스파 스페인 초대",
-  "title": "File:20230629-RD-CRL-003 (53013281399).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:20230629-RD-CRL-003_(53013281399).jpg",
+  "title": "File:Sèvres Porcelain Manufactory - Vase with Cover - Walters 48572.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Vase_with_Cover_-_Walters_48572.jpg",
   "licence": "Public domain",
-  "artist": "U.S. Department of Agriculture",
-  "query": "invite crl"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ORL_invite_spr": {
   "kind": "goal",
   "name": "스페인 왕국 초대",
-  "title": "File:Léonard Defrance L’abolition de la servitude dans les domaines du roi de France.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:L%C3%A9onard_Defrance_L%E2%80%99abolition_de_la_servitude_dans_les_domaines_du_roi_de_France.jpg",
+  "title": "File:Sèvres Porcelain Manufactory - Vase with Cover - Walters 48954.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Vase_with_Cover_-_Walters_48954.jpg",
   "licence": "Public domain",
-  "artist": "Léonard Defrance",
-  "query": "French monarchy"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ORL_invite_tts": {
   "kind": "goal",
   "name": "양시칠리아 초대",
-  "title": "File:France at the time of the monarchy (IA dr france-at-the-time-of-the-monarchy-15054057).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:France_at_the_time_of_the_monarchy_(IA_dr_france-at-the-time-of-the-monarchy-15054057).jpg",
+  "title": "File:Sèvres Porcelain Manufactory - Vase with Cover - Walters 48643.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Vase_with_Cover_-_Walters_48643.jpg",
   "licence": "Public domain",
-  "artist": "Raif Efendi, Mahmud\nFaden, William (1749-1836)",
-  "query": "French monarchy"
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ORL_invite_pap": {
   "kind": "goal",
   "name": "교황령 초대",
-  "title": "File:Le jubilé de l'an MDCC, publié par la bulle d'Innocent XII, du 28. mars MDCLXXXXIX, ou, Considérations sur cette bulle, pour montrer l'abus des jubilez que se celebrent depuis quatre cens ans dans (14590192318).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Le_jubil%C3%A9_de_l%27an_MDCC,_publi%C3%A9_par_la_bulle_d%27Innocent_XII,_du_28._mars_MDCLXXXXIX,_ou,_Consid%C3%A9rations_sur_cette_bulle,_pour_montrer_l%27abus_des_jubilez_que_se_celebrent_depuis_quatre_cens_ans_dans_(14590192318).jpg",
-  "licence": "No restrictions",
-  "artist": "Internet Archive Book Images",
-  "query": "invite pap France"
+  "title": "File:Sèvres Porcelain Manufactory - Vase with Cover - Walters 48574.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:S%C3%A8vres_Porcelain_Manufactory_-_Vase_with_Cover_-_Walters_48574.jpg",
+  "licence": "Public domain",
+  "artist": "",
+  "query": "Sevres porcelain vase",
+  "object": true
  },
  "LR_ORL_ottoman_contact": {
   "kind": "goal",
   "name": "이스탄불의 대사관",
-  "title": "File:Ford A9892 NLGRF photo contact sheet (1976-05-18)(Gerald Ford Library).jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Ford_A9892_NLGRF_photo_contact_sheet_(1976-05-18)(Gerald_Ford_Library).jpg",
-  "licence": "Public domain",
-  "artist": "David Hume Kennerly",
-  "query": "ottoman contact France"
+  "title": "File:Köler Regalia of Augustus III of Poland 05.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:K%C3%B6ler_Regalia_of_Augustus_III_of_Poland_05.jpg",
+  "licence": "CC0",
+  "artist": "",
+  "query": "crown regalia museum",
+  "object": true
  },
  "LR_ORL_ottoman_win": {
   "kind": "goal",

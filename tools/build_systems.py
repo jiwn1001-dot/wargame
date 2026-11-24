@@ -343,8 +343,10 @@ def build_effects():
         return f'\tlog = "LR: {name} begins"\n', lines + f'\tlog = "LR: {name} finished"\n'
 
     out.append("lr_found_rhine_confederation = {\n"
-               + "".join(f"\tif = {{\n\t\tlimit = {{ {s} = {{ is_controlled_by = ROOT }} }}\n\t\tRHI = {{ transfer_state = {s} }}\n\t}}\n" for s in RHINE_STATES + SOUTH_GERMANY if s not in victory.HANSE)
-               + "\tRHI = {\n\t\tset_capital = { state = 51 }\n\t\tset_politics = {\n\t\t\truling_party = neutrality\n\t\t\telections_allowed = no\n\t\t}\n\t}\n"
+               # France's own cores (the left bank once annexed) stay French.
+               + "".join(f"\tif = {{\n\t\tlimit = {{ {s} = {{ is_controlled_by = ROOT NOT = {{ is_core_of = ROOT }} }} }}\n\t\tRHI = {{ transfer_state = {s} }}\n\t}}\n" for s in RHINE_STATES + SOUTH_GERMANY if s not in victory.HANSE)
+               # The capital: Mainz if the confederation has it, else the first of its states in the list.
+               + "\tRHI = {\n\t\t" + "\n\t\telse_".join(f"if = {{ limit = {{ {s} = {{ is_owned_by = RHI }} }} set_capital = {{ state = {s} }} }}" for s in [51] + [x for x in RHINE_STATES + SOUTH_GERMANY if x != 51 and x not in victory.HANSE]) + "\n\t\tset_politics = {\n\t\t\truling_party = neutrality\n\t\t\telections_allowed = no\n\t\t}\n\t}\n"
                "\tset_autonomy = {\n\t\ttarget = RHI\n\t\tautonomous_state = autonomy_puppet\n\t}\n}")
     # Peace only when every enemy has fallen: a peace with one nation must not end the other fronts.
     out.append("lr_fra_finish_war = {\n\tif = {\n\t\tlimit = {\n\t\t\tNOT = {\n\t\t\t\tany_enemy_country = {\n"

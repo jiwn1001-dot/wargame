@@ -121,11 +121,13 @@ lr_setup_world = {
 	}
 	# Vanilla trees assume our history, so everyone but France uses the generic tree.
 	# Australia keeps its own: a vanilla daily script edits its focuses by name.
+	# British North America gets build_america.py's tree.
 	every_country = {
 		limit = {
 			NOT = {
 				tag = FRA
 				tag = AST
+				tag = USA
 			}
 		}
 		load_focus_tree = {

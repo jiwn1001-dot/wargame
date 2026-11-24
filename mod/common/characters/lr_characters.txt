@@ -37,7 +37,7 @@ characters={
 		name=LR_FRA_blum
 		portraits={
 			civilian={
-				large="GFX_portrait_fra_leon_blum"
+				large="GFX_portrait_LR_photo_LR_FRA_blum"
 			}
 		}
 		country_leader={
@@ -108,10 +108,10 @@ characters={
 		name=USA_george_washington
 		portraits={
 			army={
-				large="GFX_portrait_unknown"
+				large="GFX_portrait_LR_photo_USA_george_washington"
 			}
 			civilian={
-				large="GFX_portrait_unknown"
+				large="GFX_portrait_LR_photo_USA_george_washington"
 			}
 		}
 		country_leader={
@@ -136,7 +136,7 @@ characters={
 		name=LR_FRA_petain
 		portraits={
 			civilian={
-				large="GFX_portrait_FRA_philippe_petain"
+				large="GFX_portrait_LR_photo_LR_FRA_petain"
 			}
 		}
 		country_leader={

@@ -12,6 +12,9 @@ state = {
 		buildings = {
 			air_base = 5
 			infrastructure = 3
+			3219 = {
+				bunker = 1
+			}
 		}
 		add_core_of = BLR
 		add_core_of = SOV

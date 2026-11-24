@@ -2,19 +2,20 @@
 state = {
 	id = 84
 	name = "STATE_84"
-	manpower = 1382423
+	manpower = 1479404
 
 	state_category = town
 	resources = {
 		aluminium = 1
 		coal = 2
-		steel = 2
+		steel = 6
 	}
 
 	history = {
 		owner = AUS
-		victory_points = { 3676 1 }
+		victory_points = { 3676 5 }
 		buildings = {
+			air_base = 2
 			arms_factory = 1
 			industrial_complex = 1
 			infrastructure = 3

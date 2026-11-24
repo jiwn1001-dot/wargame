@@ -27,4 +27,48 @@ spriteTypes = {
 		name = "GFX_portrait_flandin"
 		texturefile = "gfx/leaders/LR/portrait_flandin.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_FRA_leon_blum"
+		texturefile = "gfx/leaders/LR/photo_FRA_leon_blum.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_FRA_philippe_petain"
+		texturefile = "gfx/leaders/LR/photo_FRA_philippe_petain.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_AMC_browder"
+		texturefile = "gfx/leaders/LR/photo_LR_AMC_browder.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_CNA_hull"
+		texturefile = "gfx/leaders/LR/photo_LR_CNA_hull.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_CNA_macarthur"
+		texturefile = "gfx/leaders/LR/photo_LR_CNA_macarthur.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_DXE_bilbo"
+		texturefile = "gfx/leaders/LR/photo_LR_DXE_bilbo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_FRA_blum"
+		texturefile = "gfx/leaders/LR/photo_LR_FRA_blum.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_FRA_petain"
+		texturefile = "gfx/leaders/LR/photo_LR_FRA_petain.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_LNG_long"
+		texturefile = "gfx/leaders/LR/photo_LR_LNG_long.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_LR_USA_hoover"
+		texturefile = "gfx/leaders/LR/photo_LR_USA_hoover.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_LR_photo_USA_george_washington"
+		texturefile = "gfx/leaders/LR/photo_USA_george_washington.dds"
+	}
 }

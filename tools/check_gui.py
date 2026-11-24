@@ -55,7 +55,8 @@ def sprites():
                 for root in (MOD, VANILLA):
                     dds = root / m.group(3)
                     if dds.exists():
-                        head = dds.read_bytes()[:20]
+                        with dds.open("rb") as f:  # only the header: reading whole pictures took minutes
+                            head = f.read(20)
                         if head[:4] == b"DDS ":
                             h, w = struct.unpack("<II", head[12:20])
                             sizes[m.group(1)] = (w // (int(frames.group(1)) if frames else 1), h)

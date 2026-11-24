@@ -20,6 +20,7 @@ STEPS = [
     "build_economy",
     "build_france",       # France's focus tree, events, decisions, endings
     "build_events",       # world events, new countries, world characters
+    "build_america",      # America: the colonial government, the Congress, the civil war after Washington
     "build_systems",
     "build_advisors",
     "build_debug",
@@ -45,13 +46,14 @@ RETRIES = 4
 
 
 def run(step):
+    began = time.time()
     for attempt in range(1, RETRIES + 1):
         result = subprocess.run([sys.executable, str(TOOLS / f"{step}.py")], cwd=TOOLS, capture_output=True,
                                 text=True, encoding="utf-8", errors="replace", env={**__import__("os").environ, "PYTHONIOENCODING": "utf-8"})
         output = (result.stdout + result.stderr).strip()
         last = output.splitlines()[-1] if output else ""
         if result.returncode == 0:
-            print(f"{step}: {last}")
+            print(f"{step}: {last} ({time.time() - began:.0f}s)", flush=True)
             return True
         if ("Errno 22" in output or "4294967274" in output) and attempt < RETRIES:  # a file locked for a moment (ffmpeg says -22 too)
             print(f"{step}: a file was locked, trying again ({attempt})")

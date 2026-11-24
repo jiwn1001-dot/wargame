@@ -365,6 +365,18 @@ def build():
             (out / name).unlink(missing_ok=True)
         print("OK: no provinces cut")
         return
+    # The map work takes minutes and its inputs rarely change: when they have not, only the strategic regions (which
+    # kr_layout.py overwrites every build) are written again.
+    stamp_path = Path(__file__).resolve().parent / "kr_layout_cache" / "kr_provinces_stamp.json"
+    inputs = [MASK, DATA, Path(__file__), VANILLA / "map" / "provinces.bmp", VANILLA / "map" / "definition.csv",
+              VANILLA / "map" / "unitstacks.txt", VANILLA / "map" / "railways.txt"]
+    stamp = [f"{p.name}:{p.stat().st_size}:{int(p.stat().st_mtime)}" for p in inputs]
+    if stamp_path.exists() and all((out / name).exists() for name in names):
+        saved = json.loads(stamp_path.read_text(encoding="utf-8"))
+        if saved.get("stamp") == stamp:
+            write_strategic_regions(out, saved["regions"])
+            print(f"OK: {len(news)} provinces cut along Kaiserreich's state borders ({min(news)}-{max(news)}), map unchanged")
+            return
     mask = np.asarray(Image.open(MASK))
     rgb = np.asarray(Image.open(VANILLA / "map" / "provinces.bmp").convert("RGB")).copy()
     rows = definition(VANILLA)
@@ -495,6 +507,13 @@ def build():
     (out / "railways.txt").write_text("\n".join(rail_lines) + "\n", encoding="utf-8")
     (out / "definition.csv").write_text("\n".join(lines) + "\n", encoding="utf-8")
     (out / "unitstacks.txt").write_text("\n".join(stacks) + "\n", encoding="utf-8")
+    write_strategic_regions(out, region_add)
+    stamp_path.parent.mkdir(parents=True, exist_ok=True)
+    stamp_path.write_text(json.dumps({"stamp": stamp, "regions": region_add}), encoding="utf-8")
+    print(f"OK: {len(news)} provinces cut along Kaiserreich's state borders ({min(news)}-{max(news)})")
+
+
+def write_strategic_regions(out, region_add):
     regions = out / "strategicregions"
     regions.mkdir(exist_ok=True)
     for path in regions.glob("*.txt"):
@@ -504,7 +523,6 @@ def build():
         text = (VANILLA / "map" / "strategicregions" / name).read_text(encoding="utf-8-sig", errors="ignore")
         text = re.sub(r"(provinces\s*=\s*\{)([^}]*)\}", lambda m: m.group(1) + m.group(2).rstrip() + " " + " ".join(map(str, provs)) + " \n\t}", text, count=1)
         (regions / name).write_text(text, encoding="utf-8")
-    print(f"OK: {len(news)} provinces cut along Kaiserreich's state borders ({min(news)}-{max(news)})")
 
 
 if __name__ == "__main__":

@@ -122,7 +122,7 @@ characters={
 		name=FRA_philippe_petain
 		portraits={
 			civilian={
-				large=GFX_portrait_FRA_philippe_petain
+				large="GFX_portrait_LR_photo_FRA_philippe_petain"
 			}
 		}
 		
@@ -1243,7 +1243,7 @@ characters={
 				small="GFX_idea_leon_blum"
 			}
 			civilian = {
-				large="GFX_portrait_fra_leon_blum"
+				large="GFX_portrait_LR_photo_FRA_leon_blum"
 			}
 		}
 		advisor={

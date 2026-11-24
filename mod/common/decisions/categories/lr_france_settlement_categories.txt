@@ -5,3 +5,7 @@ LR_FRA_settlement_category = {
 		tag = FRA
 	}
 }
+LR_contested_category = {
+	icon = generic_political_actions
+	priority = 40
+}

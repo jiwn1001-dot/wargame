@@ -42,10 +42,22 @@ NEW_TAGS = {
     "JBS": ("Jabal Shammar", "자발 샴마르 토후국", "샴마르", (190, 150, 150), 857, "middle_eastern", ((180, 20, 30), (240, 240, 240), (180, 20, 30))),
     # North Germany's colonies after France beats it: a government in exile at Douala.
     "GEX": ("German Exile", "독일 망명정부", "망명 독일", (96, 96, 96), 773, "western_european", "GER_german_kaiserreich_neutrality"),
+    # The civil war after Washington's murder (build_america.py): the North's councils, Long's Midwest, the Deep South.
+    "AMC": ("American Councils", "미주 노동자 평의회", "평의회", (176, 30, 36), 395, "western_european", "USA_communism"),
+    "LNG": ("American National Union", "아메리카 국민 연합", "국민 연합", (52, 120, 82), 373, "western_european", "USB_fascism"),
+    "DXE": ("Southern Confederacy", "남부 연합", "남부", (150, 132, 104), 365, "western_european", "CSA_neutrality"),
 }
 # Cosmetic names worn by a winner: key, name, adjective, flag source.
 COSMETICS = {
     "LR_CNA_usa": ("미합중국", "미국", "USA_democratic"),
+    # America's routes (build_america.py)
+    "LR_CNA_junta": ("국가 재건 위원회", "미국", "USA_fascism"),
+    "LR_CNA_empire": ("아메리고 제국", "아메리고", "USA_neutrality"),
+    "LR_AMC_union": ("미주 사회주의 공화국 연방", "미주", "USA_communism"),
+    "LR_LNG_usa": ("미합중국", "미국", "USA_democratic"),
+    "LR_DXE_csa": ("아메리고 연합국", "연합국", "CSA"),
+    "LR_USA_americas": ("아메리카 대총독령", "아메리카", "USA_neutrality"),
+    "LR_USA_dominion": ("북아메리카 자치령", "북아메리카", "USA_neutrality"),
     "LR_CRL_spain": ("스페인 왕국", "스페인", "SPR_carlist_spain_neutrality"),
     "LR_ESR_spain": ("스페인 공화국", "스페인", "SPR_democratic"),
     "LR_ROM_wallachia": ("왈라키아 공국", "왈라키아", "ROM_neutrality"),
@@ -93,6 +105,10 @@ LEADERS = {
     "JBS": ("LR_JBS_muhammad", "무함마드 빈 탈랄", "despotism", "1960.1.1.1"),  # the last Rashidi emir, restored
     "ESR": ("LR_ESR_azana", "마누엘 아사냐", "liberalism", "1975.1.1.1"),
     "JPE": ("LR_JPE_emperor", "천황 히로히토", "despotism", "1989.1.1.1"),
+    # A fifth entry is the portrait sprite (the generic ones are defined by build_america.py).
+    "AMC": ("LR_AMC_browder", "얼 브라우더", "leninism", "1975.1.1.1", "GFX_portrait_USA_earl_browder"),
+    "LNG": ("LR_LNG_long", "휴이 롱", "fascism_ideology", "1975.1.1.1", "GFX_portrait_LR_USA_generic_1"),
+    "DXE": ("LR_DXE_bilbo", "시어도어 빌보", "despotism", "1975.1.1.1", "GFX_portrait_LR_USA_generic_2"),
 }
 
 # ===== China: every Qing state goes somewhere. The Qing keep Peking, the Kuomintang rises in Canton =====
@@ -347,8 +363,9 @@ def build_flags():
 
 def build_characters():
     blocks = []
-    for key, _, ideology, expire in LEADERS.values():
-        blocks.append(f"\t{key}={{\n\t\tname={key}\n\t\tportraits={{\n\t\t\tcivilian={{\n\t\t\t\tlarge=\"GFX_portrait_unknown\"\n\t\t\t}}\n\t\t}}\n"
+    for key, _, ideology, expire, *portrait in LEADERS.values():
+        picture = portrait[0] if portrait else "GFX_portrait_unknown"  # a fifth entry is the portrait sprite
+        blocks.append(f"\t{key}={{\n\t\tname={key}\n\t\tportraits={{\n\t\t\tcivilian={{\n\t\t\t\tlarge=\"{picture}\"\n\t\t\t}}\n\t\t}}\n"
                       f"\t\tcountry_leader={{\n\t\t\tideology={ideology}\n\t\t\ttraits={{ }}\n\t\t\texpire=\"{expire}\"\n\t\t\tid=-1\n\t\t}}\n\t}}\n")
     write(MOD / "common" / "characters" / "lr_world_characters.txt", NOTE + "characters={\n" + "\n".join(blocks) + "}\n")
 
@@ -449,7 +466,8 @@ def build_effects():
 
     # Washington.
     out.append("lr_world_washington = {\n" + indent("\n".join([
-        take("CNA", AMERICA_REBELS, "USA"), "CNA = { set_capital = { state = 360 } }",
+        take("CNA", _expand(AMERICA_REBELS), "USA"), "CNA = { set_capital = { state = 360 } }",
+        "CNA = {\n\tload_focus_tree = {\n\t\ttree = lr_cna_focus\n\t\tkeep_completed = no\n\t}\n}",
         rule("CNA", "democratic", democratic=65, communism=20, neutrality=10, fascism=5),
         "CNA = {\n\tpromote_character = USA_george_washington\n\tadd_ideas = LR_CNA_continental_army\n}",
         "USA = {\n\ttransfer_units_fraction = {\n\t\ttarget = CNA\n\t\tsize = 0.4\n\t\tstockpile_ratio = 0.4\n\t\tnavy_ratio = 0.2\n\t\tair_ratio = 0.3\n\t}\n}",
@@ -619,10 +637,26 @@ def build_effects():
                         "\tset_global_flag = LR_russia_defeated\n}")
     capitulation.append("if = {\n\tlimit = {\n\t\tROOT = { tag = FRA }\n\t\tNOT = { FROM = { tag = ALG } }\n\t\tNOT = { has_global_flag = LR_settled_france }\n\t}\n"
                         "\tset_global_flag = LR_settled_france\n\tFRA = {\n\t\tlr_pick_victor = yes\n\t\tlr_france_defeated = yes\n\t}\n}")
+    # Civil wars inside one country (Spain, Japan) end with the winner taking the loser whole, not at a conference
+    # where the AI would make it a puppet (the user's call, 2026-11-24). lr_world.90 annexes and hands out the cores.
+    spain_or = "OR = { " + " ".join(f"tag = {t}" for t in SPAIN_FACTIONS) + " }"
+    capitulation.append(f"if = {{\n\tlimit = {{\n\t\t{spain_or}\n\t\tFROM = {{ {spain_or} }}\n\t}}\n\tFROM = {{ country_event = {{ id = lr_world.90 }} }}\n}}")
+    capitulation.append("if = {\n\tlimit = {\n\t\tOR = { tag = JAP tag = JPE }\n\t\tFROM = { OR = { tag = JAP tag = JPE } }\n\t}\n"
+                        "\tFROM = { country_event = { id = lr_world.90 } }\n}")
     out.append("lr_world_on_capitulation = {\n" + indent("\n".join(capitulation)) + "\n}")
     # A country that falls makes its own peace: its subjects fall with it, and a conference opens for them alone while
     # its faction fights on. (France's own defeat keeps its occupation route.)
-    out.append("lr_separate_peace = {\n\tif = {\n\t\tlimit = {\n\t\t\tis_subject = no\n\t\t\tNOT = { tag = FRA }\n\t\t\tFROM = { has_war_with = ROOT }\n\t\t}\n"
+    # America's war of independence and its civil war end by annexation instead (build_america.py).
+    out.append("lr_separate_peace = {\n\tif = {\n\t\tlimit = {\n\t\t\tis_subject = no\n\t\t\tNOT = { tag = FRA }\n\t\t\tFROM = { has_war_with = ROOT }\n"
+               "\t\t\tNOT = { AND = { tag = CNA USA = { exists = yes } NOT = { has_global_flag = LR_usa_civil_war } } }\n"
+               "\t\t\tNOT = { AND = { OR = { tag = SPR tag = CRL tag = ESR } FROM = { OR = { tag = SPR tag = CRL tag = ESR } } } }\n"
+               "\t\t\tNOT = { AND = { OR = { tag = JAP tag = JPE } FROM = { OR = { tag = JAP tag = JPE } } } }\n"
+               "\t\t\tNOT = { AND = { has_global_flag = LR_usa_civil_war OR = { tag = CNA tag = AMC tag = LNG tag = DXE } "
+               "FROM = { OR = { tag = CNA tag = AMC tag = LNG tag = DXE } } } }\n"
+               + "".join(f"\t\t\tNOT = {{ AND = {{ {t} = {{ has_country_flag = LR_usa_annex_americas }} FROM = {{ OR = {{ tag = {t} is_in_faction_with = {t} }} }} "
+                         "capital_scope = { OR = { is_on_continent = north_america is_on_continent = south_america } } } }\n"
+                         for t in ("USA", "CNA", "AMC", "LNG", "DXE"))
+               + "\t\t}\n"
                "\t\tFROM = {\n\t\t\tstart_peace_conference = {\n\t\t\t\ttag = ROOT\n\t\t\t\tscore_factor = 1.0\n"
                "\t\t\t\twinner_scope = ALL\n\t\t\t\tloser_scope = LIMITED\n\t\t\t}\n\t\t}\n\t}\n}")
     out.append(victory_rules.settlement_effect())
@@ -695,6 +729,21 @@ country_event = {{
 		annex_country = {{
 			target = FROM
 			transfer_troops = yes
+		}}
+		# The winner of a civil war rules the whole country: its lands become the winner's cores.
+		if = {{
+			limit = {{ OR = {{ {spanish_names} }} }}
+			every_owned_state = {{
+				limit = {{ is_core_of = SPR }}
+				add_core_of = ROOT
+			}}
+		}}
+		if = {{
+			limit = {{ OR = {{ tag = JAP tag = JPE }} }}
+			every_owned_state = {{
+				limit = {{ is_core_of = JAP }}
+				add_core_of = ROOT
+			}}
 		}}
 		if = {{
 			limit = {{

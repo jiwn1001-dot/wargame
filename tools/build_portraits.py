@@ -31,7 +31,11 @@ DLC_SPRITES = [
     "GFX_portrait_FRA_marcel_bucard",
     "GFX_portrait_FRA_marcel_deat",
 ]
-CHARACTER_FILES = [MOD / "common" / "characters" / "lr_characters.txt", MOD / "common" / "characters" / "lr_world_characters.txt"]
+CHARACTER_FILES = [MOD / "common" / "characters" / "lr_characters.txt", MOD / "common" / "characters" / "lr_world_characters.txt",
+                   MOD / "common" / "characters" / "lr_usa_characters.txt", MOD / "common" / "characters" / "FRA.txt"]
+# Leaders with a public-domain photograph made by tools/leader_photos.py (docs/art/auto/portraits/<id>.png). A picture
+# of their own in PORTRAITS always wins.
+AUTO = ART / "auto" / "portraits"
 
 
 def fit(picture):
@@ -75,17 +79,38 @@ def main():
         sprite_of[character] = f"GFX_{art}"
         fit(Image.open(ART / f"{art}.png").convert("RGBA")).save(folder / f"{art}.dds")
         sprites.append(f'\tspriteType = {{\n\t\tname = "GFX_{art}"\n\t\ttexturefile = "gfx/leaders/LR/{art}.dds"\n\t}}\n')
+    photographed = {}
+    for stale in folder.glob("photo_*.dds"):  # people dropped from leader_photos.py
+        if not (AUTO / f"{stale.stem[6:]}.png").exists():
+            stale.unlink()
+    for path in sorted(AUTO.glob("*.png")) if AUTO.exists() else []:
+        character = path.stem
+        if character in sprite_of:
+            continue
+        sprite = f"GFX_portrait_LR_photo_{character}"
+        Image.open(path).convert("RGBA").resize(SIZE, Image.LANCZOS).save(folder / f"photo_{character}.dds")
+        sprites.append(f'\tspriteType = {{\n\t\tname = "{sprite}"\n\t\ttexturefile = "gfx/leaders/LR/photo_{character}.dds"\n\t}}\n')
+        photographed[character] = sprite
     (MOD / "interface" / "lr_portraits.gfx").write_text("spriteTypes = {\n" + "".join(sprites) + "}\n", encoding="utf-8")
 
     done = set()
     for path in CHARACTER_FILES:
+        if not path.exists():
+            continue
         text = path.read_text(encoding="utf-8")
         for character, sprite in sprite_of.items():
             block = re.search(rf"\t{character}=\{{.*?\n\t\}}\n", text, re.S)
             if block:
                 text = text.replace(block.group(0), block.group(0).replace('"GFX_portrait_unknown"', f'"{sprite}"'))
                 done.add(character)
+        for character, sprite in photographed.items():
+            # A photograph replaces whatever portrait the character had (blank, generic or vanilla stand-in).
+            block = re.search(rf"\t{character}=\{{.*?\n\t\}}\n", text, re.S)
+            if block:
+                text = text.replace(block.group(0), re.sub(r'large\s*=\s*"?[\w.]+"?', f'large="{sprite}"', block.group(0)))
+                done.add(character)
         path.write_text(text, encoding="utf-8")
+    sprite_of.update(photographed)
     missing = set(sprite_of) - done
     if missing:
         raise SystemExit(f"characters not found: {sorted(missing)}")

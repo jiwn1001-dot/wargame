@@ -24,7 +24,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
 import custom_icons as icons
 
@@ -225,6 +225,81 @@ def medallion(path, code="FRA"):
     return out
 
 
+CUT = AUTO / "cut"  # the photographs with their background removed (rembg), kept so a restyle needs no new cut
+_SESSION = []
+
+
+def cut_out(path):
+    """The photograph with its background removed, cached in docs/art/auto/cut/<id>.png."""
+    target = CUT / f"{Path(path).stem}.png"
+    if target.exists() and target.stat().st_mtime >= Path(path).stat().st_mtime:
+        return Image.open(target).convert("RGBA")
+    from rembg import new_session, remove
+    if not _SESSION:
+        _SESSION.append(new_session("u2net"))
+    photo = Image.open(path).convert("RGB")
+    photo.thumbnail((520, 520))
+    cut = remove(photo, session=_SESSION[0])
+    CUT.mkdir(parents=True, exist_ok=True)
+    cut.save(target)
+    return cut
+
+
+def grade(picture, code):
+    """One look for every photograph: colour mostly drained, warm, firm. Red routes are graded red."""
+    rgb, alpha = picture.convert("RGB"), picture.getchannel("A")
+    rgb = ImageOps.autocontrast(rgb, cutoff=1)
+    grey = ImageOps.grayscale(rgb)
+    if code in RED_ROUTES:
+        tint = ImageOps.colorize(grey, black=(30, 6, 6), mid=(150, 44, 34), white=(246, 214, 190))
+    else:
+        tint = ImageOps.colorize(grey, black=(22, 20, 24), mid=(132, 116, 92), white=(246, 238, 218))
+    out = Image.blend(tint, ImageEnhance.Color(rgb).enhance(0.6), 0.3)
+    out = ImageEnhance.Contrast(out).enhance(1.12).convert("RGBA")
+    out.putalpha(alpha)
+    return out
+
+
+def exhibit(path, code="FRA", size=GOAL_SIZE):
+    """The subject cut out of its photograph and shown on its own, like an object in a museum case: no frame, a thin
+    rim of gold light and a soft shadow under it. A photograph with no clear subject (a landscape, a crowd) is shown
+    whole instead, inside a soft vignette."""
+    cut = cut_out(path)
+    alpha = cut.getchannel("A")
+    solid = alpha.point(lambda v: 255 if v > 60 else 0)
+    box = solid.getbbox()
+    coverage = np.asarray(solid).mean() / 255
+    canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    inner = int(size * 0.86)
+    if box and 0.05 < coverage < 0.8 and (box[2] - box[0]) < cut.width * 0.98:
+        subject = grade(cut.crop(box), code)
+        subject.thumbnail((inner, inner), Image.LANCZOS)
+        # Tall objects stand on the floor; wide ones (a sabre, a ship) float in the middle.
+        x = (size - subject.width) // 2
+        y = size - subject.height - int(size * 0.07) if subject.height > subject.width * 0.7 else (size - subject.height) // 2
+        a = subject.getchannel("A")
+        # Gold rim light: the outline grown by two pixels and blurred, behind the subject.
+        rim = Image.new("RGBA", subject.size, (226, 190, 110, 0))
+        rim.putalpha(a.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(2)).point(lambda v: int(v * 0.35)))
+        # Soft shadow below and behind.
+        shadow = Image.new("RGBA", subject.size, (0, 0, 0, 0))
+        shadow.putalpha(a.filter(ImageFilter.GaussianBlur(6)).point(lambda v: int(v * 0.6)))
+        floor = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+        ImageDraw.Draw(floor).ellipse((x + subject.width * 0.1, size - int(size * 0.12), x + subject.width * 0.9, size - int(size * 0.03)),
+                                      fill=(0, 0, 0, 110))
+        canvas.alpha_composite(floor.filter(ImageFilter.GaussianBlur(6)))
+        canvas.alpha_composite(shadow, (x + 4, y + 5))
+        canvas.alpha_composite(rim, (x, y))
+        canvas.alpha_composite(subject, (x, y))
+        return canvas
+    photo = grade(square(Image.open(path).convert("RGB"), inner).convert("RGBA"), code)
+    mask = Image.new("L", (inner, inner), 0)
+    ImageDraw.Draw(mask).ellipse((inner * 0.06, inner * 0.06, inner * 0.94, inner * 0.94), fill=255)
+    photo.putalpha(mask.filter(ImageFilter.GaussianBlur(inner // 14)))
+    canvas.alpha_composite(photo, ((size - inner) // 2, (size - inner) // 2))
+    return canvas
+
+
 def framed(path):
     """A toned picture in a thin dark frame, the shape of a national spirit."""
     w, h = IDEA_SIZE
@@ -247,8 +322,9 @@ def make():
     index = json.loads(INDEX.read_text(encoding="utf-8")) if INDEX.exists() else {}
     for sub in ("goals", "ideas"):
         (AUTO / sub).mkdir(parents=True, exist_ok=True)
-        for old in (AUTO / sub).glob("*.png"):
-            old.unlink()
+    # Icons are made again only when their photograph, the frame or this script is newer than the icon.
+    style_time = max(Path(__file__).stat().st_mtime, FRAME.stat().st_mtime)
+    wanted = set()
     still_open = {item_id for _, item_id, _, _, _ in rows()}  # not drawn by hand, here or in docs/art
     made = 0
     credits = ["# 자동 아이콘 출처", "", "`tools/icon_pictures.py`가 만드는 목록입니다. 모두 위키미디어 공용의 퍼블릭 도메인 또는 CC0 파일입니다.", "",
@@ -261,15 +337,32 @@ def make():
         folder = "goals" if entry["kind"] == "goal" else "ideas"
         if any((ART / folder / f"{item_id}{ext}").exists() for ext in icons.EXTENSIONS):
             continue
-        try:
-            picture = medallion(source, item_id[3:6])  # spirits wear the same round badge as focuses
-        except Exception as error:
-            print(f"  {item_id}: {error}")
-            continue
-        picture.save(AUTO / folder / f"{item_id}.png")
+        target = AUTO / folder / f"{item_id}.png"
+        wanted.add(target)
+        if not target.exists() or target.stat().st_mtime < max(style_time, source.stat().st_mtime):
+            try:
+                # Frameless cut-outs for the object photographs (icon_objects.py, the user's call, 2026-11-24); the badge
+                # stays for pictures not yet replaced, whose subjects rarely stand clear of their background.
+                picture = exhibit(source, item_id[3:6]) if entry.get("object") else medallion(source, item_id[3:6])
+            except Exception as error:
+                print(f"  {item_id}: {error}")
+                continue
+            for attempt in range(6):  # Windows locks a file for a moment now and then (Errno 22)
+                try:
+                    picture.save(target)
+                    break
+                except OSError:
+                    time.sleep(0.5)
+            else:
+                print(f"  {item_id}: could not write the icon")
+                continue
         made += 1
         artist = (entry["artist"] or "?").replace("|", "/")[:60]
         credits.append(f"| {item_id} | {entry['name']} | [{entry['title']}]({entry['page']}) | {artist} | {entry['licence']} |")
+    for sub in ("goals", "ideas"):
+        for old in (AUTO / sub).glob("*.png"):
+            if old not in wanted:
+                old.unlink()
     (AUTO / "CREDITS.md").write_text("\n".join(credits) + "\n", encoding="utf-8")
     print(f"OK: {made} automatic icons from public-domain photographs")
 

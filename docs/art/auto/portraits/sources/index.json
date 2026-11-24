@@ -1,0 +1,62 @@
+{
+ "USA_george_washington": {
+  "title": "File:Gilbert Stuart Williamstown Portrait of George Washington.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+  "licence": "Public domain",
+  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Gilbert_Stuart\" class=\"extiw\" title=\"w:en:Gilbert Stuart\"><span title=\"American painter (1755–1828)\">Gilbert Stuart</span></a></bdi>"
+ },
+ "LR_USA_hoover": {
+  "title": "File:President_Hoover_portrait.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:President_Hoover_portrait.jpg",
+  "licence": "Public domain",
+  "artist": "Underwood &amp; Underwood"
+ },
+ "LR_CNA_hull": {
+  "title": "File:HULL,_CORDELL._HONORABLE_LCCN2016862713_(cropped)(2).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:HULL,_CORDELL._HONORABLE_LCCN2016862713_(cropped)(2).jpg",
+  "licence": "Public domain",
+  "artist": "Harris &amp; Ewing, photographer"
+ },
+ "LR_CNA_macarthur": {
+  "title": "File:MacArthur_Manila_(cropped2)(b).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:MacArthur_Manila_(cropped2)(b).jpg",
+  "licence": "Public domain",
+  "artist": "Photographer not credited."
+ },
+ "LR_AMC_browder": {
+  "title": "File:Box_6,_Folder_32_Earl_Browder,_circa_1930-1940_Slide_16_Edit_Crop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Box_6,_Folder_32_Earl_Browder,_circa_1930-1940_Slide_16_Edit_Crop.jpg",
+  "licence": "Public domain",
+  "artist": "National Election Campaign Committee, Communist Party"
+ },
+ "LR_LNG_long": {
+  "title": "File:HueyPLongGesture.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:HueyPLongGesture.jpg",
+  "licence": "Public domain",
+  "artist": "Uncredited news photographer."
+ },
+ "LR_DXE_bilbo": {
+  "title": "File:Theodore_Bilbo.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Theodore_Bilbo.jpg",
+  "licence": "Public domain",
+  "artist": "Unknown author<span style=\"display: none;\">Unknown author</span>"
+ },
+ "FRA_leon_blum": {
+  "title": "File:Léon_Blum_en_1936.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:L%C3%A9on_Blum_en_1936.jpg",
+  "licence": "Public domain",
+  "artist": "Bulletin municipal de la ville de Toulouse"
+ },
+ "LR_FRA_orleans": {
+  "title": "File:Jean_d'Orléans_(1874-1940).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jean_d%27Orl%C3%A9ans_(1874-1940).jpg",
+  "licence": "CC0",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Vincent_Calvo\" title=\"User:Vincent Calvo\">Vincent Calvo</a>"
+ },
+ "FRA_philippe_petain": {
+  "title": "File:Pétain_-_portrait_photographique.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:P%C3%A9tain_-_portrait_photographique.jpg",
+  "licence": "Public domain",
+  "artist": "<div class=\"fn value\">\nImprimerie Draeger à Montrouge en région parisienne</div>"
+ }
+}

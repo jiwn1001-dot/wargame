@@ -234,7 +234,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_ports
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_LRc_LR_FRA_ports__GFX_goal_generic_construct_naval_dockyard
 		x = 5
 		y = 3
 		prerequisite = { focus = LR_FRA_rebuild_railways }
@@ -356,7 +356,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_rural_power
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_FRA_rural_power__GFX_goal_generic_construct_civilian
 		x = 5
 		y = 4
 		prerequisite = { focus = LR_FRA_ports }
@@ -395,7 +395,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_synthetic_fuel
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_LRc_LR_FRA_synthetic_fuel__GFX_goal_generic_oil_refinery
 		x = 2
 		y = 5
 		prerequisite = { focus = LR_FRA_mass_production }
@@ -579,7 +579,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_infantry_rearm
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_LRc_LR_FRA_infantry_rearm__GFX_goal_generic_small_arms
 		x = 10
 		y = 3
 		prerequisite = { focus = LR_FRA_rifle_stocks }
@@ -619,7 +619,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_artillery_school
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_LRc_LR_FRA_artillery_school__GFX_goal_generic_army_artillery
 		x = 12
 		y = 2
 		prerequisite = { focus = LR_FRA_lessons_of_defeat }
@@ -660,7 +660,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_mobile_war
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_LRc_LR_FRA_mobile_war__GFX_goal_generic_army_tanks
 		x = 17
 		y = 3
 		prerequisite = { focus = LR_FRA_armoured_recon }
@@ -700,7 +700,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_general_staff
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_FRA_general_staff__GFX_goal_generic_army_doctrines
 		x = 15
 		y = 2
 		prerequisite = { focus = LR_FRA_lessons_of_defeat }
@@ -742,7 +742,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_motorisation
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_LRc_LR_FRA_motorisation__GFX_goal_generic_army_motorized
 		x = 17
 		y = 4
 		prerequisite = { focus = LR_FRA_mobile_war }
@@ -783,7 +783,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_tank_divisions
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_LRc_LR_FRA_tank_divisions__GFX_goal_generic_build_tank
 		x = 17
 		y = 5
 		prerequisite = { focus = LR_FRA_motorisation }
@@ -876,7 +876,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_revenge_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_FRA_revenge_army__GFX_goal_generic_allies_build_infantry
 		x = 15
 		y = 7
 		prerequisite = { focus = LR_FRA_petain_school focus = LR_FRA_degaulle_school }
@@ -951,7 +951,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_air_doctrine
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_LRc_LR_FRA_air_doctrine__GFX_goal_generic_air_doctrine
 		x = 34
 		y = 4
 		prerequisite = { focus = LR_FRA_dewoitine_fighters }
@@ -982,7 +982,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_radio_net
-		icon = GFX_goal_generic_radar
+		icon = GFX_LRc_LR_FRA_radio_net__GFX_goal_generic_radar
 		x = 15
 		y = 5
 		prerequisite = { focus = LR_FRA_saint_cyr }
@@ -1025,7 +1025,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_fleet_doctrine
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_FRA_fleet_doctrine__GFX_goal_generic_navy_doctrines_tactics
 		x = 23
 		y = 2
 		prerequisite = { focus = LR_FRA_new_navy }
@@ -1061,7 +1061,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_ready_for_war
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_FRA_ready_for_war__GFX_goal_generic_major_war
 		x = 15
 		y = 8
 		prerequisite = { focus = LR_FRA_revenge_army }
@@ -1101,7 +1101,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_stabilise_franc
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_FRA_stabilise_franc__GFX_goal_generic_positive_trade_relations
 		x = 0
 		y = 5
 		prerequisite = { focus = LR_FRA_mass_production }
@@ -1253,7 +1253,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_state_capital
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_FRA_state_capital__GFX_goal_generic_construct_civ_factory
 		x = 2
 		y = 8
 		prerequisite = { focus = LR_FRA_citroen_trucks }
@@ -1283,7 +1283,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_private_capital
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_FRA_private_capital__GFX_goal_generic_trade
 		x = 4
 		y = 8
 		prerequisite = { focus = LR_FRA_alpine_hydro }
@@ -1313,7 +1313,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_artisans
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_FRA_artisans__GFX_goal_generic_scientific_exchange
 		x = 0
 		y = 6
 		prerequisite = { focus = LR_FRA_stabilise_franc }
@@ -1389,7 +1389,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_research_network
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_FRA_research_network__GFX_goal_generic_scientific_exchange
 		x = 3
 		y = 9
 		prerequisite = { focus = LR_FRA_state_capital focus = LR_FRA_private_capital }
@@ -1471,7 +1471,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_petain_school
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_FRA_petain_school__GFX_goal_generic_fortify_city
 		x = 14
 		y = 6
 		prerequisite = { focus = LR_FRA_radio_net }
@@ -1507,7 +1507,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_degaulle_school
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_LRc_LR_FRA_degaulle_school__GFX_goal_generic_build_tank
 		x = 16
 		y = 6
 		prerequisite = { focus = LR_FRA_radio_net }
@@ -1543,7 +1543,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_saint_cyr
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_FRA_saint_cyr__GFX_goal_generic_army_doctrines
 		x = 15
 		y = 4
 		prerequisite = { focus = LR_FRA_staff_college }
@@ -1578,7 +1578,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_heavy_artillery
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_LRc_LR_FRA_heavy_artillery__GFX_goal_generic_army_artillery
 		x = 12
 		y = 3
 		prerequisite = { focus = LR_FRA_artillery_school }
@@ -1618,7 +1618,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_char_b
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_LRc_LR_FRA_char_b__GFX_goal_generic_army_tanks
 		x = 18
 		y = 6
 		prerequisite = { focus = LR_FRA_tank_divisions }
@@ -1662,7 +1662,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_foreign_legion
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_FRA_foreign_legion__GFX_goal_generic_allies_build_infantry
 		x = 10
 		y = 5
 		prerequisite = { focus = LR_FRA_colonial_regiments }
@@ -1720,7 +1720,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_fighter_school
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_LRc_LR_FRA_fighter_school__GFX_goal_generic_air_fighter
 		x = 35
 		y = 2
 		prerequisite = { focus = LR_FRA_air_arm }
@@ -1749,7 +1749,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_submarine_arm
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_LRc_LR_FRA_submarine_arm__GFX_goal_generic_navy_submarine
 		x = 25
 		y = 2
 		prerequisite = { focus = LR_FRA_new_navy }
@@ -1791,7 +1791,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_bomber_command
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_LRc_LR_FRA_bomber_command__GFX_goal_generic_air_bomber
 		x = 37
 		y = 2
 		prerequisite = { focus = LR_FRA_air_arm }
@@ -1824,7 +1824,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_battleline
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_LRc_LR_FRA_battleline__GFX_goal_generic_navy_battleship
 		x = 23
 		y = 4
 		prerequisite = { focus = LR_FRA_cruiser_squadron focus = LR_FRA_destroyer_flotillas }
@@ -1909,7 +1909,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_general_mobilisation
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_FRA_general_mobilisation__GFX_goal_generic_major_war
 		x = 15
 		y = 9
 		prerequisite = { focus = LR_FRA_ready_for_war }
@@ -1953,7 +1953,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_duke
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ORL_duke__GFX_goal_generic_national_unity
 		x = 57
 		y = 0
 		allow_branch = { has_country_flag = LR_route_orleans }
@@ -1981,7 +1981,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_shell_bills
-		icon = GFX_goal_generic_production
+		icon = GFX_LRc_LR_ORL_shell_bills__GFX_goal_generic_production
 		x = 53
 		y = 2
 		prerequisite = { focus = LR_ORL_family_allowance }
@@ -2026,7 +2026,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_radical_rearm
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_ORL_radical_rearm__GFX_goal_generic_construct_mil_factory
 		x = 52
 		y = 3
 		prerequisite = { focus = LR_ORL_shell_bills }
@@ -2075,7 +2075,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_calais
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_ORL_calais__GFX_goal_generic_fortify_city
 		x = 51
 		y = 7
 		prerequisite = { focus = LR_ORL_inspectors_out }
@@ -2109,7 +2109,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_algeria
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_ORL_algeria__GFX_goal_generic_occupy_start_war
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_ORL_calais }
@@ -2139,7 +2139,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_rhine__GFX_goal_generic_major_war
 		x = 50
 		y = 9
 		prerequisite = { focus = LR_ORL_algeria }
@@ -2184,7 +2184,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_danube__GFX_goal_generic_major_war
 		x = 45
 		y = 10
 		prerequisite = { focus = LR_ORL_rhine }
@@ -2224,7 +2224,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_channel__GFX_goal_generic_major_war
 		x = 47
 		y = 10
 		prerequisite = { focus = LR_ORL_rhine }
@@ -2254,7 +2254,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_russia__GFX_goal_generic_major_war
 		x = 47
 		y = 11
 		prerequisite = { focus = LR_ORL_channel }
@@ -2284,7 +2284,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_restored
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_restored__GFX_goal_generic_national_unity
 		x = 75
 		y = 0
 		allow_branch = { has_country_flag = LR_route_bourbon }
@@ -2311,7 +2311,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_family_pact
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_family_pact__GFX_goal_generic_major_alliance
 		x = 55
 		y = 5
 		prerequisite = { focus = LR_BOU_versailles_return }
@@ -2340,7 +2340,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_two_sicilies
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_BOU_two_sicilies__GFX_goal_generic_alliance
 		x = 55
 		y = 6
 		prerequisite = { focus = LR_BOU_family_pact }
@@ -2368,7 +2368,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_italy
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_BOU_italy__GFX_goal_generic_demand_territory
 		x = 55
 		y = 8
 		prerequisite = { focus = LR_BOU_italian_arms }
@@ -2405,7 +2405,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_diplomatic_rearm
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_LRc_LR_BOU_diplomatic_rearm__GFX_goal_generic_military_deal
 		x = 69
 		y = 2
 		prerequisite = { focus = LR_BOU_poor_relief focus = LR_BOU_guilds }
@@ -2455,7 +2455,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_open_rearm
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_BOU_open_rearm__GFX_goal_generic_construct_mil_factory
 		x = 71
 		y = 2
 		prerequisite = { focus = LR_BOU_poor_relief focus = LR_BOU_guilds }
@@ -2506,7 +2506,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_algeria
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_BOU_algeria__GFX_goal_generic_occupy_start_war
 		x = 69
 		y = 5
 		prerequisite = { focus = LR_BOU_versailles_return }
@@ -2540,7 +2540,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_rhine__GFX_goal_generic_major_war
 		x = 68
 		y = 6
 		prerequisite = { focus = LR_BOU_algeria }
@@ -2585,7 +2585,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_danube__GFX_goal_generic_major_war
 		x = 63
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
@@ -2616,7 +2616,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_channel__GFX_goal_generic_major_war
 		x = 65
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
@@ -2646,7 +2646,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_russia__GFX_goal_generic_major_war
 		x = 65
 		y = 8
 		prerequisite = { focus = LR_BOU_channel }
@@ -2676,7 +2676,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_commune
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_commune__GFX_goal_generic_propaganda
 		x = 57
 		y = 0
 		allow_branch = { has_country_flag = LR_route_communist }
@@ -2708,7 +2708,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_workers_control
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_COM_workers_control__GFX_goal_generic_construct_civ_factory
 		x = 50
 		y = 2
 		prerequisite = { focus = LR_COM_land_reform }
@@ -2807,7 +2807,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_annex_algeria
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_COM_annex_algeria__GFX_goal_generic_occupy_start_war
 		x = 50
 		y = 7
 		prerequisite = { focus = LR_COM_tribunal }
@@ -2838,7 +2838,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_algerian_comrades
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_algerian_comrades__GFX_goal_generic_propaganda
 		x = 52
 		y = 7
 		prerequisite = { focus = LR_COM_tribunal }
@@ -2868,7 +2868,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_rhine__GFX_goal_generic_major_war
 		x = 50
 		y = 8
 		prerequisite = { focus = LR_COM_annex_algeria focus = LR_COM_algerian_comrades }
@@ -2914,7 +2914,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_channel__GFX_goal_generic_major_war
 		x = 45
 		y = 9
 		prerequisite = { focus = LR_COM_rhine }
@@ -2944,7 +2944,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_danube__GFX_goal_generic_major_war
 		x = 47
 		y = 9
 		prerequisite = { focus = LR_COM_rhine }
@@ -2973,7 +2973,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_committee
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_JAC_committee__GFX_goal_generic_national_unity
 		x = 51
 		y = 0
 		allow_branch = { has_country_flag = LR_route_jacobin }
@@ -3000,7 +3000,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_social_contract
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_JAC_social_contract__GFX_goal_generic_propaganda
 		x = 46
 		y = 1
 		prerequisite = { focus = LR_JAC_committee }
@@ -3039,7 +3039,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_labour_code
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_labour_code__GFX_goal_generic_political_pressure
 		x = 54
 		y = 1
 		prerequisite = { focus = LR_JAC_committee }
@@ -3070,7 +3070,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_public_works
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_JAC_public_works__GFX_goal_generic_construct_civilian
 		x = 49
 		y = 1
 		prerequisite = { focus = LR_JAC_committee }
@@ -3115,7 +3115,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_nationalise
-		icon = GFX_goal_generic_production
+		icon = GFX_LRc_LR_JAC_nationalise__GFX_goal_generic_production
 		x = 49
 		y = 2
 		prerequisite = { focus = LR_JAC_public_works }
@@ -3158,7 +3158,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_public_school
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_JAC_public_school__GFX_goal_generic_scientific_exchange
 		x = 46
 		y = 3
 		prerequisite = { focus = LR_JAC_forty_hours focus = LR_JAC_paid_leave }
@@ -3197,7 +3197,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_reclaim_algeria
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_JAC_reclaim_algeria__GFX_goal_generic_occupy_start_war
 		x = 59
 		y = 5
 		prerequisite = { focus = LR_JAC_two_hundred }
@@ -3228,7 +3228,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_republican_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_JAC_republican_army__GFX_goal_generic_allies_build_infantry
 		x = 58
 		y = 6
 		prerequisite = { focus = LR_JAC_reclaim_algeria }
@@ -3261,7 +3261,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_rhine__GFX_goal_generic_major_war
 		x = 58
 		y = 7
 		prerequisite = { focus = LR_JAC_republican_army }
@@ -3307,7 +3307,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_channel__GFX_goal_generic_major_war
 		x = 53
 		y = 8
 		prerequisite = { focus = LR_JAC_rhine }
@@ -3337,7 +3337,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_danube__GFX_goal_generic_major_war
 		x = 55
 		y = 8
 		prerequisite = { focus = LR_JAC_rhine }
@@ -3366,7 +3366,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_russia__GFX_goal_generic_major_war
 		x = 53
 		y = 9
 		prerequisite = { focus = LR_JAC_channel }
@@ -3396,7 +3396,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_majority
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_majority__GFX_goal_generic_political_pressure
 		x = 57
 		y = 1
 		prerequisite = { focus = LR_JAC_committee }
@@ -3430,7 +3430,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_reform_act
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_JAC_reform_act__GFX_goal_generic_propaganda
 		x = 57
 		y = 2
 		prerequisite = { focus = LR_JAC_majority }
@@ -3466,7 +3466,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_supermajority
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_JAC_supermajority__GFX_goal_generic_national_unity
 		x = 57
 		y = 3
 		prerequisite = { focus = LR_JAC_reform_act }
@@ -3502,7 +3502,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_cabinet
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GIR_cabinet__GFX_goal_generic_national_unity
 		x = 63
 		y = 0
 		allow_branch = { has_country_flag = LR_route_girondin }
@@ -3529,7 +3529,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_deregulation
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_GIR_deregulation__GFX_goal_generic_trade
 		x = 48
 		y = 1
 		prerequisite = { focus = LR_GIR_cabinet }
@@ -3573,7 +3573,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_free_trade
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_GIR_free_trade__GFX_goal_generic_positive_trade_relations
 		x = 47
 		y = 2
 		prerequisite = { focus = LR_GIR_deregulation }
@@ -3612,7 +3612,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_algeria
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_GIR_algeria__GFX_goal_generic_occupy_start_war
 		x = 71
 		y = 5
 		prerequisite = { focus = LR_GIR_paris_question }
@@ -3643,7 +3643,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_rhine__GFX_goal_generic_major_war
 		x = 70
 		y = 6
 		prerequisite = { focus = LR_GIR_algeria }
@@ -3689,7 +3689,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_danube__GFX_goal_generic_major_war
 		x = 65
 		y = 7
 		prerequisite = { focus = LR_GIR_rhine }
@@ -3718,7 +3718,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_channel__GFX_goal_generic_major_war
 		x = 67
 		y = 7
 		prerequisite = { focus = LR_GIR_rhine }
@@ -3748,7 +3748,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_russia__GFX_goal_generic_major_war
 		x = 67
 		y = 8
 		prerequisite = { focus = LR_GIR_channel }
@@ -3778,7 +3778,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_majority
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GIR_majority__GFX_goal_generic_political_pressure
 		x = 65
 		y = 1
 		prerequisite = { focus = LR_GIR_cabinet }
@@ -3810,7 +3810,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_reform_act
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_GIR_reform_act__GFX_goal_generic_propaganda
 		x = 65
 		y = 2
 		prerequisite = { focus = LR_GIR_majority }
@@ -3846,7 +3846,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_supermajority
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GIR_supermajority__GFX_goal_generic_national_unity
 		x = 65
 		y = 3
 		prerequisite = { focus = LR_GIR_reform_act }
@@ -3882,7 +3882,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_cabinet
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_cabinet__GFX_goal_generic_national_unity
 		x = 57
 		y = 0
 		allow_branch = { has_country_flag = LR_route_marais }
@@ -3909,7 +3909,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_constitution
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_MAR_constitution__GFX_goal_generic_political_pressure
 		x = 62
 		y = 1
 		prerequisite = { focus = LR_MAR_cabinet }
@@ -3941,7 +3941,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_order
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_MAR_order__GFX_goal_generic_fortify_city
 		x = 54
 		y = 11
 		prerequisite = { focus = LR_MAR_lyon_strike }
@@ -3977,7 +3977,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_algeria
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_MAR_algeria__GFX_goal_generic_occupy_start_war
 		x = 51
 		y = 5
 		prerequisite = { focus = LR_MAR_lafayette_heir }
@@ -4008,7 +4008,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_rhine__GFX_goal_generic_major_war
 		x = 50
 		y = 6
 		prerequisite = { focus = LR_MAR_algeria }
@@ -4055,7 +4055,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_danube__GFX_goal_generic_major_war
 		x = 45
 		y = 7
 		prerequisite = { focus = LR_MAR_rhine }
@@ -4085,7 +4085,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_channel__GFX_goal_generic_major_war
 		x = 47
 		y = 7
 		prerequisite = { focus = LR_MAR_rhine }
@@ -4117,7 +4117,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_russia__GFX_goal_generic_major_war
 		x = 47
 		y = 8
 		prerequisite = { focus = LR_MAR_channel }
@@ -4147,7 +4147,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_majority
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_MAR_majority__GFX_goal_generic_political_pressure
 		x = 67
 		y = 1
 		prerequisite = { focus = LR_MAR_cabinet }
@@ -4179,7 +4179,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_reform_act
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_MAR_reform_act__GFX_goal_generic_propaganda
 		x = 67
 		y = 2
 		prerequisite = { focus = LR_MAR_majority }
@@ -4215,7 +4215,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_supermajority
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_supermajority__GFX_goal_generic_national_unity
 		x = 67
 		y = 3
 		prerequisite = { focus = LR_MAR_reform_act }
@@ -4251,7 +4251,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_first_consul
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_NAP_first_consul__GFX_goal_generic_national_unity
 		x = 53
 		y = 0
 		allow_branch = { has_country_flag = LR_route_napoleon }
@@ -4273,7 +4273,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_civil_code
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_NAP_civil_code__GFX_goal_generic_political_pressure
 		x = 47
 		y = 1
 		prerequisite = { focus = LR_NAP_first_consul }
@@ -4302,7 +4302,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_bank_of_france
-		icon = GFX_goal_generic_production
+		icon = GFX_LRc_LR_NAP_bank_of_france__GFX_goal_generic_production
 		x = 51
 		y = 1
 		prerequisite = { focus = LR_NAP_first_consul }
@@ -4341,7 +4341,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_legion_of_honour
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_NAP_legion_of_honour__GFX_goal_generic_military_sphere
 		x = 45
 		y = 2
 		prerequisite = { focus = LR_NAP_civil_code }
@@ -4364,7 +4364,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_concordat
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_NAP_concordat__GFX_goal_generic_improve_relations
 		x = 51
 		y = 2
 		prerequisite = { focus = LR_NAP_bank_of_france }
@@ -4385,7 +4385,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_coronation
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_NAP_coronation__GFX_goal_generic_national_unity
 		x = 51
 		y = 6
 		prerequisite = { focus = LR_NAP_before_the_crown }
@@ -4425,7 +4425,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_continental_system
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_NAP_continental_system__GFX_goal_generic_forceful_treaty
 		x = 51
 		y = 11
 		prerequisite = { focus = LR_NAP_new_nobles }
@@ -4453,7 +4453,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_grande_armee
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_LRc_LR_NAP_grande_armee__GFX_goal_generic_army_artillery
 		x = 61
 		y = 11
 		prerequisite = { focus = LR_NAP_new_nobles }
@@ -4484,7 +4484,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_marshals
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_NAP_marshals__GFX_goal_generic_military_sphere
 		x = 61
 		y = 12
 		prerequisite = { focus = LR_NAP_grande_armee }
@@ -4523,7 +4523,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_rhine__GFX_goal_generic_major_war
 		x = 61
 		y = 13
 		prerequisite = { focus = LR_NAP_marshals }
@@ -4565,7 +4565,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_boulogne
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_boulogne__GFX_goal_generic_major_war
 		x = 67
 		y = 14
 		prerequisite = { focus = LR_NAP_rhine }
@@ -4591,7 +4591,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_danube__GFX_goal_generic_major_war
 		x = 65
 		y = 14
 		prerequisite = { focus = LR_NAP_rhine }
@@ -4625,7 +4625,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_moscow
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_moscow__GFX_goal_generic_major_war
 		x = 67
 		y = 15
 		prerequisite = { focus = LR_NAP_boulogne }
@@ -4651,7 +4651,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_guardian
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_NAP_guardian__GFX_goal_generic_political_pressure
 		x = 53
 		y = 6
 		prerequisite = { focus = LR_NAP_before_the_crown }
@@ -4677,7 +4677,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_oath
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_oath__GFX_goal_generic_national_unity
 		x = 53
 		y = 8
 		prerequisite = { focus = LR_NAP_guardian }
@@ -4702,7 +4702,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_civilian_control
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GUA_civilian_control__GFX_goal_generic_political_pressure
 		x = 55
 		y = 7
 		prerequisite = { focus = LR_NAP_guardian }
@@ -4729,7 +4729,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_suffrage
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_GUA_suffrage__GFX_goal_generic_propaganda
 		x = 57
 		y = 7
 		prerequisite = { focus = LR_NAP_guardian }
@@ -4761,7 +4761,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_social_insurance
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_GUA_social_insurance__GFX_goal_generic_construct_civilian
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_GUA_public_education }
@@ -4801,7 +4801,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_constitution
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_constitution__GFX_goal_generic_national_unity
 		x = 56
 		y = 8
 		prerequisite = { focus = LR_GUA_civilian_control }
@@ -4834,7 +4834,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_citizen_army
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_GUA_citizen_army__GFX_goal_generic_allies_build_infantry
 		x = 71
 		y = 7
 		prerequisite = { focus = LR_NAP_guardian }
@@ -4865,7 +4865,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_rhine__GFX_goal_generic_major_war
 		x = 70
 		y = 8
 		prerequisite = { focus = LR_GUA_citizen_army }
@@ -4907,7 +4907,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_channel__GFX_goal_generic_major_war
 		x = 65
 		y = 9
 		prerequisite = { focus = LR_GUA_rhine }
@@ -4933,7 +4933,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_danube__GFX_goal_generic_major_war
 		x = 67
 		y = 9
 		prerequisite = { focus = LR_GUA_rhine }
@@ -4967,7 +4967,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_russia__GFX_goal_generic_major_war
 		x = 65
 		y = 10
 		prerequisite = { focus = LR_GUA_channel }
@@ -4993,7 +4993,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_amnesty
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_GUA_amnesty__GFX_goal_generic_improve_relations
 		x = 62
 		y = 7
 		prerequisite = { focus = LR_NAP_guardian }
@@ -5011,7 +5011,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_league_of_republics
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_GUA_league_of_republics__GFX_goal_generic_alliance
 		x = 47
 		y = 13
 		prerequisite = { focus = LR_GUA_marshals_protest }
@@ -5032,7 +5032,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_youth
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ORL_youth__GFX_goal_generic_propaganda
 		x = 60
 		y = 2
 		prerequisite = { focus = LR_ORL_royal_council }
@@ -5065,7 +5065,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_veterans
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_ORL_veterans__GFX_goal_generic_allies_build_infantry
 		x = 62
 		y = 2
 		prerequisite = { focus = LR_ORL_royal_council }
@@ -5117,7 +5117,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_tear_up_treaty
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_ORL_tear_up_treaty__GFX_goal_generic_forceful_treaty
 		x = 61
 		y = 4
 		prerequisite = { focus = LR_ORL_press_control focus = LR_ORL_secret_staff }
@@ -5154,7 +5154,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_secret_staff
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ORL_secret_staff__GFX_goal_generic_army_doctrines
 		x = 61
 		y = 3
 		prerequisite = { focus = LR_ORL_veterans }
@@ -5184,7 +5184,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_press_control
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_ORL_press_control__GFX_goal_generic_political_pressure
 		x = 59
 		y = 3
 		prerequisite = { focus = LR_ORL_youth }
@@ -5213,7 +5213,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_autarky
-		icon = GFX_goal_generic_production
+		icon = GFX_LRc_LR_ORL_autarky__GFX_goal_generic_production
 		x = 54
 		y = 3
 		prerequisite = { focus = LR_ORL_shell_bills }
@@ -5258,7 +5258,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_latin_front
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_LRc_LR_ORL_latin_front__GFX_goal_generic_military_deal
 		x = 65
 		y = 10
 		prerequisite = { focus = LR_ORL_neutral_ties }
@@ -5294,7 +5294,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_reims
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_reims__GFX_goal_generic_national_unity
 		x = 80
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
@@ -5324,7 +5324,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_church
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_church__GFX_goal_generic_improve_relations
 		x = 85
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
@@ -5353,7 +5353,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_peers
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_BOU_peers__GFX_goal_generic_political_pressure
 		x = 79
 		y = 2
 		prerequisite = { focus = LR_BOU_reims }
@@ -5381,7 +5381,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_colonial_talks
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_BOU_colonial_talks__GFX_goal_generic_positive_trade_relations
 		x = 53
 		y = 6
 		prerequisite = { focus = LR_BOU_family_pact }
@@ -5409,7 +5409,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_mediterranean_pact
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_BOU_mediterranean_pact__GFX_goal_generic_navy_doctrines_tactics
 		x = 53
 		y = 7
 		prerequisite = { focus = LR_BOU_colonial_talks }
@@ -5433,7 +5433,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_latin_league
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_latin_league__GFX_goal_generic_major_alliance
 		x = 53
 		y = 8
 		prerequisite = { focus = LR_BOU_mediterranean_pact }
@@ -5472,7 +5472,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_family_council
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_BOU_family_council__GFX_goal_generic_military_sphere
 		x = 78
 		y = 3
 		prerequisite = { focus = LR_BOU_provincial_estates focus = LR_BOU_peers }
@@ -5503,7 +5503,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_red_guards
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_COM_red_guards__GFX_goal_generic_allies_build_infantry
 		x = 54
 		y = 1
 		prerequisite = { focus = LR_COM_commune }
@@ -5554,7 +5554,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_land_reform
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_COM_land_reform__GFX_goal_generic_construct_civilian
 		x = 50
 		y = 1
 		prerequisite = { focus = LR_COM_commune }
@@ -5590,7 +5590,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_economic_plan
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_COM_economic_plan__GFX_goal_generic_construct_civ_factory
 		x = 50
 		y = 3
 		prerequisite = { focus = LR_COM_workers_control }
@@ -5625,7 +5625,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_council
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_council__GFX_goal_generic_propaganda
 		x = 64
 		y = 1
 		prerequisite = { focus = LR_COM_commune }
@@ -5657,7 +5657,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_international
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_COM_international__GFX_goal_generic_alliance
 		x = 63
 		y = 3
 		prerequisite = { focus = LR_COM_world_revolution }
@@ -5684,7 +5684,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_russian_treaty
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_COM_russian_treaty__GFX_goal_generic_major_alliance
 		x = 59
 		y = 10
 		prerequisite = { focus = LR_COM_workers_embassy }
@@ -5713,7 +5713,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_peoples_army
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_COM_peoples_army__GFX_goal_generic_army_doctrines
 		x = 53
 		y = 2
 		prerequisite = { focus = LR_COM_red_guards }
@@ -5754,7 +5754,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_forty_hours
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_forty_hours__GFX_goal_generic_political_pressure
 		x = 45
 		y = 2
 		prerequisite = { focus = LR_JAC_social_contract }
@@ -5794,7 +5794,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_paid_leave
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_JAC_paid_leave__GFX_goal_generic_propaganda
 		x = 47
 		y = 2
 		prerequisite = { focus = LR_JAC_social_contract }
@@ -5834,7 +5834,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_laicite
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_JAC_laicite__GFX_goal_generic_scientific_exchange
 		x = 55
 		y = 2
 		prerequisite = { focus = LR_JAC_labour_code }
@@ -5869,7 +5869,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_bank_reform
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_JAC_bank_reform__GFX_goal_generic_positive_trade_relations
 		x = 49
 		y = 3
 		prerequisite = { focus = LR_JAC_nationalise }
@@ -5907,7 +5907,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_arms_nationalised
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_JAC_arms_nationalised__GFX_goal_generic_construct_mil_factory
 		x = 49
 		y = 4
 		prerequisite = { focus = LR_JAC_bank_reform }
@@ -5964,7 +5964,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_bourse
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_GIR_bourse__GFX_goal_generic_trade
 		x = 47
 		y = 3
 		prerequisite = { focus = LR_GIR_free_trade }
@@ -6000,7 +6000,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_tax_cut
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_GIR_tax_cut__GFX_goal_generic_positive_trade_relations
 		x = 49
 		y = 2
 		prerequisite = { focus = LR_GIR_deregulation }
@@ -6040,7 +6040,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_tariffs_down
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_GIR_tariffs_down__GFX_goal_generic_trade
 		x = 49
 		y = 3
 		prerequisite = { focus = LR_GIR_tax_cut }
@@ -6083,7 +6083,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_free_ports
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_LRc_LR_GIR_free_ports__GFX_goal_generic_construct_naval_dockyard
 		x = 49
 		y = 4
 		prerequisite = { focus = LR_GIR_bourse focus = LR_GIR_tariffs_down }
@@ -6134,7 +6134,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_rail_privatised
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_GIR_rail_privatised__GFX_goal_generic_construct_civilian
 		x = 51
 		y = 4
 		prerequisite = { focus = LR_GIR_bourse focus = LR_GIR_tariffs_down }
@@ -6178,7 +6178,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_kings_return
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_kings_return__GFX_goal_generic_national_unity
 		x = 61
 		y = 2
 		prerequisite = { focus = LR_MAR_constitution }
@@ -6206,7 +6206,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_senate
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_MAR_senate__GFX_goal_generic_political_pressure
 		x = 63
 		y = 2
 		prerequisite = { focus = LR_MAR_constitution }
@@ -6239,7 +6239,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_civil_law
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_MAR_civil_law__GFX_goal_generic_scientific_exchange
 		x = 61
 		y = 3
 		prerequisite = { focus = LR_MAR_kings_return focus = LR_MAR_senate }
@@ -6275,7 +6275,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_church_schools
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_MAR_church_schools__GFX_goal_generic_improve_relations
 		x = 54
 		y = 1
 		prerequisite = { focus = LR_MAR_cabinet }
@@ -6313,7 +6313,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_gendarmerie
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_MAR_gendarmerie__GFX_goal_generic_fortify_city
 		x = 53
 		y = 12
 		prerequisite = { focus = LR_MAR_order }
@@ -6337,7 +6337,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_imperial_guard
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_NAP_imperial_guard__GFX_goal_generic_army_doctrines
 		x = 51
 		y = 15
 		prerequisite = { focus = LR_NAP_spanish_ulcer }
@@ -6381,7 +6381,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_imperial_nobility
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_NAP_imperial_nobility__GFX_goal_generic_military_sphere
 		x = 51
 		y = 7
 		prerequisite = { focus = LR_NAP_coronation }
@@ -6403,7 +6403,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_rhine_confederation
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_NAP_rhine_confederation__GFX_goal_generic_demand_territory
 		x = 63
 		y = 14
 		prerequisite = { focus = LR_NAP_rhine }
@@ -6434,7 +6434,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_brother_kings
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_NAP_brother_kings__GFX_goal_generic_major_alliance
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_NAP_imperial_nobility }
@@ -6460,7 +6460,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_ORL_suppress__GFX_goal_generic_political_pressure
 		x = 55
 		y = 14
 		prerequisite = { focus = LR_ORL_mobilisation_day }
@@ -6483,7 +6483,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_ORL_uproot__GFX_goal_generic_special_forces
 		x = 55
 		y = 15
 		prerequisite = { focus = LR_ORL_suppress }
@@ -6521,7 +6521,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_BOU_suppress__GFX_goal_generic_political_pressure
 		x = 87
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
@@ -6544,7 +6544,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_BOU_uproot__GFX_goal_generic_special_forces
 		x = 87
 		y = 2
 		prerequisite = { focus = LR_BOU_church }
@@ -6583,7 +6583,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_MAR_suppress__GFX_goal_generic_political_pressure
 		x = 55
 		y = 12
 		prerequisite = { focus = LR_MAR_order }
@@ -6607,7 +6607,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_MAR_uproot__GFX_goal_generic_special_forces
 		x = 55
 		y = 13
 		prerequisite = { focus = LR_MAR_gendarmerie focus = LR_MAR_suppress }
@@ -6645,7 +6645,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_COM_suppress__GFX_goal_generic_political_pressure
 		x = 59
 		y = 13
 		prerequisite = { focus = LR_COM_year_one }
@@ -6668,7 +6668,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_COM_uproot__GFX_goal_generic_special_forces
 		x = 59
 		y = 14
 		prerequisite = { focus = LR_COM_suppress }
@@ -6706,7 +6706,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_suppress__GFX_goal_generic_political_pressure
 		x = 49
 		y = 11
 		prerequisite = { focus = LR_JAC_cagoule }
@@ -6729,7 +6729,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_JAC_uproot__GFX_goal_generic_special_forces
 		x = 49
 		y = 12
 		prerequisite = { focus = LR_JAC_suppress }
@@ -6767,7 +6767,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GIR_suppress__GFX_goal_generic_political_pressure
 		x = 61
 		y = 11
 		prerequisite = { focus = LR_GIR_federal_draft }
@@ -6790,7 +6790,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_GIR_uproot__GFX_goal_generic_special_forces
 		x = 61
 		y = 12
 		prerequisite = { focus = LR_GIR_suppress }
@@ -6828,7 +6828,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_NAP_suppress__GFX_goal_generic_political_pressure
 		x = 55
 		y = 3
 		prerequisite = { focus = LR_NAP_algiers_return }
@@ -6845,7 +6845,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_NAP_uproot__GFX_goal_generic_special_forces
 		x = 55
 		y = 4
 		prerequisite = { focus = LR_NAP_suppress }
@@ -6874,7 +6874,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_marshal
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_PET_marshal__GFX_goal_generic_national_unity
 		x = 59
 		y = 0
 		allow_branch = { has_country_flag = LR_route_petain }
@@ -6896,7 +6896,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_labour_charter
-		icon = GFX_goal_generic_production
+		icon = GFX_LRc_LR_PET_labour_charter__GFX_goal_generic_production
 		x = 52
 		y = 1
 		prerequisite = { focus = LR_PET_marshal }
@@ -6926,7 +6926,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_family_code
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_PET_family_code__GFX_goal_generic_propaganda
 		x = 56
 		y = 1
 		prerequisite = { focus = LR_PET_marshal }
@@ -6955,7 +6955,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_return_to_soil
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_PET_return_to_soil__GFX_goal_generic_construct_civilian
 		x = 52
 		y = 2
 		prerequisite = { focus = LR_PET_labour_charter }
@@ -6985,7 +6985,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_peasant_corporation
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_PET_peasant_corporation__GFX_goal_generic_trade
 		x = 51
 		y = 3
 		prerequisite = { focus = LR_PET_return_to_soil }
@@ -7018,7 +7018,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_youth_camps
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_LRc_LR_PET_youth_camps__GFX_goal_generic_construct_infrastructure
 		x = 55
 		y = 2
 		prerequisite = { focus = LR_PET_family_code }
@@ -7047,7 +7047,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_secours_national
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_PET_secours_national__GFX_goal_generic_improve_relations
 		x = 57
 		y = 2
 		prerequisite = { focus = LR_PET_family_code }
@@ -7076,7 +7076,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_school_cross
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_PET_school_cross__GFX_goal_generic_scientific_exchange
 		x = 55
 		y = 3
 		prerequisite = { focus = LR_PET_youth_camps }
@@ -7105,7 +7105,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_national_revolution
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_PET_national_revolution__GFX_goal_generic_national_unity
 		x = 64
 		y = 1
 		prerequisite = { focus = LR_PET_marshal }
@@ -7127,7 +7127,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_constitutional_acts
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_PET_constitutional_acts__GFX_goal_generic_political_pressure
 		x = 62
 		y = 2
 		prerequisite = { focus = LR_PET_national_revolution }
@@ -7148,7 +7148,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_legion
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_PET_legion__GFX_goal_generic_allies_build_infantry
 		x = 64
 		y = 2
 		prerequisite = { focus = LR_PET_national_revolution }
@@ -7171,7 +7171,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_national_council
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_PET_national_council__GFX_goal_generic_political_pressure
 		x = 61
 		y = 3
 		prerequisite = { focus = LR_PET_constitutional_acts }
@@ -7193,7 +7193,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_riom_trial
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_PET_riom_trial__GFX_goal_generic_forceful_treaty
 		x = 63
 		y = 3
 		prerequisite = { focus = LR_PET_legion }
@@ -7216,7 +7216,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_heir_weygand
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_PET_heir_weygand__GFX_goal_generic_army_doctrines
 		x = 61
 		y = 4
 		prerequisite = { focus = LR_PET_national_council }
@@ -7240,7 +7240,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_heir_darlan
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_PET_heir_darlan__GFX_goal_generic_navy_doctrines_tactics
 		x = 63
 		y = 4
 		prerequisite = { focus = LR_PET_national_council }
@@ -7264,7 +7264,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_madrid_embassy
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_PET_madrid_embassy__GFX_goal_generic_improve_relations
 		x = 62
 		y = 7
 		prerequisite = { focus = LR_PET_laval }
@@ -7286,7 +7286,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_vatican
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_PET_vatican__GFX_goal_generic_improve_relations
 		x = 62
 		y = 8
 		prerequisite = { focus = LR_PET_madrid_embassy }
@@ -7308,7 +7308,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_montoire
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_LRc_LR_PET_montoire__GFX_goal_generic_dangerous_deal
 		x = 61
 		y = 9
 		prerequisite = { focus = LR_PET_vatican }
@@ -7334,7 +7334,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_hidden_sword
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_LRc_LR_PET_hidden_sword__GFX_goal_generic_military_deal
 		x = 63
 		y = 9
 		prerequisite = { focus = LR_PET_vatican }
@@ -7361,7 +7361,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_verdun_doctrine
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_PET_verdun_doctrine__GFX_goal_generic_fortify_city
 		x = 50
 		y = 5
 		prerequisite = { focus = LR_PET_portrait }
@@ -7382,7 +7382,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_maginot
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_PET_maginot__GFX_goal_generic_fortify_city
 		x = 50
 		y = 6
 		prerequisite = { focus = LR_PET_verdun_doctrine }
@@ -7404,7 +7404,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_PET_suppress__GFX_goal_generic_political_pressure
 		x = 61
 		y = 11
 		prerequisite = { focus = LR_PET_last_winter }
@@ -7421,7 +7421,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_PET_uproot__GFX_goal_generic_special_forces
 		x = 61
 		y = 12
 		prerequisite = { focus = LR_PET_suppress }
@@ -7455,7 +7455,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_algeria
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_PET_algeria__GFX_goal_generic_occupy_start_war
 		x = 49
 		y = 7
 		prerequisite = { focus = LR_PET_maginot }
@@ -7481,7 +7481,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_rhine__GFX_goal_generic_major_war
 		x = 51
 		y = 7
 		prerequisite = { focus = LR_PET_maginot }
@@ -7523,7 +7523,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_danube__GFX_goal_generic_major_war
 		x = 47
 		y = 8
 		prerequisite = { focus = LR_PET_rhine }
@@ -7546,7 +7546,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_channel__GFX_goal_generic_major_war
 		x = 49
 		y = 8
 		prerequisite = { focus = LR_PET_rhine }
@@ -7572,7 +7572,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_russia__GFX_goal_generic_major_war
 		x = 49
 		y = 9
 		prerequisite = { focus = LR_PET_channel }
@@ -7598,7 +7598,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_federation
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ANA_federation__GFX_goal_generic_propaganda
 		x = 51
 		y = 0
 		allow_branch = { has_country_flag = LR_route_anarchist }
@@ -7624,7 +7624,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_syndicates_take
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_ANA_syndicates_take__GFX_goal_generic_construct_civ_factory
 		x = 45
 		y = 1
 		prerequisite = { focus = LR_ANA_federation }
@@ -7664,7 +7664,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_free_communes
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ANA_free_communes__GFX_goal_generic_propaganda
 		x = 48
 		y = 1
 		prerequisite = { focus = LR_ANA_federation }
@@ -7696,7 +7696,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_collectives
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_ANA_collectives__GFX_goal_generic_construct_civilian
 		x = 45
 		y = 2
 		prerequisite = { focus = LR_ANA_syndicates_take }
@@ -7724,7 +7724,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_abolish_money
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_ANA_abolish_money__GFX_goal_generic_trade
 		x = 45
 		y = 3
 		prerequisite = { focus = LR_ANA_collectives }
@@ -7772,7 +7772,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_housing
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_ANA_housing__GFX_goal_generic_construct_civilian
 		x = 48
 		y = 2
 		prerequisite = { focus = LR_ANA_free_communes }
@@ -7800,7 +7800,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_rationalist_schools
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_ANA_rationalist_schools__GFX_goal_generic_scientific_exchange
 		x = 48
 		y = 3
 		prerequisite = { focus = LR_ANA_housing }
@@ -7828,7 +7828,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_ateneos
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ANA_ateneos__GFX_goal_generic_propaganda
 		x = 47
 		y = 4
 		prerequisite = { focus = LR_ANA_rationalist_schools }
@@ -7857,7 +7857,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_proudhon
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_ANA_proudhon__GFX_goal_generic_political_pressure
 		x = 55
 		y = 1
 		prerequisite = { focus = LR_ANA_federation }
@@ -7878,7 +7878,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_abolish_prefects
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_ANA_abolish_prefects__GFX_goal_generic_forceful_treaty
 		x = 53
 		y = 2
 		prerequisite = { focus = LR_ANA_proudhon }
@@ -7900,7 +7900,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_mandates
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ANA_mandates__GFX_goal_generic_national_unity
 		x = 55
 		y = 2
 		prerequisite = { focus = LR_ANA_proudhon }
@@ -7921,7 +7921,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_congress
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ANA_congress__GFX_goal_generic_propaganda
 		x = 54
 		y = 3
 		prerequisite = { focus = LR_ANA_abolish_prefects }
@@ -7944,7 +7944,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_platform
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ANA_platform__GFX_goal_generic_army_doctrines
 		x = 53
 		y = 4
 		prerequisite = { focus = LR_ANA_congress }
@@ -7967,7 +7967,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_synthesis
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ANA_synthesis__GFX_goal_generic_improve_relations
 		x = 55
 		y = 4
 		prerequisite = { focus = LR_ANA_congress }
@@ -7990,7 +7990,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_columns
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_ANA_columns__GFX_goal_generic_allies_build_infantry
 		x = 65
 		y = 1
 		prerequisite = { focus = LR_ANA_federation }
@@ -8015,7 +8015,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_elected_officers
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ANA_elected_officers__GFX_goal_generic_army_doctrines
 		x = 64
 		y = 2
 		prerequisite = { focus = LR_ANA_columns }
@@ -8032,7 +8032,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_militarisation
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_ANA_militarisation__GFX_goal_generic_political_pressure
 		x = 64
 		y = 3
 		prerequisite = { focus = LR_ANA_elected_officers }
@@ -8058,7 +8058,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_cnt_brothers
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_ANA_cnt_brothers__GFX_goal_generic_alliance
 		x = 47
 		y = 7
 		prerequisite = { focus = LR_ANA_platform_debate }
@@ -8085,7 +8085,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_carrara
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ANA_carrara__GFX_goal_generic_propaganda
 		x = 47
 		y = 8
 		prerequisite = { focus = LR_ANA_cnt_brothers }
@@ -8113,7 +8113,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_iwa
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_ANA_iwa__GFX_goal_generic_major_alliance
 		x = 47
 		y = 9
 		prerequisite = { focus = LR_ANA_carrara }
@@ -8135,7 +8135,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_free_territory
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ANA_free_territory__GFX_goal_generic_propaganda
 		x = 47
 		y = 10
 		prerequisite = { focus = LR_ANA_iwa }
@@ -8157,7 +8157,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_ANA_suppress__GFX_goal_generic_political_pressure
 		x = 53
 		y = 9
 		prerequisite = { focus = LR_ANA_commissars }
@@ -8174,7 +8174,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_ANA_uproot__GFX_goal_generic_special_forces
 		x = 53
 		y = 10
 		prerequisite = { focus = LR_ANA_suppress }
@@ -8208,7 +8208,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_algerian_freedom
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ANA_algerian_freedom__GFX_goal_generic_improve_relations
 		x = 63
 		y = 4
 		prerequisite = { focus = LR_ANA_militarisation }
@@ -8233,7 +8233,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ANA_rhine__GFX_goal_generic_major_war
 		x = 65
 		y = 4
 		prerequisite = { focus = LR_ANA_militarisation }
@@ -8275,7 +8275,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ANA_danube__GFX_goal_generic_major_war
 		x = 61
 		y = 5
 		prerequisite = { focus = LR_ANA_rhine }
@@ -8298,7 +8298,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ANA_channel__GFX_goal_generic_major_war
 		x = 63
 		y = 5
 		prerequisite = { focus = LR_ANA_rhine }
@@ -8324,7 +8324,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_red
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_NAP_red__GFX_goal_generic_propaganda
 		x = 55
 		y = 6
 		prerequisite = { focus = LR_NAP_before_the_crown }
@@ -8342,7 +8342,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_tribune
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_RED_tribune__GFX_goal_generic_propaganda
 		x = 53
 		y = 8
 		prerequisite = { focus = LR_NAP_red }
@@ -8368,7 +8368,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_maximum
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_RED_maximum__GFX_goal_generic_trade
 		x = 57
 		y = 7
 		prerequisite = { focus = LR_NAP_red }
@@ -8398,7 +8398,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_workshops
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_RED_workshops__GFX_goal_generic_construct_civ_factory
 		x = 55
 		y = 7
 		prerequisite = { focus = LR_NAP_red }
@@ -8437,7 +8437,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_arsenals
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_RED_arsenals__GFX_goal_generic_construct_mil_factory
 		x = 55
 		y = 8
 		prerequisite = { focus = LR_RED_workshops }
@@ -8470,7 +8470,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_soldiers_land
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_RED_soldiers_land__GFX_goal_generic_construct_civilian
 		x = 57
 		y = 8
 		prerequisite = { focus = LR_RED_maximum }
@@ -8499,7 +8499,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_calendar_plan
-		icon = GFX_goal_generic_production
+		icon = GFX_LRc_LR_RED_calendar_plan__GFX_goal_generic_production
 		x = 56
 		y = 9
 		prerequisite = { focus = LR_RED_soldiers_land }
@@ -8542,7 +8542,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_beaucaire
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_RED_beaucaire__GFX_goal_generic_propaganda
 		x = 50
 		y = 7
 		prerequisite = { focus = LR_NAP_red }
@@ -8567,7 +8567,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_committee
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_RED_committee__GFX_goal_generic_political_pressure
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_RED_beaucaire }
@@ -8588,7 +8588,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_people_vote
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_RED_people_vote__GFX_goal_generic_national_unity
 		x = 49
 		y = 8
 		prerequisite = { focus = LR_RED_beaucaire }
@@ -8609,7 +8609,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_red_marshals
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_RED_red_marshals__GFX_goal_generic_military_sphere
 		x = 50
 		y = 9
 		prerequisite = { focus = LR_RED_committee }
@@ -8627,7 +8627,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_sword
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_sword__GFX_goal_generic_major_war
 		x = 51
 		y = 10
 		prerequisite = { focus = LR_RED_red_marshals }
@@ -8650,7 +8650,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_continental_socialism
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_RED_continental_socialism__GFX_goal_generic_national_unity
 		x = 49
 		y = 10
 		prerequisite = { focus = LR_RED_red_marshals }
@@ -8673,7 +8673,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_levee
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_RED_levee__GFX_goal_generic_allies_build_infantry
 		x = 62
 		y = 11
 		prerequisite = { focus = LR_RED_souper }
@@ -8696,7 +8696,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_commissars
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_RED_commissars__GFX_goal_generic_army_doctrines
 		x = 62
 		y = 12
 		prerequisite = { focus = LR_RED_levee }
@@ -8718,7 +8718,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_red_grande_armee
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_LRc_LR_RED_red_grande_armee__GFX_goal_generic_army_artillery
 		x = 62
 		y = 13
 		prerequisite = { focus = LR_RED_commissars }
@@ -8745,7 +8745,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_sister_communes
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_RED_sister_communes__GFX_goal_generic_alliance
 		x = 50
 		y = 13
 		prerequisite = { focus = LR_RED_red_epaulettes }
@@ -8767,7 +8767,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_italian_legion
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_RED_italian_legion__GFX_goal_generic_propaganda
 		x = 51
 		y = 14
 		prerequisite = { focus = LR_RED_sister_communes }
@@ -8801,7 +8801,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_polish_legion
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_RED_polish_legion__GFX_goal_generic_propaganda
 		x = 49
 		y = 14
 		prerequisite = { focus = LR_RED_sister_communes }
@@ -8824,7 +8824,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_revolution_hq
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_RED_revolution_hq__GFX_goal_generic_major_alliance
 		x = 50
 		y = 15
 		prerequisite = { focus = LR_RED_italian_legion }
@@ -8847,7 +8847,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_suppress
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_RED_suppress__GFX_goal_generic_political_pressure
 		x = 51
 		y = 17
 		prerequisite = { focus = LR_RED_robespierre_shadow }
@@ -8864,7 +8864,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_uproot
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_RED_uproot__GFX_goal_generic_special_forces
 		x = 51
 		y = 18
 		prerequisite = { focus = LR_RED_suppress }
@@ -8893,7 +8893,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_rhine
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_rhine__GFX_goal_generic_major_war
 		x = 62
 		y = 14
 		prerequisite = { focus = LR_RED_red_grande_armee }
@@ -8935,7 +8935,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_danube
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_danube__GFX_goal_generic_major_war
 		x = 67
 		y = 15
 		prerequisite = { focus = LR_RED_rhine }
@@ -8969,7 +8969,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_channel
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_channel__GFX_goal_generic_major_war
 		x = 65
 		y = 15
 		prerequisite = { focus = LR_RED_rhine }
@@ -8995,7 +8995,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_russia
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_russia__GFX_goal_generic_major_war
 		x = 65
 		y = 16
 		prerequisite = { focus = LR_RED_channel }
@@ -9021,7 +9021,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_occupation
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_DEF_occupation__GFX_goal_generic_national_unity
 		x = 49
 		y = 0
 		allow_branch = { has_country_flag = LR_route_vanquished }
@@ -9041,7 +9041,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_rations
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_DEF_rations__GFX_goal_generic_trade
 		x = 45
 		y = 1
 		prerequisite = { focus = LR_DEF_occupation }
@@ -9070,7 +9070,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_prisoners
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_DEF_prisoners__GFX_goal_generic_improve_relations
 		x = 47
 		y = 1
 		prerequisite = { focus = LR_DEF_occupation }
@@ -9094,7 +9094,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_black_market
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_LRc_LR_DEF_black_market__GFX_goal_generic_intelligence_exchange
 		x = 45
 		y = 2
 		prerequisite = { focus = LR_DEF_rations }
@@ -9124,7 +9124,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_ruins
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_DEF_ruins__GFX_goal_generic_construct_civilian
 		x = 47
 		y = 2
 		prerequisite = { focus = LR_DEF_prisoners }
@@ -9157,7 +9157,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_winter_relief
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_DEF_winter_relief__GFX_goal_generic_propaganda
 		x = 46
 		y = 3
 		prerequisite = { focus = LR_DEF_black_market }
@@ -9186,7 +9186,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_two_roads
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_DEF_two_roads__GFX_goal_generic_political_pressure
 		x = 53
 		y = 1
 		prerequisite = { focus = LR_DEF_occupation }
@@ -9207,7 +9207,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_cooperate
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_LRc_LR_DEF_cooperate__GFX_goal_generic_dangerous_deal
 		x = 52
 		y = 2
 		prerequisite = { focus = LR_DEF_two_roads }
@@ -9231,7 +9231,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_collab_admin
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_DEF_collab_admin__GFX_goal_generic_political_pressure
 		x = 52
 		y = 3
 		prerequisite = { focus = LR_DEF_cooperate }
@@ -9256,7 +9256,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_reparations_paid
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_DEF_reparations_paid__GFX_goal_generic_trade
 		x = 51
 		y = 4
 		prerequisite = { focus = LR_DEF_collab_admin }
@@ -9279,7 +9279,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_autonomy
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_DEF_autonomy__GFX_goal_generic_national_unity
 		x = 51
 		y = 5
 		prerequisite = { focus = LR_DEF_reparations_paid }
@@ -9303,7 +9303,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_resist
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_DEF_resist__GFX_goal_generic_special_forces
 		x = 54
 		y = 2
 		prerequisite = { focus = LR_DEF_two_roads }
@@ -9327,7 +9327,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_maquis
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_DEF_maquis__GFX_goal_generic_allies_build_infantry
 		x = 54
 		y = 3
 		prerequisite = { focus = LR_DEF_resist }
@@ -9352,7 +9352,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_sabotage
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_DEF_sabotage__GFX_goal_generic_forceful_treaty
 		x = 53
 		y = 4
 		prerequisite = { focus = LR_DEF_maquis }
@@ -9370,7 +9370,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_secret_army
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_DEF_secret_army__GFX_goal_generic_army_doctrines
 		x = 55
 		y = 4
 		prerequisite = { focus = LR_DEF_maquis }
@@ -9394,7 +9394,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_rising
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_DEF_rising__GFX_goal_generic_propaganda
 		x = 54
 		y = 5
 		prerequisite = { focus = LR_DEF_sabotage }
@@ -9418,7 +9418,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_exile_committee
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_DEF_exile_committee__GFX_goal_generic_alliance
 		x = 47
 		y = 5
 		prerequisite = { focus = LR_DEF_first_execution }
@@ -9441,7 +9441,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_world_opinion
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_DEF_world_opinion__GFX_goal_generic_improve_relations
 		x = 47
 		y = 6
 		prerequisite = { focus = LR_DEF_exile_committee }
@@ -9464,7 +9464,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_curfew
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_DEF_curfew__GFX_goal_generic_fortify_city
 		x = 51
 		y = 7
 		prerequisite = { focus = LR_DEF_second_winter }
@@ -9481,7 +9481,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_COM_found_bloc__GFX_goal_generic_major_alliance
 		x = 63
 		y = 9
 		prerequisite = { focus = LR_COM_bread_and_coal }
@@ -9507,7 +9507,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_invite_esr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_COM_invite_esr__GFX_goal_generic_improve_relations
 		x = 63
 		y = 10
 		prerequisite = { focus = LR_COM_found_bloc }
@@ -9543,7 +9543,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_ANA_found_bloc__GFX_goal_generic_major_alliance
 		x = 49
 		y = 7
 		prerequisite = { focus = LR_ANA_platform_debate }
@@ -9563,7 +9563,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_invite_esr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ANA_invite_esr__GFX_goal_generic_improve_relations
 		x = 49
 		y = 8
 		prerequisite = { focus = LR_ANA_found_bloc }
@@ -9595,7 +9595,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_RED_found_bloc__GFX_goal_generic_major_alliance
 		x = 47
 		y = 13
 		prerequisite = { focus = LR_RED_red_epaulettes }
@@ -9615,7 +9615,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_invite_esr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_RED_invite_esr__GFX_goal_generic_improve_relations
 		x = 47
 		y = 14
 		prerequisite = { focus = LR_RED_found_bloc }
@@ -9647,7 +9647,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_JAC_found_bloc__GFX_goal_generic_major_alliance
 		x = 46
 		y = 7
 		prerequisite = { focus = LR_JAC_robespierre_portrait }
@@ -9673,7 +9673,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_invite_esr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_JAC_invite_esr__GFX_goal_generic_improve_relations
 		x = 45
 		y = 8
 		prerequisite = { focus = LR_JAC_found_bloc }
@@ -9709,7 +9709,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_invite_cna
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_JAC_invite_cna__GFX_goal_generic_improve_relations
 		x = 47
 		y = 8
 		prerequisite = { focus = LR_JAC_found_bloc }
@@ -9742,7 +9742,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_GIR_found_bloc__GFX_goal_generic_major_alliance
 		x = 60
 		y = 7
 		prerequisite = { focus = LR_GIR_atlantic_company }
@@ -9768,7 +9768,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_invite_esr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_GIR_invite_esr__GFX_goal_generic_improve_relations
 		x = 59
 		y = 8
 		prerequisite = { focus = LR_GIR_found_bloc }
@@ -9804,7 +9804,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_invite_cna
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_GIR_invite_cna__GFX_goal_generic_improve_relations
 		x = 61
 		y = 8
 		prerequisite = { focus = LR_GIR_found_bloc }
@@ -9837,7 +9837,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_MAR_found_bloc__GFX_goal_generic_major_alliance
 		x = 60
 		y = 7
 		prerequisite = { focus = LR_MAR_empty_throne }
@@ -9864,7 +9864,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_invite_esr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_MAR_invite_esr__GFX_goal_generic_improve_relations
 		x = 59
 		y = 8
 		prerequisite = { focus = LR_MAR_found_bloc }
@@ -9900,7 +9900,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_invite_cna
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_MAR_invite_cna__GFX_goal_generic_improve_relations
 		x = 61
 		y = 8
 		prerequisite = { focus = LR_MAR_found_bloc }
@@ -9933,7 +9933,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_GUA_found_bloc__GFX_goal_generic_major_alliance
 		x = 50
 		y = 13
 		prerequisite = { focus = LR_GUA_marshals_protest }
@@ -9953,7 +9953,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_invite_esr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_GUA_invite_esr__GFX_goal_generic_improve_relations
 		x = 49
 		y = 14
 		prerequisite = { focus = LR_GUA_found_bloc }
@@ -9985,7 +9985,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_invite_cna
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_GUA_invite_cna__GFX_goal_generic_improve_relations
 		x = 51
 		y = 14
 		prerequisite = { focus = LR_GUA_found_bloc }
@@ -10014,7 +10014,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_invite_crl
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ORL_invite_crl__GFX_goal_generic_improve_relations
 		x = 59
 		y = 11
 		prerequisite = { focus = LR_ORL_latin_front }
@@ -10050,7 +10050,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_invite_spr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ORL_invite_spr__GFX_goal_generic_improve_relations
 		x = 61
 		y = 11
 		prerequisite = { focus = LR_ORL_latin_front }
@@ -10086,7 +10086,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_invite_tts
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ORL_invite_tts__GFX_goal_generic_improve_relations
 		x = 63
 		y = 11
 		prerequisite = { focus = LR_ORL_latin_front }
@@ -10118,7 +10118,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_invite_pap
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ORL_invite_pap__GFX_goal_generic_improve_relations
 		x = 65
 		y = 11
 		prerequisite = { focus = LR_ORL_latin_front }
@@ -10150,7 +10150,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_ottoman_contact
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_ORL_ottoman_contact__GFX_goal_generic_positive_trade_relations
 		x = 67
 		y = 11
 		prerequisite = { focus = LR_ORL_latin_front }
@@ -10185,7 +10185,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_ottoman_win
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_ORL_ottoman_win__GFX_goal_generic_major_alliance
 		x = 67
 		y = 12
 		prerequisite = { focus = LR_ORL_ottoman_contact }
@@ -10223,7 +10223,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_invite_balkans
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_ORL_invite_balkans__GFX_goal_generic_major_alliance
 		x = 69
 		y = 11
 		prerequisite = { focus = LR_ORL_latin_front }
@@ -10281,7 +10281,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_invite_crl
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_invite_crl__GFX_goal_generic_improve_relations
 		x = 45
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
@@ -10317,7 +10317,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_invite_spr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_invite_spr__GFX_goal_generic_improve_relations
 		x = 47
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
@@ -10353,7 +10353,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_invite_tts
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_invite_tts__GFX_goal_generic_improve_relations
 		x = 49
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
@@ -10385,7 +10385,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_invite_pap
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_invite_pap__GFX_goal_generic_improve_relations
 		x = 51
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
@@ -10417,7 +10417,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_ottoman_contact
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_BOU_ottoman_contact__GFX_goal_generic_positive_trade_relations
 		x = 53
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
@@ -10452,7 +10452,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_ottoman_win
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_ottoman_win__GFX_goal_generic_major_alliance
 		x = 53
 		y = 10
 		prerequisite = { focus = LR_BOU_ottoman_contact }
@@ -10490,7 +10490,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_invite_balkans
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_invite_balkans__GFX_goal_generic_major_alliance
 		x = 55
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
@@ -10548,7 +10548,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_PET_found_bloc__GFX_goal_generic_major_alliance
 		x = 70
 		y = 7
 		prerequisite = { focus = LR_PET_laval }
@@ -10568,7 +10568,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_invite_crl
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_PET_invite_crl__GFX_goal_generic_improve_relations
 		x = 65
 		y = 8
 		prerequisite = { focus = LR_PET_found_bloc }
@@ -10600,7 +10600,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_invite_spr
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_PET_invite_spr__GFX_goal_generic_improve_relations
 		x = 67
 		y = 8
 		prerequisite = { focus = LR_PET_found_bloc }
@@ -10632,7 +10632,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_invite_tts
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_PET_invite_tts__GFX_goal_generic_improve_relations
 		x = 69
 		y = 8
 		prerequisite = { focus = LR_PET_found_bloc }
@@ -10660,7 +10660,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_invite_pap
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_PET_invite_pap__GFX_goal_generic_improve_relations
 		x = 71
 		y = 8
 		prerequisite = { focus = LR_PET_found_bloc }
@@ -10688,7 +10688,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_ottoman_contact
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_PET_ottoman_contact__GFX_goal_generic_positive_trade_relations
 		x = 73
 		y = 8
 		prerequisite = { focus = LR_PET_found_bloc }
@@ -10719,7 +10719,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_ottoman_win
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_PET_ottoman_win__GFX_goal_generic_major_alliance
 		x = 73
 		y = 9
 		prerequisite = { focus = LR_PET_ottoman_contact }
@@ -10753,7 +10753,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_invite_balkans
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_PET_invite_balkans__GFX_goal_generic_major_alliance
 		x = 75
 		y = 8
 		prerequisite = { focus = LR_PET_found_bloc }
@@ -10807,7 +10807,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_found_bloc
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_NAP_found_bloc__GFX_goal_generic_major_alliance
 		x = 48
 		y = 11
 		prerequisite = { focus = LR_NAP_new_nobles }
@@ -10827,7 +10827,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_ottoman_contact
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_NAP_ottoman_contact__GFX_goal_generic_positive_trade_relations
 		x = 49
 		y = 12
 		prerequisite = { focus = LR_NAP_found_bloc }
@@ -10858,7 +10858,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_ottoman_win
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_NAP_ottoman_win__GFX_goal_generic_major_alliance
 		x = 49
 		y = 13
 		prerequisite = { focus = LR_NAP_ottoman_contact }
@@ -10892,7 +10892,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_invite_balkans
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_NAP_invite_balkans__GFX_goal_generic_major_alliance
 		x = 47
 		y = 12
 		prerequisite = { focus = LR_NAP_found_bloc }
@@ -10946,7 +10946,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_royal_council
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_ORL_royal_council__GFX_goal_generic_political_pressure
 		x = 61
 		y = 1
 		prerequisite = { focus = LR_ORL_duke }
@@ -10973,7 +10973,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_family_allowance
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ORL_family_allowance__GFX_goal_generic_propaganda
 		x = 52
 		y = 1
 		prerequisite = { focus = LR_ORL_duke }
@@ -11010,7 +11010,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_labour_service
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_ORL_labour_service__GFX_goal_generic_construct_civilian
 		x = 54
 		y = 1
 		prerequisite = { focus = LR_ORL_duke }
@@ -11045,7 +11045,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_poor_relief
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_BOU_poor_relief__GFX_goal_generic_propaganda
 		x = 69
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
@@ -11080,7 +11080,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_guilds
-		icon = GFX_goal_generic_production
+		icon = GFX_LRc_LR_BOU_guilds__GFX_goal_generic_production
 		x = 71
 		y = 1
 		prerequisite = { focus = LR_BOU_restored }
@@ -11117,7 +11117,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_provincial_estates
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_BOU_provincial_estates__GFX_goal_generic_political_pressure
 		x = 77
 		y = 2
 		prerequisite = { focus = LR_BOU_reims }
@@ -11146,7 +11146,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_womens_vote
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_JAC_womens_vote__GFX_goal_generic_propaganda
 		x = 53
 		y = 2
 		prerequisite = { focus = LR_JAC_labour_code }
@@ -11182,7 +11182,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_charity_schools
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_GIR_charity_schools__GFX_goal_generic_scientific_exchange
 		x = 53
 		y = 2
 		prerequisite = { focus = LR_GIR_mutual_aid }
@@ -11217,7 +11217,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_mutual_aid
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_GIR_mutual_aid__GFX_goal_generic_propaganda
 		x = 53
 		y = 1
 		prerequisite = { focus = LR_GIR_cabinet }
@@ -11255,7 +11255,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_provincial_power
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GIR_provincial_power__GFX_goal_generic_political_pressure
 		x = 56
 		y = 1
 		prerequisite = { focus = LR_GIR_cabinet }
@@ -11288,7 +11288,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_parish_relief
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_MAR_parish_relief__GFX_goal_generic_improve_relations
 		x = 53
 		y = 2
 		prerequisite = { focus = LR_MAR_church_schools }
@@ -11326,7 +11326,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_property_franchise
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_MAR_property_franchise__GFX_goal_generic_political_pressure
 		x = 63
 		y = 3
 		prerequisite = { focus = LR_MAR_senate }
@@ -11361,7 +11361,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_imperial_university
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_NAP_imperial_university__GFX_goal_generic_scientific_exchange
 		x = 55
 		y = 7
 		prerequisite = { focus = LR_NAP_coronation }
@@ -11390,7 +11390,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_public_education
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_GUA_public_education__GFX_goal_generic_scientific_exchange
 		x = 51
 		y = 7
 		prerequisite = { focus = LR_NAP_guardian }
@@ -11427,7 +11427,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_fortress_france
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_COM_fortress_france__GFX_goal_generic_fortify_city
 		x = 59
 		y = 3
 		prerequisite = { focus = LR_COM_one_country }
@@ -11455,7 +11455,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_socialist_industry
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_COM_socialist_industry__GFX_goal_generic_construct_mil_factory
 		x = 61
 		y = 3
 		prerequisite = { focus = LR_COM_one_country }
@@ -11496,7 +11496,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_collective_farms
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_COM_collective_farms__GFX_goal_generic_construct_civilian
 		x = 61
 		y = 4
 		prerequisite = { focus = LR_COM_socialist_industry }
@@ -11525,7 +11525,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_national_guard
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_COM_national_guard__GFX_goal_generic_allies_build_infantry
 		x = 59
 		y = 4
 		prerequisite = { focus = LR_COM_fortress_france }
@@ -11570,7 +11570,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_no_foreign_masters
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_COM_no_foreign_masters__GFX_goal_generic_political_pressure
 		x = 60
 		y = 5
 		prerequisite = { focus = LR_COM_national_guard }
@@ -11599,7 +11599,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_comintern_paris
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_comintern_paris__GFX_goal_generic_propaganda
 		x = 65
 		y = 3
 		prerequisite = { focus = LR_COM_world_revolution }
@@ -11627,7 +11627,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_spanish_comrades
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_spanish_comrades__GFX_goal_generic_propaganda
 		x = 65
 		y = 4
 		prerequisite = { focus = LR_COM_comintern_paris }
@@ -11656,7 +11656,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_italian_workers
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_italian_workers__GFX_goal_generic_propaganda
 		x = 67
 		y = 4
 		prerequisite = { focus = LR_COM_comintern_paris }
@@ -11690,7 +11690,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_german_spartacists
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_german_spartacists__GFX_goal_generic_propaganda
 		x = 65
 		y = 5
 		prerequisite = { focus = LR_COM_spanish_comrades }
@@ -11719,7 +11719,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_british_chartists
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_british_chartists__GFX_goal_generic_propaganda
 		x = 67
 		y = 5
 		prerequisite = { focus = LR_COM_italian_workers }
@@ -11748,7 +11748,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_red_volunteers
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_COM_red_volunteers__GFX_goal_generic_allies_build_infantry
 		x = 66
 		y = 6
 		prerequisite = { focus = LR_COM_german_spartacists }
@@ -11804,7 +11804,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_colonial_regiments
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_FRA_colonial_regiments__GFX_goal_generic_allies_build_infantry
 		x = 10
 		y = 4
 		prerequisite = { focus = LR_FRA_infantry_rearm }
@@ -11863,7 +11863,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_chasseurs_alpins
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_FRA_chasseurs_alpins__GFX_goal_generic_army_doctrines
 		x = 12
 		y = 5
 		prerequisite = { focus = LR_FRA_colonial_regiments focus = LR_FRA_combat_engineers }
@@ -11931,7 +11931,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_rifle_stocks
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_LRc_LR_FRA_rifle_stocks__GFX_goal_generic_small_arms
 		x = 10
 		y = 2
 		prerequisite = { focus = LR_FRA_lessons_of_defeat }
@@ -11972,7 +11972,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_combat_engineers
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_FRA_combat_engineers__GFX_goal_generic_fortify_city
 		x = 12
 		y = 4
 		prerequisite = { focus = LR_FRA_heavy_artillery }
@@ -12016,7 +12016,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_staff_college
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_FRA_staff_college__GFX_goal_generic_army_doctrines
 		x = 15
 		y = 3
 		prerequisite = { focus = LR_FRA_general_staff }
@@ -12059,7 +12059,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_armoured_recon
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_LRc_LR_FRA_armoured_recon__GFX_goal_generic_army_motorized
 		x = 17
 		y = 2
 		prerequisite = { focus = LR_FRA_lessons_of_defeat }
@@ -12101,7 +12101,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_cruiser_squadron
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_LRc_LR_FRA_cruiser_squadron__GFX_goal_generic_navy_cruiser
 		x = 22
 		y = 3
 		prerequisite = { focus = LR_FRA_fleet_doctrine }
@@ -12144,7 +12144,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_destroyer_flotillas
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_LRc_LR_FRA_destroyer_flotillas__GFX_goal_generic_navy_anti_submarine
 		x = 24
 		y = 3
 		prerequisite = { focus = LR_FRA_fleet_doctrine }
@@ -12186,7 +12186,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_commerce_raiding
-		icon = GFX_goal_generic_navy_submarine
+		icon = GFX_LRc_LR_FRA_commerce_raiding__GFX_goal_generic_navy_submarine
 		x = 26
 		y = 3
 		prerequisite = { focus = LR_FRA_submarine_arm }
@@ -12228,7 +12228,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_bearn_carrier
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_LRc_LR_FRA_bearn_carrier__GFX_goal_generic_navy_carrier
 		x = 30
 		y = 3
 		prerequisite = { focus = LR_FRA_mers_el_kebir }
@@ -12293,7 +12293,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_naval_aviation
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_LRc_LR_FRA_naval_aviation__GFX_goal_generic_air_naval_bomber
 		x = 30
 		y = 4
 		prerequisite = { focus = LR_FRA_bearn_carrier }
@@ -12361,7 +12361,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_mers_el_kebir
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_LRc_LR_FRA_mers_el_kebir__GFX_goal_generic_construct_naval_dockyard
 		x = 29
 		y = 2
 		prerequisite = { focus = LR_FRA_new_navy }
@@ -12412,7 +12412,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_convoy_school
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_FRA_convoy_school__GFX_goal_generic_positive_trade_relations
 		x = 25
 		y = 4
 		prerequisite = { focus = LR_FRA_destroyer_flotillas focus = LR_FRA_commerce_raiding }
@@ -12460,7 +12460,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_fusiliers_marins
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_LRc_LR_FRA_fusiliers_marins__GFX_goal_generic_amphibious_assault
 		x = 28
 		y = 3
 		prerequisite = { focus = LR_FRA_mers_el_kebir }
@@ -12513,7 +12513,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_dewoitine_fighters
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_LRc_LR_FRA_dewoitine_fighters__GFX_goal_generic_air_fighter
 		x = 34
 		y = 3
 		prerequisite = { focus = LR_FRA_fighter_school }
@@ -12553,7 +12553,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_air_aces
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_LRc_LR_FRA_air_aces__GFX_goal_generic_air_doctrine
 		x = 36
 		y = 3
 		prerequisite = { focus = LR_FRA_fighter_school }
@@ -12583,7 +12583,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_potez_bombers
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_LRc_LR_FRA_potez_bombers__GFX_goal_generic_air_bomber
 		x = 38
 		y = 3
 		prerequisite = { focus = LR_FRA_bomber_command }
@@ -12630,7 +12630,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_strategic_force
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_LRc_LR_FRA_strategic_force__GFX_goal_generic_air_bomber
 		x = 39
 		y = 4
 		prerequisite = { focus = LR_FRA_potez_bombers }
@@ -12669,7 +12669,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_cas_wings
-		icon = GFX_goal_generic_air_production
+		icon = GFX_LRc_LR_FRA_cas_wings__GFX_goal_generic_air_production
 		x = 37
 		y = 4
 		prerequisite = { focus = LR_FRA_potez_bombers }
@@ -12704,7 +12704,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_air_safety
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_FRA_air_safety__GFX_goal_generic_scientific_exchange
 		x = 41
 		y = 2
 		prerequisite = { focus = LR_FRA_air_arm }
@@ -12741,7 +12741,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_air_detection
-		icon = GFX_goal_generic_radar
+		icon = GFX_LRc_LR_FRA_air_detection__GFX_goal_generic_radar
 		x = 41
 		y = 3
 		prerequisite = { focus = LR_FRA_air_safety }
@@ -12790,7 +12790,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_FRA_paratroopers
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_FRA_paratroopers__GFX_goal_generic_special_forces
 		x = 35
 		y = 5
 		prerequisite = { focus = LR_FRA_air_doctrine focus = LR_FRA_cas_wings }
@@ -12846,7 +12846,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_neutral_ties
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ORL_neutral_ties__GFX_goal_generic_improve_relations
 		x = 64
 		y = 9
 		prerequisite = { focus = LR_ORL_king_at_front }
@@ -12875,7 +12875,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_ottoman_talks
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_LRc_LR_ORL_ottoman_talks__GFX_goal_generic_dangerous_deal
 		x = 63
 		y = 10
 		prerequisite = { focus = LR_ORL_neutral_ties }
@@ -12905,7 +12905,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_dutch_treaty
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_JAC_dutch_treaty__GFX_goal_generic_improve_relations
 		x = 49
 		y = 7
 		prerequisite = { focus = LR_JAC_robespierre_portrait }
@@ -12934,7 +12934,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_american_contact
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_LRc_LR_JAC_american_contact__GFX_goal_generic_military_deal
 		x = 49
 		y = 8
 		prerequisite = { focus = LR_JAC_dutch_treaty }
@@ -12962,7 +12962,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_merchant_envoys
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_GIR_merchant_envoys__GFX_goal_generic_positive_trade_relations
 		x = 60
 		y = 1
 		prerequisite = { focus = LR_GIR_cabinet }
@@ -12991,7 +12991,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_atlantic_trade
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_GIR_atlantic_trade__GFX_goal_generic_trade
 		x = 60
 		y = 2
 		prerequisite = { focus = LR_GIR_merchant_envoys }
@@ -13029,7 +13029,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_vienna_talks
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_MAR_vienna_talks__GFX_goal_generic_improve_relations
 		x = 64
 		y = 7
 		prerequisite = { focus = LR_MAR_empty_throne }
@@ -13057,7 +13057,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_london_model
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_LRc_LR_MAR_london_model__GFX_goal_generic_military_deal
 		x = 64
 		y = 8
 		prerequisite = { focus = LR_MAR_vienna_talks }
@@ -13086,7 +13086,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_workers_embassy
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_COM_workers_embassy__GFX_goal_generic_alliance
 		x = 60
 		y = 9
 		prerequisite = { focus = LR_COM_bread_and_coal }
@@ -13114,7 +13114,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_marriage_diplomacy
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_NAP_marriage_diplomacy__GFX_goal_generic_major_alliance
 		x = 51
 		y = 12
 		prerequisite = { focus = LR_NAP_continental_system }
@@ -13136,7 +13136,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_national_reconciliation
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_national_reconciliation__GFX_goal_generic_national_unity
 		x = 62
 		y = 8
 		prerequisite = { focus = LR_GUA_amnesty }
@@ -13158,7 +13158,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_italian_arms
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_LRc_LR_BOU_italian_arms__GFX_goal_generic_small_arms
 		x = 55
 		y = 7
 		prerequisite = { focus = LR_BOU_two_sicilies }
@@ -13198,7 +13198,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_north_italy
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_LRc_LR_BOU_north_italy__GFX_goal_generic_army_motorized
 		x = 59
 		y = 9
 		prerequisite = { focus = LR_BOU_italy }
@@ -13229,7 +13229,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_italian_kingdom
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_italian_kingdom__GFX_goal_generic_major_alliance
 		x = 59
 		y = 10
 		prerequisite = { focus = LR_BOU_north_italy }
@@ -13285,7 +13285,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_royal_roads
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_LRc_LR_ORL_royal_roads__GFX_goal_generic_construct_infrastructure
 		x = 53
 		y = 4
 		prerequisite = { focus = LR_ORL_autarky }
@@ -13325,7 +13325,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_renault_seized
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_ORL_renault_seized__GFX_goal_generic_construct_mil_factory
 		x = 51
 		y = 4
 		prerequisite = { focus = LR_ORL_radical_rearm }
@@ -13383,7 +13383,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_officers_oath
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ORL_officers_oath__GFX_goal_generic_army_doctrines
 		x = 61
 		y = 5
 		prerequisite = { focus = LR_ORL_tear_up_treaty }
@@ -13412,7 +13412,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_camelots
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ORL_camelots__GFX_goal_generic_propaganda
 		x = 59
 		y = 4
 		prerequisite = { focus = LR_ORL_press_control }
@@ -13440,7 +13440,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_madrid_renounce
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_ORL_madrid_renounce__GFX_goal_generic_improve_relations
 		x = 71
 		y = 11
 		prerequisite = { focus = LR_ORL_latin_front }
@@ -13468,7 +13468,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_royal_security
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_LRc_LR_ORL_royal_security__GFX_goal_generic_intelligence_exchange
 		x = 55
 		y = 16
 		prerequisite = { focus = LR_ORL_uproot }
@@ -13497,7 +13497,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_royal_manufactures
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_BOU_royal_manufactures__GFX_goal_generic_construct_civ_factory
 		x = 73
 		y = 2
 		prerequisite = { focus = LR_BOU_guilds }
@@ -13536,7 +13536,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_peasant_credit
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_BOU_peasant_credit__GFX_goal_generic_construct_civilian
 		x = 67
 		y = 2
 		prerequisite = { focus = LR_BOU_poor_relief }
@@ -13572,7 +13572,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_salic_law
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_BOU_salic_law__GFX_goal_generic_political_pressure
 		x = 78
 		y = 4
 		prerequisite = { focus = LR_BOU_family_council }
@@ -13599,7 +13599,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_swiss_guard
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_BOU_swiss_guard__GFX_goal_generic_military_sphere
 		x = 81
 		y = 2
 		prerequisite = { focus = LR_BOU_reims }
@@ -13649,7 +13649,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_lisbon_treaty
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_lisbon_treaty__GFX_goal_generic_improve_relations
 		x = 57
 		y = 9
 		prerequisite = { focus = LR_BOU_latin_league }
@@ -13677,7 +13677,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_parish_registers
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_parish_registers__GFX_goal_generic_national_unity
 		x = 87
 		y = 3
 		prerequisite = { focus = LR_BOU_uproot }
@@ -13705,7 +13705,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_electrification
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_COM_electrification__GFX_goal_generic_construct_civilian
 		x = 49
 		y = 4
 		prerequisite = { focus = LR_COM_economic_plan }
@@ -13751,7 +13751,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_five_year_plan
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_COM_five_year_plan__GFX_goal_generic_construct_mil_factory
 		x = 51
 		y = 4
 		prerequisite = { focus = LR_COM_economic_plan }
@@ -13801,7 +13801,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_workers_university
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_LRc_LR_COM_workers_university__GFX_goal_generic_scientific_exchange
 		x = 65
 		y = 2
 		prerequisite = { focus = LR_COM_council }
@@ -13834,7 +13834,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_french_road
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_COM_french_road__GFX_goal_generic_national_unity
 		x = 60
 		y = 6
 		prerequisite = { focus = LR_COM_no_foreign_masters }
@@ -13862,7 +13862,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_world_republic
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_world_republic__GFX_goal_generic_major_war
 		x = 66
 		y = 7
 		prerequisite = { focus = LR_COM_red_volunteers }
@@ -13890,7 +13890,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_workers_solidarity
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_COM_workers_solidarity__GFX_goal_generic_improve_relations
 		x = 61
 		y = 10
 		prerequisite = { focus = LR_COM_workers_embassy }
@@ -13918,7 +13918,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_neighbourhood_committees
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_COM_neighbourhood_committees__GFX_goal_generic_national_unity
 		x = 59
 		y = 15
 		prerequisite = { focus = LR_COM_uproot }
@@ -13945,7 +13945,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_public_housing
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_JAC_public_housing__GFX_goal_generic_construct_civilian
 		x = 46
 		y = 4
 		prerequisite = { focus = LR_JAC_public_school }
@@ -13990,7 +13990,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_arsenal_of_people
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_JAC_arsenal_of_people__GFX_goal_generic_construct_mil_factory
 		x = 49
 		y = 5
 		prerequisite = { focus = LR_JAC_arms_nationalised }
@@ -14029,7 +14029,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_republican_clubs
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_JAC_republican_clubs__GFX_goal_generic_propaganda
 		x = 55
 		y = 3
 		prerequisite = { focus = LR_JAC_laicite }
@@ -14053,7 +14053,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_free_press
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_free_press__GFX_goal_generic_political_pressure
 		x = 53
 		y = 3
 		prerequisite = { focus = LR_JAC_womens_vote }
@@ -14082,7 +14082,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_swiss_asylum
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_JAC_swiss_asylum__GFX_goal_generic_improve_relations
 		x = 49
 		y = 9
 		prerequisite = { focus = LR_JAC_american_contact }
@@ -14110,7 +14110,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_citizen_police
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_JAC_citizen_police__GFX_goal_generic_national_unity
 		x = 49
 		y = 13
 		prerequisite = { focus = LR_JAC_uproot }
@@ -14158,7 +14158,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_bordeaux_wharves
-		icon = GFX_goal_generic_construct_naval_dockyard
+		icon = GFX_LRc_LR_GIR_bordeaux_wharves__GFX_goal_generic_construct_naval_dockyard
 		x = 49
 		y = 5
 		prerequisite = { focus = LR_GIR_free_ports }
@@ -14206,7 +14206,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_credit_lyonnais
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_GIR_credit_lyonnais__GFX_goal_generic_trade
 		x = 45
 		y = 4
 		prerequisite = { focus = LR_GIR_bourse }
@@ -14241,7 +14241,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_press_barons
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_GIR_press_barons__GFX_goal_generic_propaganda
 		x = 55
 		y = 2
 		prerequisite = { focus = LR_GIR_provincial_power }
@@ -14265,7 +14265,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_hudson_loans
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_GIR_hudson_loans__GFX_goal_generic_positive_trade_relations
 		x = 59
 		y = 3
 		prerequisite = { focus = LR_GIR_atlantic_trade }
@@ -14294,7 +14294,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_civic_guard
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GIR_civic_guard__GFX_goal_generic_national_unity
 		x = 61
 		y = 13
 		prerequisite = { focus = LR_GIR_uproot }
@@ -14342,7 +14342,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_agrarian_credit
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_MAR_agrarian_credit__GFX_goal_generic_construct_civilian
 		x = 53
 		y = 3
 		prerequisite = { focus = LR_MAR_parish_relief }
@@ -14386,7 +14386,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_chartered_works
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_MAR_chartered_works__GFX_goal_generic_construct_civ_factory
 		x = 55
 		y = 2
 		prerequisite = { focus = LR_MAR_church_schools }
@@ -14430,7 +14430,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_parliament_coronation
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_parliament_coronation__GFX_goal_generic_national_unity
 		x = 59
 		y = 3
 		prerequisite = { focus = LR_MAR_kings_return }
@@ -14458,7 +14458,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_hague_arbitration
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_MAR_hague_arbitration__GFX_goal_generic_improve_relations
 		x = 63
 		y = 9
 		prerequisite = { focus = LR_MAR_london_model }
@@ -14487,7 +14487,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_bourgeois_guard
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_bourgeois_guard__GFX_goal_generic_national_unity
 		x = 53
 		y = 13
 		prerequisite = { focus = LR_MAR_gendarmerie }
@@ -14535,7 +14535,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_prefects
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_NAP_prefects__GFX_goal_generic_political_pressure
 		x = 47
 		y = 2
 		prerequisite = { focus = LR_NAP_civil_code }
@@ -14564,7 +14564,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_imperial_works
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_NAP_imperial_works__GFX_goal_generic_construct_civilian
 		x = 55
 		y = 8
 		prerequisite = { focus = LR_NAP_imperial_university }
@@ -14609,7 +14609,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_imperial_catechism
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_NAP_imperial_catechism__GFX_goal_generic_propaganda
 		x = 51
 		y = 9
 		prerequisite = { focus = LR_NAP_brother_kings }
@@ -14631,7 +14631,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_sister_kingdoms
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_NAP_sister_kingdoms__GFX_goal_generic_major_alliance
 		x = 51
 		y = 13
 		prerequisite = { focus = LR_NAP_marriage_diplomacy }
@@ -14653,7 +14653,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_old_guard
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_NAP_old_guard__GFX_goal_generic_military_sphere
 		x = 51
 		y = 16
 		prerequisite = { focus = LR_NAP_imperial_guard }
@@ -14696,7 +14696,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_workers_compensation
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_GUA_workers_compensation__GFX_goal_generic_construct_civilian
 		x = 51
 		y = 9
 		prerequisite = { focus = LR_GUA_social_insurance }
@@ -14734,7 +14734,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_republican_senate
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GUA_republican_senate__GFX_goal_generic_political_pressure
 		x = 56
 		y = 9
 		prerequisite = { focus = LR_GUA_constitution }
@@ -14756,7 +14756,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_european_congress
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_GUA_european_congress__GFX_goal_generic_improve_relations
 		x = 47
 		y = 14
 		prerequisite = { focus = LR_GUA_league_of_republics }
@@ -14777,7 +14777,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_truth_commission
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_truth_commission__GFX_goal_generic_national_unity
 		x = 61
 		y = 9
 		prerequisite = { focus = LR_GUA_national_reconciliation }
@@ -14802,7 +14802,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_creditors_talks
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_MAR_creditors_talks__GFX_goal_generic_positive_trade_relations
 		x = 65
 		y = 9
 		prerequisite = { focus = LR_MAR_london_model }
@@ -14839,7 +14839,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_reparations_rescheduled
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_MAR_reparations_rescheduled__GFX_goal_generic_forceful_treaty
 		x = 65
 		y = 10
 		prerequisite = { focus = LR_MAR_creditors_talks }
@@ -14876,7 +14876,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_channel_agreement
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_MAR_channel_agreement__GFX_goal_generic_navy_doctrines_tactics
 		x = 65
 		y = 11
 		prerequisite = { focus = LR_MAR_reparations_rescheduled }
@@ -14914,7 +14914,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_entente_cordiale
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_MAR_entente_cordiale__GFX_goal_generic_major_alliance
 		x = 65
 		y = 12
 		prerequisite = { focus = LR_MAR_channel_agreement }
@@ -14966,7 +14966,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_eastern_crusade
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_eastern_crusade__GFX_goal_generic_major_war
 		x = 65
 		y = 13
 		prerequisite = { focus = LR_MAR_entente_cordiale }
@@ -15008,7 +15008,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_salon_doctrinaires
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_MAR_salon_doctrinaires__GFX_goal_generic_political_pressure
 		x = 65
 		y = 3
 		prerequisite = { focus = LR_MAR_senate }
@@ -15040,7 +15040,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_responsible_ministry
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_responsible_ministry__GFX_goal_generic_national_unity
 		x = 65
 		y = 4
 		prerequisite = { focus = LR_MAR_salon_doctrinaires }
@@ -15071,7 +15071,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_schonbrunn_envoy
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_schonbrunn_envoy__GFX_goal_generic_improve_relations
 		x = 57
 		y = 6
 		prerequisite = { focus = LR_BOU_family_pact }
@@ -15108,7 +15108,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_habsburg_marriage
-		icon = GFX_goal_generic_alliance
+		icon = GFX_LRc_LR_BOU_habsburg_marriage__GFX_goal_generic_alliance
 		x = 57
 		y = 7
 		prerequisite = { focus = LR_BOU_schonbrunn_envoy }
@@ -15146,7 +15146,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_catholic_crowns
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_LRc_LR_BOU_catholic_crowns__GFX_goal_generic_military_deal
 		x = 57
 		y = 8
 		prerequisite = { focus = LR_BOU_habsburg_marriage }
@@ -15184,7 +15184,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_diplomatic_revolution
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_diplomatic_revolution__GFX_goal_generic_major_alliance
 		x = 61
 		y = 9
 		prerequisite = { focus = LR_BOU_catholic_crowns }
@@ -15238,7 +15238,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_royal_touch
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_royal_touch__GFX_goal_generic_national_unity
 		x = 83
 		y = 2
 		prerequisite = { focus = LR_BOU_reims }
@@ -15270,7 +15270,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_bishops_council
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_BOU_bishops_council__GFX_goal_generic_political_pressure
 		x = 85
 		y = 2
 		prerequisite = { focus = LR_BOU_church }
@@ -15301,7 +15301,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_revenge_oath
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ORL_revenge_oath__GFX_goal_generic_army_doctrines
 		x = 63
 		y = 3
 		prerequisite = { focus = LR_ORL_veterans }
@@ -15333,7 +15333,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_officer_purge
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_ORL_officer_purge__GFX_goal_generic_military_sphere
 		x = 61
 		y = 6
 		prerequisite = { focus = LR_ORL_officers_oath }
@@ -15365,7 +15365,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_war_industries_office
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_ORL_war_industries_office__GFX_goal_generic_construct_mil_factory
 		x = 55
 		y = 4
 		prerequisite = { focus = LR_ORL_autarky }
@@ -15397,7 +15397,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_public_safety
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_public_safety__GFX_goal_generic_political_pressure
 		x = 59
 		y = 1
 		prerequisite = { focus = LR_JAC_committee }
@@ -15429,7 +15429,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_citizen_army_law
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_JAC_citizen_army_law__GFX_goal_generic_allies_build_infantry
 		x = 59
 		y = 2
 		prerequisite = { focus = LR_JAC_public_safety }
@@ -15461,7 +15461,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_pantheon_ceremony
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_JAC_pantheon_ceremony__GFX_goal_generic_propaganda
 		x = 59
 		y = 3
 		prerequisite = { focus = LR_JAC_citizen_army_law }
@@ -15493,7 +15493,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_bordeaux_exchange
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_GIR_bordeaux_exchange__GFX_goal_generic_positive_trade_relations
 		x = 47
 		y = 4
 		prerequisite = { focus = LR_GIR_bourse }
@@ -15525,7 +15525,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_departmental_charter
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GIR_departmental_charter__GFX_goal_generic_political_pressure
 		x = 57
 		y = 2
 		prerequisite = { focus = LR_GIR_provincial_power }
@@ -15557,7 +15557,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_colonial_bank
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_GIR_colonial_bank__GFX_goal_generic_construct_civ_factory
 		x = 61
 		y = 3
 		prerequisite = { focus = LR_GIR_atlantic_trade }
@@ -15589,7 +15589,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_mandat_imperatif
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_COM_mandat_imperatif__GFX_goal_generic_political_pressure
 		x = 67
 		y = 2
 		prerequisite = { focus = LR_COM_council }
@@ -15621,7 +15621,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_workers_militia
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_COM_workers_militia__GFX_goal_generic_allies_build_infantry
 		x = 55
 		y = 2
 		prerequisite = { focus = LR_COM_red_guards }
@@ -15653,7 +15653,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_commune_calendar
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_commune_calendar__GFX_goal_generic_propaganda
 		x = 67
 		y = 3
 		prerequisite = { focus = LR_COM_mandat_imperatif }
@@ -15685,7 +15685,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_federal_pact
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ANA_federal_pact__GFX_goal_generic_national_unity
 		x = 57
 		y = 2
 		prerequisite = { focus = LR_ANA_proudhon }
@@ -15711,7 +15711,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_column_discipline
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ANA_column_discipline__GFX_goal_generic_army_doctrines
 		x = 66
 		y = 2
 		prerequisite = { focus = LR_ANA_columns }
@@ -15737,7 +15737,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_free_schools
-		icon = GFX_goal_generic_construction
+		icon = GFX_LRc_LR_ANA_free_schools__GFX_goal_generic_construction
 		x = 49
 		y = 4
 		prerequisite = { focus = LR_ANA_rationalist_schools }
@@ -15762,7 +15762,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_council_of_state
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_NAP_council_of_state__GFX_goal_generic_political_pressure
 		x = 49
 		y = 2
 		prerequisite = { focus = LR_NAP_civil_code }
@@ -15787,7 +15787,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_lycees
-		icon = GFX_goal_generic_construction
+		icon = GFX_LRc_LR_NAP_lycees__GFX_goal_generic_construction
 		x = 49
 		y = 3
 		prerequisite = { focus = LR_NAP_council_of_state }
@@ -15813,7 +15813,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_gendarmerie_nationale
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_LRc_LR_NAP_gendarmerie_nationale__GFX_goal_generic_fortify_city
 		x = 49
 		y = 4
 		prerequisite = { focus = LR_NAP_lycees }
@@ -15838,7 +15838,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_imperial_eagles
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_NAP_imperial_eagles__GFX_goal_generic_army_doctrines
 		x = 49
 		y = 7
 		prerequisite = { focus = LR_NAP_coronation }
@@ -15864,7 +15864,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_imperial_court
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_NAP_imperial_court__GFX_goal_generic_national_unity
 		x = 49
 		y = 8
 		prerequisite = { focus = LR_NAP_imperial_eagles }
@@ -15890,7 +15890,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_conscription_decree
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_NAP_conscription_decree__GFX_goal_generic_allies_build_infantry
 		x = 49
 		y = 9
 		prerequisite = { focus = LR_NAP_imperial_court }
@@ -15915,7 +15915,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_presidential_address
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_GUA_presidential_address__GFX_goal_generic_propaganda
 		x = 59
 		y = 7
 		prerequisite = { focus = LR_NAP_guardian }
@@ -15941,7 +15941,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_council_of_honour
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_council_of_honour__GFX_goal_generic_national_unity
 		x = 63
 		y = 9
 		prerequisite = { focus = LR_GUA_national_reconciliation }
@@ -15967,7 +15967,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_reserve_officers
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_GUA_reserve_officers__GFX_goal_generic_army_doctrines
 		x = 72
 		y = 8
 		prerequisite = { focus = LR_GUA_citizen_army }
@@ -15993,7 +15993,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_red_eagle
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_RED_red_eagle__GFX_goal_generic_army_doctrines
 		x = 47
 		y = 7
 		prerequisite = { focus = LR_NAP_red }
@@ -16019,7 +16019,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_levee_en_masse_red
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_RED_levee_en_masse_red__GFX_goal_generic_allies_build_infantry
 		x = 47
 		y = 8
 		prerequisite = { focus = LR_RED_red_eagle }
@@ -16044,7 +16044,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_commissar_corps
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_RED_commissar_corps__GFX_goal_generic_political_pressure
 		x = 47
 		y = 9
 		prerequisite = { focus = LR_RED_levee_en_masse_red }
@@ -16070,7 +16070,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_work_family_fatherland
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_PET_work_family_fatherland__GFX_goal_generic_propaganda
 		x = 66
 		y = 2
 		prerequisite = { focus = LR_PET_national_revolution }
@@ -16096,7 +16096,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_peasant_return
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_PET_peasant_return__GFX_goal_generic_construct_civilian
 		x = 53
 		y = 3
 		prerequisite = { focus = LR_PET_return_to_soil }
@@ -16122,7 +16122,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_verdun_veterans
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_PET_verdun_veterans__GFX_goal_generic_military_sphere
 		x = 65
 		y = 3
 		prerequisite = { focus = LR_PET_legion }
@@ -16148,7 +16148,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_cross_of_fire
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_ORL_cross_of_fire__GFX_goal_generic_propaganda
 		x = 57
 		y = 2
 		prerequisite = { focus = LR_ORL_duke }
@@ -16176,7 +16176,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_generals_cabinet
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ORL_generals_cabinet__GFX_goal_generic_army_doctrines
 		x = 57
 		y = 4
 		prerequisite = { focus = LR_ORL_cross_of_fire }
@@ -16204,7 +16204,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_inspectors_out
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_ORL_inspectors_out__GFX_goal_generic_forceful_treaty
 		x = 57
 		y = 6
 		prerequisite = { focus = LR_ORL_generals_cabinet }
@@ -16232,7 +16232,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_king_at_front
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_ORL_king_at_front__GFX_goal_generic_military_sphere
 		x = 57
 		y = 8
 		prerequisite = { focus = LR_ORL_inspectors_out }
@@ -16260,7 +16260,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_colonels_plot
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_LRc_LR_ORL_colonels_plot__GFX_goal_generic_intelligence_exchange
 		x = 57
 		y = 10
 		prerequisite = { focus = LR_ORL_king_at_front }
@@ -16288,7 +16288,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_day_of_revenge
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_day_of_revenge__GFX_goal_generic_major_war
 		x = 57
 		y = 12
 		prerequisite = { focus = LR_ORL_colonels_plot }
@@ -16316,7 +16316,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_mobilisation_day
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_ORL_mobilisation_day__GFX_goal_generic_military_sphere
 		x = 57
 		y = 13
 		prerequisite = { focus = LR_ORL_day_of_revenge }
@@ -16351,7 +16351,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_rhine_crossed
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_rhine_crossed__GFX_goal_generic_major_war
 		x = 57
 		y = 15
 		prerequisite = { focus = LR_ORL_mobilisation_day }
@@ -16383,7 +16383,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_kings_europe
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ORL_kings_europe__GFX_goal_generic_national_unity
 		x = 57
 		y = 17
 		prerequisite = { focus = LR_ORL_rhine_crossed }
@@ -16419,7 +16419,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_lit_de_justice
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_BOU_lit_de_justice__GFX_goal_generic_political_pressure
 		x = 75
 		y = 2
 		prerequisite = { focus = LR_BOU_restored }
@@ -16447,7 +16447,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_versailles_return
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_versailles_return__GFX_goal_generic_national_unity
 		x = 75
 		y = 4
 		prerequisite = { focus = LR_BOU_lit_de_justice }
@@ -16475,7 +16475,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_jesuits_return
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_BOU_jesuits_return__GFX_goal_generic_improve_relations
 		x = 75
 		y = 6
 		prerequisite = { focus = LR_BOU_versailles_return }
@@ -16503,7 +16503,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_kings_bread
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_BOU_kings_bread__GFX_goal_generic_construct_civilian
 		x = 75
 		y = 8
 		prerequisite = { focus = LR_BOU_jesuits_return }
@@ -16531,7 +16531,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_madrid_letter
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_madrid_letter__GFX_goal_generic_major_alliance
 		x = 75
 		y = 10
 		prerequisite = { focus = LR_BOU_kings_bread }
@@ -16559,7 +16559,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_sun_king
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_BOU_sun_king__GFX_goal_generic_military_sphere
 		x = 75
 		y = 11
 		prerequisite = { focus = LR_BOU_madrid_letter }
@@ -16587,7 +16587,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_te_deum
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_te_deum__GFX_goal_generic_national_unity
 		x = 75
 		y = 12
 		prerequisite = { focus = LR_BOU_sun_king }
@@ -16622,7 +16622,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_cousins_war
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_cousins_war__GFX_goal_generic_major_alliance
 		x = 75
 		y = 13
 		prerequisite = { focus = LR_BOU_te_deum }
@@ -16654,7 +16654,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_holy_alliance
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_BOU_holy_alliance__GFX_goal_generic_major_alliance
 		x = 75
 		y = 14
 		prerequisite = { focus = LR_BOU_cousins_war }
@@ -16690,7 +16690,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_sections_congress
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_sections_congress__GFX_goal_generic_propaganda
 		x = 57
 		y = 2
 		prerequisite = { focus = LR_COM_commune }
@@ -16718,7 +16718,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_elected_officers
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_COM_elected_officers__GFX_goal_generic_army_doctrines
 		x = 57
 		y = 4
 		prerequisite = { focus = LR_COM_sections_congress }
@@ -16746,7 +16746,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_tribunal
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_COM_tribunal__GFX_goal_generic_political_pressure
 		x = 57
 		y = 6
 		prerequisite = { focus = LR_COM_elected_officers }
@@ -16774,7 +16774,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_bread_and_coal
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_LRc_LR_COM_bread_and_coal__GFX_goal_generic_construct_mil_factory
 		x = 57
 		y = 8
 		prerequisite = { focus = LR_COM_tribunal }
@@ -16802,7 +16802,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_toulon_sailors
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_COM_toulon_sailors__GFX_goal_generic_navy_doctrines_tactics
 		x = 57
 		y = 10
 		prerequisite = { focus = LR_COM_bread_and_coal }
@@ -16830,7 +16830,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_year_one
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_COM_year_one__GFX_goal_generic_national_unity
 		x = 57
 		y = 12
 		prerequisite = { focus = LR_COM_toulon_sailors }
@@ -16858,7 +16858,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_levee_red
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_LRc_LR_COM_levee_red__GFX_goal_generic_allies_build_infantry
 		x = 57
 		y = 14
 		prerequisite = { focus = LR_COM_year_one }
@@ -16893,7 +16893,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_ruhr_soviets
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_COM_ruhr_soviets__GFX_goal_generic_propaganda
 		x = 57
 		y = 16
 		prerequisite = { focus = LR_COM_levee_red }
@@ -16925,7 +16925,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_red_continent
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_COM_red_continent__GFX_goal_generic_national_unity
 		x = 57
 		y = 17
 		prerequisite = { focus = LR_COM_ruhr_soviets }
@@ -16961,7 +16961,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_matignon
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_JAC_matignon__GFX_goal_generic_trade
 		x = 51
 		y = 2
 		prerequisite = { focus = LR_JAC_committee }
@@ -16989,7 +16989,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_two_hundred
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_two_hundred__GFX_goal_generic_political_pressure
 		x = 51
 		y = 4
 		prerequisite = { focus = LR_JAC_matignon }
@@ -17017,7 +17017,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_robespierre_portrait
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_JAC_robespierre_portrait__GFX_goal_generic_national_unity
 		x = 51
 		y = 6
 		prerequisite = { focus = LR_JAC_two_hundred }
@@ -17045,7 +17045,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_pyrenees_refugees
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_JAC_pyrenees_refugees__GFX_goal_generic_improve_relations
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_JAC_robespierre_portrait }
@@ -17073,7 +17073,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_cagoule
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_LRc_LR_JAC_cagoule__GFX_goal_generic_intelligence_exchange
 		x = 51
 		y = 10
 		prerequisite = { focus = LR_JAC_pyrenees_refugees }
@@ -17101,7 +17101,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_fourteenth_july
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_JAC_fourteenth_july__GFX_goal_generic_major_alliance
 		x = 51
 		y = 12
 		prerequisite = { focus = LR_JAC_cagoule }
@@ -17129,7 +17129,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_war_vote
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_JAC_war_vote__GFX_goal_generic_political_pressure
 		x = 51
 		y = 14
 		prerequisite = { focus = LR_JAC_fourteenth_july }
@@ -17164,7 +17164,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_liberators
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_JAC_liberators__GFX_goal_generic_propaganda
 		x = 51
 		y = 15
 		prerequisite = { focus = LR_JAC_war_vote }
@@ -17196,7 +17196,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_sister_republics
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_JAC_sister_republics__GFX_goal_generic_national_unity
 		x = 51
 		y = 16
 		prerequisite = { focus = LR_JAC_liberators }
@@ -17232,7 +17232,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_bordeaux_congress
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_GIR_bordeaux_congress__GFX_goal_generic_positive_trade_relations
 		x = 63
 		y = 2
 		prerequisite = { focus = LR_GIR_cabinet }
@@ -17260,7 +17260,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_paris_question
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GIR_paris_question__GFX_goal_generic_political_pressure
 		x = 63
 		y = 4
 		prerequisite = { focus = LR_GIR_bordeaux_congress }
@@ -17288,7 +17288,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_atlantic_company
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_GIR_atlantic_company__GFX_goal_generic_trade
 		x = 63
 		y = 6
 		prerequisite = { focus = LR_GIR_paris_question }
@@ -17316,7 +17316,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_bourse_panic
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_GIR_bourse_panic__GFX_goal_generic_construct_civ_factory
 		x = 63
 		y = 8
 		prerequisite = { focus = LR_GIR_atlantic_company }
@@ -17344,7 +17344,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_federal_draft
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GIR_federal_draft__GFX_goal_generic_national_unity
 		x = 63
 		y = 10
 		prerequisite = { focus = LR_GIR_bourse_panic }
@@ -17372,7 +17372,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_merchant_republic
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_GIR_merchant_republic__GFX_goal_generic_major_alliance
 		x = 63
 		y = 12
 		prerequisite = { focus = LR_GIR_federal_draft }
@@ -17400,7 +17400,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_war_bonds
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_GIR_war_bonds__GFX_goal_generic_trade
 		x = 63
 		y = 14
 		prerequisite = { focus = LR_GIR_merchant_republic }
@@ -17435,7 +17435,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_ruhr_contracts
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_GIR_ruhr_contracts__GFX_goal_generic_construct_civ_factory
 		x = 63
 		y = 15
 		prerequisite = { focus = LR_GIR_war_bonds }
@@ -17467,7 +17467,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_common_market
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_LRc_LR_GIR_common_market__GFX_goal_generic_positive_trade_relations
 		x = 63
 		y = 16
 		prerequisite = { focus = LR_GIR_ruhr_contracts }
@@ -17503,7 +17503,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_notables
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_MAR_notables__GFX_goal_generic_political_pressure
 		x = 57
 		y = 2
 		prerequisite = { focus = LR_MAR_cabinet }
@@ -17531,7 +17531,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_lafayette_heir
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_MAR_lafayette_heir__GFX_goal_generic_military_sphere
 		x = 57
 		y = 4
 		prerequisite = { focus = LR_MAR_notables }
@@ -17559,7 +17559,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_empty_throne
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_empty_throne__GFX_goal_generic_national_unity
 		x = 57
 		y = 6
 		prerequisite = { focus = LR_MAR_lafayette_heir }
@@ -17587,7 +17587,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_civil_list
-		icon = GFX_goal_generic_trade
+		icon = GFX_LRc_LR_MAR_civil_list__GFX_goal_generic_trade
 		x = 57
 		y = 8
 		prerequisite = { focus = LR_MAR_empty_throne }
@@ -17615,7 +17615,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_lyon_strike
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_MAR_lyon_strike__GFX_goal_generic_construct_civilian
 		x = 57
 		y = 10
 		prerequisite = { focus = LR_MAR_civil_list }
@@ -17643,7 +17643,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_charter
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_MAR_charter__GFX_goal_generic_major_alliance
 		x = 57
 		y = 12
 		prerequisite = { focus = LR_MAR_lyon_strike }
@@ -17671,7 +17671,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_kings_call
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_MAR_kings_call__GFX_goal_generic_military_sphere
 		x = 57
 		y = 14
 		prerequisite = { focus = LR_MAR_charter }
@@ -17706,7 +17706,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_notables_peace
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_LRc_LR_MAR_notables_peace__GFX_goal_generic_dangerous_deal
 		x = 57
 		y = 15
 		prerequisite = { focus = LR_MAR_kings_call }
@@ -17738,7 +17738,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_concert
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_concert__GFX_goal_generic_national_unity
 		x = 57
 		y = 16
 		prerequisite = { focus = LR_MAR_notables_peace }
@@ -17774,7 +17774,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_algiers_return
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_NAP_algiers_return__GFX_goal_generic_military_sphere
 		x = 53
 		y = 2
 		prerequisite = { focus = LR_NAP_first_consul }
@@ -17796,7 +17796,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plebiscite
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_NAP_plebiscite__GFX_goal_generic_propaganda
 		x = 53
 		y = 4
 		prerequisite = { focus = LR_NAP_algiers_return }
@@ -17818,7 +17818,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_before_the_crown
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_NAP_before_the_crown__GFX_goal_generic_national_unity
 		x = 53
 		y = 5
 		prerequisite = { focus = LR_NAP_plebiscite }
@@ -17844,7 +17844,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_eagles
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_NAP_eagles__GFX_goal_generic_military_sphere
 		x = 53
 		y = 8
 		prerequisite = { focus = LR_NAP_coronation }
@@ -17866,7 +17866,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_new_nobles
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_NAP_new_nobles__GFX_goal_generic_political_pressure
 		x = 53
 		y = 10
 		prerequisite = { focus = LR_NAP_eagles }
@@ -17888,7 +17888,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_empress
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_LRc_LR_NAP_empress__GFX_goal_generic_major_alliance
 		x = 53
 		y = 12
 		prerequisite = { focus = LR_NAP_new_nobles }
@@ -17910,7 +17910,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_spanish_ulcer
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_NAP_spanish_ulcer__GFX_goal_generic_forceful_treaty
 		x = 53
 		y = 14
 		prerequisite = { focus = LR_NAP_empress }
@@ -17932,7 +17932,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_emperor_of_europe
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_emperor_of_europe__GFX_goal_generic_major_war
 		x = 53
 		y = 16
 		prerequisite = { focus = LR_NAP_spanish_ulcer }
@@ -17954,7 +17954,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_bulletin
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_NAP_bulletin__GFX_goal_generic_propaganda
 		x = 53
 		y = 18
 		prerequisite = { focus = LR_NAP_emperor_of_europe }
@@ -17985,7 +17985,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_berlin_decree
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_NAP_berlin_decree__GFX_goal_generic_forceful_treaty
 		x = 53
 		y = 19
 		prerequisite = { focus = LR_NAP_bulletin }
@@ -18013,7 +18013,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_grand_empire
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_NAP_grand_empire__GFX_goal_generic_national_unity
 		x = 53
 		y = 20
 		prerequisite = { focus = LR_NAP_berlin_decree }
@@ -18045,7 +18045,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_first_address
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_GUA_first_address__GFX_goal_generic_propaganda
 		x = 53
 		y = 10
 		prerequisite = { focus = LR_GUA_oath }
@@ -18067,7 +18067,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_marshals_protest
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_GUA_marshals_protest__GFX_goal_generic_army_doctrines
 		x = 53
 		y = 12
 		prerequisite = { focus = LR_GUA_first_address }
@@ -18089,7 +18089,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_life_presidency
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GUA_life_presidency__GFX_goal_generic_political_pressure
 		x = 53
 		y = 14
 		prerequisite = { focus = LR_GUA_marshals_protest }
@@ -18111,7 +18111,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_exiles_return
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_GUA_exiles_return__GFX_goal_generic_improve_relations
 		x = 53
 		y = 16
 		prerequisite = { focus = LR_GUA_life_presidency }
@@ -18133,7 +18133,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_farewell
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_farewell__GFX_goal_generic_national_unity
 		x = 53
 		y = 18
 		prerequisite = { focus = LR_GUA_exiles_return }
@@ -18155,7 +18155,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_war_powers
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_GUA_war_powers__GFX_goal_generic_political_pressure
 		x = 53
 		y = 19
 		prerequisite = { focus = LR_GUA_farewell }
@@ -18186,7 +18186,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_general_president
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_GUA_general_president__GFX_goal_generic_military_sphere
 		x = 53
 		y = 20
 		prerequisite = { focus = LR_GUA_war_powers }
@@ -18214,7 +18214,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_republican_peace
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_republican_peace__GFX_goal_generic_national_unity
 		x = 53
 		y = 21
 		prerequisite = { focus = LR_GUA_general_president }
@@ -18246,7 +18246,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_vichy
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_LRc_LR_PET_vichy__GFX_goal_generic_political_pressure
 		x = 59
 		y = 2
 		prerequisite = { focus = LR_PET_marshal }
@@ -18268,7 +18268,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_portrait
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_PET_portrait__GFX_goal_generic_propaganda
 		x = 59
 		y = 4
 		prerequisite = { focus = LR_PET_vichy }
@@ -18290,7 +18290,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_laval
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_LRc_LR_PET_laval__GFX_goal_generic_dangerous_deal
 		x = 59
 		y = 6
 		prerequisite = { focus = LR_PET_portrait }
@@ -18312,7 +18312,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_riom
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_LRc_LR_PET_riom__GFX_goal_generic_forceful_treaty
 		x = 59
 		y = 8
 		prerequisite = { focus = LR_PET_laval }
@@ -18334,7 +18334,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_last_winter
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_PET_last_winter__GFX_goal_generic_national_unity
 		x = 59
 		y = 10
 		prerequisite = { focus = LR_PET_riom }
@@ -18356,7 +18356,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_no_masters
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_LRc_LR_ANA_no_masters__GFX_goal_generic_construct_civ_factory
 		x = 51
 		y = 2
 		prerequisite = { focus = LR_ANA_federation }
@@ -18378,7 +18378,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_vendee_coop
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_LRc_LR_ANA_vendee_coop__GFX_goal_generic_construct_civilian
 		x = 51
 		y = 4
 		prerequisite = { focus = LR_ANA_no_masters }
@@ -18400,7 +18400,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_platform_debate
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_LRc_LR_ANA_platform_debate__GFX_goal_generic_army_doctrines
 		x = 51
 		y = 6
 		prerequisite = { focus = LR_ANA_vendee_coop }
@@ -18422,7 +18422,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_commissars
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_LRc_LR_ANA_commissars__GFX_goal_generic_intelligence_exchange
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_ANA_platform_debate }
@@ -18444,7 +18444,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_anarchy_spring
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ANA_anarchy_spring__GFX_goal_generic_national_unity
 		x = 51
 		y = 10
 		prerequisite = { focus = LR_ANA_commissars }
@@ -18466,7 +18466,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_souper
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_LRc_LR_RED_souper__GFX_goal_generic_propaganda
 		x = 53
 		y = 10
 		prerequisite = { focus = LR_RED_tribune }
@@ -18488,7 +18488,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_red_epaulettes
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_LRc_LR_RED_red_epaulettes__GFX_goal_generic_military_sphere
 		x = 53
 		y = 12
 		prerequisite = { focus = LR_RED_souper }
@@ -18510,7 +18510,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_concordat_question
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_LRc_LR_RED_concordat_question__GFX_goal_generic_improve_relations
 		x = 53
 		y = 14
 		prerequisite = { focus = LR_RED_red_epaulettes }
@@ -18532,7 +18532,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_robespierre_shadow
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_LRc_LR_RED_robespierre_shadow__GFX_goal_generic_intelligence_exchange
 		x = 53
 		y = 16
 		prerequisite = { focus = LR_RED_concordat_question }
@@ -18554,7 +18554,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_peoples_emperor
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_RED_peoples_emperor__GFX_goal_generic_national_unity
 		x = 53
 		y = 18
 		prerequisite = { focus = LR_RED_robespierre_shadow }
@@ -18576,7 +18576,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_commandant
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_LRc_LR_DEF_commandant__GFX_goal_generic_dangerous_deal
 		x = 49
 		y = 2
 		prerequisite = { focus = LR_DEF_occupation }
@@ -18598,7 +18598,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_first_execution
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_LRc_LR_DEF_first_execution__GFX_goal_generic_special_forces
 		x = 49
 		y = 4
 		prerequisite = { focus = LR_DEF_commandant }
@@ -18620,7 +18620,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_DEF_second_winter
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_DEF_second_winter__GFX_goal_generic_national_unity
 		x = 49
 		y = 6
 		prerequisite = { focus = LR_DEF_first_execution }
@@ -18642,7 +18642,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_ORL_plan_low__GFX_goal_generic_occupy_start_war
 		x = 49
 		y = 10
 		prerequisite = { focus = LR_ORL_rhine }
@@ -18677,7 +18677,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_plan_south_germany__GFX_goal_generic_major_war
 		x = 51
 		y = 10
 		prerequisite = { focus = LR_ORL_rhine }
@@ -18701,7 +18701,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_ORL_plan_iberia__GFX_goal_generic_demand_territory
 		x = 53
 		y = 10
 		prerequisite = { focus = LR_ORL_rhine }
@@ -18736,7 +18736,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_plan_italy__GFX_goal_generic_major_war
 		x = 55
 		y = 10
 		prerequisite = { focus = LR_ORL_rhine }
@@ -18771,7 +18771,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_ORL_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 49
 		y = 11
 		prerequisite = { focus = LR_ORL_plan_low }
@@ -18795,7 +18795,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_plan_east__GFX_goal_generic_major_war
 		x = 51
 		y = 11
 		prerequisite = { focus = LR_ORL_plan_south_germany }
@@ -18819,7 +18819,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_ORL_plan_balkans__GFX_goal_generic_demand_territory
 		x = 55
 		y = 11
 		prerequisite = { focus = LR_ORL_plan_italy }
@@ -18843,7 +18843,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ORL_plan_turkey__GFX_goal_generic_major_war
 		x = 55
 		y = 12
 		prerequisite = { focus = LR_ORL_plan_balkans }
@@ -18867,7 +18867,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_BOU_plan_low__GFX_goal_generic_occupy_start_war
 		x = 67
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
@@ -18902,7 +18902,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_plan_south_germany__GFX_goal_generic_major_war
 		x = 69
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
@@ -18926,7 +18926,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_BOU_plan_iberia__GFX_goal_generic_demand_territory
 		x = 71
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
@@ -18950,7 +18950,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_plan_italy__GFX_goal_generic_major_war
 		x = 73
 		y = 7
 		prerequisite = { focus = LR_BOU_rhine }
@@ -18985,7 +18985,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_BOU_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 67
 		y = 8
 		prerequisite = { focus = LR_BOU_plan_low }
@@ -19009,7 +19009,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_plan_east__GFX_goal_generic_major_war
 		x = 69
 		y = 8
 		prerequisite = { focus = LR_BOU_plan_south_germany }
@@ -19033,7 +19033,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_BOU_plan_balkans__GFX_goal_generic_demand_territory
 		x = 73
 		y = 8
 		prerequisite = { focus = LR_BOU_plan_italy }
@@ -19057,7 +19057,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_BOU_plan_turkey__GFX_goal_generic_major_war
 		x = 73
 		y = 9
 		prerequisite = { focus = LR_BOU_plan_balkans }
@@ -19081,7 +19081,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_COM_plan_low__GFX_goal_generic_occupy_start_war
 		x = 49
 		y = 9
 		prerequisite = { focus = LR_COM_rhine }
@@ -19116,7 +19116,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_plan_south_germany__GFX_goal_generic_major_war
 		x = 51
 		y = 9
 		prerequisite = { focus = LR_COM_rhine }
@@ -19140,7 +19140,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_COM_plan_iberia__GFX_goal_generic_demand_territory
 		x = 53
 		y = 9
 		prerequisite = { focus = LR_COM_rhine }
@@ -19164,7 +19164,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_plan_italy__GFX_goal_generic_major_war
 		x = 55
 		y = 9
 		prerequisite = { focus = LR_COM_rhine }
@@ -19199,7 +19199,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_COM_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 49
 		y = 10
 		prerequisite = { focus = LR_COM_plan_low }
@@ -19223,7 +19223,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_plan_east__GFX_goal_generic_major_war
 		x = 51
 		y = 10
 		prerequisite = { focus = LR_COM_plan_south_germany }
@@ -19247,7 +19247,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_COM_plan_balkans__GFX_goal_generic_demand_territory
 		x = 55
 		y = 10
 		prerequisite = { focus = LR_COM_plan_italy }
@@ -19271,7 +19271,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_COM_plan_turkey__GFX_goal_generic_major_war
 		x = 55
 		y = 11
 		prerequisite = { focus = LR_COM_plan_balkans }
@@ -19295,7 +19295,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_JAC_plan_low__GFX_goal_generic_occupy_start_war
 		x = 57
 		y = 8
 		prerequisite = { focus = LR_JAC_rhine }
@@ -19330,7 +19330,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_plan_south_germany__GFX_goal_generic_major_war
 		x = 59
 		y = 8
 		prerequisite = { focus = LR_JAC_rhine }
@@ -19354,7 +19354,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_JAC_plan_iberia__GFX_goal_generic_demand_territory
 		x = 61
 		y = 8
 		prerequisite = { focus = LR_JAC_rhine }
@@ -19378,7 +19378,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_plan_italy__GFX_goal_generic_major_war
 		x = 63
 		y = 8
 		prerequisite = { focus = LR_JAC_rhine }
@@ -19413,7 +19413,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_JAC_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 57
 		y = 9
 		prerequisite = { focus = LR_JAC_plan_low }
@@ -19437,7 +19437,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_plan_east__GFX_goal_generic_major_war
 		x = 59
 		y = 9
 		prerequisite = { focus = LR_JAC_plan_south_germany }
@@ -19461,7 +19461,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_JAC_plan_balkans__GFX_goal_generic_demand_territory
 		x = 63
 		y = 9
 		prerequisite = { focus = LR_JAC_plan_italy }
@@ -19485,7 +19485,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_JAC_plan_turkey__GFX_goal_generic_major_war
 		x = 63
 		y = 10
 		prerequisite = { focus = LR_JAC_plan_balkans }
@@ -19509,7 +19509,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_GIR_plan_low__GFX_goal_generic_occupy_start_war
 		x = 69
 		y = 7
 		prerequisite = { focus = LR_GIR_rhine }
@@ -19544,7 +19544,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_plan_south_germany__GFX_goal_generic_major_war
 		x = 71
 		y = 7
 		prerequisite = { focus = LR_GIR_rhine }
@@ -19568,7 +19568,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_GIR_plan_iberia__GFX_goal_generic_demand_territory
 		x = 73
 		y = 7
 		prerequisite = { focus = LR_GIR_rhine }
@@ -19592,7 +19592,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_plan_italy__GFX_goal_generic_major_war
 		x = 75
 		y = 7
 		prerequisite = { focus = LR_GIR_rhine }
@@ -19627,7 +19627,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_GIR_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 69
 		y = 8
 		prerequisite = { focus = LR_GIR_plan_low }
@@ -19651,7 +19651,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_plan_east__GFX_goal_generic_major_war
 		x = 71
 		y = 8
 		prerequisite = { focus = LR_GIR_plan_south_germany }
@@ -19675,7 +19675,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_GIR_plan_balkans__GFX_goal_generic_demand_territory
 		x = 75
 		y = 8
 		prerequisite = { focus = LR_GIR_plan_italy }
@@ -19699,7 +19699,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GIR_plan_turkey__GFX_goal_generic_major_war
 		x = 75
 		y = 9
 		prerequisite = { focus = LR_GIR_plan_balkans }
@@ -19723,7 +19723,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_MAR_plan_low__GFX_goal_generic_occupy_start_war
 		x = 49
 		y = 7
 		prerequisite = { focus = LR_MAR_rhine }
@@ -19758,7 +19758,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_plan_south_germany__GFX_goal_generic_major_war
 		x = 51
 		y = 7
 		prerequisite = { focus = LR_MAR_rhine }
@@ -19782,7 +19782,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_MAR_plan_iberia__GFX_goal_generic_demand_territory
 		x = 53
 		y = 7
 		prerequisite = { focus = LR_MAR_rhine }
@@ -19806,7 +19806,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_plan_italy__GFX_goal_generic_major_war
 		x = 55
 		y = 7
 		prerequisite = { focus = LR_MAR_rhine }
@@ -19841,7 +19841,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_MAR_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 49
 		y = 8
 		prerequisite = { focus = LR_MAR_plan_low }
@@ -19865,7 +19865,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_plan_east__GFX_goal_generic_major_war
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_MAR_plan_south_germany }
@@ -19889,7 +19889,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_MAR_plan_balkans__GFX_goal_generic_demand_territory
 		x = 55
 		y = 8
 		prerequisite = { focus = LR_MAR_plan_italy }
@@ -19913,7 +19913,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_MAR_plan_turkey__GFX_goal_generic_major_war
 		x = 55
 		y = 9
 		prerequisite = { focus = LR_MAR_plan_balkans }
@@ -19937,7 +19937,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_NAP_plan_low__GFX_goal_generic_occupy_start_war
 		x = 61
 		y = 14
 		prerequisite = { focus = LR_NAP_rhine }
@@ -19966,7 +19966,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_plan_south_germany__GFX_goal_generic_major_war
 		x = 59
 		y = 14
 		prerequisite = { focus = LR_NAP_rhine }
@@ -19984,7 +19984,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_NAP_plan_iberia__GFX_goal_generic_demand_territory
 		x = 57
 		y = 14
 		prerequisite = { focus = LR_NAP_rhine }
@@ -20013,7 +20013,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_plan_italy__GFX_goal_generic_major_war
 		x = 55
 		y = 14
 		prerequisite = { focus = LR_NAP_rhine }
@@ -20042,7 +20042,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_NAP_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 61
 		y = 15
 		prerequisite = { focus = LR_NAP_plan_low }
@@ -20060,7 +20060,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_plan_east__GFX_goal_generic_major_war
 		x = 59
 		y = 15
 		prerequisite = { focus = LR_NAP_plan_south_germany }
@@ -20078,7 +20078,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_NAP_plan_balkans__GFX_goal_generic_demand_territory
 		x = 55
 		y = 15
 		prerequisite = { focus = LR_NAP_plan_italy }
@@ -20096,7 +20096,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_NAP_plan_turkey__GFX_goal_generic_major_war
 		x = 55
 		y = 16
 		prerequisite = { focus = LR_NAP_plan_balkans }
@@ -20114,7 +20114,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_GUA_plan_low__GFX_goal_generic_occupy_start_war
 		x = 69
 		y = 9
 		prerequisite = { focus = LR_GUA_rhine }
@@ -20143,7 +20143,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_plan_south_germany__GFX_goal_generic_major_war
 		x = 71
 		y = 9
 		prerequisite = { focus = LR_GUA_rhine }
@@ -20161,7 +20161,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_GUA_plan_iberia__GFX_goal_generic_demand_territory
 		x = 73
 		y = 9
 		prerequisite = { focus = LR_GUA_rhine }
@@ -20190,7 +20190,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_plan_italy__GFX_goal_generic_major_war
 		x = 75
 		y = 9
 		prerequisite = { focus = LR_GUA_rhine }
@@ -20219,7 +20219,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_GUA_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 69
 		y = 10
 		prerequisite = { focus = LR_GUA_plan_low }
@@ -20237,7 +20237,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_plan_east__GFX_goal_generic_major_war
 		x = 71
 		y = 10
 		prerequisite = { focus = LR_GUA_plan_south_germany }
@@ -20255,7 +20255,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_GUA_plan_balkans__GFX_goal_generic_demand_territory
 		x = 75
 		y = 10
 		prerequisite = { focus = LR_GUA_plan_italy }
@@ -20273,7 +20273,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_GUA_plan_turkey__GFX_goal_generic_major_war
 		x = 75
 		y = 11
 		prerequisite = { focus = LR_GUA_plan_balkans }
@@ -20291,7 +20291,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_PET_plan_low__GFX_goal_generic_occupy_start_war
 		x = 51
 		y = 8
 		prerequisite = { focus = LR_PET_rhine }
@@ -20320,7 +20320,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_plan_south_germany__GFX_goal_generic_major_war
 		x = 53
 		y = 8
 		prerequisite = { focus = LR_PET_rhine }
@@ -20338,7 +20338,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_PET_plan_iberia__GFX_goal_generic_demand_territory
 		x = 55
 		y = 8
 		prerequisite = { focus = LR_PET_rhine }
@@ -20356,7 +20356,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_plan_italy__GFX_goal_generic_major_war
 		x = 57
 		y = 8
 		prerequisite = { focus = LR_PET_rhine }
@@ -20385,7 +20385,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_PET_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 51
 		y = 9
 		prerequisite = { focus = LR_PET_plan_low }
@@ -20403,7 +20403,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_plan_east__GFX_goal_generic_major_war
 		x = 53
 		y = 9
 		prerequisite = { focus = LR_PET_plan_south_germany }
@@ -20421,7 +20421,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_PET_plan_balkans__GFX_goal_generic_demand_territory
 		x = 57
 		y = 9
 		prerequisite = { focus = LR_PET_plan_italy }
@@ -20439,7 +20439,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_PET_plan_turkey__GFX_goal_generic_major_war
 		x = 57
 		y = 10
 		prerequisite = { focus = LR_PET_plan_balkans }
@@ -20457,7 +20457,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_ANA_plan_low__GFX_goal_generic_occupy_start_war
 		x = 65
 		y = 5
 		prerequisite = { focus = LR_ANA_rhine }
@@ -20486,7 +20486,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ANA_plan_south_germany__GFX_goal_generic_major_war
 		x = 67
 		y = 5
 		prerequisite = { focus = LR_ANA_rhine }
@@ -20504,7 +20504,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_ANA_plan_iberia__GFX_goal_generic_demand_territory
 		x = 69
 		y = 5
 		prerequisite = { focus = LR_ANA_rhine }
@@ -20522,7 +20522,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ANA_plan_italy__GFX_goal_generic_major_war
 		x = 71
 		y = 5
 		prerequisite = { focus = LR_ANA_rhine }
@@ -20551,7 +20551,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_ANA_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 65
 		y = 6
 		prerequisite = { focus = LR_ANA_plan_low }
@@ -20569,7 +20569,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ANA_plan_east__GFX_goal_generic_major_war
 		x = 67
 		y = 6
 		prerequisite = { focus = LR_ANA_plan_south_germany }
@@ -20587,7 +20587,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_ANA_plan_balkans__GFX_goal_generic_demand_territory
 		x = 71
 		y = 6
 		prerequisite = { focus = LR_ANA_plan_italy }
@@ -20605,7 +20605,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_ANA_plan_turkey__GFX_goal_generic_major_war
 		x = 71
 		y = 7
 		prerequisite = { focus = LR_ANA_plan_balkans }
@@ -20623,7 +20623,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_low
-		icon = GFX_goal_generic_occupy_start_war
+		icon = GFX_LRc_LR_RED_plan_low__GFX_goal_generic_occupy_start_war
 		x = 63
 		y = 15
 		prerequisite = { focus = LR_RED_rhine }
@@ -20652,7 +20652,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_south_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_plan_south_germany__GFX_goal_generic_major_war
 		x = 61
 		y = 15
 		prerequisite = { focus = LR_RED_rhine }
@@ -20670,7 +20670,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_iberia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_RED_plan_iberia__GFX_goal_generic_demand_territory
 		x = 59
 		y = 15
 		prerequisite = { focus = LR_RED_rhine }
@@ -20699,7 +20699,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_italy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_plan_italy__GFX_goal_generic_major_war
 		x = 57
 		y = 15
 		prerequisite = { focus = LR_RED_rhine }
@@ -20728,7 +20728,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_north
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_LRc_LR_RED_plan_north__GFX_goal_generic_navy_doctrines_tactics
 		x = 63
 		y = 16
 		prerequisite = { focus = LR_RED_plan_low }
@@ -20746,7 +20746,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_east
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_plan_east__GFX_goal_generic_major_war
 		x = 61
 		y = 16
 		prerequisite = { focus = LR_RED_plan_south_germany }
@@ -20764,7 +20764,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_balkans
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_LRc_LR_RED_plan_balkans__GFX_goal_generic_demand_territory
 		x = 57
 		y = 16
 		prerequisite = { focus = LR_RED_plan_italy }
@@ -20782,7 +20782,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_plan_turkey
-		icon = GFX_goal_generic_major_war
+		icon = GFX_LRc_LR_RED_plan_turkey__GFX_goal_generic_major_war
 		x = 57
 		y = 17
 		prerequisite = { focus = LR_RED_plan_balkans }
@@ -20800,7 +20800,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ORL_epilogue__GFX_goal_generic_national_unity
 		x = 57
 		y = 18
 		prerequisite = { focus = LR_ORL_kings_europe }
@@ -20829,7 +20829,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_epilogue__GFX_goal_generic_national_unity
 		x = 75
 		y = 15
 		prerequisite = { focus = LR_BOU_holy_alliance }
@@ -20858,7 +20858,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_COM_epilogue__GFX_goal_generic_national_unity
 		x = 57
 		y = 18
 		prerequisite = { focus = LR_COM_red_continent }
@@ -20887,7 +20887,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ANA_epilogue__GFX_goal_generic_national_unity
 		x = 51
 		y = 11
 		prerequisite = { focus = LR_ANA_anarchy_spring }
@@ -20912,7 +20912,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_JAC_epilogue__GFX_goal_generic_national_unity
 		x = 51
 		y = 17
 		prerequisite = { focus = LR_JAC_sister_republics }
@@ -20941,7 +20941,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GIR_epilogue__GFX_goal_generic_national_unity
 		x = 63
 		y = 17
 		prerequisite = { focus = LR_GIR_common_market }
@@ -20970,7 +20970,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_epilogue__GFX_goal_generic_national_unity
 		x = 57
 		y = 17
 		prerequisite = { focus = LR_MAR_concert }
@@ -20999,7 +20999,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_NAP_epilogue__GFX_goal_generic_national_unity
 		x = 53
 		y = 21
 		prerequisite = { focus = LR_NAP_grand_empire }
@@ -21024,7 +21024,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_epilogue__GFX_goal_generic_national_unity
 		x = 53
 		y = 22
 		prerequisite = { focus = LR_GUA_republican_peace }
@@ -21049,7 +21049,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_RED_epilogue__GFX_goal_generic_national_unity
 		x = 53
 		y = 19
 		prerequisite = { focus = LR_RED_peoples_emperor }
@@ -21074,7 +21074,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_PET_epilogue__GFX_goal_generic_national_unity
 		x = 59
 		y = 12
 		prerequisite = { focus = LR_PET_last_winter }
@@ -21099,7 +21099,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_entente_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_entente_epilogue__GFX_goal_generic_national_unity
 		x = 65
 		y = 14
 		prerequisite = { focus = LR_MAR_eastern_crusade }
@@ -21125,7 +21125,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_revolution_epilogue
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_revolution_epilogue__GFX_goal_generic_national_unity
 		x = 61
 		y = 10
 		prerequisite = { focus = LR_BOU_diplomatic_revolution }
@@ -21152,7 +21152,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ORL_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ORL_algeria_departments__GFX_goal_generic_national_unity
 		x = 52
 		y = 9
 		prerequisite = { focus = LR_ORL_algeria }
@@ -21195,7 +21195,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_BOU_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_BOU_algeria_departments__GFX_goal_generic_national_unity
 		x = 70
 		y = 6
 		prerequisite = { focus = LR_BOU_algeria }
@@ -21238,7 +21238,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GIR_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GIR_algeria_departments__GFX_goal_generic_national_unity
 		x = 72
 		y = 6
 		prerequisite = { focus = LR_GIR_algeria }
@@ -21281,7 +21281,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_MAR_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_MAR_algeria_departments__GFX_goal_generic_national_unity
 		x = 52
 		y = 6
 		prerequisite = { focus = LR_MAR_algeria }
@@ -21324,7 +21324,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_PET_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_PET_algeria_departments__GFX_goal_generic_national_unity
 		x = 45
 		y = 8
 		prerequisite = { focus = LR_PET_algeria }
@@ -21363,7 +21363,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_JAC_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_JAC_algeria_departments__GFX_goal_generic_national_unity
 		x = 60
 		y = 6
 		prerequisite = { focus = LR_JAC_reclaim_algeria }
@@ -21406,7 +21406,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_COM_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_COM_algeria_departments__GFX_goal_generic_national_unity
 		x = 52
 		y = 8
 		prerequisite = { focus = LR_COM_annex_algeria focus = LR_COM_algerian_comrades }
@@ -21449,7 +21449,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_ANA_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_ANA_algeria_departments__GFX_goal_generic_national_unity
 		x = 59
 		y = 5
 		prerequisite = { focus = LR_ANA_algerian_freedom }
@@ -21488,7 +21488,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_NAP_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_NAP_algeria_departments__GFX_goal_generic_national_unity
 		x = 55
 		y = 1
 		prerequisite = { focus = LR_NAP_first_consul }
@@ -21527,7 +21527,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_GUA_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_GUA_algeria_departments__GFX_goal_generic_national_unity
 		x = 51
 		y = 11
 		prerequisite = { focus = LR_GUA_first_address }
@@ -21566,7 +21566,7 @@ focus_tree = {
 
 	focus = {
 		id = LR_RED_algeria_departments
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_LRc_LR_RED_algeria_departments__GFX_goal_generic_national_unity
 		x = 55
 		y = 11
 		prerequisite = { focus = LR_RED_souper }

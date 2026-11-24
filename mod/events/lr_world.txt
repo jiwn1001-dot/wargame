@@ -574,6 +574,21 @@ country_event = {
 			target = FROM
 			transfer_troops = yes
 		}
+		# The winner of a civil war rules the whole country: its lands become the winner's cores.
+		if = {
+			limit = { OR = { tag = SPR tag = CRL tag = ESR } }
+			every_owned_state = {
+				limit = { is_core_of = SPR }
+				add_core_of = ROOT
+			}
+		}
+		if = {
+			limit = { OR = { tag = JAP tag = JPE } }
+			every_owned_state = {
+				limit = { is_core_of = JAP }
+				add_core_of = ROOT
+			}
+		}
 		if = {
 			limit = {
 				OR = { tag = SPR tag = CRL tag = ESR }

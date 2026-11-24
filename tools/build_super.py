@@ -302,6 +302,13 @@ def cut_song(row):
     sources = sorted(ART.glob(f"super_{row['key']}_source.*"))
     if not cut or not sources:
         return
+    # The cut is redone only when the recording or the cut settings change: ffmpeg is the slowest part of the build.
+    target = ART / f"super_{row['key']}.ogg"
+    stamp = ART / f"super_{row['key']}.cut"
+    source_stat = sources[0].stat()
+    key = f"{sources[0].name} {source_stat.st_size} {int(source_stat.st_mtime)} {sorted(cut.items())}"
+    if target.exists() and stamp.exists() and stamp.read_text(encoding="utf-8") == key:
+        return
     import imageio_ffmpeg
     fade_from = cut["length"] - cut["fade"]
     start = loudest_start(sources[0], cut["length"]) if cut["start"] == "auto" else cut["start"]
@@ -309,7 +316,8 @@ def cut_song(row):
     subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), "-y", "-v", "error", "-ss", str(start), "-t", str(cut["length"]), "-i", str(sources[0]),
                     "-af", f"afade=t=in:st=0:d=0.5,afade=t=out:st={fade_from}:d={cut['fade']},loudnorm=I=-14:TP=-1.5",
                     # loudnorm resamples to 192 kHz; the game wants 44.1 kHz
-                    "-ar", "44100", "-c:a", "libvorbis", "-q:a", "5", str(ART / f"super_{row['key']}.ogg")], check=True)
+                    "-ar", "44100", "-c:a", "libvorbis", "-q:a", "5", str(target)], check=True)
+    stamp.write_text(key, encoding="utf-8")
 
 
 def build_music():
@@ -320,7 +328,8 @@ def build_music():
         if own.exists():
             target = MOD / "music" / f"lr_super_{row['key']}.ogg"
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy(own, target)
+            if not target.exists() or target.stat().st_size != own.stat().st_size or target.stat().st_mtime < own.stat().st_mtime:
+                shutil.copy2(own, target)
             entries.append(f'music = {{\n\tname = "lr_super_{row["key"]}"\n\tfile = "lr_super_{row["key"]}.ogg"\n\tvolume = 0.65\n}}\n')
     path = MOD / "music" / "lr_music.asset"
     songs = MOD / "music" / "lr_songs.txt"

@@ -2,13 +2,16 @@
 state = {
 	id = 1092
 	name = "STATE_1092"
-	manpower = 678368
+	manpower = 725946
 
 	state_category = town
+	resources = {
+		steel = 1
+	}
 
 	history = {
 		owner = AUS
-		victory_points = { 9670 1 }
+		victory_points = { 9670 2 }
 		buildings = {
 			infrastructure = 2
 		}

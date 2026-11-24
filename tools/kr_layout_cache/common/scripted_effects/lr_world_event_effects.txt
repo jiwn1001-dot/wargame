@@ -3623,8 +3623,32 @@ lr_world_washington = {
 		CNA = { transfer_state = 357 }
 	}
 	if = {
+		limit = { 1162 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1162 }
+	}
+	if = {
+		limit = { 1163 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1163 }
+	}
+	if = {
+		limit = { 1164 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1164 }
+	}
+	if = {
+		limit = { 1165 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1165 }
+	}
+	if = {
 		limit = { 358 = { is_owned_by = USA } }
 		CNA = { transfer_state = 358 }
+	}
+	if = {
+		limit = { 1166 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1166 }
+	}
+	if = {
+		limit = { 1167 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1167 }
 	}
 	if = {
 		limit = { 359 = { is_owned_by = USA } }
@@ -3633,6 +3657,10 @@ lr_world_washington = {
 	if = {
 		limit = { 360 = { is_owned_by = USA } }
 		CNA = { transfer_state = 360 }
+	}
+	if = {
+		limit = { 1168 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1168 }
 	}
 	if = {
 		limit = { 361 = { is_owned_by = USA } }
@@ -3659,6 +3687,10 @@ lr_world_washington = {
 		CNA = { transfer_state = 816 }
 	}
 	if = {
+		limit = { 1368 = { is_owned_by = USA } }
+		CNA = { transfer_state = 1368 }
+	}
+	if = {
 		limit = { 261 = { is_owned_by = USA } }
 		CNA = { transfer_state = 261 }
 	}
@@ -3683,6 +3715,12 @@ lr_world_washington = {
 		CNA = { transfer_state = 391 }
 	}
 	CNA = { set_capital = { state = 360 } }
+	CNA = {
+		load_focus_tree = {
+			tree = lr_cna_focus
+			keep_completed = no
+		}
+	}
 	CNA = {
 		set_politics = {
 			ruling_party = democratic
@@ -5760,6 +5798,20 @@ lr_world_on_capitulation = {
 			lr_france_defeated = yes
 		}
 	}
+	if = {
+		limit = {
+			OR = { tag = SPR tag = CRL tag = ESR }
+			FROM = { OR = { tag = SPR tag = CRL tag = ESR } }
+		}
+		FROM = { country_event = { id = lr_world.90 } }
+	}
+	if = {
+		limit = {
+			OR = { tag = JAP tag = JPE }
+			FROM = { OR = { tag = JAP tag = JPE } }
+		}
+		FROM = { country_event = { id = lr_world.90 } }
+	}
 }
 
 lr_separate_peace = {
@@ -5768,6 +5820,15 @@ lr_separate_peace = {
 			is_subject = no
 			NOT = { tag = FRA }
 			FROM = { has_war_with = ROOT }
+			NOT = { AND = { tag = CNA USA = { exists = yes } NOT = { has_global_flag = LR_usa_civil_war } } }
+			NOT = { AND = { OR = { tag = SPR tag = CRL tag = ESR } FROM = { OR = { tag = SPR tag = CRL tag = ESR } } } }
+			NOT = { AND = { OR = { tag = JAP tag = JPE } FROM = { OR = { tag = JAP tag = JPE } } } }
+			NOT = { AND = { has_global_flag = LR_usa_civil_war OR = { tag = CNA tag = AMC tag = LNG tag = DXE } FROM = { OR = { tag = CNA tag = AMC tag = LNG tag = DXE } } } }
+			NOT = { AND = { USA = { has_country_flag = LR_usa_annex_americas } FROM = { OR = { tag = USA is_in_faction_with = USA } } capital_scope = { OR = { is_on_continent = north_america is_on_continent = south_america } } } }
+			NOT = { AND = { CNA = { has_country_flag = LR_usa_annex_americas } FROM = { OR = { tag = CNA is_in_faction_with = CNA } } capital_scope = { OR = { is_on_continent = north_america is_on_continent = south_america } } } }
+			NOT = { AND = { AMC = { has_country_flag = LR_usa_annex_americas } FROM = { OR = { tag = AMC is_in_faction_with = AMC } } capital_scope = { OR = { is_on_continent = north_america is_on_continent = south_america } } } }
+			NOT = { AND = { LNG = { has_country_flag = LR_usa_annex_americas } FROM = { OR = { tag = LNG is_in_faction_with = LNG } } capital_scope = { OR = { is_on_continent = north_america is_on_continent = south_america } } } }
+			NOT = { AND = { DXE = { has_country_flag = LR_usa_annex_americas } FROM = { OR = { tag = DXE is_in_faction_with = DXE } } capital_scope = { OR = { is_on_continent = north_america is_on_continent = south_america } } } }
 		}
 		FROM = {
 			start_peace_conference = {

@@ -1,4 +1,4 @@
-"""Art Deco skin for the game UI, and an Art Deco title font.
+"""Empire skin for the game UI (imperial navy, gilt and parchment, the Napoleonic style), and a serif title font.
 
 Textures: the vanilla frames, backgrounds, buttons and bars of the main screens are recoloured into black, bronze
 and gold with a gradient map. Shapes and sizes stay the same, so every vanilla layout still fits. Icons, flags,
@@ -27,12 +27,13 @@ FONT_FILE = PROJECT / "docs" / "fonts" / "hahmlet" / "Hahmlet.ttf"
 MAP_FONT_FILE = PROJECT / "docs" / "fonts" / "songmyung" / "SongMyung-Regular.ttf"
 FACES = {"hoi_mapfont4": MAP_FONT_FILE}
 
-# ===== Palette: charcoal, bronze, gold =====
-# Frames: charcoal shadows, bronze mid-tones, gold highlights.
+# ===== Palette: the Empire style - imperial navy, gilt, parchment (2026-11-24, replacing the Art Deco skin) =====
+# Frames: deep navy shadows and mid-tones like the throne rooms of the First Empire, gilt on the bright bevels.
 # Each stop keeps about the brightness of the vanilla pixel it replaces, so borders and button states stay readable.
-STOPS = [(0.0, (8, 8, 10)), (0.15, (40, 36, 34)), (0.3, (82, 70, 52)), (0.5, (140, 116, 74)), (0.7, (198, 166, 104)), (0.85, (234, 206, 140)), (1.0, (255, 244, 210))]
-# Paper (event reports, news): ivory, so the black body text stays readable; dark frame parts turn black and bronze.
-PAPER_STOPS = [(0.0, (14, 12, 12)), (0.3, (52, 42, 30)), (0.55, (170, 140, 84)), (0.7, (226, 212, 180)), (1.0, (246, 240, 224))]
+STOPS = [(0.0, (6, 9, 20)), (0.15, (16, 24, 48)), (0.3, (30, 42, 78)), (0.45, (58, 68, 104)), (0.6, (142, 118, 76)), (0.75, (202, 170, 104)),
+         (0.88, (236, 210, 146)), (1.0, (255, 246, 218))]
+# Paper (event reports, news): warm parchment, so the black body text stays readable; dark frame parts turn navy and sepia.
+PAPER_STOPS = [(0.0, (12, 14, 24)), (0.3, (48, 40, 32)), (0.55, (168, 136, 86)), (0.7, (228, 210, 172)), (1.0, (248, 238, 214))]
 PAPER = re.compile(r"(event_report|event_news_bg|news_bg|report_.*win|paper|focus_popup_bg)", re.I)
 GOLD_RULE = (214, 178, 96, 255)
 FOLDERS = ["", "tiles", "topbar", "topbar/toolbar", "decisionview", "decisions", "focusview", "focusview/titlebar", "diplomacy", "production",
@@ -76,7 +77,7 @@ def recolour(image, lut=None):
 
 
 def deco_frame(image):
-    """A thin double gold rule and stepped corners inside large panels: the Art Deco signature."""
+    """A double gilt rule inside large panels with a rosette at each corner: the Empire signature."""
     w, h = image.size
     if w < 260 or h < 160:
         return image
@@ -84,12 +85,17 @@ def deco_frame(image):
     gold, dim = (214, 178, 96, 255), (120, 96, 52, 255)
     for inset, colour in ((9, gold), (13, dim)):
         draw.rectangle((inset, inset, w - 1 - inset, h - 1 - inset), outline=colour, width=1)
-    for cx, cy, sx, sy in ((9, 9, 1, 1), (w - 10, 9, -1, 1), (9, h - 10, 1, -1), (w - 10, h - 10, -1, -1)):
-        for step in range(3):
-            length = 22 - step * 6
-            ox, oy = cx + sx * (4 + step * 4), cy + sy * (4 + step * 4)
-            draw.line((ox, oy, ox + sx * length, oy), fill=gold, width=1)
-            draw.line((ox, oy, ox, oy + sy * length), fill=gold, width=1)
+    for cx, cy in ((11, 11), (w - 12, 11), (11, h - 12), (w - 12, h - 12)):
+        # A rosette: a gilt ring, a darker petal ring and a bright boss.
+        draw.ellipse((cx - 7, cy - 7, cx + 7, cy + 7), fill=(14, 20, 40, 255), outline=gold, width=1)
+        for angle in range(0, 360, 45):
+            import math
+            px, py = cx + 4 * math.cos(math.radians(angle)), cy + 4 * math.sin(math.radians(angle))
+            draw.ellipse((px - 1.4, py - 1.4, px + 1.4, py + 1.4), fill=dim)
+        draw.ellipse((cx - 2, cy - 2, cx + 2, cy + 2), fill=(240, 214, 150, 255))
+    # A small gilt lozenge at the middle of the top and bottom rules.
+    for my in (9, h - 10):
+        draw.polygon([(w // 2, my - 4), (w // 2 + 6, my), (w // 2, my + 4), (w // 2 - 6, my)], fill=gold)
     return image
 
 
@@ -248,7 +254,7 @@ def preview():
     label = ImageFont.truetype(r"C:\Windows\Fonts\malgun.ttf", 16)
     y = 10
     for rel, a, b in rows:
-        draw.text((10, y), f"{rel}   (왼쪽 바닐라 / 오른쪽 아르데코)", font=label, fill=(200, 200, 200, 255))
+        draw.text((10, y), f"{rel}   (왼쪽 바닐라 / 오른쪽 엠파이어)", font=label, fill=(200, 200, 200, 255))
         sheet.alpha_composite(a, (10, y + 24))
         sheet.alpha_composite(b, (width // 2, y + 24))
         y += a.height + 40

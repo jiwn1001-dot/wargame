@@ -269,4 +269,49 @@ characters={
 			id=-1
 		}
 	}
+
+	LR_AMC_browder={
+		name=LR_AMC_browder
+		portraits={
+			civilian={
+				large="GFX_portrait_LR_photo_LR_AMC_browder"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+	}
+
+	LR_LNG_long={
+		name=LR_LNG_long
+		portraits={
+			civilian={
+				large="GFX_portrait_LR_photo_LR_LNG_long"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+	}
+
+	LR_DXE_bilbo={
+		name=LR_DXE_bilbo
+		portraits={
+			civilian={
+				large="GFX_portrait_LR_photo_LR_DXE_bilbo"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ }
+			expire="1975.1.1.1"
+			id=-1
+		}
+	}
 }
